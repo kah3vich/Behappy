@@ -1,0 +1,102 @@
+.info {
+    padding: 90px 0;
+    width: 100%;
+    height: 100%;
+    &__block {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        &-slider {
+            width: 100%;
+            height: 445px;
+            & .swiper-control {
+                position: relative;
+                height: 95px;
+                width: 100%;
+                & .swiper-pagination {
+                    bottom: 0;
+                    left: 0;
+                    margin: 0 auto;
+                }
+                & .swiper-button-prev {
+                    top: -180px;
+                    left: -67px;
+                    color: #FFFFFF;
+                }
+                & .swiper-button-next {
+                    top: -180px;
+                    right: -67px;
+                    color: #FFFFFF;
+                }
+                & .swiper-pagination-bullet {
+                    background: rgba(133, 79, 200, 0.8);
+                    width: 8px;
+                    height: 8px;
+                    opacity: 1;
+                }
+                & .swiper-pagination-bullet-active {
+                    background: rgba(127, 132, 137, 0.25);;
+                    width: 8px;
+                    height: 8px;
+                    opacity: 1;
+                }
+            }
+        }
+        &-menu {
+            padding: 90px 0 0 0;
+            height: 100%;
+            width: 100%;
+            &-list {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            &-item {
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                padding-bottom: 37px;
+                background: #04133C;
+                border: 1px solid #002685;
+                box-sizing: border-box;
+                box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+                border-radius: 20px;
+                width: 350px;
+                height: 340px;
+            }
+            &-title {
+                height: 23px;
+                font-family: FuturaBookC;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 23px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.swiper .sliderInfo {
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+}
+
+.sliderInfo .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 255px;
+    background: #04133C;
+    border: 1px solid #002685;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+    border-radius: 20px;
+    margin: 5px 0;
+}
