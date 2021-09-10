@@ -20,38 +20,64 @@
             font-weight: normal;
             font-size: 30px;
             line-height: 34px;
-            // color: #FFFFFF;
-            color: gray;
-        }
-        &-list {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-top: 42px;
-        }
-        &-item {
-            height: 175px;
-            width: 160px;
-            background: #04133C;
-            border: 1px solid #002685;
-            box-sizing: border-box;
-            box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
-            border-radius: 20px;
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            padding-bottom: 17px;
-        }
-        &-text {
-            height: 19px;
-            font-family: Circe;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 13px;
-            line-height: 19px;
-            text-align: center;
             color: #FFFFFF;
+        }
+        &-slider {
+            width: 100%;
+            margin-top: 42px;
+            & .swiper-control {
+                position: relative;
+                height: 95px;
+                width: 100%;
+                & .swiper-pagination {
+                    bottom: 30px;
+                    left: 0;
+                    margin: 0 auto;
+                }
+                & .swiper-pagination-bullet {
+                    background: rgba(133, 79, 200, 0.8);
+                    width: 8px;
+                    height: 8px;
+                    opacity: 1;
+                }
+                & .swiper-pagination-bullet-active {
+                    background: rgba(127, 132, 137, 0.25);;
+                    width: 8px;
+                    height: 8px;
+                    opacity: 1;
+                }
+            }
         }
     }
 }
+
+
+.swiper .sliderAdd {
+    width: 100%;
+    height: 100%;
+}
+
+.sliderAdd .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 160px;
+    height: 175px;
+    background: #04133C;
+    border: 1px solid #002685;
+    box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+    border-radius: 20px;
+    margin: 5px 0;
+    padding-bottom: 17px;
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+

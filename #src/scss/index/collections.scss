@@ -51,6 +51,24 @@
                     top: -90px;
                     color: #DE33FE;
                 }
+                & .swiper-pagination {
+                    bottom: -50px;
+                    left: 0;
+                    margin: 0 auto;
+                    display: none;
+                }
+                & .swiper-pagination-bullet {
+                    background: rgba(133, 79, 200, 0.8);
+                    width: 8px;
+                    height: 8px;
+                    opacity: 1;
+                }
+                & .swiper-pagination-bullet-active {
+                    background: rgba(127, 132, 137, 0.25);;
+                    width: 8px;
+                    height: 8px;
+                    opacity: 1;
+                }
             }
         }
         &-slider-2 {
@@ -68,6 +86,24 @@
                     right: -67px;
                     top: -90px;
                     color: #DE33FE;
+                }
+                & .swiper-pagination {
+                    bottom: -50px;
+                    left: 0;
+                    margin: 0 auto;
+                    display: none;
+                }
+                & .swiper-pagination-bullet {
+                    background: rgba(133, 79, 200, 0.8);
+                    width: 8px;
+                    height: 8px;
+                    opacity: 1;
+                }
+                & .swiper-pagination-bullet-active {
+                    background: rgba(127, 132, 137, 0.25);;
+                    width: 8px;
+                    height: 8px;
+                    opacity: 1;
                 }
             }
         }

@@ -16,7 +16,7 @@
             width: 100%;
             display: flex;
             align-items: flex-start;
-            justify-content: flex-start;
+            justify-content: space-between;
 
 
             &-catalog {
@@ -64,7 +64,8 @@
                 justify-content: center;
                 flex-direction: column;
                 margin-top: 85px;
-                margin-left: 185px;
+                // margin-left: 185px;
+                margin-right: 100px;
                 &-title {
                     height: 28px;
                     font-family: Circe;
@@ -99,7 +100,8 @@
 
 
             &-logo {
-                margin: 40px 0 62px 285px;
+                // margin: 40px 0 62px 285px;
+                margin: 40px 0 62px 0;
                 width: 263px;
                 height: 263px;
                 background: #04133C;
@@ -110,6 +112,50 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                &-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+                &-img {
+                    width: 50px;
+                    height: 75px;
+                }
+                &-title {
+                    height: 21px;
+                    font-family: Felix Titling;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 21px;
+                    line-height: 99.68%;
+                    text-align: center;
+                    letter-spacing: 0.26em;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    margin-top: 26px;
+                }
+            }
+        }
+        &-media {
+            &-logo {
+                // margin: 40px 0 62px 285px;
+                margin: 40px 0 62px 0;
+                width: 263px;
+                height: 263px;
+                background: #04133C;
+                border: 1px solid #002685;
+                box-sizing: border-box;
+                box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+                border-radius: 131.5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                margin: 0;
+                width: 0;
+                height: 0;
+                opacity: 0;
                 &-item {
                     display: flex;
                     align-items: center;
@@ -189,9 +235,6 @@
                         width: 15px;
                         height: 100%;
                     }
-                }
-                &-img {
-                        
                 }
             }
         }

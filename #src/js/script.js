@@ -1,5 +1,5 @@
 
-var swiper = new Swiper(".sliderInfo", {
+var sliderInfo = new Swiper(".sliderInfo", {
     loop: true,
     // cssMode: true,
     navigation: {
@@ -20,18 +20,51 @@ var swiper = new Swiper(".sliderInfo", {
             slidesPerView: 4, 
             spaceBetween: 30, 
         },
-        992: {
-            slidesPerView: 1, 
-            spaceBetween: 5, 
+        1050: {
+            slidesPerView: 3, 
+            spaceBetween: 20, 
+        },
+        0: {
+            slidesPerView: 2, 
+            spaceBetween: 20, 
         }
     },
 });
+
+var swiper = new Swiper(".sliderAdd", {
+    pagination: {
+        el: ".add__block-slider .swiper-pagination",
+    },
+    breakpoints: { 
+        1700: { 
+            slidesPerView: 6, 
+            spaceBetween: 30, 
+        },
+        1200: {
+            slidesPerView: 6, 
+            spaceBetween: 30, 
+        },
+        1000: {
+            slidesPerView: 3, 
+            spaceBetween: 15, 
+        },
+        0: {
+            slidesPerView: 3, 
+            spaceBetween: 10, 
+        }
+    },
+});
+
+
 
 var collections_1 = new Swiper(".sliderCollections-1", {
     loop: true,
     navigation: {
         nextEl: ".collections__block-slider-1 .swiper-button-next",
         prevEl: ".collections__block-slider-1 .swiper-button-prev",
+    },
+    pagination: {
+        el: ".collections__block-slider-1 .swiper-pagination",
     },
     breakpoints: { 
         1700: { 
@@ -42,9 +75,13 @@ var collections_1 = new Swiper(".sliderCollections-1", {
             slidesPerView: 4, 
             spaceBetween: 30, 
         },
-        992: {
-            slidesPerView: 1, 
-            spaceBetween: 5, 
+        1000: {
+            slidesPerView: 3, 
+            spaceBetween: 15, 
+        },
+        0: {
+            slidesPerView: 2, 
+            spaceBetween: 10, 
         }
     },
 });
@@ -55,6 +92,9 @@ var collections_2 = new Swiper(".sliderCollections-2", {
         nextEl: ".collections__block-slider-2 .swiper-button-next",
         prevEl: ".collections__block-slider-2 .swiper-button-prev",
     },
+    pagination: {
+        el: ".collections__block-slider-2 .swiper-pagination",
+    },
     breakpoints: { 
         1700: { 
             slidesPerView: 4, 
@@ -64,9 +104,13 @@ var collections_2 = new Swiper(".sliderCollections-2", {
             slidesPerView: 4, 
             spaceBetween: 30, 
         },
-        992: {
-            slidesPerView: 1, 
-            spaceBetween: 5, 
+        1000: {
+            slidesPerView: 3, 
+            spaceBetween: 15, 
+        },
+        0: {
+            slidesPerView: 2, 
+            spaceBetween: 10, 
         }
     },
 });
