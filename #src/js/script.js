@@ -32,6 +32,7 @@ var sliderInfo = new Swiper(".sliderInfo", {
 });
 
 var swiper = new Swiper(".sliderAdd", {
+    loop: true,
     pagination: {
         el: ".add__block-slider .swiper-pagination",
     },
@@ -46,11 +47,11 @@ var swiper = new Swiper(".sliderAdd", {
         },
         1000: {
             slidesPerView: 3, 
-            spaceBetween: 15, 
+            spaceBetween: 20, 
         },
         0: {
             slidesPerView: 3, 
-            spaceBetween: 10, 
+            spaceBetween: 20, 
         }
     },
 });
@@ -77,11 +78,11 @@ var collections_1 = new Swiper(".sliderCollections-1", {
         },
         1000: {
             slidesPerView: 3, 
-            spaceBetween: 15, 
+            spaceBetween: 20, 
         },
         0: {
             slidesPerView: 2, 
-            spaceBetween: 10, 
+            spaceBetween: 20, 
         }
     },
 });
@@ -106,11 +107,11 @@ var collections_2 = new Swiper(".sliderCollections-2", {
         },
         1000: {
             slidesPerView: 3, 
-            spaceBetween: 15, 
+            spaceBetween: 20, 
         },
         0: {
             slidesPerView: 2, 
-            spaceBetween: 10, 
+            spaceBetween: 20, 
         }
     },
 });

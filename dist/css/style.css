@@ -1574,6 +1574,21 @@ button {
     width: 29px;
     height: 44px;
   }
+
+  .c-select {
+    width: 100px;
+  }
+}
+
+@media (max-width: 400px) {
+  .sliderAdd .swiper-slide {
+    margin: 5px 0 45px 0;
+  }
+
+  .sliderAdd .swiper-slide p {
+    position: absolute;
+    bottom: -45px;
+  }
 }
 @supports (-webkit-appearance:none){
 
@@ -1644,6 +1659,14 @@ button {
 }
 
  @media (max-width: 450px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 400px){
 
 @supports (-webkit-appearance:none){
 
