@@ -159,7 +159,7 @@
 .header {
   width: 100%;
   height: 100vh;
-  padding: 165px 0 0 0;
+  padding: 165px 0 30px 0;
 }
 
 .header__block {
@@ -1715,7 +1715,7 @@
 }
 
 body {
-  background: url(../img/catalog/catalog-bg.png) no-repeat;
+  background: url(../img/catalog/catalog-bg.png) no-repeat fixed;
   background-size: cover;
   width: 100%;
 }
@@ -1792,6 +1792,10 @@ p {
 }
 
 @media (max-width: 1050px) {
+  .header {
+    height: 100%;
+  }
+
   .info__block-menu-title {
     height: 23px;
     font-family: FuturaBookC;
@@ -1931,6 +1935,10 @@ p {
 }
 
 @media (max-width: 750px) {
+  .c-select-styled {
+    font-size: 14px !important;
+  }
+
   .info__block-menu-title {
     font-size: 14px;
   }
@@ -2125,6 +2133,18 @@ p {
 }
 
 @media (max-width: 450px) {
+  .c-select-styled {
+    font-size: 14px !important;
+  }
+
+  .c-select {
+    width: 125px !important;
+  }
+
+  .header__block-model-btn {
+    font-size: 15px;
+  }
+
   .sliderInfo .swiper-slide {
     height: 300px;
   }
@@ -2174,6 +2194,12 @@ p {
   }
 }
 
+@media (max-width: 410px) {
+  .header__block-model-hr {
+    width: 360px;
+  }
+}
+
 @media (max-width: 400px) {
   .sliderAdd .swiper-slide {
     margin: 5px 0 45px 0;
@@ -2187,19 +2213,19 @@ p {
 
 @media (max-height: 900px) {
   .header {
-    padding: 120px 0 0 0;
+    padding: 120px 0 30px 0;
   }
 }
 
 @media (max-height: 820px) {
   .header {
-    padding: 60px 0 0 0;
+    padding: 60px 0 30px 0;
   }
 }
 
 @media (max-height: 760px) {
   .header {
-    padding: 30px 0 0 0;
+    padding: 30px 0 30px 0;
   }
 
   .header__block-text {
