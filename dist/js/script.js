@@ -116,7 +116,26 @@ var collections_2 = new Swiper(".sliderCollections-2", {
     },
 });
 
-$('select#collections').each(function(){
+$('.collections__block-styled').on('click', function() {
+    $(this).toggleClass('c-active')
+    $('.collections__block-list').toggleClass('c-display')
+    $('.add__block-slider .swiper-control').toggleClass('c-display-none')
+});
+
+$('.collections__block-styled-1').on('click', function() {
+    $(this).toggleClass('c-active')
+    $('.collections__block-list-1').toggleClass('c-display')
+    $('.collections__block-slider-1 .swiper-control-1 .swiper-pagination').toggleClass('c-display-none')
+});
+
+$('.collections__block-styled-2').on('click', function() {
+    $(this).toggleClass('c-active')
+    $('.collections__block-list-2').toggleClass('c-display')
+    $('.collections__block-slider-2 .swiper-control-2 .swiper-pagination').toggleClass('c-display-none')
+});
+
+
+$('select#city').each(function(){
     var $this = $(this), numberOfOptions = $(this).children('option').length;
 
     $this.addClass('c-select-hidden'); 

@@ -3,6 +3,7 @@ function defaultTask(cd) {
     cd();
 } 
 // exports.default = defaultTask;
+
 //! вызов данной функции - gulp ----------------------------------------
 //! --------------------------------------------------------------------
 
@@ -26,7 +27,7 @@ let path = {
         html: [source_folder + "/*.html", "!" + source_folder + "/**/_*.html"],
         css: source_folder + "/scss/style.scss",
         js: source_folder + "/js/script.js",
-        img: source_folder + "/img/**/*.{jpg, png, svg, ico, webp}",
+        img: source_folder + "/img/**/*.{png, jpg, svg, ico, webp}",
         fonts: source_folder + "/fonts/*.ttf",
     },
     //! Путь для папки за слежкой файлов
@@ -90,7 +91,7 @@ function browserSync() {
 function html() {
     return src(path.src.html)                                           // файл html
         .pipe(fileinclude())                                            // подключений файлов через @@include
-        .pipe(webp_html())                                              // добавление webp формат
+        // .pipe(webp_html())                                              // добавление webp формат
         .pipe(dest(path.build.html))                                    // полученный файл идет в указанную папку 
         .pipe(browsersync.stream())                                     // слежка за файлами этой функции 
 }
@@ -113,7 +114,7 @@ function css() {
             cascade: true,                                              // каскад 
             grid: true                                                  // grid 
         }))
-        .pipe(webp_css())                                               // формат webp добавляется в css
+        // .pipe(webp_css())                                               // формат webp добавляется в css
         .pipe(dest(path.build.css))                                     // полученный файл идет в указанную папку 
         .pipe(clean_css())                                              // минимизация файла css 
         .pipe(
@@ -151,21 +152,21 @@ function js() {
 
 function images() {
     return src(path.src.img)                                            // файл image
-        .pipe(
-            webp({                                                      // добавление формата webp 
-                quality: 70                                             // процент качества 
-            })
-        )
-        .pipe(dest(path.build.img))                                     // полученный файл идет в указанную папку 
-        .pipe(src(path.src.img))                                        // файл image
-        .pipe( 
-            imagemin({                                                  // сжатие фотографии 
-                progressive: true,                                      // прогрессивный 
-                svgoPlugins: [{ removeViewBox: false }],                // плагин для svg
-                interlaced: true,                                       // переплетенный
-                optimizationLevel: 3                                    // оптимизация от  0 до 7
-            })
-        )
+        // .pipe(
+        //     webp({                                                      // добавление формата webp 
+        //         quality: 100                                             // процент качества 
+        //     })
+        // )
+        // .pipe(dest(path.build.img))                                     // полученный файл идет в указанную папку 
+        // .pipe(src(path.src.img))                                        // файл image
+        // .pipe( 
+        //     imagemin({                                                  // сжатие фотографии 
+        //         progressive: false,                                      // прогрессивный 
+        //         svgoPlugins: [{ removeViewBox: false }],                // плагин для svg
+        //         interlaced: true,                                       // переплетенный
+        //         optimizationLevel: 2                                    // оптимизация от  0 до 7
+        //     })
+        // )
         .pipe(dest(path.build.img))                                     // полученный файл идет в указанную папку 
         .pipe(browsersync.stream())                                     // слежка за файлами этой функции 
 }

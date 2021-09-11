@@ -19,6 +19,7 @@
 
 @import "fonts.scss";
 @import "index/style.scss";
+@import "catalog/style.scss";
 
 
 //! --------------------------------------------------------------------
@@ -34,7 +35,9 @@
     outline: none
 }
 body {
-    background: linear-gradient(190.79deg, #001857 16%, #000B29 84%);
+    background: url(../img/catalog/catalog-bg.png) no-repeat;
+    background-size: cover;
+    width: 100%;
 }
 a {
     text-decoration: none;
@@ -53,9 +56,19 @@ button {
     border: none;
     cursor: pointer;
 }
-.container {
+.containers {
     max-width: 1440px;
     padding: 0 165px;
     margin: 0 auto;
 }
-
+ol, ul {
+    padding-left: 0;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
