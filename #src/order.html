@@ -1,0 +1,37 @@
+@@include('components/_head.html')
+@@include('components/_header.html')
+
+
+<section class="ord-pay">
+    <div class="containers">
+        <div class="ord-pay__block">
+            <div class="ord-pay__block-data">
+                <div class="ord-pay__block-data-title">Оформление заказа</div>
+                <div class="ord-pay__block-data-question">Выберите, кто будет получать заказ ?</div>
+                <!-- <div class="ord-pay__block-data-delivery">
+                    <div class="ord-pay__block-data-me">
+                        <div class="ord-pay__block-data-me-title">Я</div>
+                        <div class="ord-pay__block-data-me-text">Заказ будет доставлен вам лично</div>
+                    </div>
+                    <div class="ord-pay__block-data-courier delivery-hover">
+                        <div class="ord-pay__block-data-courier-title">Получатель</div>
+                        <div class="ord-pay__block-data-courier-text">Заказ будет доставлен другому человеку</div>
+                    </div>
+                </div> -->
+                <div id='type'>
+                    <input type='radio' id='radio_1' name='type' value='1' />
+                    <input type='radio' id='radio_2' name='type' value='2' />
+                </div>
+                <div class="block-1"></div>
+                <div class="block-2 red"></div>
+            </div>
+            <div class="ord-pay__block-info">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@@include('components/_footer.html')
+@@include('components/_script.html')

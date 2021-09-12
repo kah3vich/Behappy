@@ -1,18 +1,344 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BEHAPPY</title>
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.min.css">
-</head>
-<body>
 
+    <header class="header">
+        <div class="containers">
+            <div class="menu">
+                <div class="containers">
+                    <div class="menu__block">
+                        <div class="menu__block-title">
+                            <a href="#">
+                                <div class="menu__block-title-phone">
+                                    @@include('../iconsprite/phone-menu.svg')
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="menu__block-title-logo">
+                                    <div class="menu__block-title-logo-item">
+                                        @@include('../iconsprite/logo.svg')
+                                    </div>
+                                    <div class="menu__block-title-logo-text">
+                                        Behappy
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="menu__block-title-close">
+                                    <div class="menu-close">
+                                        @@include('../iconsprite/close-menu.svg')
+                                    </div>
+                                    <p>Выход</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="menu__block-contact">
+                            <div class="menu__block-contact-fon">
+                                <div class="menu__block-contact-fon-black">
+                                    <img src="./img/catalog/rgb-circle.png" alt="">
+                                </div>
+                                <div class="menu__block-contact-fon-white">
+                                    <img src="./img/catalog/rgb-circle.png" alt="">
+                                </div>
+                                <div class="menu__block-contact-fon-text">Поменять цветовую тему сайта</div>
+                            </div>
+                            <ul class="menu__block-contact-social">
+                                <li class="menu__block-contact-social-instagram">
+                                    <a href="#">
+                                        <div class="menu__block-contact-social-bg">
+                                            @@include('../iconsprite/instagram.svg')
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="menu__block-contact-social-vk">
+                                    <a href="#">
+                                        <div class="menu__block-contact-social-bg">
+                                            @@include('../iconsprite/vk.svg')
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="menu__block-contact-social-viber">
+                                    <a href="#">
+                                        <div class="menu__block-contact-social-bg">
+                                            @@include('../iconsprite/viber.svg')
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="menu__block-contact-social-whatsapp">
+                                    <a href="#">
+                                        <div class="menu__block-contact-social-bg">
+                                            @@include('../iconsprite/whatsapp.svg')
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="menu__block-contact-social-telegram">
+                                    <a href="#">
+                                        <div class="menu__block-contact-social-bg">
+                                            @@include('../iconsprite/telegram.svg')
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="menu__block-catalog">
+                            <li class="menu__block-catalog-bouquet">
+                                <div class="menu__block-catalog-bouquet-1">
+                                    <div class="menu__block-catalog-bouquet-2">
+                                        <p>Конструктор букетов</p>
+                                        @@include('../iconsprite/bouquet-1.svg')
+                                        @@include('../iconsprite/bouquet-2.svg')
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__block-catalog-florist">
+                                <div class="menu__block-catalog-florist-1">
+                                    <div class="menu__block-catalog-florist-2">
+                                        <p>Букет на вкус флориста</p>
+                                        @@include('../iconsprite/florist.svg')
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__block-catalog-add">
+                                <div class="menu__block-catalog-add-1">
+                                    <div class="menu__block-catalog-add-2">
+                                        <p>Добавить к букету</p>
+                                        @@include('../iconsprite/add-1.svg')
+                                        @@include('../iconsprite/add-2.svg')
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__block-catalog-catalog">
+                                <div class="menu__block-catalog-catalog-1">
+                                    <div class="menu__block-catalog-catalog-2">
+                                        <p>Подборки</p>
+                                        @@include('../iconsprite/catalog.svg')
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__block-catalog-manager">
+                                <div class="menu__block-catalog-manager-1">
+                                    <div class="menu__block-catalog-manager-2">
+                                        <p>Подборки</p>
+                                        @@include('../iconsprite/manager.svg')
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__block-catalog-new">
+                                <div class="menu__block-catalog-new-1">
+                                    <div class="menu__block-catalog-new-2">
+                                        <p>Подборки</p>
+                                        @@include('../iconsprite/new.svg')
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__block-catalog-order">
+                                <div class="menu__block-catalog-order-1">
+                                    <div class="menu__block-catalog-order-2">
+                                        <p>Подборки</p>
+                                        @@include('../iconsprite/order.svg')
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__block-catalog-client">
+                                <div class="menu__block-catalog-client-1">
+                                    <div class="menu__block-catalog-client-2">
+                                        <p>Подборки</p>
+                                        @@include('../iconsprite/client.svg')
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__block-catalog-block">
+                                <div class="menu__block-catalog-block-1">
+                                    <div class="menu__block-catalog-block-2">
+                                        <p>Подборки</p>
+                                        @@include('../iconsprite/block.svg')
+                                    </div>
+                                </div>
+                            </li>
     
+                        </ul>
+                    </div>
+    
+                </div>
+    
+    
+            </div>
+            <div class="header__block">
+                <a href="index.html">
+                    <div class="header__block-logo">
+                        <div class="header__block-logo-item">
+                            @@include('../iconsprite/logo.svg')
+                        </div>
+                        <div class="header__block-logo-title">
+                            Behappy
+                        </div>
+                    </div>
+                </a>
+                <ul class="header__block-list">
+                    <li class="header__block-list-item">
+                        <div class="header__block-list-btn-g">
+                            <div class="header__block-list-btn-g-1">
+                                <div class="header__block-list-btn-g-2">
+                                    <select id="header" class="header__block-model-city">
+                                        <option value="Смотреть все" rel="icon-temperature">Москва</option>
+                                        <option value="Смотреть все">Пермь</option>
+                                        <option value="Смотреть все">Киров</option>
+                                    </select> 
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__block-list-item">
+                        <a href="">
+                            <div class="header__block-list-btn-y">
+                                <div class="header__block-list-btn-y-1">
+                                    <div class="header__block-list-btn-y-2">
+                                        <p>
+                                            Подборки
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="header__block-list-item">
+                            <div class="header__block-list-block">
+                                <a href="#">
+                                    <div class="header__block-list-block-lg">
+                                        <div class="header__block-list-block-lg-1">
+                                            <div class="header__block-list-block-lg-2">
+                                                <p>
+                                                    Б
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="header__block-list-block-o">
+                                        <div class="header__block-list-block-o-1">
+                                            <div class="header__block-list-block-o-2">
+                                                У
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="header__block-list-block-g">
+                                        <div class="header__block-list-block-g-1">
+                                            <div class="header__block-list-block-g-2">
+                                                К
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                    </li>
+                    <li class="header__block-list-item">
+                        <a href="">
+                            <div class="header__block-list-btn-b">
+                                <div class="header__block-list-btn-b-1">
+                                    <div class="header__block-list-btn-b-2">
+                                        <p>
+                                            Конструктор букета
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="header__block-list-item">
+                        <a href="">
+                            <div class="header__block-list-btn-p">
+                                <div class="header__block-list-btn-p-1">
+                                    <div class="header__block-list-btn-p-2">
+                                        <p>
+                                            Букет на вкус флориста
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="header__block-list-item">
+                        <a href="">
+                            <div class="header__block-list-btn-r">
+                                <div class="header__block-list-btn-r-1">
+                                    <div class="header__block-list-btn-r-2">
+                                        <p>
+                                            Срочный заказ
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="header__block-menu">
+                    <a href="#">
+                        <div class="header__block-menu-client">
+                            <div class="header__block-menu-client-1">
+                                <div class="header__block-menu-client-2">
+                                    <p>
+                                        А
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <ul class="header__block-menu-list">
+                        <li class="header__block-menu-list-phone">
+                            <a href="#">
+                                @@include('../iconsprite/phone-menu.svg')
+                            </a>
+                        </li>
+                        <li class="header__block-menu-list-search">
+                            <a href="#">
+                                @@include('../iconsprite/search-menu.svg')
+                            </a>
+                        </li>
+                        <li class="header__block-menu-list-item menu-open">
+                            <a href="#">
+                                <p>Меню</p>
+                                @@include('../iconsprite/open-menu.svg')
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__block-menu-contact">
+                        <li class="header__block-menu-contact-instagram">
+                            <a href="#">
+                                <div class="header__block-menu-contact-bg">
+                                    @@include('../iconsprite/instagram-menu.svg')
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header__block-menu-contact-vk">
+                            <a href="#">
+                                <div class="header__block-menu-contact-bg">
+                                    @@include('../iconsprite/vk-menu.svg')
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header__block-menu-contact-viber">
+                            <a href="#">
+                                <div class="header__block-menu-contact-bg">
+                                    @@include('../iconsprite/viber-menu.svg')
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header__block-menu-contact-whatsapp">
+                            <a href="#">
+                                <div class="header__block-menu-contact-bg">
+                                    @@include('../iconsprite/whatsapp-menu.svg')
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header__block-menu-contact-telegram">
+                            <a href="#">
+                                <div class="header__block-menu-contact-bg">
+                                    @@include('../iconsprite/telegram-menu.svg')
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>

@@ -18,8 +18,11 @@
 //! --------------------------------------------------------------------
 
 @import "fonts.scss";
+@import "header.scss";
+@import "footer.scss";
 @import "index/style.scss";
 @import "catalog/style.scss";
+@import "order/style.scss";
 
 
 //! --------------------------------------------------------------------
@@ -72,3 +75,4 @@ p {
     margin-top: 0;
     margin-bottom: 0;
 }
+

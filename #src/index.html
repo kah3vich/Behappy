@@ -1,43 +1,40 @@
-@@include('components/_header.html')
+@@include('components/_head.html')
 
-<header class="header">
+<header class="i-header">
     <div class="containers">
-        <div class="header__block">
-            <div class="header__block-title">
-                <div class="header__block-title-logo">
+        <div class="i-header__block">
+            <div class="i-header__block-title">
+                <div class="i-header__block-title-logo">
                     <a href="catalog.html">
                         @@include('iconsprite/logo.svg')
                     </a>
                 </div>
-                <div class="header__block-title-add">
+                <div class="i-header__block-title-add">
                     Удобный Мобильный сервис доставки сюрпризов и подарков
                 </div>
-                <div class="header__block-title-item">
+                <div class="i-header__block-title-item">
                     Behappy
                 </div>
             </div>
-            <div class="header__block-model">
-                <div class="header__block-model-container">
-                    <select id="city" class="header__block-model-city">
+            <div class="i-header__block-model">
+                <div class="i-header__block-model-container">
+                    <select id="city" class="i-header__block-model-city">
                         <option value="Смотреть все" rel="icon-temperature">Выберите город</option>
                         <option value="Смотреть все">Москва</option>
                         <option value="Смотреть все">Пермь</option>
                         <option value="Смотреть все">Киров</option>
                     </select> 
-                    <div class="header__block-model-search">
+                    <div class="i-header__block-model-search">
                         @@include('iconsprite/search.svg')
                     </div>
-                    <div class="header__block-model-vert"></div>
-                    <div class="header__block-model-calendar">
+                    <div class="i-header__block-model-vert"></div>
+                    <div class="i-header__block-model-calendar">
                         @@include('iconsprite/calendar.svg')
                     </div>
-                    <div class="header__block-model-item">
-                        <!-- Button trigger modal -->
-                        <button type="button" class="header__block-model-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="i-header__block-model-item">
+                        <button type="button" class="i-header__block-model-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Календарь скидок
                         </button>
-                        
-                        <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content hello">
@@ -47,13 +44,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="header__block-model-hr"></div>
+                <div class="i-header__block-model-hr"></div>
             </div>
-            <div class="header__block-text">
-                <div class="header__block-text-title">
+            <div class="i-header__block-text">
+                <div class="i-header__block-text-title">
                     О нас
                 </div>
-                <div class="header__block-text-add">
+                <div class="i-header__block-text-add">
                     Это быстрая и бесплатная доставка 
                     цветов и подарков в Твоём городе
                     <br><br>
@@ -72,4 +69,4 @@
     </div>
 </header>
 
-@@include('components/_footer.html')
+@@include('components/_script.html')
