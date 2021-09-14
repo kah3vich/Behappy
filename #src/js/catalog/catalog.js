@@ -1,3 +1,4 @@
+//! Слайдеры 
 
 var sliderCatalogInfo = new Swiper(".sliderCatalogInfo", {
     loop: true,
@@ -55,8 +56,6 @@ var swiper = new Swiper(".sliderCatalogAdd", {
         }
     },
 });
-
-
 
 var collections_1 = new Swiper(".sliderCatalogCollections-1", {
     loop: true,
@@ -116,6 +115,11 @@ var collections_2 = new Swiper(".sliderCatalogCollections-2", {
     },
 });
 
+//! --------------------------------------------------------------------------------------------
+
+
+//! События нажатия - открывающие дополнительные блоки 
+
 $('.cat-collections__block-styled').on('click', function() {
     $(this).toggleClass('c-active')
     $('.cat-collections__block-list').toggleClass('c-display')
@@ -133,3 +137,5 @@ $('.cat-collections__block-styled-2').on('click', function() {
     $('.cat-collections__block-list-2').toggleClass('c-display')
     $('.cat-collections__block-slider-2 .swiper-control-2 .swiper-pagination').toggleClass('c-display-none')
 });
+
+//! --------------------------------------------------------------------------------------------

@@ -1,3 +1,5 @@
+//! Выпадающий список выбора города 
+
 $('select#city').each(function(){
     var $this = $(this), numberOfOptions = $(this).children('option').length;
 
@@ -43,3 +45,5 @@ $('select#city').each(function(){
     });
 
 });
+
+//! --------------------------------------------------------------------------------------------

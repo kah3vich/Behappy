@@ -351,7 +351,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                width: 535px;
+                width: 540px;
                 margin: 90px 0 0 0;
                 &-name {
                     display: flex;
@@ -499,7 +499,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                width: 535px;
+                width: 540px;
                 margin: 30px 0 0 0;
                 &-names {
                     display: flex;
@@ -1648,23 +1648,6 @@
 }
 
 
-
-// .block-1 {
-//     width: 10px;
-//     height: 10px;
-//     background: gray;
-//     margin: 20px;
-// }
-// .block-2 {
-//     width: 10px;
-//     height: 10px;
-//     background: gray;
-//     margin: 20px;
-// }
-// .red {
-//     background: red;
-// }
-
 //! Радио кнопки - выбор доставки 
 
 .ord-pay__block-data-delivery {
@@ -1672,26 +1655,21 @@
     align-items: center;
     justify-content: space-between;
     width: 535px;
-  }
-  
-  .ord-pay__block-data-delivery .ord-pay__block-data-label input[type="radio"] {
+}
+.ord-pay__block-data-delivery .ord-pay__block-data-label input[type="radio"] {
     position: absolute;
     opacity: 0;
-  }
-  
-  .ord-pay__block-data-delivery .ord-pay__block-data-label {
+}
+.ord-pay__block-data-delivery .ord-pay__block-data-label {
     cursor: pointer;
-  }
-  
-  .ord-pay__block-data-delivery .ord-pay__block-data-label .ord-pay__block-data-content {
+}
+.ord-pay__block-data-delivery .ord-pay__block-data-label .ord-pay__block-data-content {
     display: flex;
     border-radius: 10px;
     transition: box-shadow 0.4s;
     position: relative;
-  }
-  
-
-  .ord-pay__block-data-delivery .ord-pay__block-data-label input[type="radio"]:checked + .ord-pay__block-data-content {
+}
+.ord-pay__block-data-delivery .ord-pay__block-data-label input[type="radio"]:checked + .ord-pay__block-data-content {
     transition: ease-in 0.3s;
     width: 255px;
     height: 95px;
@@ -1725,20 +1703,15 @@
     .ord-pay__block-data-courier {
         border: none;
     }
-  }
-  
-
-
- .ord-pay__block-data-call-no input[type=radio],
- .ord-pay__block-data-call-yes input[type=radio] {
+}
+.ord-pay__block-data-call-no input[type=radio],
+.ord-pay__block-data-call-yes input[type=radio] {
     position: absolute;
     visibility: hidden;
     width: 56px;
     height: 26px;
-  }
-  
-
-  input[type=radio]:checked ~ .ord-pay__block-data-call-check::before{
+}
+input[type=radio]:checked ~ .ord-pay__block-data-call-check::before{
     content: "";
     position: absolute;
     width: 12px;
@@ -1747,25 +1720,24 @@
     top: 4px;
     border-radius: 50%;
     background: #16B8C3;
-  }
-  
-  input[type=radio]:checked ~ label{
+}
+input[type=radio]:checked ~ label{
     color: #fff;
-  }
+}
+
+//! ------------------------------------------------------------------------------------
 
 
 //! Радио кнопки - выбора доставки ( в городе или нет ) 
 
 .ord-pay__block-data-where-no input[type=radio],
- .ord-pay__block-data-where-yes input[type=radio] {
+.ord-pay__block-data-where-yes input[type=radio] {
     position: absolute;
     visibility: hidden;
     width: 56px;
     height: 26px;
-  }
-  
-
-  input[type=radio]:checked ~ .ord-pay__block-data-where-check::before{
+}
+input[type=radio]:checked ~ .ord-pay__block-data-where-check::before{
     content: "";
     position: absolute;
     width: 12px;
@@ -1774,100 +1746,102 @@
     top: 4px;
     border-radius: 50%;
     background: #16B8C3;
-  }
+}
 
-  
+//! ------------------------------------------------------------------------------------
+
+
 //! Радио кнопки - выбора о получении фото
 
 .ord-pay__block-data-photo-no input[type=radio],
 .ord-pay__block-data-photo-yes input[type=radio] {
-   position: absolute;
-   visibility: hidden;
-   width: 56px;
-   height: 26px;
- }
- 
+    position: absolute;
+    visibility: hidden;
+    width: 56px;
+    height: 26px;
+}
+input[type=radio]:checked ~ .ord-pay__block-data-photo-check::before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 4px;
+    top: 4px;
+    border-radius: 50%;
+    background: #16B8C3;
+}
 
- input[type=radio]:checked ~ .ord-pay__block-data-photo-check::before{
-   content: "";
-   position: absolute;
-   width: 12px;
-   height: 12px;
-   left: 4px;
-   top: 4px;
-   border-radius: 50%;
-   background: #16B8C3;
- }
+//! ------------------------------------------------------------------------------------
+
 
 //! Радио кнопки - выбора о получении открытки 
 
 .ord-pay__block-data-postcard-no input[type=radio],
 .ord-pay__block-data-postcard-yes input[type=radio] {
-   position: absolute;
-   visibility: hidden;
-   width: 56px;
-   height: 26px;
- }
- 
+    position: absolute;
+    visibility: hidden;
+    width: 56px;
+    height: 26px;
+}
+input[type=radio]:checked ~ .ord-pay__block-data-postcard-check::before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 4px;
+    top: 4px;
+    border-radius: 50%;
+    background: #16B8C3;
+}
 
- input[type=radio]:checked ~ .ord-pay__block-data-postcard-check::before{
-   content: "";
-   position: absolute;
-   width: 12px;
-   height: 12px;
-   left: 4px;
-   top: 4px;
-   border-radius: 50%;
-   background: #16B8C3;
- }
+//! ------------------------------------------------------------------------------------
 
 
- //! Радио кнопки - выбора о использование баллов 
+//! Радио кнопки - выбора о использование баллов 
 
 .ord-pay__block-data-ball-no input[type=radio],
 .ord-pay__block-data-ball-yes input[type=radio] {
-   position: absolute;
-   visibility: hidden;
-   width: 56px;
-   height: 26px;
- }
- 
+    position: absolute;
+    visibility: hidden;
+    width: 56px;
+    height: 26px;
+}
+input[type=radio]:checked ~ .ord-pay__block-data-ball-check::before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 4px;
+    top: 4px;
+    border-radius: 50%;
+    background: #16B8C3;
+}
 
- input[type=radio]:checked ~ .ord-pay__block-data-ball-check::before{
-   content: "";
-   position: absolute;
-   width: 12px;
-   height: 12px;
-   left: 4px;
-   top: 4px;
-   border-radius: 50%;
-   background: #16B8C3;
- }
+//! ------------------------------------------------------------------------------------
 
- //! Радио кнопки - выбора о получение открытки 
+
+//! Радио кнопки - выбора о получение открытки 
 
 .ord-pay__block-data-postcards-no input[type=radio],
 .ord-pay__block-data-postcards-yes input[type=radio] {
-   position: absolute;
-   visibility: hidden;
-   width: 56px;
-   height: 26px;
- }
- 
-
- input[type=radio]:checked ~ .ord-pay__block-data-postcards-check::before{
-   content: "";
-   position: absolute;
-   width: 255px;
+    position: absolute;
+    visibility: hidden;
+    width: 56px;
+    height: 26px;
+}
+input[type=radio]:checked ~ .ord-pay__block-data-postcards-check::before{
+    content: "";
+    position: absolute;
+    width: 255px;
     height: 50px;
     background: conic-gradient(from 180deg at 50% 50%, #DCDCDC -35.51deg, #CCCCCC 10.17deg, #B6B6B6 44.5deg, #B8B8B8 123.75deg, #D1D1D1 171.3deg, #AAAAAA 188.73deg, #C4C4C4 224.01deg, #DCDCDC 324.49deg, #CCCCCC 370.17deg);
     box-shadow: 0px 0px 15px #C5C5C5;
     border-radius: 10px;
- }
- input[type=radio]:checked ~ .ord-pay__block-data-postcards-check {
-        border: none;
-  }
-  input[type=radio]:checked ~ .ord-pay__block-data-postcards-text  {
+}
+input[type=radio]:checked ~ .ord-pay__block-data-postcards-check {
+    border: none;
+}
+input[type=radio]:checked ~ .ord-pay__block-data-postcards-text  {
     color: #000;
     font-weight: bold;
 }
@@ -1894,29 +1868,30 @@ input[type=radio]:checked ~ .ord-pay__block-data-postcards-border  {
     }
 }
 
-  
+//! ------------------------------------------------------------------------------------
+
 
 //! Иконка календаря
 
-  input[type=date]::-webkit-calendar-picker-indicator {
+input[type=date]::-webkit-calendar-picker-indicator {
     opacity: 0;
     width: 50px;
     height: 50px;
     background-color: gray;
     z-index: 100;
-  }
+}
 
-  
+//! ------------------------------------------------------------------------------------
 
 
-  //! Выпадающий список - выбор города 
-  .ord-select-hidden {
+//! Выпадающий список - выбор города 
+
+.ord-select-hidden {
     display: none;
     visibility: hidden;
     padding-right: 10px;
-  }
-
-  .ord-select {
+}
+.ord-select {
     cursor: pointer;
     display: inline-block;
     position: relative;
@@ -1929,9 +1904,8 @@ input[type=radio]:checked ~ .ord-pay__block-data-postcards-border  {
     justify-content: center;
     text-align: center;
     background-color: transparent;
-  }
-  
-  .ord-select-styled {
+}
+.ord-select-styled {
     color: #fff;
     display: flex;
     align-items: center;
@@ -1951,13 +1925,9 @@ input[type=radio]:checked ~ .ord-pay__block-data-postcards-border  {
     font-weight: normal;
     font-size: 12px;
     letter-spacing: 0.5px;
-
     color: #B2B2B2;
-  }
-
-
-  
-  .ord-select-options {
+}
+.ord-select-options {
     display: none;
     position: absolute;
     top: 100%;
@@ -1969,40 +1939,39 @@ input[type=radio]:checked ~ .ord-pay__block-data-postcards-border  {
     list-style: none;
     background-color: transparent;
     margin-top: 3px;
-  }
-  .ord-select-options li {
-      background-color: transparent;
-        margin: 0;
-        width: 250px;
-        padding: 8px 2px 8px 6px;
-        text-align: left;
-        height: 35px;
-        font-family: FuturaBookC;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 17px;
-        color: #FFFFFF;
-        border-top: 1px solid transparent;
-        transition: all 0.15s ease-in;
-        background: #04133C;
-        border-bottom: 1px solid #002685;
-        border-radius: 5px;
-        box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
-        margin-bottom: 5px;
-        &:last-child {
-            margin-bottom: 0
-        }
-        
 }
-  .ord-select-options li:hover {
+.ord-select-options li {
+    background-color: transparent;
+    margin: 0;
+    width: 250px;
+    padding: 8px 2px 8px 6px;
+    text-align: left;
+    height: 35px;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 17px;
+    color: #FFFFFF;
+    border-top: 1px solid transparent;
+    transition: all 0.15s ease-in;
+    background: #04133C;
+    border-bottom: 1px solid #002685;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+    margin-bottom: 5px;
+    &:last-child {
+        margin-bottom: 0
+    }
+}
+.ord-select-options li:hover {
     color: #fff;
     background: #7D7D7D;
-  }
-  .ord-select-options li[rel="hide"] {
+}
+.ord-select-options li[rel="hide"] {
     display: none;
-  }
-  .ord-select-styled:after {
+}
+.ord-select-styled:after {
     content: "";
     width: 1px;
     height: 10px;
@@ -2012,8 +1981,8 @@ input[type=radio]:checked ~ .ord-pay__block-data-postcards-border  {
     right: 26px;
     transform: rotate(-45deg);
     transition: all 0.5s ease;
-  }
-  .ord-select-styled::before {
+}
+.ord-select-styled::before {
     content: "";
     width: 10px;
     height: 1px;
@@ -2023,29 +1992,29 @@ input[type=radio]:checked ~ .ord-pay__block-data-postcards-border  {
     right: 28px;
     transform: rotate(-45deg);
     transition: all 0.5s ease;
-  }
-  .ord-select-styled:active, .ord-select-styled.ord-active {
+}
+.ord-select-styled:active, .ord-select-styled.ord-active {
     background-color: transparent;
-  }
-  .ord-select-styled:active:after, .ord-select-styled.ord-active:after {
+}
+.ord-select-styled:active:after, .ord-select-styled.ord-active:after {
     transform: rotate(-135deg);
     transition: all 0.5s ease;
-  }
-  .ord-select-styled:active:before, .ord-select-styled.ord-active:before {
+}
+.ord-select-styled:active:before, .ord-select-styled.ord-active:before {
     transform: rotate(45deg);
     transition: all 0.5s ease;
-  }
+}
+
+//! ------------------------------------------------------------------------------------
 
 
-
-   //! Выпадающий список - выбор способа оплаты 
-   .pay-select-hidden {
+//! Выпадающий список - выбор способа оплаты 
+.pay-select-hidden {
     display: none;
     visibility: hidden;
     padding-right: 10px;
-  }
-
-  .pay-select {
+}
+.pay-select {
     cursor: pointer;
     display: inline-block;
     position: relative;
@@ -2058,9 +2027,8 @@ input[type=radio]:checked ~ .ord-pay__block-data-postcards-border  {
     justify-content: center;
     text-align: center;
     background-color: transparent;
-  }
-  
-  .pay-select-styled {
+}
+.pay-select-styled {
     color: #fff;
     display: flex;
     align-items: center;
@@ -2080,13 +2048,9 @@ input[type=radio]:checked ~ .ord-pay__block-data-postcards-border  {
     font-weight: normal;
     font-size: 12px;
     letter-spacing: 0.5px;
-
     color: #B2B2B2;
-  }
-
-
-  
-  .pay-select-options {
+}
+.pay-select-options {
     display: none;
     position: absolute;
     top: 100%;
@@ -2098,40 +2062,39 @@ input[type=radio]:checked ~ .ord-pay__block-data-postcards-border  {
     list-style: none;
     background-color: transparent;
     margin-top: 3px;
-  }
-  .pay-select-options li {
-      background-color: transparent;
-        margin: 0;
-        width: 345px;
-        padding: 8px 2px 8px 6px;
-        text-align: left;
-        height: 35px;
-        font-family: FuturaBookC;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 17px;
-        color: #FFFFFF;
-        border-top: 1px solid transparent;
-        transition: all 0.15s ease-in;
-        background: #04133C;
-        border-bottom: 1px solid #002685;
-        border-radius: 5px;
-        box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
-        margin-bottom: 5px;
-        &:last-child {
-            margin-bottom: 0
-        }
-        
 }
-  .pay-select-options li:hover {
+.pay-select-options li {
+    background-color: transparent;
+    margin: 0;
+    width: 345px;
+    padding: 8px 2px 8px 6px;
+    text-align: left;
+    height: 35px;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 17px;
+    color: #FFFFFF;
+    border-top: 1px solid transparent;
+    transition: all 0.15s ease-in;
+    background: #04133C;
+    border-bottom: 1px solid #002685;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+    margin-bottom: 5px;
+    &:last-child {
+        margin-bottom: 0
+    }
+}
+.pay-select-options li:hover {
     color: #fff;
     background: #7D7D7D;
-  }
-  .pay-select-options li[rel="hide"] {
+}
+.pay-select-options li[rel="hide"] {
     display: none;
-  }
-  .pay-select-styled:after {
+}
+.pay-select-styled:after {
     content: "";
     width: 1px;
     height: 10px;
@@ -2141,8 +2104,8 @@ input[type=radio]:checked ~ .ord-pay__block-data-postcards-border  {
     right: 26px;
     transform: rotate(-45deg);
     transition: all 0.5s ease;
-  }
-  .pay-select-styled::before {
+}
+.pay-select-styled::before {
     content: "";
     width: 10px;
     height: 1px;
@@ -2152,24 +2115,23 @@ input[type=radio]:checked ~ .ord-pay__block-data-postcards-border  {
     right: 28px;
     transform: rotate(-45deg);
     transition: all 0.5s ease;
-  }
-  .pay-select-styled:active, .pay-select-styled.pay-active {
+}
+.pay-select-styled:active, .pay-select-styled.pay-active {
     background-color: transparent;
-  }
-  .pay-select-styled:active:after, .pay-select-styled.pay-active:after {
+}
+.pay-select-styled:active:after, .pay-select-styled.pay-active:after {
     transform: rotate(-135deg);
     transition: all 0.5s ease;
-  }
-  .pay-select-styled:active:before, .pay-select-styled.pay-active:before {
+}
+.pay-select-styled:active:before, .pay-select-styled.pay-active:before {
     transform: rotate(45deg);
     transition: all 0.5s ease;
-  }
+}
 
-
+//! ------------------------------------------------------------------------------------
 
 
 //! Радио кнопки - выбор времени 
-
 
 .ord-pay__block-data-time-block {
     display: flex;
@@ -2191,16 +2153,13 @@ input[type=radio]:checked ~ .ord-pay__block-data-postcards-border  {
         border-radius: 5px;
     }
 }
-
-
 .ord-pay__block-data-time-block input[type=radio] {
     position: absolute;
     visibility: hidden;
     width: 56px;
     height: 26px;
-  }
-
-  input[type=radio]:checked ~ .ord-pay__block-data-time-check {
+}
+input[type=radio]:checked ~ .ord-pay__block-data-time-check {
     width: 160px;
     height: 50px;
     border: none;
@@ -2210,17 +2169,17 @@ input[type=radio]:checked ~ .ord-pay__block-data-postcards-border  {
     & .ord-pay__block-data-time-title {
         color: #000;
     }
-  }
+}
     input[type=radio]:checked ~ .ord-pay__block-data-time-text {
         color: #000;
     }
-  .ord-pay__block-data-time-1,
-  .ord-pay__block-data-time-2,
-  .ord-pay__block-data-time-3,
-  .ord-pay__block-data-time-4 {
-      position: relative;
-  }
-  .ord-pay__block-data-time-text {
+.ord-pay__block-data-time-1,
+.ord-pay__block-data-time-2,
+.ord-pay__block-data-time-3,
+.ord-pay__block-data-time-4 {
+    position: relative;
+}
+.ord-pay__block-data-time-text {
     position: absolute;
     top: 15px;
     left: 46px;
@@ -2231,13 +2190,13 @@ input[type=radio]:checked ~ .ord-pay__block-data-postcards-border  {
     line-height: 180%;
     letter-spacing: 0.5px;
     color: #B2B2B2;
-  }
+}
 
+//! ------------------------------------------------------------------------------------
 
 
 //! Checkbox для формы 
 
-/* Checkbox */
 .ord-pay__block-data-card-form-terms-checkbox {
     position: relative;
     margin-bottom: 1rem;
@@ -2252,21 +2211,17 @@ input[type=radio]:checked ~ .ord-pay__block-data-postcards-border  {
         margin: 1px 0 0 0;
     }
 }
-
 .ord-pay__block-data-card-form-terms-checkbox__input {
     -webkit-appearance: none;
     appearance: none;
     position: absolute;
 }
-
 .ord-pay__block-data-card-form-terms-checkbox__label {
     padding-left: 25px;
-
     font-size: 1rem;
     color: #444;
     cursor: pointer;
 }
-
 .ord-pay__block-data-card-form-terms-checkbox__label:before {
     content: "";
     display: block;
@@ -2280,7 +2235,6 @@ input[type=radio]:checked ~ .ord-pay__block-data-postcards-border  {
     background-color: transparent;
     border-radius: 50%;
 }
-
 .ord-pay__block-data-card-form-terms-checkbox__label:after {
     content: "";
     display: block;
@@ -2293,20 +2247,19 @@ input[type=radio]:checked ~ .ord-pay__block-data-postcards-border  {
     left: 4px;
     z-index: 2;
 }
-
 .ord-pay__block-data-card-form-terms-checkbox__input:checked + .ord-pay__block-data-card-form-terms-checkbox__label:before {
     
 }
-
 .ord-pay__block-data-card-form-terms-checkbox__input:checked + .ord-pay__block-data-card-form-terms-checkbox__label:after {
     opacity: 1;
     background: #16B8C3;
 }
 
+//! ------------------------------------------------------------------------------------
+
 
 //! Checkbox для условий 
 
-/* Checkbox */
 .ord-pay__block-data-card-conditions-checkbox {
     position: relative;
     margin-bottom: 1rem;
@@ -2320,20 +2273,17 @@ input[type=radio]:checked ~ .ord-pay__block-data-postcards-border  {
         color: #FFFFFF;
     }
 }
-
 .ord-pay__block-data-card-conditions-checkbox__input {
     -webkit-appearance: none;
     appearance: none;
     position: absolute;
 }
-
 .ord-pay__block-data-card-conditions-checkbox__label {
     padding-left: 40px;
     font-size: 1rem;
     color: #444;
     cursor: pointer;
 }
-
 .ord-pay__block-data-card-conditions-checkbox__label:before {
     content: "";
     display: block;
@@ -2347,7 +2297,6 @@ input[type=radio]:checked ~ .ord-pay__block-data-postcards-border  {
     background-color: transparent;
     border-radius: 50%;
 }
-
 .ord-pay__block-data-card-conditions-checkbox__label:after {
     content: "";
     display: block;
@@ -2360,17 +2309,180 @@ input[type=radio]:checked ~ .ord-pay__block-data-postcards-border  {
     left: 5px;
     z-index: 2;
 }
-
 .ord-pay__block-data-card-conditions-checkbox__input:checked + .ord-pay__block-data-card-conditions-checkbox__label:before {
     
 }
-
 .ord-pay__block-data-card-conditions-checkbox__input:checked + .ord-pay__block-data-card-conditions-checkbox__label:after {
     opacity: 1;
     background: #16B8C3;
 }
-
-
 .ord-pay-mt {
     margin: 60px 0 0 0 !important;
 }
+
+//! ------------------------------------------------------------------------------------
+
+
+//! Модальное окно заказа
+
+.order-model {
+    width: 540px;
+    height: 807px;
+    background: #001C68;
+    box-shadow: 0px 10px 17px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 46px 110px;
+        &-title {
+            font-family: Circe;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 44px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        &-text {
+            font-family: FuturaBookC;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 125%;
+            text-align: center;
+            letter-spacing: 0.5px;
+            color: #FFFFFF;
+            margin-top: 17px;
+        }
+        &-number {
+            font-family: Circe;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 44px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-top: 27px;
+        }
+        &-add {
+            font-family: Circe;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 122%;
+            letter-spacing: 0.5px;
+            color: #FFFFFF;
+            margin-top: 39px;
+        }
+        &-km {
+            width: 320px;
+            height: 50px;
+            border: 1px solid #16B8C3;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 18px;
+            font-family: Circe;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 122%;
+            letter-spacing: 0.5px;
+            color: #fff;
+            background: transparent;
+            padding: 16px 35px;
+            &::placeholder {
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 122%;
+                letter-spacing: 0.5px;
+                color: #BCBCBC;
+            }
+        }
+        &-map {
+            width: 320px;
+            height: 184px;
+            background: #01195A;
+            border: 1px solid #16B8C3;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            & p {
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 30px;
+                line-height: 44px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+        &-btn {
+            margin-top: 50px;
+            width: 319px;
+            height: 50px;
+            background: conic-gradient(from 180deg at 50% 50%, #DCDCDC -35.51deg, #CCCCCC 10.17deg, #B6B6B6 44.5deg, #B8B8B8 123.75deg, #D1D1D1 171.3deg, #AAAAAA 188.73deg, #C4C4C4 224.01deg, #DCDCDC 324.49deg, #CCCCCC 370.17deg);
+            box-shadow: 0px 0px 15px #C5C5C5;
+            border-radius: 10px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            & a {
+                font-family: Circe;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 22px;
+                text-align: center;
+                color: #141651;
+                text-shadow: 0px 0px 10px rgba(46, 46, 46, 0.5);
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 4px;
+                left: 4px;
+                width: 306.49px;
+                height: 41px;
+                border: 0.5px solid #C6C6C6;
+                border-radius: 10px;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                top: 8px;
+                left: 8px;
+                width: 296.48px;
+                height: 33px;
+                border: 0.5px solid #C6C6C6;
+                border-radius: 10px;
+            }
+        }
+        &-link {
+            margin: 30px 0 0 0;
+            & a {
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 122%;
+                text-align: center;
+                letter-spacing: 0.5px;
+                text-decoration-line: underline;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+//! ------------------------------------------------------------------------------------

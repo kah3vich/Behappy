@@ -1,4 +1,4 @@
-
+//! События нажатие - выбор доставки 
 
 $('#pickup').on('click', function() {
     $('.ord-pay__block-data-calls').removeClass('display-f')
@@ -27,6 +27,10 @@ $('#delivery').on('click', function() {
     $('.ord-pay__block-data-ball').addClass('display-n')
 });
 
+//! --------------------------------------------------------------------------------------------
+
+
+//! Выпадающий список - выбора города
 
 $('select#ord').each(function(){
     var $this = $(this), numberOfOptions = $(this).children('option').length;
@@ -74,6 +78,11 @@ $('select#ord').each(function(){
 
 });
 
+//! --------------------------------------------------------------------------------------------
+
+
+//! Выпадающий список - способы оплаты 
+
 $('select#pay').each(function(){
     var $this = $(this), numberOfOptions = $(this).children('option').length;
 
@@ -119,3 +128,5 @@ $('select#pay').each(function(){
     });
 
 });
+
+//! --------------------------------------------------------------------------------------------

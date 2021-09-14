@@ -21,6 +21,7 @@ let path = {
         js: project_folder + "/js/",
         img: project_folder + "/img/",
         fonts: project_folder + "/fonts/",
+        icon: project_folder + "/svg/",
     },
     //! Путь для папки с исходной кодом
     src: {
@@ -29,6 +30,7 @@ let path = {
         js: source_folder + "/js/script.js",
         img: source_folder + "/img/**/*.{png, jpg, svg, ico, webp}",
         fonts: source_folder + "/fonts/*.ttf",
+        icon: source_folder + "/iconsprite/*.svg",
     },
     //! Путь для папки за слежкой файлов
     watch: {
@@ -36,6 +38,7 @@ let path = {
         css: source_folder + "/scss/**/*.scss",
         js: source_folder + "/js/**/*.js",
         img: source_folder + "/img/**/*.{jpg, png, svg, ico, webp}",
+        icon: source_folder + "/iconsprite/*.svg",
     },
     //! Путь папки, которая будет удаляться через функцию
     clean: "./" + project_folder + "/"
@@ -171,6 +174,12 @@ function images() {
         .pipe(browsersync.stream())                                     // слежка за файлами этой функции 
 }
 
+function svg() {
+    return src(path.src.icon)                                            // файл image
+        .pipe(dest(path.build.icon))                                     // полученный файл идет в указанную папку                                    // слежка за файлами этой функции 
+        .pipe(browsersync.stream()) 
+}
+
 
 //! --------------------------------------------------------------------
 //! Fonts функция для стилей css ---------------------------------------
@@ -209,7 +218,8 @@ function watchFiles() {
     gulp.watch([path.watch.html], html);                                // слежка за файлами html
     gulp.watch([path.watch.css], css);                                  // слежка за файлами scss
     gulp.watch([path.watch.js], js);                                    // слежка за файлами js
-    gulp.watch([path.watch.img], images);                               // слежка за файлами image 
+    gulp.watch([path.watch.img], images);    
+    gulp.watch([path.watch.icon], svg);                            // слежка за файлами image 
 }
 
 
@@ -273,7 +283,7 @@ function clean() {
 //! --------------------------------------------------------------------
 
 let build = gulp.series(clean,                                          // удаление папки - dist 
-            gulp.parallel(js, css, html, images, fonts), fontsStyle);   // сборка всех файлов 
+            gulp.parallel(js, css, html, images, fonts, svg), fontsStyle);   // сборка всех файлов 
 let watch = gulp.parallel(build, watchFiles, browserSync);              // сборка -> слежка за изменениями -> локальный сервер 
 
 
@@ -284,7 +294,8 @@ let watch = gulp.parallel(build, watchFiles, browserSync);              // сб�
 exports.fontsStyle = fontsStyle;                                        // подключение шрифтов в css 
 exports.fonts = fonts;                                                  // преобразование шрифтов 
 exports.images = images;                                                // сжатие фотографий 
-exports.js = js;                                                        // обработка и минимизация файлов js 
+exports.js = js;  
+exports.svg = svg                                                      // обработка и минимизация файлов js 
 exports.css = css;                                                      // обработка и минимизация файлов sccs в css 
 exports.html = html;                                                    // обработка и объединение файлов html
 exports.build = build;                                                  // сборка всех файлов 

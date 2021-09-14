@@ -1,3 +1,5 @@
+//! Выпадающий список - сортировка 
+
 $('select#sort').each(function(){
     var $this = $(this), numberOfOptions = $(this).children('option').length;
 
@@ -44,7 +46,10 @@ $('select#sort').each(function(){
 
 });
 
+//! --------------------------------------------------------------------------------------------
 
+
+//! Открытие и закрытие дополнительного каталога новостей 
 
 $('.new-content__block-next').on('click', function() {
     $('.new-content__block-table-add').removeClass('display-n')
@@ -56,3 +61,5 @@ $('.new-content__block-prev').on('click', function() {
     $('.new-content__block-next').removeClass('display-n')
     $('.new-content__block-prev').addClass('display-n')
 }); 
+
+//! --------------------------------------------------------------------------------------------

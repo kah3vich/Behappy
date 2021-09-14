@@ -115,7 +115,7 @@
                             <li class="menu__block-catalog-manager">
                                 <div class="menu__block-catalog-manager-1">
                                     <div class="menu__block-catalog-manager-2">
-                                        <p>Подборки</p>
+                                        <p>Благодарность менеджеру</p>
                                         @@include('../iconsprite/manager.svg')
                                     </div>
                                 </div>
@@ -123,7 +123,7 @@
                             <li class="menu__block-catalog-new">
                                 <div class="menu__block-catalog-new-1">
                                     <div class="menu__block-catalog-new-2">
-                                        <p>Подборки</p>
+                                        <p>Новости и акции</p>
                                         @@include('../iconsprite/new.svg')
                                     </div>
                                 </div>
@@ -131,7 +131,7 @@
                             <li class="menu__block-catalog-order">
                                 <div class="menu__block-catalog-order-1">
                                     <div class="menu__block-catalog-order-2">
-                                        <p>Подборки</p>
+                                        <p>Быстрый заказ</p>
                                         @@include('../iconsprite/order.svg')
                                     </div>
                                 </div>
@@ -139,7 +139,7 @@
                             <li class="menu__block-catalog-client">
                                 <div class="menu__block-catalog-client-1">
                                     <div class="menu__block-catalog-client-2">
-                                        <p>Подборки</p>
+                                        <p>Личный кабинет</p>
                                         @@include('../iconsprite/client.svg')
                                     </div>
                                 </div>
@@ -147,18 +147,14 @@
                             <li class="menu__block-catalog-block">
                                 <div class="menu__block-catalog-block-1">
                                     <div class="menu__block-catalog-block-2">
-                                        <p>Подборки</p>
+                                        <p>Цветочная подписка</p>
                                         @@include('../iconsprite/block.svg')
                                     </div>
                                 </div>
                             </li>
-    
                         </ul>
                     </div>
-    
                 </div>
-    
-    
             </div>
             <div class="header__block">
                 <a href="index.html">
@@ -342,3 +338,81 @@
             </div>
         </div>
     </header>
+    <section class="media-header">
+        <div class="media-header__block">
+            <div class="media-header__block-client">
+                <div class="media-header__block-client-img">
+                    <img src="./img/logo.png" alt="logo">
+                    <div class="media-header__block-client-img-title">Behappy</div>
+                </div>
+                <div class="media-header__block-client-select">
+                    <select id="media-city" class="media-header__block-client-select-city">
+                        <option value="Москва" rel="icon-temperature">Москва</option>
+                        <option value="Пермь">Пермь</option>
+                        <option value="Киров">Киров</option>
+                    </select> 
+                </div>
+                <div class="media-header__block-client-search">
+                    @@include('../iconsprite/media-search.svg')
+                </div>
+                <div class="media-header__block-client-shopping">
+                    @@include('../iconsprite/shopping-media.svg')
+                </div>
+                <div class="media-header__block-client-account">
+                    @@include('../iconsprite/client-media.svg')
+                </div>
+                <div class="media-header__block-client-menu menu-open">
+                    @@include('../iconsprite/menu-media.svg')
+                </div>
+            </div>
+            <div class="media-header__block-catalog">
+                <div class="media-header__block-catalog-constructor"><a href="#">Конструтор букетов</a></div>
+                <div class="media-header__block-catalog-order"><a href="#">Срочный заказ</p></div>
+                <div class="media-header__block-catalog-florist"><a href="#">Букет на вкус флориста</a></div>
+            </div>
+            <ul class="media-header__block-contact">
+                <li class="media-header__block-contact-instagram">
+                    <a href="#">
+                        <div class="media-header__block-contact-bg">
+                            @@include('../iconsprite/instagram-menu.svg')
+                        </div>
+                    </a>
+                </li>
+                <li class="media-header__block-contact-vk">
+                    <a href="#">
+                        <div class="media-header__block-contact-bg">
+                            @@include('../iconsprite/vk-menu.svg')
+                        </div>
+                    </a>
+                </li>
+                <li class="media-header__block-contact-viber">
+                    <a href="#">
+                        <div class="media-header__block-contact-bg">
+                            @@include('../iconsprite/viber-menu.svg')
+                        </div>
+                    </a>
+                </li>
+                <li class="media-header__block-contact-whatsapp">
+                    <a href="#">
+                        <div class="media-header__block-contact-bg">
+                            @@include('../iconsprite/whatsapp-menu.svg')
+                        </div>
+                    </a>
+                </li>
+                <li class="media-header__block-contact-telegram">
+                    <a href="#">
+                        <div class="media-header__block-contact-bg">
+                            @@include('../iconsprite/telegram-menu.svg')
+                        </div>
+                    </a>
+                </li>
+                <li class="media-header__block-contact-catalog">
+                    <select id="media-catalog" class="media-header__block-client-select-city">
+                        <option value="Подборки" rel="icon-temperature">Подборки</option>
+                        <option value="Подборки">Подборки</option>
+                        <option value="Подборки">Подборки</option>
+                    </select> 
+                </li>
+            </ul>
+        </div>
+    </section>

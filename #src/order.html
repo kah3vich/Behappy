@@ -281,11 +281,26 @@
                         </div>
                     </div>
                 </div>
-                <button class="ord-pay__block-data-btn">
-                    <a href="#">
-                        Заказать
-                    </a>
                 </button>
+                <button type="button" class="ord-pay__block-data-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Заказать
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content order-model">
+                            <div class="order-model__block">
+                                <div class="order-model__block-title">Спасибо за заказ!</div>
+                                <div class="order-model__block-text">Мы благодарны что вы выбрали нашу платформу. Просим оплатить доставку за город</div>
+                                <div class="order-model__block-number">№ 144 - 234 -4567</div>
+                                <div class="order-model__block-add">Введите кол-во километров</div>
+                                <input type="text" class="order-model__block-km" placeholder="приблизительное кол-во километров">
+                                <div class="order-model__block-map"><p>Карта яндекс</p></div>
+                                <div class="order-model__block-btn"><a href="#">Оплатить</a></div>
+                                <div class="order-model__block-link"><a href="#">Как осуществить оплату при заказе за город ?</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
             </div>
             <div class="ord-pay__block-info">
