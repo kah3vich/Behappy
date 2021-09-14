@@ -1,21 +1,123 @@
 
-$('#radio_1').on('click', function() {
-    if($("#radio_1").attr('checked', 'checked')) {
-        $("#radio_1").addClass('red')
-        if($('.block-2').hasClass('red')) {
-            $('.block-2').removeClass('red')
-            $('.block-1').addClass('red')
-        }
-    } 
+
+$('#pickup').on('click', function() {
+    $('.ord-pay__block-data-calls').removeClass('display-f')
+    $('.ord-pay__block-data-calls').addClass('display-n')
+    $('.ord-pay__block-data-call').removeClass('display-n')
+    $('.ord-pay__block-data-call').addClass('display-f')
+    $('.ord-pay__block-data-address').removeClass('ord-pay-mt')
+    $('.ord-pay__block-data-address-street').removeClass('display-n')
+    $('.ord-pay__block-data-address-home').removeClass('display-n')
+    $('.ord-pay__block-data-address-porch').removeClass('display-n')
+    $('.ord-pay__block-data-address-floor').removeClass('display-n')
+    $('.ord-pay__block-data-address-apartment').removeClass('display-n')
+    $('.ord-pay__block-data-ball').removeClass('display-n')
 });
-$('#radio_2').on('click', function() {
-    if($("#radio_2").attr('checked', 'checked')) {
-    $("#radio_2").addClass('red')
-        if($('.block-1').hasClass('red')) {
-            $('.block-1').removeClass('red')
-            $('.block-2').addClass('red')
-        }
-    } 
+$('#delivery').on('click', function() {
+    $('.ord-pay__block-data-calls').removeClass('display-n')
+    $('.ord-pay__block-data-calls').addClass('display-f')
+    $('.ord-pay__block-data-call').addClass('display-n')
+    $('.ord-pay__block-data-call').removeClass('display-f')
+    $('.ord-pay__block-data-address').addClass('ord-pay-mt')
+    $('.ord-pay__block-data-address-street').addClass('display-n')
+    $('.ord-pay__block-data-address-home').addClass('display-n')
+    $('.ord-pay__block-data-address-porch').addClass('display-n')
+    $('.ord-pay__block-data-address-floor').addClass('display-n')
+    $('.ord-pay__block-data-address-apartment').addClass('display-n')
+    $('.ord-pay__block-data-ball').addClass('display-n')
+});
+
+
+$('select#ord').each(function(){
+    var $this = $(this), numberOfOptions = $(this).children('option').length;
+
+    $this.addClass('ord-select-hidden'); 
+    $this.wrap('<div class="ord-select"></div>');
+    $this.after('<div class="ord-select-styled"></div>');
+
+    var $styledSelect = $this.next('div.ord-select-styled');
+    $styledSelect.text($this.children('option').eq(0).text());
+
+    var $list = $('<ul />', {
+        'class': 'ord-select-options'
+    }).insertAfter($styledSelect);
+
+    for (var i = 0; i < numberOfOptions; i++) {
+        $('<li />', {
+            text: $this.children('option').eq(i).text(),
+            rel: $this.children('option').eq(i).val()
+        }).appendTo($list);
+    }
+
+    var $listItems = $list.children('li');
+
+    $styledSelect.click(function(e) {
+        e.stopPropagation();
+        $('div.ord-select-styled.ord-active').not(this).each(function(){
+            $(this).removeClass('ord-active').next('ul.ord-select-options').hide();
+        });
+        $(this).toggleClass('ord-active').next('ul.ord-select-options').toggle();
+    });
+
+    $listItems.click(function(e) {
+        e.stopPropagation();
+        $styledSelect.text($(this).text()).removeClass('ord-active');
+        $this.val($(this).attr('rel'));
+        $list.hide();
+        //console.log($this.val());
+    });
+
+    $(document).click(function() {
+        $styledSelect.removeClass('ord-active');
+        $list.hide();
+    });
+
+});
+
+$('select#pay').each(function(){
+    var $this = $(this), numberOfOptions = $(this).children('option').length;
+
+    $this.addClass('pay-select-hidden'); 
+    $this.wrap('<div class="pay-select"></div>');
+    $this.after('<div class="pay-select-styled"></div>');
+
+    var $styledSelect = $this.next('div.pay-select-styled');
+    $styledSelect.text($this.children('option').eq(0).text());
+
+    var $list = $('<ul />', {
+        'class': 'pay-select-options'
+    }).insertAfter($styledSelect);
+
+    for (var i = 0; i < numberOfOptions; i++) {
+        $('<li />', {
+            text: $this.children('option').eq(i).text(),
+            rel: $this.children('option').eq(i).val()
+        }).appendTo($list);
+    }
+
+    var $listItems = $list.children('li');
+
+    $styledSelect.click(function(e) {
+        e.stopPropagation();
+        $('div.pay-select-styled.pay-active').not(this).each(function(){
+            $(this).removeClass('pay-active').next('ul.pay-select-options').hide();
+        });
+        $(this).toggleClass('pay-active').next('ul.pay-select-options').toggle();
+    });
+
+    $listItems.click(function(e) {
+        e.stopPropagation();
+        $styledSelect.text($(this).text()).removeClass('pay-active');
+        $this.val($(this).attr('rel'));
+        $list.hide();
+        //console.log($this.val());
+    });
+
+    $(document).click(function() {
+        $styledSelect.removeClass('pay-active');
+        $list.hide();
+    });
+
 });
 $('select#city').each(function(){
     var $this = $(this), numberOfOptions = $(this).children('option').length;
@@ -262,4 +364,62 @@ $('.cat-collections__block-styled-2').on('click', function() {
     $('.cat-collections__block-list-2').toggleClass('c-display')
     $('.cat-collections__block-slider-2 .swiper-control-2 .swiper-pagination').toggleClass('c-display-none')
 });
+$('select#sort').each(function(){
+    var $this = $(this), numberOfOptions = $(this).children('option').length;
+
+    $this.addClass('sort-select-hidden'); 
+    $this.wrap('<div class="sort-select"></div>');
+    $this.after('<div class="sort-select-styled"></div>');
+
+    var $styledSelect = $this.next('div.sort-select-styled');
+    $styledSelect.text($this.children('option').eq(0).text());
+
+    var $list = $('<ul />', {
+        'class': 'sort-select-options'
+    }).insertAfter($styledSelect);
+
+    for (var i = 0; i < numberOfOptions; i++) {
+        $('<li />', {
+            text: $this.children('option').eq(i).text(),
+            rel: $this.children('option').eq(i).val()
+        }).appendTo($list);
+    }
+
+    var $listItems = $list.children('li');
+
+    $styledSelect.click(function(e) {
+        e.stopPropagation();
+        $('div.sort-select-styled.sort-active').not(this).each(function(){
+            $(this).removeClass('sort-active').next('ul.sort-select-options').hide();
+        });
+        $(this).toggleClass('sort-active').next('ul.sort-select-options').toggle();
+    });
+
+    $listItems.click(function(e) {
+        e.stopPropagation();
+        $styledSelect.text($(this).text()).removeClass('sort-active');
+        $this.val($(this).attr('rel'));
+        $list.hide();
+        //console.log($this.val());
+    });
+
+    $(document).click(function() {
+        $styledSelect.removeClass('sort-active');
+        $list.hide();
+    });
+
+});
+
+
+
+$('.new-content__block-next').on('click', function() {
+    $('.new-content__block-table-add').removeClass('display-n')
+    $('.new-content__block-next').addClass('display-n')
+    $('.new-content__block-prev').removeClass('display-n')
+}); 
+$('.new-content__block-prev').on('click', function() {
+    $('.new-content__block-table-add').addClass('display-n')
+    $('.new-content__block-next').removeClass('display-n')
+    $('.new-content__block-prev').addClass('display-n')
+}); 
 

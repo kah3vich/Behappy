@@ -332,8 +332,8 @@
     height: 13px;
     border-right: 2px solid #bbbbbb;
     position: absolute;
-    top: 1.5px;
-    right: 1.8px;
+    top: 2px;
+    right: 2px;
     transform: rotate(-45deg);
     transition: all 0.5s ease;
   }
@@ -345,7 +345,7 @@
     height: 1px;
     border-top: 2px solid #bbbbbb;
     position: absolute;
-    top: 7px;
+    top: 8px;
     right: 5px;
     transform: rotate(-45deg);
     transition: all 0.5s ease;
@@ -365,7 +365,6 @@
   }
   .cat-collections__block-styled:active:after, .cat-collections__block-styled.c-active:after {
     
-    right: 2.1px;
 
     transform: rotate(45deg);
     transition: all 0.5s ease;

@@ -295,6 +295,10 @@
         width: 150px;
         height: 150px;
     }
+    .footer__block-media-logo-img img {
+        width: 100%;
+        height: 100%;
+    }
 }
 @media (max-width: 450px) {
     .sliderInfo .swiper-slide {
