@@ -1,3 +1,30 @@
+@media (max-height: 500px) {
+    .menu__block-catalog {
+        padding: 30px 0 0 0;
+    }
+    .menu__block-contact {
+        margin: 15px 0 0 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1440px) {
     .menu__block-catalog {
         padding: 54px 0px 0 0;
@@ -671,4 +698,11 @@
 }
 @media (max-width: 400px) {
 
+}
+
+
+@media (max-width: 1050px) and (max-height: 500px) {
+    .menu__block-catalog {
+        gap: 10px 23px;
+    }
 }
