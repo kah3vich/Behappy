@@ -1,0 +1,61 @@
+@media (max-width: 1350px) {
+    .dnew-content__block-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .dnew-content__block-text {
+        width: 100%;
+    }
+    .dnew-content__block-table {
+        width: 100%;
+    }
+    .dnew-content__block-tables-item {
+        width: 100%;
+        padding: 43px 75px 43px 18px;
+    }
+}   
+@media (max-width: 1320px) {
+    .dnew-message__block-input-img {
+        width: 48px;
+        height: 48px;
+        background: #fff;
+        padding: 0 48px 0 0;
+        margin: 0 24px 0 0;
+        border-radius: 50%;
+    }
+    .dnew-message__block-input-wrapper {
+        width: 100%;
+    }
+    .dnew-message__block-input-textarea {
+        width: 100%;
+    }
+    .dnew-message__block-input {
+        width: 100%;
+    }
+    .dnew-message__block-list {
+        width: 100%;
+    }
+    .dnew-message__block-list-text {
+        width: 100%;
+    }
+}
+@media (max-width: 800px) {
+    .dnew-content__block-tables-item {
+        width: 100%;
+        padding: 43px 18px;
+    }
+}
+@media (max-width: 500px) {
+    .dnew-message__block-input-textarea {
+        padding: 12px 16px;
+    }
+    .dnew-content__block-tables {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .dnew-message__block-input-img {
+        display: none;
+    }
+    .dnew-message__block-input-btn {
+        margin: 45px 0 0 0;
+    }
+}

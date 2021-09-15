@@ -1,0 +1,135 @@
+@media (max-width: 1250px) {
+    .ord-pay__block {
+        flex-direction: column;
+    }
+    .ord-pay__block-info {
+        margin: 60px 0 20px  0;
+    }
+    .ord-pay__block-info-card {
+        width: 350px;
+        justify-content: space-between;
+    }
+    .ord-pay__block-info-card-add {
+        margin: 0 20px 0 0;
+    }
+    .ord-pay__block-info-price {
+        width: 350px;
+    }
+    .ord-pay__block-info-price-delivery {
+        width: 100%;
+    }
+    .ord-pay__block-info-price-balls {
+        width: 100%;
+    }
+    .ord-pay__block-info-price-total {
+        width: 100%;
+    }
+}
+@media (max-width: 630px) {
+    .ord-pay__block-data-contact {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .ord-pay__block-data-contact-phone {
+        margin: 30px 0 0 0;
+    }
+    .ord-pay__block-data-address {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .ord-pay__block-data-delivery {
+        width: 100%;
+    }
+    .ord-pay__block-data-postcards {
+        width: 100%;
+    }
+    .ord-pay__block-data-postcards textarea {
+        width: 100%;
+    }
+    .ord-pay__block-data {
+        width: 100%;
+    }
+    .ord-pay__block-data-postcards-container {
+        width: 100%;
+    }
+    .ord-pay__block-data-courier {
+        width: 215px;
+    }
+    .ord-pay__block-data-delivery .ord-pay__block-data-label input[type=radio]:checked+.ord-pay__block-data-content {
+        width: 215px;
+    }
+    .ord-pay__block-data-delivery .ord-pay__block-data-label input[type=radio]:checked+.ord-pay__block-data-content::before {
+        width: 96%;
+    }
+    .ord-pay__block-data-delivery .ord-pay__block-data-label input[type=radio]:checked+.ord-pay__block-data-content::after {
+        width: 91%;
+    }
+    .ord-pay__block-data-me {
+        width: 215px;
+    }
+    .ord-pay__block-data-postcards-yes,
+    .ord-pay__block-data-postcards-no {
+        width: 215px;
+    }
+    input[type=radio]:checked~.ord-pay__block-data-postcards-check::before {
+        width: 215px;
+    }
+    input[type=radio]:checked~.ord-pay__block-data-postcards-border::before {
+        width: 92%;
+    }
+    input[type=radio]:checked~.ord-pay__block-data-postcards-border::after {
+        width: 96%;
+    }
+    .ord-pay__block-data-calls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .ord-pay__block-data-calls-phones {
+        margin: 30px 0 0 0;
+    }
+    .ord-pay__block-data-calls {
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .ord-pay__block-data-postcards-container {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+    }
+    .ord-pay__block-data-postcards-no, .ord-pay__block-data-postcards-yes {
+        margin: 40px 0 0 0;
+    }
+    .ord-pay__block-data-delivery {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+    }
+    .ord-pay__block-data-delivery .ord-pay__block-data-label {
+        margin: 40px 0 0 0;
+    }
+    .ord-pay__block-data-courier {
+        width: 255px;
+    }
+    .ord-pay__block-data-me {
+        width: 255px;
+    }
+    .ord-pay__block-data-delivery .ord-pay__block-data-label input[type=radio]:checked+.ord-pay__block-data-content {
+        width: 255px;
+    }
+    .ord-pay__block-data-postcards-no, 
+    .ord-pay__block-data-postcards-yes {
+        width: 255px;
+    }
+    input[type=radio]:checked~.ord-pay__block-data-postcards-check::before {
+        width: 255px;
+    }
+}
+@media (max-width: 400px) {
+    .ord-pay__block-data-title {
+        font-size: 28px;
+    }
+    .ord-pay__block-data-question {
+        font-size: 19px;
+    }
+}

@@ -1433,11 +1433,11 @@
                 }
                 &-form {
                     width: 350px;
-                    height: 217px;
-                    border: 1px solid #16B8C3;
+                    height: 227px;
+                    border: 1px solid #16b8c3;
                     border-radius: 5px;
                     margin: 36px 0 0 0;
-                    padding: 21px 0 0 34px;
+                    padding: 21px 0 20px 34px;
                     &-number {
                         display: flex;
                         align-items: flex-start;
@@ -2486,3 +2486,23 @@ input[type=radio]:checked ~ .ord-pay__block-data-time-check {
 }
 
 //! ------------------------------------------------------------------------------------
+
+
+.pay-select-options li {
+    position: relative;
+    &::after {
+        content: "1";
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+.pay-select-hidden option {
+    position: relative;
+    &::after {
+        content: "1";
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
