@@ -8765,28 +8765,6 @@ input[type=radio]:checked ~ .ord-pay__block-data-time-text {
   color: #FFFFFF;
 }
 
-.pay-select-options li {
-  position: relative;
-}
-
-.pay-select-options li::after {
-  content: "1";
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.pay-select-hidden option {
-  position: relative;
-}
-
-.pay-select-hidden option::after {
-  content: "1";
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .new-content {
   padding: 70px 0 0 0;
   width: 100%;
