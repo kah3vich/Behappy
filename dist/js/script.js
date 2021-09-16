@@ -617,6 +617,37 @@ const renderCalendar = () => {
 
     document.querySelector(".date p").innerHTML = new Date().getFullYear();
 
+    const mouthRu = $('.calendar h1').text()
+    if(mouthRu === 'January') {
+        $('.calendar h1').html('Январь')
+    } else if(mouthRu === 'February') {
+        $('.calendar h1').html('Февраль')
+    } else if(mouthRu === 'March') {
+        $('.calendar h1').html('Март')
+    } else if(mouthRu === 'April') {
+        $('.calendar h1').html('Апрель')
+    } else if(mouthRu === 'May') {
+        $('.calendar h1').html('Май')
+    } else if(mouthRu === 'June') {
+        $('.calendar h1').html('Июнь')
+    } else if(mouthRu === 'July') {
+        $('.calendar h1').html('Июль')
+    } else if(mouthRu === 'August') {
+        $('.calendar h1').html('Август')
+    } else if(mouthRu === 'September') {
+        $('.calendar h1').html('Сентябрь')
+    } else if(mouthRu === 'October') {
+        $('.calendar h1').html('Октябрь')
+    } else if(mouthRu === 'November') {
+        $('.calendar h1').html('Ноябрь')
+    } else if(mouthRu === 'December') {
+        $('.calendar h1').html('Декабрь')
+    } else {
+        $('.calendar h1').html('')
+    }
+
+
+
     let days = "";
 
     for (let x = firstDayIndex; x > 0; x--) {
@@ -650,36 +681,9 @@ const renderCalendar = () => {
     renderCalendar();
     });
 
-renderCalendar();
 
-// const mouthRu = $('.calendar h1').text()
-// if(mouthRu === 'January') {
-//     $('.calendar h1').html('Январь')
-// } else if(mouthRu === 'February') {
-//     $('.calendar h1').html('Февраль')
-// } else if(mouthRu === 'March') {
-//     $('.calendar h1').html('Март')
-// } else if(mouthRu === 'April') {
-//     $('.calendar h1').html('Апрель')
-// } else if(mouthRu === 'May') {
-//     $('.calendar h1').html('Май')
-// } else if(mouthRu === 'June') {
-//     $('.calendar h1').html('Июнь')
-// } else if(mouthRu === 'July') {
-//     $('.calendar h1').html('Июль')
-// } else if(mouthRu === 'August') {
-//     $('.calendar h1').html('Август')
-// } else if(mouthRu === 'September') {
-//     $('.calendar h1').html('Сентябрь')
-// } else if(mouthRu === 'October') {
-//     $('.calendar h1').html('Октябрь')
-// } else if(mouthRu === 'November') {
-//     $('.calendar h1').html('Ноябрь')
-// } else if(mouthRu === 'December') {
-//     $('.calendar h1').html('Декабрь')
-// } else {
-//     $('.calendar h1').html('')
-// }
+
+renderCalendar();
 
 
 //! ------------------------------------------------------------------------------------
