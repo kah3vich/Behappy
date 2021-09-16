@@ -30,14 +30,258 @@
                             </h2>
                         </li>
                         <li class="cat-info__block-menu-item">
-                            <h2 class="cat-info__block-menu-title">
-                                Букет на вкус флориста
-                            </h2>
-                        </li>
-                        <li class="cat-info__block-menu-item">
-                            <h2 class="cat-info__block-menu-title">
+                            <h2 class="cat-info__block-menu-title" data-bs-toggle="modal" data-bs-target="#exampleModal-1">
                                 Быстрый заказ
                             </h2>
+                            <div class="modal fade" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content model-catalog">
+                                        <button type="button" class="btn-close model-catalog-btn" data-bs-dismiss="modal" aria-label="Close">
+                                            @@include('iconsprite/close-model.svg')
+                                        </button>
+                                        <div class="model-catalog__card">
+                                            <div class="model-catalog__card-block">
+                                                <div class="model-catalog__card-block-banner"></div>
+                                                <div class="model-catalog__card-block-banners">
+                                                    <div class="model-catalog__card-block-banners-item"></div>
+                                                    <div class="model-catalog__card-block-banners-item"></div>
+                                                    <div class="model-catalog__card-block-banners-item"></div>
+                                                </div>
+                                                <div class="model-catalog__card-block-title">Идеально к букету</div>
+                                                <ul class="model-catalog__card-block-list">
+                                                    <li class="model-catalog__card-block-list-item">
+                                                        <h3 class="model-catalog__card-block-list-title">
+                                                            Кондитерская
+                                                        </h3>
+                                                    </li>
+                                                    <li class="model-catalog__card-block-list-item">
+                                                        <h3 class="model-catalog__card-block-list-title">
+                                                            Мягкие игрушки
+                                                        </h3>
+                                                    </li>
+                                                    <li class="model-catalog__card-block-list-item">
+                                                        <h3 class="model-catalog__card-block-list-title">
+                                                            Воздушные шары
+                                                        </h3>
+                                                    </li>
+                                                </ul>
+                                                <div class="model-catalog__card-block-btn">
+                                                    <div class="model-catalog__card-block-btns">
+                                                        <div class="model-catalog__card-block-btns-click">
+                                                            <div class="model-catalog__card-block-btns-minus">-</div>
+                                                            <div class="model-catalog__card-block-btns-number">1</div>
+                                                            <div class="model-catalog__card-block-btns-plus"><p>+</p></div>
+                                                        </div>
+                                                        <button class="model-catalog__card-block-btns-pay"><a href="#">Заказ в 1 клик</a></button>
+                                                    </div>
+                                                    <button class="model-catalog__card-block-btns-add"><a href="#">Добавить в корзину</a></button>
+                                                </div>
+                                                <div class="model-catalog__card-block-add">
+                                                    <div class="model-catalog__card-block-add-title">Уже добавили</div>
+                                                    <ul class="model-catalog__card-block-add-list">
+                                                        <li class="model-catalog__card-block-add-item"></li>
+                                                        <li class="model-catalog__card-block-add-item"></li>
+                                                        <li class="model-catalog__card-block-add-item"></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="model-catalog__card-info">
+                                                <div class="model-catalog__card-info-title">Кустовая Роза (белая)</div>
+                                                <div class="model-catalog__card-info-price">Цена</div>
+                                                <div class="model-catalog__card-info-sum">
+                                                    <div class="model-catalog__card-info-sum-act">2990₽</div>
+                                                    <div class="model-catalog__card-info-sum-prev">5340₽</div>
+                                                </div>
+                                                <div class="model-catalog__card-info-size">Выбор размера</div>
+                                                <ul class="model-catalog__card-info-size-list">
+                                                    <li class="model-catalog__card-info-size-item">
+                                                        S
+                                                    </li>
+                                                    <li class="model-catalog__card-info-size-item">
+                                                        M
+                                                    </li>
+                                                    <li class="model-catalog__card-info-size-item">
+                                                        L
+                                                    </li>
+                                                    <li class="model-catalog__card-info-size-item">
+                                                        XL
+                                                    </li>
+                                                    <li class="model-catalog__card-info-size-item">
+                                                        2XL
+                                                    </li>
+                                                    <li class="model-catalog__card-info-size-item">
+                                                        Wow
+                                                    </li>
+                                                </ul>
+                                                <ul class="model-catalog__card-info-bonus">
+                                                    <li class="model-catalog__card-info-bonus-item">
+                                                        <div class="model-catalog__card-info-bonus-bg model-catalog__card-info-bonus-bg-heart">
+                                                            @@include('iconsprite/heart-model.svg')
+                                                        </div>
+                                                        <p>Добавить в избранное</p>
+                                                    </li>
+                                                    <li class="model-catalog__card-info-bonus-item">
+                                                        <div class="model-catalog__card-info-bonus-bg model-catalog__card-info-bonus-bg-money">
+                                                            @@include('iconsprite/money-model.svg')
+                                                        </div>
+                                                        <p>+160 баллов </p>
+                                                    </li>
+                                                    <li class="model-catalog__card-info-bonus-item">
+                                                        <div class="model-catalog__card-info-bonus-bg model-catalog__card-info-bonus-bg-car">
+                                                            @@include('iconsprite/car-model.svg')
+                                                        </div>
+                                                        <p>У вас всегда бесплатная доставка по городу </p>
+                                                    </li>
+                                                </ul>
+                                                <div class="model-catalog__card-info-hr"></div>
+                                                <div class="model-catalog__card-info-calendar">Календарь скидок</div>
+                                                <div class="model-catalog__card-info-calendar-select">
+                                                    <select id="calendar">
+                                                        <option value="Календарь скидок" rel="icon-temperature">Календарь скидок</option>
+                                                        <option value="Календарь скидок">Календарь скидок</option>
+                                                        <option value="Календарь скидок">Календарь скидок</option>
+                                                    </select> 
+                                                </div>
+                                                <div class="model-catalog__card-info-calendar-block">
+                                                    <div class="calendar">
+                                                        <div class="weekdays">
+                                                            <div>пн</div>
+                                                            <div>вт</div>
+                                                            <div>ср</div>
+                                                            <div>чт</div>
+                                                            <div>пт</div>
+                                                            <div>сб</div>
+                                                            <div>вс</div>
+                                                        </div>
+                                                        <div class="month">
+                                                        <i class="fas fa-angle-left prev"></i>
+                                                        <div class="date">
+                                                        <h1></h1>
+                                                        <p></p>
+                                                        </div>
+                                                        <i class="fas fa-angle-right next"></i>
+                                                    </div>
+                                                    
+                                                    <div class="days"></div>
+                                                    <div class="calendar-add"><p>Скидка каждые 7 / 14 / 21 день</p></div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="model-catalog__card-info-benefit">
+                                                    <div class="model-catalog__card-info-benefit-title">Получите  выгоду</div>
+                                                    <div class="model-catalog__card-info-benefit-text">
+                                                        При оплате заявки заблаговременно <br>
+                                                        Вам доступна скидка, укажите <br>
+                                                        желаемую дату. <br>
+                                                        <br>
+                                                        От 7 дней - 5% <br>
+                                                        От 14 дней – 10% <br>
+                                                        От 21 дня - 15%</div>
+                                                </div>
+                                                <div class="model-catalog__card-info-hr"></div>
+                                                <div class="model-catalog__card-info-description">
+                                                    <div class="model-catalog__card-info-description-title">Описание</div>
+                                                    <div class="model-catalog__card-info-description-text">
+                                                        Игрушка осьминог перевертыш стала популярна благодаря TikTok - ежедневно на Ozon ее покупают более 1000 раз. 
+                                                        Ты тоже хочешь быть в тренде и ищешь популярный подарок на день рождение или просто так? 
+                                                        <br><br>
+                                                        Тогда осьминоги вывернушки как раз 
+                                                        для тебя! Двусторонний осьминог заставит улыбнуться мальчика, девочку 
+                                                        и даже взрослого человека!</div>
+                                                </div>
+                                                <div class="model-catalog__card-info-hr"></div>
+                                                <div class="model-catalog__card-info-message-star">
+                                                    <div class="model-catalog__card-info-message-star-title">Отзывы продукта</div>
+                                                    <div class="model-catalog__card-info-message-star-block">
+                                                        @@include('iconsprite/star-model-act.svg')
+                                                        @@include('iconsprite/star-model-act.svg')
+                                                        @@include('iconsprite/star-model-act.svg')
+                                                        @@include('iconsprite/star-model-act.svg')
+                                                        @@include('iconsprite/star-model-nact.svg')
+                                                        <h3>4.5</h3>
+                                                        <p>(5 обзоров)</p>
+                                                    </div>
+                                                </div>
+                                                <ul class="model-catalog__card-info-message-list">
+                                                    <li class="model-catalog__card-info-message-item">
+                                                        <div class="model-catalog__card-info-message-client">
+                                                            <div class="model-catalog__card-info-message-client-img">
+                                                                @@include('iconsprite/client-model.svg')
+                                                            </div>
+                                                            <div class="model-catalog__card-info-message-client-wrapper">
+                                                                <div class="model-catalog__card-info-message-client-name">Сергей Воробьев</div>
+                                                                <div class="model-catalog__card-info-message-client-star">
+                                                                    @@include('iconsprite/star-model-act.svg')
+                                                                    @@include('iconsprite/star-model-act.svg')
+                                                                    @@include('iconsprite/star-model-act.svg')
+                                                                    @@include('iconsprite/star-model-act.svg')
+                                                                    @@include('iconsprite/star-model-nact.svg')
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="model-catalog__card-info-message-text">
+                                                            Игрушка осьминог перевертыш стала популярна благодаря TikTok - ежедневно на Ozon ее покупают более 1000 раз. Ты тоже хочешь быть в тренде и ищешь популярный подарок на день рождение или просто так? 
+                                                        </div>
+                                                        <ul class="model-catalog__card-info-message-add">
+                                                            <li class="model-catalog__card-info-message-add-item">
+                                                                @@include('iconsprite/client-model.svg')
+                                                            </li>
+                                                            <li class="model-catalog__card-info-message-add-item">
+                                                                @@include('iconsprite/client-model.svg')
+                                                            </li>
+                                                            <li class="model-catalog__card-info-message-add-item">
+                                                                @@include('iconsprite/client-model.svg')
+                                                            </li>
+                                                        </ul>
+                                                        <div class="model-catalog__card-info-message-date">Июль 10, 2021</div>
+                                                    </li>
+                                                </ul>
+                                                <div class="model-catalog__card-info-reviews">
+                                                    <div class="model-catalog__card-info-reviews-title">Отзывы продукта</div>
+                                                    <div class="model-catalog__card-info-reviews-add">У данного товара ещё нет не одного отзыва. Вы можете быть первым</div>
+                                                    <div class="model-catalog__card-info-reviews-star">
+                                                        <div class="model-catalog__card-info-reviews-stars">
+                                                            <div class="model-catalog__card-info-reviews-stars-num">0</div>
+                                                            <div class="model-catalog__card-info-reviews-stars-sum">/5</div>
+                                                        </div>
+                                                        <input type="radio" id="star-5" name="rating" value="5">
+                                                        <label for="star-5" title="Оценка «5»">@@include('iconsprite/star-model-nact.svg')</label>	
+                                                        <input type="radio" id="star-4" name="rating" value="4">
+                                                        <label for="star-4" title="Оценка «4»">@@include('iconsprite/star-model-nact.svg')</label>    
+                                                        <input type="radio" id="star-3" name="rating" value="3">
+                                                        <label for="star-3" title="Оценка «3»">@@include('iconsprite/star-model-nact.svg')</label>  
+                                                        <input type="radio" id="star-2" name="rating" value="2">
+                                                        <label for="star-2" title="Оценка «2»">@@include('iconsprite/star-model-nact.svg')</label>    
+                                                        <input type="radio" id="star-1" name="rating" value="1">
+                                                        <label for="star-1" title="Оценка «1»">@@include('iconsprite/star-model-nact.svg')</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cat-info__block-menu-item">
+                            <h2 class="cat-info__block-menu-title" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Быстрый заказ
+                            </h2>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content order-model">
+                                        <div class="order-model__block">
+                                            <div class="order-model__block-title">Спасибо за заказ!</div>
+                                            <div class="order-model__block-text">Мы благодарны что вы выбрали нашу платформу. Просим оплатить доставку за город</div>
+                                            <div class="order-model__block-number">№ 144 - 234 -4567</div>
+                                            <div class="order-model__block-add">Введите кол-во километров</div>
+                                            <input type="text" class="order-model__block-km" placeholder="приблизительное кол-во километров">
+                                            <div class="order-model__block-map"><p>Карта яндекс</p></div>
+                                            <div class="order-model__block-btn"><a href="#">Оплатить</a></div>
+                                            <div class="order-model__block-link"><a href="#">Как осуществить оплату при заказе за город ?</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -251,6 +495,7 @@
             </div>
         </div>
     </section>
+    
 
 
 @@include('components/_footer.html')
