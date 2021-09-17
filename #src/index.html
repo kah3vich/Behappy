@@ -18,12 +18,24 @@
             </div>
             <div class="i-header__block-model">
                 <div class="i-header__block-model-container">
-                    <select id="city" class="i-header__block-model-city">
-                        <option value="Смотреть все" rel="icon-temperature">Выберите город</option>
-                        <option value="Смотреть все">Москва</option>
-                        <option value="Смотреть все">Пермь</option>
-                        <option value="Смотреть все">Киров</option>
-                    </select> 
+                    <div class="i-header__block-model-city">
+                        <div class="i-header__block-model-city-title">Выберите город</div>
+                        <select class="form-select i-header__block-model-city-select display-n" size="9" aria-label="size 9 select example">
+                            <option value="Абаза" id="i-header-city-1">Абаза</option>
+                            <option value="Абакан" id="i-header-city-2">Абакан</option>
+                            <option value="Абдулино" id="i-header-city-3">Абдулино</option>
+                            <option value="Абинск" id="i-header-city-4">Абинск</option>
+                            <option value="Агидель" id="i-header-city-5">Агидель</option>
+                            <option value="Агрыз" id="i-header-city-6">Агрыз</option>
+                            <option value="Адыгейск" id="i-header-city-7">Адыгейск</option>
+                            <option value="Азнакаево" id="i-header-city-8">Азнакаево</option>
+                            <option value="Азов" id="i-header-city-9">Азов</option>
+                            <option value="Ак-Довурак" id="i-header-city-10">Ак-Довурак</option>
+                            <option value="Аксай" id="i-header-city-11">Аксай</option>
+                            <option value="Алагир" id="i-header-city-12">Алагир</option>
+                        </select>
+                    </div>
+                    
                     <div class="i-header__block-model-search">
                         @@include('iconsprite/search.svg')
                     </div>
@@ -37,8 +49,38 @@
                         </button>
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content hello">
-                                    
+                                <div class="modal-content i-header__calendar">
+                                    <h2 class="i-header__calendar-title">Календарь скидок</h2>
+                                    <div class="calendar">
+                                        <div class="weekdays">
+                                            <div>пн</div>
+                                            <div>вт</div>
+                                            <div>ср</div>
+                                            <div>чт</div>
+                                            <div>пт</div>
+                                            <div>сб</div>
+                                            <div>вс</div>
+                                        </div>
+                                        <div class="month">
+                                            <i class="fas fa-angle-left prev"></i>
+                                            <div class="date">
+                                            <h1></h1>
+                                            <p></p>
+                                            </div>
+                                            <i class="fas fa-angle-right next"></i>
+                                        </div>
+                                        <div class="days"></div>
+                                        <div class="calendar-add"><p>Скидка каждые 7 / 14 / 21 день</p></div>
+                                    </div>
+                                    <div class="i-header__calendar-add">Получите  выгоду</div>
+                                    <p class="i-header__calendar-text">
+                                        При оплате заявки заблаговременно <br>
+                                        Вам доступна скидка, укажите <br>
+                                        желаемую дату. <br>
+                                        <br>
+                                        От 7 дней - 5% <br>
+                                        От 14 дней – 10% <br>
+                                        От 21 дня - 15%</p>
                                 </div>
                             </div>
                         </div>

@@ -28,6 +28,9 @@
     .i-header__block-model-hr {
         width: 590px;
     }
+    .i-header__block-model-btn {
+        margin: 0 0 0 57px;
+    }
 }
 @media (max-width: 650px) {
     .i-header__block-model-hr {
@@ -42,6 +45,15 @@
     .i-header__block-model-btn {
         margin: 0 0 0 30px;
     }
+    .i-header__block-model-city-select {
+        width: 230px;
+        left: -15px;
+    }
+    .i-header__block-model-city {
+        width: 170px;
+        position: relative;
+        cursor: pointer;
+    }
 }
 @media (max-width: 480px) {
     .i-header__block-model-hr {
@@ -55,6 +67,12 @@
     }
     .i-header__block-model-btn {
         margin: 0 0 0 15px;
+    }
+    .i-header__block-model-city {
+        width: 132px;
+        margin: 0 10px 0 0;
+        position: relative;
+        cursor: pointer;
     }
 }
 
