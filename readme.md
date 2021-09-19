@@ -5,3 +5,5 @@
 - ## Order: [click me](https://kah3vich.github.io/Behappy/dist/order.html)
 - ## New: [click me](https://kah3vich.github.io/Behappy/dist/new.html)
 - ## New Detail: [click me](https://kah3vich.github.io/Behappy/dist/dnew.html)
+- ## Search: [click me](https://kah3vich.github.io/Behappy/dist/search.html)
+- ## 8 March: [click me](https://kah3vich.github.io/Behappy/dist/march.html)

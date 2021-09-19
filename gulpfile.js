@@ -30,7 +30,7 @@ let path = {
         js: source_folder + "/js/script.js",
         img: source_folder + "/img/**/*.{png, jpg, svg, ico, webp}",
         fonts: source_folder + "/fonts/*.ttf",
-        icon: source_folder + "/iconsprite/*.svg",
+        icon: source_folder + "/iconsprite/**/*.svg",
     },
     //! Путь для папки за слежкой файлов
     watch: {
