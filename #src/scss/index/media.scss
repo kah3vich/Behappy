@@ -55,6 +55,13 @@
         cursor: pointer;
     }
 }
+@media (max-width: 600px) {
+    .i-header__calendar-btn {
+        background: transparent;
+        top: 0;
+        right: 0;
+    }
+}
 @media (max-width: 480px) {
     .i-header__block-model-hr {
         width: 400px;

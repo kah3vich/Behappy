@@ -13,6 +13,16 @@
         justify-content: flex-start;
         flex-direction: column;
         padding: 37px 110px 46px 110px;
+        position: relative;
+        &-btn {
+            width: 66px;
+            height: 66px;
+            background: #001F75;
+            border-radius: 50%;
+            position: absolute;
+            top: -30px;
+            right: -30px;
+        }
         .modal-dialog {
             max-width: 540px;
             max-height: 675px;

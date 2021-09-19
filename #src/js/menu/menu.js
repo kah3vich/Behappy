@@ -168,3 +168,97 @@ $('select#media-catalog').each(function(){
 });
 
 //! --------------------------------------------------------------------------------------------
+
+
+
+//! Поиск 
+
+$('.header__block-menu-list-search').on('click', function(e) {
+    $('.header__block-list-2-item-create').toggleClass('display-n');
+    $('.header__block-list-2-item-florist').toggleClass('display-n');
+    $('.header__block-list-2-item-order').toggleClass('display-n');
+    $('.header__block-list-2-item-search').toggleClass('display-n');
+    $('.header__block-list-1-item-select-block').addClass('display-n');
+    $('.header__block-list-1-btn-title').removeClass('header__block-list-1-btn-active');
+    e.stopPropagation();
+});
+// $('.header__block-list-2-item-create').click(function(e) {
+//     e.stopPropagation();
+// });
+// $('.header__block-list-2-item-florist').click(function(e) {
+//     e.stopPropagation();
+// });
+// $('.header__block-list-2-item-order').click(function(e) {
+//     e.stopPropagation();
+// });
+// $('body').click(function() {
+//     $('.header__block-list-2-item-create').removeClass('display-n');
+//     $('.header__block-list-2-item-florist').removeClass('display-n');
+//     $('.header__block-list-2-item-order').removeClass('display-n');
+// });
+// $('.header__block-list-2-item-search').click(function() {
+//     $('.header__block-list-2-item-create').addClass('display-n');
+//     $('.header__block-list-2-item-florist').addClass('display-n');
+//     $('.header__block-list-2-item-order').addClass('display-n');
+// });
+// $('.header__block-list-2-item-search-list').click(function() {
+//     $('.header__block-list-2-item-create').addClass('display-n');
+//     $('.header__block-list-2-item-florist').addClass('display-n');
+//     $('.header__block-list-2-item-order').addClass('display-n');
+// });
+
+
+//! Выбор города - select 
+
+$('.header__block-list-1-item-select').on('click', function() {
+    $('.header__block-list-1-item-select-block').toggleClass('display-n');
+    $('.header__block-list-1-btn-title').toggleClass('header__block-list-1-btn-active');
+});
+$('#header-city-1').on('click', function() {
+    let header_city_1 = $(this).text();
+    $('.header__block-list-1-btn-title').html(header_city_1);
+});
+$('#header-city-2').on('click', function() {
+    let header_city_2 = $(this).text();
+    $('.header__block-list-1-btn-title').html(header_city_2);
+});
+$('#header-city-3').on('click', function() {
+    let header_city_3 = $(this).text();
+    $('.header__block-list-1-btn-title').html(header_city_3);
+});
+$('#header-city-4').on('click', function() {
+    let header_city_4 = $(this).text();
+    $('.header__block-list-1-btn-title').html(header_city_4);
+});
+$('#header-city-5').on('click', function() {
+    let header_city_5 = $(this).text();
+    $('.header__block-list-1-btn-title').html(header_city_5);
+});
+$('#header-city-6').on('click', function() {
+    let header_city_6 = $(this).text();
+    $('.header__block-list-1-btn-title').html(header_city_6);
+});
+$('#header-city-7').on('click', function() {
+    let header_city_7 = $(this).text();
+    $('.header__block-list-1-btn-title').html(header_city_7);
+});
+$('#header-city-8').on('click', function() {
+    let header_city_8 = $(this).text();
+    $('.header__block-list-1-btn-title').html(header_city_8);
+});
+$('#header-city-9').on('click', function() {
+    let header_city_9 = $(this).text();
+    $('.header__block-list-1-btn-title').html(header_city_9);
+});
+$('#header-city-10').on('click', function() {
+    let header_city_10 = $(this).text();
+    $('.header__block-list-1-btn-title').html(header_city_10);
+});
+$('#header-city-11').on('click', function() {
+    let header_city_11 = $(this).text();
+    $('.header__block-list-1-btn-title').html(header_city_11);
+});
+$('#header-city-12').on('click', function() {
+    let header_city_12 = $(this).text();
+    $('.header__block-list-1-btn-title').html(header_city_12);
+});
