@@ -130,6 +130,11 @@ $('select#pay').each(function(){
 });
 
 //! --------------------------------------------------------------------------------------------
+
+$('.march-content__block-text-filter-block').on('click', function() {
+    $('.march-content__block-text-filter-wrapper').toggleClass('display-n');
+});
+
 var lowerSlider = document.querySelector('#lower');
 var upperSlider = document.querySelector('#upper');
 
@@ -163,6 +168,8 @@ lowerSlider.oninput = function () {
     }
     document.querySelector('#price-min').value = this.value
 }; 
+
+
 //! Открытие выпадающего списка 
 $('.i-header__block-model-city').on('click', function() {
     $('.i-header__block-model-city-select').toggleClass('display-n')

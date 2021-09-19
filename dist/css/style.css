@@ -14103,6 +14103,116 @@ input[type=radio]:checked ~ .ord-pay__block-data-time-text {
   color: #FFFFFF;
 }
 
+.march-content__block-text-filter {
+  position: relative;
+}
+
+.march-content__block-text-filter-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 130px;
+}
+
+.march-content__block-text-filter-title {
+  font-family: FuturaBookC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+}
+
+.march-content__block-text-filter-icon {
+  background: #04133C;
+  border: 1px solid #002685;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+          box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+  border-radius: 20px;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.march-content__block-text-filter-icon svg {
+  margin: 1.5px 0 0 0;
+}
+
+.march-content__block-text-filter-wrapper {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: absolute;
+  width: 224px;
+  height: 224px;
+  top: 40px;
+  left: -94px;
+  background: #04133C;
+  border: 1px solid #002685;
+  -webkit-box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+          box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+  border-radius: 20px;
+  z-index: 100;
+  padding: 23px 0 20px 14px;
+}
+
+.march-content__block-text-filter-range {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 10px 0 20px;
+  position: relative;
+}
+
+.march-content__block-text-filter-range::after {
+  content: "от";
+  position: absolute;
+  top: 39px;
+  left: -20px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 10px #414141;
+}
+
+.march-content__block-text-filter-range::before {
+  content: "до";
+  position: absolute;
+  top: 37px;
+  right: 30px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 10px #414141;
+}
+
 .march-content__block-collection {
   margin: 74px 0 0 0;
   font-family: Circe;
@@ -14638,7 +14748,7 @@ input[type=radio]:checked ~ .ord-pay__block-data-time-text {
 }
 
 .price-range-slider {
-  width: 172px;
+  width: 155px;
   border: 0;
   padding: 0;
 }
@@ -14843,6 +14953,59 @@ input[type=range]::-ms-track {
 /* Style for input value block */
 
 /* Style for active state input */
+
+/* Checkbox */
+
+.march-content__block-text-filter-checkbox {
+  position: relative;
+  margin-bottom: 2px;
+}
+
+.march-content__block-text-filter-checkbox__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  position: absolute;
+}
+
+.march-content__block-text-filter-checkbox__label {
+  padding-left: 25px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 10px #414141;
+  cursor: pointer;
+}
+
+.march-content__block-text-filter-checkbox__label:before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  left: 1062px;
+  top: 295px;
+  background: #032D9F;
+  border-radius: 3px;
+  position: absolute;
+  top: 6px;
+  left: 0;
+  z-index: 1;
+  -webkit-transition: background 0.1s linear, border 0.1s linear;
+  -o-transition: background 0.1s linear, border 0.1s linear;
+  transition: background 0.1s linear, border 0.1s linear;
+}
+
+.march-content__block-text-filter-checkbox__input:checked + .march-content__block-text-filter-checkbox__label:before {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.march-content__block-text-filter-checkbox__input:checked + .march-content__block-text-filter-checkbox__label:after {
+  opacity: 1;
+}
 
 * {
   margin: 0;

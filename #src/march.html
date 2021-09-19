@@ -7,23 +7,65 @@
         <div class="march-content__block">
             <div class="march-content__block-text">
                 <div class="march-content__block-text-title">8 марта</div>
-                <div class="march-content__block-title-filter">
-                    <div class="price-range-slider">
-                        <div class="price-wrap">
-                                <div class="price-wrap-1">
-                                    <label for="price-min"></label>
-                                    <input disabled tabindex="-1" id="price-min">
+                <div class="march-content__block-text-filter">
+                    <div class="march-content__block-text-filter-block">
+                        <div class="march-content__block-text-filter-title">Фильтр</div>
+                        <div class="march-content__block-text-filter-icon">@@include('iconsprite/march/filter.svg')</div>
+                    </div>
+                    <div class="march-content__block-text-filter-wrapper">
+                        <ul class="march-content__block-text-filter-list">
+                            <li class="march-content__block-text-filter-item">
+                                <div class="march-content__block-text-filter-checkbox">
+                                    <input class="march-content__block-text-filter-checkbox__input" type="checkbox" id="checkbox_1">
+                                    <label class="march-content__block-text-filter-checkbox__label" for="checkbox_1">По возрастанию</label>
                                 </div>
-                                <div class="price-wrap-2">
-                                    <label for="price-max"></label>
-                                    <input disabled tabindex="-1" id="price-max">
+                            </li>
+                            <li class="march-content__block-text-filter-item">
+                                <div class="march-content__block-text-filter-checkbox">
+                                    <input class="march-content__block-text-filter-checkbox__input" type="checkbox" id="checkbox_2">
+                                    <label class="march-content__block-text-filter-checkbox__label" for="checkbox_2">По убыванию цены</label>
                                 </div>
-                        </div>
-                        <div class="price-field">
-                            <input type="range" min="1690" max="16090" value="1690" id="lower">
-                            <input type="range" min="1690" max="16090" value="16090" id="upper">
+                            </li>
+                            <li class="march-content__block-text-filter-item">
+                                <div class="march-content__block-text-filter-checkbox">
+                                    <input class="march-content__block-text-filter-checkbox__input" type="checkbox" id="checkbox_3">
+                                    <label class="march-content__block-text-filter-checkbox__label" for="checkbox_3">По рейтингу</label>
+                                </div>
+                            </li>
+                            <li class="march-content__block-text-filter-item">
+                                <div class="march-content__block-text-filter-checkbox">
+                                    <input class="march-content__block-text-filter-checkbox__input" type="checkbox" id="checkbox_4">
+                                    <label class="march-content__block-text-filter-checkbox__label" for="checkbox_4">Последние добавленные</label>
+                                </div>
+                            </li>
+                            <li class="march-content__block-text-filter-item">
+                                <div class="march-content__block-text-filter-checkbox">
+                                    <input class="march-content__block-text-filter-checkbox__input" type="checkbox" id="checkbox_5">
+                                    <label class="march-content__block-text-filter-checkbox__label" for="checkbox_5">По сумме</label>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="march-content__block-text-filter-range">
+                            <div class="price-range-slider">
+                                <div class="price-wrap">
+                                        <div class="price-wrap-1">
+                                            <label for="price-min"></label>
+                                            <input disabled tabindex="-1" id="price-min">
+                                        </div>
+                                        <div class="price-wrap-2">
+                                            <label for="price-max"></label>
+                                            <input disabled tabindex="-1" id="price-max">
+                                        </div>
+                                </div>
+                                <div class="price-field">
+                                    <input type="range" min="1690" max="16090" value="1690" id="lower">
+                                    <input type="range" min="1690" max="16090" value="16090" id="upper">
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+
                 </div>
             </div>
             <ul class="march-content__block-collections">
