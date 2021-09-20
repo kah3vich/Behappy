@@ -26,6 +26,7 @@
                     align-items: center;
                     justify-content: space-between;
                     width: 130px;
+                    cursor: pointer;
                 }
                 &-title {
                     font-family: FuturaBookC;
@@ -64,6 +65,7 @@
                     border-radius: 20px;
                     z-index: 100;
                     padding: 23px 0 20px 14px;
+                    
                 }
                 &-range {
                     width: 100%;

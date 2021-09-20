@@ -14118,6 +14118,7 @@ input[type=radio]:checked ~ .ord-pay__block-data-time-text {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 130px;
+  cursor: pointer;
 }
 
 .march-content__block-text-filter-title {

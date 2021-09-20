@@ -1,231 +1,3 @@
-//! События нажатие - выбор доставки 
-
-$('#pickup').on('click', function() {
-    $('.ord-pay__block-data-calls').removeClass('display-f')
-    $('.ord-pay__block-data-calls').addClass('display-n')
-    $('.ord-pay__block-data-call').removeClass('display-n')
-    $('.ord-pay__block-data-call').addClass('display-f')
-    $('.ord-pay__block-data-address').removeClass('ord-pay-mt')
-    $('.ord-pay__block-data-address-street').removeClass('display-n')
-    $('.ord-pay__block-data-address-home').removeClass('display-n')
-    $('.ord-pay__block-data-address-porch').removeClass('display-n')
-    $('.ord-pay__block-data-address-floor').removeClass('display-n')
-    $('.ord-pay__block-data-address-apartment').removeClass('display-n')
-    $('.ord-pay__block-data-ball').removeClass('display-n')
-});
-$('#delivery').on('click', function() {
-    $('.ord-pay__block-data-calls').removeClass('display-n')
-    $('.ord-pay__block-data-calls').addClass('display-f')
-    $('.ord-pay__block-data-call').addClass('display-n')
-    $('.ord-pay__block-data-call').removeClass('display-f')
-    $('.ord-pay__block-data-address').addClass('ord-pay-mt')
-    $('.ord-pay__block-data-address-street').addClass('display-n')
-    $('.ord-pay__block-data-address-home').addClass('display-n')
-    $('.ord-pay__block-data-address-porch').addClass('display-n')
-    $('.ord-pay__block-data-address-floor').addClass('display-n')
-    $('.ord-pay__block-data-address-apartment').addClass('display-n')
-    $('.ord-pay__block-data-ball').addClass('display-n')
-});
-
-//! --------------------------------------------------------------------------------------------
-
-
-//! Выпадающий список - выбора города
-
-$('select#ord').each(function(){
-    var $this = $(this), numberOfOptions = $(this).children('option').length;
-
-    $this.addClass('ord-select-hidden'); 
-    $this.wrap('<div class="ord-select"></div>');
-    $this.after('<div class="ord-select-styled"></div>');
-
-    var $styledSelect = $this.next('div.ord-select-styled');
-    $styledSelect.text($this.children('option').eq(0).text());
-
-    var $list = $('<ul />', {
-        'class': 'ord-select-options'
-    }).insertAfter($styledSelect);
-
-    for (var i = 0; i < numberOfOptions; i++) {
-        $('<li />', {
-            text: $this.children('option').eq(i).text(),
-            rel: $this.children('option').eq(i).val()
-        }).appendTo($list);
-    }
-
-    var $listItems = $list.children('li');
-
-    $styledSelect.click(function(e) {
-        e.stopPropagation();
-        $('div.ord-select-styled.ord-active').not(this).each(function(){
-            $(this).removeClass('ord-active').next('ul.ord-select-options').hide();
-        });
-        $(this).toggleClass('ord-active').next('ul.ord-select-options').toggle();
-    });
-
-    $listItems.click(function(e) {
-        e.stopPropagation();
-        $styledSelect.text($(this).text()).removeClass('ord-active');
-        $this.val($(this).attr('rel'));
-        $list.hide();
-        //console.log($this.val());
-    });
-
-    $(document).click(function() {
-        $styledSelect.removeClass('ord-active');
-        $list.hide();
-    });
-
-});
-
-//! --------------------------------------------------------------------------------------------
-
-
-//! Выпадающий список - способы оплаты 
-
-$('select#pay').each(function(){
-    var $this = $(this), numberOfOptions = $(this).children('option').length;
-
-    $this.addClass('pay-select-hidden'); 
-    $this.wrap('<div class="pay-select"></div>');
-    $this.after('<div class="pay-select-styled"></div>');
-
-    var $styledSelect = $this.next('div.pay-select-styled');
-    $styledSelect.text($this.children('option').eq(0).text());
-
-    var $list = $('<ul />', {
-        'class': 'pay-select-options'
-    }).insertAfter($styledSelect);
-
-    for (var i = 0; i < numberOfOptions; i++) {
-        $('<li />', {
-            text: $this.children('option').eq(i).text(),
-            rel: $this.children('option').eq(i).val()
-        }).appendTo($list);
-    }
-
-    var $listItems = $list.children('li');
-
-    $styledSelect.click(function(e) {
-        e.stopPropagation();
-        $('div.pay-select-styled.pay-active').not(this).each(function(){
-            $(this).removeClass('pay-active').next('ul.pay-select-options').hide();
-        });
-        $(this).toggleClass('pay-active').next('ul.pay-select-options').toggle();
-    });
-
-    $listItems.click(function(e) {
-        e.stopPropagation();
-        $styledSelect.text($(this).text()).removeClass('pay-active');
-        $this.val($(this).attr('rel'));
-        $list.hide();
-        //console.log($this.val());
-    });
-
-    $(document).click(function() {
-        $styledSelect.removeClass('pay-active');
-        $list.hide();
-    });
-
-});
-
-//! --------------------------------------------------------------------------------------------
-
-$('.march-content__block-text-filter-block').on('click', function() {
-    $('.march-content__block-text-filter-wrapper').toggleClass('display-n');
-});
-
-var lowerSlider = document.querySelector('#lower');
-var upperSlider = document.querySelector('#upper');
-
-document.querySelector('#price-max').value = upperSlider.value;
-document.querySelector('#price-min').value = lowerSlider.value;
-
-var lowerVal = parseInt(lowerSlider.value);
-var upperVal = parseInt(upperSlider.value);
-
-upperSlider.oninput = function () {
-    lowerVal = parseInt(lowerSlider.value);
-    upperVal = parseInt(upperSlider.value);
-
-    if (upperVal < lowerVal + 4) {
-        lowerSlider.value = upperVal - 4;
-        if (lowerVal == lowerSlider.min) {
-            upperSlider.value = 4;
-        }
-    }
-    document.querySelector('#price-max').value = this.value
-};
-
-lowerSlider.oninput = function () {
-    lowerVal = parseInt(lowerSlider.value);
-    upperVal = parseInt(upperSlider.value);
-    if (lowerVal > upperVal - 4) {
-        upperSlider.value = lowerVal + 4;
-        if (upperVal == upperSlider.max) {
-            lowerSlider.value = parseInt(upperSlider.max) - 4;
-        }
-    }
-    document.querySelector('#price-min').value = this.value
-}; 
-
-
-//! Открытие выпадающего списка 
-$('.i-header__block-model-city').on('click', function() {
-    $('.i-header__block-model-city-select').toggleClass('display-n')
-    $('.i-header__block-model-city-select').toggleClass('display-b')
-});
-
-//! Замена название города на выбранный
-$('#i-header-city-1').on('click', function() {
-    let i_header_city_1 = $(this).text();
-    $('.i-header__block-model-city-title').html(i_header_city_1);
-});
-$('#i-header-city-2').on('click', function() {
-    let i_header_city_2 = $(this).text();
-    $('.i-header__block-model-city-title').html(i_header_city_2);
-});
-$('#i-header-city-3').on('click', function() {
-    let i_header_city_3 = $(this).text();
-    $('.i-header__block-model-city-title').html(i_header_city_3);
-});
-$('#i-header-city-4').on('click', function() {
-    let i_header_city_4 = $(this).text();
-    $('.i-header__block-model-city-title').html(i_header_city_4);
-});
-$('#i-header-city-5').on('click', function() {
-    let i_header_city_5 = $(this).text();
-    $('.i-header__block-model-city-title').html(i_header_city_5);
-});
-$('#i-header-city-6').on('click', function() {
-    let i_header_city_6 = $(this).text();
-    $('.i-header__block-model-city-title').html(i_header_city_6);
-});
-$('#i-header-city-7').on('click', function() {
-    let i_header_city_7 = $(this).text();
-    $('.i-header__block-model-city-title').html(i_header_city_7);
-});
-$('#i-header-city-8').on('click', function() {
-    let i_header_city_8 = $(this).text();
-    $('.i-header__block-model-city-title').html(i_header_city_8);
-});
-$('#i-header-city-9').on('click', function() {
-    let i_header_city_9 = $(this).text();
-    $('.i-header__block-model-city-title').html(i_header_city_9);
-});
-$('#i-header-city-10').on('click', function() {
-    let i_header_city_10 = $(this).text();
-    $('.i-header__block-model-city-title').html(i_header_city_10);
-});
-$('#i-header-city-11').on('click', function() {
-    let i_header_city_11 = $(this).text();
-    $('.i-header__block-model-city-title').html(i_header_city_11);
-});
-$('#i-header-city-12').on('click', function() {
-    let i_header_city_12 = $(this).text();
-    $('.i-header__block-model-city-title').html(i_header_city_12);
-});
-// to be continued...
 //! Меню 
 
 let t1 = new TimelineMax({ paused: true });
@@ -569,6 +341,266 @@ $('.header__block-list-1-item-catalog').on('click', function() {
 
 //! --------------------------------------------------------------------------------------------
 
+//! Открытие выпадающего списка 
+$('.i-header__block-model-city').on('click', function() {
+    $('.i-header__block-model-city-select').toggleClass('display-n')
+    $('.i-header__block-model-city-select').toggleClass('display-b')
+});
+
+//! Замена название города на выбранный
+$('#i-header-city-1').on('click', function() {
+    let i_header_city_1 = $(this).text();
+    $('.i-header__block-model-city-title').html(i_header_city_1);
+});
+$('#i-header-city-2').on('click', function() {
+    let i_header_city_2 = $(this).text();
+    $('.i-header__block-model-city-title').html(i_header_city_2);
+});
+$('#i-header-city-3').on('click', function() {
+    let i_header_city_3 = $(this).text();
+    $('.i-header__block-model-city-title').html(i_header_city_3);
+});
+$('#i-header-city-4').on('click', function() {
+    let i_header_city_4 = $(this).text();
+    $('.i-header__block-model-city-title').html(i_header_city_4);
+});
+$('#i-header-city-5').on('click', function() {
+    let i_header_city_5 = $(this).text();
+    $('.i-header__block-model-city-title').html(i_header_city_5);
+});
+$('#i-header-city-6').on('click', function() {
+    let i_header_city_6 = $(this).text();
+    $('.i-header__block-model-city-title').html(i_header_city_6);
+});
+$('#i-header-city-7').on('click', function() {
+    let i_header_city_7 = $(this).text();
+    $('.i-header__block-model-city-title').html(i_header_city_7);
+});
+$('#i-header-city-8').on('click', function() {
+    let i_header_city_8 = $(this).text();
+    $('.i-header__block-model-city-title').html(i_header_city_8);
+});
+$('#i-header-city-9').on('click', function() {
+    let i_header_city_9 = $(this).text();
+    $('.i-header__block-model-city-title').html(i_header_city_9);
+});
+$('#i-header-city-10').on('click', function() {
+    let i_header_city_10 = $(this).text();
+    $('.i-header__block-model-city-title').html(i_header_city_10);
+});
+$('#i-header-city-11').on('click', function() {
+    let i_header_city_11 = $(this).text();
+    $('.i-header__block-model-city-title').html(i_header_city_11);
+});
+$('#i-header-city-12').on('click', function() {
+    let i_header_city_12 = $(this).text();
+    $('.i-header__block-model-city-title').html(i_header_city_12);
+});
+// to be continued...
+
+
+//! События нажатие - выбор доставки 
+
+$('#pickup').on('click', function() {
+    $('.ord-pay__block-data-calls').removeClass('display-f')
+    $('.ord-pay__block-data-calls').addClass('display-n')
+    $('.ord-pay__block-data-call').removeClass('display-n')
+    $('.ord-pay__block-data-call').addClass('display-f')
+    $('.ord-pay__block-data-address').removeClass('ord-pay-mt')
+    $('.ord-pay__block-data-address-street').removeClass('display-n')
+    $('.ord-pay__block-data-address-home').removeClass('display-n')
+    $('.ord-pay__block-data-address-porch').removeClass('display-n')
+    $('.ord-pay__block-data-address-floor').removeClass('display-n')
+    $('.ord-pay__block-data-address-apartment').removeClass('display-n')
+    $('.ord-pay__block-data-ball').removeClass('display-n')
+});
+$('#delivery').on('click', function() {
+    $('.ord-pay__block-data-calls').removeClass('display-n')
+    $('.ord-pay__block-data-calls').addClass('display-f')
+    $('.ord-pay__block-data-call').addClass('display-n')
+    $('.ord-pay__block-data-call').removeClass('display-f')
+    $('.ord-pay__block-data-address').addClass('ord-pay-mt')
+    $('.ord-pay__block-data-address-street').addClass('display-n')
+    $('.ord-pay__block-data-address-home').addClass('display-n')
+    $('.ord-pay__block-data-address-porch').addClass('display-n')
+    $('.ord-pay__block-data-address-floor').addClass('display-n')
+    $('.ord-pay__block-data-address-apartment').addClass('display-n')
+    $('.ord-pay__block-data-ball').addClass('display-n')
+});
+
+//! --------------------------------------------------------------------------------------------
+
+
+//! Выпадающий список - выбора города
+
+$('select#ord').each(function(){
+    var $this = $(this), numberOfOptions = $(this).children('option').length;
+
+    $this.addClass('ord-select-hidden'); 
+    $this.wrap('<div class="ord-select"></div>');
+    $this.after('<div class="ord-select-styled"></div>');
+
+    var $styledSelect = $this.next('div.ord-select-styled');
+    $styledSelect.text($this.children('option').eq(0).text());
+
+    var $list = $('<ul />', {
+        'class': 'ord-select-options'
+    }).insertAfter($styledSelect);
+
+    for (var i = 0; i < numberOfOptions; i++) {
+        $('<li />', {
+            text: $this.children('option').eq(i).text(),
+            rel: $this.children('option').eq(i).val()
+        }).appendTo($list);
+    }
+
+    var $listItems = $list.children('li');
+
+    $styledSelect.click(function(e) {
+        e.stopPropagation();
+        $('div.ord-select-styled.ord-active').not(this).each(function(){
+            $(this).removeClass('ord-active').next('ul.ord-select-options').hide();
+        });
+        $(this).toggleClass('ord-active').next('ul.ord-select-options').toggle();
+    });
+
+    $listItems.click(function(e) {
+        e.stopPropagation();
+        $styledSelect.text($(this).text()).removeClass('ord-active');
+        $this.val($(this).attr('rel'));
+        $list.hide();
+        //console.log($this.val());
+    });
+
+    $(document).click(function() {
+        $styledSelect.removeClass('ord-active');
+        $list.hide();
+    });
+
+});
+
+//! --------------------------------------------------------------------------------------------
+
+
+//! Выпадающий список - способы оплаты 
+
+$('select#pay').each(function(){
+    var $this = $(this), numberOfOptions = $(this).children('option').length;
+
+    $this.addClass('pay-select-hidden'); 
+    $this.wrap('<div class="pay-select"></div>');
+    $this.after('<div class="pay-select-styled"></div>');
+
+    var $styledSelect = $this.next('div.pay-select-styled');
+    $styledSelect.text($this.children('option').eq(0).text());
+
+    var $list = $('<ul />', {
+        'class': 'pay-select-options'
+    }).insertAfter($styledSelect);
+
+    for (var i = 0; i < numberOfOptions; i++) {
+        $('<li />', {
+            text: $this.children('option').eq(i).text(),
+            rel: $this.children('option').eq(i).val()
+        }).appendTo($list);
+    }
+
+    var $listItems = $list.children('li');
+
+    $styledSelect.click(function(e) {
+        e.stopPropagation();
+        $('div.pay-select-styled.pay-active').not(this).each(function(){
+            $(this).removeClass('pay-active').next('ul.pay-select-options').hide();
+        });
+        $(this).toggleClass('pay-active').next('ul.pay-select-options').toggle();
+    });
+
+    $listItems.click(function(e) {
+        e.stopPropagation();
+        $styledSelect.text($(this).text()).removeClass('pay-active');
+        $this.val($(this).attr('rel'));
+        $list.hide();
+        //console.log($this.val());
+    });
+
+    $(document).click(function() {
+        $styledSelect.removeClass('pay-active');
+        $list.hide();
+    });
+
+});
+
+//! --------------------------------------------------------------------------------------------
+
+
+
+
+//! Выпадающий список - сортировка 
+
+$('select#sort').each(function(){
+    var $this = $(this), numberOfOptions = $(this).children('option').length;
+
+    $this.addClass('sort-select-hidden'); 
+    $this.wrap('<div class="sort-select"></div>');
+    $this.after('<div class="sort-select-styled"></div>');
+
+    var $styledSelect = $this.next('div.sort-select-styled');
+    $styledSelect.text($this.children('option').eq(0).text());
+
+    var $list = $('<ul />', {
+        'class': 'sort-select-options'
+    }).insertAfter($styledSelect);
+
+    for (var i = 0; i < numberOfOptions; i++) {
+        $('<li />', {
+            text: $this.children('option').eq(i).text(),
+            rel: $this.children('option').eq(i).val()
+        }).appendTo($list);
+    }
+
+    var $listItems = $list.children('li');
+
+    $styledSelect.click(function(e) {
+        e.stopPropagation();
+        $('div.sort-select-styled.sort-active').not(this).each(function(){
+            $(this).removeClass('sort-active').next('ul.sort-select-options').hide();
+        });
+        $(this).toggleClass('sort-active').next('ul.sort-select-options').toggle();
+    });
+
+    $listItems.click(function(e) {
+        e.stopPropagation();
+        $styledSelect.text($(this).text()).removeClass('sort-active');
+        $this.val($(this).attr('rel'));
+        $list.hide();
+        //console.log($this.val());
+    });
+
+    $(document).click(function() {
+        $styledSelect.removeClass('sort-active');
+        $list.hide();
+    });
+
+});
+
+//! --------------------------------------------------------------------------------------------
+
+
+//! Открытие и закрытие дополнительного каталога новостей 
+
+$('.new-content__block-next').on('click', function() {
+    $('.new-content__block-table-add').removeClass('display-n')
+    $('.new-content__block-next').addClass('display-n')
+    $('.new-content__block-prev').removeClass('display-n')
+}); 
+$('.new-content__block-prev').on('click', function() {
+    $('.new-content__block-table-add').addClass('display-n')
+    $('.new-content__block-next').removeClass('display-n')
+    $('.new-content__block-prev').addClass('display-n')
+}); 
+
+//! --------------------------------------------------------------------------------------------
+
 //! Слайдеры 
 
 var sliderCatalogInfo = new Swiper(".sliderCatalogInfo", {
@@ -784,6 +816,53 @@ $('select#calendar').each(function(){
 //! --------------------------------------------------------------------------------------------
 
 
+
+
+$('.march-content__block-text-filter-block').on('click', function() {
+    $('.march-content__block-text-filter-wrapper').toggleClass('display-n');
+});
+
+
+
+
+// var lowerSlider = document.querySelector('#lower');
+// var upperSlider = document.querySelector('#upper');
+
+// document.querySelector('#price-max').value = upperSlider.value;
+// document.querySelector('#price-min').value = lowerSlider.value;
+
+// var lowerVal = parseInt(lowerSlider.value);
+// var upperVal = parseInt(upperSlider.value);
+
+// upperSlider.oninput = function () {
+//     lowerVal = parseInt(lowerSlider.value);
+//     upperVal = parseInt(upperSlider.value);
+
+//     if (upperVal < lowerVal + 4) {
+//         lowerSlider.value = upperVal - 4;
+//         if (lowerVal == lowerSlider.min) {
+//             upperSlider.value = 4;
+//         }
+//     }
+//     document.querySelector('#price-max').value = this.value
+// };
+
+// lowerSlider.oninput = function () {
+//     lowerVal = parseInt(lowerSlider.value);
+//     upperVal = parseInt(upperSlider.value);
+//     if (lowerVal > upperVal - 4) {
+//         upperSlider.value = lowerVal + 4;
+//         if (upperVal == upperSlider.max) {
+//             lowerSlider.value = parseInt(upperSlider.max) - 4;
+//         }
+//     }
+//     document.querySelector('#price-min').value = this.value
+// }; 
+
+
+
+
+
 //! Календарь скидок 
 
 const date = new Date();
@@ -875,13 +954,10 @@ const renderCalendar = () => {
     }
 
     for (let i = 1; i <= lastDay; i++) {
-        if (
-        i === new Date().getDate() &&
-        date.getMonth() === new Date().getMonth()
-        ) {
-        days += `<div class="today">${i}</div>`;
+        if (i === new Date().getDate() && date.getMonth() === new Date().getMonth()) {
+            days += `<div class="today">${i}</div>`;
         } else {
-        days += `<div>${i}</div>`;
+            days += `<div>${i}</div>`;
         }
     }
 
@@ -892,13 +968,13 @@ const renderCalendar = () => {
     };
 
     document.querySelector(".prev").addEventListener("click", () => {
-    date.setMonth(date.getMonth() - 1);
-    renderCalendar();
+        date.setMonth(date.getMonth() - 1);
+        renderCalendar();
     });
 
     document.querySelector(".next").addEventListener("click", () => {
-    date.setMonth(date.getMonth() + 1);
-    renderCalendar();
+        date.setMonth(date.getMonth() + 1);
+        renderCalendar();
     });
 
 
@@ -907,69 +983,3 @@ renderCalendar();
 
 
 //! ------------------------------------------------------------------------------------
-//! Выпадающий список - сортировка 
-
-$('select#sort').each(function(){
-    var $this = $(this), numberOfOptions = $(this).children('option').length;
-
-    $this.addClass('sort-select-hidden'); 
-    $this.wrap('<div class="sort-select"></div>');
-    $this.after('<div class="sort-select-styled"></div>');
-
-    var $styledSelect = $this.next('div.sort-select-styled');
-    $styledSelect.text($this.children('option').eq(0).text());
-
-    var $list = $('<ul />', {
-        'class': 'sort-select-options'
-    }).insertAfter($styledSelect);
-
-    for (var i = 0; i < numberOfOptions; i++) {
-        $('<li />', {
-            text: $this.children('option').eq(i).text(),
-            rel: $this.children('option').eq(i).val()
-        }).appendTo($list);
-    }
-
-    var $listItems = $list.children('li');
-
-    $styledSelect.click(function(e) {
-        e.stopPropagation();
-        $('div.sort-select-styled.sort-active').not(this).each(function(){
-            $(this).removeClass('sort-active').next('ul.sort-select-options').hide();
-        });
-        $(this).toggleClass('sort-active').next('ul.sort-select-options').toggle();
-    });
-
-    $listItems.click(function(e) {
-        e.stopPropagation();
-        $styledSelect.text($(this).text()).removeClass('sort-active');
-        $this.val($(this).attr('rel'));
-        $list.hide();
-        //console.log($this.val());
-    });
-
-    $(document).click(function() {
-        $styledSelect.removeClass('sort-active');
-        $list.hide();
-    });
-
-});
-
-//! --------------------------------------------------------------------------------------------
-
-
-//! Открытие и закрытие дополнительного каталога новостей 
-
-$('.new-content__block-next').on('click', function() {
-    $('.new-content__block-table-add').removeClass('display-n')
-    $('.new-content__block-next').addClass('display-n')
-    $('.new-content__block-prev').removeClass('display-n')
-}); 
-$('.new-content__block-prev').on('click', function() {
-    $('.new-content__block-table-add').addClass('display-n')
-    $('.new-content__block-next').removeClass('display-n')
-    $('.new-content__block-prev').addClass('display-n')
-}); 
-
-//! --------------------------------------------------------------------------------------------
-
