@@ -40,4 +40,3 @@ $('.march-content__block-text-filter-block').on('click', function() {
 //     document.querySelector('#price-min').value = this.value
 // }; 
 
-

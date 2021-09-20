@@ -1,0 +1,296 @@
+@@include('components/_head.html')
+@@include('components/_header.html')
+
+
+
+<!-- <div class="container">
+  
+    <form class="quiz">
+      <div class="quiz__inner">
+      <div data-question="1" class="quiz__step--1 quiz__step--current quiz__step">
+        <div class="question__emoji">🚬 </div>
+        <h1 class="quiz__question">Do you smoke cigarettes?</h1>
+        <div class="answer">
+          <input data-char="65" class="answer__input" type="radio" id="smoke_yes" name="smoke" value="Yes">
+          <label  class="answer__label" for="smoke_yes">Yes</label>
+        </div>
+        <div class="answer">
+          <input data-char="66" class="answer__input" type="radio" id="smoke_no" name="smoke" value="No">
+          <label class="answer__label" for="smoke_no">No</label>
+        </div>       
+      </div>
+  <div data-question="2" class="quiz__step--2 quiz__step">
+    <div class="question__emoji">🍕</div>
+        <h1 class="quiz__question">Do you like pizza?</h1>
+        <div class="answer">
+          <input  class="answer__input" type="radio" id="pizza_yes" name="pizza" value="Yes">
+          <label  class="answer__label" for="pizza_yes">Yes</label>
+        </div>
+        <div class="answer">
+          <input class="answer__input" type="radio" id="pizza_no" name="pizza" value="No">
+          <label class="answer__label" for="pizza_no">No<div class="answer__tick">
+      <svg width="14" height="14" viewBox="0 0 24 24">
+          <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path>
+      </svg>
+  </div></label>
+        </div>       
+      </div>
+  <div data-question="3" class="quiz__step--3 quiz__step">
+    <div class="question__emoji">👽</div>
+        <h1 class="quiz__question">Do you believe in aliens?</h1>
+        <div class="answer">
+          <input  class="answer__input" type="radio" id="aliens_yes" name="aliens" value="Yes">
+          <label  class="answer__label" for="aliens_yes">Yes</label>
+        </div>
+        <div class="answer">
+          <input class="answer__input" type="radio" id="aliens_no" name="aliens" value="No">
+          <label class="answer__label" for="aliens_no">No<div class="answer__tick">
+      <svg width="14" height="14" viewBox="0 0 24 24">
+          <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path>
+      </svg>
+  </div></label>
+        </div> 
+       
+      </div>
+  <div data-question="4" class="quiz__step--4 quiz__step quiz__summary">
+    
+        <h1 class="quiz__question">Summary</h1>
+    <div id="summary"></div>
+                <div class="submit__container">
+        <a href="#" class="submit">Submit</a>
+      </div> 
+      </div>
+        </div>
+    </form>
+  </div>
+  
+  <footer class="bottom">
+    <section class="bottom__container">
+      <div class="progress">
+      <div class="progress__inner"></div>
+    </div>
+    <div class="navigation">
+      <div class="navigation__btn navigation__btn--left"><svg width="20" height="20" viewBox="0 0 24 24">
+      <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+  </svg></div>
+      <div class="navigation__btn navigation__btn--right"><svg width="20" height="20" viewBox="0 0 24 24">
+    <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+  </svg></div>
+    </div>
+    </section>  
+  </footer> -->
+
+    <div class="quiz-content">
+        <div class="containers">
+            <div class="quiz-content__block">
+                <div class="quiz-content__block-whom">
+                    <div class="quiz-content__block-whom-title">Для кого букет ?</div>
+                    <ul class="quiz-content__block-whom-wrapper">
+                        <li class="quiz-content__block-whom-wrapper-item"></li>
+                        <li class="quiz-content__block-whom-wrapper-item"></li>
+                        <li class="quiz-content__block-whom-wrapper-item"></li>
+                        <li class="quiz-content__block-whom-wrapper-item"></li>
+                        <li class="quiz-content__block-whom-wrapper-item"></li>
+                        <li class="quiz-content__block-whom-wrapper-item"></li>
+                        <li class="quiz-content__block-whom-wrapper-item"></li>
+                        <li class="quiz-content__block-whom-wrapper-item"></li>
+                    </ul>
+                    <ul class="quiz-content__block-whom-point">
+                        <li class="quiz-content__block-whom-point-item">
+                            <div class="quiz-content__block-whom-point-circle quiz-content__block-whom-point-circle-active"></div>
+                            <div class="quiz-content__block-whom-point-text">Для кого букет ?</div>
+                        </li>
+                        <li class="quiz-content__block-whom-point-item">
+                            <div class="quiz-content__block-whom-point-circle"></div>
+                            <div class="quiz-content__block-whom-point-text">Тип сборки</div>
+                        </li>
+                        <li class="quiz-content__block-whom-point-item">
+                            <div class="quiz-content__block-whom-point-circle"></div>
+                            <div class="quiz-content__block-whom-point-text">Выберите оттенки цветов</div>
+                        </li>
+                        <li class="quiz-content__block-whom-point-item">
+                            <div class="quiz-content__block-whom-point-circle"></div>
+                            <div class="quiz-content__block-whom-point-text">Букет в упаковке</div>
+                        </li>
+                        <li class="quiz-content__block-whom-point-item">
+                            <div class="quiz-content__block-whom-point-circle"></div>
+                            <div class="quiz-content__block-whom-point-text">Оформление</div>
+                        </li>
+                    </ul>
+                    <div class="quiz-content__block-whom-prev">@@include('iconsprite/quiz/arrow-prev-na.svg')</div>
+                    <div class="quiz-content__block-whom-next">@@include('iconsprite/quiz/arrow-next.svg')</div>
+                </div>
+
+                <div class="quiz-content__block-type">
+                    <div class="quiz-content__block-type-title">Тип сборки</div>
+                    <ul class="quiz-content__block-type-wrapper">
+                        <li class="quiz-content__block-type-wrapper-item"></li>
+                        <li class="quiz-content__block-type-wrapper-item"></li>
+                        <li class="quiz-content__block-type-wrapper-item"></li>
+                        <li class="quiz-content__block-type-wrapper-item"></li>
+                    </ul>
+                    <ul class="quiz-content__block-type-point">
+                        <li class="quiz-content__block-type-point-item">
+                            <div class="quiz-content__block-type-point-circle"></div>
+                            <div class="quiz-content__block-type-point-text">Для кого букет ?</div>
+                        </li>
+                        <li class="quiz-content__block-type-point-item">
+                            <div class="quiz-content__block-type-point-circle quiz-content__block-type-point-circle-active"></div>
+                            <div class="quiz-content__block-type-point-text">Тип сборки</div>
+                        </li>
+                        <li class="quiz-content__block-type-point-item">
+                            <div class="quiz-content__block-type-point-circle"></div>
+                            <div class="quiz-content__block-type-point-text">Выберите оттенки цветов</div>
+                        </li>
+                        <li class="quiz-content__block-type-point-item">
+                            <div class="quiz-content__block-type-point-circle"></div>
+                            <div class="quiz-content__block-type-point-text">Букет в упаковке</div>
+                        </li>
+                        <li class="quiz-content__block-type-point-item">
+                            <div class="quiz-content__block-type-point-circle"></div>
+                            <div class="quiz-content__block-type-point-text">Оформление</div>
+                        </li>
+                    </ul>
+                    <div class="quiz-content__block-type-prev">@@include('iconsprite/quiz/arrow-prev-na.svg')</div>
+                    <div class="quiz-content__block-type-next">@@include('iconsprite/quiz/arrow-next.svg')</div>
+                </div>
+
+                <div class="quiz-content__block-shade">
+                    <div class="quiz-content__block-shade-title">Выберите оттенки цветов в букете</div>
+                    <ul class="quiz-content__block-shade-wrapper">
+                        <li class="quiz-content__block-shade-wrapper-item"></li>
+                        <li class="quiz-content__block-shade-wrapper-item"></li>
+                    </ul>
+                    <ul class="quiz-content__block-shade-point">
+                        <li class="quiz-content__block-shade-point-item">
+                            <div class="quiz-content__block-shade-point-circle"></div>
+                            <div class="quiz-content__block-shade-point-text">Для кого букет ?</div>
+                        </li>
+                        <li class="quiz-content__block-shade-point-item">
+                            <div class="quiz-content__block-shade-point-circle"></div>
+                            <div class="quiz-content__block-shade-point-text">Тип сборки</div>
+                        </li>
+                        <li class="quiz-content__block-shade-point-item">
+                            <div class="quiz-content__block-shade-point-circle quiz-content__block-shade-point-circle-active"></div>
+                            <div class="quiz-content__block-shade-point-text">Выберите оттенки цветов</div>
+                        </li>
+                        <li class="quiz-content__block-shade-point-item">
+                            <div class="quiz-content__block-shade-point-circle"></div>
+                            <div class="quiz-content__block-shade-point-text">Букет в упаковке</div>
+                        </li>
+                        <li class="quiz-content__block-shade-point-item">
+                            <div class="quiz-content__block-shade-point-circle"></div>
+                            <div class="quiz-content__block-shade-point-text">Оформление</div>
+                        </li>
+                    </ul>
+                    <div class="quiz-content__block-shade-prev">@@include('iconsprite/quiz/arrow-prev-na.svg')</div>
+                    <div class="quiz-content__block-shade-next">@@include('iconsprite/quiz/arrow-next.svg')</div>
+                </div>
+
+                <div class="quiz-content__block-color">
+                    <div class="quiz-content__block-color-title">Букет в упаковке или под ленту в стиле прованс?</div>
+                    <ul class="quiz-content__block-color-wrapper">
+                        <li class="quiz-content__block-color-wrapper-item"></li>
+                        <li class="quiz-content__block-color-wrapper-item"></li>
+                        <li class="quiz-content__block-color-wrapper-items quiz-content__block-color-wrapper-items-check">
+                            <ul class="quiz-content__block-color-wrapper-list">
+                                <li class="quiz-content__block-color-wrapper-list-item">@@include('iconsprite/quiz/circle-rgb.svg')</li>
+                                <li class="quiz-content__block-color-wrapper-list-item">@@include('iconsprite/quiz/circle-rgb.svg')</li>
+                                <li class="quiz-content__block-color-wrapper-list-item">@@include('iconsprite/quiz/circle-rgb.svg')</li>
+                                <li class="quiz-content__block-color-wrapper-list-item">@@include('iconsprite/quiz/circle-rgb.svg')</li>
+                                <li class="quiz-content__block-color-wrapper-list-item">@@include('iconsprite/quiz/circle-rgb.svg')</li>
+                                <li class="quiz-content__block-color-wrapper-list-item">@@include('iconsprite/quiz/circle-rgb.svg')</li>
+                                <li class="quiz-content__block-color-wrapper-list-item">@@include('iconsprite/quiz/circle-rgb.svg')</li>
+                                <li class="quiz-content__block-color-wrapper-list-item">@@include('iconsprite/quiz/circle-rgb.svg')</li>
+                                <li class="quiz-content__block-color-wrapper-list-item">@@include('iconsprite/quiz/circle-rgb.svg')</li>
+                                <li class="quiz-content__block-color-wrapper-list-item">@@include('iconsprite/quiz/circle-rgb.svg')</li>
+                                <li class="quiz-content__block-color-wrapper-list-item">@@include('iconsprite/quiz/circle-rgb.svg')</li>
+                                <li class="quiz-content__block-color-wrapper-list-item">@@include('iconsprite/quiz/circle-rgb.svg')</li>
+                            </ul>
+                            <div class="quiz-content__block-color-wrapper-text">Выберите до 2-х оттенков упаковки</div>
+                        </li>
+                        <li class="quiz-content__block-color-wrapper-items">
+                            <ul class="quiz-content__block-color-wrapper-list">
+                                <li class="quiz-content__block-color-wrapper-list-item">@@include('iconsprite/quiz/circle-rgb.svg')</li>
+                                <li class="quiz-content__block-color-wrapper-list-item">@@include('iconsprite/quiz/circle-rgb.svg')</li>
+                                <li class="quiz-content__block-color-wrapper-list-item">@@include('iconsprite/quiz/circle-rgb.svg')</li>
+                                <li class="quiz-content__block-color-wrapper-list-item">@@include('iconsprite/quiz/circle-rgb.svg')</li>
+                                <li class="quiz-content__block-color-wrapper-list-item">@@include('iconsprite/quiz/circle-rgb.svg')</li>
+                                <li class="quiz-content__block-color-wrapper-list-item">@@include('iconsprite/quiz/circle-rgb.svg')</li>
+                                <li class="quiz-content__block-color-wrapper-list-item">@@include('iconsprite/quiz/circle-rgb.svg')</li>
+                                <li class="quiz-content__block-color-wrapper-list-item">@@include('iconsprite/quiz/circle-rgb.svg')</li>
+                                <li class="quiz-content__block-color-wrapper-list-item">@@include('iconsprite/quiz/circle-rgb.svg')</li>
+                                <li class="quiz-content__block-color-wrapper-list-item">@@include('iconsprite/quiz/circle-rgb.svg')</li>
+                                <li class="quiz-content__block-color-wrapper-list-item">@@include('iconsprite/quiz/circle-rgb.svg')</li>
+                                <li class="quiz-content__block-color-wrapper-list-item">@@include('iconsprite/quiz/circle-rgb.svg')</li>
+                            </ul>
+                            <div class="quiz-content__block-color-wrapper-text">Выберите до 2-х оттенков упаковки</div>
+                        </li>
+                    </ul>
+                    <ul class="quiz-content__block-color-point">
+                        <li class="quiz-content__block-color-point-item">
+                            <div class="quiz-content__block-color-point-circle"></div>
+                            <div class="quiz-content__block-color-point-text">Для кого букет ?</div>
+                        </li>
+                        <li class="quiz-content__block-color-point-item">
+                            <div class="quiz-content__block-color-point-circle"></div>
+                            <div class="quiz-content__block-color-point-text">Тип сборки</div>
+                        </li>
+                        <li class="quiz-content__block-color-point-item">
+                            <div class="quiz-content__block-color-point-circle"></div>
+                            <div class="quiz-content__block-color-point-text">Выберите оттенки цветов</div>
+                        </li>
+                        <li class="quiz-content__block-color-point-item">
+                            <div class="quiz-content__block-color-point-circle quiz-content__block-color-point-circle-active"></div>
+                            <div class="quiz-content__block-color-point-text">Букет в упаковке</div>
+                        </li>
+                        <li class="quiz-content__block-color-point-item">
+                            <div class="quiz-content__block-color-point-circle"></div>
+                            <div class="quiz-content__block-color-point-text">Оформление</div>
+                        </li>
+                    </ul>
+                    <div class="quiz-content__block-color-prev">@@include('iconsprite/quiz/arrow-prev-na.svg')</div>
+                    <div class="quiz-content__block-color-next">@@include('iconsprite/quiz/arrow-next.svg')</div>
+                </div>
+
+                <div class="quiz-content__block-range">
+                    <div class="quiz-content__block-range-title">Букет в упаковке или под ленту в стиле прованс?</div>
+                    <div class="quiz-content__block-range-wrapper">
+                        <input type="range" value="1780" min="1000" max="15000" step="1" id="quiz-range">
+                        <div class="quiz-content__block-range-wrapper-line"></div>
+                    </div>
+                    <div class="quiz-content__block-range-count"><p id="quiz-result-range">1780</p>₽</div>
+                    <ul class="quiz-content__block-range-point">
+                        <li class="quiz-content__block-range-point-item">
+                            <div class="quiz-content__block-range-point-circle"></div>
+                            <div class="quiz-content__block-range-point-text">Для кого букет ?</div>
+                        </li>
+                        <li class="quiz-content__block-range-point-item">
+                            <div class="quiz-content__block-range-point-circle"></div>
+                            <div class="quiz-content__block-range-point-text">Тип сборки</div>
+                        </li>
+                        <li class="quiz-content__block-range-point-item">
+                            <div class="quiz-content__block-range-point-circle"></div>
+                            <div class="quiz-content__block-range-point-text">Выберите оттенки цветов</div>
+                        </li>
+                        <li class="quiz-content__block-range-point-item">
+                            <div class="quiz-content__block-range-point-circle"></div>
+                            <div class="quiz-content__block-range-point-text">Букет в упаковке</div>
+                        </li>
+                        <li class="quiz-content__block-range-point-item">
+                            <div class="quiz-content__block-range-point-circle quiz-content__block-range-point-circle-active"></div>
+                            <div class="quiz-content__block-range-point-text">Оформление</div>
+                        </li>
+                    </ul>
+                    <div class="quiz-content__block-range-prev">@@include('iconsprite/quiz/arrow-prev-na.svg')</div>
+                    <div class="quiz-content__block-range-next">@@include('iconsprite/quiz/arrow-next.svg')</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+@@include('components/_footer.html')
+@@include('components/_script.html')

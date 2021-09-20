@@ -22,7 +22,7 @@ const renderCalendar = () => {
 
     const firstDayIndex = date.getDay();
 
-    console.log(lastDay)
+    // console.log(lastDay)
 
     const lastDayIndex = new Date(
         date.getFullYear(),
@@ -48,7 +48,7 @@ const renderCalendar = () => {
     ];
     
 
-    document.querySelector(".date h1").innerHTML = months[date.getMonth()];
+    // document.querySelector(".date h1").innerHTML = months[date.getMonth()];
 
     document.querySelector(".date p").innerHTML = new Date().getFullYear();
 
@@ -103,12 +103,12 @@ const renderCalendar = () => {
     }
     };
 
-    document.querySelector(".prev").addEventListener("click", () => {
+    $(".prev").on("click", function() {
         date.setMonth(date.getMonth() - 1);
         renderCalendar();
     });
 
-    document.querySelector(".next").addEventListener("click", () => {
+    $(".next").on("click", function() {
         date.setMonth(date.getMonth() + 1);
         renderCalendar();
     });
