@@ -15,6 +15,9 @@
 
 @@include('./quiz/quiz.js')
 
+@@include('./subscription/subscription.js')
+
+
 @@include('./calendar/calendar.js')
 
 

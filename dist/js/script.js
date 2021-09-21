@@ -945,48 +945,45 @@ var addModelSlider = new Swiper(".addModelSlider", {
 // })
 
 
+//! Открытие фильтра 
 
 $('.march-content__block-text-filter-block').on('click', function() {
     $('.march-content__block-text-filter-wrapper').toggleClass('display-n');
 });
 
+//! -------------------------------------------------------------------------------
 
 
+//! Передача значение из input range
 
-// var lowerSlider = document.querySelector('#lower');
-// var upperSlider = document.querySelector('#upper');
+$('#marchRange-1').on('input',function () {
+    $('.march-content__block-text-filter-range-value-1').empty().append($(this).val());
+});
+$('#marchRange-2').on('input',function () {
+    $('.march-content__block-text-filter-range-value-2').empty().append($(this).val());
+});
 
-// document.querySelector('#price-max').value = upperSlider.value;
-// document.querySelector('#price-min').value = lowerSlider.value;
+//! -------------------------------------------------------------------------------
 
-// var lowerVal = parseInt(lowerSlider.value);
-// var upperVal = parseInt(upperSlider.value);
 
-// upperSlider.oninput = function () {
-//     lowerVal = parseInt(lowerSlider.value);
-//     upperVal = parseInt(upperSlider.value);
+//! Сброс всех input в фильтре 
 
-//     if (upperVal < lowerVal + 4) {
-//         lowerSlider.value = upperVal - 4;
-//         if (lowerVal == lowerSlider.min) {
-//             upperSlider.value = 4;
-//         }
-//     }
-//     document.querySelector('#price-max').value = this.value
-// };
+const marchRange_1 = 1680;
+const marchRange_2 = 16090;
+$('.march-content__block-text-filter-discard').on('click', function() {
+    $('#checkbox_1').prop('checked', false);
+    $('#checkbox_2').prop('checked', false);
+    $('#checkbox_3').prop('checked', false);
+    $('#checkbox_4').prop('checked', false);
+    $('#checkbox_5').prop('checked', false);
+    $('#checkbox_6').prop('checked', true);
+    $('#marchRange-1').val(marchRange_1);
+    $('.march-content__block-text-filter-range-value-1').empty().append($('#marchRange-1').val());
+    $('#marchRange-2').val(marchRange_2);
+    $('.march-content__block-text-filter-range-value-2').empty().append($('#marchRange-2').val());
+});
 
-// lowerSlider.oninput = function () {
-//     lowerVal = parseInt(lowerSlider.value);
-//     upperVal = parseInt(upperSlider.value);
-//     if (lowerVal > upperVal - 4) {
-//         upperSlider.value = lowerVal + 4;
-//         if (upperVal == upperSlider.max) {
-//             lowerSlider.value = parseInt(upperSlider.max) - 4;
-//         }
-//     }
-//     document.querySelector('#price-min').value = this.value
-// }; 
-
+//! -------------------------------------------------------------------------------
 
 
 //! Передача значение в тег из input-range 
@@ -1040,8 +1037,76 @@ $('.quiz-content__block-range-prev').on('click', function() {
     $('.quiz-content__block-range').addClass('display-n');
 });
 
+$('.quiz-content__block-range-next').on('click', function() {
+    $('.quiz-content__block-add').removeClass('display-n');
+    $('.quiz-content__block-range').addClass('display-n');
+});
+$('.quiz-content__block-add-prev').on('click', function() {
+    $('.quiz-content__block-range').removeClass('display-n');
+    $('.quiz-content__block-add').addClass('display-n');
+});
+
 
 //! ----------------------------------------------------------------
+
+
+
+// Поворот карты по двойному клику
+$('.sub-content__block-card-1').on('click', function() {
+	if($(this).find('.sub-content__block-card-1-content').hasClass('sub-content__block-card-1-flip')) { 
+		$(this).find('.sub-content__block-card-1-content').removeClass('sub-content__block-card-1-flip')
+
+	} else {
+		$(this).find('.sub-content__block-card-1-content').addClass('sub-content__block-card-1-flip')
+	}
+});
+$('.sub-content__block-card-2').on('click', function() {
+	if($(this).find('.sub-content__block-card-2-content').hasClass('sub-content__block-card-2-flip')) { 
+		$(this).find('.sub-content__block-card-2-content').removeClass('sub-content__block-card-2-flip')
+
+	} else {
+		$(this).find('.sub-content__block-card-2-content').addClass('sub-content__block-card-2-flip')
+	}
+});
+$('.sub-content__block-card-3').on('click', function() {
+	if($(this).find('.sub-content__block-card-3-content').hasClass('sub-content__block-card-3-flip')) { 
+		$(this).find('.sub-content__block-card-3-content').removeClass('sub-content__block-card-3-flip')
+
+	} else {
+		$(this).find('.sub-content__block-card-3-content').addClass('sub-content__block-card-3-flip')
+	}
+});
+$('.sub-content__block-card-4').on('click', function() {
+	if($(this).find('.sub-content__block-card-4-content').hasClass('sub-content__block-card-4-flip')) { 
+		$(this).find('.sub-content__block-card-4-content').removeClass('sub-content__block-card-4-flip')
+
+	} else {
+		$(this).find('.sub-content__block-card-4-content').addClass('sub-content__block-card-4-flip')
+	}
+});
+$('.sub-content__block-card-5').on('click', function() {
+	if($(this).find('.sub-content__block-card-5-content').hasClass('sub-content__block-card-5-flip')) { 
+		$(this).find('.sub-content__block-card-5-content').removeClass('sub-content__block-card-5-flip')
+
+	} else {
+		$(this).find('.sub-content__block-card-5-content').addClass('sub-content__block-card-5-flip')
+	}
+});
+
+
+// Поворот карты по ховеру
+// $('.card-block').hover( function() {
+// 	$(this).find('.card').addClass('flip')
+// },
+// function() {
+// 	$(this).find('.card').removeClass('flip')
+// })
+
+$(function() {
+	
+	$('.sub-content__block-card-wrapper').draggable();
+	
+});
 
 
 

@@ -5,6 +5,12 @@
 <div class="march-content">
     <div class="containers">
         <div class="march-content__block">
+            <div class="march-content__block-back">
+                <a href="#">
+                    @@include('iconsprite/arrow-back.svg')
+                    @@include('iconsprite/arrow-back.svg')
+                </a>
+            </div>
             <div class="march-content__block-text">
                 <div class="march-content__block-text-title">8 марта</div>
                 <div class="march-content__block-text-filter">
@@ -45,24 +51,19 @@
                                 </div>
                             </li>
                         </ul>
-                        <!-- <div class="march-content__block-text-filter-range">
-                            <div class="price-range-slider">
-                                <div class="price-wrap">
-                                        <div class="price-wrap-1">
-                                            <label for="price-min"></label>
-                                            <input disabled tabindex="-1" id="price-min" value="1">
-                                        </div>
-                                        <div class="price-wrap-2">
-                                            <label for="price-max"></label>
-                                            <input disabled tabindex="-1" id="price-max" value="1">
-                                        </div>
-                                </div>
-                                <div class="price-field">
-                                    <input type="range" min="1690" max="16090" value="1690" id="lower">
-                                    <input type="range" min="1690" max="16090" value="16090" id="upper">
-                                </div>
-                            </div>
-                        </div> -->
+                        <div class="march-content__block-text-filter-range">
+                            <div class="march-content__block-text-filter-range-value-1">1690</div>
+                            <div class="march-content__block-text-filter-range-value-2">16090</div>
+                            <input type="range" id="marchRange-1" value="1680" min="1680" max="16090" class="march-content__block-text-filter-range-1">
+                            <input type="range" id="marchRange-2" value="16090" min="1680" max="16090" class="march-content__block-text-filter-range-2">
+                            <div class="march-content__block-text-filter-range-prev">от</div>
+                            <div class="march-content__block-text-filter-range-next">до</div>
+                        </div>
+                        <div class="march-content__block-text-filter-checkboxs">
+                            <input class="march-content__block-text-filter-checkboxs__input" type="checkbox" id="checkbox_6" checked>
+                            <label class="march-content__block-text-filter-checkboxs__label" for="checkbox_6">Искать везде</label>
+                        </div>
+                        <div class="march-content__block-text-filter-discard"><p>Сбросить</p></div>
                     </div>
 
 

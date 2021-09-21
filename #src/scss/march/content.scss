@@ -5,6 +5,12 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
+        position: relative;
+        &-back {
+            cursor: pointer;
+            position: absolute;
+            top: -63px;
+        }
         &-text {
             display: flex;
             align-items: center;
@@ -56,7 +62,7 @@
                     transition: all 0.5s ease;
                     position: absolute;
                     width: 224px;
-                    height: 224px;
+                    height: 325px;
                     top: 40px;
                     left: -94px;
                     background: #04133C;
@@ -67,17 +73,85 @@
                     padding: 23px 0 20px 14px;
                     
                 }
+                &-discard {
+                    margin: 25px 0 0 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    cursor: pointer;
+                    & p {
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 18px;
+                        text-decoration-line: underline;
+                        color: #FFFFFF;
+                        text-shadow: 0px 0px 10px #414141;
+                        margin: 0 15px 0 0;
+                    }
+                }
                 &-range {
                     width: 100%;
                     display: flex;
                     justify-content: flex-start;
-                    margin: 0 10px 0 20px;
+                    padding: 0 10px 0 0;
                     position: relative;
+                    margin: 65px 0 0 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
                     &::after {
-                        content: "от";
+                        content: "";
                         position: absolute;
-                        top: 39px;
-                        left: -20px;
+                        top: -20px;
+                        left: 45px;
+                        width: 109px;
+                        height: 2px;
+                        background: #032D9F;
+                        z-index: -1;
+                    }
+                    &-1 {
+                        &::-webkit-slider-thumb {
+                            margin: -27.2px 0 0 0;
+                        }
+                    }
+                    &-2 {
+                        &::-webkit-slider-thumb {
+                            margin: -27.3px 0 0 0;
+                        }
+                    }
+                    &-value {
+                        &-1 {
+                            position: absolute;
+                            top: -48px;
+                            left: 36px;
+                            font-family: Circe;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 11px;
+                            line-height: 16px;
+                            color: #FFFFFF;
+                            text-shadow: 0px 0px 10px #414141;
+                        }
+                        &-2 {
+                            position: absolute;
+                            top: -48px;
+                            right: 48px;
+                            font-family: Circe;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 11px;
+                            line-height: 16px;
+                            color: #FFFFFF;
+                            text-shadow: 0px 0px 10px #414141;
+                        }
+                    }
+                    &-next {
+                        position: absolute;
+                        top: -28px;
+                        right: 26px;
                         font-family: Circe;
                         font-style: normal;
                         font-weight: normal;
@@ -86,11 +160,10 @@
                         color: #FFFFFF;
                         text-shadow: 0px 0px 10px #414141;
                     }
-                    &::before {
-                        content: "до";
+                    &-prev {
                         position: absolute;
-                        top: 37px;
-                        right: 30px;                    
+                        top: -27px;
+                        left: 18px;
                         font-family: Circe;
                         font-style: normal;
                         font-weight: normal;
@@ -98,6 +171,41 @@
                         line-height: 18px;
                         color: #FFFFFF;
                         text-shadow: 0px 0px 10px #414141;
+                    }
+                    & input[type='range'] {
+                        // overflow: hidden;
+                        width: 115px;
+                        -webkit-appearance: none;
+                        // background: transparent;
+                        // position: relative;
+                    }
+                    
+                    & input[type='range']::-webkit-slider-runnable-track {
+                        height: 0px;
+                        -webkit-appearance: none;
+                        background: transparent;
+                    }
+                    
+                    & input[type='range']::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                        width: 16px;
+                        height: 16px;
+                        background: #032D9F;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+                    
+                    & input[type="range"]::-moz-range-progress {
+                        background-color: #43e5f7; 
+                    }
+                    & input[type="range"]::-moz-range-track {  
+                        background-color: #9a905d;
+                    }
+                    & input[type="range"]::-ms-fill-lower {
+                        background-color: #43e5f7; 
+                    }
+                    & input[type="range"]::-ms-fill-upper {  
+                        background-color: #9a905d;
                     }
                 }
             }
@@ -532,17 +640,13 @@
     }
 }
 .price-wrap-2 {
-
-
-font-family: Circe;
-font-style: normal;
-font-weight: normal;
-font-size: 11px;
-line-height: 16px;
-
-color: #FFFFFF;
-
-text-shadow: 0px 0px 10px #414141;
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 10px #414141;
     & label {
         font-family: Circe;
         font-style: normal;
@@ -580,7 +684,6 @@ input {
     background-color: transparent;
 }
 
-/* Reset style for input range */
 
 .price-range-slider .price-field input[type=range] {
     width: 100%;
@@ -611,7 +714,6 @@ input {
     border-color: transparent;
 }
 
-/* Style toddler input range */
 
 .price-range-slider .price-field input[type=range]::-webkit-slider-thumb {
     /* WebKit/Blink */
@@ -668,108 +770,43 @@ input {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* Style track input range */
-// .price-range-slider .price-field input[type=range]::-webkit-slider-runnable-track {
-//     /* WebKit/Blink */
-//     width: 200px;
-//     height: 2px;
-//     background: #032D9F;
-// }
-
-// .price-range-slider .price-field input[type=range]::-moz-range-track {
-//     /* Firefox */
-//     width: 109px;
-//     height: 2px;
-//     left: 1101px;
-//     top: 465px;
-
-//     background: #032D9F;
-// }
-
-// .price-range-slider .price-field input[type=range]::-ms-track {
-//     /* IE */
-//     width: 109px;
-//     height: 2px;
-//     left: 1101px;
-//     top: 465px;
-
-//     background: #032D9F;
-// }
 input[type=range]::-webkit-slider-runnable-track {
 	width: 109px;
     height: 2px;
     background: #032D9F;
 }
 input[type=range]::-moz-range-track {
-	/* снова стили вашей дорожки */
+
 }
-input[type=range]::-ms-track { /* должен следовать после -webkit- */
-	// border-color: transparent;
-	// color: transparent;
-	/* снова стили вашей дорожки */
+input[type=range]::-ms-track { 
+
 }
-
-/* Style for input value block */
-// .price-range-slider .price-wrap .price-min,
-// .price-range-slider .price-wrap .price-max {
-//     pointer-events: none;
-// }
-
-// .price-range-slider .price-wrap #price-min,
-// .price-range-slider .price-wrap #price-max {
-//     margin: 0;
-//     padding: 0;
-//     background: 0;
-//     border: 0;
-//     outline: 0;
-//     color: #BCBCBC;
-//     font-family: 'Arboria';
-//     font-size: 1em;
-//     width: 25px;
-//     pointer-events: none;
-// }
-
-/* Style for active state input */
-
-// .price-range-slider .price-field input[type=range]:hover::-webkit-slider-thumb {
-//     box-shadow: 0 0 0 0.5px #242424;
-//     transition-duration: 0.3s;
-// }
-
-// .price-range-slider .price-field input[type=range]:active::-webkit-slider-thumb {
-//     box-shadow: 0 0 0 0.5px #242424;
-//     transition-duration: 0.3s;
-// }
 
 
 //! ---------------------------------------------------------------------------------------------------
 
-/* Checkbox */
+
+//! 1-й вид checkbox в фильтре 
 .march-content__block-text-filter-checkbox {
     position: relative;
     margin-bottom: 2px;
 }
-
 .march-content__block-text-filter-checkbox__input {
     -webkit-appearance: none;
     appearance: none;
     position: absolute;
 }
-
 .march-content__block-text-filter-checkbox__label {
     padding-left: 25px;
-
     font-family: Circe;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 18px;
     color: #FFFFFF;
-
     text-shadow: 0px 0px 10px #414141;
     cursor: pointer;
 }
-
 .march-content__block-text-filter-checkbox__label:before {
     content: "";
     display: block;
@@ -777,43 +814,81 @@ input[type=range]::-ms-track { /* должен следовать после -we
     height: 14px;
     left: 1062px;
     top: 295px;
-
     background: #032D9F;
     border-radius: 3px;
-
     position: absolute;
     top: 6px;
     left: 0;
     z-index: 1;
-
     transition: background .1s linear, border .1s linear;
 }
-
-// .march-content__block-text-filter-checkbox__label:after {
-//     content: "";
-//     display: block;
-//     width: 12px;
-//     height: 12px;
-
-//     background: url("check.svg") no-repeat;
-//     background-size: 12px 12px;
-//     opacity: 0;
-//     background-color: #fff;
-//     border-radius: 3px;
-
-//     position: absolute;
-//     top: 3px;
-//     left: 3px;
-//     z-index: 2;
-
-//     transition: opacity .1s linear;
-// }
-
 .march-content__block-text-filter-checkbox__input:checked + .march-content__block-text-filter-checkbox__label:before {
     background-color: #fff;
     border-color: #fff;
 }
-
 .march-content__block-text-filter-checkbox__input:checked + .march-content__block-text-filter-checkbox__label:after {
     opacity: 1;
 }
+
+//! ---------------------------------------------------------------------------------------------------
+
+
+
+//! 2-й вид checkbox в фильтре 
+.march-content__block-text-filter-checkboxs {
+    position: relative;
+    margin: 15px 0 2px 3px;
+}
+.march-content__block-text-filter-checkboxs__input {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+.march-content__block-text-filter-checkboxs__label {
+    padding-left: 25px;
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 10px #414141;
+    cursor: pointer;
+}
+.march-content__block-text-filter-checkboxs__label:before {
+    content: "";
+    display: block;
+    background: #032D9F;
+    border-radius: 3px;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    z-index: 1;
+    width: 14px;
+    height: 14px;
+    background: #032D9F;
+    border-radius: 7px;
+    transition: background .1s linear, border .1s linear;
+}
+.march-content__block-text-filter-checkboxs__label:after {
+    content: "";
+    display: block;
+    background-size: 12px 12px;
+    opacity: 0;
+    position: absolute;
+    top: 11px;
+    left: 4px;
+    z-index: 2;
+    transition: opacity .1s linear;
+    width: 6px;
+    height: 6px;
+    background: #16B8C3;
+    border-radius: 7px;
+}
+.march-content__block-text-filter-checkboxs__input:checked + .march-content__block-text-filter-checkboxs__label:after {
+    opacity: 1;
+}
+
+
+//! ---------------------------------------------------------------------------------------------------
+

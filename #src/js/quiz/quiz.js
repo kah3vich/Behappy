@@ -49,5 +49,14 @@ $('.quiz-content__block-range-prev').on('click', function() {
     $('.quiz-content__block-range').addClass('display-n');
 });
 
+$('.quiz-content__block-range-next').on('click', function() {
+    $('.quiz-content__block-add').removeClass('display-n');
+    $('.quiz-content__block-range').addClass('display-n');
+});
+$('.quiz-content__block-add-prev').on('click', function() {
+    $('.quiz-content__block-range').removeClass('display-n');
+    $('.quiz-content__block-add').addClass('display-n');
+});
+
 
 //! ----------------------------------------------------------------

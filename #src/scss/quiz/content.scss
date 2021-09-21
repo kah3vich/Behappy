@@ -1,12 +1,19 @@
 .quiz-content {
-    padding: 100px 0;
+    padding: 100px 0 0 0;
     &__block {
         &-whom {
             position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: space-between;
+            height: 803px;
+            &-back {
+                cursor: pointer;
+                position: absolute;
+                top: -43px;
+                left: 0;
+            }
             &-title {
                 font-family: FuturaBookC;
                 font-style: normal;
@@ -28,6 +35,54 @@
                     border: 1px solid #002685;
                     box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
                     border-radius: 20px;
+                    padding: 13px 0;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+                    & p {
+                        font-family: FuturaBookC;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 150%;
+                        text-align: center;
+                        letter-spacing: 0.5px;
+                        color: #FFFFFF;
+                    }
+                    &:last-child {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: flex-end;
+                        border: 1px solid #16B8C3;
+                        filter: drop-shadow(3px 3px 6px rgba(222, 51, 254, 0.2)) drop-shadow(-3px -3px 6px rgba(22, 184, 195, 0.2));
+                        border-radius: 20px;
+                        background: transparent;
+                        & p {
+                            width: 95px;
+                            font-family: FuturaBookC;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 120%;
+                            text-align: center;
+                            letter-spacing: 0.5px;
+                            color: #FFFFFF;
+                        }
+                        & input {
+                            width: 114px;
+                            border-bottom: 1px solid #6B6262;
+                            color: #fff;
+                            font-family: FuturaBookC;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 12px;
+                            line-height: 120%;
+                            text-align: center;
+                            letter-spacing: 0.5px;
+                            margin: 33px 0 12px 0;
+                        }
+                    }
                 }
             }
             &-point {
@@ -80,26 +135,34 @@
             }
             &-prev {
                 position: absolute;
-                left: 0;
+                left: -67px;
                 width: 30px;
-                top: 170px;
+                top: 260px;
                 cursor: not-allowed;
             }
             &-next {
                 position: absolute;
-                right: 20px;
+                right: -47px;
                 width: 30px;
-                top: 170px;
+                top: 260px;
                 padding: 0 0 0 20px;
                 cursor: pointer;
             }
         }
+
         &-type {
             position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: space-between;
+            height: 803px;
+            &-back {
+                cursor: pointer;
+                position: absolute;
+                top: -43px;
+                left: 0;
+            }
             &-title {
                 font-family: FuturaBookC;
                 font-style: normal;
@@ -122,6 +185,20 @@
                     border: 1px solid #002685;
                     box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
                     border-radius: 20px;
+                    padding: 11px 0;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+                    & p {
+                        font-family: FuturaBookC;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 20px;
+                        line-height: 150%;
+                        text-align: center;
+                        letter-spacing: 0.5px;
+                        color: #FFFFFF;
+                    }
                 }
             }
             &-point {
@@ -174,9 +251,9 @@
             }
             &-prev {
                 position: absolute;
-                left: 0;
+                left: -67px;
                 width: 30px;
-                top: 170px;
+                top: 260px;
                 cursor: pointer;
                 & path {
                     opacity: 1;
@@ -184,9 +261,9 @@
             }
             &-next {
                 position: absolute;
-                right: 20px;
+                right: -47px;
                 width: 30px;
-                top: 170px;
+                top: 260px;
                 padding: 0 0 0 20px;
                 cursor: pointer;
             }
@@ -197,7 +274,14 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: space-between;
+            height: 803px;
+            &-back {
+                cursor: pointer;
+                position: absolute;
+                top: -43px;
+                left: 0;
+            }
             &-title {
                 font-family: FuturaBookC;
                 font-style: normal;
@@ -211,7 +295,7 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 gap: 36px 28px;
-                margin: 50px 0 0 0;
+                margin: 0 0 70px 0;
                 width: 702px;
                 &-item {
                     width: 100%;
@@ -220,6 +304,20 @@
                     border: 1px solid #002685;
                     box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
                     border-radius: 20px;
+                    padding: 22px 0;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+                    & p {
+                        font-family: FuturaBookC;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 20px;
+                        line-height: 150%;
+                        text-align: center;
+                        letter-spacing: 0.5px;
+                        color: #FFFFFF;
+                    }
                 }
             }
             &-point {
@@ -272,9 +370,9 @@
             }
             &-prev {
                 position: absolute;
-                left: 0;
+                left: -67px;
                 width: 30px;
-                top: 170px;
+                top: 260px;
                 cursor: pointer;
                 & path {
                     opacity: 1;
@@ -282,9 +380,9 @@
             }
             &-next {
                 position: absolute;
-                right: 20px;
+                right: -47px;
                 width: 30px;
-                top: 170px;
+                top: 260px;
                 padding: 0 0 0 20px;
                 cursor: pointer;
             }
@@ -295,7 +393,14 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: space-between;
+            height: 803px;
+            &-back {
+                cursor: pointer;
+                position: absolute;
+                top: -43px;
+                left: 0;
+            }
             &-title {
                 font-family: FuturaBookC;
                 font-style: normal;
@@ -318,6 +423,20 @@
                     border: 1px solid #002685;
                     box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
                     border-radius: 20px;
+                    padding: 22px 0;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+                    & p {
+                        font-family: FuturaBookC;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 20px;
+                        line-height: 150%;
+                        text-align: center;
+                        letter-spacing: 0.5px;
+                        color: #FFFFFF;
+                    }
                 }
                 &-items {
                     display: flex;
@@ -438,9 +557,9 @@
             }
             &-prev {
                 position: absolute;
-                left: 0;
+                left: -67px;
                 width: 30px;
-                top: 170px;
+                top: 260px;
                 cursor: pointer;
                 & path {
                     opacity: 1;
@@ -448,118 +567,28 @@
             }
             &-next {
                 position: absolute;
-                right: 20px;
+                right: -47px;
                 width: 30px;
-                top: 170px;
+                top: 260px;
                 padding: 0 0 0 20px;
                 cursor: pointer;
             }
         }
 
-        &-add {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            &-title {
-                font-family: FuturaBookC;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 30px;
-                line-height: 150%;
-                letter-spacing: 0.5px;
-                color: #FFFFFF;
-            }
-            &-wrapper {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 36px 28px;
-                margin: 50px 0 0 0;
-                width: 702px;
-                &-item {
-                    width: 100%;
-                    height: 175px;
-                    background: #04133C;
-                    border: 1px solid #002685;
-                    box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
-                    border-radius: 20px;
-                }
-            }
-            &-point {
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-                width: 100%;
-                margin: 84px 0 0 0;
-                position: relative;
-                overflow: hidden;
-                &::after {
-                    content: "";
-                    position: absolute;
-                    top: 14px;
-                    left: 0;
-                    width: 300%;
-                    height: 0px;
-                    border: 1px dashed #16B8C3;
-                    z-index: -1;
-                }
-                &-item {
-                    display: flex;
-                    width: 120px;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                }
-                &-circle {
-                    width: 31px;
-                    height: 31px;
-                    background: #FFFFFF;
-                    border: 1px solid #69E0A2;
-                    border-radius: 50%;
-                    &-active {
-                        background: #16B8C3;
-                        border: none;
-                    }
-                }
-                &-text {
-                    width: 120px;
-                    margin: 23px 0 0 0;
-                    font-family: Circe;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 14px;
-                    line-height: 21px;
-                    text-align: center;
-                    color: #FFFFFF;
-                }
-            }
-            &-prev {
-                position: absolute;
-                left: 0;
-                width: 30px;
-                top: 170px;
-                cursor: pointer;
-                & path {
-                    opacity: 1;
-                }
-            }
-            &-next {
-                position: absolute;
-                right: 20px;
-                width: 30px;
-                top: 170px;
-                padding: 0 0 0 20px;
-                cursor: pointer;
-            }
-        }
 
         &-range {
             position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: space-between;
+            height: 803px;
+            &-back {
+                cursor: pointer;
+                position: absolute;
+                top: -43px;
+                left: 0;
+            }
             &-title {
                 font-family: FuturaBookC;
                 font-style: normal;
@@ -716,9 +745,9 @@
             }
             &-prev {
                 position: absolute;
-                left: 0;
+                left: -67px;
                 width: 30px;
-                top: 170px;
+                top: 260px;
                 cursor: pointer;
                 & path {
                     opacity: 1;
@@ -726,9 +755,168 @@
             }
             &-next {
                 position: absolute;
-                right: 20px;
+                right: -47px;
                 width: 30px;
-                top: 170px;
+                top: 260px;
+                padding: 0 0 0 20px;
+                cursor: pointer;
+            }
+        }
+
+        &-add {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 803px;
+            &-back {
+                cursor: pointer;
+                position: absolute;
+                top: -43px;
+                left: 0;
+            }
+            &-title {
+                font-family: FuturaBookC;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 30px;
+                line-height: 150%;
+                letter-spacing: 0.5px;
+                color: #FFFFFF;
+            }
+            &-wrapper {
+                width: 100%;
+                overflow: hidden;
+                position: relative;
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                gap: 30px 0;
+                padding: 5px 5px;
+                margin: 50px 0 0 0;
+                &-item {
+                    width: 160px;
+                    height: 175px;
+                    background: #04133C;
+                    border: 1px solid #002685;
+                    box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+                    border-radius: 20px;
+                    padding: 17px 0;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+                    & p {
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 13px;
+                        line-height: 19px;
+                        text-align: center;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+            &-text {
+                & a {
+                    font-family: FuturaBookC;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 23px;
+                    line-height: 150%;
+                    letter-spacing: 0.5px;
+                    text-decoration-line: underline;
+                    color: #FFFFFF;
+                }
+            }
+            &-count {
+                margin: 65px 0 0 0;
+                width: 348px;
+                height: 64px;
+                border: 1px solid #16B8C3;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: FuturaBookC;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 30px;
+                line-height: 150%;
+                letter-spacing: 0.5px;
+                color: #FFFFFF;
+                & p {
+                    font-family: FuturaBookC;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 30px;
+                    line-height: 150%;
+                    letter-spacing: 0.5px;
+                    color: #FFFFFF;
+                }
+            }
+            &-point {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                width: 100%;
+                margin: 84px 0 0 0;
+                position: relative;
+                overflow: hidden;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 14px;
+                    left: 0;
+                    width: 300%;
+                    height: 0px;
+                    border: 1px dashed #16B8C3;
+                    z-index: -1;
+                }
+                &-item {
+                    display: flex;
+                    width: 120px;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &-circle {
+                    width: 31px;
+                    height: 31px;
+                    background: #FFFFFF;
+                    border: 1px solid #69E0A2;
+                    border-radius: 50%;
+                    &-active {
+                        background: #16B8C3;
+                        border: none;
+                    }
+                }
+                &-text {
+                    width: 120px;
+                    margin: 23px 0 0 0;
+                    font-family: Circe;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 21px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+            }
+            &-prev {
+                position: absolute;
+                left: -67px;
+                width: 30px;
+                top: 260px;
+                cursor: pointer;
+                & path {
+                    opacity: 1;
+                }
+            }
+            &-next {
+                position: absolute;
+                right: -47px;
+                width: 30px;
+                top: 260px;
                 padding: 0 0 0 20px;
                 cursor: pointer;
             }
