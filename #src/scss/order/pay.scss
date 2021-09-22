@@ -5,12 +5,118 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        position: relative;
+        &-back {
+            cursor: pointer;
+            position: absolute;
+            top: -63px;
+        }
         &-info {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             justify-content: flex-start;
             margin: 120px 0 0 0;
+            &-balls {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+                margin: 72px 0 0 0;
+                &-text {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                }
+                &-title {
+                    font-family: Circe;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 19px;
+                    line-height: 122%;
+                    letter-spacing: 0.5px;
+                    color: #FFFFFF;
+                }
+                &-item {
+                    width: 102px;
+                    height: 33px;
+                    background: #001652;
+                    border-radius: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 0 0 52px;
+                    & svg {
+                        margin: 0 0 0 27px;
+                    }
+                    & p {
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 122%;
+                        letter-spacing: 0.5px;
+                        color: #FFFFFF;
+                    }
+                }
+                &-container {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    width: 145px;
+                    height: 74px;
+                    margin: 37px 0 0 0;
+                }
+                &-yes {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    width: 56px;
+                    height: 22px;
+                    & .ord-pay__block-info-balls-check {
+                        width: 22px;
+                        height: 22px;
+                        border: 1px solid #16B8C3;
+                        border-radius: 50%;
+                        position: relative;
+                    }
+                    .ord-pay__block-info-balls-text {
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 140%;
+                        letter-spacing: 0.5px;
+                        color: #FFFFFF;
+                    }
+                }
+                &-no {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    width: 60px;
+                    height: 22px;
+                    & .ord-pay__block-info-balls-check {
+                        width: 22px;
+                        height: 22px;
+                        border: 1px solid #16B8C3;
+                        border-radius: 50%;
+                        position: relative;
+                    }
+                    .ord-pay__block-info-balls-text {
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 140%;
+                        letter-spacing: 0.5px;
+                        color: #FFFFFF;
+                    }
+                }
+            }
             &-card {
                 width: 315px;
                 height: 90px;
@@ -150,11 +256,85 @@
                     }
                 }
             }
+            &-promocode {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 315px;
+                &-input {
+                    width: 127px;
+                    height: 50px;
+                    border: 1px solid #16B8C3;
+                    background: transparent;
+                    border-radius: 5px;
+                    padding: 12px 0 0 21px;
+                    overflow: hidden;
+                    & input {
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 17px;
+                        line-height: 122%;
+                        letter-spacing: 0.5px;
+                        color: #fff;
+                        &::placeholder {
+                            font-family: Circe;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 17px;
+                            line-height: 122%;
+                            letter-spacing: 0.5px;
+                            color: #929090;
+                        }
+                    }
+                }
+                &-btn {
+                    width: 174px;
+                    height: 50px;
+                    background: conic-gradient(from 180deg at 50% 50%, #DCDCDC -35.51deg, #CCCCCC 10.17deg, #B6B6B6 44.5deg, #B8B8B8 123.75deg, #D1D1D1 171.3deg, #AAAAAA 188.73deg, #C4C4C4 224.01deg, #DCDCDC 324.49deg, #CCCCCC 370.17deg);
+                    box-shadow: 0px 0px 15px #C5C5C5;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 4px;
+                        left: 4px;
+                        width: 167.18px;
+                        height: 41px;
+                        border: 0.5px solid #C6C6C6;
+                        border-radius: 10px;
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 8px;
+                        left: 8px;
+                        width: 161.72px;
+                        height: 33px;
+                        border: 0.5px solid #C6C6C6;
+                        border-radius: 10px;
+                    }
+                    & a {
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 15px;
+                        line-height: 22px;
+                        color: #141651;
+                        text-shadow: 0px 0px 10px rgba(46, 46, 46, 0.5);
+                    }
+                }
+            }
             &-price {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: flex-start;
+                margin: 26px 0 0 0;
                 &-title {
                     font-family: Circe;
                     font-style: normal;
@@ -163,6 +343,37 @@
                     line-height: 122%;
                     letter-spacing: 0.5px;
                     color: #FFFFFF;
+                }
+                &-balls {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 315px;
+                    margin: 31px 0 0 0;
+                    &-title {
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 122%;
+                        letter-spacing: 0.5px;
+                        color: #FFFFFF;
+                    }
+                    &-count {
+                        width: 61px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        & p {
+                            font-family: Circe;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 122%;
+                            letter-spacing: 0.5px;
+                            color: #FFFFFF;
+                        }
+                    }
                 }
                 &-delivery {
                     display: flex;
@@ -424,77 +635,77 @@
                     }
                 }
             }
-            &-call {
-                display: flex;
-                align-items: flex-start;
-                justify-content: center;
-                flex-direction: column;
-                margin: 73px 0 0 0;
-                &-title {
-                    font-family: Circe;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 19px;
-                    line-height: 122%;
-                    letter-spacing: 0.5px;
-                    color: #FFFFFF;
-                    margin: 0 0 30px 0;
-                }
-                &-container {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    width: 152px;
-                }
-                &-yes {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    flex-direction: row;
-                    width: 56px;
-                    height: 22px;
-                    & .ord-pay__block-data-call-check {
-                        width: 22px;
-                        height: 22px;
-                        border: 1px solid #16B8C3;
-                        border-radius: 50%;
-                        position: relative;
-                    }
-                    .ord-pay__block-data-call-text {
-                        font-family: Circe;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 14px;
-                        line-height: 140%;
-                        letter-spacing: 0.5px;
-                        color: #FFFFFF;
-                    }
-                }
-                &-no {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    flex-direction: row;
-                    width: 60px;
-                    height: 22px;
-                    & .ord-pay__block-data-call-check {
-                        width: 22px;
-                        height: 22px;
-                        border: 1px solid #16B8C3;
-                        border-radius: 50%;
-                        position: relative;
-                    }
-                    .ord-pay__block-data-call-text {
-                        font-family: Circe;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 14px;
-                        line-height: 140%;
-                        letter-spacing: 0.5px;
-                        color: #FFFFFF;
-                    }
-                }
-            }
+            // &-call {
+            //     display: flex;
+            //     align-items: flex-start;
+            //     justify-content: center;
+            //     flex-direction: column;
+            //     margin: 73px 0 0 0;
+            //     &-title {
+            //         font-family: Circe;
+            //         font-style: normal;
+            //         font-weight: normal;
+            //         font-size: 19px;
+            //         line-height: 122%;
+            //         letter-spacing: 0.5px;
+            //         color: #FFFFFF;
+            //         margin: 0 0 30px 0;
+            //     }
+            //     &-container {
+            //         display: flex;
+            //         align-items: center;
+            //         justify-content: space-between;
+            //         width: 152px;
+            //     }
+            //     &-yes {
+            //         display: flex;
+            //         align-items: center;
+            //         justify-content: space-between;
+            //         flex-direction: row;
+            //         width: 56px;
+            //         height: 22px;
+            //         & .ord-pay__block-data-call-check {
+            //             width: 22px;
+            //             height: 22px;
+            //             border: 1px solid #16B8C3;
+            //             border-radius: 50%;
+            //             position: relative;
+            //         }
+            //         .ord-pay__block-data-call-text {
+            //             font-family: Circe;
+            //             font-style: normal;
+            //             font-weight: normal;
+            //             font-size: 14px;
+            //             line-height: 140%;
+            //             letter-spacing: 0.5px;
+            //             color: #FFFFFF;
+            //         }
+            //     }
+            //     &-no {
+            //         display: flex;
+            //         align-items: center;
+            //         justify-content: space-between;
+            //         flex-direction: row;
+            //         width: 60px;
+            //         height: 22px;
+            //         & .ord-pay__block-data-call-check {
+            //             width: 22px;
+            //             height: 22px;
+            //             border: 1px solid #16B8C3;
+            //             border-radius: 50%;
+            //             position: relative;
+            //         }
+            //         .ord-pay__block-data-call-text {
+            //             font-family: Circe;
+            //             font-style: normal;
+            //             font-weight: normal;
+            //             font-size: 14px;
+            //             line-height: 140%;
+            //             letter-spacing: 0.5px;
+            //             color: #FFFFFF;
+            //         }
+            //     }
+            // }
             &-calls {
                 display: flex;
                 align-items: center;
@@ -572,12 +783,17 @@
                     }
                 }
             }
+            &-wrapper {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                margin: 70px 0 0 0;
+                gap: 60px 30px;
+            }
             &-address {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                margin: 92px 0 0 0;
+                margin: 70px 0 0 0;
                 gap: 60px 30px;
-                // width: 535px;
                 &-city {
                     display: flex;
                     align-items: flex-start;
@@ -941,12 +1157,12 @@
                     border-top: 1px solid #fff;
                 }
             }
-            &-where {
+            &-call {
                 display: flex;
                 align-items: flex-start;
                 justify-content: center;
                 flex-direction: column;
-                margin: 73px 0 0 0;
+                margin: 72px 0 0 0;
                 &-title {
                     font-family: Circe;
                     font-style: normal;
@@ -961,7 +1177,81 @@
                     display: flex;
                     align-items: flex-start;
                     justify-content: space-between;
-                    flex-direction: column;
+                    flex-direction: row;
+                    width: 145px;
+                    height: 74px;
+                }
+                &-yes {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    width: 56px;
+                    height: 22px;
+                    & .ord-pay__block-data-call-check {
+                        width: 22px;
+                        height: 22px;
+                        border: 1px solid #16B8C3;
+                        border-radius: 50%;
+                        position: relative;
+                    }
+                    .ord-pay__block-data-call-text {
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 140%;
+                        letter-spacing: 0.5px;
+                        color: #FFFFFF;
+                    }
+                }
+                &-no {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    width: 60px;
+                    height: 22px;
+                    & .ord-pay__block-data-call-check {
+                        width: 22px;
+                        height: 22px;
+                        border: 1px solid #16B8C3;
+                        border-radius: 50%;
+                        position: relative;
+                    }
+                    .ord-pay__block-data-call-text {
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 140%;
+                        letter-spacing: 0.5px;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+            &-where {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+                margin: 72px 0 0 0;
+                &-title {
+                    font-family: Circe;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 19px;
+                    line-height: 122%;
+                    letter-spacing: 0.5px;
+                    color: #FFFFFF;
+                    margin: 0 0 30px 0;
+                }
+                &-container {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    width: 145px;
                     height: 74px;
                 }
                 &-yes {
@@ -1013,12 +1303,12 @@
                     }
                 }
             }
-            &-photo {
+            &-exactly {
                 display: flex;
                 align-items: flex-start;
                 justify-content: center;
                 flex-direction: column;
-                margin: 73px 0 0 0;
+                margin: 72px 0 0 0;
                 &-title {
                     font-family: Circe;
                     font-style: normal;
@@ -1033,7 +1323,81 @@
                     display: flex;
                     align-items: flex-start;
                     justify-content: space-between;
-                    flex-direction: column;
+                    flex-direction: row;
+                    width: 145px;
+                    height: 74px;
+                }
+                &-yes {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    width: 56px;
+                    height: 22px;
+                    & .ord-pay__block-data-exactly-check {
+                        width: 22px;
+                        height: 22px;
+                        border: 1px solid #16B8C3;
+                        border-radius: 50%;
+                        position: relative;
+                    }
+                    .ord-pay__block-data-exactly-text {
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 140%;
+                        letter-spacing: 0.5px;
+                        color: #FFFFFF;
+                    }
+                }
+                &-no {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    width: 60px;
+                    height: 22px;
+                    & .ord-pay__block-data-exactly-check {
+                        width: 22px;
+                        height: 22px;
+                        border: 1px solid #16B8C3;
+                        border-radius: 50%;
+                        position: relative;
+                    }
+                    .ord-pay__block-data-exactly-text {
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 140%;
+                        letter-spacing: 0.5px;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+            &-photo {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+                margin: 56px 0 0 0;
+                &-title {
+                    font-family: Circe;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 19px;
+                    line-height: 122%;
+                    letter-spacing: 0.5px;
+                    color: #FFFFFF;
+                    margin: 0 0 30px 0;
+                }
+                &-container {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    width: 145px;
                     height: 74px;
                 }
                 &-yes {
@@ -1157,84 +1521,12 @@
                     }
                 }
             }
-            &-ball {
+            &-message {
                 display: flex;
-                align-items: flex-start;
-                justify-content: center;
-                flex-direction: column;
-                margin: 73px 0 0 0;
-                &-title {
-                    font-family: Circe;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 19px;
-                    line-height: 122%;
-                    letter-spacing: 0.5px;
-                    color: #FFFFFF;
-                    margin: 0 0 30px 0;
-                }
-                &-container {
-                    display: flex;
-                    align-items: flex-start;
-                    justify-content: space-between;
-                    flex-direction: column;
-                    height: 74px;
-                }
-                &-yes {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    flex-direction: row;
-                    width: 56px;
-                    height: 22px;
-                    & .ord-pay__block-data-ball-check {
-                        width: 22px;
-                        height: 22px;
-                        border: 1px solid #16B8C3;
-                        border-radius: 50%;
-                        position: relative;
-                    }
-                    .ord-pay__block-data-ball-text {
-                        font-family: Circe;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 14px;
-                        line-height: 140%;
-                        letter-spacing: 0.5px;
-                        color: #FFFFFF;
-                    }
-                }
-                &-no {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    flex-direction: row;
-                    width: 60px;
-                    height: 22px;
-                    & .ord-pay__block-data-ball-check {
-                        width: 22px;
-                        height: 22px;
-                        border: 1px solid #16B8C3;
-                        border-radius: 50%;
-                        position: relative;
-                    }
-                    .ord-pay__block-data-ball-text {
-                        font-family: Circe;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 14px;
-                        line-height: 140%;
-                        letter-spacing: 0.5px;
-                        color: #FFFFFF;
-                    }
-                }
-            }
-            &-promocode {
-                margin: 70px 0 0 0;
-                display: flex;
-                align-items: flex-start;
                 flex-direction: column;
                 justify-content: flex-start;
+                align-items: flex-start;
+                margin: 53px 0 0 0;
                 &-title {
                     font-family: Circe;
                     font-style: normal;
@@ -1244,15 +1536,31 @@
                     letter-spacing: 0.5px;
                     color: #FFFFFF;
                 }
-                & input {
-                    width: 255px;
-                    height: 50px;
+                &-textarea {
+                    margin: 24px 0 0 0;
+                    width: 540px;
+                    height: 178px;
+                    resize: none;
                     border: 1px solid #16B8C3;
-                    border-radius: 5px;
-                    color: #fff;
-                    padding: 15px 15px 18px 15px;
-                    margin: 23px 0 0 0;
                     background: transparent;
+                    border-radius: 10px;
+                    padding: 15px 23px;
+                    font-family: Circe;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 180%;
+                    letter-spacing: 0.5px;
+                    color: #fff;
+                    &::placeholder {
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 180%;
+                        letter-spacing: 0.5px;
+                        color: #B3B3B3;
+                    }
                 }
             }
             &-postcards {
@@ -1262,9 +1570,6 @@
                 flex-direction: column;
                 margin: 73px 0 0 0;
                 position: relative;
-                &-border {
-                    
-                }
                 & textarea {
                     resize: none;
                     width: 540px;
@@ -1428,8 +1733,40 @@
                     border-radius: 5px;
                     display: flex;
                     align-items: center;
-                    justify-content: center;
+                    justify-content: flex-start;
                     margin: 14px 0 0 0;
+                    position: relative;
+                    &-active {
+                        &::before {
+                            transform: rotate(180deg);
+                            transition: all 0.5s ease;
+                            
+                        }
+                    }
+                    & p {
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 180%;
+                        letter-spacing: 0.5px;
+                        color: #B2B2B2;
+                        margin: 0 0 0 67px;
+                    }
+                    &::after {
+                        content: url(../svg/order/card.svg);
+                        position: absolute;
+                        top: 13px;
+                        left: 18px;
+                    }
+                    &::before {
+                        content: url(../svg/order/arrow-down.svg);
+                        position: absolute;
+                        top: 11px;
+                        height: 27px;
+                        right: 31px;
+                        transition: all 0.5s ease;
+                    }
                 }
                 &-form {
                     width: 350px;
@@ -1727,6 +2064,28 @@ input[type=radio]:checked ~ label{
 
 //! ------------------------------------------------------------------------------------
 
+//! Радио кнопки - получить ли заказчик звонок перед его отправкой 
+
+.ord-pay__block-data-call-no input[type=radio],
+.ord-pay__block-data-call-yes input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+    width: 56px;
+    height: 26px;
+}
+input[type=radio]:checked ~ .ord-pay__block-data-call-check::before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 4px;
+    top: 4px;
+    border-radius: 50%;
+    background: #16B8C3;
+}
+
+//! ------------------------------------------------------------------------------------
+
 
 //! Радио кнопки - выбора доставки ( в городе или нет ) 
 
@@ -1749,6 +2108,53 @@ input[type=radio]:checked ~ .ord-pay__block-data-where-check::before{
 }
 
 //! ------------------------------------------------------------------------------------
+
+//! Радио кнопки - выбор использовать ли баллы для оплаты 
+
+.ord-pay__block-info-balls-no input[type=radio],
+.ord-pay__block-info-balls-yes input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+    width: 56px;
+    height: 26px;
+}
+input[type=radio]:checked ~ .ord-pay__block-info-balls-check::before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 4px;
+    top: 4px;
+    border-radius: 50%;
+    background: #16B8C3;
+}
+
+//! ------------------------------------------------------------------------------------
+
+
+
+//! Радио кнопки - для уточнения адреса доставки 
+
+.ord-pay__block-data-exactly-no input[type=radio],
+.ord-pay__block-data-exactly-yes input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+    width: 56px;
+    height: 26px;
+}
+input[type=radio]:checked ~ .ord-pay__block-data-exactly-check::before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 4px;
+    top: 4px;
+    border-radius: 50%;
+    background: #16B8C3;
+}
+
+//! ------------------------------------------------------------------------------------
+
 
 
 //! Радио кнопки - выбора о получении фото
@@ -2486,3 +2892,9 @@ input[type=radio]:checked ~ .ord-pay__block-data-time-check {
 }
 
 //! ------------------------------------------------------------------------------------
+
+
+.ord-pay__block-data-address-noact {
+    cursor: not-allowed;
+    opacity: 0.5;
+}

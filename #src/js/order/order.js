@@ -12,6 +12,8 @@ $('#pickup').on('click', function() {
     $('.ord-pay__block-data-address-floor').removeClass('display-n')
     $('.ord-pay__block-data-address-apartment').removeClass('display-n')
     $('.ord-pay__block-data-ball').removeClass('display-n')
+    $('.ord-pay__block-data-exactly').addClass('display-n')
+    $('.ord-pay__block-data-call').addClass('display-n')
 });
 $('#delivery').on('click', function() {
     $('.ord-pay__block-data-calls').removeClass('display-n')
@@ -19,13 +21,120 @@ $('#delivery').on('click', function() {
     $('.ord-pay__block-data-call').addClass('display-n')
     $('.ord-pay__block-data-call').removeClass('display-f')
     $('.ord-pay__block-data-address').addClass('ord-pay-mt')
-    $('.ord-pay__block-data-address-street').addClass('display-n')
-    $('.ord-pay__block-data-address-home').addClass('display-n')
-    $('.ord-pay__block-data-address-porch').addClass('display-n')
-    $('.ord-pay__block-data-address-floor').addClass('display-n')
-    $('.ord-pay__block-data-address-apartment').addClass('display-n')
+    $('.ord-pay__block-data-address-street').addClass('ord-pay__block-data-address-noact')
+    $('.ord-pay__block-data-address-home').addClass('ord-pay__block-data-address-noact')
+    $('.ord-pay__block-data-address-porch').addClass('ord-pay__block-data-address-noact')
+    $('.ord-pay__block-data-address-floor').addClass('ord-pay__block-data-address-noact')
+    $('.ord-pay__block-data-address-apartment').addClass('ord-pay__block-data-address-noact')
     $('.ord-pay__block-data-ball').addClass('display-n')
+    $('.ord-pay__block-data-exactly').removeClass('display-n')
+    $('.ord-pay__block-data-call').removeClass('display-n')
 });
+
+//! --------------------------------------------------------------------------------------------
+
+
+
+
+//! Проверка на заполненные поля в input 
+
+$('.ord-pay__block-data-address-street input').prop('readonly', true);
+$('.ord-pay__block-data-address-home  input').prop('readonly', true);
+$('.ord-pay__block-data-address-porch input').prop('readonly', true);
+$('.ord-pay__block-data-address-floor input').prop('readonly', true);
+$('.ord-pay__block-data-address-apartment input').prop('readonly', true);
+
+function renderInputOrder() {
+    let countRenderInputOrder = 0
+    $('.ord-pay__block-data-contact-name input').on('change', function() {
+        if($('.ord-pay__block-data-contact-name input').val() !== '') {
+            countRenderInputOrder++
+        }
+        if(countRenderInputOrder === 5) {
+            $('.ord-pay__block-data-address-street input').prop('readonly', false);
+            $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
+            $('.ord-pay__block-data-address-home  input').prop('readonly', false);
+            $('.ord-pay__block-data-address-home').removeClass('ord-pay__block-data-address-noact');
+            $('.ord-pay__block-data-address-porch input').prop('readonly', false);
+            $('.ord-pay__block-data-address-porch').removeClass('ord-pay__block-data-address-noact');
+            $('.ord-pay__block-data-address-floor input').prop('readonly', false);
+            $('.ord-pay__block-data-address-floor').removeClass('ord-pay__block-data-address-noact');
+            $('.ord-pay__block-data-address-apartment input').prop('readonly', false);
+            $('.ord-pay__block-data-address-apartment').removeClass('ord-pay__block-data-address-noact');
+        }
+    })
+    $('.ord-pay__block-data-contact-phone input').on('change', function() {
+        if($('.ord-pay__block-data-contact-phone input').val() !== '') {
+            countRenderInputOrder++
+        }
+        if(countRenderInputOrder === 5) {
+            $('.ord-pay__block-data-address-street input').prop('readonly', false);
+            $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
+            $('.ord-pay__block-data-address-home  input').prop('readonly', false);
+            $('.ord-pay__block-data-address-home').removeClass('ord-pay__block-data-address-noact');
+            $('.ord-pay__block-data-address-porch input').prop('readonly', false);
+            $('.ord-pay__block-data-address-porch').removeClass('ord-pay__block-data-address-noact');
+            $('.ord-pay__block-data-address-floor input').prop('readonly', false);
+            $('.ord-pay__block-data-address-floor').removeClass('ord-pay__block-data-address-noact');
+            $('.ord-pay__block-data-address-apartment input').prop('readonly', false);
+            $('.ord-pay__block-data-address-apartment').removeClass('ord-pay__block-data-address-noact');
+        }
+    })
+    $('.ord-pay__block-data-calls-names input').on('change', function() {
+        if($('.ord-pay__block-data-calls-names input').val() !== '') {
+            countRenderInputOrder++
+        }
+        if(countRenderInputOrder === 5) {
+            $('.ord-pay__block-data-address-street input').prop('readonly', false);
+            $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
+            $('.ord-pay__block-data-address-home  input').prop('readonly', false);
+            $('.ord-pay__block-data-address-home').removeClass('ord-pay__block-data-address-noact');
+            $('.ord-pay__block-data-address-porch input').prop('readonly', false);
+            $('.ord-pay__block-data-address-porch').removeClass('ord-pay__block-data-address-noact');
+            $('.ord-pay__block-data-address-floor input').prop('readonly', false);
+            $('.ord-pay__block-data-address-floor').removeClass('ord-pay__block-data-address-noact');
+            $('.ord-pay__block-data-address-apartment input').prop('readonly', false);
+            $('.ord-pay__block-data-address-apartment').removeClass('ord-pay__block-data-address-noact');
+        }
+    })
+    $('.ord-pay__block-data-calls-phones input').on('change', function() {
+        if($('.ord-pay__block-data-calls-phones input').val() !== '') {
+            countRenderInputOrder++
+        }
+        if(countRenderInputOrder === 5) {
+            $('.ord-pay__block-data-address-street input').prop('readonly', false);
+            $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
+            $('.ord-pay__block-data-address-home  input').prop('readonly', false);
+            $('.ord-pay__block-data-address-home').removeClass('ord-pay__block-data-address-noact');
+            $('.ord-pay__block-data-address-porch input').prop('readonly', false);
+            $('.ord-pay__block-data-address-porch').removeClass('ord-pay__block-data-address-noact');
+            $('.ord-pay__block-data-address-floor input').prop('readonly', false);
+            $('.ord-pay__block-data-address-floor').removeClass('ord-pay__block-data-address-noact');
+            $('.ord-pay__block-data-address-apartment input').prop('readonly', false);
+            $('.ord-pay__block-data-address-apartment').removeClass('ord-pay__block-data-address-noact');
+        }
+    })
+    $('.ord-pay__block-data-address-date').on('change', function() {
+        if($('.ord-pay__block-data-calls-phones input').val() !== '') {
+            countRenderInputOrder++
+        }
+        if(countRenderInputOrder === 5) {
+            $('.ord-pay__block-data-address-street input').prop('readonly', false);
+            $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
+            $('.ord-pay__block-data-address-home  input').prop('readonly', false);
+            $('.ord-pay__block-data-address-home').removeClass('ord-pay__block-data-address-noact');
+            $('.ord-pay__block-data-address-porch input').prop('readonly', false);
+            $('.ord-pay__block-data-address-porch').removeClass('ord-pay__block-data-address-noact');
+            $('.ord-pay__block-data-address-floor input').prop('readonly', false);
+            $('.ord-pay__block-data-address-floor').removeClass('ord-pay__block-data-address-noact');
+            $('.ord-pay__block-data-address-apartment input').prop('readonly', false);
+            $('.ord-pay__block-data-address-apartment').removeClass('ord-pay__block-data-address-noact');
+        }
+    })
+    
+}
+renderInputOrder()
+
 
 //! --------------------------------------------------------------------------------------------
 
@@ -130,3 +239,10 @@ $('select#pay').each(function(){
 });
 
 //! --------------------------------------------------------------------------------------------
+
+
+
+$('.ord-pay__block-data-card-pay').on('click', function() {
+    $(this).toggleClass('ord-pay__block-data-card-pay-active');
+    $('.ord-pay__block-data-card-form').toggleClass('display-n')
+});

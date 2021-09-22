@@ -5,6 +5,12 @@
 <section class="ord-pay">
     <div class="containers">
         <div class="ord-pay__block">
+            <div class="ord-pay__block-back">
+                <a href="#">
+                    @@include('iconsprite/arrow-back.svg')
+                    @@include('iconsprite/arrow-back.svg')
+                </a>
+            </div>
             <div class="ord-pay__block-data">
                 <div class="ord-pay__block-data-title">Оформление заказа</div>
                 <div class="ord-pay__block-data-question">Выберите, кто будет получать заказ ?</div>
@@ -39,21 +45,6 @@
                         <input type="text" id="phone-client" placeholder="+ 7" required />
                     </div>
                 </div>
-                <div class="ord-pay__block-data-call">
-                    <div class="ord-pay__block-data-call-title">Связаться со мной для уточнения адреса</div>
-                    <div class="ord-pay__block-data-call-container">
-                        <label for="y-call" class="ord-pay__block-data-call-yes">
-                            <input type="radio" id="y-call" name="selector" checked>
-                            <div class="ord-pay__block-data-call-check"></div>
-                            <div class="ord-pay__block-data-call-text">Да</div>
-                        </label>
-                        <label for="n-call" class="ord-pay__block-data-call-no">
-                            <input type="radio" id="n-call" name="selector" checked>
-                            <div class="ord-pay__block-data-call-check"></div>
-                            <div class="ord-pay__block-data-call-text">Нет</div>
-                        </label>
-                    </div>
-                </div>
                 <div class="ord-pay__block-data-calls display-n">
                     <div class="ord-pay__block-data-calls-names">
                         <label for="names-client">Имя получателя *</label>
@@ -78,6 +69,27 @@
                             @@include('iconsprite/calendar-order.svg')
                         </label>
                     </div>
+                    
+                    
+                </div>
+                <div class="ord-pay__block-data-exactly display-n">
+                    <div class="ord-pay__block-data-exactly-title">
+                        Уточнить адрес у получателя*
+                    </div>
+                    <div class="ord-pay__block-data-exactly-container">
+                        <label for="y-exactly" class="ord-pay__block-data-exactly-yes">
+                            <input type="radio" id="y-exactly" name="exactly">
+                            <div class="ord-pay__block-data-exactly-check"></div>
+                            <div class="ord-pay__block-data-exactly-text">Да</div>
+                        </label>
+                        <label for="n-exactly" class="ord-pay__block-data-exactly-no">
+                            <input type="radio" id="n-exactly" name="exactly" checked>
+                            <div class="ord-pay__block-data-exactly-check"></div>
+                            <div class="ord-pay__block-data-exactly-text">Нет</div>
+                        </label>
+                    </div>
+                </div>
+                <div class="ord-pay__block-data-wrapper">
                     <div class="ord-pay__block-data-address-street">
                         <label for="street-client">
                             <input type="text" id="street-client" placeholder="Название улицы">
@@ -144,6 +156,23 @@
                         Доставка вне режима работы ?
                     </a>
                 </div>
+                <div class="ord-pay__block-data-call display-n">
+                    <div class="ord-pay__block-data-call-title">
+                        Звонок получателю перед отправкой*
+                    </div>
+                    <div class="ord-pay__block-data-call-container">
+                        <label for="y-call" class="ord-pay__block-data-call-yes">
+                            <input type="radio" id="y-call" name="call">
+                            <div class="ord-pay__block-data-call-check"></div>
+                            <div class="ord-pay__block-data-call-text">Да</div>
+                        </label>
+                        <label for="n-call" class="ord-pay__block-data-call-no">
+                            <input type="radio" id="n-call" name="call" checked>
+                            <div class="ord-pay__block-data-call-check"></div>
+                            <div class="ord-pay__block-data-call-text">Нет</div>
+                        </label>
+                    </div>
+                </div>
                 <div class="ord-pay__block-data-where">
                     <div class="ord-pay__block-data-where-title">
                         Доставка за города
@@ -178,14 +207,6 @@
                         </label>
                     </div>
                 </div>
-                <div class="ord-pay__block-data-promocode">
-                    <div class="ord-pay__block-data-promocode-title">
-                        Введите промокод
-                    </div>
-                    <div class="ord-pay__block-data-promocode-input">
-                        <input type="text">
-                    </div>
-                </div>
                 <div class="ord-pay__block-data-postcards">
                     <div class="ord-pay__block-data-postcards-container">
                         <label for="y-postcards" class="ord-pay__block-data-postcards-yes">
@@ -201,7 +222,7 @@
                             <div class="ord-pay__block-data-postcards-border"></div>
                         </label>
                     </div>
-                    <textarea placeholder="Текст к открытке не более 100 символов"></textarea>
+                    <textarea placeholder="Текст к открытке не более 400 символов"></textarea>
                 </div>
                 <div class="ord-pay__block-data-postcard">
                     <div class="ord-pay__block-data-postcard-title">
@@ -220,34 +241,17 @@
                         </label>
                     </div>
                 </div>
-                <div class="ord-pay__block-data-ball">
-                    <div class="ord-pay__block-data-ball-title">
-                        Оплатить баллами (у вас 166 баллов)
-                    </div>
-                    <div class="ord-pay__block-data-ball-container">
-                        <label for="y-ball" class="ord-pay__block-data-ball-yes">
-                            <input type="radio" id="y-ball" name="ball">
-                            <div class="ord-pay__block-data-ball-check"></div>
-                            <div class="ord-pay__block-data-ball-text">Да</div>
-                        </label>
-                        <label for="n-ball" class="ord-pay__block-data-ball-no">
-                            <input type="radio" id="n-ball" name="ball" checked>
-                            <div class="ord-pay__block-data-ball-check"></div>
-                            <div class="ord-pay__block-data-ball-text">Нет</div>
-                        </label>
-                    </div>
+                <div class="ord-pay__block-data-message">
+                    <div class="ord-pay__block-data-message-title">Добавить комментарий</div>
+                    <textarea class="ord-pay__block-data-message-textarea" placeholder="Ваш комментарий"></textarea>
                 </div>
                 <div class="ord-pay__block-data-card">
                     <div class="ord-pay__block-data-card-title">Выберите способ оплаты</div>
                     <div class="ord-pay__block-data-card-add">Выбрать способ оплаты</div>
                     <div class="ord-pay__block-data-card-pay">
-                        <select id="pay">
-                            <option value="Банковская карта" rel="icon-temperature">Банковская карта</option>
-                            <option value="Банковская карта">Банковская карта</option>
-                            <option value="Банковская карта">Банковская карта</option>
-                        </select> 
+                        <div class="ord-pay__block-data-card-pay-wrapper"><p>Банковская карта</p></div> 
                     </div>
-                    <div class="ord-pay__block-data-card-form">
+                    <div class="ord-pay__block-data-card-form display-n">
                         <div class="ord-pay__block-data-card-form-number">
                             <h2>Номер карты</h2>
                             @@include('iconsprite/info-icon.svg')
@@ -282,26 +286,6 @@
                     </div>
                 </div>
                 </button>
-                <button type="button" class="ord-pay__block-data-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Заказать
-                </button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content order-model">
-                            <div class="order-model__block">
-                                <div class="order-model__block-title">Спасибо за заказ!</div>
-                                <div class="order-model__block-text">Мы благодарны что вы выбрали нашу платформу. Просим оплатить доставку за город</div>
-                                <div class="order-model__block-number">№ 144 - 234 -4567</div>
-                                <div class="order-model__block-add">Введите кол-во километров</div>
-                                <input type="text" class="order-model__block-km" placeholder="приблизительное кол-во километров">
-                                <div class="order-model__block-map"><p>Карта яндекс</p></div>
-                                <div class="order-model__block-btn"><a href="#">Оплатить</a></div>
-                                <div class="order-model__block-link"><a href="#">Как осуществить оплату при заказе за город ?</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
             </div>
             <div class="ord-pay__block-info">
                 <div class="ord-pay__block-info-card">
@@ -318,14 +302,43 @@
                     </div>
                     <div class="ord-pay__block-info-card-add">
                         <div class="ord-pay__block-info-card-add-svg">
-                            @@include('iconsprite/heart.svg')
-                            @@include('iconsprite/basket.svg')
+                            @@include('iconsprite/order/heart.svg')
+                            @@include('iconsprite/order/basket.svg')
                         </div>
                         <div class="ord-pay__block-info-card-add-count">
                             <div class="ord-pay__block-info-card-add-count-minus"></div>
                             <div class="ord-pay__block-info-card-add-count-number">1</div>
                             <div class="ord-pay__block-info-card-add-count-plus"></div>
                         </div>
+                    </div>
+                </div>
+                <div class="ord-pay__block-info-promocode">
+                    <div class="ord-pay__block-info-promocode-input">
+                        <input type="text" placeholder="Промокод">
+                    </div>
+                    <button class="ord-pay__block-info-promocode-btn"><a href="#">Применить</a></button>
+                </div>
+                <div class="ord-pay__block-info-balls">
+                    <div class="ord-pay__block-info-balls-text">
+                        <div class="ord-pay__block-info-balls-title">
+                            Оплатить баллами
+                        </div>
+                        <div class="ord-pay__block-info-balls-item">
+                            <p>166</p>
+                            @@include('iconsprite/order/money.svg')
+                        </div>
+                    </div>
+                    <div class="ord-pay__block-info-balls-container">
+                        <label for="y-balls" class="ord-pay__block-info-balls-yes">
+                            <input type="radio" id="y-balls" name="balls">
+                            <div class="ord-pay__block-info-balls-check"></div>
+                            <div class="ord-pay__block-info-balls-text">Да</div>
+                        </label>
+                        <label for="n-balls" class="ord-pay__block-info-balls-no">
+                            <input type="radio" id="n-balls" name="balls" checked>
+                            <div class="ord-pay__block-info-balls-check"></div>
+                            <div class="ord-pay__block-info-balls-text">Нет</div>
+                        </label>
                     </div>
                 </div>
                 <div class="ord-pay__block-info-price">
@@ -339,6 +352,13 @@
                         <div class="ord-pay__block-info-price-delivery-hr"></div>
                         <div class="ord-pay__block-info-price-delivery-item">
                             0₽ 
+                        </div>
+                    </div>
+                    <div class="ord-pay__block-info-price-balls">
+                        <div class="ord-pay__block-info-price-balls-title">Будет начисленно</div>
+                        <div class="ord-pay__block-info-price-balls-count">
+                            <p>+166</p>
+                            @@include('iconsprite/order/money.svg')
                         </div>
                     </div>
                     <div class="ord-pay__block-info-price-balls">
@@ -356,6 +376,25 @@
                         </div>
                         <div class="ord-pay__block-info-price-total-item">
                             12 622₽
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="ord-pay__block-data-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Заказать
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content order-model">
+                            <div class="order-model__block">
+                                <div class="order-model__block-title">Спасибо за заказ!</div>
+                                <div class="order-model__block-text">Мы благодарны что вы выбрали нашу платформу. Просим оплатить доставку за город</div>
+                                <div class="order-model__block-number">№ 144 - 234 -4567</div>
+                                <div class="order-model__block-add">Введите кол-во километров</div>
+                                <input type="text" class="order-model__block-km" placeholder="приблизительное кол-во километров">
+                                <div class="order-model__block-map"><p>Карта яндекс</p></div>
+                                <div class="order-model__block-btn"><a href="#">Оплатить</a></div>
+                                <div class="order-model__block-link"><a href="#">Как осуществить оплату при заказе за город ?</a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
