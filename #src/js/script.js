@@ -17,6 +17,8 @@
 
 @@include('./subscription/subscription.js')
 
+@@include('./toy/toy.js')
+
 
 @@include('./calendar/calendar.js')
 

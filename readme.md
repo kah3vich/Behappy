@@ -13,3 +13,4 @@
 - ## About: [click me](https://kah3vich.github.io/Behappy/dist/about.html)
 - ## Contact: [click me](https://kah3vich.github.io/Behappy/dist/contact.html)
 - ## Description: [click me](https://kah3vich.github.io/Behappy/dist/description.html)
+- ## Toy: [click me](https://kah3vich.github.io/Behappy/dist/toy.html)

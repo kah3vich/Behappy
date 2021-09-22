@@ -4,6 +4,7 @@ $('.march-content__block-text-filter-block').on('click', function() {
     $('.march-content__block-text-filter-wrapper').toggleClass('display-n');
 });
 
+
 //! -------------------------------------------------------------------------------
 
 

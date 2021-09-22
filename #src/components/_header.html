@@ -369,7 +369,7 @@
                                     <div class="header__block-list-1-block-lg-1">
                                         <div class="header__block-list-1-block-lg-2">
                                             <p>
-                                                Б
+                                                1210
                                             </p>
                                         </div>
                                     </div>
@@ -502,9 +502,51 @@
                         <div class="header__block-menu-client">
                             <div class="header__block-menu-client-1">
                                 <div class="header__block-menu-client-2">
-                                    <p>
-                                        А
+                                    <p data-bs-toggle="modal" data-bs-target="#modelHeader-1">
+                                        A
                                     </p>
+                                    <div class="modal fade" id="modelHeader-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content model-header">
+                                                <button type="button" class="btn-close model-header-btn" data-bs-dismiss="modal" aria-label="Close">
+                                                    @@include('../iconsprite/close-model.svg')
+                                                </button>
+                                                <div class="model-header__block">
+                                                    <div class="model-header__block-title">Войти или зарегистрироваться</div>
+                                                    <div class="model-header__block-email">
+                                                        <input placeholder="Ваш email" type="text" class="model-header__block-email-input" id="modelHeaderEmail">
+                                                        <label for="modelHeaderEmail">Ваш email</label>
+                                                        @@include('../iconsprite/header/email.svg')
+                                                    </div>
+                                                    <div class="model-header__block-password">
+                                                        <input placeholder="Ваш пароль" type="text" class="model-header__block-password-input" id="modelHeaderPassword">
+                                                        <label for="modelHeaderPassword">Ваш пароль</label>
+                                                        @@include('../iconsprite/header/password.svg')
+                                                    </div>
+                                                    <button class="model-header__block-btn"><a href="#">Войти</a></button>
+                                                    <ul class="model-header__block-line">
+                                                        <li class="model-header__block-line-hr"></li>
+                                                        <li class="model-header__block-line-text">или</li>
+                                                        <li class="model-header__block-line-hr"></li>
+                                                    </ul>
+                                                    <div class="model-header__block-google">
+                                                        @@include('../iconsprite/header/google.svg')
+                                                        <p>Войти с помощью аккаунта Google</p>
+                                                    </div>
+                                                    <div class="model-header__block-vk">
+                                                        @@include('../iconsprite/header/vk.svg')
+                                                        <p>Войти с помощью аккаунта VK</p>
+                                                    </div>
+                                                    <div class="model-header__block-problem">
+                                                        <p>Забыли пароль ?</p>
+                                                    </div>
+                                                    <div class="model-header__block-authorization">
+                                                        <p>Нет учетной записи ? Зарегистрироваться</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
