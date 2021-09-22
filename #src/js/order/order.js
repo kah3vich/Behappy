@@ -29,6 +29,17 @@ $('#delivery').on('click', function() {
     $('.ord-pay__block-data-ball').addClass('display-n')
     $('.ord-pay__block-data-exactly').removeClass('display-n')
     $('.ord-pay__block-data-call').removeClass('display-n')
+    $('.ord-pay__block-data-address-street input').prop('readonly', true);
+    $('.ord-pay__block-data-address-home  input').prop('readonly', true);
+    $('.ord-pay__block-data-address-porch input').prop('readonly', true);
+    $('.ord-pay__block-data-address-floor input').prop('readonly', true);
+    $('.ord-pay__block-data-address-apartment input').prop('readonly', true);
+    $('.ord-pay__block-data-address-street input').val('');
+    $('.ord-pay__block-data-address-home  input').val('');
+    $('.ord-pay__block-data-address-porch input').val('');
+    $('.ord-pay__block-data-address-floor input').val('');
+    $('.ord-pay__block-data-address-apartment input').val('');
+    
 });
 
 //! --------------------------------------------------------------------------------------------
@@ -37,12 +48,6 @@ $('#delivery').on('click', function() {
 
 
 //! Проверка на заполненные поля в input 
-
-$('.ord-pay__block-data-address-street input').prop('readonly', true);
-$('.ord-pay__block-data-address-home  input').prop('readonly', true);
-$('.ord-pay__block-data-address-porch input').prop('readonly', true);
-$('.ord-pay__block-data-address-floor input').prop('readonly', true);
-$('.ord-pay__block-data-address-apartment input').prop('readonly', true);
 
 function renderInputOrder() {
     let countRenderInputOrder = 0
