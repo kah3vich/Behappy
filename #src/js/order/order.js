@@ -14,6 +14,16 @@ $('#pickup').on('click', function() {
     $('.ord-pay__block-data-ball').removeClass('display-n')
     $('.ord-pay__block-data-exactly').addClass('display-n')
     $('.ord-pay__block-data-call').addClass('display-n')
+    $('.ord-pay__block-data-address-street input').prop('readonly', false);
+    $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
+    $('.ord-pay__block-data-address-home  input').prop('readonly', false);
+    $('.ord-pay__block-data-address-home').removeClass('ord-pay__block-data-address-noact');
+    $('.ord-pay__block-data-address-porch input').prop('readonly', false);
+    $('.ord-pay__block-data-address-porch').removeClass('ord-pay__block-data-address-noact');
+    $('.ord-pay__block-data-address-floor input').prop('readonly', false);
+    $('.ord-pay__block-data-address-floor').removeClass('ord-pay__block-data-address-noact');
+    $('.ord-pay__block-data-address-apartment input').prop('readonly', false);
+    $('.ord-pay__block-data-address-apartment').removeClass('ord-pay__block-data-address-noact');
 });
 $('#delivery').on('click', function() {
     $('.ord-pay__block-data-calls').removeClass('display-n')
