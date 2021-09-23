@@ -419,6 +419,7 @@ function renderInputOrder() {
         if($('.ord-pay__block-data-contact-name input').val() !== '') {
             countRenderInputOrder++
         }
+        console.log(countRenderInputOrder)
         if(countRenderInputOrder === 5) {
             $('.ord-pay__block-data-address-street input').prop('readonly', false);
             $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
@@ -436,6 +437,7 @@ function renderInputOrder() {
         if($('.ord-pay__block-data-contact-phone input').val() !== '') {
             countRenderInputOrder++
         }
+        console.log(countRenderInputOrder)
         if(countRenderInputOrder === 5) {
             $('.ord-pay__block-data-address-street input').prop('readonly', false);
             $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
@@ -453,6 +455,7 @@ function renderInputOrder() {
         if($('.ord-pay__block-data-calls-names input').val() !== '') {
             countRenderInputOrder++
         }
+        console.log(countRenderInputOrder)
         if(countRenderInputOrder === 5) {
             $('.ord-pay__block-data-address-street input').prop('readonly', false);
             $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
@@ -470,6 +473,7 @@ function renderInputOrder() {
         if($('.ord-pay__block-data-calls-phones input').val() !== '') {
             countRenderInputOrder++
         }
+        console.log(countRenderInputOrder)
         if(countRenderInputOrder === 5) {
             $('.ord-pay__block-data-address-street input').prop('readonly', false);
             $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
@@ -487,6 +491,7 @@ function renderInputOrder() {
         if($('.ord-pay__block-data-calls-phones input').val() !== '') {
             countRenderInputOrder++
         }
+        console.log(countRenderInputOrder)
         if(countRenderInputOrder === 5) {
             $('.ord-pay__block-data-address-street input').prop('readonly', false);
             $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
@@ -849,57 +854,6 @@ $('#star-5').on('click', function() {
 
 //! --------------------------------------------------------------------------------------------
 
-// //! Выпадающий список - способы оплаты 
-
-// $('select#calendar').each(function(){
-//     var $this = $(this), numberOfOptions = $(this).children('option').length;
-
-//     $this.addClass('calendar-select-hidden'); 
-//     $this.wrap('<div class="calendar-select"></div>');
-//     $this.after('<div class="calendar-select-styled"></div>');
-
-//     var $styledSelect = $this.next('div.calendar-select-styled');
-//     $styledSelect.text($this.children('option').eq(0).text());
-
-//     var $list = $('<ul />', {
-//         'class': 'calendar-select-options'
-//     }).insertAfter($styledSelect);
-
-//     for (var i = 0; i < numberOfOptions; i++) {
-//         $('<li />', {
-//             text: $this.children('option').eq(i).text(),
-//             rel: $this.children('option').eq(i).val()
-//         }).appendTo($list);
-//     }
-
-//     var $listItems = $list.children('li');
-
-//     $styledSelect.click(function(e) {
-//         e.stopPropagation();
-//         $('div.calendar-select-styled.calendar-active').not(this).each(function(){
-//             $(this).removeClass('calendar-active').next('ul.calendar-select-options').hide();
-//         });
-//         $(this).toggleClass('calendar-active').next('ul.calendar-select-options').toggle();
-//     });
-
-//     $listItems.click(function(e) {
-//         e.stopPropagation();
-//         $styledSelect.text($(this).text()).removeClass('calendar-active');
-//         $this.val($(this).attr('rel'));
-//         $list.hide();
-//         //console.log($this.val());
-//     });
-
-//     $(document).click(function() {
-//         $styledSelect.removeClass('calendar-active');
-//         $list.hide();
-//     });
-
-// });
-
-// //! --------------------------------------------------------------------------------------------
-
-
 
 $('.model-catalog__card-info-calendar-select').on('click', function() {
     $('.model-catalog__card-info-calendar-select').toggleClass('model-catalog__card-info-calendar-select-active');
@@ -931,102 +885,43 @@ var addModelSlider = new Swiper(".addModelSlider", {
     },
 });
 
-
-// const numberSteps = $('.quiz__step').length - 1;
-// let disableButtons = false;
-// const tick = '<div class="answer__tick"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></div>'; 
-// let thanks = '<div class="thanks"><div class="thanks__tick">✔ </div><h1 class="thanks__title">Thank you!</h1></div>';
-
-// $('.answer__input').on('change', function(e) { 
- 
-//     if($(this).next().children('.answer__tick').length>0){
-//       return false
-//     }
-//   $(this).next().append(tick)
-// });
+var recModelSlider = new Swiper(".recModelSlider", {
+    loop: true,
+    slidesPerView: 3, 
+    spaceBetween: 15, 
+    navigation: {
+        nextEl: ".model-catalog__card-block-rec-list .swiper-controls .swiper-button-next",
+        prevEl: ".model-catalog__card-block-rec-list .swiper-controls .swiper-button-prev",
+    },
+});
 
 
-// $('.navigation__btn--right').click(function(e){
-// let currentIndex = Number($('.quiz__step--current').attr('data-question'));
-//   if($('.quiz__step--current input:checked').length == 0){
-//      //console.log('input empty');
-//      return false;
-//  }
-//   //console.log({'currentIndex': currentIndex, 'numberSteps': numberSteps-1})
-//   if(currentIndex == numberSteps + 1 || disableButtons==true){
-//     //console.log('last')
-//     return false;
-//   }
-//   if(currentIndex + 1 == numberSteps + 1 ){
-//     $(this).addClass('navigation__btn--disabled');
-//   }
-//   if(currentIndex == numberSteps){
-//   $('.summary__item').remove();
-//     $('.quiz__step:not(.quiz__summary)').each(function(index, item){
-//       console.log(item)
-//       let icon = $(item).children('.question__emoji').text()
-//       let answer = $(item).children('.answer').find('input:checked').val();
-//       let node = '<div class="summary__item"><div class="question__emoji">'+icon+'</div>'+answer+'</div>'
-//       $('#summary').append(node)
-//     })
-//   }
-//   const percentage = (currentIndex * 100)/ numberSteps;
-//   $('.progress__inner').width(percentage+ '%');
-//   console.log('input ok')
-//   $('.quiz__step--current').hide('300');
-//   $('.quiz__step--current').removeClass('quiz__step--current');
-//   $('.quiz__step--'+(currentIndex+1)).show('300').addClass('quiz__step--current');
-//   currentIndex = Number($('.quiz__step--current').attr('data-question'));
-//    if(currentIndex > 1 ){
-//     $('.navigation__btn--left').removeClass('navigation__btn--disabled');
-//   }
-// });
-// /*
-// function keypressEvent(e){
-//     let key = e.which || e.keyCode;
-
-//   if(key==65 || key==66){
-//     $('.quiz__step--current input[data-char="'+key+'"]').prop('checked', true).change();
-//     console.log($('.quiz__step--current input[data-char="'+key+'"]'))
-//    // $('.quiz__step--current input[data-char="'+key+'"] + .answer__label').change();
-//   }
-// }
-// */
+var modelSliderToy = new Swiper(".modelSliderToy", {
+    loop: true,
+    slidesPerView: 1, 
+    spaceBetween: 10, 
+    navigation: {
+        nextEl: ".model-toy-slider .swiper-controls .swiper-button-next",
+        prevEl: ".model-toy-slider .swiper-controls .swiper-button-prev",
+    },
+});
 
 
 
-// $('.navigation__btn--left').click(function(e){
-// let currentIndex = Number($('.quiz__step--current').attr('data-question'));
- 
-//   console.log({'currentIndex': currentIndex, 'numberSteps': numberSteps-1})
-//   if(currentIndex == 1 || disableButtons==true){
-//     console.log('first')
-//     $(this).addClass('navigation__btn--disabled');
-//     return false;
-//   }
- 
+var modelToyWrapperSlider = new Swiper(".modelToyWrapperSlider", {
+    loop: true,
+    slidesPerView: 3, 
+    spaceBetween: 15, 
+    navigation: {
+        nextEl: ".model-toy__block-wrapper-slider .swiper-control .swiper-button-next",
+        prevEl: ".model-toy__block-wrapper-slider .swiper-control .swiper-button-prev",
+    },
+});
 
-//   $('.navigation__btn--right').removeClass('navigation__btn--disabled')
-
-//   console.log('input ok')
-//   $('.quiz__step--current').hide('300');
-//   $('.quiz__step--current').removeClass('quiz__step--current');
-//   $('.quiz__step--'+(currentIndex-1)).show('300').addClass('quiz__step--current');
-//   currentIndex = Number($('.quiz__step--current').attr('data-question'));
-//   if(currentIndex == 1 ){
-//     $(this).addClass('navigation__btn--disabled');
-//   }
-//     const percentage = ((currentIndex-1)  * 100)/ numberSteps+1;
-//   $('.progress__inner').width(percentage+ '%');
-// $('.quiz__step--current').keyup(keypressEvent);
-// });
-// $('.submit').click(function(e){
-//   e.preventDefault();
-//   $('.quiz').remove();
-//   $(thanks).appendTo('.container');
-//   disableButtons=true;
-//   $('.navigation__btn').addClass('navigation__btn--disabled')
-// })
+$('.model-toy__block-info-calendar-btn').on('click', function() {
+    $('.model-toy__block-info-calendar-item').toggleClass('display-n')
+    $('.model-toy__block-info-calendar-btn').toggleClass('model-toy__block-info-calendar-btn-active')
+});
 
 
 //! Открытие фильтра 
@@ -1130,10 +1025,281 @@ $('.quiz-content__block-add-prev').on('click', function() {
     $('.quiz-content__block-range').removeClass('display-n');
     $('.quiz-content__block-add').addClass('display-n');
 });
+$('.quiz-content__block-add-next').on('click', function() {
+    $('.quiz-content__block-add').addClass('display-n');
+    $('.ord-quiz').removeClass('display-n');
+    $('.quiz-content').css('padding', '0')
+});
+
+
 
 
 //! ----------------------------------------------------------------
 
+
+//! События нажатие - выбор доставки 
+
+$('#pickups').on('click', function() {
+    $('.ord-quiz__block-data-calls').removeClass('display-f')
+    $('.ord-quiz__block-data-calls').addClass('display-n')
+    $('.ord-quiz__block-data-call').removeClass('display-n')
+    $('.ord-quiz__block-data-call').addClass('display-f')
+    $('.ord-quiz__block-data-address').removeClass('ord-quiz-mt')
+    $('.ord-quiz__block-data-address-street').removeClass('display-n')
+    $('.ord-quiz__block-data-address-home').removeClass('display-n')
+    $('.ord-quiz__block-data-address-porch').removeClass('display-n')
+    $('.ord-quiz__block-data-address-floor').removeClass('display-n')
+    $('.ord-quiz__block-data-address-apartment').removeClass('display-n')
+    $('.ord-quiz__block-data-ball').removeClass('display-n')
+    $('.ord-quiz__block-data-exactly').addClass('display-n')
+    $('.ord-quiz__block-data-call').addClass('display-n')
+    $('.ord-quiz__block-data-address-street input').prop('readonly', false);
+    $('.ord-quiz__block-data-address-street').removeClass('ord-quiz__block-data-address-noact');
+    $('.ord-quiz__block-data-address-home  input').prop('readonly', false);
+    $('.ord-quiz__block-data-address-home').removeClass('ord-quiz__block-data-address-noact');
+    $('.ord-quiz__block-data-address-porch input').prop('readonly', false);
+    $('.ord-quiz__block-data-address-porch').removeClass('ord-quiz__block-data-address-noact');
+    $('.ord-quiz__block-data-address-floor input').prop('readonly', false);
+    $('.ord-quiz__block-data-address-floor').removeClass('ord-quiz__block-data-address-noact');
+    $('.ord-quiz__block-data-address-apartment input').prop('readonly', false);
+    $('.ord-quiz__block-data-address-apartment').removeClass('ord-quiz__block-data-address-noact');
+});
+$('#deliverys').on('click', function() {
+    $('.ord-quiz__block-data-calls').removeClass('display-n')
+    $('.ord-quiz__block-data-calls').addClass('display-f')
+    $('.ord-quiz__block-data-call').addClass('display-n')
+    $('.ord-quiz__block-data-call').removeClass('display-f')
+    $('.ord-quiz__block-data-address').addClass('ord-quiz-mt')
+    $('.ord-quiz__block-data-address-street').addClass('ord-quiz__block-data-address-noact')
+    $('.ord-quiz__block-data-address-home').addClass('ord-quiz__block-data-address-noact')
+    $('.ord-quiz__block-data-address-porch').addClass('ord-quiz__block-data-address-noact')
+    $('.ord-quiz__block-data-address-floor').addClass('ord-quiz__block-data-address-noact')
+    $('.ord-quiz__block-data-address-apartment').addClass('ord-quiz__block-data-address-noact')
+    $('.ord-quiz__block-data-ball').addClass('display-n')
+    $('.ord-quiz__block-data-exactly').removeClass('display-n')
+    $('.ord-quiz__block-data-call').removeClass('display-n')
+    $('.ord-quiz__block-data-address-street input').prop('readonly', true);
+    $('.ord-quiz__block-data-address-home  input').prop('readonly', true);
+    $('.ord-quiz__block-data-address-porch input').prop('readonly', true);
+    $('.ord-quiz__block-data-address-floor input').prop('readonly', true);
+    $('.ord-quiz__block-data-address-apartment input').prop('readonly', true);
+    $('.ord-quiz__block-data-address-street input').val('');
+    $('.ord-quiz__block-data-address-home  input').val('');
+    $('.ord-quiz__block-data-address-porch input').val('');
+    $('.ord-quiz__block-data-address-floor input').val('');
+    $('.ord-quiz__block-data-address-apartment input').val('');
+    
+});
+
+//! --------------------------------------------------------------------------------------------
+
+
+
+
+//! Проверка на заполненные поля в input 
+
+function renderInputOrder() {
+    let countRenderInputOrder = 0
+    $('.ord-quiz__block-data-contact-name input').on('change', function() {
+        if($('.ord-quiz__block-data-contact-name input').val() !== '') {
+            countRenderInputOrder++
+        }
+        if(countRenderInputOrder === 5) {
+            $('.ord-quiz__block-data-address-street input').prop('readonly', false);
+            $('.ord-quiz__block-data-address-street').removeClass('ord-quiz__block-data-address-noact');
+            $('.ord-quiz__block-data-address-home  input').prop('readonly', false);
+            $('.ord-quiz__block-data-address-home').removeClass('ord-quiz__block-data-address-noact');
+            $('.ord-quiz__block-data-address-porch input').prop('readonly', false);
+            $('.ord-quiz__block-data-address-porch').removeClass('ord-quiz__block-data-address-noact');
+            $('.ord-quiz__block-data-address-floor input').prop('readonly', false);
+            $('.ord-quiz__block-data-address-floor').removeClass('ord-quiz__block-data-address-noact');
+            $('.ord-quiz__block-data-address-apartment input').prop('readonly', false);
+            $('.ord-quiz__block-data-address-apartment').removeClass('ord-quiz__block-data-address-noact');
+        }
+    })
+    $('.ord-quiz__block-data-contact-phone input').on('change', function() {
+        if($('.ord-quiz__block-data-contact-phone input').val() !== '') {
+            countRenderInputOrder++
+        }
+        if(countRenderInputOrder === 5) {
+            $('.ord-quiz__block-data-address-street input').prop('readonly', false);
+            $('.ord-quiz__block-data-address-street').removeClass('ord-quiz__block-data-address-noact');
+            $('.ord-quiz__block-data-address-home  input').prop('readonly', false);
+            $('.ord-quiz__block-data-address-home').removeClass('ord-quiz__block-data-address-noact');
+            $('.ord-quiz__block-data-address-porch input').prop('readonly', false);
+            $('.ord-quiz__block-data-address-porch').removeClass('ord-quiz__block-data-address-noact');
+            $('.ord-quiz__block-data-address-floor input').prop('readonly', false);
+            $('.ord-quiz__block-data-address-floor').removeClass('ord-quiz__block-data-address-noact');
+            $('.ord-quiz__block-data-address-apartment input').prop('readonly', false);
+            $('.ord-quiz__block-data-address-apartment').removeClass('ord-quiz__block-data-address-noact');
+        }
+    })
+    $('.ord-quiz__block-data-calls-names input').on('change', function() {
+        if($('.ord-quiz__block-data-calls-names input').val() !== '') {
+            countRenderInputOrder++
+        }
+        if(countRenderInputOrder === 5) {
+            $('.ord-quiz__block-data-address-street input').prop('readonly', false);
+            $('.ord-quiz__block-data-address-street').removeClass('ord-quiz__block-data-address-noact');
+            $('.ord-quiz__block-data-address-home  input').prop('readonly', false);
+            $('.ord-quiz__block-data-address-home').removeClass('ord-quiz__block-data-address-noact');
+            $('.ord-quiz__block-data-address-porch input').prop('readonly', false);
+            $('.ord-quiz__block-data-address-porch').removeClass('ord-quiz__block-data-address-noact');
+            $('.ord-quiz__block-data-address-floor input').prop('readonly', false);
+            $('.ord-quiz__block-data-address-floor').removeClass('ord-quiz__block-data-address-noact');
+            $('.ord-quiz__block-data-address-apartment input').prop('readonly', false);
+            $('.ord-quiz__block-data-address-apartment').removeClass('ord-quiz__block-data-address-noact');
+        }
+    })
+    $('.ord-quiz__block-data-calls-phones input').on('change', function() {
+        if($('.ord-quiz__block-data-calls-phones input').val() !== '') {
+            countRenderInputOrder++
+        }
+        if(countRenderInputOrder === 5) {
+            $('.ord-quiz__block-data-address-street input').prop('readonly', false);
+            $('.ord-quiz__block-data-address-street').removeClass('ord-quiz__block-data-address-noact');
+            $('.ord-quiz__block-data-address-home  input').prop('readonly', false);
+            $('.ord-quiz__block-data-address-home').removeClass('ord-quiz__block-data-address-noact');
+            $('.ord-quiz__block-data-address-porch input').prop('readonly', false);
+            $('.ord-quiz__block-data-address-porch').removeClass('ord-quiz__block-data-address-noact');
+            $('.ord-quiz__block-data-address-floor input').prop('readonly', false);
+            $('.ord-quiz__block-data-address-floor').removeClass('ord-quiz__block-data-address-noact');
+            $('.ord-quiz__block-data-address-apartment input').prop('readonly', false);
+            $('.ord-quiz__block-data-address-apartment').removeClass('ord-quiz__block-data-address-noact');
+        }
+    })
+    $('.ord-quiz__block-data-address-date').on('change', function() {
+        if($('.ord-quiz__block-data-calls-phones input').val() !== '') {
+            countRenderInputOrder++
+        }
+        if(countRenderInputOrder === 5) {
+            $('.ord-quiz__block-data-address-street input').prop('readonly', false);
+            $('.ord-quiz__block-data-address-street').removeClass('ord-quiz__block-data-address-noact');
+            $('.ord-quiz__block-data-address-home  input').prop('readonly', false);
+            $('.ord-quiz__block-data-address-home').removeClass('ord-quiz__block-data-address-noact');
+            $('.ord-quiz__block-data-address-porch input').prop('readonly', false);
+            $('.ord-quiz__block-data-address-porch').removeClass('ord-quiz__block-data-address-noact');
+            $('.ord-quiz__block-data-address-floor input').prop('readonly', false);
+            $('.ord-quiz__block-data-address-floor').removeClass('ord-quiz__block-data-address-noact');
+            $('.ord-quiz__block-data-address-apartment input').prop('readonly', false);
+            $('.ord-quiz__block-data-address-apartment').removeClass('ord-quiz__block-data-address-noact');
+        }
+    })
+    
+}
+renderInputOrder()
+
+
+//! --------------------------------------------------------------------------------------------
+
+
+//! Выпадающий список - выбора города
+
+$('select#quizCity').each(function(){
+    var $this = $(this), numberOfOptions = $(this).children('option').length;
+
+    $this.addClass('ord-select-hidden'); 
+    $this.wrap('<div class="ord-select"></div>');
+    $this.after('<div class="ord-select-styled"></div>');
+
+    var $styledSelect = $this.next('div.ord-select-styled');
+    $styledSelect.text($this.children('option').eq(0).text());
+
+    var $list = $('<ul />', {
+        'class': 'ord-select-options'
+    }).insertAfter($styledSelect);
+
+    for (var i = 0; i < numberOfOptions; i++) {
+        $('<li />', {
+            text: $this.children('option').eq(i).text(),
+            rel: $this.children('option').eq(i).val()
+        }).appendTo($list);
+    }
+
+    var $listItems = $list.children('li');
+
+    $styledSelect.click(function(e) {
+        e.stopPropagation();
+        $('div.ord-select-styled.ord-active').not(this).each(function(){
+            $(this).removeClass('ord-active').next('ul.ord-select-options').hide();
+        });
+        $(this).toggleClass('ord-active').next('ul.ord-select-options').toggle();
+    });
+
+    $listItems.click(function(e) {
+        e.stopPropagation();
+        $styledSelect.text($(this).text()).removeClass('ord-active');
+        $this.val($(this).attr('rel'));
+        $list.hide();
+        //console.log($this.val());
+    });
+
+    $(document).click(function() {
+        $styledSelect.removeClass('ord-active');
+        $list.hide();
+    });
+
+});
+
+//! --------------------------------------------------------------------------------------------
+
+
+//! Выпадающий список - способы оплаты 
+
+$('select#quiz').each(function(){
+    var $this = $(this), numberOfOptions = $(this).children('option').length;
+
+    $this.addClass('quiz-select-hidden'); 
+    $this.wrap('<div class="quiz-select"></div>');
+    $this.after('<div class="quiz-select-styled"></div>');
+
+    var $styledSelect = $this.next('div.quiz-select-styled');
+    $styledSelect.text($this.children('option').eq(0).text());
+
+    var $list = $('<ul />', {
+        'class': 'quiz-select-options'
+    }).insertAfter($styledSelect);
+
+    for (var i = 0; i < numberOfOptions; i++) {
+        $('<li />', {
+            text: $this.children('option').eq(i).text(),
+            rel: $this.children('option').eq(i).val()
+        }).appendTo($list);
+    }
+
+    var $listItems = $list.children('li');
+
+    $styledSelect.click(function(e) {
+        e.stopPropagation();
+        $('div.quiz-select-styled.quiz-active').not(this).each(function(){
+            $(this).removeClass('quiz-active').next('ul.quiz-select-options').hide();
+        });
+        $(this).toggleClass('quiz-active').next('ul.quiz-select-options').toggle();
+    });
+
+    $listItems.click(function(e) {
+        e.stopPropagation();
+        $styledSelect.text($(this).text()).removeClass('quiz-active');
+        $this.val($(this).attr('rel'));
+        $list.hide();
+        //console.log($this.val());
+    });
+
+    $(document).click(function() {
+        $styledSelect.removeClass('quiz-active');
+        $list.hide();
+    });
+
+});
+
+//! --------------------------------------------------------------------------------------------
+
+
+
+$('.ord-quiz__block-data-card-quiz').on('click', function() {
+    $(this).toggleClass('ord-quiz__block-data-card-quiz-active');
+    $('.ord-quiz__block-data-card-form').toggleClass('display-n')
+});
 
 
 // Поворот карты по двойному клику
@@ -1233,6 +1399,1633 @@ $('.toy-content__block-text-filter-discard').on('click', function() {
 });
 
 //! -------------------------------------------------------------------------------
+
+
+//! Нажатие на элемент каталога - 1 
+
+$('#urgListItem_1_img').on('click', function() {
+    $('#urgListItem_1_color').removeClass('display-n');
+    $('#urgListItem_1_block').removeClass('display-n');
+    $('#urgListItem_1_close').removeClass('display-n');
+    $('#urgListItem_1_img').addClass('display-n');
+    $('#urgListItem_1_text').addClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_2_color').addClass('display-n');
+    $('#urgListItem_2_block').addClass('display-n');
+    $('#urgListItem_2_close').addClass('display-n');
+    $('#urgListItem_2_img').removeClass('display-n');
+    $('#urgListItem_2_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_3_color').addClass('display-n');
+    $('#urgListItem_3_block').addClass('display-n');
+    $('#urgListItem_3_close').addClass('display-n');
+    $('#urgListItem_3_img').removeClass('display-n');
+    $('#urgListItem_3_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_4_color').addClass('display-n');
+    $('#urgListItem_4_block').addClass('display-n');
+    $('#urgListItem_4_close').addClass('display-n');
+    $('#urgListItem_4_img').removeClass('display-n');
+    $('#urgListItem_4_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_5_color').addClass('display-n');
+    $('#urgListItem_5_block').addClass('display-n');
+    $('#urgListItem_5_close').addClass('display-n');
+    $('#urgListItem_5_img').removeClass('display-n');
+    $('#urgListItem_5_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_6_color').addClass('display-n');
+    $('#urgListItem_6_block').addClass('display-n');
+    $('#urgListItem_6_close').addClass('display-n');
+    $('#urgListItem_6_img').removeClass('display-n');
+    $('#urgListItem_6_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_7_color').addClass('display-n');
+    $('#urgListItem_7_block').addClass('display-n');
+    $('#urgListItem_7_close').addClass('display-n');
+    $('#urgListItem_7_img').removeClass('display-n');
+    $('#urgListItem_7_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_8_color').addClass('display-n');
+    $('#urgListItem_8_block').addClass('display-n');
+    $('#urgListItem_8_close').addClass('display-n');
+    $('#urgListItem_8_img').removeClass('display-n');
+    $('#urgListItem_8_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_9_color').addClass('display-n');
+    $('#urgListItem_9_block').addClass('display-n');
+    $('#urgListItem_9_close').addClass('display-n');
+    $('#urgListItem_9_img').removeClass('display-n');
+    $('#urgListItem_9_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_10_color').addClass('display-n');
+    $('#urgListItem_10_block').addClass('display-n');
+    $('#urgListItem_10_close').addClass('display-n');
+    $('#urgListItem_10_img').removeClass('display-n');
+    $('#urgListItem_10_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_11_color').addClass('display-n');
+    $('#urgListItem_11_block').addClass('display-n');
+    $('#urgListItem_11_close').addClass('display-n');
+    $('#urgListItem_11_img').removeClass('display-n');
+    $('#urgListItem_11_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_12_color').addClass('display-n');
+    $('#urgListItem_12_block').addClass('display-n');
+    $('#urgListItem_12_close').addClass('display-n');
+    $('#urgListItem_12_img').removeClass('display-n');
+    $('#urgListItem_12_text').removeClass('display-n');
+});
+
+$('#urgListItem_1_close').on('click', function() {
+    $('#urgListItem_1_color').addClass('display-n');
+    $('#urgListItem_1_block').addClass('display-n');
+    $('#urgListItem_1_close').addClass('display-n');
+    $('#urgListItem_1_img').removeClass('display-n');
+    $('#urgListItem_1_text').removeClass('display-n');
+});
+
+
+$('#urgListItem_1_1_colors').on('click', function() {
+    $('#urgListItem_1_1_colors').removeClass('opacity-5');
+    $('#urgListItem_1_2_colors').addClass('opacity-5');
+    $('#urgListItem_1_3_colors').addClass('opacity-5');
+    $('#urgListItem_1_4_colors').addClass('opacity-5');
+    $('#urgListItem_1_5_colors').addClass('opacity-5');
+    $('#urgListItem_1_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_1_2_colors').on('click', function() {
+    $('#urgListItem_1_2_colors').removeClass('opacity-5');
+    $('#urgListItem_1_1_colors').addClass('opacity-5');
+    $('#urgListItem_1_3_colors').addClass('opacity-5');
+    $('#urgListItem_1_4_colors').addClass('opacity-5');
+    $('#urgListItem_1_5_colors').addClass('opacity-5');
+    $('#urgListItem_1_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_1_3_colors').on('click', function() {
+    $('#urgListItem_1_3_colors').removeClass('opacity-5');
+    $('#urgListItem_1_2_colors').addClass('opacity-5');
+    $('#urgListItem_1_1_colors').addClass('opacity-5');
+    $('#urgListItem_1_4_colors').addClass('opacity-5');
+    $('#urgListItem_1_5_colors').addClass('opacity-5');
+    $('#urgListItem_1_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_1_4_colors').on('click', function() {
+    $('#urgListItem_1_4_colors').removeClass('opacity-5');
+    $('#urgListItem_1_2_colors').addClass('opacity-5');
+    $('#urgListItem_1_3_colors').addClass('opacity-5');
+    $('#urgListItem_1_1_colors').addClass('opacity-5');
+    $('#urgListItem_1_5_colors').addClass('opacity-5');
+    $('#urgListItem_1_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_1_5_colors').on('click', function() {
+    $('#urgListItem_1_5_colors').removeClass('opacity-5');
+    $('#urgListItem_1_2_colors').addClass('opacity-5');
+    $('#urgListItem_1_3_colors').addClass('opacity-5');
+    $('#urgListItem_1_4_colors').addClass('opacity-5');
+    $('#urgListItem_1_1_colors').addClass('opacity-5');
+    $('#urgListItem_1_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_1_6_colors').on('click', function() {
+    $('#urgListItem_1_6_colors').removeClass('opacity-5');
+    $('#urgListItem_1_2_colors').addClass('opacity-5');
+    $('#urgListItem_1_3_colors').addClass('opacity-5');
+    $('#urgListItem_1_4_colors').addClass('opacity-5');
+    $('#urgListItem_1_5_colors').addClass('opacity-5');
+    $('#urgListItem_1_1_colors').addClass('opacity-5');
+});
+
+//! --------------------------------------------------------------------------------
+
+//! Нажатие на элемент каталога - 2
+
+$('#urgListItem_2_img').on('click', function() {
+    $('#urgListItem_2_color').removeClass('display-n');
+    $('#urgListItem_2_block').removeClass('display-n');
+    $('#urgListItem_2_close').removeClass('display-n');
+    $('#urgListItem_2_img').addClass('display-n');
+    $('#urgListItem_2_text').addClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_1_color').addClass('display-n');
+    $('#urgListItem_1_block').addClass('display-n');
+    $('#urgListItem_1_close').addClass('display-n');
+    $('#urgListItem_1_img').removeClass('display-n');
+    $('#urgListItem_1_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_3_color').addClass('display-n');
+    $('#urgListItem_3_block').addClass('display-n');
+    $('#urgListItem_3_close').addClass('display-n');
+    $('#urgListItem_3_img').removeClass('display-n');
+    $('#urgListItem_3_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_4_color').addClass('display-n');
+    $('#urgListItem_4_block').addClass('display-n');
+    $('#urgListItem_4_close').addClass('display-n');
+    $('#urgListItem_4_img').removeClass('display-n');
+    $('#urgListItem_4_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_5_color').addClass('display-n');
+    $('#urgListItem_5_block').addClass('display-n');
+    $('#urgListItem_5_close').addClass('display-n');
+    $('#urgListItem_5_img').removeClass('display-n');
+    $('#urgListItem_5_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_6_color').addClass('display-n');
+    $('#urgListItem_6_block').addClass('display-n');
+    $('#urgListItem_6_close').addClass('display-n');
+    $('#urgListItem_6_img').removeClass('display-n');
+    $('#urgListItem_6_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_7_color').addClass('display-n');
+    $('#urgListItem_7_block').addClass('display-n');
+    $('#urgListItem_7_close').addClass('display-n');
+    $('#urgListItem_7_img').removeClass('display-n');
+    $('#urgListItem_7_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_8_color').addClass('display-n');
+    $('#urgListItem_8_block').addClass('display-n');
+    $('#urgListItem_8_close').addClass('display-n');
+    $('#urgListItem_8_img').removeClass('display-n');
+    $('#urgListItem_8_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_9_color').addClass('display-n');
+    $('#urgListItem_9_block').addClass('display-n');
+    $('#urgListItem_9_close').addClass('display-n');
+    $('#urgListItem_9_img').removeClass('display-n');
+    $('#urgListItem_9_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_10_color').addClass('display-n');
+    $('#urgListItem_10_block').addClass('display-n');
+    $('#urgListItem_10_close').addClass('display-n');
+    $('#urgListItem_10_img').removeClass('display-n');
+    $('#urgListItem_10_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_11_color').addClass('display-n');
+    $('#urgListItem_11_block').addClass('display-n');
+    $('#urgListItem_11_close').addClass('display-n');
+    $('#urgListItem_11_img').removeClass('display-n');
+    $('#urgListItem_11_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_12_color').addClass('display-n');
+    $('#urgListItem_12_block').addClass('display-n');
+    $('#urgListItem_12_close').addClass('display-n');
+    $('#urgListItem_12_img').removeClass('display-n');
+    $('#urgListItem_12_text').removeClass('display-n');
+});
+
+$('#urgListItem_2_close').on('click', function() {
+    $('#urgListItem_2_color').addClass('display-n');
+    $('#urgListItem_2_block').addClass('display-n');
+    $('#urgListItem_2_close').addClass('display-n');
+    $('#urgListItem_2_img').removeClass('display-n');
+    $('#urgListItem_2_text').removeClass('display-n');
+});
+
+$('#urgListItem_2_1_colors').on('click', function() {
+    $('#urgListItem_2_1_colors').removeClass('opacity-5');
+    $('#urgListItem_2_2_colors').addClass('opacity-5');
+    $('#urgListItem_2_3_colors').addClass('opacity-5');
+    $('#urgListItem_2_4_colors').addClass('opacity-5');
+    $('#urgListItem_2_5_colors').addClass('opacity-5');
+    $('#urgListItem_2_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_2_2_colors').on('click', function() {
+    $('#urgListItem_2_2_colors').removeClass('opacity-5');
+    $('#urgListItem_2_1_colors').addClass('opacity-5');
+    $('#urgListItem_2_3_colors').addClass('opacity-5');
+    $('#urgListItem_2_4_colors').addClass('opacity-5');
+    $('#urgListItem_2_5_colors').addClass('opacity-5');
+    $('#urgListItem_2_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_2_3_colors').on('click', function() {
+    $('#urgListItem_2_3_colors').removeClass('opacity-5');
+    $('#urgListItem_2_2_colors').addClass('opacity-5');
+    $('#urgListItem_2_1_colors').addClass('opacity-5');
+    $('#urgListItem_2_4_colors').addClass('opacity-5');
+    $('#urgListItem_2_5_colors').addClass('opacity-5');
+    $('#urgListItem_2_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_2_4_colors').on('click', function() {
+    $('#urgListItem_2_4_colors').removeClass('opacity-5');
+    $('#urgListItem_2_2_colors').addClass('opacity-5');
+    $('#urgListItem_2_3_colors').addClass('opacity-5');
+    $('#urgListItem_2_1_colors').addClass('opacity-5');
+    $('#urgListItem_2_5_colors').addClass('opacity-5');
+    $('#urgListItem_2_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_2_5_colors').on('click', function() {
+    $('#urgListItem_2_5_colors').removeClass('opacity-5');
+    $('#urgListItem_2_2_colors').addClass('opacity-5');
+    $('#urgListItem_2_3_colors').addClass('opacity-5');
+    $('#urgListItem_2_4_colors').addClass('opacity-5');
+    $('#urgListItem_2_1_colors').addClass('opacity-5');
+    $('#urgListItem_2_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_2_6_colors').on('click', function() {
+    $('#urgListItem_2_6_colors').removeClass('opacity-5');
+    $('#urgListItem_2_2_colors').addClass('opacity-5');
+    $('#urgListItem_2_3_colors').addClass('opacity-5');
+    $('#urgListItem_2_4_colors').addClass('opacity-5');
+    $('#urgListItem_2_5_colors').addClass('opacity-5');
+    $('#urgListItem_2_1_colors').addClass('opacity-5');
+});
+
+//! --------------------------------------------------------------------------------
+
+
+//! Нажатие на элемент каталога - 3
+
+$('#urgListItem_3_img').on('click', function() {
+    $('#urgListItem_3_color').removeClass('display-n');
+    $('#urgListItem_3_block').removeClass('display-n');
+    $('#urgListItem_3_close').removeClass('display-n');
+    $('#urgListItem_3_img').addClass('display-n');
+    $('#urgListItem_3_text').addClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_2_color').addClass('display-n');
+    $('#urgListItem_2_block').addClass('display-n');
+    $('#urgListItem_2_close').addClass('display-n');
+    $('#urgListItem_2_img').removeClass('display-n');
+    $('#urgListItem_2_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_1_color').addClass('display-n');
+    $('#urgListItem_1_block').addClass('display-n');
+    $('#urgListItem_1_close').addClass('display-n');
+    $('#urgListItem_1_img').removeClass('display-n');
+    $('#urgListItem_1_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_4_color').addClass('display-n');
+    $('#urgListItem_4_block').addClass('display-n');
+    $('#urgListItem_4_close').addClass('display-n');
+    $('#urgListItem_4_img').removeClass('display-n');
+    $('#urgListItem_4_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_5_color').addClass('display-n');
+    $('#urgListItem_5_block').addClass('display-n');
+    $('#urgListItem_5_close').addClass('display-n');
+    $('#urgListItem_5_img').removeClass('display-n');
+    $('#urgListItem_5_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_6_color').addClass('display-n');
+    $('#urgListItem_6_block').addClass('display-n');
+    $('#urgListItem_6_close').addClass('display-n');
+    $('#urgListItem_6_img').removeClass('display-n');
+    $('#urgListItem_6_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_7_color').addClass('display-n');
+    $('#urgListItem_7_block').addClass('display-n');
+    $('#urgListItem_7_close').addClass('display-n');
+    $('#urgListItem_7_img').removeClass('display-n');
+    $('#urgListItem_7_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_8_color').addClass('display-n');
+    $('#urgListItem_8_block').addClass('display-n');
+    $('#urgListItem_8_close').addClass('display-n');
+    $('#urgListItem_8_img').removeClass('display-n');
+    $('#urgListItem_8_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_9_color').addClass('display-n');
+    $('#urgListItem_9_block').addClass('display-n');
+    $('#urgListItem_9_close').addClass('display-n');
+    $('#urgListItem_9_img').removeClass('display-n');
+    $('#urgListItem_9_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_10_color').addClass('display-n');
+    $('#urgListItem_10_block').addClass('display-n');
+    $('#urgListItem_10_close').addClass('display-n');
+    $('#urgListItem_10_img').removeClass('display-n');
+    $('#urgListItem_10_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_11_color').addClass('display-n');
+    $('#urgListItem_11_block').addClass('display-n');
+    $('#urgListItem_11_close').addClass('display-n');
+    $('#urgListItem_11_img').removeClass('display-n');
+    $('#urgListItem_11_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_12_color').addClass('display-n');
+    $('#urgListItem_12_block').addClass('display-n');
+    $('#urgListItem_12_close').addClass('display-n');
+    $('#urgListItem_12_img').removeClass('display-n');
+    $('#urgListItem_12_text').removeClass('display-n');
+});
+
+$('#urgListItem_3_close').on('click', function() {
+    $('#urgListItem_3_color').addClass('display-n');
+    $('#urgListItem_3_block').addClass('display-n');
+    $('#urgListItem_3_close').addClass('display-n');
+    $('#urgListItem_3_img').removeClass('display-n');
+    $('#urgListItem_3_text').removeClass('display-n');
+});
+
+$('#urgListItem_3_1_colors').on('click', function() {
+    $('#urgListItem_3_1_colors').removeClass('opacity-5');
+    $('#urgListItem_3_2_colors').addClass('opacity-5');
+    $('#urgListItem_3_3_colors').addClass('opacity-5');
+    $('#urgListItem_3_4_colors').addClass('opacity-5');
+    $('#urgListItem_3_5_colors').addClass('opacity-5');
+    $('#urgListItem_3_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_3_2_colors').on('click', function() {
+    $('#urgListItem_3_2_colors').removeClass('opacity-5');
+    $('#urgListItem_3_1_colors').addClass('opacity-5');
+    $('#urgListItem_3_3_colors').addClass('opacity-5');
+    $('#urgListItem_3_4_colors').addClass('opacity-5');
+    $('#urgListItem_3_5_colors').addClass('opacity-5');
+    $('#urgListItem_3_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_3_3_colors').on('click', function() {
+    $('#urgListItem_3_3_colors').removeClass('opacity-5');
+    $('#urgListItem_3_2_colors').addClass('opacity-5');
+    $('#urgListItem_3_1_colors').addClass('opacity-5');
+    $('#urgListItem_3_4_colors').addClass('opacity-5');
+    $('#urgListItem_3_5_colors').addClass('opacity-5');
+    $('#urgListItem_3_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_3_4_colors').on('click', function() {
+    $('#urgListItem_3_4_colors').removeClass('opacity-5');
+    $('#urgListItem_3_2_colors').addClass('opacity-5');
+    $('#urgListItem_3_3_colors').addClass('opacity-5');
+    $('#urgListItem_3_1_colors').addClass('opacity-5');
+    $('#urgListItem_3_5_colors').addClass('opacity-5');
+    $('#urgListItem_3_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_3_5_colors').on('click', function() {
+    $('#urgListItem_3_5_colors').removeClass('opacity-5');
+    $('#urgListItem_3_2_colors').addClass('opacity-5');
+    $('#urgListItem_3_3_colors').addClass('opacity-5');
+    $('#urgListItem_3_4_colors').addClass('opacity-5');
+    $('#urgListItem_3_1_colors').addClass('opacity-5');
+    $('#urgListItem_3_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_3_6_colors').on('click', function() {
+    $('#urgListItem_3_6_colors').removeClass('opacity-5');
+    $('#urgListItem_3_2_colors').addClass('opacity-5');
+    $('#urgListItem_3_3_colors').addClass('opacity-5');
+    $('#urgListItem_3_4_colors').addClass('opacity-5');
+    $('#urgListItem_3_5_colors').addClass('opacity-5');
+    $('#urgListItem_3_1_colors').addClass('opacity-5');
+});
+
+//! --------------------------------------------------------------------------------
+
+
+//! Нажатие на элемент каталога - 5
+
+$('#urgListItem_4_img').on('click', function() {
+    $('#urgListItem_4_color').removeClass('display-n');
+    $('#urgListItem_4_block').removeClass('display-n');
+    $('#urgListItem_4_close').removeClass('display-n');
+    $('#urgListItem_4_img').addClass('display-n');
+    $('#urgListItem_4_text').addClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_2_color').addClass('display-n');
+    $('#urgListItem_2_block').addClass('display-n');
+    $('#urgListItem_2_close').addClass('display-n');
+    $('#urgListItem_2_img').removeClass('display-n');
+    $('#urgListItem_2_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_3_color').addClass('display-n');
+    $('#urgListItem_3_block').addClass('display-n');
+    $('#urgListItem_3_close').addClass('display-n');
+    $('#urgListItem_3_img').removeClass('display-n');
+    $('#urgListItem_3_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_1_color').addClass('display-n');
+    $('#urgListItem_1_block').addClass('display-n');
+    $('#urgListItem_1_close').addClass('display-n');
+    $('#urgListItem_1_img').removeClass('display-n');
+    $('#urgListItem_1_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_5_color').addClass('display-n');
+    $('#urgListItem_5_block').addClass('display-n');
+    $('#urgListItem_5_close').addClass('display-n');
+    $('#urgListItem_5_img').removeClass('display-n');
+    $('#urgListItem_5_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_6_color').addClass('display-n');
+    $('#urgListItem_6_block').addClass('display-n');
+    $('#urgListItem_6_close').addClass('display-n');
+    $('#urgListItem_6_img').removeClass('display-n');
+    $('#urgListItem_6_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_7_color').addClass('display-n');
+    $('#urgListItem_7_block').addClass('display-n');
+    $('#urgListItem_7_close').addClass('display-n');
+    $('#urgListItem_7_img').removeClass('display-n');
+    $('#urgListItem_7_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_8_color').addClass('display-n');
+    $('#urgListItem_8_block').addClass('display-n');
+    $('#urgListItem_8_close').addClass('display-n');
+    $('#urgListItem_8_img').removeClass('display-n');
+    $('#urgListItem_8_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_9_color').addClass('display-n');
+    $('#urgListItem_9_block').addClass('display-n');
+    $('#urgListItem_9_close').addClass('display-n');
+    $('#urgListItem_9_img').removeClass('display-n');
+    $('#urgListItem_9_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_10_color').addClass('display-n');
+    $('#urgListItem_10_block').addClass('display-n');
+    $('#urgListItem_10_close').addClass('display-n');
+    $('#urgListItem_10_img').removeClass('display-n');
+    $('#urgListItem_10_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_11_color').addClass('display-n');
+    $('#urgListItem_11_block').addClass('display-n');
+    $('#urgListItem_11_close').addClass('display-n');
+    $('#urgListItem_11_img').removeClass('display-n');
+    $('#urgListItem_11_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_12_color').addClass('display-n');
+    $('#urgListItem_12_block').addClass('display-n');
+    $('#urgListItem_12_close').addClass('display-n');
+    $('#urgListItem_12_img').removeClass('display-n');
+    $('#urgListItem_12_text').removeClass('display-n');
+});
+
+$('#urgListItem_4_close').on('click', function() {
+    $('#urgListItem_4_color').addClass('display-n');
+    $('#urgListItem_4_block').addClass('display-n');
+    $('#urgListItem_4_close').addClass('display-n');
+    $('#urgListItem_4_img').removeClass('display-n');
+    $('#urgListItem_4_text').removeClass('display-n');
+});
+
+$('#urgListItem_4_1_colors').on('click', function() {
+    $('#urgListItem_4_1_colors').removeClass('opacity-5');
+    $('#urgListItem_4_2_colors').addClass('opacity-5');
+    $('#urgListItem_4_3_colors').addClass('opacity-5');
+    $('#urgListItem_4_4_colors').addClass('opacity-5');
+    $('#urgListItem_4_5_colors').addClass('opacity-5');
+    $('#urgListItem_4_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_4_2_colors').on('click', function() {
+    $('#urgListItem_4_2_colors').removeClass('opacity-5');
+    $('#urgListItem_4_1_colors').addClass('opacity-5');
+    $('#urgListItem_4_3_colors').addClass('opacity-5');
+    $('#urgListItem_4_4_colors').addClass('opacity-5');
+    $('#urgListItem_4_5_colors').addClass('opacity-5');
+    $('#urgListItem_4_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_4_3_colors').on('click', function() {
+    $('#urgListItem_4_3_colors').removeClass('opacity-5');
+    $('#urgListItem_4_2_colors').addClass('opacity-5');
+    $('#urgListItem_4_1_colors').addClass('opacity-5');
+    $('#urgListItem_4_4_colors').addClass('opacity-5');
+    $('#urgListItem_4_5_colors').addClass('opacity-5');
+    $('#urgListItem_4_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_4_4_colors').on('click', function() {
+    $('#urgListItem_4_4_colors').removeClass('opacity-5');
+    $('#urgListItem_4_2_colors').addClass('opacity-5');
+    $('#urgListItem_4_3_colors').addClass('opacity-5');
+    $('#urgListItem_4_1_colors').addClass('opacity-5');
+    $('#urgListItem_4_5_colors').addClass('opacity-5');
+    $('#urgListItem_4_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_4_5_colors').on('click', function() {
+    $('#urgListItem_4_5_colors').removeClass('opacity-5');
+    $('#urgListItem_4_2_colors').addClass('opacity-5');
+    $('#urgListItem_4_3_colors').addClass('opacity-5');
+    $('#urgListItem_4_4_colors').addClass('opacity-5');
+    $('#urgListItem_4_1_colors').addClass('opacity-5');
+    $('#urgListItem_4_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_4_6_colors').on('click', function() {
+    $('#urgListItem_4_6_colors').removeClass('opacity-5');
+    $('#urgListItem_4_2_colors').addClass('opacity-5');
+    $('#urgListItem_4_3_colors').addClass('opacity-5');
+    $('#urgListItem_4_4_colors').addClass('opacity-5');
+    $('#urgListItem_4_5_colors').addClass('opacity-5');
+    $('#urgListItem_4_1_colors').addClass('opacity-5');
+});
+
+//! --------------------------------------------------------------------------------
+
+//! Нажатие на элемент каталога - 5
+
+$('#urgListItem_5_img').on('click', function() {
+    $('#urgListItem_5_color').removeClass('display-n');
+    $('#urgListItem_5_block').removeClass('display-n');
+    $('#urgListItem_5_close').removeClass('display-n');
+    $('#urgListItem_5_img').addClass('display-n');
+    $('#urgListItem_5_text').addClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_2_color').addClass('display-n');
+    $('#urgListItem_2_block').addClass('display-n');
+    $('#urgListItem_2_close').addClass('display-n');
+    $('#urgListItem_2_img').removeClass('display-n');
+    $('#urgListItem_2_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_3_color').addClass('display-n');
+    $('#urgListItem_3_block').addClass('display-n');
+    $('#urgListItem_3_close').addClass('display-n');
+    $('#urgListItem_3_img').removeClass('display-n');
+    $('#urgListItem_3_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_4_color').addClass('display-n');
+    $('#urgListItem_4_block').addClass('display-n');
+    $('#urgListItem_4_close').addClass('display-n');
+    $('#urgListItem_4_img').removeClass('display-n');
+    $('#urgListItem_4_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_1_color').addClass('display-n');
+    $('#urgListItem_1_block').addClass('display-n');
+    $('#urgListItem_1_close').addClass('display-n');
+    $('#urgListItem_1_img').removeClass('display-n');
+    $('#urgListItem_1_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_6_color').addClass('display-n');
+    $('#urgListItem_6_block').addClass('display-n');
+    $('#urgListItem_6_close').addClass('display-n');
+    $('#urgListItem_6_img').removeClass('display-n');
+    $('#urgListItem_6_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_7_color').addClass('display-n');
+    $('#urgListItem_7_block').addClass('display-n');
+    $('#urgListItem_7_close').addClass('display-n');
+    $('#urgListItem_7_img').removeClass('display-n');
+    $('#urgListItem_7_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_8_color').addClass('display-n');
+    $('#urgListItem_8_block').addClass('display-n');
+    $('#urgListItem_8_close').addClass('display-n');
+    $('#urgListItem_8_img').removeClass('display-n');
+    $('#urgListItem_8_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_9_color').addClass('display-n');
+    $('#urgListItem_9_block').addClass('display-n');
+    $('#urgListItem_9_close').addClass('display-n');
+    $('#urgListItem_9_img').removeClass('display-n');
+    $('#urgListItem_9_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_10_color').addClass('display-n');
+    $('#urgListItem_10_block').addClass('display-n');
+    $('#urgListItem_10_close').addClass('display-n');
+    $('#urgListItem_10_img').removeClass('display-n');
+    $('#urgListItem_10_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_11_color').addClass('display-n');
+    $('#urgListItem_11_block').addClass('display-n');
+    $('#urgListItem_11_close').addClass('display-n');
+    $('#urgListItem_11_img').removeClass('display-n');
+    $('#urgListItem_11_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_12_color').addClass('display-n');
+    $('#urgListItem_12_block').addClass('display-n');
+    $('#urgListItem_12_close').addClass('display-n');
+    $('#urgListItem_12_img').removeClass('display-n');
+    $('#urgListItem_12_text').removeClass('display-n');
+});
+
+$('#urgListItem_5_close').on('click', function() {
+    $('#urgListItem_5_color').addClass('display-n');
+    $('#urgListItem_5_block').addClass('display-n');
+    $('#urgListItem_5_close').addClass('display-n');
+    $('#urgListItem_5_img').removeClass('display-n');
+    $('#urgListItem_5_text').removeClass('display-n');
+});
+
+$('#urgListItem_5_1_colors').on('click', function() {
+    $('#urgListItem_5_1_colors').removeClass('opacity-5');
+    $('#urgListItem_5_2_colors').addClass('opacity-5');
+    $('#urgListItem_5_3_colors').addClass('opacity-5');
+    $('#urgListItem_5_4_colors').addClass('opacity-5');
+    $('#urgListItem_5_5_colors').addClass('opacity-5');
+    $('#urgListItem_5_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_5_2_colors').on('click', function() {
+    $('#urgListItem_5_2_colors').removeClass('opacity-5');
+    $('#urgListItem_5_1_colors').addClass('opacity-5');
+    $('#urgListItem_5_3_colors').addClass('opacity-5');
+    $('#urgListItem_5_4_colors').addClass('opacity-5');
+    $('#urgListItem_5_5_colors').addClass('opacity-5');
+    $('#urgListItem_5_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_5_3_colors').on('click', function() {
+    $('#urgListItem_5_3_colors').removeClass('opacity-5');
+    $('#urgListItem_5_2_colors').addClass('opacity-5');
+    $('#urgListItem_5_1_colors').addClass('opacity-5');
+    $('#urgListItem_5_4_colors').addClass('opacity-5');
+    $('#urgListItem_5_5_colors').addClass('opacity-5');
+    $('#urgListItem_5_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_5_4_colors').on('click', function() {
+    $('#urgListItem_5_4_colors').removeClass('opacity-5');
+    $('#urgListItem_5_2_colors').addClass('opacity-5');
+    $('#urgListItem_5_3_colors').addClass('opacity-5');
+    $('#urgListItem_5_1_colors').addClass('opacity-5');
+    $('#urgListItem_5_5_colors').addClass('opacity-5');
+    $('#urgListItem_5_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_5_5_colors').on('click', function() {
+    $('#urgListItem_5_5_colors').removeClass('opacity-5');
+    $('#urgListItem_5_2_colors').addClass('opacity-5');
+    $('#urgListItem_5_3_colors').addClass('opacity-5');
+    $('#urgListItem_5_4_colors').addClass('opacity-5');
+    $('#urgListItem_5_1_colors').addClass('opacity-5');
+    $('#urgListItem_5_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_5_6_colors').on('click', function() {
+    $('#urgListItem_5_6_colors').removeClass('opacity-5');
+    $('#urgListItem_5_2_colors').addClass('opacity-5');
+    $('#urgListItem_5_3_colors').addClass('opacity-5');
+    $('#urgListItem_5_4_colors').addClass('opacity-5');
+    $('#urgListItem_5_5_colors').addClass('opacity-5');
+    $('#urgListItem_5_1_colors').addClass('opacity-5');
+});
+
+//! --------------------------------------------------------------------------------
+
+//! Нажатие на элемент каталога - 6
+
+$('#urgListItem_6_img').on('click', function() {
+    $('#urgListItem_6_color').removeClass('display-n');
+    $('#urgListItem_6_block').removeClass('display-n');
+    $('#urgListItem_6_close').removeClass('display-n');
+    $('#urgListItem_6_img').addClass('display-n');
+    $('#urgListItem_6_text').addClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_2_color').addClass('display-n');
+    $('#urgListItem_2_block').addClass('display-n');
+    $('#urgListItem_2_close').addClass('display-n');
+    $('#urgListItem_2_img').removeClass('display-n');
+    $('#urgListItem_2_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_3_color').addClass('display-n');
+    $('#urgListItem_3_block').addClass('display-n');
+    $('#urgListItem_3_close').addClass('display-n');
+    $('#urgListItem_3_img').removeClass('display-n');
+    $('#urgListItem_3_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_4_color').addClass('display-n');
+    $('#urgListItem_4_block').addClass('display-n');
+    $('#urgListItem_4_close').addClass('display-n');
+    $('#urgListItem_4_img').removeClass('display-n');
+    $('#urgListItem_4_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_5_color').addClass('display-n');
+    $('#urgListItem_5_block').addClass('display-n');
+    $('#urgListItem_5_close').addClass('display-n');
+    $('#urgListItem_5_img').removeClass('display-n');
+    $('#urgListItem_5_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_1_color').addClass('display-n');
+    $('#urgListItem_1_block').addClass('display-n');
+    $('#urgListItem_1_close').addClass('display-n');
+    $('#urgListItem_1_img').removeClass('display-n');
+    $('#urgListItem_1_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_7_color').addClass('display-n');
+    $('#urgListItem_7_block').addClass('display-n');
+    $('#urgListItem_7_close').addClass('display-n');
+    $('#urgListItem_7_img').removeClass('display-n');
+    $('#urgListItem_7_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_8_color').addClass('display-n');
+    $('#urgListItem_8_block').addClass('display-n');
+    $('#urgListItem_8_close').addClass('display-n');
+    $('#urgListItem_8_img').removeClass('display-n');
+    $('#urgListItem_8_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_9_color').addClass('display-n');
+    $('#urgListItem_9_block').addClass('display-n');
+    $('#urgListItem_9_close').addClass('display-n');
+    $('#urgListItem_9_img').removeClass('display-n');
+    $('#urgListItem_9_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_10_color').addClass('display-n');
+    $('#urgListItem_10_block').addClass('display-n');
+    $('#urgListItem_10_close').addClass('display-n');
+    $('#urgListItem_10_img').removeClass('display-n');
+    $('#urgListItem_10_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_11_color').addClass('display-n');
+    $('#urgListItem_11_block').addClass('display-n');
+    $('#urgListItem_11_close').addClass('display-n');
+    $('#urgListItem_11_img').removeClass('display-n');
+    $('#urgListItem_11_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_12_color').addClass('display-n');
+    $('#urgListItem_12_block').addClass('display-n');
+    $('#urgListItem_12_close').addClass('display-n');
+    $('#urgListItem_12_img').removeClass('display-n');
+    $('#urgListItem_12_text').removeClass('display-n');
+});
+
+$('#urgListItem_6_close').on('click', function() {
+    $('#urgListItem_6_color').addClass('display-n');
+    $('#urgListItem_6_block').addClass('display-n');
+    $('#urgListItem_6_close').addClass('display-n');
+    $('#urgListItem_6_img').removeClass('display-n');
+    $('#urgListItem_6_text').removeClass('display-n');
+});
+
+$('#urgListItem_6_1_colors').on('click', function() {
+    $('#urgListItem_6_1_colors').removeClass('opacity-5');
+    $('#urgListItem_6_2_colors').addClass('opacity-5');
+    $('#urgListItem_6_3_colors').addClass('opacity-5');
+    $('#urgListItem_6_4_colors').addClass('opacity-5');
+    $('#urgListItem_6_5_colors').addClass('opacity-5');
+    $('#urgListItem_6_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_6_2_colors').on('click', function() {
+    $('#urgListItem_6_2_colors').removeClass('opacity-5');
+    $('#urgListItem_6_1_colors').addClass('opacity-5');
+    $('#urgListItem_6_3_colors').addClass('opacity-5');
+    $('#urgListItem_6_4_colors').addClass('opacity-5');
+    $('#urgListItem_6_5_colors').addClass('opacity-5');
+    $('#urgListItem_6_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_6_3_colors').on('click', function() {
+    $('#urgListItem_6_3_colors').removeClass('opacity-5');
+    $('#urgListItem_6_2_colors').addClass('opacity-5');
+    $('#urgListItem_6_1_colors').addClass('opacity-5');
+    $('#urgListItem_6_4_colors').addClass('opacity-5');
+    $('#urgListItem_6_5_colors').addClass('opacity-5');
+    $('#urgListItem_6_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_6_4_colors').on('click', function() {
+    $('#urgListItem_6_4_colors').removeClass('opacity-5');
+    $('#urgListItem_6_2_colors').addClass('opacity-5');
+    $('#urgListItem_6_3_colors').addClass('opacity-5');
+    $('#urgListItem_6_1_colors').addClass('opacity-5');
+    $('#urgListItem_6_5_colors').addClass('opacity-5');
+    $('#urgListItem_6_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_6_5_colors').on('click', function() {
+    $('#urgListItem_6_5_colors').removeClass('opacity-5');
+    $('#urgListItem_6_2_colors').addClass('opacity-5');
+    $('#urgListItem_6_3_colors').addClass('opacity-5');
+    $('#urgListItem_6_4_colors').addClass('opacity-5');
+    $('#urgListItem_6_1_colors').addClass('opacity-5');
+    $('#urgListItem_6_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_6_6_colors').on('click', function() {
+    $('#urgListItem_6_6_colors').removeClass('opacity-5');
+    $('#urgListItem_6_2_colors').addClass('opacity-5');
+    $('#urgListItem_6_3_colors').addClass('opacity-5');
+    $('#urgListItem_6_4_colors').addClass('opacity-5');
+    $('#urgListItem_6_5_colors').addClass('opacity-5');
+    $('#urgListItem_6_1_colors').addClass('opacity-5');
+});
+
+//! --------------------------------------------------------------------------------
+
+
+//! Нажатие на элемент каталога - 7
+
+$('#urgListItem_7_img').on('click', function() {
+    $('#urgListItem_7_color').removeClass('display-n');
+    $('#urgListItem_7_block').removeClass('display-n');
+    $('#urgListItem_7_close').removeClass('display-n');
+    $('#urgListItem_7_img').addClass('display-n');
+    $('#urgListItem_7_text').addClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_2_color').addClass('display-n');
+    $('#urgListItem_2_block').addClass('display-n');
+    $('#urgListItem_2_close').addClass('display-n');
+    $('#urgListItem_2_img').removeClass('display-n');
+    $('#urgListItem_2_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_3_color').addClass('display-n');
+    $('#urgListItem_3_block').addClass('display-n');
+    $('#urgListItem_3_close').addClass('display-n');
+    $('#urgListItem_3_img').removeClass('display-n');
+    $('#urgListItem_3_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_4_color').addClass('display-n');
+    $('#urgListItem_4_block').addClass('display-n');
+    $('#urgListItem_4_close').addClass('display-n');
+    $('#urgListItem_4_img').removeClass('display-n');
+    $('#urgListItem_4_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_5_color').addClass('display-n');
+    $('#urgListItem_5_block').addClass('display-n');
+    $('#urgListItem_5_close').addClass('display-n');
+    $('#urgListItem_5_img').removeClass('display-n');
+    $('#urgListItem_5_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_6_color').addClass('display-n');
+    $('#urgListItem_6_block').addClass('display-n');
+    $('#urgListItem_6_close').addClass('display-n');
+    $('#urgListItem_6_img').removeClass('display-n');
+    $('#urgListItem_6_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_1_color').addClass('display-n');
+    $('#urgListItem_1_block').addClass('display-n');
+    $('#urgListItem_1_close').addClass('display-n');
+    $('#urgListItem_1_img').removeClass('display-n');
+    $('#urgListItem_1_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_8_color').addClass('display-n');
+    $('#urgListItem_8_block').addClass('display-n');
+    $('#urgListItem_8_close').addClass('display-n');
+    $('#urgListItem_8_img').removeClass('display-n');
+    $('#urgListItem_8_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_9_color').addClass('display-n');
+    $('#urgListItem_9_block').addClass('display-n');
+    $('#urgListItem_9_close').addClass('display-n');
+    $('#urgListItem_9_img').removeClass('display-n');
+    $('#urgListItem_9_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_10_color').addClass('display-n');
+    $('#urgListItem_10_block').addClass('display-n');
+    $('#urgListItem_10_close').addClass('display-n');
+    $('#urgListItem_10_img').removeClass('display-n');
+    $('#urgListItem_10_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_11_color').addClass('display-n');
+    $('#urgListItem_11_block').addClass('display-n');
+    $('#urgListItem_11_close').addClass('display-n');
+    $('#urgListItem_11_img').removeClass('display-n');
+    $('#urgListItem_11_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_12_color').addClass('display-n');
+    $('#urgListItem_12_block').addClass('display-n');
+    $('#urgListItem_12_close').addClass('display-n');
+    $('#urgListItem_12_img').removeClass('display-n');
+    $('#urgListItem_12_text').removeClass('display-n');
+});
+
+$('#urgListItem_7_close').on('click', function() {
+    $('#urgListItem_7_color').addClass('display-n');
+    $('#urgListItem_7_block').addClass('display-n');
+    $('#urgListItem_7_close').addClass('display-n');
+    $('#urgListItem_7_img').removeClass('display-n');
+    $('#urgListItem_7_text').removeClass('display-n');
+});
+
+$('#urgListItem_7_1_colors').on('click', function() {
+    $('#urgListItem_7_1_colors').removeClass('opacity-5');
+    $('#urgListItem_7_2_colors').addClass('opacity-5');
+    $('#urgListItem_7_3_colors').addClass('opacity-5');
+    $('#urgListItem_7_4_colors').addClass('opacity-5');
+    $('#urgListItem_7_5_colors').addClass('opacity-5');
+    $('#urgListItem_7_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_7_2_colors').on('click', function() {
+    $('#urgListItem_7_2_colors').removeClass('opacity-5');
+    $('#urgListItem_7_1_colors').addClass('opacity-5');
+    $('#urgListItem_7_3_colors').addClass('opacity-5');
+    $('#urgListItem_7_4_colors').addClass('opacity-5');
+    $('#urgListItem_7_5_colors').addClass('opacity-5');
+    $('#urgListItem_7_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_7_3_colors').on('click', function() {
+    $('#urgListItem_7_3_colors').removeClass('opacity-5');
+    $('#urgListItem_7_2_colors').addClass('opacity-5');
+    $('#urgListItem_7_1_colors').addClass('opacity-5');
+    $('#urgListItem_7_4_colors').addClass('opacity-5');
+    $('#urgListItem_7_5_colors').addClass('opacity-5');
+    $('#urgListItem_7_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_7_4_colors').on('click', function() {
+    $('#urgListItem_7_4_colors').removeClass('opacity-5');
+    $('#urgListItem_7_2_colors').addClass('opacity-5');
+    $('#urgListItem_7_3_colors').addClass('opacity-5');
+    $('#urgListItem_7_1_colors').addClass('opacity-5');
+    $('#urgListItem_7_5_colors').addClass('opacity-5');
+    $('#urgListItem_7_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_7_5_colors').on('click', function() {
+    $('#urgListItem_7_5_colors').removeClass('opacity-5');
+    $('#urgListItem_7_2_colors').addClass('opacity-5');
+    $('#urgListItem_7_3_colors').addClass('opacity-5');
+    $('#urgListItem_7_4_colors').addClass('opacity-5');
+    $('#urgListItem_7_1_colors').addClass('opacity-5');
+    $('#urgListItem_7_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_7_6_colors').on('click', function() {
+    $('#urgListItem_7_6_colors').removeClass('opacity-5');
+    $('#urgListItem_7_2_colors').addClass('opacity-5');
+    $('#urgListItem_7_3_colors').addClass('opacity-5');
+    $('#urgListItem_7_4_colors').addClass('opacity-5');
+    $('#urgListItem_7_5_colors').addClass('opacity-5');
+    $('#urgListItem_7_1_colors').addClass('opacity-5');
+});
+
+//! --------------------------------------------------------------------------------
+
+//! Нажатие на элемент каталога - 8
+
+$('#urgListItem_8_img').on('click', function() {
+    $('#urgListItem_8_color').removeClass('display-n');
+    $('#urgListItem_8_block').removeClass('display-n');
+    $('#urgListItem_8_close').removeClass('display-n');
+    $('#urgListItem_8_img').addClass('display-n');
+    $('#urgListItem_8_text').addClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_2_color').addClass('display-n');
+    $('#urgListItem_2_block').addClass('display-n');
+    $('#urgListItem_2_close').addClass('display-n');
+    $('#urgListItem_2_img').removeClass('display-n');
+    $('#urgListItem_2_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_3_color').addClass('display-n');
+    $('#urgListItem_3_block').addClass('display-n');
+    $('#urgListItem_3_close').addClass('display-n');
+    $('#urgListItem_3_img').removeClass('display-n');
+    $('#urgListItem_3_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_4_color').addClass('display-n');
+    $('#urgListItem_4_block').addClass('display-n');
+    $('#urgListItem_4_close').addClass('display-n');
+    $('#urgListItem_4_img').removeClass('display-n');
+    $('#urgListItem_4_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_5_color').addClass('display-n');
+    $('#urgListItem_5_block').addClass('display-n');
+    $('#urgListItem_5_close').addClass('display-n');
+    $('#urgListItem_5_img').removeClass('display-n');
+    $('#urgListItem_5_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_6_color').addClass('display-n');
+    $('#urgListItem_6_block').addClass('display-n');
+    $('#urgListItem_6_close').addClass('display-n');
+    $('#urgListItem_6_img').removeClass('display-n');
+    $('#urgListItem_6_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_7_color').addClass('display-n');
+    $('#urgListItem_7_block').addClass('display-n');
+    $('#urgListItem_7_close').addClass('display-n');
+    $('#urgListItem_7_img').removeClass('display-n');
+    $('#urgListItem_7_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_1_color').addClass('display-n');
+    $('#urgListItem_1_block').addClass('display-n');
+    $('#urgListItem_1_close').addClass('display-n');
+    $('#urgListItem_1_img').removeClass('display-n');
+    $('#urgListItem_1_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_9_color').addClass('display-n');
+    $('#urgListItem_9_block').addClass('display-n');
+    $('#urgListItem_9_close').addClass('display-n');
+    $('#urgListItem_9_img').removeClass('display-n');
+    $('#urgListItem_9_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_10_color').addClass('display-n');
+    $('#urgListItem_10_block').addClass('display-n');
+    $('#urgListItem_10_close').addClass('display-n');
+    $('#urgListItem_10_img').removeClass('display-n');
+    $('#urgListItem_10_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_11_color').addClass('display-n');
+    $('#urgListItem_11_block').addClass('display-n');
+    $('#urgListItem_11_close').addClass('display-n');
+    $('#urgListItem_11_img').removeClass('display-n');
+    $('#urgListItem_11_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_12_color').addClass('display-n');
+    $('#urgListItem_12_block').addClass('display-n');
+    $('#urgListItem_12_close').addClass('display-n');
+    $('#urgListItem_12_img').removeClass('display-n');
+    $('#urgListItem_12_text').removeClass('display-n');
+});
+
+$('#urgListItem_8_close').on('click', function() {
+    $('#urgListItem_8_color').addClass('display-n');
+    $('#urgListItem_8_block').addClass('display-n');
+    $('#urgListItem_8_close').addClass('display-n');
+    $('#urgListItem_8_img').removeClass('display-n');
+    $('#urgListItem_8_text').removeClass('display-n');
+});
+
+$('#urgListItem_8_1_colors').on('click', function() {
+    $('#urgListItem_8_1_colors').removeClass('opacity-5');
+    $('#urgListItem_8_2_colors').addClass('opacity-5');
+    $('#urgListItem_8_3_colors').addClass('opacity-5');
+    $('#urgListItem_8_4_colors').addClass('opacity-5');
+    $('#urgListItem_8_5_colors').addClass('opacity-5');
+    $('#urgListItem_8_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_8_2_colors').on('click', function() {
+    $('#urgListItem_8_2_colors').removeClass('opacity-5');
+    $('#urgListItem_8_1_colors').addClass('opacity-5');
+    $('#urgListItem_8_3_colors').addClass('opacity-5');
+    $('#urgListItem_8_4_colors').addClass('opacity-5');
+    $('#urgListItem_8_5_colors').addClass('opacity-5');
+    $('#urgListItem_8_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_8_3_colors').on('click', function() {
+    $('#urgListItem_8_3_colors').removeClass('opacity-5');
+    $('#urgListItem_8_2_colors').addClass('opacity-5');
+    $('#urgListItem_8_1_colors').addClass('opacity-5');
+    $('#urgListItem_8_4_colors').addClass('opacity-5');
+    $('#urgListItem_8_5_colors').addClass('opacity-5');
+    $('#urgListItem_8_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_8_4_colors').on('click', function() {
+    $('#urgListItem_8_4_colors').removeClass('opacity-5');
+    $('#urgListItem_8_2_colors').addClass('opacity-5');
+    $('#urgListItem_8_3_colors').addClass('opacity-5');
+    $('#urgListItem_8_1_colors').addClass('opacity-5');
+    $('#urgListItem_8_5_colors').addClass('opacity-5');
+    $('#urgListItem_8_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_8_5_colors').on('click', function() {
+    $('#urgListItem_8_5_colors').removeClass('opacity-5');
+    $('#urgListItem_8_2_colors').addClass('opacity-5');
+    $('#urgListItem_8_3_colors').addClass('opacity-5');
+    $('#urgListItem_8_4_colors').addClass('opacity-5');
+    $('#urgListItem_8_1_colors').addClass('opacity-5');
+    $('#urgListItem_8_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_8_6_colors').on('click', function() {
+    $('#urgListItem_8_6_colors').removeClass('opacity-5');
+    $('#urgListItem_8_2_colors').addClass('opacity-5');
+    $('#urgListItem_8_3_colors').addClass('opacity-5');
+    $('#urgListItem_8_4_colors').addClass('opacity-5');
+    $('#urgListItem_8_5_colors').addClass('opacity-5');
+    $('#urgListItem_8_1_colors').addClass('opacity-5');
+});
+
+//! --------------------------------------------------------------------------------
+
+//! Нажатие на элемент каталога - 9
+
+$('#urgListItem_9_img').on('click', function() {
+    $('#urgListItem_9_color').removeClass('display-n');
+    $('#urgListItem_9_block').removeClass('display-n');
+    $('#urgListItem_9_close').removeClass('display-n');
+    $('#urgListItem_9_img').addClass('display-n');
+    $('#urgListItem_9_text').addClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_2_color').addClass('display-n');
+    $('#urgListItem_2_block').addClass('display-n');
+    $('#urgListItem_2_close').addClass('display-n');
+    $('#urgListItem_2_img').removeClass('display-n');
+    $('#urgListItem_2_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_3_color').addClass('display-n');
+    $('#urgListItem_3_block').addClass('display-n');
+    $('#urgListItem_3_close').addClass('display-n');
+    $('#urgListItem_3_img').removeClass('display-n');
+    $('#urgListItem_3_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_4_color').addClass('display-n');
+    $('#urgListItem_4_block').addClass('display-n');
+    $('#urgListItem_4_close').addClass('display-n');
+    $('#urgListItem_4_img').removeClass('display-n');
+    $('#urgListItem_4_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_5_color').addClass('display-n');
+    $('#urgListItem_5_block').addClass('display-n');
+    $('#urgListItem_5_close').addClass('display-n');
+    $('#urgListItem_5_img').removeClass('display-n');
+    $('#urgListItem_5_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_6_color').addClass('display-n');
+    $('#urgListItem_6_block').addClass('display-n');
+    $('#urgListItem_6_close').addClass('display-n');
+    $('#urgListItem_6_img').removeClass('display-n');
+    $('#urgListItem_6_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_7_color').addClass('display-n');
+    $('#urgListItem_7_block').addClass('display-n');
+    $('#urgListItem_7_close').addClass('display-n');
+    $('#urgListItem_7_img').removeClass('display-n');
+    $('#urgListItem_7_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_8_color').addClass('display-n');
+    $('#urgListItem_8_block').addClass('display-n');
+    $('#urgListItem_8_close').addClass('display-n');
+    $('#urgListItem_8_img').removeClass('display-n');
+    $('#urgListItem_8_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_1_color').addClass('display-n');
+    $('#urgListItem_1_block').addClass('display-n');
+    $('#urgListItem_1_close').addClass('display-n');
+    $('#urgListItem_1_img').removeClass('display-n');
+    $('#urgListItem_1_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_10_color').addClass('display-n');
+    $('#urgListItem_10_block').addClass('display-n');
+    $('#urgListItem_10_close').addClass('display-n');
+    $('#urgListItem_10_img').removeClass('display-n');
+    $('#urgListItem_10_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_11_color').addClass('display-n');
+    $('#urgListItem_11_block').addClass('display-n');
+    $('#urgListItem_11_close').addClass('display-n');
+    $('#urgListItem_11_img').removeClass('display-n');
+    $('#urgListItem_11_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_12_color').addClass('display-n');
+    $('#urgListItem_12_block').addClass('display-n');
+    $('#urgListItem_12_close').addClass('display-n');
+    $('#urgListItem_12_img').removeClass('display-n');
+    $('#urgListItem_12_text').removeClass('display-n');
+});
+
+$('#urgListItem_9_close').on('click', function() {
+    $('#urgListItem_9_color').addClass('display-n');
+    $('#urgListItem_9_block').addClass('display-n');
+    $('#urgListItem_9_close').addClass('display-n');
+    $('#urgListItem_9_img').removeClass('display-n');
+    $('#urgListItem_9_text').removeClass('display-n');
+});
+
+$('#urgListItem_9_1_colors').on('click', function() {
+    $('#urgListItem_9_1_colors').removeClass('opacity-5');
+    $('#urgListItem_9_2_colors').addClass('opacity-5');
+    $('#urgListItem_9_3_colors').addClass('opacity-5');
+    $('#urgListItem_9_4_colors').addClass('opacity-5');
+    $('#urgListItem_9_5_colors').addClass('opacity-5');
+    $('#urgListItem_9_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_9_2_colors').on('click', function() {
+    $('#urgListItem_9_2_colors').removeClass('opacity-5');
+    $('#urgListItem_9_1_colors').addClass('opacity-5');
+    $('#urgListItem_9_3_colors').addClass('opacity-5');
+    $('#urgListItem_9_4_colors').addClass('opacity-5');
+    $('#urgListItem_9_5_colors').addClass('opacity-5');
+    $('#urgListItem_9_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_9_3_colors').on('click', function() {
+    $('#urgListItem_9_3_colors').removeClass('opacity-5');
+    $('#urgListItem_9_2_colors').addClass('opacity-5');
+    $('#urgListItem_9_1_colors').addClass('opacity-5');
+    $('#urgListItem_9_4_colors').addClass('opacity-5');
+    $('#urgListItem_9_5_colors').addClass('opacity-5');
+    $('#urgListItem_9_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_9_4_colors').on('click', function() {
+    $('#urgListItem_9_4_colors').removeClass('opacity-5');
+    $('#urgListItem_9_2_colors').addClass('opacity-5');
+    $('#urgListItem_9_3_colors').addClass('opacity-5');
+    $('#urgListItem_9_1_colors').addClass('opacity-5');
+    $('#urgListItem_9_5_colors').addClass('opacity-5');
+    $('#urgListItem_9_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_9_5_colors').on('click', function() {
+    $('#urgListItem_9_5_colors').removeClass('opacity-5');
+    $('#urgListItem_9_2_colors').addClass('opacity-5');
+    $('#urgListItem_9_3_colors').addClass('opacity-5');
+    $('#urgListItem_9_4_colors').addClass('opacity-5');
+    $('#urgListItem_9_1_colors').addClass('opacity-5');
+    $('#urgListItem_9_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_9_6_colors').on('click', function() {
+    $('#urgListItem_9_6_colors').removeClass('opacity-5');
+    $('#urgListItem_9_2_colors').addClass('opacity-5');
+    $('#urgListItem_9_3_colors').addClass('opacity-5');
+    $('#urgListItem_9_4_colors').addClass('opacity-5');
+    $('#urgListItem_9_5_colors').addClass('opacity-5');
+    $('#urgListItem_9_1_colors').addClass('opacity-5');
+});
+
+//! --------------------------------------------------------------------------------
+
+
+//! Нажатие на элемент каталога - 10
+
+$('#urgListItem_10_img').on('click', function() {
+    $('#urgListItem_10_color').removeClass('display-n');
+    $('#urgListItem_10_block').removeClass('display-n');
+    $('#urgListItem_10_close').removeClass('display-n');
+    $('#urgListItem_10_img').addClass('display-n');
+    $('#urgListItem_10_text').addClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_2_color').addClass('display-n');
+    $('#urgListItem_2_block').addClass('display-n');
+    $('#urgListItem_2_close').addClass('display-n');
+    $('#urgListItem_2_img').removeClass('display-n');
+    $('#urgListItem_2_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_3_color').addClass('display-n');
+    $('#urgListItem_3_block').addClass('display-n');
+    $('#urgListItem_3_close').addClass('display-n');
+    $('#urgListItem_3_img').removeClass('display-n');
+    $('#urgListItem_3_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_4_color').addClass('display-n');
+    $('#urgListItem_4_block').addClass('display-n');
+    $('#urgListItem_4_close').addClass('display-n');
+    $('#urgListItem_4_img').removeClass('display-n');
+    $('#urgListItem_4_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_5_color').addClass('display-n');
+    $('#urgListItem_5_block').addClass('display-n');
+    $('#urgListItem_5_close').addClass('display-n');
+    $('#urgListItem_5_img').removeClass('display-n');
+    $('#urgListItem_5_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_6_color').addClass('display-n');
+    $('#urgListItem_6_block').addClass('display-n');
+    $('#urgListItem_6_close').addClass('display-n');
+    $('#urgListItem_6_img').removeClass('display-n');
+    $('#urgListItem_6_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_7_color').addClass('display-n');
+    $('#urgListItem_7_block').addClass('display-n');
+    $('#urgListItem_7_close').addClass('display-n');
+    $('#urgListItem_7_img').removeClass('display-n');
+    $('#urgListItem_7_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_8_color').addClass('display-n');
+    $('#urgListItem_8_block').addClass('display-n');
+    $('#urgListItem_8_close').addClass('display-n');
+    $('#urgListItem_8_img').removeClass('display-n');
+    $('#urgListItem_8_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_9_color').addClass('display-n');
+    $('#urgListItem_9_block').addClass('display-n');
+    $('#urgListItem_9_close').addClass('display-n');
+    $('#urgListItem_9_img').removeClass('display-n');
+    $('#urgListItem_9_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_1_color').addClass('display-n');
+    $('#urgListItem_1_block').addClass('display-n');
+    $('#urgListItem_1_close').addClass('display-n');
+    $('#urgListItem_1_img').removeClass('display-n');
+    $('#urgListItem_1_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_11_color').addClass('display-n');
+    $('#urgListItem_11_block').addClass('display-n');
+    $('#urgListItem_11_close').addClass('display-n');
+    $('#urgListItem_11_img').removeClass('display-n');
+    $('#urgListItem_11_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_12_color').addClass('display-n');
+    $('#urgListItem_12_block').addClass('display-n');
+    $('#urgListItem_12_close').addClass('display-n');
+    $('#urgListItem_12_img').removeClass('display-n');
+    $('#urgListItem_12_text').removeClass('display-n');
+});
+
+$('#urgListItem_10_close').on('click', function() {
+    $('#urgListItem_10_color').addClass('display-n');
+    $('#urgListItem_10_block').addClass('display-n');
+    $('#urgListItem_10_close').addClass('display-n');
+    $('#urgListItem_10_img').removeClass('display-n');
+    $('#urgListItem_10_text').removeClass('display-n');
+});
+
+$('#urgListItem_10_1_colors').on('click', function() {
+    $('#urgListItem_10_1_colors').removeClass('opacity-5');
+    $('#urgListItem_10_2_colors').addClass('opacity-5');
+    $('#urgListItem_10_3_colors').addClass('opacity-5');
+    $('#urgListItem_10_4_colors').addClass('opacity-5');
+    $('#urgListItem_10_5_colors').addClass('opacity-5');
+    $('#urgListItem_10_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_10_2_colors').on('click', function() {
+    $('#urgListItem_10_2_colors').removeClass('opacity-5');
+    $('#urgListItem_10_1_colors').addClass('opacity-5');
+    $('#urgListItem_10_3_colors').addClass('opacity-5');
+    $('#urgListItem_10_4_colors').addClass('opacity-5');
+    $('#urgListItem_10_5_colors').addClass('opacity-5');
+    $('#urgListItem_10_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_10_3_colors').on('click', function() {
+    $('#urgListItem_10_3_colors').removeClass('opacity-5');
+    $('#urgListItem_10_2_colors').addClass('opacity-5');
+    $('#urgListItem_10_1_colors').addClass('opacity-5');
+    $('#urgListItem_10_4_colors').addClass('opacity-5');
+    $('#urgListItem_10_5_colors').addClass('opacity-5');
+    $('#urgListItem_10_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_10_4_colors').on('click', function() {
+    $('#urgListItem_10_4_colors').removeClass('opacity-5');
+    $('#urgListItem_10_2_colors').addClass('opacity-5');
+    $('#urgListItem_10_3_colors').addClass('opacity-5');
+    $('#urgListItem_10_1_colors').addClass('opacity-5');
+    $('#urgListItem_10_5_colors').addClass('opacity-5');
+    $('#urgListItem_10_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_10_5_colors').on('click', function() {
+    $('#urgListItem_10_5_colors').removeClass('opacity-5');
+    $('#urgListItem_10_2_colors').addClass('opacity-5');
+    $('#urgListItem_10_3_colors').addClass('opacity-5');
+    $('#urgListItem_10_4_colors').addClass('opacity-5');
+    $('#urgListItem_10_1_colors').addClass('opacity-5');
+    $('#urgListItem_10_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_10_6_colors').on('click', function() {
+    $('#urgListItem_10_6_colors').removeClass('opacity-5');
+    $('#urgListItem_10_2_colors').addClass('opacity-5');
+    $('#urgListItem_10_3_colors').addClass('opacity-5');
+    $('#urgListItem_10_4_colors').addClass('opacity-5');
+    $('#urgListItem_10_5_colors').addClass('opacity-5');
+    $('#urgListItem_10_1_colors').addClass('opacity-5');
+});
+
+//! --------------------------------------------------------------------------------
+
+
+
+
+//! Нажатие на элемент каталога - 11
+
+$('#urgListItem_11_img').on('click', function() {
+    $('#urgListItem_11_color').removeClass('display-n');
+    $('#urgListItem_11_block').removeClass('display-n');
+    $('#urgListItem_11_close').removeClass('display-n');
+    $('#urgListItem_11_img').addClass('display-n');
+    $('#urgListItem_11_text').addClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_2_color').addClass('display-n');
+    $('#urgListItem_2_block').addClass('display-n');
+    $('#urgListItem_2_close').addClass('display-n');
+    $('#urgListItem_2_img').removeClass('display-n');
+    $('#urgListItem_2_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_3_color').addClass('display-n');
+    $('#urgListItem_3_block').addClass('display-n');
+    $('#urgListItem_3_close').addClass('display-n');
+    $('#urgListItem_3_img').removeClass('display-n');
+    $('#urgListItem_3_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_4_color').addClass('display-n');
+    $('#urgListItem_4_block').addClass('display-n');
+    $('#urgListItem_4_close').addClass('display-n');
+    $('#urgListItem_4_img').removeClass('display-n');
+    $('#urgListItem_4_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_5_color').addClass('display-n');
+    $('#urgListItem_5_block').addClass('display-n');
+    $('#urgListItem_5_close').addClass('display-n');
+    $('#urgListItem_5_img').removeClass('display-n');
+    $('#urgListItem_5_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_6_color').addClass('display-n');
+    $('#urgListItem_6_block').addClass('display-n');
+    $('#urgListItem_6_close').addClass('display-n');
+    $('#urgListItem_6_img').removeClass('display-n');
+    $('#urgListItem_6_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_7_color').addClass('display-n');
+    $('#urgListItem_7_block').addClass('display-n');
+    $('#urgListItem_7_close').addClass('display-n');
+    $('#urgListItem_7_img').removeClass('display-n');
+    $('#urgListItem_7_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_8_color').addClass('display-n');
+    $('#urgListItem_8_block').addClass('display-n');
+    $('#urgListItem_8_close').addClass('display-n');
+    $('#urgListItem_8_img').removeClass('display-n');
+    $('#urgListItem_8_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_9_color').addClass('display-n');
+    $('#urgListItem_9_block').addClass('display-n');
+    $('#urgListItem_9_close').addClass('display-n');
+    $('#urgListItem_9_img').removeClass('display-n');
+    $('#urgListItem_9_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_10_color').addClass('display-n');
+    $('#urgListItem_10_block').addClass('display-n');
+    $('#urgListItem_10_close').addClass('display-n');
+    $('#urgListItem_10_img').removeClass('display-n');
+    $('#urgListItem_10_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_1_color').addClass('display-n');
+    $('#urgListItem_1_block').addClass('display-n');
+    $('#urgListItem_1_close').addClass('display-n');
+    $('#urgListItem_1_img').removeClass('display-n');
+    $('#urgListItem_1_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_12_color').addClass('display-n');
+    $('#urgListItem_12_block').addClass('display-n');
+    $('#urgListItem_12_close').addClass('display-n');
+    $('#urgListItem_12_img').removeClass('display-n');
+    $('#urgListItem_12_text').removeClass('display-n');
+});
+
+$('#urgListItem_11_close').on('click', function() {
+    $('#urgListItem_11_color').addClass('display-n');
+    $('#urgListItem_11_block').addClass('display-n');
+    $('#urgListItem_11_close').addClass('display-n');
+    $('#urgListItem_11_img').removeClass('display-n');
+    $('#urgListItem_11_text').removeClass('display-n');
+});
+
+$('#urgListItem_11_1_colors').on('click', function() {
+    $('#urgListItem_11_1_colors').removeClass('opacity-5');
+    $('#urgListItem_11_2_colors').addClass('opacity-5');
+    $('#urgListItem_11_3_colors').addClass('opacity-5');
+    $('#urgListItem_11_4_colors').addClass('opacity-5');
+    $('#urgListItem_11_5_colors').addClass('opacity-5');
+    $('#urgListItem_11_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_11_2_colors').on('click', function() {
+    $('#urgListItem_11_2_colors').removeClass('opacity-5');
+    $('#urgListItem_11_1_colors').addClass('opacity-5');
+    $('#urgListItem_11_3_colors').addClass('opacity-5');
+    $('#urgListItem_11_4_colors').addClass('opacity-5');
+    $('#urgListItem_11_5_colors').addClass('opacity-5');
+    $('#urgListItem_11_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_11_3_colors').on('click', function() {
+    $('#urgListItem_11_3_colors').removeClass('opacity-5');
+    $('#urgListItem_11_2_colors').addClass('opacity-5');
+    $('#urgListItem_11_1_colors').addClass('opacity-5');
+    $('#urgListItem_11_4_colors').addClass('opacity-5');
+    $('#urgListItem_11_5_colors').addClass('opacity-5');
+    $('#urgListItem_11_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_11_4_colors').on('click', function() {
+    $('#urgListItem_11_4_colors').removeClass('opacity-5');
+    $('#urgListItem_11_2_colors').addClass('opacity-5');
+    $('#urgListItem_11_3_colors').addClass('opacity-5');
+    $('#urgListItem_11_1_colors').addClass('opacity-5');
+    $('#urgListItem_11_5_colors').addClass('opacity-5');
+    $('#urgListItem_11_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_11_5_colors').on('click', function() {
+    $('#urgListItem_11_5_colors').removeClass('opacity-5');
+    $('#urgListItem_11_2_colors').addClass('opacity-5');
+    $('#urgListItem_11_3_colors').addClass('opacity-5');
+    $('#urgListItem_11_4_colors').addClass('opacity-5');
+    $('#urgListItem_11_1_colors').addClass('opacity-5');
+    $('#urgListItem_11_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_11_6_colors').on('click', function() {
+    $('#urgListItem_11_6_colors').removeClass('opacity-5');
+    $('#urgListItem_11_2_colors').addClass('opacity-5');
+    $('#urgListItem_11_3_colors').addClass('opacity-5');
+    $('#urgListItem_11_4_colors').addClass('opacity-5');
+    $('#urgListItem_11_5_colors').addClass('opacity-5');
+    $('#urgListItem_11_1_colors').addClass('opacity-5');
+});
+
+//! --------------------------------------------------------------------------------
+
+//! Нажатие на элемент каталога - 12
+
+$('#urgListItem_12_img').on('click', function() {
+    $('#urgListItem_12_color').removeClass('display-n');
+    $('#urgListItem_12_block').removeClass('display-n');
+    $('#urgListItem_12_close').removeClass('display-n');
+    $('#urgListItem_12_img').addClass('display-n');
+    $('#urgListItem_12_text').addClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_2_color').addClass('display-n');
+    $('#urgListItem_2_block').addClass('display-n');
+    $('#urgListItem_2_close').addClass('display-n');
+    $('#urgListItem_2_img').removeClass('display-n');
+    $('#urgListItem_2_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_3_color').addClass('display-n');
+    $('#urgListItem_3_block').addClass('display-n');
+    $('#urgListItem_3_close').addClass('display-n');
+    $('#urgListItem_3_img').removeClass('display-n');
+    $('#urgListItem_3_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_4_color').addClass('display-n');
+    $('#urgListItem_4_block').addClass('display-n');
+    $('#urgListItem_4_close').addClass('display-n');
+    $('#urgListItem_4_img').removeClass('display-n');
+    $('#urgListItem_4_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_5_color').addClass('display-n');
+    $('#urgListItem_5_block').addClass('display-n');
+    $('#urgListItem_5_close').addClass('display-n');
+    $('#urgListItem_5_img').removeClass('display-n');
+    $('#urgListItem_5_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_6_color').addClass('display-n');
+    $('#urgListItem_6_block').addClass('display-n');
+    $('#urgListItem_6_close').addClass('display-n');
+    $('#urgListItem_6_img').removeClass('display-n');
+    $('#urgListItem_6_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_7_color').addClass('display-n');
+    $('#urgListItem_7_block').addClass('display-n');
+    $('#urgListItem_7_close').addClass('display-n');
+    $('#urgListItem_7_img').removeClass('display-n');
+    $('#urgListItem_7_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_8_color').addClass('display-n');
+    $('#urgListItem_8_block').addClass('display-n');
+    $('#urgListItem_8_close').addClass('display-n');
+    $('#urgListItem_8_img').removeClass('display-n');
+    $('#urgListItem_8_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_9_color').addClass('display-n');
+    $('#urgListItem_9_block').addClass('display-n');
+    $('#urgListItem_9_close').addClass('display-n');
+    $('#urgListItem_9_img').removeClass('display-n');
+    $('#urgListItem_9_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_10_color').addClass('display-n');
+    $('#urgListItem_10_block').addClass('display-n');
+    $('#urgListItem_10_close').addClass('display-n');
+    $('#urgListItem_10_img').removeClass('display-n');
+    $('#urgListItem_10_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_11_color').addClass('display-n');
+    $('#urgListItem_11_block').addClass('display-n');
+    $('#urgListItem_11_close').addClass('display-n');
+    $('#urgListItem_11_img').removeClass('display-n');
+    $('#urgListItem_11_text').removeClass('display-n');
+    //! ----------------------------------------------
+    $('#urgListItem_1_color').addClass('display-n');
+    $('#urgListItem_1_block').addClass('display-n');
+    $('#urgListItem_1_close').addClass('display-n');
+    $('#urgListItem_1_img').removeClass('display-n');
+    $('#urgListItem_1_text').removeClass('display-n');
+});
+
+$('#urgListItem_12_close').on('click', function() {
+    $('#urgListItem_12_color').addClass('display-n');
+    $('#urgListItem_12_block').addClass('display-n');
+    $('#urgListItem_12_close').addClass('display-n');
+    $('#urgListItem_12_img').removeClass('display-n');
+    $('#urgListItem_12_text').removeClass('display-n');
+});
+
+$('#urgListItem_12_1_colors').on('click', function() {
+    $('#urgListItem_12_1_colors').removeClass('opacity-5');
+    $('#urgListItem_12_2_colors').addClass('opacity-5');
+    $('#urgListItem_12_3_colors').addClass('opacity-5');
+    $('#urgListItem_12_4_colors').addClass('opacity-5');
+    $('#urgListItem_12_5_colors').addClass('opacity-5');
+    $('#urgListItem_12_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_12_2_colors').on('click', function() {
+    $('#urgListItem_12_2_colors').removeClass('opacity-5');
+    $('#urgListItem_12_1_colors').addClass('opacity-5');
+    $('#urgListItem_12_3_colors').addClass('opacity-5');
+    $('#urgListItem_12_4_colors').addClass('opacity-5');
+    $('#urgListItem_12_5_colors').addClass('opacity-5');
+    $('#urgListItem_12_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_12_3_colors').on('click', function() {
+    $('#urgListItem_12_3_colors').removeClass('opacity-5');
+    $('#urgListItem_12_2_colors').addClass('opacity-5');
+    $('#urgListItem_12_1_colors').addClass('opacity-5');
+    $('#urgListItem_12_4_colors').addClass('opacity-5');
+    $('#urgListItem_12_5_colors').addClass('opacity-5');
+    $('#urgListItem_12_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_12_4_colors').on('click', function() {
+    $('#urgListItem_12_4_colors').removeClass('opacity-5');
+    $('#urgListItem_12_2_colors').addClass('opacity-5');
+    $('#urgListItem_12_3_colors').addClass('opacity-5');
+    $('#urgListItem_12_1_colors').addClass('opacity-5');
+    $('#urgListItem_12_5_colors').addClass('opacity-5');
+    $('#urgListItem_12_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_12_5_colors').on('click', function() {
+    $('#urgListItem_12_5_colors').removeClass('opacity-5');
+    $('#urgListItem_12_2_colors').addClass('opacity-5');
+    $('#urgListItem_12_3_colors').addClass('opacity-5');
+    $('#urgListItem_12_4_colors').addClass('opacity-5');
+    $('#urgListItem_12_1_colors').addClass('opacity-5');
+    $('#urgListItem_12_6_colors').addClass('opacity-5');
+});
+$('#urgListItem_12_6_colors').on('click', function() {
+    $('#urgListItem_12_6_colors').removeClass('opacity-5');
+    $('#urgListItem_12_2_colors').addClass('opacity-5');
+    $('#urgListItem_12_3_colors').addClass('opacity-5');
+    $('#urgListItem_12_4_colors').addClass('opacity-5');
+    $('#urgListItem_12_5_colors').addClass('opacity-5');
+    $('#urgListItem_12_1_colors').addClass('opacity-5');
+});
 
 
 

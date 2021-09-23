@@ -19,6 +19,8 @@
 
 @@include('./toy/toy.js')
 
+@@include('./urgently/urgently.js')
+
 
 @@include('./calendar/calendar.js')
 

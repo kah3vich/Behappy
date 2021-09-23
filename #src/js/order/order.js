@@ -65,6 +65,7 @@ function renderInputOrder() {
         if($('.ord-pay__block-data-contact-name input').val() !== '') {
             countRenderInputOrder++
         }
+        console.log(countRenderInputOrder)
         if(countRenderInputOrder === 5) {
             $('.ord-pay__block-data-address-street input').prop('readonly', false);
             $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
@@ -82,6 +83,7 @@ function renderInputOrder() {
         if($('.ord-pay__block-data-contact-phone input').val() !== '') {
             countRenderInputOrder++
         }
+        console.log(countRenderInputOrder)
         if(countRenderInputOrder === 5) {
             $('.ord-pay__block-data-address-street input').prop('readonly', false);
             $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
@@ -99,6 +101,7 @@ function renderInputOrder() {
         if($('.ord-pay__block-data-calls-names input').val() !== '') {
             countRenderInputOrder++
         }
+        console.log(countRenderInputOrder)
         if(countRenderInputOrder === 5) {
             $('.ord-pay__block-data-address-street input').prop('readonly', false);
             $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
@@ -116,6 +119,7 @@ function renderInputOrder() {
         if($('.ord-pay__block-data-calls-phones input').val() !== '') {
             countRenderInputOrder++
         }
+        console.log(countRenderInputOrder)
         if(countRenderInputOrder === 5) {
             $('.ord-pay__block-data-address-street input').prop('readonly', false);
             $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
@@ -133,6 +137,7 @@ function renderInputOrder() {
         if($('.ord-pay__block-data-calls-phones input').val() !== '') {
             countRenderInputOrder++
         }
+        console.log(countRenderInputOrder)
         if(countRenderInputOrder === 5) {
             $('.ord-pay__block-data-address-street input').prop('readonly', false);
             $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
