@@ -886,7 +886,16 @@
                         font-size: 12px;
                         line-height: 180%;
                         letter-spacing: 0.5px;
-                        color: #B2B2B2;
+                        color: #FFFFFF;
+                        &::placeholder {
+                            font-family: Circe;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 12px;
+                            line-height: 180%;
+                            letter-spacing: 0.5px;
+                            color: #B2B2B2;
+                        }
                     }
                 }
                 &-street {

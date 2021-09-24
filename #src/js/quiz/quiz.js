@@ -130,13 +130,13 @@ $('#deliverys').on('click', function() {
 
 //! Проверка на заполненные поля в input 
 
-function renderInputOrder() {
-    let countRenderInputOrder = 0
+function renderInputOrderQuiz() {
+    let countRenderInputOrderQuiz = 0
     $('.ord-quiz__block-data-contact-name input').on('change', function() {
         if($('.ord-quiz__block-data-contact-name input').val() !== '') {
-            countRenderInputOrder++
+            countRenderInputOrderQuiz++
         }
-        if(countRenderInputOrder === 5) {
+        if(countRenderInputOrderQuiz === 5) {
             $('.ord-quiz__block-data-address-street input').prop('readonly', false);
             $('.ord-quiz__block-data-address-street').removeClass('ord-quiz__block-data-address-noact');
             $('.ord-quiz__block-data-address-home  input').prop('readonly', false);
@@ -151,9 +151,9 @@ function renderInputOrder() {
     })
     $('.ord-quiz__block-data-contact-phone input').on('change', function() {
         if($('.ord-quiz__block-data-contact-phone input').val() !== '') {
-            countRenderInputOrder++
+            countRenderInputOrderQuiz++
         }
-        if(countRenderInputOrder === 5) {
+        if(countRenderInputOrderQuiz === 5) {
             $('.ord-quiz__block-data-address-street input').prop('readonly', false);
             $('.ord-quiz__block-data-address-street').removeClass('ord-quiz__block-data-address-noact');
             $('.ord-quiz__block-data-address-home  input').prop('readonly', false);
@@ -168,9 +168,9 @@ function renderInputOrder() {
     })
     $('.ord-quiz__block-data-calls-names input').on('change', function() {
         if($('.ord-quiz__block-data-calls-names input').val() !== '') {
-            countRenderInputOrder++
+            countRenderInputOrderQuiz++
         }
-        if(countRenderInputOrder === 5) {
+        if(countRenderInputOrderQuiz === 5) {
             $('.ord-quiz__block-data-address-street input').prop('readonly', false);
             $('.ord-quiz__block-data-address-street').removeClass('ord-quiz__block-data-address-noact');
             $('.ord-quiz__block-data-address-home  input').prop('readonly', false);
@@ -185,9 +185,9 @@ function renderInputOrder() {
     })
     $('.ord-quiz__block-data-calls-phones input').on('change', function() {
         if($('.ord-quiz__block-data-calls-phones input').val() !== '') {
-            countRenderInputOrder++
+            countRenderInputOrderQuiz++
         }
-        if(countRenderInputOrder === 5) {
+        if(countRenderInputOrderQuiz === 5) {
             $('.ord-quiz__block-data-address-street input').prop('readonly', false);
             $('.ord-quiz__block-data-address-street').removeClass('ord-quiz__block-data-address-noact');
             $('.ord-quiz__block-data-address-home  input').prop('readonly', false);
@@ -202,9 +202,9 @@ function renderInputOrder() {
     })
     $('.ord-quiz__block-data-address-date').on('change', function() {
         if($('.ord-quiz__block-data-calls-phones input').val() !== '') {
-            countRenderInputOrder++
+            countRenderInputOrderQuiz++
         }
-        if(countRenderInputOrder === 5) {
+        if(countRenderInputOrderQuiz === 5) {
             $('.ord-quiz__block-data-address-street input').prop('readonly', false);
             $('.ord-quiz__block-data-address-street').removeClass('ord-quiz__block-data-address-noact');
             $('.ord-quiz__block-data-address-home  input').prop('readonly', false);
@@ -219,7 +219,7 @@ function renderInputOrder() {
     })
     
 }
-renderInputOrder()
+renderInputOrderQuiz()
 
 
 //! --------------------------------------------------------------------------------------------

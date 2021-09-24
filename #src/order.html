@@ -15,7 +15,7 @@
                 <div class="ord-pay__block-data-title">Оформление заказа</div>
                 <div class="ord-pay__block-data-question">Выберите, кто будет получать заказ ?</div>
                 <div class="ord-pay__block-data-delivery">
-                    <label class="ord-pay__block-data-label" for="basic" id="pickup">
+                    <label class="ord-pay__block-data-label" for="basic" id="pickup-ord">
                         <input type="radio" name="plan" id="basic" checked />
                         <div class="ord-pay__block-data-content">
                             <div class="ord-pay__block-data-me">
@@ -25,7 +25,7 @@
                         </div>
                     </label>
                 
-                    <label class="ord-pay__block-data-label" for="complete" id="delivery">
+                    <label class="ord-pay__block-data-label" for="complete" id="delivery-ord">
                         <input type="radio" id="complete" name="plan" />
                         <div class="ord-pay__block-data-content">
                             <div class="ord-pay__block-data-courier delivery-hover">
@@ -65,7 +65,7 @@
                     </div>
                     <div class="ord-pay__block-data-address-date">
                         <label for="date-client">
-                            <input type="date" id="date-client">
+                            <input type="text" id="datepickerOrder" placeholder="дд.мм.гггг">
                             @@include('iconsprite/calendar-order.svg')
                         </label>
                     </div>

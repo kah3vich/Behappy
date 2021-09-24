@@ -21,6 +21,7 @@
 
 @@include('./urgently/urgently.js')
 
+@@include('./constructor/constructor.js')
 
 @@include('./calendar/calendar.js')
 

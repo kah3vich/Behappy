@@ -15,4 +15,4 @@
 - ## Description: [click me](https://kah3vich.github.io/Behappy/dist/description.html)
 - ## Toy: [click me](https://kah3vich.github.io/Behappy/dist/toy.html)
 - ## Urgently: [click me](https://kah3vich.github.io/Behappy/dist/urgently.html)
-
+- ## Constructor: [click me](https://kah3vich.github.io/Behappy/dist/constructor.html)

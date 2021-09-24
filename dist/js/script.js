@@ -294,6 +294,46 @@ $('.header__block-list-1-item-catalog').on('click', function() {
 //! --------------------------------------------------------------------------------------------
 
 
+
+//! Проверка на выбранной валюты  
+
+
+$('.menu__block-title-currency-rus').on('click', function() {
+    $(this).addClass('opacity-5')
+    $('.menu__block-title-currency-usd').removeClass('opacity-5')
+    $('.menu__block-title-currency-teng').removeClass('opacity-5')
+});
+$('.menu__block-title-currency-usd').on('click', function() {
+    $(this).addClass('opacity-5')
+    $('.menu__block-title-currency-rus').removeClass('opacity-5')
+    $('.menu__block-title-currency-teng').removeClass('opacity-5')
+});
+$('.menu__block-title-currency-teng').on('click', function() {
+    $(this).addClass('opacity-5')
+    $('.menu__block-title-currency-usd').removeClass('opacity-5')
+    $('.menu__block-title-currency-rus').removeClass('opacity-5')
+});
+
+
+//! --------------------------------------------------------------------------------------------
+
+
+
+//! Проверка на выбранного языка  
+
+
+$('.menu__block-title-language-rus').on('click', function() {
+    $(this).addClass('opacity-5')
+    $('.menu__block-title-language-eng').removeClass('opacity-5')
+});
+$('.menu__block-title-language-eng').on('click', function() {
+    $(this).addClass('opacity-5')
+    $('.menu__block-title-language-rus').removeClass('opacity-5')
+});
+
+
+
+//! --------------------------------------------------------------------------------------------
 //! Открытие выпадающего списка 
 $('.i-header__block-model-city').on('click', function() {
     $('.i-header__block-model-city-select').toggleClass('display-n')
@@ -354,7 +394,7 @@ $('#i-header-city-12').on('click', function() {
 
 //! События нажатие - выбор доставки 
 
-$('#pickup').on('click', function() {
+$('#pickup-ord').on('click', function() {
     $('.ord-pay__block-data-calls').removeClass('display-f')
     $('.ord-pay__block-data-calls').addClass('display-n')
     $('.ord-pay__block-data-call').removeClass('display-n')
@@ -379,7 +419,7 @@ $('#pickup').on('click', function() {
     $('.ord-pay__block-data-address-apartment input').prop('readonly', false);
     $('.ord-pay__block-data-address-apartment').removeClass('ord-pay__block-data-address-noact');
 });
-$('#delivery').on('click', function() {
+$('#delivery-ord').on('click', function() {
     $('.ord-pay__block-data-calls').removeClass('display-n')
     $('.ord-pay__block-data-calls').addClass('display-f')
     $('.ord-pay__block-data-call').addClass('display-n')
@@ -864,8 +904,7 @@ $('.model-catalog__card-info-calendar-select').on('click', function() {
 
 
 var modelSlider = new Swiper(".modelSlider", {
-    loop: true,
-    simulateTouch:false,
+    simulateTouch: false,
     slidesPerView: 1, 
     spaceBetween: 10, 
     navigation: {
@@ -897,7 +936,7 @@ var recModelSlider = new Swiper(".recModelSlider", {
 
 
 var modelSliderToy = new Swiper(".modelSliderToy", {
-    loop: true,
+    simulateTouch: false,
     slidesPerView: 1, 
     spaceBetween: 10, 
     navigation: {
@@ -923,6 +962,33 @@ $('.model-toy__block-info-calendar-btn').on('click', function() {
     $('.model-toy__block-info-calendar-btn').toggleClass('model-toy__block-info-calendar-btn-active')
 });
 
+
+var modelSliderBallons = new Swiper(".modelSliderBallons", {
+    simulateTouch: false,
+    slidesPerView: 1, 
+    spaceBetween: 10, 
+    navigation: {
+        nextEl: ".model-ballons-slider .swiper-controls .swiper-button-next",
+        prevEl: ".model-ballons-slider .swiper-controls .swiper-button-prev",
+    },
+});
+
+
+
+var modelBallonsWrapperSlider = new Swiper(".modelBallonsWrapperSlider", {
+    loop: true,
+    slidesPerView: 3, 
+    spaceBetween: 15, 
+    navigation: {
+        nextEl: ".model-ballons__block-wrapper-slider .swiper-control .swiper-button-next",
+        prevEl: ".model-ballons__block-wrapper-slider .swiper-control .swiper-button-prev",
+    },
+});
+
+$('.model-ballons__block-info-calendar-btn').on('click', function() {
+    $('.model-ballons__block-info-calendar-item').toggleClass('display-n')
+    $('.model-ballons__block-info-calendar-btn').toggleClass('model-ballons__block-info-calendar-btn-active')
+});
 
 //! Открытие фильтра 
 
@@ -1098,13 +1164,13 @@ $('#deliverys').on('click', function() {
 
 //! Проверка на заполненные поля в input 
 
-function renderInputOrder() {
-    let countRenderInputOrder = 0
+function renderInputOrderQuiz() {
+    let countRenderInputOrderQuiz = 0
     $('.ord-quiz__block-data-contact-name input').on('change', function() {
         if($('.ord-quiz__block-data-contact-name input').val() !== '') {
-            countRenderInputOrder++
+            countRenderInputOrderQuiz++
         }
-        if(countRenderInputOrder === 5) {
+        if(countRenderInputOrderQuiz === 5) {
             $('.ord-quiz__block-data-address-street input').prop('readonly', false);
             $('.ord-quiz__block-data-address-street').removeClass('ord-quiz__block-data-address-noact');
             $('.ord-quiz__block-data-address-home  input').prop('readonly', false);
@@ -1119,9 +1185,9 @@ function renderInputOrder() {
     })
     $('.ord-quiz__block-data-contact-phone input').on('change', function() {
         if($('.ord-quiz__block-data-contact-phone input').val() !== '') {
-            countRenderInputOrder++
+            countRenderInputOrderQuiz++
         }
-        if(countRenderInputOrder === 5) {
+        if(countRenderInputOrderQuiz === 5) {
             $('.ord-quiz__block-data-address-street input').prop('readonly', false);
             $('.ord-quiz__block-data-address-street').removeClass('ord-quiz__block-data-address-noact');
             $('.ord-quiz__block-data-address-home  input').prop('readonly', false);
@@ -1136,9 +1202,9 @@ function renderInputOrder() {
     })
     $('.ord-quiz__block-data-calls-names input').on('change', function() {
         if($('.ord-quiz__block-data-calls-names input').val() !== '') {
-            countRenderInputOrder++
+            countRenderInputOrderQuiz++
         }
-        if(countRenderInputOrder === 5) {
+        if(countRenderInputOrderQuiz === 5) {
             $('.ord-quiz__block-data-address-street input').prop('readonly', false);
             $('.ord-quiz__block-data-address-street').removeClass('ord-quiz__block-data-address-noact');
             $('.ord-quiz__block-data-address-home  input').prop('readonly', false);
@@ -1153,9 +1219,9 @@ function renderInputOrder() {
     })
     $('.ord-quiz__block-data-calls-phones input').on('change', function() {
         if($('.ord-quiz__block-data-calls-phones input').val() !== '') {
-            countRenderInputOrder++
+            countRenderInputOrderQuiz++
         }
-        if(countRenderInputOrder === 5) {
+        if(countRenderInputOrderQuiz === 5) {
             $('.ord-quiz__block-data-address-street input').prop('readonly', false);
             $('.ord-quiz__block-data-address-street').removeClass('ord-quiz__block-data-address-noact');
             $('.ord-quiz__block-data-address-home  input').prop('readonly', false);
@@ -1170,9 +1236,9 @@ function renderInputOrder() {
     })
     $('.ord-quiz__block-data-address-date').on('change', function() {
         if($('.ord-quiz__block-data-calls-phones input').val() !== '') {
-            countRenderInputOrder++
+            countRenderInputOrderQuiz++
         }
-        if(countRenderInputOrder === 5) {
+        if(countRenderInputOrderQuiz === 5) {
             $('.ord-quiz__block-data-address-street input').prop('readonly', false);
             $('.ord-quiz__block-data-address-street').removeClass('ord-quiz__block-data-address-noact');
             $('.ord-quiz__block-data-address-home  input').prop('readonly', false);
@@ -1187,7 +1253,7 @@ function renderInputOrder() {
     })
     
 }
-renderInputOrder()
+renderInputOrderQuiz()
 
 
 //! --------------------------------------------------------------------------------------------
@@ -3028,128 +3094,285 @@ $('#urgListItem_12_6_colors').on('click', function() {
 });
 
 
+//! Свайп блока внизу 
+
+
+$('.const-content__swipe').on('click', function() {
+    $(this).addClass('display-n');
+    $('.const-content__swipers').removeClass('display-n');
+});
+$('.const-content__swipers-btn').on('click', function() {
+    $('.const-content__swipers').addClass('display-n');
+    $('.const-content__swipe').removeClass('display-n');
+});
+
+
+//! ------------------------------------------------------------------------------------
+
+
+//! Нажатие на блоки в каталогах 
+
+
+$('#constListItem-1').on('click', function() {
+    $(this).toggleClass('const-content__block-list-item-active');
+    $('#constBlockSlider-1').toggleClass('display-n');
+});
+$('#constBlockSliderClose-1').on('click', function() {
+    $('#constListItem-1').toggleClass('const-content__block-list-item-active');
+    $('#constBlockSlider-1').toggleClass('display-n');
+});
+$('#constBlockSliderColor-1-1').on('click', function() {
+    $(this).removeClass('opacity-5');
+    $('#constBlockSliderColor-1-2').addClass('opacity-5');
+    $('#constBlockSliderColor-1-3').addClass('opacity-5');
+    $('#constBlockSliderColor-1-4').addClass('opacity-5');
+    $('#constBlockSliderColor-1-5').addClass('opacity-5');
+    $('#constBlockSliderColor-1-6').addClass('opacity-5');
+});
+$('#constBlockSliderColor-1-2').on('click', function() {
+    $(this).removeClass('opacity-5');
+    $('#constBlockSliderColor-1-1').addClass('opacity-5');
+    $('#constBlockSliderColor-1-3').addClass('opacity-5');
+    $('#constBlockSliderColor-1-4').addClass('opacity-5');
+    $('#constBlockSliderColor-1-5').addClass('opacity-5');
+    $('#constBlockSliderColor-1-6').addClass('opacity-5');
+});
+$('#constBlockSliderColor-1-3').on('click', function() {
+    $(this).removeClass('opacity-5');
+    $('#constBlockSliderColor-1-2').addClass('opacity-5');
+    $('#constBlockSliderColor-1-1').addClass('opacity-5');
+    $('#constBlockSliderColor-1-4').addClass('opacity-5');
+    $('#constBlockSliderColor-1-5').addClass('opacity-5');
+    $('#constBlockSliderColor-1-6').addClass('opacity-5');
+});
+$('#constBlockSliderColor-1-4').on('click', function() {
+    $(this).removeClass('opacity-5');
+    $('#constBlockSliderColor-1-2').addClass('opacity-5');
+    $('#constBlockSliderColor-1-3').addClass('opacity-5');
+    $('#constBlockSliderColor-1-1').addClass('opacity-5');
+    $('#constBlockSliderColor-1-5').addClass('opacity-5');
+    $('#constBlockSliderColor-1-6').addClass('opacity-5');
+});
+$('#constBlockSliderColor-1-5').on('click', function() {
+    $(this).removeClass('opacity-5');
+    $('#constBlockSliderColor-1-2').addClass('opacity-5');
+    $('#constBlockSliderColor-1-3').addClass('opacity-5');
+    $('#constBlockSliderColor-1-4').addClass('opacity-5');
+    $('#constBlockSliderColor-1-1').addClass('opacity-5');
+    $('#constBlockSliderColor-1-6').addClass('opacity-5');
+});
+$('#constBlockSliderColor-1-6').on('click', function() {
+    $(this).removeClass('opacity-5');
+    $('#constBlockSliderColor-1-2').addClass('opacity-5');
+    $('#constBlockSliderColor-1-3').addClass('opacity-5');
+    $('#constBlockSliderColor-1-4').addClass('opacity-5');
+    $('#constBlockSliderColor-1-5').addClass('opacity-5');
+    $('#constBlockSliderColor-1-1').addClass('opacity-5');
+});
+
+
+//! ------------------------------------------------------------------------------------
+
+
+//! Слайдеры для каталогов 
+
+
+var constListSlider_1 = new Swiper(".constListSlider-1", {
+    slidesPerView: 1, 
+    spaceBetween: 10, 
+    navigation: {
+        nextEl: ".const-content__block-slider-1 .swiper-control-1 .swiper-button-next",
+        prevEl: ".const-content__block-slider-1 .swiper-control-1 .swiper-button-prev",
+    },
+});
+
+
+//! ------------------------------------------------------------------------------------
+
+
+//! Слайдеры для корзин 
+
+
+var constListSliders_1 = new Swiper(".constListSliders-1", {
+    slidesPerView: 1, 
+    spaceBetween: 10, 
+    navigation: {
+        nextEl: ".const-content__block-sliders-1 .swiper-controls-1 .swiper-button-next",
+        prevEl: ".const-content__block-sliders-1 .swiper-controls-1 .swiper-button-prev",
+    },
+});
+
+
+//! ------------------------------------------------------------------------------------
+
 
 
 //! Календарь скидок 
 
-const date = new Date();
+// const date = new Date();
 
-const renderCalendar = () => {
-    date.setDate(1);
+// const renderCalendar = () => {
+//     date.setDate(1);
 
-    const monthDays = document.querySelector(".days");
+//     const monthDays = document.querySelector(".days");
 
-    const lastDay = new Date(
-        date.getFullYear(),
-        date.getMonth() + 1,
-        0
-    ).getDate();
+//     const lastDay = new Date(
+//         date.getFullYear(),
+//         date.getMonth() + 1,
+//         0
+//     ).getDate();
 
-    const prevLastDay = new Date(
-        date.getFullYear(),
-        date.getMonth(),
-        0
-    ).getDate();
+//     const prevLastDay = new Date(
+//         date.getFullYear(),
+//         date.getMonth(),
+//         0
+//     ).getDate();
 
-    const firstDayIndex = date.getDay();
+//     const firstDayIndex = date.getDay();
 
-    // console.log(lastDay)
+//     // console.log(lastDay)
 
-    const lastDayIndex = new Date(
-        date.getFullYear(),
-        date.getMonth() + 1,
-        0
-    ).getDay();
+//     const lastDayIndex = new Date(
+//         date.getFullYear(),
+//         date.getMonth() + 1,
+//         0
+//     ).getDay();
 
-    const nextDays = 7 - lastDayIndex - 1;
+//     const nextDays = 7 - lastDayIndex - 1;
 
-    const months = [
-        "January",
-        "February",
-        "March",
-        "April",
-        "May",
-        "June",
-        "July",
-        "August",
-        "September",
-        "October",
-        "November",
-        "December",
-    ];
+//     const months = [
+//         "January",
+//         "February",
+//         "March",
+//         "April",
+//         "May",
+//         "June",
+//         "July",
+//         "August",
+//         "September",
+//         "October",
+//         "November",
+//         "December",
+//     ];
     
 
-    document.querySelector(".date h1").innerHTML = months[date.getMonth()];
+//     document.querySelector(".date h1").innerHTML = months[date.getMonth()];
 
-    document.querySelector(".date p").innerHTML = new Date().getFullYear();
+//     document.querySelector(".date p").innerHTML = new Date().getFullYear();
 
-    const mouthRu = $('.calendar h1').text()
-    if(mouthRu === 'January') {
-        $('.calendar h1').html('Январь')
-    } else if(mouthRu === 'February') {
-        $('.calendar h1').html('Февраль')
-    } else if(mouthRu === 'March') {
-        $('.calendar h1').html('Март')
-    } else if(mouthRu === 'April') {
-        $('.calendar h1').html('Апрель')
-    } else if(mouthRu === 'May') {
-        $('.calendar h1').html('Май')
-    } else if(mouthRu === 'June') {
-        $('.calendar h1').html('Июнь')
-    } else if(mouthRu === 'July') {
-        $('.calendar h1').html('Июль')
-    } else if(mouthRu === 'August') {
-        $('.calendar h1').html('Август')
-    } else if(mouthRu === 'September') {
-        $('.calendar h1').html('Сентябрь')
-    } else if(mouthRu === 'October') {
-        $('.calendar h1').html('Октябрь')
-    } else if(mouthRu === 'November') {
-        $('.calendar h1').html('Ноябрь')
-    } else if(mouthRu === 'December') {
-        $('.calendar h1').html('Декабрь')
-    } else {
-        $('.calendar h1').html('')
-    }
-
-
-
-    let days = "";
-
-    for (let x = firstDayIndex; x > 0; x--) {
-        days += `<div class="prev-date">${prevLastDay - x + 1}</div>`;
-    }
-
-    for (let i = 1; i <= lastDay; i++) {
-        if (i === new Date().getDate() && date.getMonth() === new Date().getMonth()) {
-            days += `<div class="today">${i}</div>`;
-        } else {
-            days += `<div>${i}</div>`;
-        }
-    }
-
-    for (let j = 1; j <= nextDays; j++) {
-        days += `<div class="next-date">${j}</div>`;
-        monthDays.innerHTML = days;
-    }
-    };
-
-    $(".prev").on("click", function() {
-        date.setMonth(date.getMonth() - 1);
-        renderCalendar();
-    });
-
-    $(".next").on("click", function() {
-        date.setMonth(date.getMonth() + 1);
-        renderCalendar();
-    });
+//     const mouthRu = $('.calendar h1').text()
+//     if(mouthRu === 'January') {
+//         $('.calendar h1').html('Январь')
+//     } else if(mouthRu === 'February') {
+//         $('.calendar h1').html('Февраль')
+//     } else if(mouthRu === 'March') {
+//         $('.calendar h1').html('Март')
+//     } else if(mouthRu === 'April') {
+//         $('.calendar h1').html('Апрель')
+//     } else if(mouthRu === 'May') {
+//         $('.calendar h1').html('Май')
+//     } else if(mouthRu === 'June') {
+//         $('.calendar h1').html('Июнь')
+//     } else if(mouthRu === 'July') {
+//         $('.calendar h1').html('Июль')
+//     } else if(mouthRu === 'August') {
+//         $('.calendar h1').html('Август')
+//     } else if(mouthRu === 'September') {
+//         $('.calendar h1').html('Сентябрь')
+//     } else if(mouthRu === 'October') {
+//         $('.calendar h1').html('Октябрь')
+//     } else if(mouthRu === 'November') {
+//         $('.calendar h1').html('Ноябрь')
+//     } else if(mouthRu === 'December') {
+//         $('.calendar h1').html('Декабрь')
+//     } else {
+//         $('.calendar h1').html('')
+//     }
 
 
 
-renderCalendar();
+//     let days = "";
+
+//     for (let x = firstDayIndex; x > 0; x--) {
+//         days += `<div class="prev-date">${prevLastDay - x + 1}</div>`;
+//     }
+
+//     for (let i = 1; i <= lastDay; i++) {
+//         if (i === new Date().getDate() && date.getMonth() === new Date().getMonth()) {
+//             days += `<div class="today">${i}</div>`;
+//         } else {
+//             days += `<div>${i}</div>`;
+//         }
+//     }
+
+//     for (let j = 1; j <= nextDays; j++) {
+//         days += `<div class="next-date">${j}</div>`;
+//         monthDays.innerHTML = days;
+//     }
+//     };
+
+//     $(".prev").on("click", function() {
+//         date.setMonth(date.getMonth() - 1);
+//         renderCalendar();
+//     });
+
+//     $(".next").on("click", function() {
+//         date.setMonth(date.getMonth() + 1);
+//         renderCalendar();
+//     });
+
+
+
+// renderCalendar();
+
+
+$.datepicker.regional['ru'] = {
+	closeText: 'Закрыть',
+	prevText: 'Предыдущий',
+	nextText: 'Следующий',
+	currentText: 'Сегодня',
+	monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+	monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
+	dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+	dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+	dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+	weekHeader: 'Не',
+	dateFormat: 'dd.mm.yy',
+	firstDay: 1,
+	isRTL: false,
+	showMonthAfterYear: false,
+	yearSuffix: ''
+};
+$.datepicker.setDefaults($.datepicker.regional['ru']);
+
+
+	$("#datepickerIndex").datepicker();
+
+
+	$("#datepickerCatalog-1").datepicker();
+    $("#datepickerCatalog-2").datepicker();
+    $("#datepickerCatalog-3").datepicker();
+
+    $("#datepickerToy-1").datepicker();
+    $("#datepickerToy-2").datepicker();
+    $("#datepickerToy-3").datepicker();
+
+    $("#datepickerBallons-1").datepicker();
+    $("#datepickerBallons-2").datepicker();
+    $("#datepickerBallons-3").datepicker();
+
+    $("#datepickerOrder").datepicker();
+    $("#datepickerOrderQuiz").datepicker();
+
+
+
+
 
 
 //! ------------------------------------------------------------------------------------
+
+
+
 
 
 

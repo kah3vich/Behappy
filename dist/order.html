@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -269,9 +272,15 @@
                                 </div>
                                 
                             </a>
+
                             <div class="menu__block-title-currency">
-                                
+                                <button class="menu__block-title-currency-rus opacity-5">RUB</button>
+                                <div class="menu__block-title-currency-hr"> / </div>
+                                <button class="menu__block-title-currency-usd">USD</button>
+                                <div class="menu__block-title-currency-hr"> / </div>
+                                <button class="menu__block-title-currency-teng">TENG</button>
                             </div>
+                            
                             <a href="#">
                                 <div class="menu__block-title-logo">
                                     <div class="menu__block-title-logo-item">
@@ -282,6 +291,17 @@
                                     </div>
                                 </div>
                             </a>
+                            <div class="menu__block-title-language">
+                                <button class="menu__block-title-language-rus opacity-5">РУС</button>
+                                <div class="menu__block-title-language-hr"> / </div>
+                                <button class="menu__block-title-language-eng">ENG</button>
+                            </div>
+                            <div class="menu__block-title-client" data-bs-toggle="modal" data-bs-target="#modelHeader-1">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M27.6203 19.0437C26.6261 18.17 25.4203 17.4152 24.0363 16.8002C23.4446 16.5374 22.7522 16.8038 22.4895 17.3952C22.2267 17.9867 22.4931 18.679 23.0846 18.942C24.2516 19.4607 25.2573 20.0871 26.0733 20.8042C27.0792 21.6882 27.6562 22.9681 27.6562 24.3164V26.4844C27.6562 27.1305 27.1305 27.6562 26.4844 27.6562H3.51562C2.86949 27.6562 2.34375 27.1305 2.34375 26.4844V24.3164C2.34375 22.9681 2.92076 21.6882 3.9267 20.8042C5.1107 19.7637 8.56041 17.3438 15 17.3438C19.7816 17.3438 23.6719 13.4534 23.6719 8.67188C23.6719 3.8903 19.7816 0 15 0C10.2184 0 6.32812 3.8903 6.32812 8.67188C6.32812 11.4672 7.65793 13.9574 9.71786 15.5443C5.94864 16.3728 3.60397 17.9677 2.37968 19.0437C0.867462 20.3723 0 22.294 0 24.3164V26.4844C0 28.423 1.577 30 3.51562 30H26.4844C28.423 30 30 28.423 30 26.4844V24.3164C30 22.294 29.1325 20.3723 27.6203 19.0437ZM8.67188 8.67188C8.67188 5.18257 11.5107 2.34375 15 2.34375C18.4893 2.34375 21.3281 5.18257 21.3281 8.67188C21.3281 12.1612 18.4893 15 15 15C11.5107 15 8.67188 12.1612 8.67188 8.67188Z" fill="white"/>
+</svg>
+
+                            </div>
                             <a href="#">
                                 <div class="menu__block-title-close">
                                     <div class="menu-close">
@@ -493,7 +513,7 @@
                             <li class="menu__block-catalog-client">
                                 <div class="menu__block-catalog-client-1">
                                     <div class="menu__block-catalog-client-2">
-                                        <p>Личный кабинет</p>
+                                        <p>Проверить заказ</p>
                                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M27.6203 19.0437C26.6261 18.17 25.4203 17.4152 24.0363 16.8002C23.4446 16.5374 22.7522 16.8038 22.4895 17.3952C22.2267 17.9867 22.4931 18.679 23.0846 18.942C24.2516 19.4607 25.2573 20.0871 26.0733 20.8042C27.0792 21.6882 27.6562 22.9681 27.6562 24.3164V26.4844C27.6562 27.1305 27.1305 27.6562 26.4844 27.6562H3.51562C2.86949 27.6562 2.34375 27.1305 2.34375 26.4844V24.3164C2.34375 22.9681 2.92076 21.6882 3.9267 20.8042C5.1107 19.7637 8.56041 17.3438 15 17.3438C19.7816 17.3438 23.6719 13.4534 23.6719 8.67188C23.6719 3.8903 19.7816 0 15 0C10.2184 0 6.32812 3.8903 6.32812 8.67188C6.32812 11.4672 7.65793 13.9574 9.71786 15.5443C5.94864 16.3728 3.60397 17.9677 2.37968 19.0437C0.867462 20.3723 0 22.294 0 24.3164V26.4844C0 28.423 1.577 30 3.51562 30H26.4844C28.423 30 30 28.423 30 26.4844V24.3164C30 22.294 29.1325 20.3723 27.6203 19.0437ZM8.67188 8.67188C8.67188 5.18257 11.5107 2.34375 15 2.34375C18.4893 2.34375 21.3281 5.18257 21.3281 8.67188C21.3281 12.1612 18.4893 15 15 15C11.5107 15 8.67188 12.1612 8.67188 8.67188Z" fill="white"/>
 </svg>
@@ -1090,7 +1110,7 @@
                 <div class="ord-pay__block-data-title">Оформление заказа</div>
                 <div class="ord-pay__block-data-question">Выберите, кто будет получать заказ ?</div>
                 <div class="ord-pay__block-data-delivery">
-                    <label class="ord-pay__block-data-label" for="basic" id="pickup">
+                    <label class="ord-pay__block-data-label" for="basic" id="pickup-ord">
                         <input type="radio" name="plan" id="basic" checked />
                         <div class="ord-pay__block-data-content">
                             <div class="ord-pay__block-data-me">
@@ -1100,7 +1120,7 @@
                         </div>
                     </label>
                 
-                    <label class="ord-pay__block-data-label" for="complete" id="delivery">
+                    <label class="ord-pay__block-data-label" for="complete" id="delivery-ord">
                         <input type="radio" id="complete" name="plan" />
                         <div class="ord-pay__block-data-content">
                             <div class="ord-pay__block-data-courier delivery-hover">
@@ -1140,7 +1160,7 @@
                     </div>
                     <div class="ord-pay__block-data-address-date">
                         <label for="date-client">
-                            <input type="date" id="date-client">
+                            <input type="text" id="datepickerOrder" placeholder="дд.мм.гггг">
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M18.5391 1.64062H17.5547V0H15.9141V1.64062H5.08594V0H3.44531V1.64062H2.46094C1.10398 1.64062 0 2.7446 0 4.10156V18.5391C0 19.896 1.10398 21 2.46094 21H18.5391C19.896 21 21 19.896 21 18.5391V4.10156C21 2.7446 19.896 1.64062 18.5391 1.64062ZM19.3594 18.5391C19.3594 18.9914 18.9914 19.3594 18.5391 19.3594H2.46094C2.00862 19.3594 1.64062 18.9914 1.64062 18.5391V7.71094H19.3594V18.5391ZM19.3594 6.07031H1.64062V4.10156C1.64062 3.64924 2.00862 3.28125 2.46094 3.28125H3.44531V4.92188H5.08594V3.28125H15.9141V4.92188H17.5547V3.28125H18.5391C18.9914 3.28125 19.3594 3.64924 19.3594 4.10156V6.07031Z" fill="#16B8C3"/>
 <path d="M4.75781 9.43359H3.11719V11.0742H4.75781V9.43359Z" fill="#16B8C3"/>

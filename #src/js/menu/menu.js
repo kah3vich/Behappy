@@ -293,3 +293,44 @@ $('.header__block-list-1-item-catalog').on('click', function() {
 
 //! --------------------------------------------------------------------------------------------
 
+
+
+//! Проверка на выбранной валюты  
+
+
+$('.menu__block-title-currency-rus').on('click', function() {
+    $(this).addClass('opacity-5')
+    $('.menu__block-title-currency-usd').removeClass('opacity-5')
+    $('.menu__block-title-currency-teng').removeClass('opacity-5')
+});
+$('.menu__block-title-currency-usd').on('click', function() {
+    $(this).addClass('opacity-5')
+    $('.menu__block-title-currency-rus').removeClass('opacity-5')
+    $('.menu__block-title-currency-teng').removeClass('opacity-5')
+});
+$('.menu__block-title-currency-teng').on('click', function() {
+    $(this).addClass('opacity-5')
+    $('.menu__block-title-currency-usd').removeClass('opacity-5')
+    $('.menu__block-title-currency-rus').removeClass('opacity-5')
+});
+
+
+//! --------------------------------------------------------------------------------------------
+
+
+
+//! Проверка на выбранного языка  
+
+
+$('.menu__block-title-language-rus').on('click', function() {
+    $(this).addClass('opacity-5')
+    $('.menu__block-title-language-eng').removeClass('opacity-5')
+});
+$('.menu__block-title-language-eng').on('click', function() {
+    $(this).addClass('opacity-5')
+    $('.menu__block-title-language-rus').removeClass('opacity-5')
+});
+
+
+
+//! --------------------------------------------------------------------------------------------

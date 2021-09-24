@@ -1,6 +1,6 @@
 //! События нажатие - выбор доставки 
 
-$('#pickup').on('click', function() {
+$('#pickup-ord').on('click', function() {
     $('.ord-pay__block-data-calls').removeClass('display-f')
     $('.ord-pay__block-data-calls').addClass('display-n')
     $('.ord-pay__block-data-call').removeClass('display-n')
@@ -25,7 +25,7 @@ $('#pickup').on('click', function() {
     $('.ord-pay__block-data-address-apartment input').prop('readonly', false);
     $('.ord-pay__block-data-address-apartment').removeClass('ord-pay__block-data-address-noact');
 });
-$('#delivery').on('click', function() {
+$('#delivery-ord').on('click', function() {
     $('.ord-pay__block-data-calls').removeClass('display-n')
     $('.ord-pay__block-data-calls').addClass('display-f')
     $('.ord-pay__block-data-call').addClass('display-n')

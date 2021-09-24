@@ -172,8 +172,7 @@ $('.model-catalog__card-info-calendar-select').on('click', function() {
 
 
 var modelSlider = new Swiper(".modelSlider", {
-    loop: true,
-    simulateTouch:false,
+    simulateTouch: false,
     slidesPerView: 1, 
     spaceBetween: 10, 
     navigation: {
@@ -205,7 +204,7 @@ var recModelSlider = new Swiper(".recModelSlider", {
 
 
 var modelSliderToy = new Swiper(".modelSliderToy", {
-    loop: true,
+    simulateTouch: false,
     slidesPerView: 1, 
     spaceBetween: 10, 
     navigation: {
@@ -229,4 +228,32 @@ var modelToyWrapperSlider = new Swiper(".modelToyWrapperSlider", {
 $('.model-toy__block-info-calendar-btn').on('click', function() {
     $('.model-toy__block-info-calendar-item').toggleClass('display-n')
     $('.model-toy__block-info-calendar-btn').toggleClass('model-toy__block-info-calendar-btn-active')
+});
+
+
+var modelSliderBallons = new Swiper(".modelSliderBallons", {
+    simulateTouch: false,
+    slidesPerView: 1, 
+    spaceBetween: 10, 
+    navigation: {
+        nextEl: ".model-ballons-slider .swiper-controls .swiper-button-next",
+        prevEl: ".model-ballons-slider .swiper-controls .swiper-button-prev",
+    },
+});
+
+
+
+var modelBallonsWrapperSlider = new Swiper(".modelBallonsWrapperSlider", {
+    loop: true,
+    slidesPerView: 3, 
+    spaceBetween: 15, 
+    navigation: {
+        nextEl: ".model-ballons__block-wrapper-slider .swiper-control .swiper-button-next",
+        prevEl: ".model-ballons__block-wrapper-slider .swiper-control .swiper-button-prev",
+    },
+});
+
+$('.model-ballons__block-info-calendar-btn').on('click', function() {
+    $('.model-ballons__block-info-calendar-item').toggleClass('display-n')
+    $('.model-ballons__block-info-calendar-btn').toggleClass('model-ballons__block-info-calendar-btn-active')
 });
