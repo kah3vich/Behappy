@@ -1623,3 +1623,22 @@ $('#urgListItem_12_6_colors').on('click', function() {
     $('#urgListItem_12_5_colors').addClass('opacity-5');
     $('#urgListItem_12_1_colors').addClass('opacity-5');
 });
+
+
+//! Модель upsell 
+
+
+var swiper = new Swiper(".modelUpsell", {
+    slidesPerView: 3, 
+    spaceBetween: 60, 
+    navigation: {
+        nextEl: ".model-upsell__block-slider .swiper-controls .swiper-button-next",
+        prevEl: ".model-upsell__block-slider .swiper-controls .swiper-button-prev",
+    },
+});
+
+$('.model-upsell__close').on('click', function() {
+    window.location.href = "order.html";
+});
+
+//! ------------------------------------------------------------------------------------------

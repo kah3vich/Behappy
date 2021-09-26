@@ -76,7 +76,153 @@
                     <div class="urg-content__block-info-price-sum">12 622₽</div>
                 </div>
                 <div class="urg-content__block-info-btn">
-                    <button class="urg-content__block-info-btn-pay"><a href="#">Купить сейчас</a></button>
+                    <button class="urg-content__block-info-btn-pay" type="button" data-bs-toggle="modal" data-bs-target="#modelUpsell"><a href="#">Купить сейчас</a></button>
+                    <!-- Button trigger modal -->
+                    
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="modelUpsell" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="model-upsell">
+                                    <button type="button" class="btn-close model-upsell__close" data-bs-dismiss="modal" aria-label="Close">
+                                        @@include('./iconsprite/close-model.svg')
+                                    </button>
+                                    <div class="model-upsell__block">
+                                        <div class="model-upsell__block-title">Выгодное предложение!</div>
+                                        <div class="model-upsell__block-text">Спасибо, что доверили создание праздничного 
+                                            настроения Нам -в благодарность хотим предложить скидку на более дорогую покупку - если успеете сделать доплату в течении 09:59 мин» </div>
+                                        <div class="model-upsell__block-slider">
+                                            <div class="swiper modelUpsell">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div class="model-upsell__block-wrapper">
+                                                            <div class="model-upsell__block-wrapper-img">
+                                                                <div class="model-upsell__block-wrapper-img-circle">
+                                                                    @@include('./iconsprite/model-upsell/circle-rgb.svg')
+                                                                    <p>S</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="model-upsell__block-wrapper-title">
+                                                                <div class="model-upsell__block-wrapper-title-item">Белая</div>
+                                                                <div class="model-upsell__block-wrapper-title-price">
+                                                                    <p>+ 4500₽</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="model-upsell__block-wrapper-price">
+                                                                <div class="model-upsell__block-wrapper-price-balls">
+                                                                    @@include('./iconsprite/model-upsell/money.svg')
+                                                                    <p>78</p>
+                                                                </div>
+                                                                <div class="model-upsell__block-wrapper-price-sum">
+                                                                    <div class="model-upsell__block-wrapper-price-sum-text">итого:</div>
+                                                                    <div class="model-upsell__block-wrapper-price-sum-item">9500₽</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="model-upsell__block-wrapper-btn">
+                                                                <a href="#">УВЕЛИЧИТЬ</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="model-upsell__block-wrapper">
+                                                            <div class="model-upsell__block-wrapper-img">
+                                                                <div class="model-upsell__block-wrapper-img-circle">
+                                                                    @@include('./iconsprite/model-upsell/circle-rgb.svg')
+                                                                    <p>S</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="model-upsell__block-wrapper-title">
+                                                                <div class="model-upsell__block-wrapper-title-item">Белая</div>
+                                                                <div class="model-upsell__block-wrapper-title-price">
+                                                                    <p>+ 4500₽</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="model-upsell__block-wrapper-price">
+                                                                <div class="model-upsell__block-wrapper-price-balls">
+                                                                    @@include('./iconsprite/model-upsell/money.svg')
+                                                                    <p>78</p>
+                                                                </div>
+                                                                <div class="model-upsell__block-wrapper-price-sum">
+                                                                    <div class="model-upsell__block-wrapper-price-sum-text">итого:</div>
+                                                                    <div class="model-upsell__block-wrapper-price-sum-item">9500₽</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="model-upsell__block-wrapper-btn">
+                                                                <a href="#">УВЕЛИЧИТЬ</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="model-upsell__block-wrapper">
+                                                            <div class="model-upsell__block-wrapper-img">
+                                                                <div class="model-upsell__block-wrapper-img-circle">
+                                                                    @@include('./iconsprite/model-upsell/circle-rgb.svg')
+                                                                    <p>S</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="model-upsell__block-wrapper-title">
+                                                                <div class="model-upsell__block-wrapper-title-item">Белая</div>
+                                                                <div class="model-upsell__block-wrapper-title-price">
+                                                                    <p>+ 4500₽</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="model-upsell__block-wrapper-price">
+                                                                <div class="model-upsell__block-wrapper-price-balls">
+                                                                    @@include('./iconsprite/model-upsell/money.svg')
+                                                                    <p>78</p>
+                                                                </div>
+                                                                <div class="model-upsell__block-wrapper-price-sum">
+                                                                    <div class="model-upsell__block-wrapper-price-sum-text">итого:</div>
+                                                                    <div class="model-upsell__block-wrapper-price-sum-item">9500₽</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="model-upsell__block-wrapper-btn">
+                                                                <a href="#">УВЕЛИЧИТЬ</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="model-upsell__block-wrapper">
+                                                            <div class="model-upsell__block-wrapper-img">
+                                                                <div class="model-upsell__block-wrapper-img-circle">
+                                                                    @@include('./iconsprite/model-upsell/circle-rgb.svg')
+                                                                    <p>S</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="model-upsell__block-wrapper-title">
+                                                                <div class="model-upsell__block-wrapper-title-item">Белая</div>
+                                                                <div class="model-upsell__block-wrapper-title-price">
+                                                                    <p>+ 4500₽</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="model-upsell__block-wrapper-price">
+                                                                <div class="model-upsell__block-wrapper-price-balls">
+                                                                    @@include('./iconsprite/model-upsell/money.svg')
+                                                                    <p>78</p>
+                                                                </div>
+                                                                <div class="model-upsell__block-wrapper-price-sum">
+                                                                    <div class="model-upsell__block-wrapper-price-sum-text">итого:</div>
+                                                                    <div class="model-upsell__block-wrapper-price-sum-item">9500₽</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="model-upsell__block-wrapper-btn">
+                                                                <a href="#">УВЕЛИЧИТЬ</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-controls">
+                                                <div class="swiper-button-next"></div>
+                                                <div class="swiper-button-prev"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <button class="urg-content__block-info-btn-basket"><a href="#">Добавить в корзину</a></button>
                 </div>
             </div>
