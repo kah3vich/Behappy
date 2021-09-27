@@ -156,6 +156,8 @@ $.datepicker.setDefaults($.datepicker.regional['ru']);
     $("#datepickerOrder").datepicker();
     $("#datepickerOrderQuiz").datepicker();
 
+	$("#datepickerStock").datepicker();
+
 
 
 

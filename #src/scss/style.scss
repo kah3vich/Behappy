@@ -39,6 +39,19 @@
 @import "urgently/style.scss";
 @import "constructor/style.scss";
 
+@import "header-profile.scss";
+@import "editor/style.scss";
+@import "event/style.scss";
+@import "history/style.scss";
+@import "recommendations/style.scss";
+@import "chosen/style.scss";
+@import "balls/style.scss";
+@import "policy/style.scss";
+@import "offers/style.scss";
+@import "status/style.scss";
+@import "stock/style.scss";
+@import "donat/style.scss";
+
 @import "media.scss";
 
 
@@ -106,6 +119,9 @@ input[type="range" i] {
 }
 .opacity-5 {
     opacity: 0.5;
+}
+.height-100 {
+    height: 100%;
 }
 
 

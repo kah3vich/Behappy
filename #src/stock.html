@@ -1,0 +1,128 @@
+@@include('components/_head.html')
+<div class="stock-wrapper">
+
+
+    @@include('components/_header_profile.html')
+
+
+    <div class="header-profile__menu">
+        <ul class="header-profile__menu-list">
+            <li class="header-profile__menu-list-status">
+                <a href="status.html">
+                    @@include('iconsprite/stock/heart.svg')
+                    <p>Проверить статус заказа</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-order">
+                <a href="orders.html">
+                    @@include('iconsprite/stock/heart.svg')
+                    <p>Мои заказы</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-chosen">
+                <a href="chosen.html">
+                    @@include('iconsprite/stock/heart.svg')
+                    <p>Избранное</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-balls">
+                <a href="balls.html">
+                    @@include('iconsprite/stock/heart.svg')
+                    <h3>Бонусные баллы</h3>
+                    <p>+160 баллов </p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-notification">
+                <a href="notification">
+                    @@include('iconsprite/stock/heart.svg')
+                    <h3>Уведомления</h3>
+                    <div class="header-profile__menu-list-notification-count">19</div>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-event">
+                <a href="event.html">
+                    @@include('iconsprite/stock/heart.svg')
+                    <p>Календарь событий</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-stock header-profile__menu-list-active">
+                <a href="stock.html">
+                    @@include('iconsprite/stock/heart.svg')
+                    <p>Календарь скидок</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-stock">
+                <a href="recommendations.html">
+                    @@include('iconsprite/stock/heart.svg')
+                    <p>Рекомендуемые букеты</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-donat">
+                <a href="donat.html">
+                    @@include('iconsprite/editor/heart.svg')
+                    <p>Благодарность менеджеру</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-histor">
+                <a href="history.html">
+                    @@include('iconsprite/stock/heart.svg')
+                    <p>История просмотров</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-offers">
+                <a href="offers.html">
+                    @@include('iconsprite/stock/heart.svg')
+                    <p>Договор оферты</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-policy">
+                <a href="policy.html">
+                    @@include('iconsprite/stock/heart.svg')
+                    <p>Политика конфиденциальности</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-profil">
+                <a href="editor.html">
+                    @@include('iconsprite/stock/heart.svg')
+                    <p>Настройка профиля</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-btn">
+                <a href="index.html"><p>Вернуться к сайту</p></a>
+            </li>
+            <li class="header-profile__menu-list-btn">
+                <a href="index.html"><p>Выйти</p></a>
+            </li>
+        </ul>
+        <div class="header-profile__stock">
+            <div class="header-profile__stock-calendar">
+                <div class="header-profile__stock-calendar-title">Календарь скидок</div>
+                <div class="header-profile__stock-calendar-icon">
+                    @@include('iconsprite/stock/calendar.svg')
+                    <p>Календарь скидок</p>
+                </div>
+                <div class="header-profile__stock-calendar-block">
+                    <div id="datepickerStock"></div>
+                </div>
+            </div>
+            <div class="header-profile__stock-info">
+                <div class="header-profile__stock-info-circle"><p>Мемоджи</p></div>
+                <div class="header-profile__stock-info-add">Получите  выгоду</div>
+                <div class="header-profile__stock-info-text">
+                    При оплате заявки заблаговременно <br>
+                    Вам доступна скидка, укажите <br>
+                    желаемую дату. <br>
+                    <br>
+                    От 7 дней - 5% <br>
+                    От 14 дней – 10% <br>
+                    От 21 дня - 15%
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @@include('components/_footer.html')
+
+</div>
+@@include('components/_script.html')

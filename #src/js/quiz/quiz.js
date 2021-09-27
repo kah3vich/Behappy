@@ -332,3 +332,438 @@ $('.ord-quiz__block-data-card-quiz').on('click', function() {
     $(this).toggleClass('ord-quiz__block-data-card-quiz-active');
     $('.ord-quiz__block-data-card-form').toggleClass('display-n')
 });
+
+
+
+//! Слайдер в дополнительном блоке к квизу - 1
+
+
+var quizContentAddSlider_1 = new Swiper(".quizContentAddSlider-1", {
+    slidesPerView: 4, 
+    spaceBetween: 30, 
+    navigation: {
+        nextEl: ".quiz-content__block-add-slider-1 .swiper-controls .swiper-button-next",
+        prevEl: ".quiz-content__block-add-slider-1 .swiper-controls .swiper-button-prev",
+        },
+});
+
+$('#quizContentBlockAdd-1').on('click', function() {
+    $('.quiz-content__block-add').addClass('quiz-add-h')
+    $('#quizContentBlockSliderAdd-1').toggleClass('display-n')
+    $('#quizContentBlockSliderAdd-2').addClass('display-n')
+    $('#quizContentBlockSliderAdd-3').addClass('display-n')
+    $('#quizContentBlockSliderAdd-4').addClass('display-n')
+    $('#quizContentBlockSliderAdd-5').addClass('display-n')
+    $('#quizContentBlockSliderAdd-6').addClass('display-n')
+    $('#quizContentBlockSliderAdd-7').addClass('display-n')
+    $('#quizContentBlockSliderAdd-8').addClass('display-n')
+    $('#quizContentBlockSliderAdd-9').addClass('display-n')
+    $('#quizContentBlockSliderAdd-10').addClass('display-n')
+    $('#quizContentBlockSliderAdd-11').addClass('display-n')
+    $('#quizContentBlockSliderAdd-12').addClass('display-n')
+});
+$('#quizContentBlockSliderAddClose-1').on('click', function() {
+    $('#quizContentBlockSliderAdd-1').addClass('display-n')
+    $('.quiz-content__block-add').removeClass('quiz-add-h')
+});
+
+
+
+//! --------------------------------------------------------------------------------------------
+
+
+//! Слайдер в дополнительном блоке к квизу - 2
+
+
+var quizContentAddSlider_2 = new Swiper(".quizContentAddSlider-2", {
+    slidesPerView: 4, 
+    spaceBetween: 30, 
+    navigation: {
+        nextEl: ".quiz-content__block-add-slider-2 .swiper-controls .swiper-button-next",
+        prevEl: ".quiz-content__block-add-slider-2 .swiper-controls .swiper-button-prev",
+        },
+});
+
+$('#quizContentBlockAdd-2').on('click', function() {
+    $('.quiz-content__block-add').addClass('quiz-add-h')
+    $('#quizContentBlockSliderAdd-2').toggleClass('display-n')
+    $('#quizContentBlockSliderAdd-1').addClass('display-n')
+    $('#quizContentBlockSliderAdd-3').addClass('display-n')
+    $('#quizContentBlockSliderAdd-4').addClass('display-n')
+    $('#quizContentBlockSliderAdd-5').addClass('display-n')
+    $('#quizContentBlockSliderAdd-6').addClass('display-n')
+    $('#quizContentBlockSliderAdd-7').addClass('display-n')
+    $('#quizContentBlockSliderAdd-8').addClass('display-n')
+    $('#quizContentBlockSliderAdd-9').addClass('display-n')
+    $('#quizContentBlockSliderAdd-10').addClass('display-n')
+    $('#quizContentBlockSliderAdd-11').addClass('display-n')
+    $('#quizContentBlockSliderAdd-12').addClass('display-n')
+});
+$('#quizContentBlockSliderAddClose-2').on('click', function() {
+    $('#quizContentBlockSliderAdd-2').addClass('display-n')
+    $('.quiz-content__block-add').removeClass('quiz-add-h')
+});
+
+
+//! --------------------------------------------------------------------------------------------
+
+//! Слайдер в дополнительном блоке к квизу - 3
+
+
+var quizContentAddSlider_3 = new Swiper(".quizContentAddSlider-3", {
+    slidesPerView: 4, 
+    spaceBetween: 30, 
+    navigation: {
+        nextEl: ".quiz-content__block-add-slider-3 .swiper-controls .swiper-button-next",
+        prevEl: ".quiz-content__block-add-slider-3 .swiper-controls .swiper-button-prev",
+        },
+});
+
+$('#quizContentBlockAdd-3').on('click', function() {
+    $('.quiz-content__block-add').addClass('quiz-add-h')
+    $('#quizContentBlockSliderAdd-3').toggleClass('display-n')
+    $('#quizContentBlockSliderAdd-2').addClass('display-n')
+    $('#quizContentBlockSliderAdd-1').addClass('display-n')
+    $('#quizContentBlockSliderAdd-4').addClass('display-n')
+    $('#quizContentBlockSliderAdd-5').addClass('display-n')
+    $('#quizContentBlockSliderAdd-6').addClass('display-n')
+    $('#quizContentBlockSliderAdd-7').addClass('display-n')
+    $('#quizContentBlockSliderAdd-8').addClass('display-n')
+    $('#quizContentBlockSliderAdd-9').addClass('display-n')
+    $('#quizContentBlockSliderAdd-10').addClass('display-n')
+    $('#quizContentBlockSliderAdd-11').addClass('display-n')
+    $('#quizContentBlockSliderAdd-12').addClass('display-n')
+});
+$('#quizContentBlockSliderAddClose-3').on('click', function() {
+    $('#quizContentBlockSliderAdd-3').addClass('display-n')
+    $('.quiz-content__block-add').removeClass('quiz-add-h')
+});
+
+
+//! --------------------------------------------------------------------------------------------
+
+
+//! Слайдер в дополнительном блоке к квизу - 4
+
+
+var quizContentAddSlider_4 = new Swiper(".quizContentAddSlider-4", {
+    slidesPerView: 4, 
+    spaceBetween: 30, 
+    navigation: {
+        nextEl: ".quiz-content__block-add-slider-4 .swiper-controls .swiper-button-next",
+        prevEl: ".quiz-content__block-add-slider-4 .swiper-controls .swiper-button-prev",
+        },
+});
+
+$('#quizContentBlockAdd-4').on('click', function() {
+    $('.quiz-content__block-add').addClass('quiz-add-h')
+    $('#quizContentBlockSliderAdd-4').toggleClass('display-n')
+    $('#quizContentBlockSliderAdd-2').addClass('display-n')
+    $('#quizContentBlockSliderAdd-3').addClass('display-n')
+    $('#quizContentBlockSliderAdd-1').addClass('display-n')
+    $('#quizContentBlockSliderAdd-5').addClass('display-n')
+    $('#quizContentBlockSliderAdd-6').addClass('display-n')
+    $('#quizContentBlockSliderAdd-7').addClass('display-n')
+    $('#quizContentBlockSliderAdd-8').addClass('display-n')
+    $('#quizContentBlockSliderAdd-9').addClass('display-n')
+    $('#quizContentBlockSliderAdd-10').addClass('display-n')
+    $('#quizContentBlockSliderAdd-11').addClass('display-n')
+    $('#quizContentBlockSliderAdd-12').addClass('display-n')
+});
+$('#quizContentBlockSliderAddClose-4').on('click', function() {
+    $('#quizContentBlockSliderAdd-4').addClass('display-n')
+    $('.quiz-content__block-add').removeClass('quiz-add-h')
+});
+
+
+//! --------------------------------------------------------------------------------------------
+
+
+//! Слайдер в дополнительном блоке к квизу - 5
+
+
+var quizContentAddSlider_5 = new Swiper(".quizContentAddSlider-5", {
+    slidesPerView: 4, 
+    spaceBetween: 30, 
+    navigation: {
+        nextEl: ".quiz-content__block-add-slider-5 .swiper-controls .swiper-button-next",
+        prevEl: ".quiz-content__block-add-slider-5 .swiper-controls .swiper-button-prev",
+        },
+});
+
+$('#quizContentBlockAdd-5').on('click', function() {
+    $('.quiz-content__block-add').addClass('quiz-add-h')
+    $('#quizContentBlockSliderAdd-5').toggleClass('display-n')
+    $('#quizContentBlockSliderAdd-2').addClass('display-n')
+    $('#quizContentBlockSliderAdd-3').addClass('display-n')
+    $('#quizContentBlockSliderAdd-4').addClass('display-n')
+    $('#quizContentBlockSliderAdd-1').addClass('display-n')
+    $('#quizContentBlockSliderAdd-6').addClass('display-n')
+    $('#quizContentBlockSliderAdd-7').addClass('display-n')
+    $('#quizContentBlockSliderAdd-8').addClass('display-n')
+    $('#quizContentBlockSliderAdd-9').addClass('display-n')
+    $('#quizContentBlockSliderAdd-10').addClass('display-n')
+    $('#quizContentBlockSliderAdd-11').addClass('display-n')
+    $('#quizContentBlockSliderAdd-12').addClass('display-n')
+});
+$('#quizContentBlockSliderAddClose-5').on('click', function() {
+    $('#quizContentBlockSliderAdd-5').addClass('display-n')
+    $('.quiz-content__block-add').removeClass('quiz-add-h')
+});
+
+
+//! --------------------------------------------------------------------------------------------
+
+
+//! Слайдер в дополнительном блоке к квизу - 6
+
+
+var quizContentAddSlider_6 = new Swiper(".quizContentAddSlider-6", {
+    slidesPerView: 4, 
+    spaceBetween: 30, 
+    navigation: {
+        nextEl: ".quiz-content__block-add-slider-6 .swiper-controls .swiper-button-next",
+        prevEl: ".quiz-content__block-add-slider-6 .swiper-controls .swiper-button-prev",
+        },
+});
+
+$('#quizContentBlockAdd-6').on('click', function() {
+    $('.quiz-content__block-add').addClass('quiz-add-h')
+    $('#quizContentBlockSliderAdd-6').toggleClass('display-n')
+    $('#quizContentBlockSliderAdd-2').addClass('display-n')
+    $('#quizContentBlockSliderAdd-3').addClass('display-n')
+    $('#quizContentBlockSliderAdd-4').addClass('display-n')
+    $('#quizContentBlockSliderAdd-5').addClass('display-n')
+    $('#quizContentBlockSliderAdd-1').addClass('display-n')
+    $('#quizContentBlockSliderAdd-7').addClass('display-n')
+    $('#quizContentBlockSliderAdd-8').addClass('display-n')
+    $('#quizContentBlockSliderAdd-9').addClass('display-n')
+    $('#quizContentBlockSliderAdd-10').addClass('display-n')
+    $('#quizContentBlockSliderAdd-11').addClass('display-n')
+    $('#quizContentBlockSliderAdd-12').addClass('display-n')
+});
+$('#quizContentBlockSliderAddClose-6').on('click', function() {
+    $('#quizContentBlockSliderAdd-6').addClass('display-n')
+    $('.quiz-content__block-add').removeClass('quiz-add-h')
+});
+
+
+//! --------------------------------------------------------------------------------------------
+
+
+//! Слайдер в дополнительном блоке к квизу - 7
+
+
+var quizContentAddSlider_7 = new Swiper(".quizContentAddSlider-7", {
+    slidesPerView: 4, 
+    spaceBetween: 30, 
+    navigation: {
+        nextEl: ".quiz-content__block-add-slider-7 .swiper-controls .swiper-button-next",
+        prevEl: ".quiz-content__block-add-slider-7 .swiper-controls .swiper-button-prev",
+        },
+});
+
+$('#quizContentBlockAdd-7').on('click', function() {
+    $('.quiz-content__block-add').addClass('quiz-add-h')
+    $('#quizContentBlockSliderAdd-7').toggleClass('display-n')
+    $('#quizContentBlockSliderAdd-2').addClass('display-n')
+    $('#quizContentBlockSliderAdd-3').addClass('display-n')
+    $('#quizContentBlockSliderAdd-4').addClass('display-n')
+    $('#quizContentBlockSliderAdd-5').addClass('display-n')
+    $('#quizContentBlockSliderAdd-6').addClass('display-n')
+    $('#quizContentBlockSliderAdd-1').addClass('display-n')
+    $('#quizContentBlockSliderAdd-8').addClass('display-n')
+    $('#quizContentBlockSliderAdd-9').addClass('display-n')
+    $('#quizContentBlockSliderAdd-10').addClass('display-n')
+    $('#quizContentBlockSliderAdd-11').addClass('display-n')
+    $('#quizContentBlockSliderAdd-12').addClass('display-n')
+});
+$('#quizContentBlockSliderAddClose-7').on('click', function() {
+    $('#quizContentBlockSliderAdd-7').addClass('display-n')
+    $('.quiz-content__block-add').removeClass('quiz-add-h')
+});
+
+
+//! --------------------------------------------------------------------------------------------
+
+
+
+//! Слайдер в дополнительном блоке к квизу - 8
+
+
+var quizContentAddSlider_8 = new Swiper(".quizContentAddSlider-8", {
+    slidesPerView: 4, 
+    spaceBetween: 30, 
+    navigation: {
+        nextEl: ".quiz-content__block-add-slider-8 .swiper-controls .swiper-button-next",
+        prevEl: ".quiz-content__block-add-slider-8 .swiper-controls .swiper-button-prev",
+        },
+});
+
+$('#quizContentBlockAdd-8').on('click', function() {
+    $('.quiz-content__block-add').addClass('quiz-add-h')
+    $('#quizContentBlockSliderAdd-8').toggleClass('display-n')
+    $('#quizContentBlockSliderAdd-2').addClass('display-n')
+    $('#quizContentBlockSliderAdd-3').addClass('display-n')
+    $('#quizContentBlockSliderAdd-4').addClass('display-n')
+    $('#quizContentBlockSliderAdd-5').addClass('display-n')
+    $('#quizContentBlockSliderAdd-6').addClass('display-n')
+    $('#quizContentBlockSliderAdd-7').addClass('display-n')
+    $('#quizContentBlockSliderAdd-1').addClass('display-n')
+    $('#quizContentBlockSliderAdd-9').addClass('display-n')
+    $('#quizContentBlockSliderAdd-10').addClass('display-n')
+    $('#quizContentBlockSliderAdd-11').addClass('display-n')
+    $('#quizContentBlockSliderAdd-12').addClass('display-n')
+});
+$('#quizContentBlockSliderAddClose-8').on('click', function() {
+    $('#quizContentBlockSliderAdd-8').addClass('display-n')
+    $('.quiz-content__block-add').removeClass('quiz-add-h')
+});
+
+
+//! --------------------------------------------------------------------------------------------
+
+
+//! Слайдер в дополнительном блоке к квизу - 9
+
+
+var quizContentAddSlider_9 = new Swiper(".quizContentAddSlider-9", {
+    slidesPerView: 4, 
+    spaceBetween: 30, 
+    navigation: {
+        nextEl: ".quiz-content__block-add-slider-9 .swiper-controls .swiper-button-next",
+        prevEl: ".quiz-content__block-add-slider-9 .swiper-controls .swiper-button-prev",
+        },
+});
+
+$('#quizContentBlockAdd-9').on('click', function() {
+    $('.quiz-content__block-add').addClass('quiz-add-h')
+    $('#quizContentBlockSliderAdd-9').toggleClass('display-n')
+    $('#quizContentBlockSliderAdd-2').addClass('display-n')
+    $('#quizContentBlockSliderAdd-3').addClass('display-n')
+    $('#quizContentBlockSliderAdd-4').addClass('display-n')
+    $('#quizContentBlockSliderAdd-5').addClass('display-n')
+    $('#quizContentBlockSliderAdd-6').addClass('display-n')
+    $('#quizContentBlockSliderAdd-7').addClass('display-n')
+    $('#quizContentBlockSliderAdd-8').addClass('display-n')
+    $('#quizContentBlockSliderAdd-1').addClass('display-n')
+    $('#quizContentBlockSliderAdd-10').addClass('display-n')
+    $('#quizContentBlockSliderAdd-11').addClass('display-n')
+    $('#quizContentBlockSliderAdd-12').addClass('display-n')
+});
+$('#quizContentBlockSliderAddClose-9').on('click', function() {
+    $('#quizContentBlockSliderAdd-9').addClass('display-n')
+    $('.quiz-content__block-add').removeClass('quiz-add-h')
+});
+
+
+//! --------------------------------------------------------------------------------------------
+
+
+//! Слайдер в дополнительном блоке к квизу - 10
+
+
+var quizContentAddSlider_10 = new Swiper(".quizContentAddSlider-10", {
+    slidesPerView: 4, 
+    spaceBetween: 30, 
+    navigation: {
+        nextEl: ".quiz-content__block-add-slider-10 .swiper-controls .swiper-button-next",
+        prevEl: ".quiz-content__block-add-slider-10 .swiper-controls .swiper-button-prev",
+        },
+});
+
+$('#quizContentBlockAdd-10').on('click', function() {
+    $('.quiz-content__block-add').addClass('quiz-add-h')
+    $('#quizContentBlockSliderAdd-10').toggleClass('display-n')
+    $('#quizContentBlockSliderAdd-2').addClass('display-n')
+    $('#quizContentBlockSliderAdd-3').addClass('display-n')
+    $('#quizContentBlockSliderAdd-4').addClass('display-n')
+    $('#quizContentBlockSliderAdd-5').addClass('display-n')
+    $('#quizContentBlockSliderAdd-6').addClass('display-n')
+    $('#quizContentBlockSliderAdd-7').addClass('display-n')
+    $('#quizContentBlockSliderAdd-8').addClass('display-n')
+    $('#quizContentBlockSliderAdd-9').addClass('display-n')
+    $('#quizContentBlockSliderAdd-1').addClass('display-n')
+    $('#quizContentBlockSliderAdd-11').addClass('display-n')
+    $('#quizContentBlockSliderAdd-12').addClass('display-n')
+});
+$('#quizContentBlockSliderAddClose-10').on('click', function() {
+    $('#quizContentBlockSliderAdd-10').addClass('display-n')
+    $('.quiz-content__block-add').removeClass('quiz-add-h')
+});
+
+
+//! --------------------------------------------------------------------------------------------
+
+
+
+//! Слайдер в дополнительном блоке к квизу - 11
+
+
+var quizContentAddSlider_11 = new Swiper(".quizContentAddSlider-11", {
+    slidesPerView: 4, 
+    spaceBetween: 30, 
+    navigation: {
+        nextEl: ".quiz-content__block-add-slider-11 .swiper-controls .swiper-button-next",
+        prevEl: ".quiz-content__block-add-slider-11 .swiper-controls .swiper-button-prev",
+        },
+});
+
+$('#quizContentBlockAdd-11').on('click', function() {
+    $('.quiz-content__block-add').addClass('quiz-add-h')
+    $('#quizContentBlockSliderAdd-11').toggleClass('display-n')
+    $('#quizContentBlockSliderAdd-2').addClass('display-n')
+    $('#quizContentBlockSliderAdd-3').addClass('display-n')
+    $('#quizContentBlockSliderAdd-4').addClass('display-n')
+    $('#quizContentBlockSliderAdd-5').addClass('display-n')
+    $('#quizContentBlockSliderAdd-6').addClass('display-n')
+    $('#quizContentBlockSliderAdd-7').addClass('display-n')
+    $('#quizContentBlockSliderAdd-8').addClass('display-n')
+    $('#quizContentBlockSliderAdd-9').addClass('display-n')
+    $('#quizContentBlockSliderAdd-10').addClass('display-n')
+    $('#quizContentBlockSliderAdd-1').addClass('display-n')
+    $('#quizContentBlockSliderAdd-12').addClass('display-n')
+});
+$('#quizContentBlockSliderAddClose-11').on('click', function() {
+    $('#quizContentBlockSliderAdd-11').addClass('display-n')
+    $('.quiz-content__block-add').removeClass('quiz-add-h')
+});
+
+
+//! --------------------------------------------------------------------------------------------
+
+
+//! Слайдер в дополнительном блоке к квизу - 12
+
+
+var quizContentAddSlider_12 = new Swiper(".quizContentAddSlider-12", {
+    slidesPerView: 4, 
+    spaceBetween: 30, 
+    navigation: {
+        nextEl: ".quiz-content__block-add-slider-12 .swiper-controls .swiper-button-next",
+        prevEl: ".quiz-content__block-add-slider-12 .swiper-controls .swiper-button-prev",
+        },
+});
+
+$('#quizContentBlockAdd-12').on('click', function() {
+    $('.quiz-content__block-add').addClass('quiz-add-h')
+    $('#quizContentBlockSliderAdd-12').toggleClass('display-n')
+    $('#quizContentBlockSliderAdd-2').addClass('display-n')
+    $('#quizContentBlockSliderAdd-3').addClass('display-n')
+    $('#quizContentBlockSliderAdd-4').addClass('display-n')
+    $('#quizContentBlockSliderAdd-5').addClass('display-n')
+    $('#quizContentBlockSliderAdd-6').addClass('display-n')
+    $('#quizContentBlockSliderAdd-7').addClass('display-n')
+    $('#quizContentBlockSliderAdd-8').addClass('display-n')
+    $('#quizContentBlockSliderAdd-9').addClass('display-n')
+    $('#quizContentBlockSliderAdd-10').addClass('display-n')
+    $('#quizContentBlockSliderAdd-11').addClass('display-n')
+    $('#quizContentBlockSliderAdd-1').addClass('display-n')
+});
+$('#quizContentBlockSliderAddClose-12').on('click', function() {
+    $('#quizContentBlockSliderAdd-12').addClass('display-n')
+    $('.quiz-content__block-add').removeClass('quiz-add-h')
+});
+
+
+//! --------------------------------------------------------------------------------------------

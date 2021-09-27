@@ -23,6 +23,12 @@
 
 @@include('./constructor/constructor.js')
 
+
+@@include('./policy/policy.js')
+
+@@include('./offers/offers.js')
+
+
 @@include('./calendar/calendar.js')
 
 

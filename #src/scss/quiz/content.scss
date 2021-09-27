@@ -1,5 +1,6 @@
 .quiz-content {
     padding: 100px 0 0 0;
+    overflow: hidden;
     &__block {
         &-whom {
             position: relative;
@@ -11,17 +12,33 @@
             &-back {
                 cursor: pointer;
                 position: absolute;
-                top: -43px;
+                top: -63px;
                 left: 0;
             }
             &-title {
-                font-family: FuturaBookC;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 30px;
-                line-height: 150%;
-                letter-spacing: 0.5px;
-                color: #FFFFFF;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &-item {
+                    font-family: FuturaBookC;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 30px;
+                    line-height: 150%;
+                    letter-spacing: 0.5px;
+                    color: #FFFFFF;
+                }
+                &-text {
+                    width: 339px;
+                    font-family: FuturaBookC;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 125%;
+                    letter-spacing: 0.5px;
+                    color: #FFFFFF;
+                }
             }
             &-wrapper {
                 display: grid;
@@ -306,9 +323,10 @@
                     border-radius: 20px;
                     padding: 22px 0;
                     display: flex;
-                    align-items: flex-end;
-                    justify-content: center;
-                    & p {
+                    align-items: center;
+                    justify-content: flex-end;
+                    flex-direction: column;
+                    & h3 {
                         font-family: FuturaBookC;
                         font-style: normal;
                         font-weight: normal;
@@ -317,6 +335,18 @@
                         text-align: center;
                         letter-spacing: 0.5px;
                         color: #FFFFFF;
+                    }
+                    & p {
+                        margin: 15px 0 -140px 0;
+                        width: 339px;
+                        font-family: FuturaBookC;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 125%;
+                        text-align: center;
+                        letter-spacing: 0.5px;
+                        color: #AFAFAF;
                     }
                 }
             }
@@ -805,6 +835,7 @@
                     display: flex;
                     align-items: flex-end;
                     justify-content: center;
+                    cursor: pointer;
                     & p {
                         font-family: Circe;
                         font-style: normal;
@@ -817,6 +848,7 @@
                 }
             }
             &-text {
+                margin: 20px 0 0 0;
                 & a {
                     font-family: FuturaBookC;
                     font-style: normal;
@@ -920,11 +952,2245 @@
                 padding: 0 0 0 20px;
                 cursor: pointer;
             }
+            &-slider-1 {
+                margin: 90px 0 0 0;
+                width: 100%;
+                height: 451px;
+                background: #000D32;
+                position: relative;
+                display: flex;
+                align-items: center;
+                &-bg {
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 1000%;
+                    height: 451px;
+                    background: #000d32;
+                    z-index: -1;
+                }
+                &-close {
+                    position: absolute;
+                    top: -15px;
+                    right: -15px;
+                    width: 38px;
+                    height: 38px;
+                    background: #001F75;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+                & .quizContentAddSlider-1 {
+                    width: 1110px;
+                    height: 360px;
+                }
+                & .swiper-button-next {
+                    content: url(../svg/quiz/arrow-next.svg);
+                    right: -67px;
+                }
+                & .swiper-button-prev {
+                    content: url(../svg/quiz/arrow-prev.svg);
+                    left: -67px;
+                }
+                &-content {
+                    margin: 5px 0;
+                    width: 255px;
+                    height: 350px;
+                    background: #04133C;
+                    border: 1px solid #002685;
+                    box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+                    border-radius: 20px;
+                    padding: 21px;
+                    &-img {
+                        width: 213px;
+                        height: 184px;
+                        background: #001F71;
+                        border-radius: 10px;
+                        position: relative;
+                        &-circle {
+                            position: absolute;
+                            right: 13px;
+                            bottom: 11px;
+                            width: 32px;
+                            height: 32px;
+                            background: #30333A;
+                            border: 1px solid #854FC8;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                        }
+                    }
+                    &-title {
+                        margin: 23px 0 0 0;
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 118%;
+                        letter-spacing: 0.5px;
+                        color: #FBFCFF;
+                    }
+                    &-price {
+                        width: 100%;
+                        margin: 14px 0 0 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        &-balls {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 13px;
+                                line-height: 150%;
+                                letter-spacing: 0.5px;
+                                color: #FFFFFF;
+                                margin: 0 0 0 9.3px;
+                            }
+                        }
+                        &-star {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            margin: 0 0 0 17px;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 13px;
+                                line-height: 150%;
+                                letter-spacing: 0.5px;
+                                color: #FFFFFF;
+                                margin: 0 0 0 9.3px;
+                            }
+                        }
+                        &-sum {
+                            width: 83px;
+                            height: 31px;
+                            background: #001F71;
+                            border-radius: 15.5px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 0 0 auto;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 15px;
+                                line-height: 180%;
+                                letter-spacing: 0.5px;
+                                color: #FBFCFF;
+                            }
+                        }
+                    }
+                    &-add {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        margin: 14px 0 0 0;
+                        &-basket {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                        }
+                        &-share {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 0 0 0 10px;
+                        }
+                        &-calendar {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 0 0 0 10px;
+                        }
+                        &-price {
+                            font-family: Circe;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 150%;
+                            letter-spacing: 0.5px;
+                            color: #BBBBBB;
+                            margin: 0 9px 0 auto;
+                        }
+                    }
+                }
+            }
+            &-slider-2 {
+                margin: 90px 0 0 0;
+                width: 100%;
+                height: 451px;
+                background: #000D32;
+                position: relative;
+                display: flex;
+                align-items: center;
+                &-bg {
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 1000%;
+                    height: 451px;
+                    background: #000d32;
+                    z-index: -1;
+                }
+                &-close {
+                    position: absolute;
+                    top: -15px;
+                    right: -15px;
+                    width: 38px;
+                    height: 38px;
+                    background: #001F75;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+                & .quizContentAddSlider-2 {
+                    width: 1110px;
+                    height: 360px;
+                }
+                & .swiper-button-next {
+                    content: url(../svg/quiz/arrow-next.svg);
+                    right: -67px;
+                }
+                & .swiper-button-prev {
+                    content: url(../svg/quiz/arrow-prev.svg);
+                    left: -67px;
+                }
+                &-content {
+                    margin: 5px 0;
+                    width: 255px;
+                    height: 350px;
+                    background: #04133C;
+                    border: 1px solid #002685;
+                    box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+                    border-radius: 20px;
+                    padding: 21px;
+                    &-img {
+                        width: 213px;
+                        height: 184px;
+                        background: #001F71;
+                        border-radius: 10px;
+                        position: relative;
+                        &-circle {
+                            position: absolute;
+                            right: 13px;
+                            bottom: 11px;
+                            width: 32px;
+                            height: 32px;
+                            background: #30333A;
+                            border: 1px solid #854FC8;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                        }
+                    }
+                    &-title {
+                        margin: 23px 0 0 0;
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 118%;
+                        letter-spacing: 0.5px;
+                        color: #FBFCFF;
+                    }
+                    &-price {
+                        width: 100%;
+                        margin: 14px 0 0 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        &-balls {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 13px;
+                                line-height: 150%;
+                                letter-spacing: 0.5px;
+                                color: #FFFFFF;
+                                margin: 0 0 0 9.3px;
+                            }
+                        }
+                        &-star {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            margin: 0 0 0 17px;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 13px;
+                                line-height: 150%;
+                                letter-spacing: 0.5px;
+                                color: #FFFFFF;
+                                margin: 0 0 0 9.3px;
+                            }
+                        }
+                        &-sum {
+                            width: 83px;
+                            height: 31px;
+                            background: #001F71;
+                            border-radius: 15.5px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 0 0 auto;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 15px;
+                                line-height: 180%;
+                                letter-spacing: 0.5px;
+                                color: #FBFCFF;
+                            }
+                        }
+                    }
+                    &-add {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        margin: 14px 0 0 0;
+                        &-basket {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                        }
+                        &-share {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 0 0 0 10px;
+                        }
+                        &-calendar {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 0 0 0 10px;
+                        }
+                        &-price {
+                            font-family: Circe;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 150%;
+                            letter-spacing: 0.5px;
+                            color: #BBBBBB;
+                            margin: 0 9px 0 auto;
+                        }
+                    }
+                }
+            }
+            &-slider-3 {
+                margin: 90px 0 0 0;
+                width: 100%;
+                height: 451px;
+                background: #000D32;
+                position: relative;
+                display: flex;
+                align-items: center;
+                &-bg {
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 1000%;
+                    height: 451px;
+                    background: #000d32;
+                    z-index: -1;
+                }
+                &-close {
+                    position: absolute;
+                    top: -15px;
+                    right: -15px;
+                    width: 38px;
+                    height: 38px;
+                    background: #001F75;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+                & .quizContentAddSlider-3 {
+                    width: 1110px;
+                    height: 360px;
+                }
+                & .swiper-button-next {
+                    content: url(../svg/quiz/arrow-next.svg);
+                    right: -67px;
+                }
+                & .swiper-button-prev {
+                    content: url(../svg/quiz/arrow-prev.svg);
+                    left: -67px;
+                }
+                &-content {
+                    margin: 5px 0;
+                    width: 255px;
+                    height: 350px;
+                    background: #04133C;
+                    border: 1px solid #002685;
+                    box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+                    border-radius: 20px;
+                    padding: 21px;
+                    &-img {
+                        width: 213px;
+                        height: 184px;
+                        background: #001F71;
+                        border-radius: 10px;
+                        position: relative;
+                        &-circle {
+                            position: absolute;
+                            right: 13px;
+                            bottom: 11px;
+                            width: 32px;
+                            height: 32px;
+                            background: #30333A;
+                            border: 1px solid #854FC8;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                        }
+                    }
+                    &-title {
+                        margin: 23px 0 0 0;
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 118%;
+                        letter-spacing: 0.5px;
+                        color: #FBFCFF;
+                    }
+                    &-price {
+                        width: 100%;
+                        margin: 14px 0 0 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        &-balls {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 13px;
+                                line-height: 150%;
+                                letter-spacing: 0.5px;
+                                color: #FFFFFF;
+                                margin: 0 0 0 9.3px;
+                            }
+                        }
+                        &-star {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            margin: 0 0 0 17px;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 13px;
+                                line-height: 150%;
+                                letter-spacing: 0.5px;
+                                color: #FFFFFF;
+                                margin: 0 0 0 9.3px;
+                            }
+                        }
+                        &-sum {
+                            width: 83px;
+                            height: 31px;
+                            background: #001F71;
+                            border-radius: 15.5px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 0 0 auto;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 15px;
+                                line-height: 180%;
+                                letter-spacing: 0.5px;
+                                color: #FBFCFF;
+                            }
+                        }
+                    }
+                    &-add {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        margin: 14px 0 0 0;
+                        &-basket {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                        }
+                        &-share {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 0 0 0 10px;
+                        }
+                        &-calendar {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 0 0 0 10px;
+                        }
+                        &-price {
+                            font-family: Circe;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 150%;
+                            letter-spacing: 0.5px;
+                            color: #BBBBBB;
+                            margin: 0 9px 0 auto;
+                        }
+                    }
+                }
+            }
+            &-slider-4 {
+                margin: 90px 0 0 0;
+                width: 100%;
+                height: 451px;
+                background: #000D32;
+                position: relative;
+                display: flex;
+                align-items: center;
+                &-bg {
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 1000%;
+                    height: 451px;
+                    background: #000d32;
+                    z-index: -1;
+                }
+                &-close {
+                    position: absolute;
+                    top: -15px;
+                    right: -15px;
+                    width: 38px;
+                    height: 38px;
+                    background: #001F75;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+                & .quizContentAddSlider-4 {
+                    width: 1110px;
+                    height: 360px;
+                }
+                & .swiper-button-next {
+                    content: url(../svg/quiz/arrow-next.svg);
+                    right: -67px;
+                }
+                & .swiper-button-prev {
+                    content: url(../svg/quiz/arrow-prev.svg);
+                    left: -67px;
+                }
+                &-content {
+                    margin: 5px 0;
+                    width: 255px;
+                    height: 350px;
+                    background: #04133C;
+                    border: 1px solid #002685;
+                    box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+                    border-radius: 20px;
+                    padding: 21px;
+                    &-img {
+                        width: 213px;
+                        height: 184px;
+                        background: #001F71;
+                        border-radius: 10px;
+                        position: relative;
+                        &-circle {
+                            position: absolute;
+                            right: 13px;
+                            bottom: 11px;
+                            width: 32px;
+                            height: 32px;
+                            background: #30333A;
+                            border: 1px solid #854FC8;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                        }
+                    }
+                    &-title {
+                        margin: 23px 0 0 0;
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 118%;
+                        letter-spacing: 0.5px;
+                        color: #FBFCFF;
+                    }
+                    &-price {
+                        width: 100%;
+                        margin: 14px 0 0 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        &-balls {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 13px;
+                                line-height: 150%;
+                                letter-spacing: 0.5px;
+                                color: #FFFFFF;
+                                margin: 0 0 0 9.3px;
+                            }
+                        }
+                        &-star {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            margin: 0 0 0 17px;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 13px;
+                                line-height: 150%;
+                                letter-spacing: 0.5px;
+                                color: #FFFFFF;
+                                margin: 0 0 0 9.3px;
+                            }
+                        }
+                        &-sum {
+                            width: 83px;
+                            height: 31px;
+                            background: #001F71;
+                            border-radius: 15.5px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 0 0 auto;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 15px;
+                                line-height: 180%;
+                                letter-spacing: 0.5px;
+                                color: #FBFCFF;
+                            }
+                        }
+                    }
+                    &-add {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        margin: 14px 0 0 0;
+                        &-basket {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                        }
+                        &-share {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 0 0 0 10px;
+                        }
+                        &-calendar {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 0 0 0 10px;
+                        }
+                        &-price {
+                            font-family: Circe;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 150%;
+                            letter-spacing: 0.5px;
+                            color: #BBBBBB;
+                            margin: 0 9px 0 auto;
+                        }
+                    }
+                }
+            }
+            &-slider-5 {
+                margin: 90px 0 0 0;
+                width: 100%;
+                height: 451px;
+                background: #000D32;
+                position: relative;
+                display: flex;
+                align-items: center;
+                &-bg {
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 1000%;
+                    height: 451px;
+                    background: #000d32;
+                    z-index: -1;
+                }
+                &-close {
+                    position: absolute;
+                    top: -15px;
+                    right: -15px;
+                    width: 38px;
+                    height: 38px;
+                    background: #001F75;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+                & .quizContentAddSlider-5 {
+                    width: 1110px;
+                    height: 360px;
+                }
+                & .swiper-button-next {
+                    content: url(../svg/quiz/arrow-next.svg);
+                    right: -67px;
+                }
+                & .swiper-button-prev {
+                    content: url(../svg/quiz/arrow-prev.svg);
+                    left: -67px;
+                }
+                &-content {
+                    margin: 5px 0;
+                    width: 255px;
+                    height: 350px;
+                    background: #04133C;
+                    border: 1px solid #002685;
+                    box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+                    border-radius: 20px;
+                    padding: 21px;
+                    &-img {
+                        width: 213px;
+                        height: 184px;
+                        background: #001F71;
+                        border-radius: 10px;
+                        position: relative;
+                        &-circle {
+                            position: absolute;
+                            right: 13px;
+                            bottom: 11px;
+                            width: 32px;
+                            height: 32px;
+                            background: #30333A;
+                            border: 1px solid #854FC8;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                        }
+                    }
+                    &-title {
+                        margin: 23px 0 0 0;
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 118%;
+                        letter-spacing: 0.5px;
+                        color: #FBFCFF;
+                    }
+                    &-price {
+                        width: 100%;
+                        margin: 14px 0 0 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        &-balls {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 13px;
+                                line-height: 150%;
+                                letter-spacing: 0.5px;
+                                color: #FFFFFF;
+                                margin: 0 0 0 9.3px;
+                            }
+                        }
+                        &-star {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            margin: 0 0 0 17px;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 13px;
+                                line-height: 150%;
+                                letter-spacing: 0.5px;
+                                color: #FFFFFF;
+                                margin: 0 0 0 9.3px;
+                            }
+                        }
+                        &-sum {
+                            width: 83px;
+                            height: 31px;
+                            background: #001F71;
+                            border-radius: 15.5px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 0 0 auto;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 15px;
+                                line-height: 180%;
+                                letter-spacing: 0.5px;
+                                color: #FBFCFF;
+                            }
+                        }
+                    }
+                    &-add {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        margin: 14px 0 0 0;
+                        &-basket {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                        }
+                        &-share {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 0 0 0 10px;
+                        }
+                        &-calendar {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 0 0 0 10px;
+                        }
+                        &-price {
+                            font-family: Circe;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 150%;
+                            letter-spacing: 0.5px;
+                            color: #BBBBBB;
+                            margin: 0 9px 0 auto;
+                        }
+                    }
+                }
+            }
+            &-slider-6 {
+                margin: 90px 0 0 0;
+                width: 100%;
+                height: 451px;
+                background: #000D32;
+                position: relative;
+                display: flex;
+                align-items: center;
+                &-bg {
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 1000%;
+                    height: 451px;
+                    background: #000d32;
+                    z-index: -1;
+                }
+                &-close {
+                    position: absolute;
+                    top: -15px;
+                    right: -15px;
+                    width: 38px;
+                    height: 38px;
+                    background: #001F75;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+                & .quizContentAddSlider-6 {
+                    width: 1110px;
+                    height: 360px;
+                }
+                & .swiper-button-next {
+                    content: url(../svg/quiz/arrow-next.svg);
+                    right: -67px;
+                }
+                & .swiper-button-prev {
+                    content: url(../svg/quiz/arrow-prev.svg);
+                    left: -67px;
+                }
+                &-content {
+                    margin: 5px 0;
+                    width: 255px;
+                    height: 350px;
+                    background: #04133C;
+                    border: 1px solid #002685;
+                    box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+                    border-radius: 20px;
+                    padding: 21px;
+                    &-img {
+                        width: 213px;
+                        height: 184px;
+                        background: #001F71;
+                        border-radius: 10px;
+                        position: relative;
+                        &-circle {
+                            position: absolute;
+                            right: 13px;
+                            bottom: 11px;
+                            width: 32px;
+                            height: 32px;
+                            background: #30333A;
+                            border: 1px solid #854FC8;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                        }
+                    }
+                    &-title {
+                        margin: 23px 0 0 0;
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 118%;
+                        letter-spacing: 0.5px;
+                        color: #FBFCFF;
+                    }
+                    &-price {
+                        width: 100%;
+                        margin: 14px 0 0 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        &-balls {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 13px;
+                                line-height: 150%;
+                                letter-spacing: 0.5px;
+                                color: #FFFFFF;
+                                margin: 0 0 0 9.3px;
+                            }
+                        }
+                        &-star {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            margin: 0 0 0 17px;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 13px;
+                                line-height: 150%;
+                                letter-spacing: 0.5px;
+                                color: #FFFFFF;
+                                margin: 0 0 0 9.3px;
+                            }
+                        }
+                        &-sum {
+                            width: 83px;
+                            height: 31px;
+                            background: #001F71;
+                            border-radius: 15.5px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 0 0 auto;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 15px;
+                                line-height: 180%;
+                                letter-spacing: 0.5px;
+                                color: #FBFCFF;
+                            }
+                        }
+                    }
+                    &-add {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        margin: 14px 0 0 0;
+                        &-basket {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                        }
+                        &-share {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 0 0 0 10px;
+                        }
+                        &-calendar {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 0 0 0 10px;
+                        }
+                        &-price {
+                            font-family: Circe;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 150%;
+                            letter-spacing: 0.5px;
+                            color: #BBBBBB;
+                            margin: 0 9px 0 auto;
+                        }
+                    }
+                }
+            }
+            &-slider-7 {
+                margin: 90px 0 0 0;
+                width: 100%;
+                height: 451px;
+                background: #000D32;
+                position: relative;
+                display: flex;
+                align-items: center;
+                &-bg {
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 1000%;
+                    height: 451px;
+                    background: #000d32;
+                    z-index: -1;
+                }
+                &-close {
+                    position: absolute;
+                    top: -15px;
+                    right: -15px;
+                    width: 38px;
+                    height: 38px;
+                    background: #001F75;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+                & .quizContentAddSlider-7 {
+                    width: 1110px;
+                    height: 360px;
+                }
+                & .swiper-button-next {
+                    content: url(../svg/quiz/arrow-next.svg);
+                    right: -67px;
+                }
+                & .swiper-button-prev {
+                    content: url(../svg/quiz/arrow-prev.svg);
+                    left: -67px;
+                }
+                &-content {
+                    margin: 5px 0;
+                    width: 255px;
+                    height: 350px;
+                    background: #04133C;
+                    border: 1px solid #002685;
+                    box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+                    border-radius: 20px;
+                    padding: 21px;
+                    &-img {
+                        width: 213px;
+                        height: 184px;
+                        background: #001F71;
+                        border-radius: 10px;
+                        position: relative;
+                        &-circle {
+                            position: absolute;
+                            right: 13px;
+                            bottom: 11px;
+                            width: 32px;
+                            height: 32px;
+                            background: #30333A;
+                            border: 1px solid #854FC8;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                        }
+                    }
+                    &-title {
+                        margin: 23px 0 0 0;
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 118%;
+                        letter-spacing: 0.5px;
+                        color: #FBFCFF;
+                    }
+                    &-price {
+                        width: 100%;
+                        margin: 14px 0 0 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        &-balls {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 13px;
+                                line-height: 150%;
+                                letter-spacing: 0.5px;
+                                color: #FFFFFF;
+                                margin: 0 0 0 9.3px;
+                            }
+                        }
+                        &-star {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            margin: 0 0 0 17px;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 13px;
+                                line-height: 150%;
+                                letter-spacing: 0.5px;
+                                color: #FFFFFF;
+                                margin: 0 0 0 9.3px;
+                            }
+                        }
+                        &-sum {
+                            width: 83px;
+                            height: 31px;
+                            background: #001F71;
+                            border-radius: 15.5px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 0 0 auto;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 15px;
+                                line-height: 180%;
+                                letter-spacing: 0.5px;
+                                color: #FBFCFF;
+                            }
+                        }
+                    }
+                    &-add {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        margin: 14px 0 0 0;
+                        &-basket {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                        }
+                        &-share {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 0 0 0 10px;
+                        }
+                        &-calendar {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 0 0 0 10px;
+                        }
+                        &-price {
+                            font-family: Circe;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 150%;
+                            letter-spacing: 0.5px;
+                            color: #BBBBBB;
+                            margin: 0 9px 0 auto;
+                        }
+                    }
+                }
+            }
+            &-slider-8 {
+                margin: 90px 0 0 0;
+                width: 100%;
+                height: 451px;
+                background: #000D32;
+                position: relative;
+                display: flex;
+                align-items: center;
+                &-bg {
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 1000%;
+                    height: 451px;
+                    background: #000d32;
+                    z-index: -1;
+                }
+                &-close {
+                    position: absolute;
+                    top: -15px;
+                    right: -15px;
+                    width: 38px;
+                    height: 38px;
+                    background: #001F75;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+                & .quizContentAddSlider-8 {
+                    width: 1110px;
+                    height: 360px;
+                }
+                & .swiper-button-next {
+                    content: url(../svg/quiz/arrow-next.svg);
+                    right: -67px;
+                }
+                & .swiper-button-prev {
+                    content: url(../svg/quiz/arrow-prev.svg);
+                    left: -67px;
+                }
+                &-content {
+                    margin: 5px 0;
+                    width: 255px;
+                    height: 350px;
+                    background: #04133C;
+                    border: 1px solid #002685;
+                    box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+                    border-radius: 20px;
+                    padding: 21px;
+                    &-img {
+                        width: 213px;
+                        height: 184px;
+                        background: #001F71;
+                        border-radius: 10px;
+                        position: relative;
+                        &-circle {
+                            position: absolute;
+                            right: 13px;
+                            bottom: 11px;
+                            width: 32px;
+                            height: 32px;
+                            background: #30333A;
+                            border: 1px solid #854FC8;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                        }
+                    }
+                    &-title {
+                        margin: 23px 0 0 0;
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 118%;
+                        letter-spacing: 0.5px;
+                        color: #FBFCFF;
+                    }
+                    &-price {
+                        width: 100%;
+                        margin: 14px 0 0 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        &-balls {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 13px;
+                                line-height: 150%;
+                                letter-spacing: 0.5px;
+                                color: #FFFFFF;
+                                margin: 0 0 0 9.3px;
+                            }
+                        }
+                        &-star {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            margin: 0 0 0 17px;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 13px;
+                                line-height: 150%;
+                                letter-spacing: 0.5px;
+                                color: #FFFFFF;
+                                margin: 0 0 0 9.3px;
+                            }
+                        }
+                        &-sum {
+                            width: 83px;
+                            height: 31px;
+                            background: #001F71;
+                            border-radius: 15.5px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 0 0 auto;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 15px;
+                                line-height: 180%;
+                                letter-spacing: 0.5px;
+                                color: #FBFCFF;
+                            }
+                        }
+                    }
+                    &-add {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        margin: 14px 0 0 0;
+                        &-basket {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                        }
+                        &-share {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 0 0 0 10px;
+                        }
+                        &-calendar {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 0 0 0 10px;
+                        }
+                        &-price {
+                            font-family: Circe;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 150%;
+                            letter-spacing: 0.5px;
+                            color: #BBBBBB;
+                            margin: 0 9px 0 auto;
+                        }
+                    }
+                }
+            }
+            &-slider-9 {
+                margin: 90px 0 0 0;
+                width: 100%;
+                height: 451px;
+                background: #000D32;
+                position: relative;
+                display: flex;
+                align-items: center;
+                &-bg {
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 1000%;
+                    height: 451px;
+                    background: #000d32;
+                    z-index: -1;
+                }
+                &-close {
+                    position: absolute;
+                    top: -15px;
+                    right: -15px;
+                    width: 38px;
+                    height: 38px;
+                    background: #001F75;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+                & .quizContentAddSlider-9 {
+                    width: 1110px;
+                    height: 360px;
+                }
+                & .swiper-button-next {
+                    content: url(../svg/quiz/arrow-next.svg);
+                    right: -67px;
+                }
+                & .swiper-button-prev {
+                    content: url(../svg/quiz/arrow-prev.svg);
+                    left: -67px;
+                }
+                &-content {
+                    margin: 5px 0;
+                    width: 255px;
+                    height: 350px;
+                    background: #04133C;
+                    border: 1px solid #002685;
+                    box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+                    border-radius: 20px;
+                    padding: 21px;
+                    &-img {
+                        width: 213px;
+                        height: 184px;
+                        background: #001F71;
+                        border-radius: 10px;
+                        position: relative;
+                        &-circle {
+                            position: absolute;
+                            right: 13px;
+                            bottom: 11px;
+                            width: 32px;
+                            height: 32px;
+                            background: #30333A;
+                            border: 1px solid #854FC8;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                        }
+                    }
+                    &-title {
+                        margin: 23px 0 0 0;
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 118%;
+                        letter-spacing: 0.5px;
+                        color: #FBFCFF;
+                    }
+                    &-price {
+                        width: 100%;
+                        margin: 14px 0 0 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        &-balls {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 13px;
+                                line-height: 150%;
+                                letter-spacing: 0.5px;
+                                color: #FFFFFF;
+                                margin: 0 0 0 9.3px;
+                            }
+                        }
+                        &-star {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            margin: 0 0 0 17px;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 13px;
+                                line-height: 150%;
+                                letter-spacing: 0.5px;
+                                color: #FFFFFF;
+                                margin: 0 0 0 9.3px;
+                            }
+                        }
+                        &-sum {
+                            width: 83px;
+                            height: 31px;
+                            background: #001F71;
+                            border-radius: 15.5px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 0 0 auto;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 15px;
+                                line-height: 180%;
+                                letter-spacing: 0.5px;
+                                color: #FBFCFF;
+                            }
+                        }
+                    }
+                    &-add {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        margin: 14px 0 0 0;
+                        &-basket {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                        }
+                        &-share {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 0 0 0 10px;
+                        }
+                        &-calendar {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 0 0 0 10px;
+                        }
+                        &-price {
+                            font-family: Circe;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 150%;
+                            letter-spacing: 0.5px;
+                            color: #BBBBBB;
+                            margin: 0 9px 0 auto;
+                        }
+                    }
+                }
+            }
+            &-slider-10 {
+                margin: 90px 0 0 0;
+                width: 100%;
+                height: 451px;
+                background: #000D32;
+                position: relative;
+                display: flex;
+                align-items: center;
+                &-bg {
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 1000%;
+                    height: 451px;
+                    background: #000d32;
+                    z-index: -1;
+                }
+                &-close {
+                    position: absolute;
+                    top: -15px;
+                    right: -15px;
+                    width: 38px;
+                    height: 38px;
+                    background: #001F75;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+                & .quizContentAddSlider-10 {
+                    width: 1110px;
+                    height: 360px;
+                }
+                & .swiper-button-next {
+                    content: url(../svg/quiz/arrow-next.svg);
+                    right: -67px;
+                }
+                & .swiper-button-prev {
+                    content: url(../svg/quiz/arrow-prev.svg);
+                    left: -67px;
+                }
+                &-content {
+                    margin: 5px 0;
+                    width: 255px;
+                    height: 350px;
+                    background: #04133C;
+                    border: 1px solid #002685;
+                    box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+                    border-radius: 20px;
+                    padding: 21px;
+                    &-img {
+                        width: 213px;
+                        height: 184px;
+                        background: #001F71;
+                        border-radius: 10px;
+                        position: relative;
+                        &-circle {
+                            position: absolute;
+                            right: 13px;
+                            bottom: 11px;
+                            width: 32px;
+                            height: 32px;
+                            background: #30333A;
+                            border: 1px solid #854FC8;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                        }
+                    }
+                    &-title {
+                        margin: 23px 0 0 0;
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 118%;
+                        letter-spacing: 0.5px;
+                        color: #FBFCFF;
+                    }
+                    &-price {
+                        width: 100%;
+                        margin: 14px 0 0 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        &-balls {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 13px;
+                                line-height: 150%;
+                                letter-spacing: 0.5px;
+                                color: #FFFFFF;
+                                margin: 0 0 0 9.3px;
+                            }
+                        }
+                        &-star {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            margin: 0 0 0 17px;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 13px;
+                                line-height: 150%;
+                                letter-spacing: 0.5px;
+                                color: #FFFFFF;
+                                margin: 0 0 0 9.3px;
+                            }
+                        }
+                        &-sum {
+                            width: 83px;
+                            height: 31px;
+                            background: #001F71;
+                            border-radius: 15.5px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 0 0 auto;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 15px;
+                                line-height: 180%;
+                                letter-spacing: 0.5px;
+                                color: #FBFCFF;
+                            }
+                        }
+                    }
+                    &-add {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        margin: 14px 0 0 0;
+                        &-basket {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                        }
+                        &-share {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 0 0 0 10px;
+                        }
+                        &-calendar {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 0 0 0 10px;
+                        }
+                        &-price {
+                            font-family: Circe;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 150%;
+                            letter-spacing: 0.5px;
+                            color: #BBBBBB;
+                            margin: 0 9px 0 auto;
+                        }
+                    }
+                }
+            }
+            &-slider-11 {
+                margin: 90px 0 0 0;
+                width: 100%;
+                height: 451px;
+                background: #000D32;
+                position: relative;
+                display: flex;
+                align-items: center;
+                &-bg {
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 1000%;
+                    height: 451px;
+                    background: #000d32;
+                    z-index: -1;
+                }
+                &-close {
+                    position: absolute;
+                    top: -15px;
+                    right: -15px;
+                    width: 38px;
+                    height: 38px;
+                    background: #001F75;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+                & .quizContentAddSlider-11 {
+                    width: 1110px;
+                    height: 360px;
+                }
+                & .swiper-button-next {
+                    content: url(../svg/quiz/arrow-next.svg);
+                    right: -67px;
+                }
+                & .swiper-button-prev {
+                    content: url(../svg/quiz/arrow-prev.svg);
+                    left: -67px;
+                }
+                &-content {
+                    margin: 5px 0;
+                    width: 255px;
+                    height: 350px;
+                    background: #04133C;
+                    border: 1px solid #002685;
+                    box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+                    border-radius: 20px;
+                    padding: 21px;
+                    &-img {
+                        width: 213px;
+                        height: 184px;
+                        background: #001F71;
+                        border-radius: 10px;
+                        position: relative;
+                        &-circle {
+                            position: absolute;
+                            right: 13px;
+                            bottom: 11px;
+                            width: 32px;
+                            height: 32px;
+                            background: #30333A;
+                            border: 1px solid #854FC8;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                        }
+                    }
+                    &-title {
+                        margin: 23px 0 0 0;
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 118%;
+                        letter-spacing: 0.5px;
+                        color: #FBFCFF;
+                    }
+                    &-price {
+                        width: 100%;
+                        margin: 14px 0 0 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        &-balls {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 13px;
+                                line-height: 150%;
+                                letter-spacing: 0.5px;
+                                color: #FFFFFF;
+                                margin: 0 0 0 9.3px;
+                            }
+                        }
+                        &-star {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            margin: 0 0 0 17px;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 13px;
+                                line-height: 150%;
+                                letter-spacing: 0.5px;
+                                color: #FFFFFF;
+                                margin: 0 0 0 9.3px;
+                            }
+                        }
+                        &-sum {
+                            width: 83px;
+                            height: 31px;
+                            background: #001F71;
+                            border-radius: 15.5px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 0 0 auto;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 15px;
+                                line-height: 180%;
+                                letter-spacing: 0.5px;
+                                color: #FBFCFF;
+                            }
+                        }
+                    }
+                    &-add {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        margin: 14px 0 0 0;
+                        &-basket {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                        }
+                        &-share {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 0 0 0 10px;
+                        }
+                        &-calendar {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 0 0 0 10px;
+                        }
+                        &-price {
+                            font-family: Circe;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 150%;
+                            letter-spacing: 0.5px;
+                            color: #BBBBBB;
+                            margin: 0 9px 0 auto;
+                        }
+                    }
+                }
+            }
+            &-slider-12 {
+                margin: 90px 0 0 0;
+                width: 100%;
+                height: 451px;
+                background: #000D32;
+                position: relative;
+                display: flex;
+                align-items: center;
+                &-bg {
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 1000%;
+                    height: 451px;
+                    background: #000d32;
+                    z-index: -1;
+                }
+                &-close {
+                    position: absolute;
+                    top: -15px;
+                    right: -15px;
+                    width: 38px;
+                    height: 38px;
+                    background: #001F75;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+                & .quizContentAddSlider-12 {
+                    width: 1110px;
+                    height: 360px;
+                }
+                & .swiper-button-next {
+                    content: url(../svg/quiz/arrow-next.svg);
+                    right: -67px;
+                }
+                & .swiper-button-prev {
+                    content: url(../svg/quiz/arrow-prev.svg);
+                    left: -67px;
+                }
+                &-content {
+                    margin: 5px 0;
+                    width: 255px;
+                    height: 350px;
+                    background: #04133C;
+                    border: 1px solid #002685;
+                    box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+                    border-radius: 20px;
+                    padding: 21px;
+                    &-img {
+                        width: 213px;
+                        height: 184px;
+                        background: #001F71;
+                        border-radius: 10px;
+                        position: relative;
+                        &-circle {
+                            position: absolute;
+                            right: 13px;
+                            bottom: 11px;
+                            width: 32px;
+                            height: 32px;
+                            background: #30333A;
+                            border: 1px solid #854FC8;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                        }
+                    }
+                    &-title {
+                        margin: 23px 0 0 0;
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 118%;
+                        letter-spacing: 0.5px;
+                        color: #FBFCFF;
+                    }
+                    &-price {
+                        width: 100%;
+                        margin: 14px 0 0 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        &-balls {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 13px;
+                                line-height: 150%;
+                                letter-spacing: 0.5px;
+                                color: #FFFFFF;
+                                margin: 0 0 0 9.3px;
+                            }
+                        }
+                        &-star {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            margin: 0 0 0 17px;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 13px;
+                                line-height: 150%;
+                                letter-spacing: 0.5px;
+                                color: #FFFFFF;
+                                margin: 0 0 0 9.3px;
+                            }
+                        }
+                        &-sum {
+                            width: 83px;
+                            height: 31px;
+                            background: #001F71;
+                            border-radius: 15.5px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 0 0 auto;
+                            & p {
+                                font-family: Circe;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 15px;
+                                line-height: 180%;
+                                letter-spacing: 0.5px;
+                                color: #FBFCFF;
+                            }
+                        }
+                    }
+                    &-add {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        margin: 14px 0 0 0;
+                        &-basket {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                        }
+                        &-share {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 0 0 0 10px;
+                        }
+                        &-calendar {
+                            width: 32px;
+                            height: 32px;
+                            background: #001F71;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 0 0 0 10px;
+                        }
+                        &-price {
+                            font-family: Circe;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 150%;
+                            letter-spacing: 0.5px;
+                            color: #BBBBBB;
+                            margin: 0 9px 0 auto;
+                        }
+                    }
+                }
+            }
         }
     }
 }
 
-
+.quiz-add-h {
+    height: 100%;
+}
 
 //! Блок оформление покупки 
 

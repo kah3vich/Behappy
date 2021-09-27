@@ -1,0 +1,123 @@
+@@include('components/_head.html')
+<div class="donat-wrapper">
+
+
+    @@include('components/_header_profile.html')
+
+
+    <div class="header-profile__menu">
+        <ul class="header-profile__menu-list">
+            <li class="header-profile__menu-list-status">
+                <a href="status.html">
+                    @@include('iconsprite/donat/heart.svg')
+                    <p>Проверить статус заказа</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-order">
+                <a href="orders.html">
+                    @@include('iconsprite/donat/heart.svg')
+                    <p>Мои заказы</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-chosen">
+                <a href="chosen.html">
+                    @@include('iconsprite/donat/heart.svg')
+                    <p>Избранное</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-balls">
+                <a href="balls.html">
+                    @@include('iconsprite/donat/heart.svg')
+                    <h3>Бонусные баллы</h3>
+                    <p>+160 баллов </p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-notification">
+                <a href="notification">
+                    @@include('iconsprite/donat/heart.svg')
+                    <h3>Уведомления</h3>
+                    <div class="header-profile__menu-list-notification-count">19</div>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-event">
+                <a href="event.html">
+                    @@include('iconsprite/donat/heart.svg')
+                    <p>Календарь событий</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-stock">
+                <a href="stock.html">
+                    @@include('iconsprite/donat/heart.svg')
+                    <p>Календарь скидок</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-donat">
+                <a href="recommendations.html">
+                    @@include('iconsprite/donat/heart.svg')
+                    <p>Рекомендуемые букеты</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-donat header-profile__menu-list-active">
+                <a href="donat.html">
+                    @@include('iconsprite/editor/heart.svg')
+                    <p>Благодарность менеджеру</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-histor">
+                <a href="history.html">
+                    @@include('iconsprite/donat/heart.svg')
+                    <p>История просмотров</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-offers">
+                <a href="offers.html">
+                    @@include('iconsprite/donat/heart.svg')
+                    <p>Договор оферты</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-policy">
+                <a href="policy.html">
+                    @@include('iconsprite/donat/heart.svg')
+                    <p>Политика конфиденциальности</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-profil">
+                <a href="editor.html">
+                    @@include('iconsprite/donat/heart.svg')
+                    <p>Настройка профиля</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-btn">
+                <a href="index.html"><p>Вернуться к сайту</p></a>
+            </li>
+            <li class="header-profile__menu-list-btn">
+                <a href="index.html"><p>Выйти</p></a>
+            </li>
+        </ul>
+        <div class="header-profile__donat">
+            <div class="header-profile__donat-title">
+                Мы рады, что в мире наполненном множеством 
+вариантов и возможностей, вы выбрали нас.
+            </div>
+            <div class="header-profile__donat-circle">
+                <div class="header-profile__donat-circle-item">Мемоджи</div>
+            </div>
+            <div class="header-profile__donat-info">
+                <div class="header-profile__donat-info-price">
+                    <input type="text" placeholder="Сумма блогодарности" id="profileDonatePrice">
+                    <label for="profileDonatePrice">Введите сумму благодарности</label>
+                </div>
+                <div class="header-profile__donat-info-id">
+                    <input type="text" class="" placeholder="№ заказа" id="profileDonateID">
+                    <label for="profileDonateID">Введите № заказа</label>
+                </div>
+                <button class="header-profile__donat-info-btn"><a href="#">Оплатить</a></button>
+            </div>
+        </div>
+    </div>
+
+
+    @@include('components/_footer.html')
+
+</div>
+@@include('components/_script.html')

@@ -1,0 +1,117 @@
+@@include('components/_head.html')
+<div class="balls-wrapper">
+
+
+    @@include('components/_header_profile.html')
+
+
+    <div class="header-profile__menu">
+        <ul class="header-profile__menu-list">
+            <li class="header-profile__menu-list-status">
+                <a href="status.html">
+                    @@include('iconsprite/rec/heart.svg')
+                    <p>Проверить статус заказа</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-order">
+                <a href="orders.html">
+                    @@include('iconsprite/rec/heart.svg')
+                    <p>Мои заказы</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-chosen">
+                <a href="chosen.html">
+                    @@include('iconsprite/rec/heart.svg')
+                    <p>Избранное</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-balls header-profile__menu-list-active">
+                <a href="balls.html">
+                    @@include('iconsprite/rec/heart.svg')
+                    <h3>Бонусные баллы</h3>
+                    <p>+160 баллов </p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-notification">
+                <a href="notification">
+                    @@include('iconsprite/rec/heart.svg')
+                    <h3>Уведомления</h3>
+                    <div class="header-profile__menu-list-notification-count">19</div>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-event">
+                <a href="event.html">
+                    @@include('iconsprite/rec/heart.svg')
+                    <p>Календарь событий</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-stock">
+                <a href="stock.html">
+                    @@include('iconsprite/rec/heart.svg')
+                    <p>Календарь скидок</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-rec">
+                <a href="recommendations.html">
+                    @@include('iconsprite/rec/heart.svg')
+                    <p>Рекомендуемые букеты</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-donat">
+                <a href="donat.html">
+                    @@include('iconsprite/editor/heart.svg')
+                    <p>Благодарность менеджеру</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-histor">
+                <a href="history.html">
+                    @@include('iconsprite/rec/heart.svg')
+                    <p>История просмотров</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-offers">
+                <a href="offers.html">
+                    @@include('iconsprite/rec/heart.svg')
+                    <p>Договор оферты</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-policy">
+                <a href="policy.html">
+                    @@include('iconsprite/rec/heart.svg')
+                    <p>Политика конфиденциальности</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-profil">
+                <a href="editor.html">
+                    @@include('iconsprite/rec/heart.svg')
+                    <p>Настройка профиля</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-btn">
+                <a href="index.html"><p>Вернуться к сайту</p></a>
+            </li>
+            <li class="header-profile__menu-list-btn">
+                <a href="index.html"><p>Выйти</p></a>
+            </li>
+        </ul>
+        <div class="header-profile__balls">
+            <div class="header-profile__balls-title">Бонусные баллы</div>
+            <div class="header-profile__balls-wrapper">
+                <div class="header-profile__balls-wrapper-add">У вас</div>
+                <div class="header-profile__balls-wrapper-title">365</div>
+                <div class="header-profile__balls-wrapper-text">1 балл = 1 рубль</div>
+            </div>
+            <div class="header-profile__balls-btn">
+                <a href="#">Перейти в каталог</a>
+            </div>
+            <div class="header-profile__balls-logo">
+                @@include('iconsprite/balls/logo.svg')
+            </div>
+        </div>
+    </div>
+
+
+    @@include('components/_footer.html')
+
+</div>
+@@include('components/_script.html')
