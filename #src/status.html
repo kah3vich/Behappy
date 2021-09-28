@@ -33,7 +33,7 @@
                 </a>
             </li>
             <li class="header-profile__menu-list-notification">
-                <a href="notification">
+                <a href="notification.html">
                     @@include('iconsprite/status/heart.svg')
                     <h3>Уведомления</h3>
                     <div class="header-profile__menu-list-notification-count">19</div>
@@ -98,7 +98,17 @@
             <div class="header-profile__status-info">
                 <div class="header-profile__status-info-text">Введите № заказа</div>
                 <input type="text" class="header-profile__status-info-input" placeholder="№ заказа">
-                <button class="header-profile__status-info-btn"><a href="#">Проверить статус заказа</a></button>
+                <button class="header-profile__status-info-btn" type="button" data-bs-toggle="modal" data-bs-target="#profileStatusModel"><a href="#">Проверить статус заказа</a></button>
+                <div class="modal fade" id="profileStatusModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content header-profile__status-info-model">
+                            <button type="button" class="btn-close header-profile__status-info-close" data-bs-dismiss="modal" aria-label="Close">
+                                @@include('iconsprite/close-model.svg')
+                            </button>
+                            <p>😉 <br>Все в порядке, уже собираем ! ! ! </p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="header-profile__status-img">
                 <div class="header-profile__status-img-item">

@@ -33,7 +33,7 @@
                 </a>
             </li>
             <li class="header-profile__menu-list-notification">
-                <a href="notification">
+                <a href="notification.html">
                     @@include('iconsprite/rec/heart.svg')
                     <h3>Уведомления</h3>
                     <div class="header-profile__menu-list-notification-count">19</div>
@@ -95,6 +95,70 @@
             </li>
         </ul>
         <div class="header-profile__event">
+            <div class="header-profile__event-title">Календарь событий</div>
+            <div class="header-profile__event-table">
+                <div class="header-profile__event-table-calendar">
+                    <div class="header-profile__event-table-calendar-title">Выберите дату</div>
+                    <div class="header-profile__event-table-calendar-block">
+                        <input type="input" id="datepickerProfileEvent" class="header-profile__event-table-calendar-block-date" />
+                        <div class="header-profile__event-table-calendar-block-bg"></div>
+                    </div>
+                    <input type="input" id="somedate"  />
+                    <div class="date" data-altfield="#datepickerProfileEvent"></div>
+                    <button class="header-profile__event-table-calendar-btn" type="button"  data-bs-toggle="modal" data-bs-target="#profileEventModel"><a href="#">Добавить событие</a></button>
+
+                    <div class="modal fade" id="profileEventModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content header-profile__event-table-calendar-model">
+                                <button type="button" class="btn-close header-profile__event-table-calendar-close" data-bs-dismiss="modal" aria-label="Close">
+                                    @@include('iconsprite/close-model.svg')
+                                </button>
+                                <div class="header-profile__event-table-calendar-model-content">
+                                    <div class="header-profile__event-table-calendar-model-title">Ваше событие</div>
+                                    
+                                    <div class="header-profile__event-table-calendar-model-type">Тип события</div>
+                                    <select class="form-select header-profile__event-table-calendar-model-block display-n" multiple aria-label="multiple select example">
+                                        <option value="День рождение" class="header-profile__event-table-calendar-model-item-1">
+                                            <div class="header-profile__event-table-calendar-model-block-circle"></div>
+                                            <p>День рождение</p>
+                                        </option>
+                                        <option value="День рождение" class="header-profile__event-table-calendar-model-item-2">
+                                            <div class="header-profile__event-table-calendar-model-block-circle"></div>
+                                            <p>День рождение</p>
+                                        </option>
+                                        <option value="День рождение" class="header-profile__event-table-calendar-model-item-3">
+                                            <div class="header-profile__event-table-calendar-model-block-circle"></div>
+                                            <p>День рождение</p>
+                                        </option>
+                                        <option value="День рождение" class="header-profile__event-table-calendar-model-item-4">
+                                            <div class="header-profile__event-table-calendar-model-block-circle"></div>
+                                            <p>День рождение</p>
+                                        </option>
+                                    </select>
+                                    
+
+                                    <input type="text" class="header-profile__event-table-calendar-model-date" placeholder="ДД/ММ/ГГГГ">
+                                    <input type="text" class="header-profile__event-table-calendar-model-where" placeholder="Кого нужно поздравить">
+                                    <input type="text" class="header-profile__event-table-calendar-model-phone" placeholder="Номер телефона (не обязательно)">
+                                    <input type="text" class="header-profile__event-table-calendar-model-city" placeholder="Город получателя (не обязательно)">
+                                    <input type="text" class="header-profile__event-table-calendar-model-address" placeholder="Адрес получателя (не обязательно)">
+                                    <button class="header-profile__event-table-calendar-model-btn"><a href="#">Добавить событие</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-profile__event-table-info">
+                    <div class="header-profile__event-table-info-title">Ближайшие события</div>
+                    <div class="header-profile__event-table-info-block">
+                        @@include('iconsprite/event/input.svg')
+                        <div class="header-profile__event-table-info-block-text">День рождение</div>
+                        <div class="header-profile__event-table-info-block-date">12.01.1993</div>
+                    </div>
+                    <button class="header-profile__event-table-info-btn"><a href="#">Подабрать подарок</a></button>
+                </div>
+            </div>
+
             
         </div>
     </div>

@@ -114,7 +114,7 @@
                 </a>
             </li>
             <li class="header-profile__menu-list-notification">
-                <a href="notification">
+                <a href="notification.html">
                     <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.1245 0C12.1693 0 11.2936 0.304774 10.5216 0.905874C9.78159 1.48215 9.28887 2.21615 8.9988 2.74989C8.70873 2.21612 8.21601 1.48215 7.47596 0.905874C6.70404 0.304774 5.82829 0 4.87308 0C2.20745 0 0.197266 2.19535 0.197266 5.10659C0.197266 8.25174 2.70512 10.4036 6.50168 13.6612C7.14639 14.2145 7.87716 14.8415 8.6367 15.5103C8.73682 15.5986 8.8654 15.6472 8.9988 15.6472C9.1322 15.6472 9.26079 15.5986 9.3609 15.5103C10.1205 14.8414 10.8512 14.2144 11.4963 13.6609C15.2925 10.4036 17.8003 8.25174 17.8003 5.10659C17.8003 2.19535 15.7901 0 13.1245 0Z" fill="url(#paint0_linear)"/>
 <defs>
@@ -260,7 +260,21 @@
             <div class="header-profile__status-info">
                 <div class="header-profile__status-info-text">Введите № заказа</div>
                 <input type="text" class="header-profile__status-info-input" placeholder="№ заказа">
-                <button class="header-profile__status-info-btn"><a href="#">Проверить статус заказа</a></button>
+                <button class="header-profile__status-info-btn" type="button" data-bs-toggle="modal" data-bs-target="#profileStatusModel"><a href="#">Проверить статус заказа</a></button>
+                <div class="modal fade" id="profileStatusModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content header-profile__status-info-model">
+                            <button type="button" class="btn-close header-profile__status-info-close" data-bs-dismiss="modal" aria-label="Close">
+                                <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.3281 22.3296L40.2735 40.275" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.1313 40.4727L40.4712 22.1328" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                            </button>
+                            <p>😉 <br>Все в порядке, уже собираем ! ! ! </p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="header-profile__status-img">
                 <div class="header-profile__status-img-item">

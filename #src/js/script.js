@@ -28,6 +28,10 @@
 
 @@include('./offers/offers.js')
 
+@@include('./notification/notification.js')
+
+@@include('./event/event.js')
+
 
 @@include('./calendar/calendar.js')
 

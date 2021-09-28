@@ -51,6 +51,8 @@
 @import "status/style.scss";
 @import "stock/style.scss";
 @import "donat/style.scss";
+@import "notification/style.scss";
+@import "orders/style.scss";
 
 @import "media.scss";
 
@@ -257,6 +259,13 @@ input[type="range" i] {
 }
 .ui-datepicker .ui-datepicker-prev-hover {
     left: 2px;
+}
+.ui-datepicker-current-day {
+    width: 24px;
+    height: 24px;
+    background: #0033BF;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
 }
 
 //! ------------------------------------------------------------------------------------

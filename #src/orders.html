@@ -1,0 +1,484 @@
+@@include('components/_head.html')
+<div class="orders-wrapper">
+
+
+    @@include('components/_header_profile.html')
+
+
+    <div class="header-profile__menu">
+        <ul class="header-profile__menu-list">
+            <li class="header-profile__menu-list-status">
+                <a href="status.html">
+                    @@include('iconsprite/orders/heart.svg')
+                    <p>Проверить статус заказа</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-order header-profile__menu-list-active">
+                <a href="orders.html">
+                    @@include('iconsprite/orders/heart.svg')
+                    <p>Мои заказы</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-chosen">
+                <a href="chosen.html">
+                    @@include('iconsprite/orders/heart.svg')
+                    <p>Избранное</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-balls">
+                <a href="balls.html">
+                    @@include('iconsprite/orders/heart.svg')
+                    <h3>Бонусные баллы</h3>
+                    <p>+160 баллов </p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-notification">
+                <a href="notification.html">
+                    @@include('iconsprite/orders/heart.svg')
+                    <h3>Уведомления</h3>
+                    <div class="header-profile__menu-list-notification-count">19</div>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-event">
+                <a href="event.html">
+                    @@include('iconsprite/orders/heart.svg')
+                    <p>Календарь событий</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-stock">
+                <a href="stock.html">
+                    @@include('iconsprite/orders/heart.svg')
+                    <p>Календарь скидок</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-rec">
+                <a href="recommendations.html">
+                    @@include('iconsprite/orders/heart.svg')
+                    <p>Рекомендуемые букеты</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-donat">
+                <a href="donat.html">
+                    @@include('iconsprite/editor/heart.svg')
+                    <p>Благодарность менеджеру</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-histor">
+                <a href="history.html">
+                    @@include('iconsprite/orders/heart.svg')
+                    <p>История просмотров</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-offers">
+                <a href="offers.html">
+                    @@include('iconsprite/orders/heart.svg')
+                    <p>Договор оферты</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-policy">
+                <a href="policy.html">
+                    @@include('iconsprite/orders/heart.svg')
+                    <p>Политика конфиденциальности</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-profil">
+                <a href="editor.html">
+                    @@include('iconsprite/orders/heart.svg')
+                    <p>Настройка профиля</p>
+                </a>
+            </li>
+            <li class="header-profile__menu-list-btn">
+                <a href="index.html"><p>Вернуться к сайту</p></a>
+            </li>
+            <li class="header-profile__menu-list-btn">
+                <a href="index.html"><p>Выйти</p></a>
+            </li>
+        </ul>
+        <div class="header-profile__orders">
+            <div class="header-profile__orders-table">
+                <div class="header-profile__orders-table-title">Текущие заказы</div>
+                <div class="header-profile__orders-table-date">
+                    <div class="header-profile__orders-table-date-day">Дата</div>
+                    <div class="header-profile__orders-table-date-number">№ заказа</div>
+                </div>
+                <ul class="header-profile__orders-table-list">
+                    <li class="header-profile__orders-table-item">
+                        <div class="header-profile__orders-table-item-number">
+                            <div class="header-profile__orders-table-item-number-date">23.08.22</div>
+                            <div class="header-profile__orders-table-item-number-id">№ 144 - 234 -4568</div>
+                        </div>
+                        <div class="header-profile__orders-table-info">
+                            <button class="header-profile__orders-table-info-btn" type="button" data-bs-toggle="modal" data-bs-target="#profileOrdersModel-1"><p>Подробнее</p></button>
+                            <div class="modal fade" id="profileOrdersModel-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content header-profile__orders-table-info-model">
+                                        <button type="button" class="btn-close header-profile__orders-table-info-close" data-bs-dismiss="modal" aria-label="Close">
+                                            @@include('iconsprite/close-model.svg')
+                                        </button>
+                                        <div class="header-profile__orders-table-info-title">№ 144 - 234 -4568 </div>
+                                        <ul class="header-profile__orders-table-info-table">
+                                            <li class="header-profile__orders-table-info-table-item">
+                                                <div class="header-profile__orders-table-info-table-title">Получатель:</div>
+                                                <div class="header-profile__orders-table-info-table-text">Алексей Алексеев</div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-table-item">
+                                                <div class="header-profile__orders-table-info-table-title">Время доставки:</div>
+                                                <div class="header-profile__orders-table-info-table-text">18:20-19:00</div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-table-item">
+                                                <div class="header-profile__orders-table-info-table-title">Адрес доставки:</div>
+                                                <div class="header-profile__orders-table-info-table-text">г. Москва, ул Круглова
+                                                    дом 56, кв 20</div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-table-item">
+                                                <div class="header-profile__orders-table-info-table-title">Дата доставки:</div>
+                                                <div class="header-profile__orders-table-info-table-text">01.11.2021</div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-table-item">
+                                                <div class="header-profile__orders-table-info-table-title">Номер телефона получателя:</div>
+                                                <div class="header-profile__orders-table-info-table-text">+7 (999) 456-67-80</div>
+                                            </li>
+                                        </ul>
+                                        <div class="header-profile__orders-table-info-input">
+                                            <input type="text" placeholder="Текст" value="С днем рождения!">
+                                        </div>
+                                        <ul class="header-profile__orders-table-info-list">
+                                            <li class="header-profile__orders-table-info-list-item">
+                                                <div class="header-profile__orders-table-info-list-img">@@include('iconsprite/orders/imgs.svg')</div>
+                                                <div class="header-profile__orders-table-info-list-text">
+                                                    <div class="header-profile__orders-table-info-list-text-title">Кустовая роза <br> белая</div>
+                                                    <div class="header-profile__orders-table-info-list-text-price">
+                                                        <div class="header-profile__orders-table-info-list-text-price-sum">2990₽</div>
+                                                        <div class="header-profile__orders-table-info-list-text-price-icon">@@include('iconsprite/orders/message.svg')</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-list-item">
+                                                <div class="header-profile__orders-table-info-list-img">@@include('iconsprite/orders/imgs.svg')</div>
+                                                <div class="header-profile__orders-table-info-list-text">
+                                                    <div class="header-profile__orders-table-info-list-text-title">Кустовая роза <br> белая</div>
+                                                    <div class="header-profile__orders-table-info-list-text-price">
+                                                        <div class="header-profile__orders-table-info-list-text-price-sum">2990₽</div>
+                                                        <div class="header-profile__orders-table-info-list-text-price-icon">@@include('iconsprite/orders/message.svg')</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-list-item">
+                                                <div class="header-profile__orders-table-info-list-img">@@include('iconsprite/orders/imgs.svg')</div>
+                                                <div class="header-profile__orders-table-info-list-text">
+                                                    <div class="header-profile__orders-table-info-list-text-title">Кустовая роза <br> белая</div>
+                                                    <div class="header-profile__orders-table-info-list-text-price">
+                                                        <div class="header-profile__orders-table-info-list-text-price-sum">2990₽</div>
+                                                        <div class="header-profile__orders-table-info-list-text-price-icon">@@include('iconsprite/orders/message.svg')</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-list-item">
+                                                <div class="header-profile__orders-table-info-list-img">@@include('iconsprite/orders/imgs.svg')</div>
+                                                <div class="header-profile__orders-table-info-list-text">
+                                                    <div class="header-profile__orders-table-info-list-text-title">Кустовая роза <br> белая</div>
+                                                    <div class="header-profile__orders-table-info-list-text-price">
+                                                        <div class="header-profile__orders-table-info-list-text-price-sum">2990₽</div>
+                                                        <div class="header-profile__orders-table-info-list-text-price-icon">@@include('iconsprite/orders/message.svg')</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-profile__orders-table-info-text">
+                                <p>в процессе исполнения</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header-profile__orders-table-item">
+                        <div class="header-profile__orders-table-item-number">
+                            <div class="header-profile__orders-table-item-number-date">23.08.22</div>
+                            <div class="header-profile__orders-table-item-number-id">№ 144 - 234 -4568</div>
+                        </div>
+                        <div class="header-profile__orders-table-info">
+                            <button class="header-profile__orders-table-info-btn" type="button" data-bs-toggle="modal" data-bs-target="#profileOrdersModel-1"><p>Подробнее</p></button>
+                            <div class="modal fade" id="profileOrdersModel-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content header-profile__orders-table-info-model">
+                                        <button type="button" class="btn-close header-profile__orders-table-info-close" data-bs-dismiss="modal" aria-label="Close">
+                                            @@include('iconsprite/close-model.svg')
+                                        </button>
+                                        <div class="header-profile__orders-table-info-title">№ 144 - 234 -4568 </div>
+                                        <ul class="header-profile__orders-table-info-table">
+                                            <li class="header-profile__orders-table-info-table-item">
+                                                <div class="header-profile__orders-table-info-table-title">Получатель:</div>
+                                                <div class="header-profile__orders-table-info-table-text">Алексей Алексеев</div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-table-item">
+                                                <div class="header-profile__orders-table-info-table-title">Время доставки:</div>
+                                                <div class="header-profile__orders-table-info-table-text">18:20-19:00</div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-table-item">
+                                                <div class="header-profile__orders-table-info-table-title">Адрес доставки:</div>
+                                                <div class="header-profile__orders-table-info-table-text">г. Москва, ул Круглова
+                                                    дом 56, кв 20</div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-table-item">
+                                                <div class="header-profile__orders-table-info-table-title">Дата доставки:</div>
+                                                <div class="header-profile__orders-table-info-table-text">01.11.2021</div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-table-item">
+                                                <div class="header-profile__orders-table-info-table-title">Номер телефона получателя:</div>
+                                                <div class="header-profile__orders-table-info-table-text">+7 (999) 456-67-80</div>
+                                            </li>
+                                        </ul>
+                                        <div class="header-profile__orders-table-info-input">
+                                            <input type="text" placeholder="Текст" value="С днем рождения!">
+                                        </div>
+                                        <ul class="header-profile__orders-table-info-list">
+                                            <li class="header-profile__orders-table-info-list-item">
+                                                <div class="header-profile__orders-table-info-list-img">@@include('iconsprite/orders/imgs.svg')</div>
+                                                <div class="header-profile__orders-table-info-list-text">
+                                                    <div class="header-profile__orders-table-info-list-text-title">Кустовая роза <br> белая</div>
+                                                    <div class="header-profile__orders-table-info-list-text-price">
+                                                        <div class="header-profile__orders-table-info-list-text-price-sum">2990₽</div>
+                                                        <div class="header-profile__orders-table-info-list-text-price-icon">@@include('iconsprite/orders/message.svg')</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-list-item">
+                                                <div class="header-profile__orders-table-info-list-img">@@include('iconsprite/orders/imgs.svg')</div>
+                                                <div class="header-profile__orders-table-info-list-text">
+                                                    <div class="header-profile__orders-table-info-list-text-title">Кустовая роза <br> белая</div>
+                                                    <div class="header-profile__orders-table-info-list-text-price">
+                                                        <div class="header-profile__orders-table-info-list-text-price-sum">2990₽</div>
+                                                        <div class="header-profile__orders-table-info-list-text-price-icon">@@include('iconsprite/orders/message.svg')</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-list-item">
+                                                <div class="header-profile__orders-table-info-list-img">@@include('iconsprite/orders/imgs.svg')</div>
+                                                <div class="header-profile__orders-table-info-list-text">
+                                                    <div class="header-profile__orders-table-info-list-text-title">Кустовая роза <br> белая</div>
+                                                    <div class="header-profile__orders-table-info-list-text-price">
+                                                        <div class="header-profile__orders-table-info-list-text-price-sum">2990₽</div>
+                                                        <div class="header-profile__orders-table-info-list-text-price-icon">@@include('iconsprite/orders/message.svg')</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-list-item">
+                                                <div class="header-profile__orders-table-info-list-img">@@include('iconsprite/orders/imgs.svg')</div>
+                                                <div class="header-profile__orders-table-info-list-text">
+                                                    <div class="header-profile__orders-table-info-list-text-title">Кустовая роза <br> белая</div>
+                                                    <div class="header-profile__orders-table-info-list-text-price">
+                                                        <div class="header-profile__orders-table-info-list-text-price-sum">2990₽</div>
+                                                        <div class="header-profile__orders-table-info-list-text-price-icon">@@include('iconsprite/orders/message.svg')</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-profile__orders-table-info-text">
+                                <p>в процессе исполнения</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="header-profile__orders-table">
+                <div class="header-profile__orders-table-title">Предыдущие заказы</div>
+                <div class="header-profile__orders-table-date">
+                    <div class="header-profile__orders-table-date-day">Дата</div>
+                    <div class="header-profile__orders-table-date-number">№ заказа</div>
+                </div>
+                <ul class="header-profile__orders-table-list">
+                    <li class="header-profile__orders-table-item">
+                        <div class="header-profile__orders-table-item-number">
+                            <div class="header-profile__orders-table-item-number-date">23.08.22</div>
+                            <div class="header-profile__orders-table-item-number-id">№ 144 - 234 -4568</div>
+                        </div>
+                        <div class="header-profile__orders-table-info">
+                            <button class="header-profile__orders-table-info-btn" type="button" data-bs-toggle="modal" data-bs-target="#profileOrdersModel-1"><p>Подробнее</p></button>
+                            <div class="modal fade" id="profileOrdersModel-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content header-profile__orders-table-info-model">
+                                        <button type="button" class="btn-close header-profile__orders-table-info-close" data-bs-dismiss="modal" aria-label="Close">
+                                            @@include('iconsprite/close-model.svg')
+                                        </button>
+                                        <div class="header-profile__orders-table-info-title">№ 144 - 234 -4568 </div>
+                                        <ul class="header-profile__orders-table-info-table">
+                                            <li class="header-profile__orders-table-info-table-item">
+                                                <div class="header-profile__orders-table-info-table-title">Получатель:</div>
+                                                <div class="header-profile__orders-table-info-table-text">Алексей Алексеев</div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-table-item">
+                                                <div class="header-profile__orders-table-info-table-title">Время доставки:</div>
+                                                <div class="header-profile__orders-table-info-table-text">18:20-19:00</div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-table-item">
+                                                <div class="header-profile__orders-table-info-table-title">Адрес доставки:</div>
+                                                <div class="header-profile__orders-table-info-table-text">г. Москва, ул Круглова
+                                                    дом 56, кв 20</div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-table-item">
+                                                <div class="header-profile__orders-table-info-table-title">Дата доставки:</div>
+                                                <div class="header-profile__orders-table-info-table-text">01.11.2021</div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-table-item">
+                                                <div class="header-profile__orders-table-info-table-title">Номер телефона получателя:</div>
+                                                <div class="header-profile__orders-table-info-table-text">+7 (999) 456-67-80</div>
+                                            </li>
+                                        </ul>
+                                        <div class="header-profile__orders-table-info-input">
+                                            <input type="text" placeholder="Текст" value="С днем рождения!">
+                                        </div>
+                                        <ul class="header-profile__orders-table-info-list">
+                                            <li class="header-profile__orders-table-info-list-item">
+                                                <div class="header-profile__orders-table-info-list-img">@@include('iconsprite/orders/imgs.svg')</div>
+                                                <div class="header-profile__orders-table-info-list-text">
+                                                    <div class="header-profile__orders-table-info-list-text-title">Кустовая роза <br> белая</div>
+                                                    <div class="header-profile__orders-table-info-list-text-price">
+                                                        <div class="header-profile__orders-table-info-list-text-price-sum">2990₽</div>
+                                                        <div class="header-profile__orders-table-info-list-text-price-icon">@@include('iconsprite/orders/message.svg')</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-list-item">
+                                                <div class="header-profile__orders-table-info-list-img">@@include('iconsprite/orders/imgs.svg')</div>
+                                                <div class="header-profile__orders-table-info-list-text">
+                                                    <div class="header-profile__orders-table-info-list-text-title">Кустовая роза <br> белая</div>
+                                                    <div class="header-profile__orders-table-info-list-text-price">
+                                                        <div class="header-profile__orders-table-info-list-text-price-sum">2990₽</div>
+                                                        <div class="header-profile__orders-table-info-list-text-price-icon">@@include('iconsprite/orders/message.svg')</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-list-item">
+                                                <div class="header-profile__orders-table-info-list-img">@@include('iconsprite/orders/imgs.svg')</div>
+                                                <div class="header-profile__orders-table-info-list-text">
+                                                    <div class="header-profile__orders-table-info-list-text-title">Кустовая роза <br> белая</div>
+                                                    <div class="header-profile__orders-table-info-list-text-price">
+                                                        <div class="header-profile__orders-table-info-list-text-price-sum">2990₽</div>
+                                                        <div class="header-profile__orders-table-info-list-text-price-icon">@@include('iconsprite/orders/message.svg')</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-list-item">
+                                                <div class="header-profile__orders-table-info-list-img">@@include('iconsprite/orders/imgs.svg')</div>
+                                                <div class="header-profile__orders-table-info-list-text">
+                                                    <div class="header-profile__orders-table-info-list-text-title">Кустовая роза <br> белая</div>
+                                                    <div class="header-profile__orders-table-info-list-text-price">
+                                                        <div class="header-profile__orders-table-info-list-text-price-sum">2990₽</div>
+                                                        <div class="header-profile__orders-table-info-list-text-price-icon">@@include('iconsprite/orders/message.svg')</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-profile__orders-table-info-text">
+                                <p>в процессе исполнения</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header-profile__orders-table-item">
+                        <div class="header-profile__orders-table-item-number">
+                            <div class="header-profile__orders-table-item-number-date">23.08.22</div>
+                            <div class="header-profile__orders-table-item-number-id">№ 144 - 234 -4568</div>
+                        </div>
+                        <div class="header-profile__orders-table-info">
+                            <button class="header-profile__orders-table-info-btn" type="button" data-bs-toggle="modal" data-bs-target="#profileOrdersModel-1"><p>Подробнее</p></button>
+                            <div class="modal fade" id="profileOrdersModel-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content header-profile__orders-table-info-model">
+                                        <button type="button" class="btn-close header-profile__orders-table-info-close" data-bs-dismiss="modal" aria-label="Close">
+                                            @@include('iconsprite/close-model.svg')
+                                        </button>
+                                        <div class="header-profile__orders-table-info-title">№ 144 - 234 -4568 </div>
+                                        <ul class="header-profile__orders-table-info-table">
+                                            <li class="header-profile__orders-table-info-table-item">
+                                                <div class="header-profile__orders-table-info-table-title">Получатель:</div>
+                                                <div class="header-profile__orders-table-info-table-text">Алексей Алексеев</div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-table-item">
+                                                <div class="header-profile__orders-table-info-table-title">Время доставки:</div>
+                                                <div class="header-profile__orders-table-info-table-text">18:20-19:00</div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-table-item">
+                                                <div class="header-profile__orders-table-info-table-title">Адрес доставки:</div>
+                                                <div class="header-profile__orders-table-info-table-text">г. Москва, ул Круглова
+                                                    дом 56, кв 20</div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-table-item">
+                                                <div class="header-profile__orders-table-info-table-title">Дата доставки:</div>
+                                                <div class="header-profile__orders-table-info-table-text">01.11.2021</div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-table-item">
+                                                <div class="header-profile__orders-table-info-table-title">Номер телефона получателя:</div>
+                                                <div class="header-profile__orders-table-info-table-text">+7 (999) 456-67-80</div>
+                                            </li>
+                                        </ul>
+                                        <div class="header-profile__orders-table-info-input">
+                                            <input type="text" placeholder="Текст" value="С днем рождения!">
+                                        </div>
+                                        <ul class="header-profile__orders-table-info-list">
+                                            <li class="header-profile__orders-table-info-list-item">
+                                                <div class="header-profile__orders-table-info-list-img">@@include('iconsprite/orders/imgs.svg')</div>
+                                                <div class="header-profile__orders-table-info-list-text">
+                                                    <div class="header-profile__orders-table-info-list-text-title">Кустовая роза <br> белая</div>
+                                                    <div class="header-profile__orders-table-info-list-text-price">
+                                                        <div class="header-profile__orders-table-info-list-text-price-sum">2990₽</div>
+                                                        <div class="header-profile__orders-table-info-list-text-price-icon">@@include('iconsprite/orders/message.svg')</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-list-item">
+                                                <div class="header-profile__orders-table-info-list-img">@@include('iconsprite/orders/imgs.svg')</div>
+                                                <div class="header-profile__orders-table-info-list-text">
+                                                    <div class="header-profile__orders-table-info-list-text-title">Кустовая роза <br> белая</div>
+                                                    <div class="header-profile__orders-table-info-list-text-price">
+                                                        <div class="header-profile__orders-table-info-list-text-price-sum">2990₽</div>
+                                                        <div class="header-profile__orders-table-info-list-text-price-icon">@@include('iconsprite/orders/message.svg')</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-list-item">
+                                                <div class="header-profile__orders-table-info-list-img">@@include('iconsprite/orders/imgs.svg')</div>
+                                                <div class="header-profile__orders-table-info-list-text">
+                                                    <div class="header-profile__orders-table-info-list-text-title">Кустовая роза <br> белая</div>
+                                                    <div class="header-profile__orders-table-info-list-text-price">
+                                                        <div class="header-profile__orders-table-info-list-text-price-sum">2990₽</div>
+                                                        <div class="header-profile__orders-table-info-list-text-price-icon">@@include('iconsprite/orders/message.svg')</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="header-profile__orders-table-info-list-item">
+                                                <div class="header-profile__orders-table-info-list-img">@@include('iconsprite/orders/imgs.svg')</div>
+                                                <div class="header-profile__orders-table-info-list-text">
+                                                    <div class="header-profile__orders-table-info-list-text-title">Кустовая роза <br> белая</div>
+                                                    <div class="header-profile__orders-table-info-list-text-price">
+                                                        <div class="header-profile__orders-table-info-list-text-price-sum">2990₽</div>
+                                                        <div class="header-profile__orders-table-info-list-text-price-icon">@@include('iconsprite/orders/message.svg')</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-profile__orders-table-info-text">
+                                <p>в процессе исполнения</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    @@include('components/_footer.html')
+
+</div>
+@@include('components/_script.html')
