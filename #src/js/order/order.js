@@ -266,3 +266,22 @@ $('.ord-pay__block-data-card-pay').on('click', function() {
     $(this).toggleClass('ord-pay__block-data-card-pay-active');
     $('.ord-pay__block-data-card-form').toggleClass('display-n')
 });
+
+
+
+$('.order-model__block-link').on('click', function() {
+    $('.order-model__block-description').removeClass('display-n')
+});
+$('.order-model__block-description-back').on('click', function() {
+    $('.order-model__block-description').addClass('display-n')
+});
+
+
+
+
+$('.ord-pay__block-data-where-yes').on('click', function() {
+    $('.ord-pay__block-data-btn').attr('data-bs-target', '#modelOrderSuburb')
+});
+$('.ord-pay__block-data-where-no').on('click', function() {
+    $('.ord-pay__block-data-btn').attr('data-bs-target', '#modelOrderCity')
+});

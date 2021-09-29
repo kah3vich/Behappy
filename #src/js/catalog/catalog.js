@@ -257,3 +257,66 @@ $('.model-ballons__block-info-calendar-btn').on('click', function() {
     $('.model-ballons__block-info-calendar-item').toggleClass('display-n')
     $('.model-ballons__block-info-calendar-btn').toggleClass('model-ballons__block-info-calendar-btn-active')
 });
+
+$('.model-ballons__block-wrapper-banner').on('click', function() {
+    $('.model-photo-1').removeClass('display-n')
+});
+$('.model-photo-1__block-close').on('click', function() {
+    $('.model-photo-1').addClass('display-n')
+});
+
+$('.model-catalog__card-block-banner').on('click', function() {
+    $('.model-photo-2').removeClass('display-n')
+});
+$('.model-photo-2__block-close').on('click', function() {
+    $('.model-photo-2').addClass('display-n')
+});
+
+$('.model-toy__block-wrapper-banner').on('click', function() {
+    $('.model-photo-3').removeClass('display-n')
+});
+$('.model-photo-3__block-close').on('click', function() {
+    $('.model-photo-3').addClass('display-n')
+});
+
+
+
+
+var modelBallonsPhotoSlider_1 = new Swiper(".modelBallonsPhotoSlider-1", {
+    slidesPerView: 1, 
+    spaceBetween: 30,
+    navigation: {
+        nextEl: ".model-photo-1__block-slider .swiper-controls .swiper-button-next",
+        prevEl: ".model-photo-1__block-slider .swiper-controls .swiper-button-prev",
+    },
+});
+
+var modelBallonsPhotoSlider_2 = new Swiper(".modelBallonsPhotoSlider-2", {
+    slidesPerView: 1, 
+    spaceBetween: 30,
+    navigation: {
+        nextEl: ".model-photo-2__block-slider .swiper-controls .swiper-button-next",
+        prevEl: ".model-photo-2__block-slider .swiper-controls .swiper-button-prev",
+    },
+});
+
+var modelBallonsPhotoSlider_3 = new Swiper(".modelBallonsPhotoSlider-3", {
+    slidesPerView: 1, 
+    spaceBetween: 30,
+    navigation: {
+        nextEl: ".model-photo-3__block-slider .swiper-controls .swiper-button-next",
+        prevEl: ".model-photo-3__block-slider .swiper-controls .swiper-button-prev",
+    },
+});
+
+
+
+$('.header__block-menu-contact-car').on('click', function() {
+    $('.model-notice').removeClass('display-n')
+    setTimeout(function() {
+        $('.model-notice').addClass('display-n')
+    }, 7000)
+});
+$('.model-notice__block-close').on('click', function() {
+    $('.model-notice').addClass('display-n')
+});

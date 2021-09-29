@@ -2741,17 +2741,84 @@ input[type=radio]:checked ~ .ord-pay__block-data-time-check {
 //! Модальное окно заказа
 
 .order-model {
-    width: 540px;
-    height: 807px;
-    background: #001C68;
-    box-shadow: 0px 10px 17px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+    width: 540px !important;
+    height: 100% !important;
     &__block {
+        width: 540px;
+        height: 807px;
+        background: #001C68;
+        box-shadow: 0px 10px 17px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         padding: 46px 110px;
+        position: relative;
+        &-description {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-45.9%, -50%);
+            outline: 0;
+            z-index: 10000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            width: 540px;
+            height: 570px;
+            background: #001c68;
+            box-shadow: 0 10px 22px #0020ff;
+            border-radius: 15px;
+            cursor: pointer;
+            padding: 55px 0 0 0;
+            &-title {
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 30px;
+                line-height: 44px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+            &-text {
+                margin: 49px 0 0 0;
+                width: 420px;
+                height: 304px;
+                font-family: FuturaBookC;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 125%;
+                text-align: center;
+                letter-spacing: 0.5px;
+                color: #FFFFFF;
+            }
+            &-back {
+                margin: 32px 0 0 0;
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 122%;
+                text-align: center;
+                letter-spacing: 0.5px;
+                text-decoration-line: underline;
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+        }
+        &-close {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            opacity: 1;
+            border-radius: 50%;
+            width: 66px;
+            height: 66px;
+            background: #001F75;
+        }
         &-title {
             font-family: Circe;
             font-style: normal;
@@ -2885,16 +2952,119 @@ input[type=radio]:checked ~ .ord-pay__block-data-time-check {
         }
         &-link {
             margin: 30px 0 0 0;
-            & a {
+            cursor: pointer;
+            font-family: Circe;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 122%;
+            text-align: center;
+            letter-spacing: 0.5px;
+            text-decoration-line: underline;
+            color: #FFFFFF;
+        }
+    }
+    &__blocks {
+        width: 540px;
+        height: 628px;
+        background: #001C68;
+        box-shadow: 0px 10px 17px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: relative;
+        padding: 46px 0 0 0;
+        &-close {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 66px;
+            height: 66px;
+            background: #001F75;
+            opacity: 1;
+            border-radius: 50%;
+        }
+        &-title {
+            font-family: Circe;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 44px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        &-text {
+            width: 358px;
+            margin: 17px 0 0 0;
+            font-family: FuturaBookC;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 125%;
+            text-align: center;
+            letter-spacing: 0.5px;
+            color: #FFFFFF;
+        }
+        &-banner {
+            margin: 62px 0 0 0;
+            width: 297px;
+            height: 249px;
+            background: #022589;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & p {
                 font-family: Circe;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 14px;
-                line-height: 122%;
-                text-align: center;
-                letter-spacing: 0.5px;
-                text-decoration-line: underline;
+                font-size: 20px;
+                line-height: 29px;
                 color: #FFFFFF;
+            }
+        }
+        &-btn {
+            margin: 62px 0 0 0;
+            width: 319px;
+            height: 50px;
+            background: conic-gradient(from 180deg at 50% 50%, #DCDCDC -35.51deg, #CCCCCC 10.17deg, #B6B6B6 44.5deg, #B8B8B8 123.75deg, #D1D1D1 171.3deg, #AAAAAA 188.73deg, #C4C4C4 224.01deg, #DCDCDC 324.49deg, #CCCCCC 370.17deg);
+            box-shadow: 0px 0px 15px #C5C5C5;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            & a {
+                font-family: Circe;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 22px;
+                text-align: center;
+                color: #141651;
+                text-shadow: 0px 0px 10px rgba(46, 46, 46, 0.5);
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 4px;
+                left: 4px;
+                width: 306.49px;
+                height: 41px;
+                border: 0.5px solid #C6C6C6;
+                border-radius: 10px;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                top: 8px;
+                left: 8px;
+                width: 296.48px;
+                height: 33px;
+                border: 0.5px solid #C6C6C6;
+                border-radius: 10px;
             }
         }
     }

@@ -379,13 +379,16 @@
                         </div>
                     </div>
                 </div>
-                <button type="button" class="ord-pay__block-data-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="ord-pay__block-data-btn" data-bs-toggle="modal" data-bs-target="#modelOrderCity">
                     Заказать
                 </button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="modelOrderSuburb" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content order-model">
                             <div class="order-model__block">
+                                <button type="button" class="btn-close order-model__block-close" data-bs-dismiss="modal" aria-label="Close">
+                                    @@include('iconsprite/close-model.svg')
+                                </button>
                                 <div class="order-model__block-title">Спасибо за заказ!</div>
                                 <div class="order-model__block-text">Мы благодарны что вы выбрали нашу платформу. Просим оплатить доставку за город</div>
                                 <div class="order-model__block-number">№ 144 - 234 -4567</div>
@@ -393,7 +396,46 @@
                                 <input type="text" class="order-model__block-km" placeholder="приблизительное кол-во километров">
                                 <div class="order-model__block-map"><p>Карта яндекс</p></div>
                                 <div class="order-model__block-btn"><a href="#">Оплатить</a></div>
-                                <div class="order-model__block-link"><a href="#">Как осуществить оплату при заказе за город ?</a></div>
+                                <div class="order-model__block-link">Как осуществить оплату при заказе за город ?</div>
+                                <div class="order-model__block-description display-n">
+                                    <div class="order-model__block-description-title">Уважаемые покупатели </div>
+                                    <div class="order-model__block-description-text">
+                                        ДОСТАВКА ПО ГОРОДУ  БЕСПЛАТНАЯ <br><br>
+
+                                        А ТАК ЖЕ Мы с радостью поможем осуществить доставку 
+                                        за пределы любого города , стоимость услуги 30₽/1км <br><br>
+
+                                        Если вы не знаете точного  расстояния свяжитесь  
+                                        с менеджером 88005057233 <br><br>
+
+                                        Введите верный киллометраж - система автоматически посчитает стоимость доставки и направит Вас на 
+                                        страницу оплаты. <br><br>
+
+                                        Так же вы можете оплатить повторную доставку в этом 
+                                        разделе, подробнее 88005057233
+
+
+                                    </div>
+                                    <div class="order-model__block-description-back">Вернуться назад</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modelOrderCity" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content order-model">
+                            <div class="order-model__blocks">
+                                <button type="button" class="btn-close order-model__blocks-close" data-bs-dismiss="modal" aria-label="Close">
+                                    @@include('iconsprite/close-model.svg')
+                                </button>
+                                <div class="order-model__blocks-title">Спасибо за заказ!</div>
+                                <div class="order-model__blocks-text">Мы благодарим вас за то, что выбрали нас в мире, 
+                                    наполненном множеством вариантов и возможностей</div>
+                                <div class="order-model__blocks-banner"><p>
+                                    Место для иллюстрации
+                                </p></div>
+                                <button class="order-model__blocks-btn"><a href="#">Проверить статус заказа</a></button>
                             </div>
                         </div>
                     </div>

@@ -32,6 +32,7 @@
 
 @@include('./event/event.js')
 
+@@include('./orders/orders.js')
 
 @@include('./calendar/calendar.js')
 

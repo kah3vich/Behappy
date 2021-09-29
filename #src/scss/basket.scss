@@ -292,3 +292,65 @@
 .basket-open {
     cursor: pointer;
 }
+
+.baskets {
+    position: fixed;
+    width: 555px;
+    height: 100vh;
+    /* right: -50%; */
+    right: -100vw;
+    background: #001C68;
+    opacity: 1;
+    box-shadow: 0px 10px 22px #0020FF;
+    backdrop-filter: blur(80px);
+    z-index: 25;
+    &__block {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: relative;
+        &-btn {
+            position: absolute;
+            top: 39px;
+            right: 63px;
+            cursor: pointer;
+        }
+        &-title {
+            margin: 41px 0 0 59px;
+            font-family: Circe;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 28px;
+            color: #FFFFFF;
+        }
+        &-wrapper {
+            margin: 130px 0 0 59px;
+            width: 293px;
+            height: 232px;
+            border: 1px solid #221EFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 33px;
+            & p {
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 28px;
+                color: #FFFFFF;
+            }
+        }
+        &-add {
+            margin: 130px 0 0 59px;
+            font-family: Circe;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 28px;
+            color: #FFFFFF;
+        }
+    }
+}

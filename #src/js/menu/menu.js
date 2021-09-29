@@ -45,6 +45,27 @@ $(".basket__block-title-btn").on("click", function () {
 //! --------------------------------------------------------------------------------------------
 
 
+//! --------------------------------------------------------------------------------------------
+
+//! Пустая Корзина  
+
+let b2 = new TimelineMax({ paused: true });
+
+b2.to(".baskets", 0.4, {
+  right: "0wv",
+});
+// t1.staggerFrom(".link", 0.4, { opacity: 0 }, 0.1, "-=0.2");
+b2.reverse();
+$(".baskets-open").on("click", function () {
+    b2.reversed(!b2.reversed());
+});
+$(".baskets__block-btn").on("click", function () {
+    b2.reversed(!b2.reversed());
+});
+
+//! --------------------------------------------------------------------------------------------
+
+
 //! Выпадающий список выбора города
 
 $('select#header').each(function(){

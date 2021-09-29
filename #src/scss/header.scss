@@ -34,7 +34,7 @@
                 font-family: Felix Titling;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 12px;
+                font-size: 10px;
                 line-height: 99.68%;
                 letter-spacing: 0.26em;
                 text-transform: uppercase;
@@ -471,6 +471,7 @@
                     background: conic-gradient(from 180deg at 50% 50%, #D94400 -35.51deg, #FF9565 14.15deg, #DC4805 44.5deg, #F57236 123.75deg, #FFB897 159.7deg, #F57236 188.73deg, #FFCCB5 224.01deg, #D94400 324.49deg, #FF9565 374.15deg);
                     box-shadow: 0px 0px 15px #E85C1D;
                     border-radius: 30px;
+                    cursor: pointer;
                     &-1 {
                         display: flex;
                         align-items: center;

@@ -28,3 +28,5 @@
 - ## Donat Profile: [click me](https://kah3vich.github.io/Behappy/dist/donat.html)
 - ## Chosen Profile: [click me](https://kah3vich.github.io/Behappy/dist/chosen.html)
 - ## Balls Profile: [click me](https://kah3vich.github.io/Behappy/dist/balls.html)
+- ## Notification Profile: [click me](https://kah3vich.github.io/Behappy/dist/notification.html)
+- ## Orders Profile: [click me](https://kah3vich.github.io/Behappy/dist/orders.html)

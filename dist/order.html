@@ -259,6 +259,20 @@
                     </div>
                 </div>
             </div>
+            <div class="baskets">
+                <div class="baskets__block">
+                    <div class="baskets__block-btn"><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 17.5L17.5 1" stroke="#AFB1BD" stroke-width="2"/>
+<path d="M17.5 17.5L0.999999 1" stroke="#AFB1BD" stroke-width="2"/>
+</svg>
+</div>
+                    <div class="baskets__block-title">Ваша корзина</div>
+                    <div class="baskets__block-wrapper">
+                        <p>Место для иллюстрации</p>
+                    </div>
+                    <div class="baskets__block-add">В корзине пока нет товаров</div>
+                </div>
+            </div>
             <div class="menu">
                 <div class="containers">
                     <div class="menu__block">
@@ -622,7 +636,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="header__block-list-1-block-o">
+                                <div class="header__block-list-1-block-o baskets-open">
                                     <div class="header__block-list-1-block-o-1">
                                         <div class="header__block-list-1-block-o-2">
                                             У
@@ -1524,13 +1538,20 @@
                         </div>
                     </div>
                 </div>
-                <button type="button" class="ord-pay__block-data-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="ord-pay__block-data-btn" data-bs-toggle="modal" data-bs-target="#modelOrderCity">
                     Заказать
                 </button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="modelOrderSuburb" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content order-model">
                             <div class="order-model__block">
+                                <button type="button" class="btn-close order-model__block-close" data-bs-dismiss="modal" aria-label="Close">
+                                    <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.3281 22.3296L40.2735 40.275" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.1313 40.4727L40.4712 22.1328" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                                </button>
                                 <div class="order-model__block-title">Спасибо за заказ!</div>
                                 <div class="order-model__block-text">Мы благодарны что вы выбрали нашу платформу. Просим оплатить доставку за город</div>
                                 <div class="order-model__block-number">№ 144 - 234 -4567</div>
@@ -1538,7 +1559,50 @@
                                 <input type="text" class="order-model__block-km" placeholder="приблизительное кол-во километров">
                                 <div class="order-model__block-map"><p>Карта яндекс</p></div>
                                 <div class="order-model__block-btn"><a href="#">Оплатить</a></div>
-                                <div class="order-model__block-link"><a href="#">Как осуществить оплату при заказе за город ?</a></div>
+                                <div class="order-model__block-link">Как осуществить оплату при заказе за город ?</div>
+                                <div class="order-model__block-description display-n">
+                                    <div class="order-model__block-description-title">Уважаемые покупатели </div>
+                                    <div class="order-model__block-description-text">
+                                        ДОСТАВКА ПО ГОРОДУ  БЕСПЛАТНАЯ <br><br>
+
+                                        А ТАК ЖЕ Мы с радостью поможем осуществить доставку 
+                                        за пределы любого города , стоимость услуги 30₽/1км <br><br>
+
+                                        Если вы не знаете точного  расстояния свяжитесь  
+                                        с менеджером 88005057233 <br><br>
+
+                                        Введите верный киллометраж - система автоматически посчитает стоимость доставки и направит Вас на 
+                                        страницу оплаты. <br><br>
+
+                                        Так же вы можете оплатить повторную доставку в этом 
+                                        разделе, подробнее 88005057233
+
+
+                                    </div>
+                                    <div class="order-model__block-description-back">Вернуться назад</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modelOrderCity" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content order-model">
+                            <div class="order-model__blocks">
+                                <button type="button" class="btn-close order-model__blocks-close" data-bs-dismiss="modal" aria-label="Close">
+                                    <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.3281 22.3296L40.2735 40.275" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.1313 40.4727L40.4712 22.1328" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                                </button>
+                                <div class="order-model__blocks-title">Спасибо за заказ!</div>
+                                <div class="order-model__blocks-text">Мы благодарим вас за то, что выбрали нас в мире, 
+                                    наполненном множеством вариантов и возможностей</div>
+                                <div class="order-model__blocks-banner"><p>
+                                    Место для иллюстрации
+                                </p></div>
+                                <button class="order-model__blocks-btn"><a href="#">Проверить статус заказа</a></button>
                             </div>
                         </div>
                     </div>

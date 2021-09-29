@@ -45,6 +45,27 @@ $(".basket__block-title-btn").on("click", function () {
 //! --------------------------------------------------------------------------------------------
 
 
+//! --------------------------------------------------------------------------------------------
+
+//! Пустая Корзина  
+
+let b2 = new TimelineMax({ paused: true });
+
+b2.to(".baskets", 0.4, {
+  right: "0wv",
+});
+// t1.staggerFrom(".link", 0.4, { opacity: 0 }, 0.1, "-=0.2");
+b2.reverse();
+$(".baskets-open").on("click", function () {
+    b2.reversed(!b2.reversed());
+});
+$(".baskets__block-btn").on("click", function () {
+    b2.reversed(!b2.reversed());
+});
+
+//! --------------------------------------------------------------------------------------------
+
+
 //! Выпадающий список выбора города
 
 $('select#header').each(function(){
@@ -663,6 +684,25 @@ $('.ord-pay__block-data-card-pay').on('click', function() {
 
 
 
+$('.order-model__block-link').on('click', function() {
+    $('.order-model__block-description').removeClass('display-n')
+});
+$('.order-model__block-description-back').on('click', function() {
+    $('.order-model__block-description').addClass('display-n')
+});
+
+
+
+
+$('.ord-pay__block-data-where-yes').on('click', function() {
+    $('.ord-pay__block-data-btn').attr('data-bs-target', '#modelOrderSuburb')
+});
+$('.ord-pay__block-data-where-no').on('click', function() {
+    $('.ord-pay__block-data-btn').attr('data-bs-target', '#modelOrderCity')
+});
+
+
+
 
 //! Выпадающий список - сортировка 
 
@@ -988,6 +1028,69 @@ var modelBallonsWrapperSlider = new Swiper(".modelBallonsWrapperSlider", {
 $('.model-ballons__block-info-calendar-btn').on('click', function() {
     $('.model-ballons__block-info-calendar-item').toggleClass('display-n')
     $('.model-ballons__block-info-calendar-btn').toggleClass('model-ballons__block-info-calendar-btn-active')
+});
+
+$('.model-ballons__block-wrapper-banner').on('click', function() {
+    $('.model-photo-1').removeClass('display-n')
+});
+$('.model-photo-1__block-close').on('click', function() {
+    $('.model-photo-1').addClass('display-n')
+});
+
+$('.model-catalog__card-block-banner').on('click', function() {
+    $('.model-photo-2').removeClass('display-n')
+});
+$('.model-photo-2__block-close').on('click', function() {
+    $('.model-photo-2').addClass('display-n')
+});
+
+$('.model-toy__block-wrapper-banner').on('click', function() {
+    $('.model-photo-3').removeClass('display-n')
+});
+$('.model-photo-3__block-close').on('click', function() {
+    $('.model-photo-3').addClass('display-n')
+});
+
+
+
+
+var modelBallonsPhotoSlider_1 = new Swiper(".modelBallonsPhotoSlider-1", {
+    slidesPerView: 1, 
+    spaceBetween: 30,
+    navigation: {
+        nextEl: ".model-photo-1__block-slider .swiper-controls .swiper-button-next",
+        prevEl: ".model-photo-1__block-slider .swiper-controls .swiper-button-prev",
+    },
+});
+
+var modelBallonsPhotoSlider_2 = new Swiper(".modelBallonsPhotoSlider-2", {
+    slidesPerView: 1, 
+    spaceBetween: 30,
+    navigation: {
+        nextEl: ".model-photo-2__block-slider .swiper-controls .swiper-button-next",
+        prevEl: ".model-photo-2__block-slider .swiper-controls .swiper-button-prev",
+    },
+});
+
+var modelBallonsPhotoSlider_3 = new Swiper(".modelBallonsPhotoSlider-3", {
+    slidesPerView: 1, 
+    spaceBetween: 30,
+    navigation: {
+        nextEl: ".model-photo-3__block-slider .swiper-controls .swiper-button-next",
+        prevEl: ".model-photo-3__block-slider .swiper-controls .swiper-button-prev",
+    },
+});
+
+
+
+$('.header__block-menu-contact-car').on('click', function() {
+    $('.model-notice').removeClass('display-n')
+    setTimeout(function() {
+        $('.model-notice').addClass('display-n')
+    }, 7000)
+});
+$('.model-notice__block-close').on('click', function() {
+    $('.model-notice').addClass('display-n')
 });
 
 //! Открытие фильтра 
@@ -1804,56 +1907,41 @@ $('#quizContentBlockSliderAddClose-12').on('click', function() {
 
 
 
-// Поворот карты по двойному клику
+
 $('.sub-content__block-card-1').on('click', function() {
-	if($(this).find('.sub-content__block-card-1-content').hasClass('sub-content__block-card-1-flip')) { 
-		$(this).find('.sub-content__block-card-1-content').removeClass('sub-content__block-card-1-flip')
-
-	} else {
 		$(this).find('.sub-content__block-card-1-content').addClass('sub-content__block-card-1-flip')
-	}
+		$('.sub-content__block-card-2').find('.sub-content__block-card-2-content').removeClass('sub-content__block-card-2-flip')
+		$('.sub-content__block-card-3').find('.sub-content__block-card-3-content').removeClass('sub-content__block-card-3-flip')
+		$('.sub-content__block-card-4').find('.sub-content__block-card-4-content').removeClass('sub-content__block-card-4-flip')
+		$('.sub-content__block-card-5').find('.sub-content__block-card-5-content').removeClass('sub-content__block-card-5-flip')
 });
+$(document).mouseup(function (e) {
+    var container = $('.sub-content__block-card-wrapper');
+    if (container.has(e.target).length === 0){
+        $('.sub-content__block-card-1').find('.sub-content__block-card-1-content').removeClass('sub-content__block-card-1-flip')
+    }
+});
+
+
 $('.sub-content__block-card-2').on('click', function() {
-	if($(this).find('.sub-content__block-card-2-content').hasClass('sub-content__block-card-2-flip')) { 
-		$(this).find('.sub-content__block-card-2-content').removeClass('sub-content__block-card-2-flip')
-
-	} else {
-		$(this).find('.sub-content__block-card-2-content').addClass('sub-content__block-card-2-flip')
-	}
+	$(this).find('.sub-content__block-card-2-content').addClass('sub-content__block-card-2-flip')
+	$('.sub-content__block-card-1').find('.sub-content__block-card-1-content').removeClass('sub-content__block-card-1-flip')
+	$('.sub-content__block-card-3').find('.sub-content__block-card-3-content').removeClass('sub-content__block-card-3-flip')
+	$('.sub-content__block-card-4').find('.sub-content__block-card-4-content').removeClass('sub-content__block-card-4-flip')
+	$('.sub-content__block-card-5').find('.sub-content__block-card-5-content').removeClass('sub-content__block-card-5-flip')
 });
-$('.sub-content__block-card-3').on('click', function() {
-	if($(this).find('.sub-content__block-card-3-content').hasClass('sub-content__block-card-3-flip')) { 
-		$(this).find('.sub-content__block-card-3-content').removeClass('sub-content__block-card-3-flip')
-
-	} else {
-		$(this).find('.sub-content__block-card-3-content').addClass('sub-content__block-card-3-flip')
-	}
-});
-$('.sub-content__block-card-4').on('click', function() {
-	if($(this).find('.sub-content__block-card-4-content').hasClass('sub-content__block-card-4-flip')) { 
-		$(this).find('.sub-content__block-card-4-content').removeClass('sub-content__block-card-4-flip')
-
-	} else {
-		$(this).find('.sub-content__block-card-4-content').addClass('sub-content__block-card-4-flip')
-	}
-});
-$('.sub-content__block-card-5').on('click', function() {
-	if($(this).find('.sub-content__block-card-5-content').hasClass('sub-content__block-card-5-flip')) { 
-		$(this).find('.sub-content__block-card-5-content').removeClass('sub-content__block-card-5-flip')
-
-	} else {
-		$(this).find('.sub-content__block-card-5-content').addClass('sub-content__block-card-5-flip')
+$(document).mouseup(function (e) {
+	var container = $('.sub-content__block-card-wrapper');
+	if (container.has(e.target).length === 0){
+		$('.sub-content__block-card-2').find('.sub-content__block-card-2-content').removeClass('sub-content__block-card-2-flip')
 	}
 });
 
 
-// Поворот карты по ховеру
-// $('.card-block').hover( function() {
-// 	$(this).find('.card').addClass('flip')
-// },
-// function() {
-// 	$(this).find('.card').removeClass('flip')
-// })
+
+
+
+
 
 $(function() {
 	
@@ -6496,6 +6584,14 @@ $('.header-profile__event-table-calendar-model-item-4').on('click', function() {
     $('.header-profile__event-table-calendar-model-type').css('color', 'white')
 })
 
+var modelOrdersSliders = new Swiper(".modelOrdersSliders", {
+    slidesPerView: 1, 
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".header-profile__orders-table-info-slider .swiper-sliders .swiper-button-next",
+        prevEl: ".header-profile__orders-table-info-slider .swiper-sliders .swiper-button-prev",
+    },
+});
 
 
 //! Календарь скидок 
