@@ -38,3 +38,22 @@ $('.march-content__block-text-filter-discard').on('click', function() {
 });
 
 //! -------------------------------------------------------------------------------
+
+
+//! Открытие дополнительного блока 
+
+
+$('.march-content__block-add').on('click', function() {
+    $(this).addClass('display-n')
+    $('.march-content__block-collection').removeClass('display-n')
+    $('.march-content__block-close').removeClass('display-n')
+});
+
+$('.march-content__block-close').on('click', function() {
+    $(this).addClass('display-n')
+    $('.march-content__block-add').removeClass('display-n')
+    $('.march-content__block-collection').addClass('display-n')
+});
+
+
+//! -------------------------------------------------------------------------------

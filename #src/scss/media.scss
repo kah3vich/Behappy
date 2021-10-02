@@ -26,6 +26,9 @@
 
 
 @media (max-width: 1440px) {
+    .header {
+        display: none;
+    }
     .menu__block-catalog {
         padding: 54px 0px 0 0;
     }

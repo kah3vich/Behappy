@@ -23,6 +23,8 @@
 
 @@include('./constructor/constructor.js')
 
+@@include('./search/search.js')
+
 
 @@include('./policy/policy.js')
 
