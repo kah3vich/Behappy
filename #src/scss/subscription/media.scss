@@ -176,7 +176,159 @@
     .sub-model-1__block-check-list-item {
         width: 320px;
     }
-
+    .sub-model-1__block-text-btns {
+        align-items: flex-start;
+    }
+    .sub-model-1__block-text-btns {
+        width: 100%;
+    }
+    .sub-model-1__block {
+        align-items: flex-start;
+        margin: 0 0 0 25px;
+    }
+    .sub-model-1__block-check {
+        margin: 50px 0 0 0;
+    }
+    .sub-model-1__block-check-message {
+        width: 320px;
+    }
+    .sub-model-1__block-check-comment textarea {
+        width: 320px;
+    }
+    .sub-model-1__block-check-btn {
+        width: 320px;
+    }
+    .sub-model-1__block-check-btn::before {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        width: 299.55px;
+        height: 33px;
+        border: .5px solid #c6c6c6;
+        border-radius: 10px;
+    }
+    .sub-model-1__block-check-btn::after {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 310.86px;
+        height: 41px;
+        border: .5px solid #c6c6c6;
+        border-radius: 10px;
+    }
+    .sub-model-1 {
+        height: 3960px;
+        width: 370px;
+    }
+    .sub-model-1__block-text-addres h3 {
+        position: absolute;
+        top: -50px;
+        left: 0;
+        font-family: Circe;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 122%;
+        letter-spacing: .5px;
+        color: #fff;
+        width: 200%;
+    }
+    .sub-model-1__block-check-call h3 {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        font-family: Circe;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 122%;
+        letter-spacing: .5px;
+        color: #fff;
+        width: 350px;
+    }
+    .sub-model-1__block-text-btns-pickup {
+        width: 320px;
+    }
+    .sub-model-1__block-text-btns-delivery {
+        width: 320px;
+    }
+    .sub-model-1__block-text-btns-active::before {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        width: 296px;
+        height: 76px;
+        border: .5px solid #c6c6c6;
+        border-radius: 10px;
+    }
+    .sub-model-1__block-text-btns-active::after {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 308px;
+        height: 86px;
+        border: .5px solid #c6c6c6;
+        border-radius: 10px;
+    }
+    .sub-model-1__block-text-input-name,
+    .sub-model-1__block-text-input-phone,
+    .sub-model-1__block-text-input-names,
+    .sub-model-1__block-text-input-phones,
+    .sub-model-1__block-text-input-city,
+    .sub-model-1__block-text-input-date,
+    .sub-model-1__block-text-time-item,
+    .sub-model-1__block-text-inputs-street,
+    .sub-model-1__block-text-inputs-home,
+    .sub-model-1__block-text-inputs-entrance,
+    .sub-model-1__block-text-inputs-floor,
+    .sub-model-1__block-text-inputs-apartment {
+        width: 320px;
+    }
+    .sub-model-1__block-text-time-active::before {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        border: .5px solid #c6c6c6;
+        border-radius: 10px;
+        width: 303px;
+        height: 34px;
+    }
+    .sub-model-1__block-text-time-active::after {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        border: .5px solid #c6c6c6;
+        border-radius: 10px;
+        width: 312px;
+        height: 42px;
+    }
+    .sub-model-1__block-check-list-active::before {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        width: 299.81px;
+        height: 33px;
+        border: .5px solid #c6c6c6;
+        border-radius: 10px;
+    }
+    .sub-model-1__block-check-list-active::after {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 309.13px;
+        height: 41px;
+        border: .5px solid #c6c6c6;
+        border-radius: 10px;
+    }
+    
 }
 
 

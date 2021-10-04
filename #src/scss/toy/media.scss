@@ -1,0 +1,275 @@
+@media (max-width: 1440px) {
+    .toy-content__block-collections-item {
+        padding: 21px 0 0 21px;
+        width: 100%;
+    }
+}
+@media (max-width: 1410px) {
+    .toy-content__block-collections {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .toy-content__block-collections-item {
+        align-items: center;
+        padding: 21px 0 0 0;
+    }
+    .toy-content__block-collections-title {
+        width: 213px;
+        margin: 23px auto 0 auto;
+        text-align: left;
+    }
+    .toy-content__block-collections-price {
+        justify-content: center;
+    }
+    .toy-content__block-collections-add {
+        justify-content: center;
+    }
+    .toy-content__block-collections-item:last-child {
+        display: none;
+    }
+}
+@media (max-width: 1120px) {
+    .toy-content {
+        & .containers {
+            padding: 0 90px;
+        }
+    }
+}
+@media (max-width: 940px) {
+    .toy-content__block-collections-item:last-child {
+        display: flex;
+    }
+    .toy-content__block-collections {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 680px) {
+    .toy-content {
+        & .containers {
+            padding: 0 30px;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .toy-content__block-collections-item {
+        width: 100%;
+        height: 222px;
+        padding: 13px 0 0 0;
+    }
+    .toy-content__block-collections-img {
+        width: 125px;
+        height: 107px;
+    }
+    .toy-content__block-collections-img::after {
+        width: 20px;
+        height: 20px;
+    }
+    .toy-content__block-collections-img::before {
+        content: url(../svg/toy/media-heart.svg);
+        position: absolute;
+        right: 17px;
+        bottom: 9px;
+        z-index: 10;
+    }
+    .toy-content__block-collections-title {
+        width: 125px;
+        font-size: 10px;
+    }
+    .toy-content__block-collections-price {
+        margin: 16px 0 0 0;
+
+    }
+    .toy-content__block-collections-price-sum {
+        width: 56px;
+        height: 18px;
+        background: #001F71;
+        border-radius: 9px;
+        margin: 0 0 0 6px;
+    }
+    .toy-content__block-collections-price-sum p {
+        font-size: 9px;
+    }
+    .toy-content__block-collections-price-reputation {
+        font-size: 8px;
+        &::after {
+            content: url(../svg/toy/media-star.svg);
+            left: -16px;
+        }
+    }
+    .toy-content__block-collections-price-balls {
+        font-size: 8px;
+        &::after {
+            content: url(../svg/toy/media-money.svg);
+            left: -16px;
+        }
+    }
+    .toy-content__block-collections-price-reputation {
+        margin: 0 0 0 26px;
+    }
+    .toy-content__block-collections-add-sum {
+        font-size: 8px;
+        margin: 0 0 0 8px;
+    }
+    .toy-content__block-collections-add-calendar {
+        margin: 0 0 0 4px;
+        width: 20px;
+        height: 20px;
+    }
+    .toy-content__block-collections-add-share {
+        margin: 0 0 0 4px;
+        width: 20px;
+        height: 20px;
+    }
+    .toy-content__block-collections-add-shop {
+        margin: 0;
+        width: 20px;
+        height: 20px;
+    }
+    .toy-content__block-collections-title {
+        margin: 13px auto 0 auto;
+    }
+}
+
+
+@media (max-width: 1440px) {
+    .toy-content__block-collection-item {
+        padding: 21px 0 0 21px;
+        width: 100%;
+    }
+}
+@media (max-width: 1410px) {
+    .toy-content__block-collection {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .toy-content__block-collection-item {
+        align-items: center;
+        padding: 21px 0 0 0;
+    }
+    .toy-content__block-collection-title {
+        width: 213px;
+        margin: 23px auto 0 auto;
+        text-align: left;
+    }
+    .toy-content__block-collection-price {
+        justify-content: center;
+    }
+    .toy-content__block-collection-add {
+        justify-content: center;
+    }
+    .toy-content__block-collection-item:last-child {
+        display: none;
+    }
+}
+@media (max-width: 1120px) {
+    .toy-content {
+        & .containers {
+            padding: 0 90px;
+        }
+    }
+}
+@media (max-width: 940px) {
+    .toy-content__block-collection-item:last-child {
+        display: flex;
+    }
+    .toy-content__block-collection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 680px) {
+    .toy-content {
+        & .containers {
+            padding: 0 30px;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .toy-content__block-collection-item {
+        width: 100%;
+        height: 222px;
+        padding: 13px 0 0 0;
+    }
+    .toy-content__block-collection-img {
+        width: 125px;
+        height: 107px;
+    }
+    .toy-content__block-collection-img::after {
+        width: 20px;
+        height: 20px;
+    }
+    .toy-content__block-collection-img::before {
+        content: url(../svg/toy/media-heart.svg);
+        position: absolute;
+        right: 17px;
+        bottom: 9px;
+        z-index: 10;
+    }
+    .toy-content__block-collection-title {
+        width: 125px;
+        font-size: 10px;
+    }
+    .toy-content__block-collection-price {
+        margin: 16px 0 0 0;
+
+    }
+    .toy-content__block-collection-price-sum {
+        width: 56px;
+        height: 18px;
+        background: #001F71;
+        border-radius: 9px;
+        margin: 0 0 0 6px;
+    }
+    .toy-content__block-collection-price-sum p {
+        font-size: 9px;
+    }
+    .toy-content__block-collection-price-reputation {
+        font-size: 8px;
+        &::after {
+            content: url(../svg/toy/media-star.svg);
+            left: -16px;
+        }
+    }
+    .toy-content__block-collection-price-balls {
+        font-size: 8px;
+        &::after {
+            content: url(../svg/toy/media-money.svg);
+            left: -16px;
+        }
+    }
+    .toy-content__block-collection-price-reputation {
+        margin: 0 0 0 26px;
+    }
+    .toy-content__block-collection-add-sum {
+        font-size: 8px;
+        margin: 0 0 0 8px;
+    }
+    .toy-content__block-collection-add-calendar {
+        margin: 0 0 0 4px;
+        width: 20px;
+        height: 20px;
+    }
+    .toy-content__block-collection-add-share {
+        margin: 0 0 0 4px;
+        width: 20px;
+        height: 20px;
+    }
+    .toy-content__block-collection-add-shop {
+        margin: 0;
+        width: 20px;
+        height: 20px;
+    }
+    .toy-content__block-collection-title {
+        margin: 13px auto 0 auto;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .toy-content__block-text-title {
+        font-family: FuturaBookC;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 150%;
+        letter-spacing: .5px;
+        color: #fff;
+    }
+}

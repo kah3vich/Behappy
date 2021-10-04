@@ -2226,6 +2226,29 @@ $('.toy-content__block-text-filter-discard').on('click', function() {
 //! -------------------------------------------------------------------------------
 
 
+
+//! Открытие дополнительного блока 
+
+
+
+$('.toy-content__block-open').on('click', function() {
+    $('.toy-content__block-collection').removeClass('display-n')
+    $('.toy-content__block-close').removeClass('display-n')
+    $('.toy-content__block-open').addClass('display-n')
+});
+
+$('.toy-content__block-close').on('click', function() {
+    $('.toy-content__block-collection').addClass('display-n')
+    $('.toy-content__block-close').addClass('display-n')
+    $('.toy-content__block-open').removeClass('display-n')
+});
+
+
+
+//! -------------------------------------------------------------------------------
+
+
+
 //! Нажатие на элемент каталога - 1 
 
 $('#urgListItem_1_img').on('click', function() {
