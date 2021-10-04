@@ -1,0 +1,179 @@
+<div class="modal fade" id="subModelOrder-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content sub-model-1">
+            <button type="button" class="btn-close sub-model-1-btn" data-bs-dismiss="modal" aria-label="Close">
+                @@include('../iconsprite/close-model.svg')
+            </button>
+            <div class="sub-model-1-title">Заполните данные</div>
+            <div class="sub-model-1-add">Выберите, кто будет получать заказ ?</div>
+            <div class="sub-model-1__block">
+                <div class="sub-model-1__block-text">
+                    <div class="sub-model-1__block-text-btns">
+                        <div class="sub-model-1__block-text-btns-pickup sub-model-1__block-text-btns-active">
+                            <h3>Я</h3>
+                            <p>Заказ будет доставлен вам лично</p>
+                        </div>
+                        <div class="sub-model-1__block-text-btns-delivery">
+                            <h3>Получатель</h3>
+                            <p>Заказ будет доставлен другому <br>
+                                человеку</p>
+                        </div>
+                    </div>
+                    <div class="sub-model-1__block-text-input">
+                        <div class="sub-model-1__block-text-input-name">
+                            <input type="text" placeholder="Имя" id="subModelInputName">
+                            <label for="subModelInputName">Ваше имя *</label>
+                        </div>
+                        <div class="sub-model-1__block-text-input-phone">
+                            <input type="text" placeholder="+ 7" id="subModelInputPhone">
+                            <label for="subModelInputphone">Ваш номер телефона  *</label>
+                        </div>
+                        <div class="sub-model-1__block-text-input-names active-n">
+                            <input type="text" placeholder="Имя" id="subModelInputNames">
+                            <label for="subModelInputNames">Имя получателя *</label>
+                        </div>
+                        <div class="sub-model-1__block-text-input-phones active-n">
+                            <input type="text" placeholder="+ 7" id="subModelInputPhones">
+                            <label for="subModelInputPhones">Ваше имя *</label>
+                        </div>
+                        <div class="sub-model-1__block-text-input-city active-n">
+                            <input type="text" placeholder="Город" id="subModelInputCity">
+                            <label for="subModelInputCity">Город доставки *</label>
+                            <select class="form-select sub-model-1__block-text-input-city-select display-n" size="3" aria-label="size 3 select example">
+                                <option value="Москва" class="sub-model-1__block-text-input-city-option-1">Москва</option>
+                                <option value="Пермь" class="sub-model-1__block-text-input-city-option-2">Пермь</option>
+                                <option value="Октябрьск" class="sub-model-1__block-text-input-city-option-3">Октябрьск</option>
+                                <option value="Казань" class="sub-model-1__block-text-input-city-option-4">Казань</option>
+                            </select>
+                        </div>
+                        <div class="sub-model-1__block-text-input-date">
+                            <input type="text" placeholder="дд.мм.гггг" id="datepickerSubModel">
+                            <label for="datepickerSubModel">Дата доставки *</label>
+                        </div>
+                    </div>
+                    <div class="sub-model-1__block-text-addres active-n">
+                        <h3>Уточнить адрес у получателя*</h3>
+                        <div class="sub-model-1__block-text-addres-radio">
+                            <input class="sub-model-1__block-text-addres-input" name="subModelAddress" type="radio" id="subModelAddress-1" checked>
+                            <label class="sub-model-1__block-text-addres-label" for="subModelAddress-1">Да</label>
+                        </div>
+                    
+                        <div class="sub-model-1__block-text-addres-radio">
+                            <input class="sub-model-1__block-text-addres-input" name="subModelAddress" type="radio" id="subModelAddress-2">
+                            <label class="sub-model-1__block-text-addres-label" for="subModelAddress-2">Нет</label>
+                        </div>
+                    </div>
+                    <div class="sub-model-1__block-text-time">
+                        <h3>Выберите время доставки *</h3>
+                        <ul class="sub-model-1__block-text-time-list">
+                            <li id="subModelTimeItem-1" class="sub-model-1__block-text-time-item sub-model-1__block-text-time-active"><p>10:00-12:00</p></li>
+                            <li id="subModelTimeItem-2" class="sub-model-1__block-text-time-item"><p>13:00-15:00</p></li>
+                            <li id="subModelTimeItem-3" class="sub-model-1__block-text-time-item"><p>15:00-18:00</p></li>
+                            <li id="subModelTimeItem-4" class="sub-model-1__block-text-time-item"><p>18:00-20:00</p></li>
+                        </ul>
+                    </div>
+                    <div class="sub-model-1__block-text-link">
+                        <a href="#">Доставка вне режима работы ?</a>
+                    </div>
+                    <div class="sub-model-1__block-text-inputs active-n">
+                        <div class="sub-model-1__block-text-inputs-street">
+                            <input type="text" id="subModelInputsStreet" placeholder="Название улицы">
+                            <label for="subModelInputsStreet">Улица</label>
+                        </div>
+                        <div class="sub-model-1__block-text-inputs-home">
+                            <input type="text" id="subModelInputsHome" placeholder="№ Дома">
+                            <label for="subModelInputsHome">Номер дома</label>
+                        </div>
+                        <div class="sub-model-1__block-text-inputs-entrance">
+                            <input type="text" id="subModelInputsEntrance" placeholder="Подъезд">
+                            <label for="subModelInputsEntrance">Подьезд</label>
+                        </div>
+                        <div class="sub-model-1__block-text-inputs-floor">
+                            <input type="text" id="subModelInputsFloor" placeholder="Этаж">
+                            <label for="subModelInputsFloor">Этаж</label>
+                        </div>
+                        <div class="sub-model-1__block-text-inputs-apartment">
+                            <input type="text" id="subModelInputsApartment" placeholder="Кв">
+                            <label for="subModelInputsApartment">Квартира </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-model-1__block-check">
+                    <div class="sub-model-1__block-check-call active-n">
+                        <h3>Звонок получателю перед отправкой*</h3>
+                        <div class="sub-model-1__block-check-call-radio">
+                            <input class="sub-model-1__block-check-call-input" name="subModelCall" type="radio" id="subModelCall-1" checked>
+                            <label class="sub-model-1__block-check-call-label" for="subModelCall-1">Да</label>
+                        </div>
+                        <div class="sub-model-1__block-check-call-radio">
+                            <input class="sub-model-1__block-check-call-input" name="subModelCall" type="radio" id="subModelCall-2">
+                            <label class="sub-model-1__block-check-call-label" for="subModelCall-2">Нет</label>
+                        </div>
+                    </div>
+                    <div class="sub-model-1__block-check-city">
+                        <h3>Доставка за город*</h3>
+                        <div class="sub-model-1__block-check-city-radio">
+                            <input class="sub-model-1__block-check-city-input" name="subModelCity" type="radio" id="subModelCity-1" checked>
+                            <label class="sub-model-1__block-check-city-label" for="subModelCity-1">Да</label>
+                        </div>
+                        <div class="sub-model-1__block-check-city-radio">
+                            <input class="sub-model-1__block-check-city-input" name="subModelCity" type="radio" id="subModelCity-2">
+                            <label class="sub-model-1__block-check-city-label" for="subModelCity-2">Нет</label>
+                        </div>
+                    </div>
+                    <div class="sub-model-1__block-check-whatsapp">
+                        <h3>Получить фото букета на whatsapp</h3>
+                        <div class="sub-model-1__block-check-whatsapp-radio">
+                            <input class="sub-model-1__block-check-whatsapp-input" name="subModelWhatsapp" type="radio" id="subModelWhatsapp-1" checked>
+                            <label class="sub-model-1__block-check-whatsapp-label" for="subModelWhatsapp-1">Да</label>
+                        </div>
+                        <div class="sub-model-1__block-check-whatsapp-radio">
+                            <input class="sub-model-1__block-check-whatsapp-input" name="subModelWhatsapp" type="radio" id="subModelWhatsapp-2">
+                            <label class="sub-model-1__block-check-whatsapp-label" for="subModelWhatsapp-2">Нет</label>
+                        </div>
+                    </div>
+                    <div class="sub-model-1__block-check-cards">
+                        <h3>Большая открытка 250 руб </h3>
+                        <div class="sub-model-1__block-check-cards-radio">
+                            <input class="sub-model-1__block-check-cards-input" name="subModelCards" type="radio" id="subModelCards-1" checked>
+                            <label class="sub-model-1__block-check-cards-label" for="subModelCards-1">Да</label>
+                        </div>
+                        <div class="sub-model-1__block-check-cards-radio">
+                            <input class="sub-model-1__block-check-cards-input" name="subModelCards" type="radio" id="subModelCards-2">
+                            <label class="sub-model-1__block-check-cards-label" for="subModelCards-2">Нет</label>
+                        </div>
+                    </div>
+                    <ul class="sub-model-1__block-check-list">
+                        <li id="subModelCheckItem-1" class="sub-model-1__block-check-list-item sub-model-1__block-check-list-active">
+                            Открытка бесплатно
+                        </li>
+                        <li id="subModelCheckItem-2" class="sub-model-1__block-check-list-item">
+                            Не нужна открытка
+                        </li>
+                    </ul>
+                    <textarea class="sub-model-1__block-check-message" placeholder="Текст к открытке не более 100 символов"></textarea>
+                    <div class="sub-model-1__block-check-comment">
+                        <h3>Добавить комментарий</h3>
+                        <textarea placeholder="Ваш комментарий"></textarea>
+                    </div>
+                    <div class="sub-model-1__block-check-add">
+                        <div class="sub-model-1__block-check-add-car">
+                            <div class="sub-model-1__block-check-add-car-bg">
+                                @@include('../iconsprite/subscript/car.svg')
+                            </div>
+                            <p>Бесплатная доставка по городу</p>
+                        </div>
+                        <div class="sub-model-1__block-check-add-list">
+                            <div class="sub-model-1__block-check-add-list-bg">
+                                @@include('../iconsprite/subscript/list.svg')
+                            </div>
+                            <p>В случае доставки товара не надлежащего качества
+                                сообщите нам и мы его заменим</p>
+                        </div>
+                    </div>
+                    <button class="sub-model-1__block-check-btn"><a href="#">Сохранить</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

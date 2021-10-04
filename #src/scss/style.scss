@@ -107,6 +107,10 @@ p {
     margin-top: 0;
     margin-bottom: 0;
 }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 .display-n {
     display: none !important;
 }
@@ -124,6 +128,10 @@ input[type="range" i] {
 }
 .height-100 {
     height: 100%;
+}
+.active-n {
+    pointer-events: none;
+    opacity: 0.5;
 }
 
 
@@ -286,12 +294,13 @@ input[type="range" i] {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 375px;
-    height: 201px;
-    background: #001C68;
-    box-shadow: 0px 10px 22px #0020FF;
     border-radius: 15px;
     cursor: pointer;
+    width: 375px;
+    height: 108px;
+    background: #001C68;
+    box-shadow: 0px 0px 22px #0020FF;
+    border-radius: 15px;
     &__block {
         width: 100%;
         height: 100%;
@@ -305,13 +314,13 @@ input[type="range" i] {
             background: transparent;
             cursor: pointer;
             position: absolute;
-            top: 30px;
+            top: 14px;
             right: 23px;
         }
         &-icons {
             position: absolute;
-            top: -20px;
-            left: 10px;
+            top: 30px;
+            left: 27px;
             width: 39px;
             height: 39px;
             & svg {
@@ -320,47 +329,14 @@ input[type="range" i] {
             }
         }
         &-text {
-            padding: 39px 0 0 46px;
+            padding: 39px 0 0 98px;
             &-title {
                 font-family: Circe;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 20px;
+                font-size: 18px;
                 line-height: 28px;
                 color: #FFFFFF;
-            }
-            &-add {
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                margin: 20px 0 0 0;
-            }
-            &-city {
-                font-family: Circe;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 20px;
-                line-height: 28px;
-                color: #FFFFFF;
-            }
-            &-count {
-                font-family: Circe;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 20px;
-                line-height: 28px;
-                color: #FFFFFF;
-                margin: 0 0 0 27px;
-            }
-            &-update {
-                margin: 15px 0 0 0;
-                font-family: Circe;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 20px;
-                line-height: 28px;
-                text-decoration-line: underline;
-                color: #16B8C3;
             }
         }
     }

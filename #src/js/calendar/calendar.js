@@ -158,6 +158,8 @@ $.datepicker.setDefaults($.datepicker.regional['ru']);
 
 	$("#datepickerStock").datepicker();
 
+	$("#datepickerSubModel").datepicker();
+
 
 
 
