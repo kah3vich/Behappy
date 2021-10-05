@@ -1059,3 +1059,16 @@ $('.ord-quiz__block-data-where-no').on('click', function() {
 });
 
 //! ---------------------------------------------------------------------------------------------
+
+
+// $(function() {
+//     $('.quiz-content__block-add-wrapper-item').on('click', function() {
+//         if(window.screen.width >= 920) {
+//             $('.quiz-content__block-add-prev').css('top', '1578px')
+//             $('.quiz-content__block-add-next').css('top', '1578px')
+//         } else if (window.screen.width >= 650) {
+//             $('.quiz-content__block-add-prev').css('top', '1580px')
+//             $('.quiz-content__block-add-next').css('top', '1580px')
+//         }
+//     })
+// })

@@ -546,6 +546,103 @@
                     color: #FFFFFF;
                 }
             }
+            &-wrappers {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 36px 28px;
+                margin: 50px 0 0 0;
+                width: 702px;
+                &-item {
+                    width: 100%;
+                    height: 175px;
+                    background: #04133C;
+                    border: 1px solid #002685;
+                    box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+                    border-radius: 20px;
+                    padding: 22px 0;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+                    & p {
+                        font-family: FuturaBookC;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 20px;
+                        line-height: 150%;
+                        text-align: center;
+                        letter-spacing: 0.5px;
+                        color: #FFFFFF;
+                    }
+                }
+                &-items {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
+                    &-check {
+                        opacity: 0.4;
+                    }
+                }
+                &-list {
+                    display: grid;
+                    grid-template-columns: repeat(6, 1fr);
+                    gap: 10px;
+                    &-item {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        background: transparent;
+                        box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+                        &:nth-child(1) {
+                            background: #FD749B;
+                        }
+                        &:nth-child(2) {
+                            background: #F41178;
+                        }
+                        &:nth-child(3) {
+                            background: #FFFFFF;
+                        }
+                        &:nth-child(4) {
+                            background: #FCEE21;
+                        }
+                        &:nth-child(5) {
+                            background: #0ED71C;
+                        }
+                        &:nth-child(6) {
+                            background: #2787F5;
+                        }
+                        &:nth-child(7) {
+                            background: #FF5C00;
+                        }
+                        &:nth-child(8) {
+                            background: #854FC8;
+                        }
+                        &:nth-child(9) {
+                            background: #67DFFD;
+                        }
+                        &:nth-child(10) {
+                            background: #7D7D7D;
+                        }
+                        &:nth-child(11) {
+                            background: #000000;
+                        }
+                        &:nth-child(12) {
+                            background: #EDCD96;
+                        }
+                    }
+                }
+                &-text {
+                    margin: 32px 0 0 0;
+                    font-family: FuturaBookC;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 120%;
+                    text-align: center;
+                    letter-spacing: 0.5px;
+                    color: #FFFFFF;
+                }
+            }
             &-points {
                 width: 100%;
             }
@@ -902,8 +999,15 @@
                     color: #FFFFFF;
                 }
             }
+            &-wrappers {
+                width: 100%;
+                position: relative;
+                display: flex;
+                justify-content: center;
+            }
             &-points {
                 width: 100%;
+                position: relative;
             }
             &-point {
                 display: flex;
@@ -957,7 +1061,7 @@
                 position: absolute;
                 left: -67px;
                 width: 30px;
-                top: 260px;
+                top: -363px;
                 cursor: pointer;
                 & path {
                     opacity: 1;
@@ -967,7 +1071,7 @@
                 position: absolute;
                 right: -47px;
                 width: 30px;
-                top: 260px;
+                top: -363px;
                 padding: 0 0 0 20px;
                 cursor: pointer;
             }
