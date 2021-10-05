@@ -25,70 +25,171 @@
         width: 100%;
     }
 }
+@media (max-width: 830px) {
+    #modelOrderSuburb .modal-dialog {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .order-model__block-description {
+        transform: translate(-50%,-50%);
+    }
+    #modelOrderCity .modal-dialog {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
 @media (max-width: 630px) {
+    .ord-pay__block-data-address-model {
+        width: 380px;
+    }
+    #modelOrderDate .modal-dialog {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ord-pay__block-data-delivery {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .ord-pay__block-data-content {
+        margin: 40px 0 0 0;
+    }
     .ord-pay__block-data-contact {
         flex-direction: column;
         align-items: flex-start;
-        width: 100%;
+        justify-content: flex-start;
     }
     .ord-pay__block-data-contact-phone {
         margin: 30px 0 0 0;
     }
     .ord-pay__block-data-address {
         grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
-    .ord-pay__block-data-delivery {
-        width: 100%;
+    .ord-pay__block-data-address-date {
+        margin: 30px 0 0 0;
     }
-    .ord-pay__block-data-postcards {
-        width: 100%;
+    .ord-pay__block-data-wrapper {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .ord-pay__block-data-postcards textarea {
-        width: 100%;
+    .ord-pay__block-data-time-container {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .ord-pay__block-data {
-        width: 100%;
+    .ord-pay__block-data-time-block {
+        width: 255px;
+    }
+    input[type=radio]:checked~.ord-pay__block-data-time-check {
+        width: 255px;
+    }
+    .ord-pay__block-data-time-text {
+        position: absolute;
+        top: 15px;
+        left: 92px;
+        font-family: Circe;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 180%;
+        letter-spacing: .5px;
+        color: #b2b2b2;
+    }
+    .ord-pay__block-data-time-block .ord-pay__block-data-time-check {
+        width: 255px;
     }
     .ord-pay__block-data-postcards-container {
-        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
-    .ord-pay__block-data-courier {
-        width: 215px;
-    }
-    .ord-pay__block-data-delivery .ord-pay__block-data-label input[type=radio]:checked+.ord-pay__block-data-content {
-        width: 215px;
-    }
-    .ord-pay__block-data-delivery .ord-pay__block-data-label input[type=radio]:checked+.ord-pay__block-data-content::before {
-        width: 96%;
-    }
-    .ord-pay__block-data-delivery .ord-pay__block-data-label input[type=radio]:checked+.ord-pay__block-data-content::after {
-        width: 91%;
-    }
-    .ord-pay__block-data-me {
-        width: 215px;
-    }
-    .ord-pay__block-data-postcards-yes,
     .ord-pay__block-data-postcards-no {
-        width: 215px;
+        margin: 30px 0 0 0;
     }
-    input[type=radio]:checked~.ord-pay__block-data-postcards-check::before {
-        width: 215px;
+    .ord-pay__block-data-postcards-container {
+        height: 100%;
     }
-    input[type=radio]:checked~.ord-pay__block-data-postcards-border::before {
-        width: 92%;
+    .ord-pay__block-data-postcards textarea {
+        width: 320px;
     }
-    input[type=radio]:checked~.ord-pay__block-data-postcards-border::after {
-        width: 96%;
+    .ord-pay__block-data-postcard-title::after {
+        content: "(не более 2500 символов)";
+        position: absolute;
+        top: 40px;
+        right: 0px;
+        font-family: Circe;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 122%;
+        letter-spacing: .5px;
+        color: #b7a8a8;
+    }
+    .ord-pay__block-data-postcard-container {
+        margin: 20px 0 0 0;
+    }
+    .ord-pay__block-data-message-textarea {
+        width: 320px;
+    }
+    .ord-pay__block-info-card {
+        width: 320px;
+    }
+    .ord-pay__block-data-card-pay {
+        width: 320px;
+    }
+    .ord-pay__block-data-card-form {
+        width: 320px;
+        height: 227px;
+        border: 1px solid #16b8c3;
+        border-radius: 5px;
+        margin: 36px 0 0 0;
+        padding: 21px 0 20px 18px;
+    }
+    .ord-pay__block-data-postcards-container {
+        width: 320px;
+    }
+    .ord-pay__block-data-delivery {
+        width: 320px;
+    }
+    .ord-pay__block-data-contact {
+        width: 320px;
     }
     .ord-pay__block-data-calls {
         flex-direction: column;
         align-items: flex-start;
+        justify-content: flex-start;
+        width: 320px;
     }
     .ord-pay__block-data-calls-phones {
         margin: 30px 0 0 0;
     }
-    .ord-pay__block-data-calls {
-        width: 100%;
+    #modelOrderCity,
+    #modelOrderSuburb {
+        & .order-model__blocks {
+            width: 390px;
+        }
+        & .order-model {
+            width: 390px!important;
+        }
+    }
+    #modelOrderSuburb {
+        & .order-model__block {
+            width: 390px;
+            padding: 30px 0 0 0;
+        }
+        & .order-model__block-text {
+            width: 350px;
+        }
+        & .order-model__block-description-text {
+            margin: 49px 0 0 0;
+            width: 360px;
+        }
+        & .order-model__block-description {
+            width: 390px;
+        }
     }
 }
 @media (max-width: 500px) {
@@ -123,6 +224,127 @@
     }
     input[type=radio]:checked~.ord-pay__block-data-postcards-check::before {
         width: 255px;
+    }
+    .ord-pay__block-data-btn,
+    .ord-pay__block-info-price-total,
+    .ord-pay__block-info-price-balls,
+    .ord-pay__block-info-price-delivery {
+        width: 320px;
+    }
+    .ord-pay__block-data-postcards-yes .ord-pay__block-data-postcards-check {
+        width: 320px;
+    }
+    .ord-pay__block-data-postcards-no .ord-pay__block-data-postcards-check {
+        width: 320px;
+    }
+    .ord-pay__block-data-postcards-no, 
+    .ord-pay__block-data-postcards-yes {
+        width: 320px;
+    }
+    input[type=radio]:checked~.ord-pay__block-data-postcards-check::before {
+        width: 320px;
+    }
+    input[type=radio]:checked~.ord-pay__block-data-postcards-border::before {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        width: 300px;
+        height: 33px;
+        border: .5px solid #c6c6c6;
+        border-radius: 10px;
+    }
+    input[type=radio]:checked~.ord-pay__block-data-postcards-border::after {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 308px;
+        height: 41px;
+        border: .5px solid #c6c6c6;
+        border-radius: 10px;
+    }
+    .ord-pay__block-data-time-block .ord-pay__block-data-time-check {
+        width: 320px;
+    }
+    input[type=radio]:checked~.ord-pay__block-data-time-check {
+        width: 320px;
+    }
+    .ord-pay__block-data-time-text {
+        position: absolute;
+        top: 15px;
+        left: 125px;
+        font-family: Circe;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 180%;
+        letter-spacing: .5px;
+        color: #b2b2b2;
+    }
+    .ord-pay__block-data-address-apartment input,
+    .ord-pay__block-data-address-apartment,
+    .ord-pay__block-data-address-floor input,
+    .ord-pay__block-data-address-floor label,
+    .ord-pay__block-data-address-floor
+    .ord-pay__block-data-address-porch,
+    .ord-pay__block-data-address-porch input,
+    .ord-pay__block-data-address-porch label,
+    .ord-pay__block-data-address-home,
+    .ord-pay__block-data-address-home label,
+    .ord-pay__block-data-address-home input,
+    .ord-pay__block-data-contact-name,
+    .ord-pay__block-data-contact-name input,
+    .ord-pay__block-data-contact-phone,
+    .ord-pay__block-data-contact-phone input,
+    .ord-pay__block-data-calls-names,
+    .ord-pay__block-data-calls-names input,
+    .ord-pay__block-data-calls-phones,
+    .ord-pay__block-data-calls-phones input,
+    .ord-pay__block-data-address-city,
+    .ord-pay__block-data-address-city input,
+    .ord-pay__block-data-address-date,
+    .ord-pay__block-data-address-date input,
+    .ord-pay__block-data-address-floor,
+    .ord-pay__block-data-address-porch,
+    .ord-pay__block-data-address-street {
+        width: 320px;
+    }
+    .ord-pay__block-data-address-date input {
+        width: 300px;
+    }
+    .ord-pay__block-data-address-date label svg {
+        position: absolute;
+        top: 13px;
+        right: -39px;
+    }
+    .ord-select-options li {
+        width: 315px;
+    }
+    .ord-pay__block-data-courier,
+    .ord-pay__block-data-me,
+    .ord-pay__block-data-delivery .ord-pay__block-data-label input[type=radio]:checked+.ord-pay__block-data-content {
+        width: 320px;
+    }
+    .ord-pay__block-data-delivery .ord-pay__block-data-label input[type=radio]:checked+.ord-pay__block-data-content::before {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 308px;
+        height: 86px;
+        border: .5px solid #c6c6c6;
+        border-radius: 10px;
+    }
+    .ord-pay__block-data-delivery .ord-pay__block-data-label input[type=radio]:checked+.ord-pay__block-data-content::after {
+        content: "";
+        width: 298px;
+        height: 76px;
+        border: .5px solid #c6c6c6;
+        border-radius: 10px;
+        position: absolute;
+        top: 9px;
+        left: 9px;
     }
 }
 @media (max-width: 400px) {

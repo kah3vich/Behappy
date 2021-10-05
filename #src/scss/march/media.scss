@@ -248,3 +248,11 @@
         }
     }
 }
+@media (max-width: 400px) {
+    .march-content__block-collections {
+        gap: 20px;
+    }
+    .march-content__block-collection {
+        gap: 20px;
+    }
+}

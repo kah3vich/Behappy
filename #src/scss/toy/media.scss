@@ -273,3 +273,11 @@
         color: #fff;
     }
 }
+@media (max-width: 400px) {
+    .toy-content__block-collections {
+        gap: 20px;
+    }
+    .toy-content__block-collection {
+        gap: 20px;
+    }
+}

@@ -481,7 +481,7 @@ function renderInputOrder() {
             countRenderInputOrder++
         }
         console.log(countRenderInputOrder)
-        if(countRenderInputOrder === 5) {
+        if(countRenderInputOrder === 4) {
             $('.ord-pay__block-data-address-street input').prop('readonly', false);
             $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
             $('.ord-pay__block-data-address-home  input').prop('readonly', false);
@@ -499,7 +499,7 @@ function renderInputOrder() {
             countRenderInputOrder++
         }
         console.log(countRenderInputOrder)
-        if(countRenderInputOrder === 5) {
+        if(countRenderInputOrder === 4) {
             $('.ord-pay__block-data-address-street input').prop('readonly', false);
             $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
             $('.ord-pay__block-data-address-home  input').prop('readonly', false);
@@ -517,7 +517,7 @@ function renderInputOrder() {
             countRenderInputOrder++
         }
         console.log(countRenderInputOrder)
-        if(countRenderInputOrder === 5) {
+        if(countRenderInputOrder === 4) {
             $('.ord-pay__block-data-address-street input').prop('readonly', false);
             $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
             $('.ord-pay__block-data-address-home  input').prop('readonly', false);
@@ -535,7 +535,7 @@ function renderInputOrder() {
             countRenderInputOrder++
         }
         console.log(countRenderInputOrder)
-        if(countRenderInputOrder === 5) {
+        if(countRenderInputOrder === 4) {
             $('.ord-pay__block-data-address-street input').prop('readonly', false);
             $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
             $('.ord-pay__block-data-address-home  input').prop('readonly', false);
@@ -548,24 +548,24 @@ function renderInputOrder() {
             $('.ord-pay__block-data-address-apartment').removeClass('ord-pay__block-data-address-noact');
         }
     })
-    $('.ord-pay__block-data-address-date').on('change', function() {
-        if($('.ord-pay__block-data-calls-phones input').val() !== '') {
-            countRenderInputOrder++
-        }
-        console.log(countRenderInputOrder)
-        if(countRenderInputOrder === 5) {
-            $('.ord-pay__block-data-address-street input').prop('readonly', false);
-            $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
-            $('.ord-pay__block-data-address-home  input').prop('readonly', false);
-            $('.ord-pay__block-data-address-home').removeClass('ord-pay__block-data-address-noact');
-            $('.ord-pay__block-data-address-porch input').prop('readonly', false);
-            $('.ord-pay__block-data-address-porch').removeClass('ord-pay__block-data-address-noact');
-            $('.ord-pay__block-data-address-floor input').prop('readonly', false);
-            $('.ord-pay__block-data-address-floor').removeClass('ord-pay__block-data-address-noact');
-            $('.ord-pay__block-data-address-apartment input').prop('readonly', false);
-            $('.ord-pay__block-data-address-apartment').removeClass('ord-pay__block-data-address-noact');
-        }
-    })
+    // $('.ord-pay__block-data-address-date').on('change', function() {
+    //     if($('.ord-pay__block-data-calls-phones input').val() !== '') {
+    //         countRenderInputOrder++
+    //     }
+    //     console.log(countRenderInputOrder)
+    //     if(countRenderInputOrder === 5) {
+    //         $('.ord-pay__block-data-address-street input').prop('readonly', false);
+    //         $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
+    //         $('.ord-pay__block-data-address-home  input').prop('readonly', false);
+    //         $('.ord-pay__block-data-address-home').removeClass('ord-pay__block-data-address-noact');
+    //         $('.ord-pay__block-data-address-porch input').prop('readonly', false);
+    //         $('.ord-pay__block-data-address-porch').removeClass('ord-pay__block-data-address-noact');
+    //         $('.ord-pay__block-data-address-floor input').prop('readonly', false);
+    //         $('.ord-pay__block-data-address-floor').removeClass('ord-pay__block-data-address-noact');
+    //         $('.ord-pay__block-data-address-apartment input').prop('readonly', false);
+    //         $('.ord-pay__block-data-address-apartment').removeClass('ord-pay__block-data-address-noact');
+    //     }
+    // })
     
 }
 renderInputOrder()
@@ -699,6 +699,17 @@ $('.ord-pay__block-data-where-yes').on('click', function() {
 });
 $('.ord-pay__block-data-where-no').on('click', function() {
     $('.ord-pay__block-data-btn').attr('data-bs-target', '#modelOrderCity')
+});
+
+
+$('#datepickerOrder tbody').on('click', function() {
+    $('.ord-pay__block-data-address-date input').val()
+    console.log($('#datepickerOrder').val())
+});
+
+$('.ord-pay__block-data-address-model-close').on('click', function() {
+    let orderAdrressDateModel = $('#datepickerOrder').val()
+    $('.ord-pay__block-data-address-date input').val(orderAdrressDateModel)
 });
 
 
@@ -1218,7 +1229,11 @@ $('.quiz-content__block-add-next').on('click', function() {
     $('.ord-quiz').removeClass('display-n');
     $('.quiz-content').css('padding', '0')
 });
-
+$('.quiz-content__block-add-text').on('click', function() {
+    $('.quiz-content__block-add').addClass('display-n');
+    $('.ord-quiz').removeClass('display-n');
+    $('.quiz-content').css('padding', '0')
+});
 
 
 
@@ -1292,7 +1307,7 @@ function renderInputOrderQuiz() {
         if($('.ord-quiz__block-data-contact-name input').val() !== '') {
             countRenderInputOrderQuiz++
         }
-        if(countRenderInputOrderQuiz === 5) {
+        if(countRenderInputOrderQuiz === 4) {
             $('.ord-quiz__block-data-address-street input').prop('readonly', false);
             $('.ord-quiz__block-data-address-street').removeClass('ord-quiz__block-data-address-noact');
             $('.ord-quiz__block-data-address-home  input').prop('readonly', false);
@@ -1309,7 +1324,7 @@ function renderInputOrderQuiz() {
         if($('.ord-quiz__block-data-contact-phone input').val() !== '') {
             countRenderInputOrderQuiz++
         }
-        if(countRenderInputOrderQuiz === 5) {
+        if(countRenderInputOrderQuiz === 4) {
             $('.ord-quiz__block-data-address-street input').prop('readonly', false);
             $('.ord-quiz__block-data-address-street').removeClass('ord-quiz__block-data-address-noact');
             $('.ord-quiz__block-data-address-home  input').prop('readonly', false);
@@ -1326,7 +1341,7 @@ function renderInputOrderQuiz() {
         if($('.ord-quiz__block-data-calls-names input').val() !== '') {
             countRenderInputOrderQuiz++
         }
-        if(countRenderInputOrderQuiz === 5) {
+        if(countRenderInputOrderQuiz === 4) {
             $('.ord-quiz__block-data-address-street input').prop('readonly', false);
             $('.ord-quiz__block-data-address-street').removeClass('ord-quiz__block-data-address-noact');
             $('.ord-quiz__block-data-address-home  input').prop('readonly', false);
@@ -1343,7 +1358,7 @@ function renderInputOrderQuiz() {
         if($('.ord-quiz__block-data-calls-phones input').val() !== '') {
             countRenderInputOrderQuiz++
         }
-        if(countRenderInputOrderQuiz === 5) {
+        if(countRenderInputOrderQuiz === 4) {
             $('.ord-quiz__block-data-address-street input').prop('readonly', false);
             $('.ord-quiz__block-data-address-street').removeClass('ord-quiz__block-data-address-noact');
             $('.ord-quiz__block-data-address-home  input').prop('readonly', false);
@@ -1356,23 +1371,23 @@ function renderInputOrderQuiz() {
             $('.ord-quiz__block-data-address-apartment').removeClass('ord-quiz__block-data-address-noact');
         }
     })
-    $('.ord-quiz__block-data-address-date').on('change', function() {
-        if($('.ord-quiz__block-data-calls-phones input').val() !== '') {
-            countRenderInputOrderQuiz++
-        }
-        if(countRenderInputOrderQuiz === 5) {
-            $('.ord-quiz__block-data-address-street input').prop('readonly', false);
-            $('.ord-quiz__block-data-address-street').removeClass('ord-quiz__block-data-address-noact');
-            $('.ord-quiz__block-data-address-home  input').prop('readonly', false);
-            $('.ord-quiz__block-data-address-home').removeClass('ord-quiz__block-data-address-noact');
-            $('.ord-quiz__block-data-address-porch input').prop('readonly', false);
-            $('.ord-quiz__block-data-address-porch').removeClass('ord-quiz__block-data-address-noact');
-            $('.ord-quiz__block-data-address-floor input').prop('readonly', false);
-            $('.ord-quiz__block-data-address-floor').removeClass('ord-quiz__block-data-address-noact');
-            $('.ord-quiz__block-data-address-apartment input').prop('readonly', false);
-            $('.ord-quiz__block-data-address-apartment').removeClass('ord-quiz__block-data-address-noact');
-        }
-    })
+    // $('.ord-quiz__block-data-address-date').on('change', function() {
+    //     if($('.ord-quiz__block-data-calls-phones input').val() !== '') {
+    //         countRenderInputOrderQuiz++
+    //     }
+    //     if(countRenderInputOrderQuiz === 5) {
+    //         $('.ord-quiz__block-data-address-street input').prop('readonly', false);
+    //         $('.ord-quiz__block-data-address-street').removeClass('ord-quiz__block-data-address-noact');
+    //         $('.ord-quiz__block-data-address-home  input').prop('readonly', false);
+    //         $('.ord-quiz__block-data-address-home').removeClass('ord-quiz__block-data-address-noact');
+    //         $('.ord-quiz__block-data-address-porch input').prop('readonly', false);
+    //         $('.ord-quiz__block-data-address-porch').removeClass('ord-quiz__block-data-address-noact');
+    //         $('.ord-quiz__block-data-address-floor input').prop('readonly', false);
+    //         $('.ord-quiz__block-data-address-floor').removeClass('ord-quiz__block-data-address-noact');
+    //         $('.ord-quiz__block-data-address-apartment input').prop('readonly', false);
+    //         $('.ord-quiz__block-data-address-apartment').removeClass('ord-quiz__block-data-address-noact');
+    //     }
+    // })
     
 }
 renderInputOrderQuiz()
@@ -1496,11 +1511,33 @@ $('.ord-quiz__block-data-card-quiz').on('click', function() {
 
 var quizContentAddSlider_1 = new Swiper(".quizContentAddSlider-1", {
     slidesPerView: 4, 
-    spaceBetween: 30, 
+    spaceBetween: 10, 
     navigation: {
         nextEl: ".quiz-content__block-add-slider-1 .swiper-controls .swiper-button-next",
         prevEl: ".quiz-content__block-add-slider-1 .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: ".quiz-content__block-add-slider-1 .swiper-controls .swiper-pagination",
+    },
+    breakpoints: {
+        1370: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 10
         },
+        1110: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 10
+        },
+        710: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 10
+        },
+        
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 10
+        },
+    }
 });
 
 $('#quizContentBlockAdd-1').on('click', function() {
@@ -1533,11 +1570,33 @@ $('#quizContentBlockSliderAddClose-1').on('click', function() {
 
 var quizContentAddSlider_2 = new Swiper(".quizContentAddSlider-2", {
     slidesPerView: 4, 
-    spaceBetween: 30, 
+    spaceBetween: 10, 
     navigation: {
         nextEl: ".quiz-content__block-add-slider-2 .swiper-controls .swiper-button-next",
         prevEl: ".quiz-content__block-add-slider-2 .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: ".quiz-content__block-add-slider-2 .swiper-controls .swiper-pagination",
+    },
+    breakpoints: {
+        1370: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 10
         },
+        1110: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 10
+        },
+        710: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 10
+        },
+        
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 10
+        },
+    }
 });
 
 $('#quizContentBlockAdd-2').on('click', function() {
@@ -1568,11 +1627,33 @@ $('#quizContentBlockSliderAddClose-2').on('click', function() {
 
 var quizContentAddSlider_3 = new Swiper(".quizContentAddSlider-3", {
     slidesPerView: 4, 
-    spaceBetween: 30, 
+    spaceBetween: 10, 
     navigation: {
         nextEl: ".quiz-content__block-add-slider-3 .swiper-controls .swiper-button-next",
         prevEl: ".quiz-content__block-add-slider-3 .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: ".quiz-content__block-add-slider-3 .swiper-controls .swiper-pagination",
+    },
+    breakpoints: {
+        1370: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 10
         },
+        1110: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 10
+        },
+        710: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 10
+        },
+        
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 10
+        },
+    }
 });
 
 $('#quizContentBlockAdd-3').on('click', function() {
@@ -1604,11 +1685,33 @@ $('#quizContentBlockSliderAddClose-3').on('click', function() {
 
 var quizContentAddSlider_4 = new Swiper(".quizContentAddSlider-4", {
     slidesPerView: 4, 
-    spaceBetween: 30, 
+    spaceBetween: 10, 
     navigation: {
         nextEl: ".quiz-content__block-add-slider-4 .swiper-controls .swiper-button-next",
         prevEl: ".quiz-content__block-add-slider-4 .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: ".quiz-content__block-add-slider-4 .swiper-controls .swiper-pagination",
+    },
+    breakpoints: {
+        1370: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 10
         },
+        1110: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 10
+        },
+        710: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 10
+        },
+        
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 10
+        },
+    }
 });
 
 $('#quizContentBlockAdd-4').on('click', function() {
@@ -1640,11 +1743,33 @@ $('#quizContentBlockSliderAddClose-4').on('click', function() {
 
 var quizContentAddSlider_5 = new Swiper(".quizContentAddSlider-5", {
     slidesPerView: 4, 
-    spaceBetween: 30, 
+    spaceBetween: 10, 
     navigation: {
         nextEl: ".quiz-content__block-add-slider-5 .swiper-controls .swiper-button-next",
         prevEl: ".quiz-content__block-add-slider-5 .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: ".quiz-content__block-add-slider-5 .swiper-controls .swiper-pagination",
+    },
+    breakpoints: {
+        1370: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 10
         },
+        1110: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 10
+        },
+        710: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 10
+        },
+        
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 10
+        },
+    }
 });
 
 $('#quizContentBlockAdd-5').on('click', function() {
@@ -1676,11 +1801,33 @@ $('#quizContentBlockSliderAddClose-5').on('click', function() {
 
 var quizContentAddSlider_6 = new Swiper(".quizContentAddSlider-6", {
     slidesPerView: 4, 
-    spaceBetween: 30, 
+    spaceBetween: 10, 
     navigation: {
         nextEl: ".quiz-content__block-add-slider-6 .swiper-controls .swiper-button-next",
         prevEl: ".quiz-content__block-add-slider-6 .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: ".quiz-content__block-add-slider-6 .swiper-controls .swiper-pagination",
+    },
+    breakpoints: {
+        1370: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 10
         },
+        1110: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 10
+        },
+        710: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 10
+        },
+        
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 10
+        },
+    }
 });
 
 $('#quizContentBlockAdd-6').on('click', function() {
@@ -1712,11 +1859,33 @@ $('#quizContentBlockSliderAddClose-6').on('click', function() {
 
 var quizContentAddSlider_7 = new Swiper(".quizContentAddSlider-7", {
     slidesPerView: 4, 
-    spaceBetween: 30, 
+    spaceBetween: 10, 
     navigation: {
         nextEl: ".quiz-content__block-add-slider-7 .swiper-controls .swiper-button-next",
         prevEl: ".quiz-content__block-add-slider-7 .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: ".quiz-content__block-add-slider-7 .swiper-controls .swiper-pagination",
+    },
+    breakpoints: {
+        1370: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 10
         },
+        1110: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 10
+        },
+        710: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 10
+        },
+        
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 10
+        },
+    }
 });
 
 $('#quizContentBlockAdd-7').on('click', function() {
@@ -1749,11 +1918,33 @@ $('#quizContentBlockSliderAddClose-7').on('click', function() {
 
 var quizContentAddSlider_8 = new Swiper(".quizContentAddSlider-8", {
     slidesPerView: 4, 
-    spaceBetween: 30, 
+    spaceBetween: 10, 
     navigation: {
         nextEl: ".quiz-content__block-add-slider-8 .swiper-controls .swiper-button-next",
         prevEl: ".quiz-content__block-add-slider-8 .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: ".quiz-content__block-add-slider-8 .swiper-controls .swiper-pagination",
+    },
+    breakpoints: {
+        1370: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 10
         },
+        1110: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 10
+        },
+        710: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 10
+        },
+        
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 10
+        },
+    }
 });
 
 $('#quizContentBlockAdd-8').on('click', function() {
@@ -1785,11 +1976,33 @@ $('#quizContentBlockSliderAddClose-8').on('click', function() {
 
 var quizContentAddSlider_9 = new Swiper(".quizContentAddSlider-9", {
     slidesPerView: 4, 
-    spaceBetween: 30, 
+    spaceBetween: 10, 
     navigation: {
         nextEl: ".quiz-content__block-add-slider-9 .swiper-controls .swiper-button-next",
         prevEl: ".quiz-content__block-add-slider-9 .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: ".quiz-content__block-add-slider-9 .swiper-controls .swiper-pagination",
+    },
+    breakpoints: {
+        1370: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 10
         },
+        1110: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 10
+        },
+        710: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 10
+        },
+        
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 10
+        },
+    }
 });
 
 $('#quizContentBlockAdd-9').on('click', function() {
@@ -1821,11 +2034,33 @@ $('#quizContentBlockSliderAddClose-9').on('click', function() {
 
 var quizContentAddSlider_10 = new Swiper(".quizContentAddSlider-10", {
     slidesPerView: 4, 
-    spaceBetween: 30, 
+    spaceBetween: 10, 
     navigation: {
         nextEl: ".quiz-content__block-add-slider-10 .swiper-controls .swiper-button-next",
         prevEl: ".quiz-content__block-add-slider-10 .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: ".quiz-content__block-add-slider-10 .swiper-controls .swiper-pagination",
+    },
+    breakpoints: {
+        1370: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 10
         },
+        1110: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 10
+        },
+        710: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 10
+        },
+        
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 10
+        },
+    }
 });
 
 $('#quizContentBlockAdd-10').on('click', function() {
@@ -1858,11 +2093,33 @@ $('#quizContentBlockSliderAddClose-10').on('click', function() {
 
 var quizContentAddSlider_11 = new Swiper(".quizContentAddSlider-11", {
     slidesPerView: 4, 
-    spaceBetween: 30, 
+    spaceBetween: 10, 
     navigation: {
         nextEl: ".quiz-content__block-add-slider-11 .swiper-controls .swiper-button-next",
         prevEl: ".quiz-content__block-add-slider-11 .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: ".quiz-content__block-add-slider-11 .swiper-controls .swiper-pagination",
+    },
+    breakpoints: {
+        1370: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 10
         },
+        1110: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 10
+        },
+        710: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 10
+        },
+        
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 10
+        },
+    }
 });
 
 $('#quizContentBlockAdd-11').on('click', function() {
@@ -1894,11 +2151,33 @@ $('#quizContentBlockSliderAddClose-11').on('click', function() {
 
 var quizContentAddSlider_12 = new Swiper(".quizContentAddSlider-12", {
     slidesPerView: 4, 
-    spaceBetween: 30, 
+    spaceBetween: 10, 
     navigation: {
         nextEl: ".quiz-content__block-add-slider-12 .swiper-controls .swiper-button-next",
         prevEl: ".quiz-content__block-add-slider-12 .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: ".quiz-content__block-add-slider-12 .swiper-controls .swiper-pagination",
+    },
+    breakpoints: {
+        1370: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 10
         },
+        1110: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 10
+        },
+        710: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 10
+        },
+        
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 10
+        },
+    }
 });
 
 $('#quizContentBlockAdd-12').on('click', function() {
@@ -1924,6 +2203,29 @@ $('#quizContentBlockSliderAddClose-12').on('click', function() {
 
 //! --------------------------------------------------------------------------------------------
 
+
+
+//! Получение значение в input date из модального окна 
+
+
+$('.ord-quiz__block-data-address-date-model-close').on('click', function() {
+    let quizOrderDataCalendarInput = $('#datepickerOrderQuiz').val()
+    $('.ord-quiz__block-data-address-date input').val(quizOrderDataCalendarInput)
+});
+
+
+//! --------------------------------------------------------------------------------------------
+
+//! Проверка - доставки довара 
+
+$('.ord-quiz__block-data-where-yes').on('click', function() {
+    $('.ord-quiz__block-data-btn').attr('data-bs-target', '#modelOrderSuburb')
+});
+$('.ord-quiz__block-data-where-no').on('click', function() {
+    $('.ord-quiz__block-data-btn').attr('data-bs-target', '#modelOrderCity')
+});
+
+//! ---------------------------------------------------------------------------------------------
 
 //! Переворот карточек 
 

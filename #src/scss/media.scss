@@ -834,5 +834,62 @@
 
 
 
+//! Уведомление 
 
+
+@media (max-width: 500px) {
+    .model-notice {
+        width: 344px;
+        height: 108px;
+        background: #001C68;
+        box-shadow: 0px 0px 22px #0020FF;
+        border-radius: 15px;
+        left: 26px;
+        bottom: 26px;
+    }
+    .model-notice__block-close {
+        top: 14px;
+        right: 22px;
+    }
+    .model-notice__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .model-notice__block-text {
+        padding: 0 0 0 20px;
+    }
+    .model-notice__block-text-title {
+        font-size: 16px;
+    }
+}
+@media (max-width: 450px) {
+    .model-notice {
+        width: 344px;
+        height: 108px;
+        background: #001C68;
+        box-shadow: 0px 0px 22px #0020FF;
+        border-radius: 15px;
+        left: 15px;
+        bottom: 15px;
+    }
+    .model-notice__block-close {
+        top: 14px;
+        right: 22px;
+    }
+    .model-notice__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .model-notice__block-text {
+        padding: 0 0 0 20px;
+    }
+    .model-notice__block-text-title {
+        font-size: 16px;
+    }
+}
+
+
+//! ---------------------------------------------------------------------------
 

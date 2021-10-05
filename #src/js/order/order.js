@@ -66,7 +66,7 @@ function renderInputOrder() {
             countRenderInputOrder++
         }
         console.log(countRenderInputOrder)
-        if(countRenderInputOrder === 5) {
+        if(countRenderInputOrder === 4) {
             $('.ord-pay__block-data-address-street input').prop('readonly', false);
             $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
             $('.ord-pay__block-data-address-home  input').prop('readonly', false);
@@ -84,7 +84,7 @@ function renderInputOrder() {
             countRenderInputOrder++
         }
         console.log(countRenderInputOrder)
-        if(countRenderInputOrder === 5) {
+        if(countRenderInputOrder === 4) {
             $('.ord-pay__block-data-address-street input').prop('readonly', false);
             $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
             $('.ord-pay__block-data-address-home  input').prop('readonly', false);
@@ -102,7 +102,7 @@ function renderInputOrder() {
             countRenderInputOrder++
         }
         console.log(countRenderInputOrder)
-        if(countRenderInputOrder === 5) {
+        if(countRenderInputOrder === 4) {
             $('.ord-pay__block-data-address-street input').prop('readonly', false);
             $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
             $('.ord-pay__block-data-address-home  input').prop('readonly', false);
@@ -120,7 +120,7 @@ function renderInputOrder() {
             countRenderInputOrder++
         }
         console.log(countRenderInputOrder)
-        if(countRenderInputOrder === 5) {
+        if(countRenderInputOrder === 4) {
             $('.ord-pay__block-data-address-street input').prop('readonly', false);
             $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
             $('.ord-pay__block-data-address-home  input').prop('readonly', false);
@@ -133,24 +133,24 @@ function renderInputOrder() {
             $('.ord-pay__block-data-address-apartment').removeClass('ord-pay__block-data-address-noact');
         }
     })
-    $('.ord-pay__block-data-address-date').on('change', function() {
-        if($('.ord-pay__block-data-calls-phones input').val() !== '') {
-            countRenderInputOrder++
-        }
-        console.log(countRenderInputOrder)
-        if(countRenderInputOrder === 5) {
-            $('.ord-pay__block-data-address-street input').prop('readonly', false);
-            $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
-            $('.ord-pay__block-data-address-home  input').prop('readonly', false);
-            $('.ord-pay__block-data-address-home').removeClass('ord-pay__block-data-address-noact');
-            $('.ord-pay__block-data-address-porch input').prop('readonly', false);
-            $('.ord-pay__block-data-address-porch').removeClass('ord-pay__block-data-address-noact');
-            $('.ord-pay__block-data-address-floor input').prop('readonly', false);
-            $('.ord-pay__block-data-address-floor').removeClass('ord-pay__block-data-address-noact');
-            $('.ord-pay__block-data-address-apartment input').prop('readonly', false);
-            $('.ord-pay__block-data-address-apartment').removeClass('ord-pay__block-data-address-noact');
-        }
-    })
+    // $('.ord-pay__block-data-address-date').on('change', function() {
+    //     if($('.ord-pay__block-data-calls-phones input').val() !== '') {
+    //         countRenderInputOrder++
+    //     }
+    //     console.log(countRenderInputOrder)
+    //     if(countRenderInputOrder === 5) {
+    //         $('.ord-pay__block-data-address-street input').prop('readonly', false);
+    //         $('.ord-pay__block-data-address-street').removeClass('ord-pay__block-data-address-noact');
+    //         $('.ord-pay__block-data-address-home  input').prop('readonly', false);
+    //         $('.ord-pay__block-data-address-home').removeClass('ord-pay__block-data-address-noact');
+    //         $('.ord-pay__block-data-address-porch input').prop('readonly', false);
+    //         $('.ord-pay__block-data-address-porch').removeClass('ord-pay__block-data-address-noact');
+    //         $('.ord-pay__block-data-address-floor input').prop('readonly', false);
+    //         $('.ord-pay__block-data-address-floor').removeClass('ord-pay__block-data-address-noact');
+    //         $('.ord-pay__block-data-address-apartment input').prop('readonly', false);
+    //         $('.ord-pay__block-data-address-apartment').removeClass('ord-pay__block-data-address-noact');
+    //     }
+    // })
     
 }
 renderInputOrder()
@@ -284,4 +284,15 @@ $('.ord-pay__block-data-where-yes').on('click', function() {
 });
 $('.ord-pay__block-data-where-no').on('click', function() {
     $('.ord-pay__block-data-btn').attr('data-bs-target', '#modelOrderCity')
+});
+
+
+$('#datepickerOrder tbody').on('click', function() {
+    $('.ord-pay__block-data-address-date input').val()
+    console.log($('#datepickerOrder').val())
+});
+
+$('.ord-pay__block-data-address-model-close').on('click', function() {
+    let orderAdrressDateModel = $('#datepickerOrder').val()
+    $('.ord-pay__block-data-address-date input').val(orderAdrressDateModel)
 });

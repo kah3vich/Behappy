@@ -1,0 +1,333 @@
+@media (max-width: 1350px) {
+    .quiz-content__block-add-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px 15px;
+    }
+    .quiz-content__block-add-wrapper-item {
+        width: 100%;
+    }
+    .quiz-content__block-add {
+        height: 100%;
+    }
+}
+@media (max-width: 1300px) {
+    .quiz-content__block-whom-title {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 5px;
+    }
+    .quiz-content__block-whom-title-item {
+        grid-area: 2 / 1;
+    }
+}
+@media (max-width: 1100px) {
+    .quiz-content__block-whom {
+        height: 100%;
+        padding: 0;
+    }
+    .quiz-content__block-whom-point {
+        position: absolute;
+        width: 150%;
+        bottom: -25px;
+        left: 0;
+    }
+    .quiz-content__block-whom-points {
+        overflow: hidden;
+        width: 76%;
+        position: relative;
+        height: 130px;
+    }
+    .quiz-content__block-whom-prev {
+        position: absolute;
+        left: 30px;
+        width: 30px;
+        top: 643px;
+        cursor: not-allowed;
+    }
+    .quiz-content__block-whom-next {
+        position: absolute;
+        right: 30px;
+        width: 30px;
+        top: 643px;
+        cursor: not-allowed;
+    }
+    .quiz-content {
+        & .containers {
+            padding: 0 90px;
+        }
+    }
+    .quiz-content__block-type {
+        height: 100%;
+        padding: 0;
+    }
+    .quiz-content__block-type-point {
+        position: absolute;
+        width: 150%;
+        bottom: -25px;
+        left: 0;
+    }
+    .quiz-content__block-type-points {
+        overflow: hidden;
+        width: 76%;
+        position: relative;
+        height: 130px;
+    }
+    .quiz-content__block-type-prev {
+        position: absolute;
+        left: 30px;
+        width: 30px;
+        top: 540px;
+        cursor: not-allowed;
+    }
+    .quiz-content__block-type-next {
+        position: absolute;
+        right: 30px;
+        width: 30px;
+        top: 540px;
+        cursor: not-allowed;
+    }
+    .quiz-content__block-shade {
+        height: 100%;
+        padding: 0;
+    }
+    .quiz-content__block-shade-point {
+        position: absolute;
+        width: 150%;
+        bottom: -25px;
+        left: -184px;
+    }
+    .quiz-content__block-shade-points {
+        overflow: hidden;
+        width: 76%;
+        position: relative;
+        height: 130px;
+    }
+    .quiz-content__block-shade-prev {
+        position: absolute;
+        left: 30px;
+        width: 30px;
+        top: 460px;
+        cursor: not-allowed;
+    }
+    .quiz-content__block-shade-next {
+        position: absolute;
+        right: 30px;
+        width: 30px;
+        top: 460px;
+        cursor: not-allowed;
+    }
+    .quiz-content__block-shade-wrapper {
+        gap: 36px 28px;
+        margin: 50px 0 130px 0;
+        width: 702px;
+    }
+    .quiz-content__block-color {
+        height: 100%;
+        padding: 0;
+    }
+    .quiz-content__block-color-point {
+        position: absolute;
+        width: 150%;
+        bottom: -25px;
+        left: -368px;
+    }
+    .quiz-content__block-color-points {
+        overflow: hidden;
+        width: 76%;
+        position: relative;
+        height: 130px;
+    }
+    .quiz-content__block-color-prev {
+        position: absolute;
+        left: 30px;
+        width: 30px;
+        top: 485px;
+        cursor: not-allowed;
+    }
+    .quiz-content__block-color-next {
+        position: absolute;
+        right: 30px;
+        width: 30px;
+        top: 485px;
+        cursor: not-allowed;
+    }
+    .quiz-content__block-range {
+        height: 100%;
+        padding: 0;
+    }
+    .quiz-content__block-range-point {
+        position: absolute;
+        width: 150%;
+        bottom: -25px;
+        left: -368px;
+    }
+    .quiz-content__block-range-points {
+        overflow: hidden;
+        width: 76%;
+        position: relative;
+        height: 130px;
+    }
+    .quiz-content__block-range-prev {
+        position: absolute;
+        left: 30px;
+        width: 30px;
+        top: 400px;
+        cursor: not-allowed;
+    }
+    .quiz-content__block-range-next {
+        position: absolute;
+        right: 30px;
+        width: 30px;
+        top: 400px;
+        cursor: not-allowed;
+    }
+    .quiz-content__block-add {
+        height: 100%;
+        padding: 0;
+    }
+    .quiz-content__block-add-point {
+        position: absolute;
+        width: 150%;
+        bottom: -25px;
+        left: -368px;
+    }
+    .quiz-content__block-add-points {
+        overflow: hidden;
+        width: 76%;
+        position: relative;
+        height: 130px;
+    }
+    .quiz-content__block-add-prev {
+        position: absolute;
+        left: 30px;
+        width: 30px;
+        top: 1035px;
+        cursor: not-allowed;
+    }
+    .quiz-content__block-add-next {
+        position: absolute;
+        right: 30px;
+        width: 30px;
+        top: 1035px;
+        cursor: not-allowed;
+    }
+}
+@media (max-width: 920px) {
+    .quiz-content__block-whom-wrapper {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-auto-rows: 1fr; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 19px 25px;
+        // grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "quiz-whom-item-1 quiz-whom-item-2 quiz-whom-item-3"
+        "quiz-whom-item-4 quiz-whom-item-5 quiz-whom-item-6"
+        "quiz-whom-item-7 quiz-whom-item-8 quiz-whom-item-8";
+    }
+    .quiz-content__block-whom-wrapper-item {
+        width: 93px;
+        height: 93px;
+    }
+    .quiz-content__block-whom-wrapper-item:nth-child(1) {
+        grid-area: quiz-whom-item-1;
+    }
+    .quiz-content__block-whom-wrapper-item:nth-child(2) {
+        grid-area: quiz-whom-item-2;
+    }
+    .quiz-content__block-whom-wrapper-item:nth-child(3) {
+        grid-area: quiz-whom-item-3;
+    }
+    .quiz-content__block-whom-wrapper-item:nth-child(4) {
+        grid-area: quiz-whom-item-4;
+    }
+    .quiz-content__block-whom-wrapper-item:nth-child(5) {
+        grid-area: quiz-whom-item-5;
+    }
+    .quiz-content__block-whom-wrapper-item:nth-child(6) {
+        grid-area: quiz-whom-item-6;
+    }
+    .quiz-content__block-whom-wrapper-item:nth-child(7) {
+        grid-area: quiz-whom-item-7;
+    }
+    .quiz-content__block-whom-wrapper-item:nth-child(8) {
+        grid-area: quiz-whom-item-8;
+        width: 206px;
+        & p {
+            margin: 14px 0 0 0;
+            width: 75px;
+            font-family: Circe;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        & input {
+            margin: 18px 0 0 0;
+        }
+    }
+    .quiz-content__block-whom-title {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .quiz-content__block-whom-title-item {
+        grid-area: 3 / 1;
+    }
+    .quiz-content__block-whom-prev {
+        position: absolute;
+        left: 30px;
+        width: 30px;
+        top: 620px;
+        cursor: not-allowed;
+    }
+    .quiz-content__block-whom-next {
+        position: absolute;
+        right: 30px;
+        width: 30px;
+        top: 620px;
+        cursor: not-allowed;
+    }
+    .quiz-content__block-whom-points {
+        overflow: hidden;
+        width: 365px;
+        position: relative;
+        height: 130px;
+    }
+}
+@media (max-width: 700px) {
+    .quiz-content .containers {
+        padding: 0 28px;
+    }
+}
+@media (max-width: 550px) {
+    .quiz-content__block-whom-prev {
+        position: absolute;
+        left: 0px;
+        width: 30px;
+        top: 620px;
+        cursor: not-allowed;
+    }
+    .quiz-content__block-whom-next {
+        position: absolute;
+        right: 8px;
+        width: 30px;
+        top: 620px;
+        cursor: not-allowed;
+    }
+}
+@media (max-width: 500px) {
+    .quiz-content__block-whom-points {
+        overflow: hidden;
+        width: 230px;
+        position: relative;
+        height: 130px;
+    }
+    .quiz-content__block-whom-point {
+        position: absolute;
+        width: 101%;
+        bottom: -25px;
+        left: 0;
+    }
+}

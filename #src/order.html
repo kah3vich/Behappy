@@ -63,13 +63,31 @@
                             <option value="Киров">Киров</option>
                         </select> 
                     </div>
-                    <div class="ord-pay__block-data-address-date">
+                    <div class="ord-pay__block-data-address-date" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modelOrderDate">
                         <label for="date-client">
-                            <input type="text" id="datepickerOrder" placeholder="дд.мм.гггг">
+                            <input type="text" placeholder="дд.мм.гггг">
                             @@include('iconsprite/calendar-order.svg')
                         </label>
                     </div>
-                    
+
+                    <div class="modal fade" id="modelOrderDate" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content ord-pay__block-data-address-model">
+                                <button type="button" class="btn-close ord-pay__block-data-address-model-close" data-bs-dismiss="modal" aria-label="Close">
+                                    @@include('./iconsprite/close-model.svg')
+                                </button>
+                                <div class="ord-pay__block-data-address-model-title">Выберите дату</div>
+                                <div id="datepickerOrder" class="ord-pay__block-data-address-model-calendar"></div>
+                                <div class="ord-pay__block-data-address-model-add">Получите  выгоду</div>
+                                <div class="ord-pay__block-data-address-model-text">
+                                    При оплате заявки заблаговременно Вам доступна скидка, наша платформа рассчитает её самостоятельно для всех товаров , выберите желаемую дату исполнения. <br><br>
+                                    От 7 дней - 5% <br>
+                                    От 14 дней – 10% <br>
+                                    От 21 дня - 15%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     
                 </div>
                 <div class="ord-pay__block-data-exactly display-n">
@@ -226,7 +244,7 @@
                 </div>
                 <div class="ord-pay__block-data-postcard">
                     <div class="ord-pay__block-data-postcard-title">
-                        Большая открытка 250 руб (не более 2500 символов)
+                        Большая открытка 250 руб
                     </div>
                     <div class="ord-pay__block-data-postcard-container">
                         <label for="y-postcard" class="ord-pay__block-data-postcard-yes">
