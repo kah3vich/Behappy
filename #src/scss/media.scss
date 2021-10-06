@@ -893,3 +893,42 @@
 
 //! ---------------------------------------------------------------------------
 
+
+
+//! Профиль 
+
+
+
+@media (max-width: 1330px) {
+    .header-profile__menu-list {
+        display: none;
+    }
+    .header-profile__menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-profile__editor {
+        position: static;
+    }
+    .header-profile__burger {
+        display: flex;
+    }
+    .header-profile__client-name {
+        display: none;
+    }
+}
+@media (max-width: 900px) {
+    .header-profile{
+        padding: 0 30px;
+    }
+}
+@media (max-width: 450px) {
+    .menu-profile-open {
+        width: 100%;
+    }
+}
+
+
+//! ---------------------------------------------------------------------------
+

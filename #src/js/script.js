@@ -36,6 +36,8 @@
 
 @@include('./orders/orders.js')
 
+@@include('./profile/profile.js')
+
 @@include('./calendar/calendar.js')
 
 
