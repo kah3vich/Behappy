@@ -7,6 +7,9 @@
 
     <div class="header-profile__menu">
         <ul class="header-profile__menu-list">
+            <div class="header-profile__menu-list-close">
+                @@include('iconsprite/profile/close-profile.svg')
+            </div>
             <li class="header-profile__menu-list-status">
                 <a href="status.html">
                     @@include('iconsprite/rec/heart.svg')
@@ -97,6 +100,45 @@
         <div class="header-profile__chosen">
             <div class="header-profile__chosen-title">Избранное</div>
             <ul class="header-profile__chosen-list">
+                <li class="header-profile__chosen-item">
+                    <div class="header-profile__chosen-item-delete">@@include('iconsprite/chosen/delete.svg')</div>
+                    <div class="header-profile__chosen-item-img">
+                        @@include('iconsprite/chosen/imgs.svg')
+                        <div class="header-profile__chosen-item-img-circle">
+                            @@include('iconsprite/chosen/hearts.svg')
+                        </div>
+                    </div>
+                    <div class="header-profile__chosen-item-title">
+                        Белая 
+                    </div>
+                    <div class="header-profile__chosen-item-price">
+                        <div class="header-profile__chosen-item-price-balls">
+                            @@include('iconsprite/chosen/money.svg')
+                            <p>78</p>
+                        </div>
+                        <div class="header-profile__chosen-item-price-star">
+                            @@include('iconsprite/chosen/star.svg')
+                            <p>4.8</p>
+                        </div>
+                        <div class="header-profile__chosen-item-price-sum">
+                            <p>2990₽</p>
+                        </div>
+                    </div>
+                    <div class="header-profile__chosen-item-add">
+                        <div class="header-profile__chosen-item-add-basket">
+                            @@include('iconsprite/chosen/basket.svg')
+                        </div>
+                        <div class="header-profile__chosen-item-add-share">
+                            @@include('iconsprite/chosen/share.svg')
+                        </div>
+                        <div class="header-profile__chosen-item-add-calendar">
+                            @@include('iconsprite/chosen/calendar.svg')
+                        </div>
+                        <div class="header-profile__chosen-item-add-price">
+                            24%  5340₽ 
+                        </div>
+                    </div>
+                </li>
                 <li class="header-profile__chosen-item">
                     <div class="header-profile__chosen-item-delete">@@include('iconsprite/chosen/delete.svg')</div>
                     <div class="header-profile__chosen-item-img">

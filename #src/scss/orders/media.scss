@@ -1,0 +1,113 @@
+@media (max-width: 1330px) {
+    .header-profile__orders{
+        width: 96%;
+        position: static;
+        margin: 30px 0 0 0;
+        align-items: center;
+    }
+    .header-profile__orders-table {
+        width: 100%;
+        padding: 26px 0 0 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #profileOrdersModel-1 .modal-dialog {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 650px) {
+    .header-profile__orders-table-info-input {
+        width: 320px;
+    }
+    .header-profile__orders-table-info-input::after {
+        content: "Текст открытки:";
+        position: absolute;
+        top: -30px;
+        left: 110px;
+        font-family: Circe;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 150%;
+        color: #bebebe;
+    }
+    .header-profile__orders-table-info-list {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .header-profile__orders-table-info-list-item {
+        &:nth-last-child(3) {
+            display: none;
+        }
+        &:nth-last-child(4) {
+            display: none;
+        }
+    }
+    .header-profile__orders-table-info-table {
+        grid-template-columns: repeat(2,1fr);
+        gap: 32px 32px;
+        margin: 37px 0 0 0;
+    }
+    .header-profile__orders-table-info-slider {
+        & .swiper-button-next {
+            display: none;
+        }
+        & .swiper-button-prev {
+            display: none;
+        }
+    }
+    .header-profile__orders-table-info-input {
+        margin: 63px auto 0 auto;
+    }
+    .header-profile__orders-table-info-table {
+        grid-template-columns: repeat(2,1fr);
+        gap: 32px 32px;
+        margin: 37px auto 0 6%;
+    }
+}
+@media (max-width: 600px) {
+    .header-profile__orders-table-item {
+        width: 333px;
+    }
+    .header-profile__orders-table-date {
+        width: 333px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0 160px 0 30px;
+        margin: 28px 0 0 0;
+    }
+    .header-profile__orders-table-info-btn {
+        width: 139px;
+        height: 36px;
+    }
+    .header-profile__orders-table-info-text {
+        margin: 0 0 0 15px;
+        width: 179px;
+        height: 36px;
+    }
+    .header-profile__orders-table-info-btn p,
+    .header-profile__orders-table-info-text p {
+        font-size: 12px;
+    }
+    .header-profile__orders-table-info-model {
+        padding: 62px 0 0 0;
+    }
+    
+}
+@media (max-width: 450px) {
+    .header-profile__orders-table-info-table {
+        grid-template-columns: repeat(2,1fr);
+        gap: 32px 10px;
+        margin: 37px auto 0 6%;
+    }
+}

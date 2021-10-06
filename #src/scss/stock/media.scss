@@ -1,0 +1,36 @@
+@media (max-width: 1330px) {
+    .header-profile__stock {
+        width: 96%;
+        position: static;
+        margin: 30px 0 0 0;
+        justify-content: center;
+    }
+    .header-profile__stock-info {
+        margin: 44px 0 0 30px;
+    }
+}
+@media (max-width: 700px) {
+    .header-profile__stock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 777px;
+        padding: 20px 0 0 0;
+    }
+    .header-profile__stock-info {
+        margin: 0;
+        position: relative;
+        width: 290px;
+    }
+    .header-profile__stock-info-circle {
+        position: absolute;
+        top: 120px;
+        right: -10px;
+        width: 123px;
+        height: 123px;
+    }
+    .header-profile__stock-calendar-title {
+        width: 100%;
+        text-align: center;
+    }
+}

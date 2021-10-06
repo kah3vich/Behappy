@@ -1,0 +1,48 @@
+@media (max-width: 1330px) {
+    .header-profile__donat {
+        width: 96%;
+        position: static;
+        margin: 30px 0 0 0;
+    }
+    .header-profile__donat-circle {
+        top: 40%;
+        right: 13%;
+    }
+}
+@media (max-width: 890px) {
+    .header-profile__donat-circle {
+        top: 45%;
+        right: 13%;
+    }
+}
+@media (max-width: 800px) {
+    .header-profile__donat-circle {
+        position: static;
+        grid-area: 3 / 1;
+        margin: 0 auto;
+    }
+    .header-profile__donat {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 34px 20px 0 20px;
+        height: 835px;
+    }
+    .header-profile__donat-title {
+        width: 100%;
+        margin: 0 auto;
+        height: 96px;
+        font-family: Circe;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 122%;
+        letter-spacing: 0.5px;
+        color: #FFFFFF;
+    }
+    .header-profile__donat-info {
+        align-items: center;
+    }
+    .header-profile__donat-info {
+        margin: 30px 0 0 0;
+    }
+}

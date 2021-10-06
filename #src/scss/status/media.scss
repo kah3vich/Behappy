@@ -1,0 +1,42 @@
+@media (max-width: 1330px) {
+    .header-profile__status {
+        width: 96%;
+        position: static;
+        margin: 30px 0 0 0;
+        align-items: center;
+        padding: 0px 108px 0 98px;
+    }
+}
+@media (max-width: 950px) {
+    .header-profile__status {
+        flex-direction: column;
+        height: 430px;
+    }
+    .header-profile__status-img {
+        width: 123px;
+        height: 123px;
+        margin: 0 0 35px 0;
+    }
+    .header-profile__status-info {
+        margin: 50px 0 0 0;
+    }
+    #profileStatusModel .modal-dialog {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 550px) {
+    #profileStatusModel .modal-content {
+        width: 350px;
+        height: 134px;
+    }
+    .header-profile__status-info-model p {
+        font-family: Circe;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 59px;
+        text-align: center;
+        color: #fff;
+    }
+}
