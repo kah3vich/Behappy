@@ -7,7 +7,7 @@
 - ## New Detail 📱 : [click me](https://kah3vich.github.io/Behappy/dist/dnew.html)
 - ## Search 📱 : [click me](https://kah3vich.github.io/Behappy/dist/search.html)
 - ## 8 March 📱 : [click me](https://kah3vich.github.io/Behappy/dist/march.html)
-- ## Quiz: [click me](https://kah3vich.github.io/Behappy/dist/quiz.html)
+- ## Quiz 📱 : [click me](https://kah3vich.github.io/Behappy/dist/quiz.html)
 - ## 404 📱 : [click me](https://kah3vich.github.io/Behappy/dist/404.html)
 - ## Subscription 📱 : [click me](https://kah3vich.github.io/Behappy/dist/subscription.html)
 - ## About 📱 : [click me](https://kah3vich.github.io/Behappy/dist/about.html)

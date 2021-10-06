@@ -20,6 +20,14 @@
         grid-area: 2 / 1;
     }
 }
+@media (max-width: 1250px) {
+    .ord-quiz__block {
+        flex-direction: column;
+    }
+    .ord-quiz__block-info {
+        margin: 40px 0 0 0;
+    }
+}
 @media (max-width: 1100px) {
     .quiz-content__block-whom {
         height: 100%;
@@ -576,6 +584,35 @@
     .quiz-content__block-color-wrapper-items {
         width: 205%;
     }
+    .ord-quiz__catalog {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 45px 0;
+    }
+    .ord-quiz__catalog-item {
+        margin: 0 auto;
+    }
+    .ord-quiz__catalog-hr {
+        position: absolute;
+        height: 0;
+        width: 65%;
+        padding: 0 50px;
+        top: 44px;
+        left: 17%;
+        border: 1px solid #16b8c3;
+        z-index: -1;
+    }
+    .ord-quiz__catalog-hr-media {
+        position: absolute;
+        height: 0;
+        width: 65%;
+        padding: 0 50px;
+        top: 175px;
+        left: 17%;
+        border: 1px solid #16b8c3;
+        z-index: -1;
+        display: block;
+    }
 }
 @media (max-width: 750px) {
     .quiz-content__block-range-title {
@@ -624,6 +661,227 @@
         top: 55px;
         cursor: not-allowed;
     }
+}
+@media (max-width: 600px) {
+    .ord-quiz__block-data-btn {
+        border: none;
+        width: 320px;
+        height: 50px;
+        background: conic-gradient(from 
+    180deg at 50% 50%,#dcdcdc 
+    -35.51deg,#ccc 
+    10.17deg,#b6b6b6 
+    44.5deg,#b8b8b8 
+    123.75deg,#d1d1d1 
+    171.3deg,#aaa 
+    188.73deg,#c4c4c4 
+    224.01deg,#dcdcdc 
+    324.49deg,#ccc 
+    370.17deg);
+        -webkit-box-shadow: 0 0 15px #c5c5c5;
+        box-shadow: 0 0 15px #c5c5c5;
+        border-radius: 10px;
+        position: relative;
+        padding: 0 0 5px 0;
+        margin: 50px 0 0 0;
+    }
+    .ord-quiz__block-data-btn::after {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 309.53px;
+        height: 41px;
+        border: .5px solid #c6c6c6;
+        border-radius: 10px;
+    }
+    .ord-quiz__block-data-btn::before {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        width: 301.55px;
+        height: 33px;
+        border: .5px solid #c6c6c6;
+        border-radius: 10px;
+    }
+    .ord-quiz__block-info-price-total,
+    .ord-quiz__block-info-price-balls,
+    .ord-quiz__block-info-price-delivery,
+    .ord-quiz__block-data-card-quiz,
+    .ord-quiz__block-data-message-textarea,
+    .ord-quiz__block-data-postcards textarea {
+        width: 320px;
+    }
+    .ord-quiz__block-data-card-form {
+        width: 320px;
+        height: 227px;
+        border: 1px solid #16b8c3;
+        border-radius: 5px;
+        margin: 36px 0 0 0;
+        padding: 21px 0 20px 20px;
+    }
+    .ord-quiz__block-data-postcard-container {
+        margin: 40px 0 0 0;
+    }
+    .ord-quiz__block-data-postcard-title::after {
+        content: "(не более 2500 символов)";
+        position: absolute;
+        top: 30px;
+        right: 70px;
+        font-family: Circe;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 122%;
+        letter-spacing: .5px;
+        color: #b7a8a8;
+    }
+    .ord-quiz__block-data-postcards-container {
+        width: 320px;
+        flex-direction: column;
+        height: 100%;
+        align-items: flex-start;
+    }
+    .ord-quiz__block-data-postcards-no {
+        margin: 30px 0 0 0;
+    }
+    .ord-quiz__block-data-postcards-yes .ord-quiz__block-data-postcards-check {
+        width: 320px;
+    }
+    .ord-quiz__block-data-postcards-yes {
+        width: 320px;
+    }
+    input[type=radio]:checked~.ord-quiz__block-data-postcards-check::before {
+        width: 320px;
+    }
+    input[type=radio]:checked~.ord-quiz__block-data-postcards-border::before {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        width: 304px;
+        height: 33px;
+        border: .5px solid #c6c6c6;
+        border-radius: 10px;
+    }
+    input[type=radio]:checked~.ord-quiz__block-data-postcards-border::after {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 311px;
+        height: 41px;
+        border: .5px solid #c6c6c6;
+        border-radius: 10px;
+    }
+    .ord-quiz__block-data-postcards-no .ord-quiz__block-data-postcards-check {
+        width: 320px;
+    }
+    .ord-quiz__block-data-postcards-no {
+        width: 320px;
+    }
+    .ord-quiz__block-data-time-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    input[type=radio]:checked~.ord-quiz__block-data-time-check {
+        width: 320px;
+    }
+    .ord-quiz__block-data-time-text {
+        position: absolute;
+        top: 15px;
+        left: 125px;
+    }
+    .ord-quiz__block-data-time-block .ord-quiz__block-data-time-check {
+        width: 320px;
+    }
+    .ord-quiz__block-data-delivery {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .ord-quiz__block-data-delivery .ord-quiz__block-data-label {
+        margin: 30px 0 0 0;
+    }
+    .ord-quiz__block-data-courier {
+        width: 320px;
+    }
+    .ord-quiz__block-data-delivery .ord-quiz__block-data-label input[type=radio]:checked+.ord-quiz__block-data-content {
+        width: 320px;
+    }
+    .ord-quiz__block-data-delivery .ord-quiz__block-data-label input[type=radio]:checked+.ord-quiz__block-data-content::before {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 309px;
+        height: 86px;
+        border: .5px solid #c6c6c6;
+        border-radius: 10px;
+    }
+    .ord-quiz__block-data-delivery .ord-quiz__block-data-label input[type=radio]:checked+.ord-quiz__block-data-content::after {
+        content: "";
+        width: 297px;
+        height: 76px;
+        border: .5px solid #c6c6c6;
+        border-radius: 10px;
+        position: absolute;
+        top: 9px;
+        left: 9px;
+    }
+    .ord-quiz__block-data-me {
+        width: 320px;
+    }
+    .ord-quiz__block-data-contact {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .ord-quiz__block-data-contact-phone {
+        margin: 30px 0 0 0;
+    }
+    .ord-quiz__block-data-calls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .ord-quiz__block-data-calls-phones {
+        margin: 30px 0 0 0;
+    }
+    .ord-quiz__block-data-address {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .ord-quiz__block-data-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .ord-quiz__block-data-contact-name input,
+    .ord-quiz__block-data-contact-phone input,
+    .ord-quiz__block-data-calls-names input,
+    .ord-quiz__block-data-calls-phones input,
+    .ord-quiz__block-data-address-city,
+    .ord-quiz__block-data-address-date label,
+    .ord-quiz__block-data-address-date,
+    .ord-quiz__block-data-address-street input,
+    .ord-quiz__block-data-address-street label,
+    .ord-quiz__block-data-address-street,
+    .ord-quiz__block-data-address-home input,
+    .ord-quiz__block-data-address-home label,
+    .ord-quiz__block-data-address-home,
+    .ord-quiz__block-data-address-porch input,
+    .ord-quiz__block-data-address-porch label,
+    .ord-quiz__block-data-address-porch,
+    .ord-quiz__block-data-address-floor input,
+    .ord-quiz__block-data-address-floor label,
+    .ord-quiz__block-data-address-floor,
+    .ord-quiz__block-data-address-apartment input,
+    .ord-quiz__block-data-address-apartment label,
+    .ord-quiz__block-data-address-apartment {
+        width: 320px;
+    }
+    .ord-select-options li {
+        width: 318px;
+    }
+
+
 }
 @media (max-width: 550px) {
     .quiz-content__block-whom-prev {
@@ -937,4 +1195,35 @@
         top: 525px;
         cursor: not-allowed;
     }
+    .ord-quiz__catalog-item {
+        width: 93px;
+        height: 93px;
+    }
+    .ord-quiz__catalog {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 55px 0;
+    }
+    .ord-quiz__catalog-hr {
+        position: absolute;
+        height: 0;
+        width: 65%;
+        padding: 0 50px;
+        top: 47px;
+        left: 17%;
+        border: 1px solid #16b8c3;
+        z-index: -1;
+    }
+    .ord-quiz__catalog-hr-media {
+        position: absolute;
+        height: 0;
+        width: 65%;
+        padding: 0 50px;
+        top: 195px;
+        left: 17%;
+        border: 1px solid #16b8c3;
+        z-index: -1;
+        display: block;
+    }
+    
 }

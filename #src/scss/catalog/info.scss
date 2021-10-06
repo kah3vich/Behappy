@@ -156,7 +156,6 @@
         opacity: 1;
         top: -25px;
         right: -25px;
-        
     }
     &__card {
         display: flex;
@@ -170,6 +169,7 @@
             height: 100%;
             margin: 0 0 0 46px;
             &-banner {
+                margin: 10px 0 0 0;
                 width: 526px;
                 height: 417px;
                 background: #04133C;
@@ -189,6 +189,28 @@
                 justify-content: space-between;
                 width: 526px;
                 margin: 33px 0 0 0;
+                position: relative;
+                & .swiper-slide {
+                    padding: 5px 0;
+                }
+                & .swiper-controls {
+                    & .swiper-button-next {
+                        content: url(../svg/model-catalog/arrow-next.svg);
+                        width: 9px;
+                        height: 17px;
+                        position: absolute;
+                        top: 85px;
+                        right: -20px;
+                    }
+                    & .swiper-button-prev {
+                        content: url(../svg/model-catalog/arrow-prev.svg);
+                        width: 9px;
+                        height: 17px;
+                        position: absolute;
+                        top: 85px;
+                        left: -20px;
+                    }
+                }
                 &-item {
                     width: 156px;
                     height: 135px;
@@ -244,6 +266,15 @@
                 align-items: flex-end;
                 justify-content: center;
                 margin: 76px 0 0 0;
+                &-media {
+                    display: flex;
+                    width: 526px;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    justify-content: center;
+                    margin: 76px 0 0 0;
+                    display: none;
+                }
             }
             &-btns {
                 display: flex;
@@ -1451,6 +1482,14 @@
                 align-items: flex-start;
                 justify-content: flex-start;
                 margin: 63px 0 0 198px;
+                &-media {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    margin: 63px 0 0 198px;
+                    display: none;
+                }
             }
             &-count {
                 display: flex;
@@ -2133,6 +2172,14 @@
                 align-items: flex-start;
                 justify-content: flex-start;
                 margin: 63px 0 0 198px;
+                &-media {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    margin: 63px 0 0 198px;
+                    display: none;
+                }
             }
             &-count {
                 display: flex;

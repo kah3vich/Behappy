@@ -999,13 +999,26 @@ var modelSliderToy = new Swiper(".modelSliderToy", {
 
 
 var modelToyWrapperSlider = new Swiper(".modelToyWrapperSlider", {
-    loop: true,
     slidesPerView: 3, 
     spaceBetween: 15, 
     navigation: {
         nextEl: ".model-toy__block-wrapper-slider .swiper-control .swiper-button-next",
         prevEl: ".model-toy__block-wrapper-slider .swiper-control .swiper-button-prev",
     },
+    breakpoints: {
+        700: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 15
+        },
+        500: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 15
+        },
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 10
+        }
+    }
 });
 
 $('.model-toy__block-info-calendar-btn').on('click', function() {
@@ -1027,13 +1040,26 @@ var modelSliderBallons = new Swiper(".modelSliderBallons", {
 
 
 var modelBallonsWrapperSlider = new Swiper(".modelBallonsWrapperSlider", {
-    loop: true,
     slidesPerView: 3, 
     spaceBetween: 15, 
     navigation: {
         nextEl: ".model-ballons__block-wrapper-slider .swiper-control .swiper-button-next",
         prevEl: ".model-ballons__block-wrapper-slider .swiper-control .swiper-button-prev",
     },
+    breakpoints: {
+        800: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 15
+        },
+        630: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 15
+        },
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 10
+        }
+    }
 });
 
 $('.model-ballons__block-info-calendar-btn').on('click', function() {
@@ -1044,11 +1070,17 @@ $('.model-ballons__block-info-calendar-btn').on('click', function() {
 $('.model-ballons__block-wrapper-banner').on('click', function() {
     $('.model-photo-1').removeClass('display-n')
 });
+$('.model-ballons__block-wrapper-slider-item').on('click', function() {
+    $('.model-photo-1').removeClass('display-n')
+});
 $('.model-photo-1__block-close').on('click', function() {
     $('.model-photo-1').addClass('display-n')
 });
 
 $('.model-catalog__card-block-banner').on('click', function() {
+    $('.model-photo-2').removeClass('display-n')
+});
+$('.model-catalog__card-block-banners').on('click', function() {
     $('.model-photo-2').removeClass('display-n')
 });
 $('.model-photo-2__block-close').on('click', function() {
@@ -1102,6 +1134,32 @@ $('.header__block-menu-contact-car').on('click', function() {
 });
 $('.model-notice__block-close').on('click', function() {
     $('.model-notice').addClass('display-n')
+});
+
+
+var modelSliderBannersCatalog = new Swiper(".modelSliderBannersCatalog", {
+    slidesPerView: 3, 
+    spaceBetween: 15,
+    navigation: {
+        nextEl: ".model-catalog__card-block-banners .swiper-controls .swiper-button-next",
+        prevEl: ".model-catalog__card-block-banners .swiper-controls .swiper-button-prev",
+    },
+    mousewheel: true,
+    keyboard: true,
+    breakpoints: {
+        650: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 15
+        },
+        500: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 15
+        },
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 10
+        }
+    }
 });
 
 //! Открытие фильтра 

@@ -3624,6 +3624,17 @@
             left: 2%;
             border: 1px dashed #16B8C3;
             z-index: -1;
+            &-media {
+                display: none;
+                position: absolute;
+                height: 0px;
+                width: 95%;
+                padding: 0 50px;
+                top: 60px;
+                left: 2%;
+                border: 1px dashed #16B8C3;
+                z-index: -1;
+            }
         }
     }
     &__block {
@@ -5149,6 +5160,20 @@
                     letter-spacing: 0.5px;
                     color: #FFFFFF;
                     margin: 0 0 30px 0;
+                    position: relative;
+                    &::after {
+                        content: "(не более 2500 символов)";
+                        position: absolute;
+                        top: 3px;
+                        right: -175px;
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 13px;
+                        line-height: 122%;
+                        letter-spacing: 0.5px;
+                        color: #B7A8A8;
+                    }
                 }
                 &-container {
                     display: flex;
