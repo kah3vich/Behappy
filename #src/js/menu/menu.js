@@ -355,3 +355,92 @@ $('.menu__block-title-language-eng').on('click', function() {
 
 
 //! --------------------------------------------------------------------------------------------
+
+
+
+
+//! Мобильный версия выпадающего списка - выбор города 
+
+
+$('.media-header__block-client-select').on('click', function() {
+    $('.media-header__block-client-select-arrow').toggleClass('media-header__block-client-select-arrow-active')
+    $('.media-header__block-client-select-wrapper').toggleClass('display-n')
+});
+
+$('#mediaMenuSelectItemCity-1').on('click', function() {
+    let mediaMenuSelectItemCity_1 = $(this).text()
+    $('.media-header__block-client-select-text').html(mediaMenuSelectItemCity_1)
+});
+
+$('#mediaMenuSelectItemCity-2').on('click', function() {
+    let mediaMenuSelectItemCity_2 = $(this).text()
+    $('.media-header__block-client-select-text').html(mediaMenuSelectItemCity_2)
+});
+
+$('#mediaMenuSelectItemCity-3').on('click', function() {
+    let mediaMenuSelectItemCity_3 = $(this).text()
+    $('.media-header__block-client-select-text').html(mediaMenuSelectItemCity_3)
+});
+
+$('#mediaMenuSelectItemCity-4').on('click', function() {
+    let mediaMenuSelectItemCity_4 = $(this).text()
+    $('.media-header__block-client-select-text').html(mediaMenuSelectItemCity_4)
+});
+
+
+//! --------------------------------------------------------------------------------------------
+
+
+
+
+//! Мобильный версия выпадающего списка - выбор подборки
+
+
+$('.media-header__block-contact-catalog').on('click', function() {
+    $('.media-header__block-contact-catalog-arrow').toggleClass('media-header__block-contact-catalog-arrow-active')
+    $('.media-header__block-contact-catalog-select').toggleClass('display-n')
+});
+
+$('#mediaMenuSelectItemCatalog-1').on('click', function() {
+    let mediaMenuSelectItemCatalog_1 = $(this).text()
+    $('.media-header__block-contact-catalog-text').html(mediaMenuSelectItemCatalog_1)
+});
+$('#mediaMenuSelectItemCatalog-2').on('click', function() {
+    let mediaMenuSelectItemCatalog_2 = $(this).text()
+    $('.media-header__block-contact-catalog-text').html(mediaMenuSelectItemCatalog_2)
+});
+$('#mediaMenuSelectItemCatalog-3').on('click', function() {
+    let mediaMenuSelectItemCatalog_3 = $(this).text()
+    $('.media-header__block-contact-catalog-text').html(mediaMenuSelectItemCatalog_3)
+});
+$('#mediaMenuSelectItemCatalog-4').on('click', function() {
+    let mediaMenuSelectItemCatalog_4 = $(this).text()
+    $('.media-header__block-contact-catalog-text').html(mediaMenuSelectItemCatalog_4)
+});
+$('#mediaMenuSelectItemCatalog-5').on('click', function() {
+    let mediaMenuSelectItemCatalog_5 = $(this).text()
+    $('.media-header__block-contact-catalog-text').html(mediaMenuSelectItemCatalog_5)
+});
+$('#mediaMenuSelectItemCatalog-6').on('click', function() {
+    let mediaMenuSelectItemCatalog_6 = $(this).text()
+    $('.media-header__block-contact-catalog-text').html(mediaMenuSelectItemCatalog_6)
+});
+
+
+
+//! --------------------------------------------------------------------------------------------
+
+
+
+
+//! Открытие и закрытие мобильного меню 
+
+
+
+$('.media-header__click').on('click', function() {
+    $('.media-header__block').addClass('display-n')
+});
+
+
+
+//! --------------------------------------------------------------------------------------------

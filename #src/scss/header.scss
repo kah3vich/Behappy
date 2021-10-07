@@ -1222,6 +1222,24 @@
     border-radius: 0px 0px 20px 20px;
     padding: 10px 0 19px 0;
     display: none;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 107px;
+        height: 0px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        border-top: 2px solid #FFFFFF;
+    }
+    &__click {
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+    }
     &__block {
         display: flex;
         flex-direction: column;
@@ -1260,18 +1278,93 @@
             &-select {
                 width: 117px;
                 height: 25px;
-                background: #04133C;
-                border: 1px solid #002685;
-                box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
-                border-radius: 20px;
+                background: conic-gradient(from 180deg at 50% 50%, #00278F -35.51deg, #345CC5 10.17deg, #00278F 44.5deg, #00278F 123.75deg, #2E57C5 171.3deg, #00278F 188.73deg, #234EC1 224.01deg, #00278F 324.49deg, #345CC5 370.17deg);
+                box-shadow: 0px 0px 15px #072F99;
+                border-radius: 30px;
                 margin: 0 0 0 10px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 1px;
+                    left: 1px;
+                    width: 114.53px;
+                    height: 23.33px;
+                    border: 0.5px solid #052C96;
+                    border-radius: 30px;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 2px;
+                    left: 2px;
+                    width: 111.23px;
+                    height: 20.83px;
+                    border: 0.5px solid #052C96;
+                    border-radius: 30px;
+                }
+                &-text {
+                    font-family: FuturaBookC;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 10px;
+                    line-height: 11px;
+                    color: #FFFFFF;
+                    text-shadow: 0px 0px 4px #000000;
+                    margin: 0 0 0 15px;
+                }
+                &-arrow {
+                    position: absolute;
+                    content: url(../svg/media-menu/arrow-down.svg);
+                    top: 11px;
+                    right: 12px;
+                    transition: all 0.5s ease;
+                    &-active {
+                        transition: all 0.5s ease;
+                        transform: rotate(180deg);
+                    }
+                }
+                &-wrapper {
+                    position: absolute;
+                    bottom: -90px;
+                    left: 0;
+                    background: #04133c;
+                    border: 1px solid #002685;
+                    box-shadow: 3px 3px 6px rgb(222 51 254 / 20%), -3px -3px 6px rgb(22 184 195 / 20%);
+                    border-radius: 5px;
+                    z-index: 10;
+                    &::-webkit-scrollbar {
+                        width: 27px;
+                    }
+                    &::-webkit-scrollbar-track {
+                        box-shadow: inset 0 0 10px 10px #854FC8;
+                        border: solid 12px transparent;
+                        margin: 0 10px 0 0;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        box-shadow: inset 0 0 10px 10px #fff;
+                        border: solid 10px transparent;
+                    }
+                    & option {
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #fff;
+                        text-shadow: 0 0 10px #414141;
+                    }
+                }
             }
             &-search {
                 width: 25px;
                 height: 25px;
-                background: #04133C;
-                border: 1px solid #002685;
-                box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+                background: conic-gradient(from 180deg at 50% 50%, #565656 -35.51deg, #3E4342 14.15deg, #333333 44.5deg, #5D5D5D 123.75deg, #565656 171.3deg, #7D7D7D 188.73deg, #2C2B2E 224.01deg, #565656 324.49deg, #3E4342 374.15deg);
+                box-shadow: 0px 0px 15px #00AC26;
+                border-radius: 30px;
                 border-radius: 20px;
                 display: flex;
                 align-items: center;
@@ -1281,38 +1374,94 @@
             &-shopping {
                 width: 25px;
                 height: 25px;
-                background: #04133C;
-                border: 1px solid #002685;
-                box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
-                border-radius: 20px;
+                background: conic-gradient(from 180deg at 50% 50%, #2CF388 -35.51deg, #08AD4A 10.17deg, #25FF8A 44.5deg, #00C85D 123.75deg, #7DFFBA 171.3deg, #00C85D 188.73deg, #058F46 224.01deg, #2CF388 324.49deg, #08AD4A 370.17deg);
+                box-shadow: 0px 0px 15px #15CD6B;
+                border-radius: 30px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 margin: 0 0 0 24px;
+                font-family: FuturaBookC;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 16px;
+                color: #FFFFFF;
+                text-shadow: 0px 0px 4px #000000;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 1px;
+                    left: 1px;
+                    width: 23.61px;
+                    height: 23.61px;
+                    border: 0.5px solid #23DD7A;
+                    border-radius: 30px;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 2px;
+                    left: 2px;
+                    width: 20.83px;
+                    height: 20.83px;
+                    border: 0.5px solid #23DD7A;
+                    border-radius: 30px;
+                }
             }
             &-account {
                 width: 25px;
                 height: 25px;
-                background: #04133C;
-                border: 1px solid #002685;
-                box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
-                border-radius: 20px;
+                background: conic-gradient(from 180deg at 50% 50%, #0633B3 -35.51deg, #4980FF 14.15deg, #0034B9 44.5deg, #0B4AE4 123.75deg, #4399FF 171.3deg, #0038FF 188.73deg, #3977FF 224.01deg, #0633B3 324.49deg, #4980FF 374.15deg);
+                box-shadow: 0px 0px 15px #1040C2;
+                border-radius: 30px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 margin: 0 0 0 20px;
+                font-family: FuturaBookC;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 16px;
+                color: #FFFFFF;
+                text-shadow: 0px 0px 4px #000000;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 1px;
+                    left: 1px;
+                    width: 23.61px;
+                    height: 23.61px;
+                    border: 0.5px solid #2358D9;
+                    border-radius: 30px;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 2px;
+                    left: 2px;
+                    width: 20.83px;
+                    height: 20.83px;
+                    border: 0.5px solid #2358D9;
+                    border-radius: 30px;
+                }
             }
             &-menu {
                 width: 25px;
                 height: 25px;
-                background: #04133C;
-                border: 1px solid #002685;
-                box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+                background: conic-gradient(from 180deg at 50% 50%, #565656 -35.51deg, #3E4342 14.15deg, #333333 44.5deg, #5D5D5D 123.75deg, #565656 171.3deg, #7D7D7D 188.73deg, #2C2B2E 224.01deg, #565656 324.49deg, #3E4342 374.15deg);
+                box-shadow: 0px 0px 15px #00AC26;
                 border-radius: 20px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 margin: 0 0 0 20px;
+                & svg {
+                    width: 16px;
+                }
             }
         }
         &-catalog {
@@ -1324,63 +1473,129 @@
             &-constructor {
                 width: 103px;
                 height: 25px;
-                background: #04133C;
-                border: 1px solid #002685;
-                box-shadow: 3px 3px 6px rgba(255, 234, 3, 0.5), -3px -3px 6px rgba(255, 234, 3, 0.5);
-                border-radius: 20px;
+                background: conic-gradient(from 180deg at 50% 50%, #009EDD -35.51deg, #84F0FF 14.15deg, #34B6FF 44.5deg, #6CF4FF 123.75deg, #01DFED 171.3deg, #9DFFED 188.73deg, #4AFFFC 224.01deg, #009EDD 324.49deg, #84F0FF 374.15deg);
+                box-shadow: 0px 0px 15px #5CD9FF;
+                border-radius: 30px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 margin: 0 15px 0 0;
+                position: relative;
+                border: none;
                 & a {
-                    height: 9px;
                     font-family: FuturaBookC;
                     font-style: normal;
                     font-weight: normal;
-                    font-size: 8px;
-                    line-height: 9px;
+                    font-size: 9px;
+                    line-height: 10px;
                     color: #FFFFFF;
+                    text-shadow: 0px 0px 4px #000000;
+                    margin: 0 0 2px;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 1px;
+                    left: 1px;
+                    width: 99%;
+                    height: 23.33px;
+                    border: 0.5px solid #2EE8F4;
+                    border-radius: 30px;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 2px;
+                    left: 3px;
+                    width: 97%;
+                    height: 20.83px;
+                    border: 0.5px solid #2EE8F4;
+                    border-radius: 30px;
                 }
             }
             &-order {
                 width: 103px;
                 height: 25px;
-                background: #04133C;
-                border: 1px solid #002685;
-                box-shadow: 3px 3px 6px rgba(255, 234, 3, 0.5), -3px -3px 6px rgba(255, 234, 3, 0.5);
-                border-radius: 20px;
+                background: conic-gradient(from 180deg at 50% 50%, #A90022 -35.51deg, #FF6786 14.15deg, #AD0022 44.5deg, #FF7590 123.75deg, #ED012B 171.3deg, #FF7A96 188.73deg, #E2163E 224.01deg, #A90022 324.49deg, #FF6786 374.15deg);
+                box-shadow: 0px 0px 15px #BE1839;
+                border-radius: 30px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 margin: 0 15px 0 0;
+                position: relative;
+                border: none;
                 & a {
-                    height: 9px;
                     font-family: FuturaBookC;
                     font-style: normal;
                     font-weight: normal;
-                    font-size: 8px;
-                    line-height: 9px;
+                    font-size: 9px;
+                    line-height: 10px;
                     color: #FFFFFF;
+                    text-shadow: 0px 0px 4px #000000;
+                    margin: 0 0 2px;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 1px;
+                    left: 1px;
+                    width: 99%;
+                    height: 23.33px;
+                    border: 0.5px solid #F63F64;
+                    border-radius: 30px;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 2px;
+                    left: 3px;
+                    width: 97%;
+                    height: 20.83px;
+                    border: 0.5px solid #F63F64;
+                    border-radius: 30px;
                 }
             }
             &-florist {
                 width: 103px;
                 height: 25px;
-                background: #04133C;
-                border: 1px solid #002685;
-                box-shadow: 3px 3px 6px rgba(255, 234, 3, 0.5), -3px -3px 6px rgba(255, 234, 3, 0.5);
-                border-radius: 20px;
+                background: conic-gradient(from 180deg at 50% 50%, #590184 -35.51deg, #C847F0 10.17deg, #8426A9 44.5deg, #7F00A9 123.75deg, #B201ED 171.3deg, #D055F9 188.73deg, #A001D4 224.01deg, #590184 324.49deg, #C847F0 370.17deg);
+                box-shadow: 0px 0px 15px #8215A9;
+                border-radius: 30px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                position: relative;
+                border: none;
                 & a {
-                    height: 9px;
                     font-family: FuturaBookC;
                     font-style: normal;
                     font-weight: normal;
-                    font-size: 8px;
-                    line-height: 9px;
+                    font-size: 9px;
+                    line-height: 10px;
                     color: #FFFFFF;
+                    text-shadow: 0px 0px 4px #000000;
+                    margin: 0 0 2px;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 1px;
+                    left: 1px;
+                    width: 99%;
+                    height: 23.33px;
+                    border: 0.5px solid #8C00BB;
+                    border-radius: 30px;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 2px;
+                    left: 3px;
+                    width: 97%;
+                    height: 20.83px;
+                    border: 0.5px solid #8C00BB;
+                    border-radius: 30px;
                 }
             }
         }
@@ -1535,13 +1750,88 @@
                 }
             }
             &-catalog {
-                width: 164px;
+                width: 158px;
                 height: 25px;
-                background: #04133C;
-                border: 1px solid #002685;
-                box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
-                border-radius: 20px;
+                background: conic-gradient(from 180deg at 50% 50%, #A0FB4E -35.51deg, #B5FF72 14.15deg, #5CC200 44.5deg, #A0FB4E 123.75deg, #73E30D 159.7deg, #A0FB4E 188.73deg, #66D700 224.01deg, #A0FB4E 324.49deg, #B5FF72 374.15deg);
+                box-shadow: 0px 0px 15px #80E723;
+                border-radius: 30px;
                 margin: 0 0 0 11px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 1px;
+                    left: 1px;
+                    width: 154.66px;
+                    height: 23.33px;
+                    border: 0.5px solid #80E622;
+                    border-radius: 30px;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 2px;
+                    left: 2px;
+                    width: 150.21px;
+                    height: 20.83px;
+                    border: 0.5px solid #80E622;
+                    border-radius: 30px;
+                }
+                &-text {
+                    font-family: FuturaBookC;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 9px;
+                    line-height: 10px;
+                    color: #FFFFFF;
+                    text-shadow: 0px 0px 4px #000000;
+                    margin: 0 0 0 18px;
+                }
+                &-arrow {
+                    content: url(../svg/media-menu/arrow-down.svg);
+                    position: absolute;
+                    top: 11px;
+                    right: 15px;
+                    transition: all 0.5s ease;
+                    &-active {
+                        transition: all 0.5s ease;
+                        transform: rotate(180deg);
+                    }
+                }
+                &-select {
+                    position: absolute;
+                    bottom: -90px;
+                    left: 0;
+                    background: #04133c;
+                    border: 1px solid #002685;
+                    box-shadow: 3px 3px 6px rgb(222 51 254 / 20%), -3px -3px 6px rgb(22 184 195 / 20%);
+                    border-radius: 5px;
+                    z-index: 10;
+                    &::-webkit-scrollbar {
+                        width: 27px;
+                    }
+                    &::-webkit-scrollbar-track {
+                        box-shadow: inset 0 0 10px 10px #854FC8;
+                        border: solid 12px transparent;
+                        margin: 0 10px 0 0;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        box-shadow: inset 0 0 10px 10px #fff;
+                        border: solid 10px transparent;
+                    }
+                    & option {
+                        font-family: Circe;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: #fff;
+                        text-shadow: 0 0 10px #414141;
+                    }
+                }
             }
         }
     }
