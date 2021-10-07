@@ -37,9 +37,11 @@ b1.to(".basket", 0.4, {
 b1.reverse();
 $(".basket-open").on("click", function () {
     b1.reversed(!b1.reversed());
+    $('.basket').toggleClass('display-n')
 });
 $(".basket__block-title-btn").on("click", function () {
     b1.reversed(!b1.reversed());
+    $('.basket').toggleClass('display-n')
 });
 
 //! --------------------------------------------------------------------------------------------
@@ -58,9 +60,11 @@ b2.to(".baskets", 0.4, {
 b2.reverse();
 $(".baskets-open").on("click", function () {
     b2.reversed(!b2.reversed());
+    $('.baskets').toggleClass('display-n')
 });
 $(".baskets__block-btn").on("click", function () {
     b2.reversed(!b2.reversed());
+    $('.baskets').toggleClass('display-n')
 });
 
 //! --------------------------------------------------------------------------------------------
