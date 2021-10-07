@@ -443,9 +443,45 @@ $('#mediaMenuSelectItemCatalog-6').on('click', function() {
 
 $('.media-header__click').on('click', function() {
     $('.media-header__block').addClass('display-n')
+    $('.media-header__stories').removeClass('display-n')
+    $('.media-header').css('height', '110px')
+});
+$('.media-header__stories-close').on('click', function() {
+    $('.media-header__block').removeClass('display-n')
+    $('.media-header__stories').addClass('display-n')
+    $('.media-header').css('height', '175px')
 });
 
 
+
+var menuMediaStories = new Swiper(".menuMediaStories", {
+    mousewheel: true,
+    keyboard: true,
+    // slidesPerView: 11,
+    spaceBetween: 15,
+    breakpoints: {
+        1160: {
+            slidesPerView: 11,
+            spaceBetweenSlides: 15
+        },
+        1090: {
+            slidesPerView: 9,
+            spaceBetweenSlides: 15
+        },
+        1080: {
+            slidesPerView: 9,
+            spaceBetweenSlides: 15
+        },
+        1040: {
+            slidesPerView: 10,
+            spaceBetweenSlides: 15
+        },
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 15
+        }
+    }
+});
 
 //! --------------------------------------------------------------------------------------------
 
