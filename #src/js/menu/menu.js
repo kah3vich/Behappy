@@ -436,6 +436,20 @@ $('#mediaMenuSelectItemCatalog-6').on('click', function() {
 
 
 
+//! Модальное окно входа и регистрации для мобилки 
+
+
+$('.media-header__block-client-account').on('click', function() {
+    $('#blockMediaModelClient').removeClass('display-n')
+});
+$('.media-model-client__block-close').on('click', function() {
+    $('.media-model-client').addClass('display-n')
+});
+
+
+//! -------------------------------------------------------------------------------------------
+
+
 
 //! Открытие и закрытие мобильного меню 
 
@@ -455,32 +469,209 @@ $('.media-header__stories-close').on('click', function() {
 
 
 var menuMediaStories = new Swiper(".menuMediaStories", {
+    loop: false,
     mousewheel: true,
     keyboard: true,
     // slidesPerView: 11,
-    spaceBetween: 15,
+    // spaceBetween: 15,
     breakpoints: {
-        1160: {
-            slidesPerView: 11,
-            spaceBetweenSlides: 15
+        1220: {
+            slidesPerView: 10,
+            spaceBetween: 20
         },
-        1090: {
+        1170: {
+            slidesPerView: 10,
+            spaceBetween: 20
+        },
+        1130: {
             slidesPerView: 9,
-            spaceBetweenSlides: 15
+            spaceBetween: 30
+        },
+        1100: {
+            slidesPerView: 9,
+            spaceBetween: 25
         },
         1080: {
             slidesPerView: 9,
-            spaceBetweenSlides: 15
+            spaceBetween: 20
         },
-        1040: {
-            slidesPerView: 10,
-            spaceBetweenSlides: 15
+        1060: {
+            slidesPerView: 9,
+            spaceBetween: 20
+        },
+        1030: {
+            slidesPerView: 9,
+            spaceBetween: 15
+        },
+        1000: {
+            slidesPerView: 9,
+            spaceBetween: 10
+        },
+        990: {
+            slidesPerView: 9,
+            spaceBetween: 25
+        },
+        980: {
+            slidesPerView: 9,
+            spaceBetween: 20
+        },
+        940: {
+            slidesPerView: 8,
+            spaceBetween: 30
+        },
+        915: {
+            slidesPerView: 8,
+            spaceBetween: 25
+        },
+        900: {
+            slidesPerView: 8,
+            spaceBetween: 20
+        },
+        870: {
+            slidesPerView: 7,
+            spaceBetween: 30
+        },
+        830: {
+            slidesPerView: 7,
+            spaceBetween: 25
+        },
+        810: {
+            slidesPerView: 7,
+            spaceBetween: 20
+        },
+        800: {
+            slidesPerView: 7,
+            spaceBetween: 15
+        },
+        780: {
+            slidesPerView: 6,
+            spaceBetween: 30,
+        },
+        760: {
+            slidesPerView: 6,
+            spaceBetween: 25,
+        },
+        740: {
+            slidesPerView: 6,
+            spaceBetween: 20,
+        },
+        720: {
+            slidesPerView: 6,
+            spaceBetween: 15,
+        },
+        700: {
+            slidesPerView: 6,
+            spaceBetween: 10,
+        },
+        681: {
+            slidesPerView: 5,
+            spaceBetween: 25,
+        },
+        650: {
+            slidesPerView: 6,
+            spaceBetween: 20,
+        },
+        640: {
+            slidesPerView: 6,
+            spaceBetween: 15,
+        },
+        610: {
+            slidesPerView: 6,
+            spaceBetween: 15,
+        },
+        590: {
+            slidesPerView: 5,
+            spaceBetween: 25,
+        },
+        590: {
+            slidesPerView: 5,
+            spaceBetween: 25,
+        },
+        570: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+        },
+        560: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+        },
+        540: {
+            slidesPerView: 5,
+            spaceBetween: 25,
+        },
+        530: {
+            slidesPerView: 5,
+            spaceBetween: 25,
+        },
+        500: {
+            slidesPerView: 5,
+            spaceBetween: 15,
+        },
+        490: {
+            slidesPerView: 5,
+            spaceBetween: 15,
+        },
+        490: {
+            slidesPerView: 5,
+            spaceBetween: 10,
+        },
+        480: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+        470: {
+            slidesPerView: 4,
+            spaceBetween: 25,
+        },
+        460: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+        440: {
+            slidesPerView: 4,
+            spaceBetween: 15,
+        },
+        430: {
+            slidesPerView: 4,
+            spaceBetween: 10
+        },
+        420: {
+            slidesPerView: 3,
+            spaceBetween: 37
+        },
+        415: {
+            slidesPerView: 3,
+            spaceBetween: 35
+        },
+        410: {
+            slidesPerView: 3,
+            spaceBetween: 33
+        },
+        400: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        390: {
+            slidesPerView: 3,
+            spaceBetween: 25
+        },
+        380: {
+            slidesPerView: 3,
+            spaceBetween: 20
+        },
+        370: {
+            slidesPerView: 3,
+            spaceBetween: 15
         },
         0: {
-            slidesPerView: 1,
-            spaceBetweenSlides: 15
+            slidesPerView: 3,
+            spaceBetween: 10
         }
     }
 });
 
+
 //! --------------------------------------------------------------------------------------------
+
+
+
