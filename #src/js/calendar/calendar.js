@@ -160,6 +160,10 @@ $.datepicker.setDefaults($.datepicker.regional['ru']);
 
 	$("#datepickerSubModel").datepicker();
 
+	$("#datepickerMediaModelClientMenu").datepicker();
+
+	$("#datepickerModelClientMenu").datepicker();
+
 
 
 

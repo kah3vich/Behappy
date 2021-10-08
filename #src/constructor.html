@@ -3,14 +3,14 @@
 
 
 <div class="const-content">
-    <div class="const-content__swipe">
+    <button class="const-content__swipe">
         <p>Состав</p>
         @@include('iconsprite/constructor/arrow-down.svg')
         @@include('iconsprite/constructor/arrow-down.svg')
-    </div>
+    </button>
     <div class="const-content__swipers display-n">
-        <ul class="const-content__swipers-list">
-            <li class="const-content__swipers-list-item">
+        <ul class="const-content__swipers-list" id="listConstructorElementPay">
+            <!-- <li class="const-content__swipers-list-item">
                 <div class="const-content__swipers-list-block">
                     <div class="const-content__swipers-list-text">Лилия белая</div>
                     <div class="const-content__swipers-list-count">
@@ -119,7 +119,7 @@
                     </div>
                     <div class="const-content__swipers-list-price">2990₽</div>
                 </div>
-            </li>
+            </li> -->
         </ul>
         <div class="const-content__swipers-hr"></div>
         <div class="const-content__swipers-price">
@@ -152,8 +152,163 @@
             <div class="const-content__block-text-1">1. В связи с загруженным автомобильным трафиком в предпраздничные и праздничные дни, а также  в связи с большим объемом заказов на пиковые интервалы, возможны задержки в </div>
             <div class="const-content__block-text-2">1. В связи с загруженным автомобильным трафиком в предпраздничные и праздничные дни, а также  в связи с большим объемом заказов на пиковые интервалы, возможны задержки в </div>
         </div>
-        <div class="const-content__block-banner"><p>Иллюстрация фона-имитация интерьера пространства 
-            цветочного магазина</p></div>
+        <div class="const-content__block-banner">
+            <ul class="const-content__block-banner-row" id="listConstructorBlock">
+                <!-- <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_1">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_2">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_3">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_4">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_5">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_6">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_7">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_8">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_9">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_10">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_11">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_12">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_13">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_14">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_15">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li> -->
+                <!-- <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_16">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_17">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_18">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_19">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_20">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_21">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_22">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_23">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_24">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_25">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_26">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_27">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_28">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_29">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_30">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_31">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_32">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_33">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_34">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_35">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_36">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_37">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_38">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_39">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_40">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_41">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_42">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_43">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_44">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_45">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_46">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_47">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_48">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_49">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_50">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li>
+                <li class="const-content__block-banner-row-item display-n" id="constBannerRow_Item_51">
+                    <img src="./img/constructor/test.png" alt="img">
+                </li> -->
+            </ul>
+        </div>
         <div class="const-content__block-add">Выберите цветы</div>
         <ul class="const-content__block-list">
             <li class="const-content__block-list-item" id="constListItem-1">
@@ -228,9 +383,9 @@
                                         <div class="const-content__block-slider-1-info-btn-count-sum">1</div>
                                         <div class="const-content__block-slider-1-info-btn-count-plus">+</div>
                                     </div>
-                                    <div class="const-content__block-slider-1-info-btn-item">
+                                    <button class="const-content__block-slider-1-info-btn-item" id="constructorBtnItem-1-1" value="item-1">
                                         <a href="#">Добавить</a>
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -278,9 +433,9 @@
                                         <div class="const-content__block-slider-1-info-btn-count-sum">1</div>
                                         <div class="const-content__block-slider-1-info-btn-count-plus">+</div>
                                     </div>
-                                    <div class="const-content__block-slider-1-info-btn-item">
+                                    <button class="const-content__block-slider-1-info-btn-item" id="constructorBtnItem-1-2" value="item-2">
                                         <a href="#">Добавить</a>
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
                         </div>

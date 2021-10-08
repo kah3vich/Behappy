@@ -885,6 +885,16 @@
 </svg>
 
                                                     </div>
+                                                    <div class="model-header__block-birthday">
+                                                        <input placeholder="Дата рождения" type="text" class="model-header__block-birthday-input" id="datepickerModelClientMenu">
+                                                        <label for="datepickerModelClientMenu">Ваша дата рождения</label>
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.75C0 7.19772 0.447715 6.75 1 6.75H19C19.5523 6.75 20 7.19772 20 7.75V19C20 19.5523 19.5523 20 19 20H1C0.447715 20 0 19.5523 0 19V7.75ZM2 8.75V18H18V8.75H2Z" fill="#16B8C3"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10 2C7.48134 2 5.375 4.13206 5.375 6.841C5.375 7.39328 4.92728 7.841 4.375 7.841C3.82272 7.841 3.375 7.39328 3.375 6.841C3.375 3.09919 6.30641 0 10 0C13.6936 0 16.625 3.09919 16.625 6.841C16.625 7.39328 16.1773 7.841 15.625 7.841C15.0727 7.841 14.625 7.39328 14.625 6.841C14.625 4.13206 12.5187 2 10 2Z" fill="#16B8C3"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10 11.7257C10.5523 11.7257 11 12.1734 11 12.7257V13.8507C11 14.403 10.5523 14.8507 10 14.8507C9.44772 14.8507 9 14.403 9 13.8507V12.7257C9 12.1734 9.44772 11.7257 10 11.7257Z" fill="#16B8C3"/>
+</svg>
+
+                                                    </div>
                                                     <button class="model-header__block-btn"><a href="#">Войти</a></button>
                                                     <ul class="model-header__block-line">
                                                         <li class="model-header__block-line-hr"></li>
@@ -1258,8 +1268,44 @@
     <div class="media-model-client display-n" id="blockMediaModelClient">
         <div class="media-model-client__block">
             <div class="media-model-client__block-close">
-                <div class="media-model-client__block-title">Войти или <br>
-                    зарегистрироваться</div>
+                <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.3281 22.3296L40.2735 40.275" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.1313 40.4727L40.4712 22.1328" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+            </div>
+            <div class="media-model-client__block-title">Войти или <br>
+                зарегистрироваться</div>
+            <div class="media-model-client__block-email">
+                <input type="text" id="mediaModelClientEmail" placeholder="E-mail">
+                <label for="mediaModelClientEmail">Ваш email</label>
+            </div>
+            <div class="media-model-client__block-password">
+                <input type="text" id="mediaModelClientPassword" placeholder="Ваш пароль">
+                <label for="mediaModelClientPassword">Ваш пароль</label>
+            </div>
+            <div class="media-model-client__block-birthday">
+                <input type="text" id="datepickerMediaModelClientMenu" placeholder="Дата рождения">
+                <label for="datepickerMediaModelClientMenu">Ваша дата рождения</label>
+            </div>
+            <button class="media-model-client__block-btn"><a href="#">Войти</a></button>
+            <div class="media-model-client__block-add">
+                <div class="media-model-client__block-add-hr"></div>
+                <div class="media-model-client__block-add-text">или</div>
+                <div class="media-model-client__block-add-hr"></div>
+            </div>
+            <div class="media-model-client__block-google">
+                <a href="#">Войти с помощью аккаунта Google</a>
+            </div>
+            <div class="media-model-client__block-vk">
+                <a href="#">Войти с помощью аккаунта VK</a>
+            </div>
+            <div class="media-model-client__block-passwords">
+                <a href="#">Забыли пароль ?</a>
+            </div>
+            <div class="media-model-client__block-link">
+                <p>Нет учетной записи ?</p>
+                <a href="#">Зарегистрироваться</a>
             </div>
         </div>
     </div>
@@ -1272,7 +1318,63 @@
                 <input type="text" class="search-content__block-input-item">
                 <button class="search-content__block-input-btn">Поиск</button>
             </div>
-            <div class="search-content__block-construct">Конструктор букета</div>
+            <div class="search-content__block-construct">
+                <p>Конструктор букета</p>
+                <div class="searchs-content__block-text-filter-block">
+                    <div class="searchs-content__block-text-filter-title">Фильтр</div>
+                    <div class="searchs-content__block-text-filter-icon"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.83333 10.5H9.16667V8.83333H5.83333V10.5ZM0 0.5V2.16667H15V0.5H0ZM2.5 6.33333H12.5V4.66667H2.5V6.33333Z" fill="white"/>
+</svg>
+</div>
+                </div>
+                <div class="searchs-content__block-text-filter-wrapper display-n">
+                    <ul class="searchs-content__block-text-filter-list">
+                        <li class="searchs-content__block-text-filter-item">
+                            <div class="searchs-content__block-text-filter-checkbox">
+                                <input class="searchs-content__block-text-filter-checkbox__input" type="checkbox" id="checkbox_1">
+                                <label class="searchs-content__block-text-filter-checkbox__label" for="checkbox_1">По возрастанию</label>
+                            </div>
+                        </li>
+                        <li class="searchs-content__block-text-filter-item">
+                            <div class="searchs-content__block-text-filter-checkbox">
+                                <input class="searchs-content__block-text-filter-checkbox__input" type="checkbox" id="checkbox_2">
+                                <label class="searchs-content__block-text-filter-checkbox__label" for="checkbox_2">По убыванию цены</label>
+                            </div>
+                        </li>
+                        <li class="searchs-content__block-text-filter-item">
+                            <div class="searchs-content__block-text-filter-checkbox">
+                                <input class="searchs-content__block-text-filter-checkbox__input" type="checkbox" id="checkbox_3">
+                                <label class="searchs-content__block-text-filter-checkbox__label" for="checkbox_3">По рейтингу</label>
+                            </div>
+                        </li>
+                        <li class="searchs-content__block-text-filter-item">
+                            <div class="searchs-content__block-text-filter-checkbox">
+                                <input class="searchs-content__block-text-filter-checkbox__input" type="checkbox" id="checkbox_4">
+                                <label class="searchs-content__block-text-filter-checkbox__label" for="checkbox_4">Последние добавленные</label>
+                            </div>
+                        </li>
+                        <li class="searchs-content__block-text-filter-item">
+                            <div class="searchs-content__block-text-filter-checkbox">
+                                <input class="searchs-content__block-text-filter-checkbox__input" type="checkbox" id="checkbox_5">
+                                <label class="searchs-content__block-text-filter-checkbox__label" for="checkbox_5">По сумме</label>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="searchs-content__block-text-filter-range">
+                        <div class="searchs-content__block-text-filter-range-value-1">1690</div>
+                        <div class="searchs-content__block-text-filter-range-value-2">16090</div>
+                        <input type="range" id="searchsRange-1" value="1680" min="1680" max="16090" class="searchs-content__block-text-filter-range-1">
+                        <input type="range" id="searchsRange-2" value="16090" min="1680" max="16090" class="searchs-content__block-text-filter-range-2">
+                        <div class="searchs-content__block-text-filter-range-prev">от</div>
+                        <div class="searchs-content__block-text-filter-range-next">до</div>
+                    </div>
+                    <div class="searchs-content__block-text-filter-checkboxs">
+                        <input class="searchs-content__block-text-filter-checkboxs__input" type="checkbox" id="checkbox_6" checked>
+                        <label class="searchs-content__block-text-filter-checkboxs__label" for="checkbox_6">Искать везде</label>
+                    </div>
+                    <div class="searchs-content__block-text-filter-discard"><p>Сбросить</p></div>
+                </div>
+            </div>
             <div class="search-content__block-constructs">
                 <div class="swiper searchConstructSlider">
                     <div class="swiper-wrapper">

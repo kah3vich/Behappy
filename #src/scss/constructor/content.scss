@@ -337,14 +337,14 @@
         }
         &-banner {
             width: 100%;
-            height: 346px;
+            height: 504px;
             background: #04133C;
             border: 1px solid #002685;
             box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
             border-radius: 20px;
             display: flex;
             align-items: center;
-            justify-content: center;
+            flex-direction: column;
             max-width: 1110px;
             margin: 54px auto 0 auto;
             & p {
@@ -358,6 +358,470 @@
                 text-align: center;
                 letter-spacing: 0.5px;
                 color: #FFFFFF;
+            }
+            &-row {
+                height: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-auto-columns: 1fr;
+                grid-auto-rows: 1fr;
+                gap: 0;
+                grid-auto-flow: row;
+                margin: auto 0 15px 0;
+                grid-template-areas:
+                    ". . . item-46 item-47 item-48 item-49 item-50 item-51 . ."
+                    ". . item-39 item-40 item-41 item-42 item-43 item-44 item-45 . ."
+                    ". item-31 item-32 item-33 item-34 item-35 item-36 item-37 item-38 . ."
+                    ". item-22 item-23 item-24 item-25 item-26 item-27 item-28 item-29 item-30 ."
+                    "item-12 item-13 item-14 item-15 item-16 item-17 item-18 item-19 item-20 item-21 ."
+                    "item-1 item-2 item-3 item-4 item-5 item-6 item-7 item-8 item-9 item-10 item-11";
+                justify-content: center;
+                grid-template-columns: repeat(auto-fit, 100px);
+                &-item {
+                    &:nth-child(1) {
+                        grid-area: item-1;
+                    }
+                    &:nth-child(2) {
+                        grid-area: item-2;
+                    }
+                    &:nth-child(3) {
+                        grid-area: item-3;
+                    }
+                    &:nth-child(4) {
+                        grid-area: item-4;
+                    }
+                    &:nth-child(5) {
+                        grid-area: item-5;
+                    }
+                    &:nth-child(6) {
+                        grid-area: item-6;
+                    }
+                    &:nth-child(7) {
+                        grid-area: item-7;
+                    }
+                    &:nth-child(8) {
+                        grid-area: item-8;
+                    }
+                    &:nth-child(9) {
+                        grid-area: item-9;
+                        & img {
+                            width: 90px;
+                        }
+                    }
+                    &:nth-child(10) {
+                        grid-area: item-10;
+                        & img {
+                            width: 90px;
+                        }
+                    }
+                    &:nth-child(11) {
+                        grid-area: item-11;
+                        & img {
+                            width: 90px;
+                        }
+                    }
+                    &:nth-child(12) {
+                        grid-area: item-12;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            bottom: -30px;
+                            right: -45px;
+                        }
+                    }
+                    &:nth-child(13) {
+                        grid-area: item-13;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            bottom: -30px;
+                            right: -45px;
+                        }
+                    }
+                    &:nth-child(14) {
+                        grid-area: item-14;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            bottom: -30px;
+                            right: -45px;
+                        }
+                    }
+                    &:nth-child(15) {
+                        grid-area: item-15;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            bottom: -30px;
+                            right: -45px;
+                        }
+                    }
+                    &:nth-child(16) {
+                        grid-area: item-16;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            bottom: -30px;
+                            right: -45px;
+                        }
+                    }
+                    &:nth-child(17) {
+                        grid-area: item-17;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            bottom: -30px;
+                            right: -45px;
+                        }
+                    }
+                    &:nth-child(18) {
+                        grid-area: item-18;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            bottom: -30px;
+                            right: -45px;
+                        }
+                    }
+                    &:nth-child(19) {
+                        grid-area: item-19;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            bottom: -30px;
+                            right: -45px;
+                        }
+                    }
+                    &:nth-child(20) {
+                        grid-area: item-20;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            bottom: -30px;
+                            right: -45px;
+                        }
+                    }
+                    &:nth-child(21) {
+                        grid-area: item-21;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            bottom: -30px;
+                            right: -45px;
+                        }
+                    }
+                    &:nth-child(22) {
+                        grid-area: item-22;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            bottom: -60px;
+                            right: 0;
+                        }
+                    }
+                    &:nth-child(23) {
+                        grid-area: item-23;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            bottom: -60px;
+                            right: 0;
+                        }
+                    }
+                    &:nth-child(24) {
+                        grid-area: item-24;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            bottom: -60px;
+                            right: 0;
+                        }
+                    }
+                    &:nth-child(25) {
+                        grid-area: item-25;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            bottom: -60px;
+                            right: 0;
+                        }
+                    }
+                    &:nth-child(26) {
+                        grid-area: item-26;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            bottom: -60px;
+                            right: 0;
+                        }
+                    }
+                    &:nth-child(27) {
+                        grid-area: item-27;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            bottom: -60px;
+                            right: 0;
+                        }
+                    }
+                    &:nth-child(28) {
+                        grid-area: item-28;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            bottom: -60px;
+                            right: 0;
+                        }
+                    }
+                    &:nth-child(29) {
+                        grid-area: item-29;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            bottom: -60px;
+                            right: 0;
+                        }
+                    }
+                    &:nth-child(30) {
+                        grid-area: item-30;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            bottom: -60px;
+                            right: 0;
+                        }
+                    }
+                    &:nth-child(31) {
+                        grid-area: item-31;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            bottom: -90px;
+                            right: -55px;
+                            position: absolute;
+                        }
+                    }
+                    &:nth-child(32) {
+                        grid-area: item-32;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            bottom: -90px;
+                            right: -55px;
+                            position: absolute;
+                        }
+                    }
+                    &:nth-child(33) {
+                        grid-area: item-33;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            bottom: -90px;
+                            right: -55px;
+                            position: absolute;
+                        }
+                    }
+                    &:nth-child(34) {
+                        grid-area: item-34;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            bottom: -90px;
+                            right: -55px;
+                            position: absolute;
+                        }
+                    }
+                    &:nth-child(35) {
+                        grid-area: item-35;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            bottom: -90px;
+                            right: -55px;
+                            position: absolute;
+                        }
+                    }
+                    &:nth-child(36) {
+                        grid-area: item-36;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            bottom: -90px;
+                            right: -55px;
+                            position: absolute;
+                        }
+                    }
+                    &:nth-child(37) {
+                        grid-area: item-37;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            bottom: -90px;
+                            right: -55px;
+                            position: absolute;
+                        }
+                    }
+                    &:nth-child(38) {
+                        grid-area: item-38;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            bottom: -90px;
+                            right: -55px;
+                            position: absolute;
+                        }
+                    }
+                    &:nth-child(39) {
+                        grid-area: item-39;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            right: -10px;
+                            bottom: -120px;
+                        }
+                    }
+                    &:nth-child(40) {
+                        grid-area: item-40;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            right: -10px;
+                            bottom: -120px;
+                        }
+                    }
+                    &:nth-child(41) {
+                        grid-area: item-41;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            right: -10px;
+                            bottom: -120px;
+                        }
+                    }
+                    &:nth-child(42) {
+                        grid-area: item-42;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            right: -10px;
+                            bottom: -120px;
+                        }
+                    }
+                    &:nth-child(43) {
+                        grid-area: item-43;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            right: -10px;
+                            bottom: -120px;
+                        }
+                    }
+                    &:nth-child(44) {
+                        grid-area: item-44;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            right: -10px;
+                            bottom: -120px;
+                        }
+                    }
+                    &:nth-child(45) {
+                        grid-area: item-45;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            right: -10px;
+                            bottom: -120px;
+                        }
+                    }
+                    &:nth-child(46) {
+                        grid-area: item-46;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            right: 35px;
+                            bottom: -150px;
+                        }
+                    }
+                    &:nth-child(47) {
+                        grid-area: item-47;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            right: 35px;
+                            bottom: -150px;
+                        }
+                    }
+                    &:nth-child(48) {
+                        grid-area: item-48;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            right: 35px;
+                            bottom: -150px;
+                        }
+                    }
+                    &:nth-child(49) {
+                        grid-area: item-49;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            right: 35px;
+                            bottom: -150px;
+                        }
+                    }
+                    &:nth-child(50) {
+                        grid-area: item-50;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            right: 35px;
+                            bottom: -150px;
+                        }
+                    }
+                    &:nth-child(51) {
+                        grid-area: item-51;
+                        position: relative;
+                        & img {
+                            width: 90px;
+                            position: absolute;
+                            right: 35px;
+                            bottom: -150px;
+                        }
+                    }
+                }
             }
         }
         &-add {

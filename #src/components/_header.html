@@ -575,6 +575,11 @@
                                                         <label for="modelHeaderPassword">Ваш пароль</label>
                                                         @@include('../iconsprite/header/password.svg')
                                                     </div>
+                                                    <div class="model-header__block-birthday">
+                                                        <input placeholder="Дата рождения" type="text" class="model-header__block-birthday-input" id="datepickerModelClientMenu">
+                                                        <label for="datepickerModelClientMenu">Ваша дата рождения</label>
+                                                        @@include('../iconsprite/header/password.svg')
+                                                    </div>
                                                     <button class="model-header__block-btn"><a href="#">Войти</a></button>
                                                     <ul class="model-header__block-line">
                                                         <li class="model-header__block-line-hr"></li>
@@ -803,8 +808,40 @@
     <div class="media-model-client display-n" id="blockMediaModelClient">
         <div class="media-model-client__block">
             <div class="media-model-client__block-close">
-                <div class="media-model-client__block-title">Войти или <br>
-                    зарегистрироваться</div>
+                @@include('../iconsprite/close-model.svg')
+            </div>
+            <div class="media-model-client__block-title">Войти или <br>
+                зарегистрироваться</div>
+            <div class="media-model-client__block-email">
+                <input type="text" id="mediaModelClientEmail" placeholder="E-mail">
+                <label for="mediaModelClientEmail">Ваш email</label>
+            </div>
+            <div class="media-model-client__block-password">
+                <input type="text" id="mediaModelClientPassword" placeholder="Ваш пароль">
+                <label for="mediaModelClientPassword">Ваш пароль</label>
+            </div>
+            <div class="media-model-client__block-birthday">
+                <input type="text" id="datepickerMediaModelClientMenu" placeholder="Дата рождения">
+                <label for="datepickerMediaModelClientMenu">Ваша дата рождения</label>
+            </div>
+            <button class="media-model-client__block-btn"><a href="#">Войти</a></button>
+            <div class="media-model-client__block-add">
+                <div class="media-model-client__block-add-hr"></div>
+                <div class="media-model-client__block-add-text">или</div>
+                <div class="media-model-client__block-add-hr"></div>
+            </div>
+            <div class="media-model-client__block-google">
+                <a href="#">Войти с помощью аккаунта Google</a>
+            </div>
+            <div class="media-model-client__block-vk">
+                <a href="#">Войти с помощью аккаунта VK</a>
+            </div>
+            <div class="media-model-client__block-passwords">
+                <a href="#">Забыли пароль ?</a>
+            </div>
+            <div class="media-model-client__block-link">
+                <p>Нет учетной записи ?</p>
+                <a href="#">Зарегистрироваться</a>
             </div>
         </div>
     </div>

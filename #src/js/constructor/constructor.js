@@ -2789,3 +2789,272 @@ $('#constBlockSlidersClose-4').on('click', function() {
 });
 
 //! ------------------------------------------------------------------------------------
+
+
+
+
+
+// $(function() {
+
+//     let elementArrayConstructor = []
+
+//     $('#constructorBtnItem-1-1').on('click', function() {
+//         let constBannerRow_Item_1 = $(this).val()
+//         elementArrayConstructor.push(constBannerRow_Item_1)
+//         let constBannerRow_Item_1_Element = elementArrayConstructor[elementArrayConstructor.length - 1]
+//         $(`#constBannerRow_Item_${elementArrayConstructor.length} img`).attr('src', `./img/constructor/${constBannerRow_Item_1_Element}.png`)
+//         checkCountElementArrayConstructor()
+//     })
+//     $('#constructorBtnItem-1-2').on('click', function() {
+//         let constBannerRow_Item_2 = $(this).val()
+//         elementArrayConstructor.push(constBannerRow_Item_2)
+//         let constBannerRow_Item_2_Element = elementArrayConstructor[elementArrayConstructor.length - 1]
+//         $(`#constBannerRow_Item_${elementArrayConstructor.length} img`).attr('src', `./img/constructor/${constBannerRow_Item_2_Element}.png`)
+//         checkCountElementArrayConstructor()
+//     })
+//     function checkCountElementArrayConstructor() {
+//         let countElementArrayConstructor = elementArrayConstructor.length;
+//         if(countElementArrayConstructor == 1) {
+//             $('#constBannerRow_Item_1').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 2) {
+//             $('#constBannerRow_Item_2').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 3) {
+//             $('#constBannerRow_Item_3').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 4) {
+//             $('#constBannerRow_Item_4').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 5) {
+//             $('#constBannerRow_Item_5').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 6) {
+//             $('#constBannerRow_Item_6').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 7) {
+//             $('#constBannerRow_Item_7').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 8) {
+//             $('#constBannerRow_Item_8').removeClass('display-n')
+//             $('#constBannerRow_Item_1 img').css('width', '90px')
+//             $('#constBannerRow_Item_2 img').css('width', '90px')
+//             $('#constBannerRow_Item_3 img').css('width', '90px')
+//             $('#constBannerRow_Item_4 img').css('width', '90px')
+//             $('#constBannerRow_Item_5 img').css('width', '90px')
+//             $('#constBannerRow_Item_6 img').css('width', '90px')
+//             $('#constBannerRow_Item_7 img').css('width', '90px')
+//             $('#constBannerRow_Item_8 img').css('width', '90px')
+//             $('.const-content__block-banner-row').css('margin', 'auto 0 0 0')
+//         } else if(countElementArrayConstructor == 9) {
+//             $('#constBannerRow_Item_9').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 10) {
+//             $('#constBannerRow_Item_10').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 11) {
+//             $('#constBannerRow_Item_11').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 12) {
+//             $('#constBannerRow_Item_12').removeClass('display-n')
+//             $('.const-content__block-banner-row').css('height', '180px')
+//         } else if(countElementArrayConstructor == 13) {
+//             $('#constBannerRow_Item_13').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 14) {
+//             $('#constBannerRow_Item_14').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 15) {
+//             $('#constBannerRow_Item_15').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 16) {
+//             $('#constBannerRow_Item_16').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 17) {
+//             $('#constBannerRow_Item_17').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 18) {
+//             $('#constBannerRow_Item_18').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 19) {
+//             $('#constBannerRow_Item_19').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 20) {
+//             $('#constBannerRow_Item_20').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 21) {
+//             $('#constBannerRow_Item_21').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 22) {
+//             $('#constBannerRow_Item_22').removeClass('display-n')
+//             $('.const-content__block-banner-row').css('height', '500px')
+//         } else if(countElementArrayConstructor == 23) {
+//             $('#constBannerRow_Item_23').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 24) {
+//             $('#constBannerRow_Item_24').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 25) {
+//             $('#constBannerRow_Item_25').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 26) {
+//             $('#constBannerRow_Item_26').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 27) {
+//             $('#constBannerRow_Item_27').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 28) {
+//             $('#constBannerRow_Item_28').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 29) {
+//             $('#constBannerRow_Item_29').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 30) {
+//             $('#constBannerRow_Item_30').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 31) {
+//             $('#constBannerRow_Item_31').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 32) {
+//             $('#constBannerRow_Item_32').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 33) {
+//             $('#constBannerRow_Item_33').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 34) {
+//             $('#constBannerRow_Item_34').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 35) {
+//             $('#constBannerRow_Item_35').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 36) {
+//             $('#constBannerRow_Item_36').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 37) {
+//             $('#constBannerRow_Item_37').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 38) {
+//             $('#constBannerRow_Item_38').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 39) {
+//             $('#constBannerRow_Item_39').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 40) {
+//             $('#constBannerRow_Item_40').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 41) {
+//             $('#constBannerRow_Item_41').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 42) {
+//             $('#constBannerRow_Item_42').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 43) {
+//             $('#constBannerRow_Item_43').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 44) {
+//             $('#constBannerRow_Item_44').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 45) {
+//             $('#constBannerRow_Item_45').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 46) {
+//             $('#constBannerRow_Item_46').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 47) {
+//             $('#constBannerRow_Item_47').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 48) {
+//             $('#constBannerRow_Item_48').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 49) {
+//             $('#constBannerRow_Item_49').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 50) {
+//             $('#constBannerRow_Item_50').removeClass('display-n')
+//         } else if(countElementArrayConstructor == 51) {
+//             $('#constBannerRow_Item_51').removeClass('display-n')
+//         }
+//         console.log(elementArrayConstructor)
+//     }
+    
+// })
+
+// $('.const-content__swipers-list-item img').on('click', 'button', function() {
+//     alert(1)
+// })
+
+function CloseElementBlockConstructor() {
+    let closeButtonElementConstructorId = document.querySelector('.const-content__swipers-list-item').getAttribute("id")
+    let closeButtonElementConstructorValue = document.getElementById(`${closeButtonElementConstructorId}`).value
+    $(`#${closeButtonElementConstructorValue}`).remove()
+    $(`#${closeButtonElementConstructorId}`).remove()
+}
+
+$(function() {
+
+    let elementObjConstructor = {}
+
+
+    let count = 0
+    $('#constructorBtnItem-1-1').on('click', function() {
+        let id = 1
+        
+        count++
+        let constBannerRow_Item_1 = $(this).val()
+        let obj = {
+            name: `${constBannerRow_Item_1}`,
+            id: id,
+            count: count
+        }
+        elementObjConstructor.obj = obj
+        let newElement = document.createElement("li");
+        newElement.classList.add("const-content__block-banner-row-item")
+        newElement.id = `constBannerItem_${id}_${count}`;
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        document.getElementById("listConstructorBlock").appendChild(newElement);
+
+
+        let newElementBlock = document.createElement("button");
+        newElementBlock.classList.add("const-content__swipers-list-item")
+        newElementBlock.id = `constBannerItemClose_${id}_${count}`;
+        newElementBlock.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        document.getElementById("listConstructorElementPay").appendChild(newElementBlock);
+        $(`#constBannerItemClose_${id}_${count}`).attr('value', `constBannerItem_${id}_${count}`)
+        $(`#constBannerItemClose_${id}_${count}`).attr('onclick', `CloseElementBlockConstructor()`)
+        onclick="скрипт"
+        checkCountElementArrayConstructor()
+    })
+
+
+    // $('#constructorBtnItem-1-2').on('click', function() {
+    //     let constBannerRow_Item_2 = $(this).val()
+    //     elementArrayConstructor.push(constBannerRow_Item_2)
+    //     let constBannerRow_Item_2_Element = elementArrayConstructor[elementArrayConstructor.length - 1]
+    //     $(`#constBannerRow_Item_${elementArrayConstructor.length} img`).attr('src', `./img/constructor/${constBannerRow_Item_2_Element}.png`)
+    //     checkCountElementArrayConstructor()
+    // })
+    function checkCountElementArrayConstructor() {
+        
+        let countElementObjConstructor = document.getElementById('listConstructorBlock').getElementsByTagName('li').length
+        if (countElementObjConstructor > 0) {
+            $('.const-content__swipe').removeAttr('disabled')
+        }
+        if (countElementObjConstructor == 1) {
+            $('.const-content__block-banner-row-item img').css('width', '128px')
+        } else if (countElementObjConstructor == 2) {
+            $('.const-content__block-banner-row-item img').css('width', '128px')
+        } else if (countElementObjConstructor == 3) {
+            $('.const-content__block-banner-row-item img').css('width', '128px')
+        } else if (countElementObjConstructor == 4) {
+            $('.const-content__block-banner-row-item img').css('width', '128px')
+        } else if (countElementObjConstructor == 5) {
+            $('.const-content__block-banner-row-item img').css('width', '128px')
+        } else if (countElementObjConstructor == 6) {
+            $('.const-content__block-banner-row-item img').css('width', '128px')
+        } else if (countElementObjConstructor == 7) {
+            $('.const-content__block-banner-row-item img').css('width', '128px')
+        } else if (countElementObjConstructor == 8) {
+            $('.const-content__block-banner-row-item img').css('width', '128px')
+        } else if (countElementObjConstructor == 9) {
+            $('.const-content__block-banner-row-item img').css('width', '90px')
+        } else if (countElementObjConstructor > 50) {
+            $('#constructorBtnItem-1-1').attr('disabled', 'disabled')
+        }
+    }
+    
+})
+
+// $('.const-content__swipers-list-item').on('click', function() {
+//     // let closeButtonElementConstructor = $(this).val()
+
+//     alert(1)
+// })
+
+
+var oBj = {
+    element_1:{
+        name: "roza",
+        id: 1,
+        count: 1
+    },
+    element_2:{
+        name: "roza",
+        id: 2,
+        count: 1
+    },
+    element_3:{
+        name: "roza",
+        id: 3,
+        count: 1
+    }
+};
+console.log(oBj.element_1.name);
+console.log(JSON.stringify(oBj).match(/element_\d/g).length);
+// JSON.stringify(obj).match(/"status":0/g).length
+
+
+
+var mainObject = {
+    title: ''
+};
+var ggg = {
+    name: 'Name',
+    surneme: 'Surname'
+}
+mainObject.ggg = ggg;
+
+console.log(mainObject)

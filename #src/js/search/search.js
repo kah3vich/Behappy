@@ -146,3 +146,47 @@ $('.search-content__block-monobouquet h3').on('click', function() {
     $('.search-content__block-monobouquets-adds').toggleClass('display-n')
 })
 
+
+
+//! Открытие фильтра 
+
+$('.searchs-content__block-text-filter-block').on('click', function() {
+    $('.searchs-content__block-text-filter-wrapper').toggleClass('display-n');
+});
+
+
+//! -------------------------------------------------------------------------------
+
+
+//! Передача значение из input range
+
+$('#searchsRange-1').on('input',function () {
+    $('.searchs-content__block-text-filter-range-value-1').empty().append($(this).val());
+});
+$('#searchsRange-2').on('input',function () {
+    $('.searchs-content__block-text-filter-range-value-2').empty().append($(this).val());
+});
+
+//! -------------------------------------------------------------------------------
+
+
+//! Сброс всех input в фильтре 
+
+const searchsRange_1 = 1680;
+const searchsRange_2 = 16090;
+$('.searchs-content__block-text-filter-discard').on('click', function() {
+    $('#checkbox_1').prop('checked', false);
+    $('#checkbox_2').prop('checked', false);
+    $('#checkbox_3').prop('checked', false);
+    $('#checkbox_4').prop('checked', false);
+    $('#checkbox_5').prop('checked', false);
+    $('#checkbox_6').prop('checked', true);
+    $('#searchsRange-1').val(searchsRange_1);
+    $('.searchs-content__block-text-filter-range-value-1').empty().append($('#searchsRange-1').val());
+    $('#searchsRange-2').val(searchsRange_2);
+    $('.searchs-content__block-text-filter-range-value-2').empty().append($('#searchsRange-2').val());
+});
+
+//! -------------------------------------------------------------------------------
+
+

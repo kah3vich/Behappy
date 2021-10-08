@@ -9,7 +9,60 @@
                 <input type="text" class="search-content__block-input-item">
                 <button class="search-content__block-input-btn">Поиск</button>
             </div>
-            <div class="search-content__block-construct">Конструктор букета</div>
+            <div class="search-content__block-construct">
+                <p>Конструктор букета</p>
+                <div class="searchs-content__block-text-filter-block">
+                    <div class="searchs-content__block-text-filter-title">Фильтр</div>
+                    <div class="searchs-content__block-text-filter-icon">@@include('iconsprite/march/filter.svg')</div>
+                </div>
+                <div class="searchs-content__block-text-filter-wrapper display-n">
+                    <ul class="searchs-content__block-text-filter-list">
+                        <li class="searchs-content__block-text-filter-item">
+                            <div class="searchs-content__block-text-filter-checkbox">
+                                <input class="searchs-content__block-text-filter-checkbox__input" type="checkbox" id="checkbox_1">
+                                <label class="searchs-content__block-text-filter-checkbox__label" for="checkbox_1">По возрастанию</label>
+                            </div>
+                        </li>
+                        <li class="searchs-content__block-text-filter-item">
+                            <div class="searchs-content__block-text-filter-checkbox">
+                                <input class="searchs-content__block-text-filter-checkbox__input" type="checkbox" id="checkbox_2">
+                                <label class="searchs-content__block-text-filter-checkbox__label" for="checkbox_2">По убыванию цены</label>
+                            </div>
+                        </li>
+                        <li class="searchs-content__block-text-filter-item">
+                            <div class="searchs-content__block-text-filter-checkbox">
+                                <input class="searchs-content__block-text-filter-checkbox__input" type="checkbox" id="checkbox_3">
+                                <label class="searchs-content__block-text-filter-checkbox__label" for="checkbox_3">По рейтингу</label>
+                            </div>
+                        </li>
+                        <li class="searchs-content__block-text-filter-item">
+                            <div class="searchs-content__block-text-filter-checkbox">
+                                <input class="searchs-content__block-text-filter-checkbox__input" type="checkbox" id="checkbox_4">
+                                <label class="searchs-content__block-text-filter-checkbox__label" for="checkbox_4">Последние добавленные</label>
+                            </div>
+                        </li>
+                        <li class="searchs-content__block-text-filter-item">
+                            <div class="searchs-content__block-text-filter-checkbox">
+                                <input class="searchs-content__block-text-filter-checkbox__input" type="checkbox" id="checkbox_5">
+                                <label class="searchs-content__block-text-filter-checkbox__label" for="checkbox_5">По сумме</label>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="searchs-content__block-text-filter-range">
+                        <div class="searchs-content__block-text-filter-range-value-1">1690</div>
+                        <div class="searchs-content__block-text-filter-range-value-2">16090</div>
+                        <input type="range" id="searchsRange-1" value="1680" min="1680" max="16090" class="searchs-content__block-text-filter-range-1">
+                        <input type="range" id="searchsRange-2" value="16090" min="1680" max="16090" class="searchs-content__block-text-filter-range-2">
+                        <div class="searchs-content__block-text-filter-range-prev">от</div>
+                        <div class="searchs-content__block-text-filter-range-next">до</div>
+                    </div>
+                    <div class="searchs-content__block-text-filter-checkboxs">
+                        <input class="searchs-content__block-text-filter-checkboxs__input" type="checkbox" id="checkbox_6" checked>
+                        <label class="searchs-content__block-text-filter-checkboxs__label" for="checkbox_6">Искать везде</label>
+                    </div>
+                    <div class="searchs-content__block-text-filter-discard"><p>Сбросить</p></div>
+                </div>
+            </div>
             <div class="search-content__block-constructs">
                 <div class="swiper searchConstructSlider">
                     <div class="swiper-wrapper">

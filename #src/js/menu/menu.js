@@ -442,6 +442,9 @@ $('#mediaMenuSelectItemCatalog-6').on('click', function() {
 $('.media-header__block-client-account').on('click', function() {
     $('#blockMediaModelClient').removeClass('display-n')
 });
+$('.menu__block-title-client-media').on('click', function() {
+    $('#blockMediaModelClient').removeClass('display-n')
+});
 $('.media-model-client__block-close').on('click', function() {
     $('.media-model-client').addClass('display-n')
 });

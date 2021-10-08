@@ -410,6 +410,50 @@
         justify-content: space-between;
         width: 100%;
     }
+    .media-header__block-client {
+        justify-content: space-between;
+        width: 100%;
+    }
+    .media-header__block-catalog-order {
+        margin: 0 15px;
+        width: 100%;
+    }
+    .media-header__block-catalog-order::before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 3px;
+        width: 97%;
+        height: 20.83px;
+        border: .5px solid #f63f64;
+        border-radius: 30px;
+    }
+    .media-header__block-catalog-order::after {
+        content: "";
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        width: 99%;
+        height: 23.33px;
+        border: .5px solid #f63f64;
+        border-radius: 30px;
+    }
+    .media-header__block-catalog-constructor {
+        margin: 0;
+        width: 100%;
+    }
+    .media-header__block-catalog-florist {
+        width: 100%;
+    }
+    .menu__block-title-client {
+        display: none;
+    }
+    .menu__block-title-client-media {
+        display: flex;
+        position: absolute;
+        right: 15%;
+    }
+
 }
 @media (max-width: 1200px) {
     .footer__block-contact-tag {
@@ -820,6 +864,9 @@
     .media-header {
         padding: 0 28px;
     }
+    .media-model-client__block {
+        width: 370px;
+    }
 }
 @media (max-width: 500px) {
     .footer__block-contact-social {
@@ -1156,6 +1203,21 @@
     }
     .model-notice__block-text-title {
         font-size: 16px;
+    }
+}
+
+@media (max-height: 870px) {
+    .media-model-client__block-passwords {
+        margin: 17px 0 0 0;
+    }
+    .media-model-client__block-email {
+        margin: 50px 0 0 0;
+    }
+    .media-model-client__block {
+        padding: 35px 0 0 0;
+    }
+    .media-model-client__block {
+        height: 770px;
     }
 }
 
