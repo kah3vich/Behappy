@@ -99,14 +99,31 @@
     .march-content__block-collections-img {
         width: 125px;
         height: 107px;
-        &::after {
+        &-item {
             width: 20px;
             height: 20px;
-        }   
-        &::before {
-            content: url(../svg/march/media-heart.svg);
-            right: 17px;
-            bottom: 9px;
+            &-heart {
+                width: 10px;
+                & svg {
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+    }
+    .march-content__block-collection-img {
+        width: 125px;
+        height: 107px;
+        &-item {
+            width: 20px;
+            height: 20px;
+            &-heart {
+                width: 10px;
+                & svg {
+                    width: 10px;
+                    height: 10px;
+                }
+            }
         }
     }
     .march-content__block-collections-title {
@@ -173,19 +190,6 @@
     .march-content__block-collection-item {
         height: 222px;
         padding: 13px 0 0 0;
-    }
-    .march-content__block-collection-img {
-        width: 125px;
-        height: 107px;
-        &::after {
-            width: 20px;
-            height: 20px;
-        }   
-        &::before {
-            content: url(../svg/march/media-heart.svg);
-            right: 17px;
-            bottom: 9px;
-        }
     }
     .march-content__block-collection-title {
         width: 125px;

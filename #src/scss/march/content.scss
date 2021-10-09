@@ -236,8 +236,7 @@
                 background: #001F71;
                 border-radius: 10px;
                 position: relative;
-                &::after {
-                    content: "";
+                &-item {
                     position: absolute;
                     right: 13px;
                     bottom: 11px;
@@ -246,13 +245,9 @@
                     background: #30333A;
                     border-radius: 50%;
                     border: 1px solid #854FC8;
-                }
-                &::before {
-                    content: url(../svg/march/heart.svg);
-                    position: absolute;
-                    right: 20.5px;
-                    bottom: 13px;
-                    z-index: 10;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
             }
             &-title {
@@ -399,8 +394,7 @@
                 background: #001F71;
                 border-radius: 10px;
                 position: relative;
-                &::after {
-                    content: "";
+                &-item {
                     position: absolute;
                     right: 13px;
                     bottom: 11px;
@@ -409,13 +403,9 @@
                     background: #30333A;
                     border-radius: 50%;
                     border: 1px solid #854FC8;
-                }
-                &::before {
-                    content: url(../svg/march/heart.svg);
-                    position: absolute;
-                    right: 20.5px;
-                    bottom: 13px;
-                    z-index: 10;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
             }
             &-title {
