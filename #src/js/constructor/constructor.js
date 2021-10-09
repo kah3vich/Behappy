@@ -2803,16 +2803,16 @@ $('#constBlockSlidersClose-4').on('click', function() {
 //         elementArrayConstructor.push(constBannerRow_Item_1)
 //         let constBannerRow_Item_1_Element = elementArrayConstructor[elementArrayConstructor.length - 1]
 //         $(`#constBannerRow_Item_${elementArrayConstructor.length} img`).attr('src', `./img/constructor/${constBannerRow_Item_1_Element}.png`)
-//         checkCountElementArrayConstructor()
+//         checkCountElementObjConstructor()
 //     })
 //     $('#constructorBtnItem-1-2').on('click', function() {
 //         let constBannerRow_Item_2 = $(this).val()
 //         elementArrayConstructor.push(constBannerRow_Item_2)
 //         let constBannerRow_Item_2_Element = elementArrayConstructor[elementArrayConstructor.length - 1]
 //         $(`#constBannerRow_Item_${elementArrayConstructor.length} img`).attr('src', `./img/constructor/${constBannerRow_Item_2_Element}.png`)
-//         checkCountElementArrayConstructor()
+//         checkCountElementObjConstructor()
 //     })
-//     function checkCountElementArrayConstructor() {
+//     function checkCountElementObjConstructor() {
 //         let countElementArrayConstructor = elementArrayConstructor.length;
 //         if(countElementArrayConstructor == 1) {
 //             $('#constBannerRow_Item_1').removeClass('display-n')
@@ -2940,12 +2940,12 @@ $('#constBlockSlidersClose-4').on('click', function() {
 
 
 
-function CloseElementBlockConstructor() {
-    let closeButtonElementConstructorId = $(".const-content__swipers-list-close").attr("id");
-    let closeButtonElementConstructorValue = $(".const-content__swipers-list-close").attr('value');
-    $(`#${closeButtonElementConstructorValue}`).remove();
-    $(`#${closeButtonElementConstructorId}`).remove();
-    checkCountElementArrayConstructor()
+function CloseElementBlockConstructor(el) {
+    let idElement = el.id
+    let valueElement = $(`#${idElement} button`).val()
+    $(`#${valueElement}`).remove()
+    $(`#${idElement}`).remove()
+    checkCountElementObjConstructor()
 }
 
 let elementObjConstructor = {}
@@ -2974,7 +2974,7 @@ $('#constructorBtnItem-1-1').on('click', function() {
     newElementBlock.classList.add("swiper-slide")
     newElementBlock.id = `constBannerItemClose_${id}_${countConstructorBtnItem_1_1}`;
     newElementBlock.innerHTML = `
-    <div class="const-content__swipers-list-item">
+    <div class="const-content__swipers-list-item" id="constBannerItemClose_${id}_${countConstructorBtnItem_1_1}">
         <button class="const-content__swipers-list-close" id="constBannerItemClose_${id}_${countConstructorBtnItem_1_1}" value="constBannerItem_${id}_${countConstructorBtnItem_1_1}" onclick="CloseElementBlockConstructor()">
             <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.3281 22.3296L40.2735 40.275" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -3002,8 +3002,8 @@ $('#constructorBtnItem-1-1').on('click', function() {
     </div>
     `
     document.getElementById("listConstructorElementPay").appendChild(newElementBlock);
-    $(`.const-content__swipers-list-close`).attr('onclick', `CloseElementBlockConstructor()`)
-    checkCountElementArrayConstructor()
+    $(`.const-content__swipers-list-close`).attr('onclick', `CloseElementBlockConstructor(this)`)
+    checkCountElementObjConstructor()
 })
 
 //! ------------------------------------------------------------------------------------------------------------------
@@ -3032,7 +3032,7 @@ $('#constructorBtnItem-1-2').on('click', function() {
     newElementBlock.classList.add("swiper-slide")
     newElementBlock.id = `constBannerItemClose_${id}_${countConstructorBtnItem_1_2}`;
     newElementBlock.innerHTML = `
-    <div class="const-content__swipers-list-item">
+    <div class="const-content__swipers-list-item" id="constBannerItemClose_${id}_${countConstructorBtnItem_1_2}">
         <button class="const-content__swipers-list-close" id="constBannerItemClose_${id}_${countConstructorBtnItem_1_2}" value="constBannerItem_${id}_${countConstructorBtnItem_1_2}" onclick="CloseElementBlockConstructor()">
             <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.3281 22.3296L40.2735 40.275" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -3060,8 +3060,8 @@ $('#constructorBtnItem-1-2').on('click', function() {
     </div>
     `
     document.getElementById("listConstructorElementPay").appendChild(newElementBlock);
-    $(`.const-content__swipers-list-close`).attr('onclick', `CloseElementBlockConstructor()`)
-    checkCountElementArrayConstructor()
+    $(`.const-content__swipers-list-close`).attr('onclick', `CloseElementBlockConstructor(this)`)
+    checkCountElementObjConstructor()
 })
 
 //! ------------------------------------------------------------------------------------------------------------------
@@ -3090,7 +3090,7 @@ $('#constructorBtnItem-1-3').on('click', function() {
     newElementBlock.classList.add("swiper-slide")
     newElementBlock.id = `constBannerItemClose_${id}_${countConstructorBtnItem_1_3}`;
     newElementBlock.innerHTML = `
-    <div class="const-content__swipers-list-item">
+    <div class="const-content__swipers-list-item" id="constBannerItemClose_${id}_${countConstructorBtnItem_1_3}">
         <button class="const-content__swipers-list-close" id="constBannerItemClose_${id}_${countConstructorBtnItem_1_3}" value="constBannerItem_${id}_${countConstructorBtnItem_1_3}" onclick="CloseElementBlockConstructor()">
             <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.3281 22.3296L40.2735 40.275" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -3118,8 +3118,61 @@ $('#constructorBtnItem-1-3').on('click', function() {
     </div>
     `
     document.getElementById("listConstructorElementPay").appendChild(newElementBlock);
-    $(`.const-content__swipers-list-close`).attr('onclick', `CloseElementBlockConstructor()`)
-    checkCountElementArrayConstructor()
+    $(`.const-content__swipers-list-close`).attr('onclick', `CloseElementBlockConstructor(this)`)
+    checkCountElementObjConstructor()
+})
+
+//! ------------------------------------------------------------------------------------------------------------------
+
+
+//! Кнопка товара 1.1
+
+let countConstructorBtnObject_1_1 = 0
+$('#constructorBtnObject-1-1').on('click', function() {
+    let id = 1
+    countConstructorBtnObject_1_1++
+    let constBannerRow_Item_1 = $(this).val()
+    let obj = {
+        name: `${constBannerRow_Item_1}`,
+        id: id,
+        count: countConstructorBtnObject_1_1
+    }
+    elementObjConstructor.obj = obj
+
+    let newElementBlock = document.createElement("div");
+    newElementBlock.classList.add("swiper-slide")
+    newElementBlock.id = `constBannerObjectClose_${id}_${countConstructorBtnObject_1_1}`;
+    newElementBlock.innerHTML = `
+    <div class="const-content__swipers-list-item" id="constBannerItemClose_${id}_${countConstructorBtnObject_1_1}">
+        <button class="const-content__swipers-list-close" id="constBannerObjectClose_${id}_${countConstructorBtnObject_1_1}" value="constBannerObject_${id}_${countConstructorBtnObject_1_1}" onclick="CloseElementBlockConstructor()">
+            <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.3281 22.3296L40.2735 40.275" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.1313 40.4727L40.4712 22.1328" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="const-content__swipers-list-block">
+            <div class="const-content__swipers-list-text">${constBannerRow_Item_1}</div>
+            <div class="const-content__swipers-list-count">
+                <div class="const-content__swipers-list-count-minus">
+                    <svg width="11" height="2" viewBox="0 0 11 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1H9.34615" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="const-content__swipers-list-count-sum">1</div>
+                <div class="const-content__swipers-list-count-plus">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.69238 3.41699V11.5837" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.51855 7.5H11.8647" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="const-content__swipers-list-price">2990₽</div>
+        </div>
+    </div>
+    `
+    document.getElementById("listConstructorElementPay").appendChild(newElementBlock);
+    $(`.const-content__swipers-list-close`).attr('onclick', `CloseElementBlockConstructor(this)`)
+    checkCountElementObjConstructor()
 })
 
 //! ------------------------------------------------------------------------------------------------------------------
@@ -3134,43 +3187,49 @@ $('#constructorBtnItem-1-3').on('click', function() {
 
 
 
-function checkCountElementArrayConstructor() {
+
+function checkCountElementObjConstructor() {
     
-    let countElementObjConstructor = document.getElementById('listConstructorElementPay').getElementsByClassName('swiper-slide').length
+    let countElementObjConstructor = document.getElementById('listConstructorBlock').getElementsByClassName('const-content__block-banner-row-item').length
     console.log(countElementObjConstructor)
-    if (countElementObjConstructor > 0) {
+    
+    let countElementObjConstructorIllustrations = document.getElementById('listConstructorElementPay').getElementsByClassName('swiper-slide').length
+    console.log(countElementObjConstructorIllustrations)
+
+    if(countElementObjConstructor != 0 || countElementObjConstructorIllustrations != 0) {
         $('.const-content__swipe').removeAttr('disabled')
-    }
-    if (countElementObjConstructor == 0) {
+    } else {
         $('.const-content__swipe').attr('disabled', 'disabled')
         $('.const-content__swipers').addClass('display-n')
         $('.const-content__swipe').removeClass('display-n')
     }
-    
-    if (countElementObjConstructor == 1) {
+    if (countElementObjConstructorIllustrations == 1) {
         $('.const-content__block-banner-row-item img').css('width', '128px')
-    } else if (countElementObjConstructor == 2) {
+    } else if (countElementObjConstructorIllustrations == 2) {
         $('.const-content__block-banner-row-item img').css('width', '128px')
-    } else if (countElementObjConstructor == 3) {
+    } else if (countElementObjConstructorIllustrations == 3) {
         $('.const-content__block-banner-row-item img').css('width', '128px')
-    } else if (countElementObjConstructor == 4) {
+    } else if (countElementObjConstructorIllustrations == 4) {
         $('.const-content__block-banner-row-item img').css('width', '128px')
-    } else if (countElementObjConstructor == 5) {
+    } else if (countElementObjConstructorIllustrations == 5) {
         $('.const-content__block-banner-row-item img').css('width', '128px')
-    } else if (countElementObjConstructor == 6) {
+    } else if (countElementObjConstructorIllustrations == 6) {
         $('.const-content__block-banner-row-item img').css('width', '128px')
-    } else if (countElementObjConstructor == 7) {
+    } else if (countElementObjConstructorIllustrations == 7) {
         $('.const-content__block-banner-row-item img').css('width', '128px')
-    } else if (countElementObjConstructor == 8) {
+    } else if (countElementObjConstructorIllustrations == 8) {
         $('.const-content__block-banner-row-item img').css('width', '128px')
-    } else if (countElementObjConstructor == 9) {
+    } else if (countElementObjConstructorIllustrations == 9) {
         $('.const-content__block-banner-row-item img').css('width', '90px')
     } 
-    
     if (countElementObjConstructor > 50) {
-        $('.const-content__block-slider-1-info-btn-item').attr('disabled', 'disabled')
-    } else if (countElementObjConstructor < 51) {
-        $('.const-content__block-slider-1-info-btn-item').removeAttr('disabled')
+        $('.const-content__block button').attr('disabled', 'disabled')
+        $('.const-content__block-sliders-1 button').removeAttr('disabled', 'disabled')
+        $('.const-content__block-sliders-2 button').removeAttr('disabled', 'disabled')
+        $('.const-content__block-sliders-3 button').removeAttr('disabled', 'disabled')
+        $('.const-content__block-sliders-4 button').removeAttr('disabled', 'disabled')
+    } else {
+        $('.const-content__block button').removeAttr('disabled', 'disabled')
     }
 }
 
