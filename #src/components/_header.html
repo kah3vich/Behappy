@@ -563,42 +563,79 @@
                                                 <button type="button" class="btn-close model-header-btn" data-bs-dismiss="modal" aria-label="Close">
                                                     @@include('../iconsprite/close-model.svg')
                                                 </button>
-                                                <div class="model-header__block">
-                                                    <div class="model-header__block-title">Войти или зарегистрироваться</div>
-                                                    <div class="model-header__block-email">
-                                                        <input placeholder="Ваш email" type="text" class="model-header__block-email-input" id="modelHeaderEmail">
+                                                <div class="model-header__link">
+                                                    <div class="model-header__link-btn" id="modelClientEntry">Войти</div>
+                                                    <div class="model-header__link-text">или</div>
+                                                    <div class="model-header__link-btn" id="modelClientRegistration">Зарегистрироваться</div>
+                                                </div>
+                                                <div class="model-header__entry">
+                                                    <div class="model-header__entry-title">Войти</div>
+                                                    <div class="model-header__entry-email">
+                                                        <input placeholder="Ваш email" type="text" class="model-header__entry-email-input" id="modelHeaderEmail">
                                                         <label for="modelHeaderEmail">Ваш email</label>
                                                         @@include('../iconsprite/header/email.svg')
                                                     </div>
-                                                    <div class="model-header__block-password">
-                                                        <input placeholder="Ваш пароль" type="text" class="model-header__block-password-input" id="modelHeaderPassword">
+                                                    <div class="model-header__entry-password">
+                                                        <input placeholder="Ваш пароль" type="text" class="model-header__entry-password-input" id="modelHeaderPassword">
                                                         <label for="modelHeaderPassword">Ваш пароль</label>
                                                         @@include('../iconsprite/header/password.svg')
                                                     </div>
-                                                    <div class="model-header__block-birthday">
-                                                        <input placeholder="Дата рождения" type="text" class="model-header__block-birthday-input" id="datepickerModelClientMenu">
-                                                        <label for="datepickerModelClientMenu">Ваша дата рождения</label>
-                                                        @@include('../iconsprite/header/password.svg')
-                                                    </div>
-                                                    <button class="model-header__block-btn"><a href="#">Войти</a></button>
-                                                    <ul class="model-header__block-line">
-                                                        <li class="model-header__block-line-hr"></li>
-                                                        <li class="model-header__block-line-text">или</li>
-                                                        <li class="model-header__block-line-hr"></li>
+                                                    <button class="model-header__entry-btn"><a href="#">Войти</a></button>
+                                                    <ul class="model-header__entry-line">
+                                                        <li class="model-header__entry-line-hr"></li>
+                                                        <li class="model-header__entry-line-text">или</li>
+                                                        <li class="model-header__entry-line-hr"></li>
                                                     </ul>
-                                                    <div class="model-header__block-google">
+                                                    <div class="model-header__entry-google">
                                                         @@include('../iconsprite/header/google.svg')
                                                         <p>Войти с помощью аккаунта Google</p>
                                                     </div>
-                                                    <div class="model-header__block-vk">
+                                                    <div class="model-header__entry-vk">
                                                         @@include('../iconsprite/header/vk.svg')
                                                         <p>Войти с помощью аккаунта VK</p>
                                                     </div>
-                                                    <div class="model-header__block-problem">
+                                                    <div class="model-header__entry-problem">
                                                         <p>Забыли пароль ?</p>
                                                     </div>
-                                                    <div class="model-header__block-authorization">
+                                                    <div class="model-header__entry-authorization">
                                                         <p>Нет учетной записи ? Зарегистрироваться</p>
+                                                    </div>
+                                                </div>
+                                                <div class="model-header__registration display-n">
+                                                    <div class="model-header__registration-title">Зарегистрироваться</div>
+                                                    <div class="model-header__registration-email">
+                                                        <input placeholder="E-mail" type="text" class="model-header__registration-email-input" id="ModelClientMenuEmail">
+                                                        <label for="ModelClientMenuEmail">Ваш email</label>
+                                                        @@include('../iconsprite/model-client/email.svg')
+                                                    </div>
+                                                    <div class="model-header__registration-password">
+                                                        <input placeholder="Ваш пароль" type="text" class="model-header__registration-password-input" id="ModelClientMenuPassword">
+                                                        <label for="ModelClientMenuPassword">Ваш пароль</label>
+                                                        @@include('../iconsprite/model-client/password.svg')
+                                                    </div>
+                                                    <div class="model-header__registration-password">
+                                                        <input placeholder="Ваш пароль" type="text" class="model-header__registration-password-input" id="ModelClientMenuPasswords">
+                                                        <label for="ModelClientMenuPasswords">Ваш пароль</label>
+                                                        @@include('../iconsprite/model-client/password.svg')
+                                                    </div>
+                                                    <div class="model-header__registration-birthday">
+                                                        <input placeholder="Дата рождения" type="text" class="model-header__registration-birthday-input" id="datepickerModelClientMenu">
+                                                        <label for="datepickerModelClientMenu">Ваша дата рождения</label>
+                                                        @@include('../iconsprite/model-client/calendar.svg')
+                                                    </div>
+                                                    <button class="model-header__registration-btn"><a href="#">Войти</a></button>
+                                                    <ul class="model-header__registration-line">
+                                                        <li class="model-header__registration-line-hr"></li>
+                                                        <li class="model-header__registration-line-text">или</li>
+                                                        <li class="model-header__registration-line-hr"></li>
+                                                    </ul>
+                                                    <div class="model-header__registration-google">
+                                                        @@include('../iconsprite/header/google.svg')
+                                                        <p>Войти с помощью аккаунта Google</p>
+                                                    </div>
+                                                    <div class="model-header__registration-vk">
+                                                        @@include('../iconsprite/header/vk.svg')
+                                                        <p>Войти с помощью аккаунта VK</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -810,38 +847,71 @@
             <div class="media-model-client__block-close">
                 @@include('../iconsprite/close-model.svg')
             </div>
-            <div class="media-model-client__block-title">Войти или <br>
-                зарегистрироваться</div>
-            <div class="media-model-client__block-email">
-                <input type="text" id="mediaModelClientEmail" placeholder="E-mail">
-                <label for="mediaModelClientEmail">Ваш email</label>
-            </div>
-            <div class="media-model-client__block-password">
-                <input type="text" id="mediaModelClientPassword" placeholder="Ваш пароль">
-                <label for="mediaModelClientPassword">Ваш пароль</label>
-            </div>
-            <div class="media-model-client__block-birthday">
-                <input type="text" id="datepickerMediaModelClientMenu" placeholder="Дата рождения">
-                <label for="datepickerMediaModelClientMenu">Ваша дата рождения</label>
-            </div>
-            <button class="media-model-client__block-btn"><a href="#">Войти</a></button>
-            <div class="media-model-client__block-add">
-                <div class="media-model-client__block-add-hr"></div>
-                <div class="media-model-client__block-add-text">или</div>
-                <div class="media-model-client__block-add-hr"></div>
-            </div>
-            <div class="media-model-client__block-google">
-                <a href="#">Войти с помощью аккаунта Google</a>
-            </div>
-            <div class="media-model-client__block-vk">
-                <a href="#">Войти с помощью аккаунта VK</a>
-            </div>
-            <div class="media-model-client__block-passwords">
-                <a href="#">Забыли пароль ?</a>
-            </div>
             <div class="media-model-client__block-link">
-                <p>Нет учетной записи ?</p>
-                <a href="#">Зарегистрироваться</a>
+                <div class="media-model-client__block-link-btn" id="mediaModelClientEntry">Войти</div>
+                <div class="media-model-client__block-link-text">или</div>
+                <div class="media-model-client__block-link-btn" id="mediaModelClientRegistor">Зарегистрироваться</div>
+            </div>
+            <div class="media-model-client__entry">
+                <div class="media-model-client__entry-title">Войти</div>
+                <div class="media-model-client__entry-email">
+                    <input type="text" id="mediaModelClientEmail" placeholder="E-mail">
+                    <label for="mediaModelClientEmail">Ваш email</label>
+                </div>
+                <div class="media-model-client__entry-password">
+                    <input type="text" id="mediaModelClientPassword" placeholder="Ваш пароль">
+                    <label for="mediaModelClientPassword">Ваш пароль</label>
+                </div>
+                <button class="media-model-client__entry-btn"><a href="#">Войти</a></button>
+                <div class="media-model-client__entry-add">
+                    <div class="media-model-client__entry-add-hr"></div>
+                    <div class="media-model-client__entry-add-text">или</div>
+                    <div class="media-model-client__entry-add-hr"></div>
+                </div>
+                <div class="media-model-client__entry-google">
+                    <a href="#">Войти с помощью аккаунта Google</a>
+                </div>
+                <div class="media-model-client__entry-vk">
+                    <a href="#">Войти с помощью аккаунта VK</a>
+                </div>
+                <div class="media-model-client__entry-passwords">
+                    <a href="#">Забыли пароль ?</a>
+                </div>
+                <div class="media-model-client__entry-link">
+                    <p>Нет учетной записи ?</p>
+                    <a href="#">Зарегистрироваться</a>
+                </div>
+            </div>
+            <div class="media-model-client__registor display-n">
+                <div class="media-model-client__registor-title">Зарегистрироваться</div>
+                <div class="media-model-client__registor-email">
+                    <input type="text" id="mediaModelClientEmail" placeholder="E-mail">
+                    <label for="mediaModelClientEmail">Ваш email</label>
+                </div>
+                <div class="media-model-client__registor-password">
+                    <input type="text" id="mediaModelClientPassword" placeholder="Ваш пароль">
+                    <label for="mediaModelClientPassword">Ваш пароль</label>
+                </div>
+                <div class="media-model-client__registor-password">
+                    <input type="text" id="mediaModelClientPasswords" placeholder="Ваш пароль">
+                    <label for="mediaModelClientPasswords">Ваш пароль</label>
+                </div>
+                <div class="media-model-client__registor-birthday">
+                    <input type="text" id="datepickerMediaModelClientMenu" placeholder="Дата рождения">
+                    <label for="datepickerMediaModelClientMenu">Ваша дата рождения</label>
+                </div>
+                <button class="media-model-client__registor-btn"><a href="#">Войти</a></button>
+                <div class="media-model-client__registor-add">
+                    <div class="media-model-client__registor-add-hr"></div>
+                    <div class="media-model-client__registor-add-text">или</div>
+                    <div class="media-model-client__registor-add-hr"></div>
+                </div>
+                <div class="media-model-client__registor-google">
+                    <a href="#">Войти с помощью аккаунта Google</a>
+                </div>
+                <div class="media-model-client__registor-vk">
+                    <a href="#">Войти с помощью аккаунта VK</a>
+                </div>
             </div>
         </div>
     </div>

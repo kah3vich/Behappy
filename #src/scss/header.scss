@@ -2530,7 +2530,39 @@
         top: -25px;
         right: -25px;
     }
-    &__block {
+    &__link {
+        position: absolute;
+        top: -45px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-btn {
+            font-family: Circe;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 115%;
+            text-align: center;
+            letter-spacing: 0.5px;
+            text-decoration-line: underline;
+            color: #fff;
+            cursor: pointer;
+        }
+        &-text {
+            font-family: Circe;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 115%;
+            text-align: center;
+            letter-spacing: 0.5px;
+            color: #fff;
+            margin: 0 5px;
+        }
+    }
+    &__entry {
         padding: 53px 0 0 0;
         display: flex;
         flex-direction: column;
@@ -2849,6 +2881,290 @@
             }
         }
     }
+    &__registration {
+        padding: 3px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        & a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &-title {
+            width: 275px;
+            font-family: Circe;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 115%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            letter-spacing: 0.5px;
+            color: #FFFFFF;
+        }
+        &-email {
+            width: 319px;
+            height: 50px;
+            border: 1px solid #16B8C3;
+            border-radius: 5px;
+            background: transparent;
+            margin: 77px 0 0 0;
+            position: relative;
+            padding: 11px 0 0 56px;
+            & input {
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 180%;
+                letter-spacing: 0.5px;
+                color: #FFFFFF;
+                &::placeholder {
+                    font-family: Circe;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 180%;
+                    letter-spacing: 0.5px;
+                    color: #C2C2C2;
+                }
+            }
+            & label {
+                position: absolute;
+                top: -30px;
+                left: 0;
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 122%;
+                letter-spacing: 0.5px;
+                color: #FFFFFF;
+            }
+            & svg {
+                position: absolute;
+                left: 18px;
+                top: 17px;
+            }
+        }
+        &-password {
+            width: 319px;
+            height: 50px;
+            border: 1px solid #16B8C3;
+            border-radius: 5px;
+            background: transparent;
+            margin: 47px 0 0 0;
+            position: relative;
+            padding: 11px 0 0 56px;
+            & input {
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 180%;
+                letter-spacing: 0.5px;
+                color: #FFFFFF;
+                &::placeholder {
+                    font-family: Circe;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 180%;
+                    letter-spacing: 0.5px;
+                    color: #C2C2C2;
+                }
+            }
+            & label {
+                position: absolute;
+                top: -30px;
+                left: 0;
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 122%;
+                letter-spacing: 0.5px;
+                color: #FFFFFF;
+            }
+            & svg {
+                position: absolute;
+                left: 18px;
+                top: 15px;
+            }
+        }
+        &-birthday {
+            width: 319px;
+            height: 50px;
+            border: 1px solid #16B8C3;
+            border-radius: 5px;
+            background: transparent;
+            margin: 47px 0 0 0;
+            position: relative;
+            padding: 11px 0 0 56px;
+            & input {
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 180%;
+                letter-spacing: 0.5px;
+                color: #FFFFFF;
+                &::placeholder {
+                    font-family: Circe;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 180%;
+                    letter-spacing: 0.5px;
+                    color: #C2C2C2;
+                }
+            }
+            & label {
+                position: absolute;
+                top: -30px;
+                left: 0;
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 122%;
+                letter-spacing: 0.5px;
+                color: #FFFFFF;
+            }
+            & svg {
+                position: absolute;
+                left: 18px;
+                top: 15px;
+            }
+        }
+        &-btn {
+            margin: 28px 0 0 0;
+            width: 319px;
+            height: 50px;
+            background: conic-gradient(from 180deg at 50% 50%, #DCDCDC -35.51deg, #CCCCCC 10.17deg, #B6B6B6 44.5deg, #B8B8B8 123.75deg, #D1D1D1 171.3deg, #AAAAAA 188.73deg, #C4C4C4 224.01deg, #DCDCDC 324.49deg, #CCCCCC 370.17deg);
+            box-shadow: 0px 0px 15px #C5C5C5;
+            border-radius: 10px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & a {
+                font-family: Circe;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 22px;
+                color: #141651;
+                text-shadow: 0px 0px 10px rgba(46, 46, 46, 0.5);
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 4px;
+                left: 4px;
+                width: 306.49px;
+                height: 41px;
+                border: 0.5px solid #C6C6C6;
+                border-radius: 10px;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                top: 8px;
+                left: 8px;
+                width: 296.48px;
+                height: 33px;
+                border: 0.5px solid #C6C6C6;
+                border-radius: 10px;
+            }
+        }
+        &-line {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 316px;
+            margin: 24px 0 0 0;
+            &-hr {
+                width: 122px;
+                height: 0px;
+                border: 1px solid #16B8C3;
+            }
+            &-text {
+                font-family: Circe;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 150%;
+                letter-spacing: 0.005em;
+                color: #656565;
+            }
+        }
+        &-google {
+            width: 319px;
+            height: 50px;
+            border: 1px solid #16B8C3;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 0 0 15px;
+            margin: 26px 0 0 0;
+            cursor: pointer;
+            & p {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 180%;
+                letter-spacing: 0.5px;
+                color: #C2C2C2;
+                margin: 0 0 0 29px;
+            }
+            & svg {
+                & path {
+                    fill: #16B8C3;
+                }
+            }
+        }
+        &-vk {
+            width: 319px;
+            height: 50px;
+            border: 1px solid #16B8C3;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 0 0 15px;
+            margin: 26px 0 0 0;
+            cursor: pointer;
+            & p {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 180%;
+                letter-spacing: 0.5px;
+                color: #C2C2C2;
+                margin: 0 0 0 29px;
+            }
+            & svg {
+                & path {
+                    fill: #16B8C3;
+                }
+            }
+        }
+    }
 }
 
 
@@ -2892,6 +3208,39 @@
             background: #001F75;
             border-radius: 50%;
         }
+        &-link {
+            position: absolute;
+            top: -55px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &-btn {
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 115%;
+                text-align: center;
+                letter-spacing: 0.5px;
+                text-decoration-line: underline;
+                color: #fff;
+            }
+            &-text {
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 115%;
+                text-align: center;
+                letter-spacing: 0.5px;
+                color: #fff;
+                margin: 0 5px;
+            }
+        }
+    }
+    &__entry {
         &-title {
             font-family: Circe;
             font-style: normal;
@@ -3160,6 +3509,7 @@
         }
         &-passwords {
             margin: 36px 0 0 0;
+            text-align: center;
             & a {
                 font-family: Circe;
                 font-style: normal;
@@ -3175,6 +3525,315 @@
             margin: 13px 0 0 0;
             display: flex;
             align-items: center;
+            text-align: center;
+            & p {
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 122%;
+                letter-spacing: 0.5px;
+                color: #FFFFFF;
+                margin: 0 5px 0 0;
+            }
+            & a {
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 122%;
+                letter-spacing: 0.5px;
+                color: #FFFFFF;
+                text-decoration-line: underline;
+            }
+        }
+    }
+    &__registor {
+        &-title {
+            font-family: Circe;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 115%;
+            text-align: center;
+            letter-spacing: 0.5px;
+            color: #FFFFFF;
+        }
+        &-email {
+            margin: 77px 0 0 0;
+            width: 319px;
+            height: 50px;
+            border: 1px solid #16B8C3;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 0 0 56px;
+            position: relative;
+            & input {
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 180%;
+                letter-spacing: 0.5px;
+                color: #fff;
+                &::placeholder {
+                    font-family: Circe;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    letter-spacing: 0.5px;
+                    color: #C2C2C2;
+                }
+            }
+            &::after {
+                content: url(../svg/model-client/email.svg);
+                position: absolute;
+                top: 15px;
+                left: 20px;
+            }
+            & label {
+                position: absolute;
+                top: -30px;
+                left: 0;
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 122%;
+                letter-spacing: 0.5px;
+                color: #FFFFFF;
+            }
+        }
+        &-password {
+            margin: 47px 0 0 0;
+            width: 319px;
+            height: 50px;
+            border: 1px solid #16B8C3;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 0 0 56px;
+            position: relative;
+            & input {
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 180%;
+                letter-spacing: 0.5px;
+                color: #fff;
+                &::placeholder {
+                    font-family: Circe;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    letter-spacing: 0.5px;
+                    color: #C2C2C2;
+                }
+            }
+            &::after {
+                content: url(../svg/model-client/password.svg);
+                position: absolute;
+                top: 15px;
+                left: 20px;
+            }
+            & label {
+                position: absolute;
+                top: -30px;
+                left: 0;
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 122%;
+                letter-spacing: 0.5px;
+                color: #FFFFFF;
+            }
+        }
+        &-birthday {
+            margin: 47px 0 0 0;
+            width: 319px;
+            height: 50px;
+            border: 1px solid #16B8C3;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 0 0 56px;
+            position: relative;
+            & input {
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 180%;
+                letter-spacing: 0.5px;
+                color: #fff;
+                &::placeholder {
+                    font-family: Circe;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    letter-spacing: 0.5px;
+                    color: #C2C2C2;
+                }
+            }
+            &::after {
+                content: url(../svg/model-client/calendar.svg);
+                position: absolute;
+                top: 15px;
+                left: 20px;
+            }
+            & label {
+                position: absolute;
+                top: -30px;
+                left: 0;
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 122%;
+                letter-spacing: 0.5px;
+                color: #FFFFFF;
+            }
+        }
+        &-btn {
+            width: 319px;
+            height: 50px;
+            background: conic-gradient(from 180deg at 50% 50%, #DCDCDC -35.51deg, #CCCCCC 10.17deg, #B6B6B6 44.5deg, #B8B8B8 123.75deg, #D1D1D1 171.3deg, #AAAAAA 188.73deg, #C4C4C4 224.01deg, #DCDCDC 324.49deg, #CCCCCC 370.17deg);
+            box-shadow: 0px 0px 15px #C5C5C5;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin: 33px 0 0 0;
+            & a {
+                font-family: Circe;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 22px;
+                color: #141651;
+                text-shadow: 0px 0px 10px rgba(46, 46, 46, 0.5);
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 4px;
+                left: 4px;
+                width: 306.49px;
+                height: 41px;
+                border: 0.5px solid #C6C6C6;
+                border-radius: 10px;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                top: 8px;
+                left: 8px;
+                width: 296.48px;
+                height: 33px;
+                border: 0.5px solid #C6C6C6;
+                border-radius: 10px;
+            }
+        }
+        &-add {
+            margin: 24px 0 0 0;
+            width: 319px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &-hr {
+                width: 122px;
+                height: 0px;
+                border-top: 1px solid #16B8C3;
+            }
+            &-text {
+                font-family: Circe;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                letter-spacing: 0.005em;
+                color: #656565;
+            }
+        }
+        &-google {
+            margin: 26px 0 0 0;
+            width: 319px;
+            height: 50px;
+            border: 1px solid #16B8C3;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            &::after {
+                content: url(../svg/model-client/google.svg);
+                position: absolute;
+                top: 4px;
+                left: 5px;
+                top: 13px;
+                left: 16px;
+            }
+            & a {
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 180%;
+                letter-spacing: 0.5px;
+                color: #C2C2C2;
+            }
+        }
+        &-vk {
+            margin: 24px 0 0 0;
+            width: 319px;
+            height: 50px;
+            border: 1px solid #16B8C3;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            &::after {
+                content: url(../svg/model-client/vk.svg);
+                position: absolute;
+                top: 16px;
+                left: 16px;
+            }
+            & a {
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 180%;
+                letter-spacing: 0.5px;
+                color: #C2C2C2;
+            }
+        }
+        &-passwords {
+            margin: 36px 0 0 0;
+            text-align: center;
+            & a {
+                font-family: Circe;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 122%;
+                letter-spacing: 0.5px;
+                text-decoration-line: underline;
+                color: #FFFFFF;
+            }
+        }
+        &-link {
+            margin: 13px 0 0 0;
+            display: flex;
+            align-items: center;
+            text-align: center;
             & p {
                 font-family: Circe;
                 font-style: normal;

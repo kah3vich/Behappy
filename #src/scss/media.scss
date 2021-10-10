@@ -1205,7 +1205,14 @@
         font-size: 16px;
     }
 }
-
+@media (max-height: 1000px) {
+    .media-model-client__block {
+        height: 800px;
+    }
+    .media-model-client {
+        padding: 50px 0 0 0;
+    }
+}
 @media (max-height: 870px) {
     .media-model-client__block-passwords {
         margin: 17px 0 0 0;
@@ -1216,8 +1223,11 @@
     .media-model-client__block {
         padding: 35px 0 0 0;
     }
+    .media-model-client__registor-email {
+        margin: 37px 0 0 0;
+    }
     .media-model-client__block {
-        height: 770px;
+        height: 750px;
     }
 }
 

@@ -677,4 +677,54 @@ var menuMediaStories = new Swiper(".menuMediaStories", {
 //! --------------------------------------------------------------------------------------------
 
 
+//! Модальное окно авторизации 
 
+
+$('#modelClientEntry').css('color', "#9a9a9a")
+
+$('#modelClientRegistration').on('click', function() {
+    $('.model-header__registration').removeClass('display-n')
+    $('.model-header__entry').addClass('display-n')
+    $(this).css('color', "#9a9a9a")
+    $('#modelClientEntry').css('color', "#fff")
+    $('.model-header__registration').css('height', '861px')
+    $('.model-header__entry').css('height', '861px')
+});
+$('#modelClientEntry').on('click', function() {
+    $('.model-header__entry').removeClass('display-n')
+    $('.model-header__registration').addClass('display-n')
+    $(this).css('color', "#9a9a9a")
+    $('#modelClientRegistration').css('color', "#fff")
+    $('.model-header__entry').css('height', '751px')
+    $('.model-header__registration').css('height', '751px')
+});
+
+//! --------------------------------------------------------------------------------------------
+
+
+
+
+
+//! Модальное окно авторизации 
+
+
+$('#mediaModelClientEntry').css('color', "#9a9a9a")
+
+$('#mediaModelClientRegistor').on('click', function() {
+    $('.media-model-client__registor').removeClass('display-n')
+    $('.media-model-client__entry').addClass('display-n')
+    $(this).css('color', "#9a9a9a")
+    $('#mediaModelClientEntry').css('color', "#fff")
+    $('.media-model-client__registor').css('height', '861px')
+    $('.media-model-client__entry').css('height', '861px')
+});
+$('#mediaModelClientEntry').on('click', function() {
+    $('.media-model-client__entry').removeClass('display-n')
+    $('.media-model-client__registor').addClass('display-n')
+    $(this).css('color', "#9a9a9a")
+    $('#mediaModelClientRegistor').css('color', "#fff")
+    $('.media-model-client__entry').css('height', '751px')
+    $('.media-model-client__registor').css('height', '751px')
+});
+
+//! --------------------------------------------------------------------------------------------
