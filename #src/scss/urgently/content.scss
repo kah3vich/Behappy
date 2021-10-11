@@ -51,27 +51,274 @@
             border: 1px solid #002685;
             box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
             border-radius: 20px;
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
+            // display: flex;
+            // align-items: flex-end;
+            // justify-content: center;
             margin: 73px 0 0 0;
             &-wrapper {
                 height: 100%;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
                 grid-auto-columns: 1fr;
                 grid-auto-rows: 1fr;
                 gap: 0;
                 grid-auto-flow: row;
-                margin: auto 0 15px 0;
+                // margin: auto 0 15px 0;
                 grid-template-areas:
+                    ". . . urgItem-46 urgItem-47 urgItem-48 urgItem-49 urgItem-50 urgItem-51 . ."
+                    ". . urgItem-39 urgItem-40 urgItem-41 urgItem-42 urgItem-43 urgItem-44 urgItem-45 . ."
                     ". urgItem-31 urgItem-32 urgItem-33 urgItem-34 urgItem-35 urgItem-36 urgItem-37 urgItem-38 . ."
                     ". urgItem-22 urgItem-23 urgItem-24 urgItem-25 urgItem-26 urgItem-27 urgItem-28 urgItem-29 urgItem-30 ."
                     "urgItem-12 urgItem-13 urgItem-14 urgItem-15 urgItem-16 urgItem-17 urgItem-18 urgItem-19 urgItem-20 urgItem-21 ."
                     "urgItem-1 urgItem-2 urgItem-3 urgItem-4 urgItem-5 urgItem-6 urgItem-7 urgItem-8 urgItem-9 urgItem-10 urgItem-11";
                 justify-content: center;
                 grid-template-columns: repeat(auto-fit, 100px);
+            }
+            &-item {
+                position: relative;
+                &:nth-child(1) {
+                    grid-area: urgItem-1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    & img {
+                        width: 90px;
+                    }
+                }
+                &:nth-child(2) {
+                    grid-area: urgItem-2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    & img {
+                        width: 90px;
+                    }
+                }
+                &:nth-child(3) {
+                    grid-area: urgItem-3;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    & img {
+                        width: 90px;
+                    }
+                }
+                &:nth-child(4) {
+                    grid-area: urgItem-4;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    & img {
+                        width: 90px;
+                    }
+                }
+                &:nth-child(5) {
+                    grid-area: urgItem-5;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    & img {
+                        width: 90px;
+                    }
+                }
+                &:nth-child(6) {
+                    grid-area: urgItem-6;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    & img {
+                        width: 90px;
+                    }
+                }
+                &:nth-child(7) {
+                    grid-area: urgItem-7;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    & img {
+                        width: 90px;
+                    }
+                }
+                &:nth-child(8) {
+                    grid-area: urgItem-8;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    & img {
+                        width: 90px;
+                    }
+                }
+                &:nth-child(9) {
+                    grid-area: urgItem-9;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    & img {
+                        width: 90px;
+                    }
+                }
+                &:nth-child(10) {
+                    grid-area: urgItem-10;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    & img {
+                        width: 90px;
+                    }
+                }
+                &:nth-child(11) {
+                    grid-area: urgItem-11;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    & img {
+                        width: 90px;
+                    }
+                }
+                &:nth-child(12) {
+                    grid-area: urgItem-12;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    & img {
+                        width: 90px;
+                        position: absolute;
+                        top: 20%;
+                        right: -45%;
+                    }
+                }
+                &:nth-child(13) {
+                    grid-area: urgItem-13;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    & img {
+                        width: 90px;
+                        position: absolute;
+                        top: 20%;
+                        right: -45%;
+                    }
+                }
+                &:nth-child(14) {
+                    grid-area: urgItem-14;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    & img {
+                        width: 90px;
+                        position: absolute;
+                        top: 20%;
+                        right: -45%;
+                    }
+                }
+                &:nth-child(15) {
+                    grid-area: urgItem-15;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    & img {
+                        width: 90px;
+                        position: absolute;
+                        top: 20%;
+                        right: -45%;
+                    }
+                }
+                &:nth-child(16) {
+                    grid-area: urgItem-16;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    & img {
+                        width: 90px;
+                        position: absolute;
+                        top: 20%;
+                        right: -45%;
+                    }
+                }
+                &:nth-child(17) {
+                    grid-area: urgItem-17;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    & img {
+                        width: 90px;
+                        position: absolute;
+                        top: 20%;
+                        right: -45%;
+                    }
+                }
+                &:nth-child(18) {
+                    grid-area: urgItem-18;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    & img {
+                        width: 90px;
+                        position: absolute;
+                        top: 20%;
+                        right: -45%;
+                    }
+                }
+                &:nth-child(19) {
+                    grid-area: urgItem-19;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    & img {
+                        width: 90px;
+                        position: absolute;
+                        top: 20%;
+                        right: -45%;
+                    }
+                }
+                &:nth-child(20) {
+                    grid-area: urgItem-20;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    & img {
+                        width: 90px;
+                        position: absolute;
+                        top: 20%;
+                        right: -45%;
+                    }
+                }
+                &:nth-child(21) {
+                    grid-area: urgItem-21;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    & img {
+                        width: 90px;
+                        position: absolute;
+                        top: 20%;
+                        right: -45%;
+                    }
+                }
+                &:nth-child(22) {
+                    grid-area: urgItem-22;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    & img {
+                        width: 90px;
+                        position: absolute;
+                        top: 40%;
+                        right: 0;
+                    }
+                }
             }
             &-text {
                 width: 763px;
