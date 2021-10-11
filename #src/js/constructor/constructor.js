@@ -6066,12 +6066,12 @@ function checkCountElementObjConstructor() {
         $('.const-content__block-banner-row-item img').css('width', '90px')
     } else if (countElementObjConstructorIllustrations == 52) {
         $('.const-content__block-banner-row-item img').css('width', '48px')
-        $('.const-content__block-banner-row').css()
     }
 
+    
 
 
-    if (countElementObjConstructor == 51) {
+    if (countElementObjConstructorIllustrations == 51) {
         $('.const-content__block-banner-row-item img').css('width', '48px')
         $('.const-content__block-banner-row').css("grid-template-rows", "1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr")
         $('.const-content__block-banner-row').css("grid-template-columns", "1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr")
@@ -6174,7 +6174,9 @@ function checkCountElementObjConstructor() {
         $(".const-content__block-banner-row-item img")[42].style.right = '-25px'
 
         $(".const-content__block-banner-row-item img")[42].style.bottom = '-10px'
-        $(".const-content__block-banner-row-item img")[42].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[42].style.right = '-30px'
+        // bottom: -10px;
+        // right: -30px;
 
         $(".const-content__block-banner-row-item img")[43].style.bottom = '-20px'
         $(".const-content__block-banner-row-item img")[43].style.right = '-50px'
@@ -6199,184 +6201,180 @@ function checkCountElementObjConstructor() {
 
         $(".const-content__block-banner-row-item img")[50].style.bottom = '-20px'
         $(".const-content__block-banner-row-item img")[50].style.right = '-50px'
+
+        // $(".const-content__block-banner-row-item img")[51].style.bottom = '-20px'
+        // $(".const-content__block-banner-row-item img")[51].style.right = '-50px'
     }
-    if (countElementObjConstructor == 50) {
+    if (countElementObjConstructorIllustrations == 50) {
         $('.const-content__block-banner-row-item img').css('width', '90px')
-        $('.const-content__block-banner-row').css('grid-template-rows', '1fr 1fr 1fr 1fr 1fr 1fr')
-        $('.const-content__block-banner-row').css('grid-template-columns', 'repeat(auto-fit,100px)')
-        $('.const-content__block-banner-row').css('grid-template-areas', `
-        ". . . item-46 item-47 item-48 item-49 item-50 item-51 . ."
-        ". . item-39 item-40 item-41 item-42 item-43 item-44 item-45 . ."
-        ". item-31 item-32 item-33 item-34 item-35 item-36 item-37 item-38 . ."
-        ". item-22 item-23 item-24 item-25 item-26 item-27 item-28 item-29 item-30 ."
-        "item-12 item-13 item-14 item-15 item-16 item-17 item-18 item-19 item-20 item-21 ."
-        "item-1 item-2 item-3 item-4 item-5 item-6 item-7 item-8 item-9 item-10 item-11"
-        `)
+        $('.const-content__block-banner-row').css('grid-template-rows', '')
+        $('.const-content__block-banner-row').css('grid-template-columns', '')
+        $('.const-content__block-banner-row').css('grid-template-areas', ``)
 
-        // $(".const-content__block-banner-row-item img")[0].style.position = 'static'
-        // $(".const-content__block-banner-row-item img")[1].style.position = 'static'
-        // $(".const-content__block-banner-row-item img")[2].style.position = 'static'
-        // $(".const-content__block-banner-row-item img")[3].style.position = 'static'
-        // $(".const-content__block-banner-row-item img")[4].style.position = 'static'
-        // $(".const-content__block-banner-row-item img")[5].style.position = 'static'
-        // $(".const-content__block-banner-row-item img")[6].style.position = 'static'
-        // $(".const-content__block-banner-row-item img")[7].style.position = 'static'
-        // $(".const-content__block-banner-row-item img")[8].style.position = 'static'
-        // $(".const-content__block-banner-row-item img")[9].style.position = 'static'
-        // $(".const-content__block-banner-row-item img")[10].style.position = 'static'
-        // $(".const-content__block-banner-row-item img")[11].style.position = 'static'
-        // $(".const-content__block-banner-row-item img")[12].style.position = 'static'
-        // $(".const-content__block-banner-row-item img")[13].style.position = 'static'
-        // $(".const-content__block-banner-row-item img")[14].style.position = 'static'
-        // $(".const-content__block-banner-row-item img")[15].style.position = 'static'
-        // $(".const-content__block-banner-row-item img")[16].style.position = 'static'
-        // $(".const-content__block-banner-row-item img")[17].style.position = 'static'
-        // $(".const-content__block-banner-row-item img")[18].style.position = 'static'
-        // $(".const-content__block-banner-row-item img")[19].style.position = 'static'
-        // $(".const-content__block-banner-row-item img")[20].style.position = 'static'
-        // $(".const-content__block-banner-row-item img")[21].style.position = 'static'
-        // $(".const-content__block-banner-row-item img")[22].style.bottom = '-10px'
-        // $(".const-content__block-banner-row-item img")[22].style.right = '-25px'
-        // $(".const-content__block-banner-row-item img")[23].style.bottom = '-10px'
-        // $(".const-content__block-banner-row-item img")[23].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[0].style.position = ''
+        $(".const-content__block-banner-row-item img")[1].style.position = ''
+        $(".const-content__block-banner-row-item img")[2].style.position = ''
+        $(".const-content__block-banner-row-item img")[3].style.position = ''
+        $(".const-content__block-banner-row-item img")[4].style.position = ''
+        $(".const-content__block-banner-row-item img")[5].style.position = ''
+        $(".const-content__block-banner-row-item img")[6].style.position = ''
+        $(".const-content__block-banner-row-item img")[7].style.position = ''
+        $(".const-content__block-banner-row-item img")[8].style.position = ''
+        $(".const-content__block-banner-row-item img")[9].style.position = ''
+        $(".const-content__block-banner-row-item img")[10].style.position = ''
+        $(".const-content__block-banner-row-item img")[11].style.position = ''
+        $(".const-content__block-banner-row-item img")[12].style.position = ''
+        $(".const-content__block-banner-row-item img")[13].style.position = ''
+        $(".const-content__block-banner-row-item img")[14].style.position = ''
+        $(".const-content__block-banner-row-item img")[15].style.position = ''
+        $(".const-content__block-banner-row-item img")[16].style.position = ''
+        $(".const-content__block-banner-row-item img")[17].style.position = ''
+        $(".const-content__block-banner-row-item img")[18].style.position = ''
+        $(".const-content__block-banner-row-item img")[19].style.position = ''
+        $(".const-content__block-banner-row-item img")[20].style.position = ''
+        $(".const-content__block-banner-row-item img")[21].style.position = ''
+        $(".const-content__block-banner-row-item img")[22].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[22].style.right = ''
+        $(".const-content__block-banner-row-item img")[23].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[23].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[24].style.bottom = '-10px'
-        // $(".const-content__block-banner-row-item img")[24].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[24].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[24].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[25].style.bottom = '-10px'
-        // $(".const-content__block-banner-row-item img")[25].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[25].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[25].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[26].style.bottom = '-10px'
-        // $(".const-content__block-banner-row-item img")[26].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[26].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[26].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[27].style.bottom = '-10px'
-        // $(".const-content__block-banner-row-item img")[27].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[27].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[27].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[28].style.bottom = '-10px'
-        // $(".const-content__block-banner-row-item img")[28].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[28].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[28].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[29].style.bottom = '-10px'
-        // $(".const-content__block-banner-row-item img")[29].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[29].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[29].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[30].style.bottom = '-10px'
-        // $(".const-content__block-banner-row-item img")[30].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[30].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[30].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[31].style.bottom = '-10px'
-        // $(".const-content__block-banner-row-item img")[31].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[31].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[31].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[32].style.bottom = '-10px'
-        // $(".const-content__block-banner-row-item img")[32].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[32].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[32].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[33].style.bottom = '-10px'
-        // $(".const-content__block-banner-row-item img")[33].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[33].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[33].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[34].style.bottom = '-10px'
-        // $(".const-content__block-banner-row-item img")[34].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[34].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[34].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[35].style.bottom = '-10px'
-        // $(".const-content__block-banner-row-item img")[35].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[35].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[35].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[36].style.bottom = '-10px'
-        // $(".const-content__block-banner-row-item img")[36].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[36].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[36].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[37].style.bottom = '-10px'
-        // $(".const-content__block-banner-row-item img")[37].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[37].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[37].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[38].style.bottom = '-10px'
-        // $(".const-content__block-banner-row-item img")[38].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[38].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[38].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[39].style.bottom = '-10px'
-        // $(".const-content__block-banner-row-item img")[39].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[39].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[39].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[40].style.bottom = '-10px'
-        // $(".const-content__block-banner-row-item img")[40].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[40].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[40].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[41].style.bottom = '-10px'
-        // $(".const-content__block-banner-row-item img")[41].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[41].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[41].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[42].style.bottom = '-10px'
-        // $(".const-content__block-banner-row-item img")[42].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[42].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[42].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[42].style.bottom = '-10px'
-        // $(".const-content__block-banner-row-item img")[42].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[42].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[42].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[43].style.bottom = '-20px'
-        // $(".const-content__block-banner-row-item img")[43].style.right = '-50px'
+        $(".const-content__block-banner-row-item img")[43].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[43].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[44].style.bottom = '-20px'
-        // $(".const-content__block-banner-row-item img")[44].style.right = '-50px'
+        $(".const-content__block-banner-row-item img")[44].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[44].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[45].style.bottom = '-20px'
-        // $(".const-content__block-banner-row-item img")[45].style.right = '-50px'
+        $(".const-content__block-banner-row-item img")[45].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[45].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[46].style.bottom = '-20px'
-        // $(".const-content__block-banner-row-item img")[46].style.right = '-50px'
+        $(".const-content__block-banner-row-item img")[46].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[46].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[47].style.bottom = '-20px'
-        // $(".const-content__block-banner-row-item img")[47].style.right = '-50px'
+        $(".const-content__block-banner-row-item img")[47].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[47].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[48].style.bottom = '-20px'
-        // $(".const-content__block-banner-row-item img")[48].style.right = '-50px'
+        $(".const-content__block-banner-row-item img")[48].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[48].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[49].style.bottom = '-20px'
-        // $(".const-content__block-banner-row-item img")[49].style.right = '-50px'
+        $(".const-content__block-banner-row-item img")[49].style.bottom = ''
+        $(".const-content__block-banner-row-item img")[49].style.right = ''
 
-        // $(".const-content__block-banner-row-item img")[50].style.bottom = '-20px'
-        // $(".const-content__block-banner-row-item img")[50].style.right = '-50px'
+        // $(".const-content__block-banner-row-item img")[50].style.bottom = ''
+        // $(".const-content__block-banner-row-item img")[50].style.right = ''
     }
-    if (countElementObjConstructorIllustrations == 51) {
-        $(".const-content__block-banner-row-item img")[50].style.bottom = '-20px'
-        $(".const-content__block-banner-row-item img")[50].style.right = '-50px'
-    }
-    if (countElementObjConstructorIllustrations == 52) {
-        $(".const-content__block-banner-row-item img")[51].style.bottom = '-20px'
-        $(".const-content__block-banner-row-item img")[51].style.right = '-50px'
-    }
-    if (countElementObjConstructorIllustrations == 53) {
-        $(".const-content__block-banner-row-item img")[52].style.bottom = '-20px'
-        $(".const-content__block-banner-row-item img")[52].style.right = '-50px'
-    }
-    if (countElementObjConstructorIllustrations == 54) {
-        $(".const-content__block-banner-row-item img")[53].style.bottom = '-20px'
-        $(".const-content__block-banner-row-item img")[53].style.right = '-50px'
-    }
-    if (countElementObjConstructorIllustrations == 55) {
-        $(".const-content__block-banner-row-item img")[54].style.bottom = '-20px'
-        $(".const-content__block-banner-row-item img")[54].style.right = '-50px'
-    }
-    if (countElementObjConstructorIllustrations == 56) {
-        $(".const-content__block-banner-row-item img")[55].style.bottom = '-20px'
-        $(".const-content__block-banner-row-item img")[55].style.right = '-50px'
-    }
-    if (countElementObjConstructorIllustrations == 57) {
-        $(".const-content__block-banner-row-item img")[56].style.bottom = '-20px'
-        $(".const-content__block-banner-row-item img")[56].style.right = '-50px'
-    }
-    if (countElementObjConstructorIllustrations == 58) {
-        $(".const-content__block-banner-row-item img")[57].style.bottom = '-20px'
-        $(".const-content__block-banner-row-item img")[57].style.right = '-50px'
-    }
-    if (countElementObjConstructorIllustrations == 59) {
-        $(".const-content__block-banner-row-item img")[58].style.bottom = '-20px'
-        $(".const-content__block-banner-row-item img")[58].style.right = '-50px'
-    }
-    if (countElementObjConstructorIllustrations == 60) {
-        $(".const-content__block-banner-row-item img")[59].style.bottom = '-20px'
-        $(".const-content__block-banner-row-item img")[59].style.right = '-50px'
-    }
-    if (countElementObjConstructorIllustrations == 61) {
-        $(".const-content__block-banner-row-item img")[60].style.bottom = '-20px'
-        $(".const-content__block-banner-row-item img")[60].style.right = '-50px'
-    }
-    if (countElementObjConstructorIllustrations == 62) {
-        $(".const-content__block-banner-row-item img")[61].style.bottom = '-20px'
-        $(".const-content__block-banner-row-item img")[61].style.right = '-50px'
-    }
-    if (countElementObjConstructorIllustrations == 63) {
-        $(".const-content__block-banner-row-item img")[62].style.bottom = '-20px'
-        $(".const-content__block-banner-row-item img")[62].style.right = '-50px'
-    }
-    if (countElementObjConstructor > 174) {
+    // if (countElementObjConstructorIllustrations == 51) {
+    //     $(".const-content__block-banner-row-item img")[50].style.bottom = '-20px'
+    //     $(".const-content__block-banner-row-item img")[50].style.right = '-50px'
+    // }
+    // if (countElementObjConstructorIllustrations == 52) {
+    //     $(".const-content__block-banner-row-item img")[51].style.bottom = '-20px'
+    //     $(".const-content__block-banner-row-item img")[51].style.right = '-50px'
+    // }
+    // if (countElementObjConstructorIllustrations == 53) {
+    //     $(".const-content__block-banner-row-item img")[52].style.bottom = '-20px'
+    //     $(".const-content__block-banner-row-item img")[52].style.right = '-50px'
+    // }
+    // if (countElementObjConstructorIllustrations == 54) {
+    //     $(".const-content__block-banner-row-item img")[53].style.bottom = '-20px'
+    //     $(".const-content__block-banner-row-item img")[53].style.right = '-50px'
+    // }
+    // if (countElementObjConstructorIllustrations == 55) {
+    //     $(".const-content__block-banner-row-item img")[54].style.bottom = '-20px'
+    //     $(".const-content__block-banner-row-item img")[54].style.right = '-50px'
+    // }
+    // if (countElementObjConstructorIllustrations == 56) {
+    //     $(".const-content__block-banner-row-item img")[55].style.bottom = '-20px'
+    //     $(".const-content__block-banner-row-item img")[55].style.right = '-50px'
+    // }
+    // if (countElementObjConstructorIllustrations == 57) {
+    //     $(".const-content__block-banner-row-item img")[56].style.bottom = '-20px'
+    //     $(".const-content__block-banner-row-item img")[56].style.right = '-50px'
+    // }
+    // if (countElementObjConstructorIllustrations == 58) {
+    //     $(".const-content__block-banner-row-item img")[57].style.bottom = '-20px'
+    //     $(".const-content__block-banner-row-item img")[57].style.right = '-50px'
+    // }
+    // if (countElementObjConstructorIllustrations == 59) {
+    //     $(".const-content__block-banner-row-item img")[58].style.bottom = '-20px'
+    //     $(".const-content__block-banner-row-item img")[58].style.right = '-50px'
+    // }
+    // if (countElementObjConstructorIllustrations == 60) {
+    //     $(".const-content__block-banner-row-item img")[59].style.bottom = '-20px'
+    //     $(".const-content__block-banner-row-item img")[59].style.right = '-50px'
+    // }
+    // if (countElementObjConstructorIllustrations == 61) {
+    //     $(".const-content__block-banner-row-item img")[60].style.bottom = '-20px'
+    //     $(".const-content__block-banner-row-item img")[60].style.right = '-50px'
+    // }
+    // if (countElementObjConstructorIllustrations == 62) {
+    //     $(".const-content__block-banner-row-item img")[61].style.bottom = '-20px'
+    //     $(".const-content__block-banner-row-item img")[61].style.right = '-50px'
+    // }
+    // if (countElementObjConstructorIllustrations == 63) {
+    //     $(".const-content__block-banner-row-item img")[62].style.bottom = '-20px'
+    //     $(".const-content__block-banner-row-item img")[62].style.right = '-50px'
+    // }
+    if (countElementObjConstructorIllustrations > 174) {
         $('.const-content__block button').attr('disabled', 'disabled')
         $('.const-content__block-sliders-1 button').removeAttr('disabled', 'disabled')
         $('.const-content__block-sliders-2 button').removeAttr('disabled', 'disabled')
@@ -6384,6 +6382,215 @@ function checkCountElementObjConstructor() {
         $('.const-content__block-sliders-4 button').removeAttr('disabled', 'disabled')
     } else {
         $('.const-content__block button').removeAttr('disabled', 'disabled')
+    }
+
+    if (countElementObjConstructorIllustrations == 52 
+        || countElementObjConstructorIllustrations == 53 
+        || countElementObjConstructorIllustrations == 54 
+        || countElementObjConstructorIllustrations == 55
+        || countElementObjConstructorIllustrations == 56
+        || countElementObjConstructorIllustrations == 57
+        || countElementObjConstructorIllustrations == 58
+        || countElementObjConstructorIllustrations == 59
+        || countElementObjConstructorIllustrations == 60
+        || countElementObjConstructorIllustrations == 61
+        || countElementObjConstructorIllustrations == 62
+        || countElementObjConstructorIllustrations == 63
+        || countElementObjConstructorIllustrations == 64
+        || countElementObjConstructorIllustrations == 65
+        || countElementObjConstructorIllustrations == 66
+        || countElementObjConstructorIllustrations == 67
+        || countElementObjConstructorIllustrations == 68
+        || countElementObjConstructorIllustrations == 69
+        || countElementObjConstructorIllustrations == 70
+        || countElementObjConstructorIllustrations == 71
+        || countElementObjConstructorIllustrations == 72
+        || countElementObjConstructorIllustrations == 73
+        || countElementObjConstructorIllustrations == 74
+        || countElementObjConstructorIllustrations == 75
+        || countElementObjConstructorIllustrations == 76
+        || countElementObjConstructorIllustrations == 77
+        || countElementObjConstructorIllustrations == 78
+        || countElementObjConstructorIllustrations == 79
+        || countElementObjConstructorIllustrations == 80
+        || countElementObjConstructorIllustrations == 81
+        || countElementObjConstructorIllustrations == 82
+        || countElementObjConstructorIllustrations == 83
+        || countElementObjConstructorIllustrations == 84
+        || countElementObjConstructorIllustrations == 85
+        || countElementObjConstructorIllustrations == 86
+        || countElementObjConstructorIllustrations == 87
+        || countElementObjConstructorIllustrations == 88
+        || countElementObjConstructorIllustrations == 89
+        || countElementObjConstructorIllustrations == 90
+        || countElementObjConstructorIllustrations == 91
+        || countElementObjConstructorIllustrations == 92
+        || countElementObjConstructorIllustrations == 93
+        || countElementObjConstructorIllustrations == 94
+        || countElementObjConstructorIllustrations == 95
+        || countElementObjConstructorIllustrations == 96
+        || countElementObjConstructorIllustrations == 97
+        || countElementObjConstructorIllustrations == 98
+        || countElementObjConstructorIllustrations == 99
+        || countElementObjConstructorIllustrations == 100
+        || countElementObjConstructorIllustrations == 101
+        || countElementObjConstructorIllustrations == 102
+        || countElementObjConstructorIllustrations == 103
+        || countElementObjConstructorIllustrations == 104
+        || countElementObjConstructorIllustrations == 105
+        || countElementObjConstructorIllustrations == 106
+        || countElementObjConstructorIllustrations == 107
+        || countElementObjConstructorIllustrations == 108
+        || countElementObjConstructorIllustrations == 109
+        || countElementObjConstructorIllustrations == 110
+        || countElementObjConstructorIllustrations == 111
+        || countElementObjConstructorIllustrations == 112
+        || countElementObjConstructorIllustrations == 113
+        || countElementObjConstructorIllustrations == 114
+        || countElementObjConstructorIllustrations == 115
+        || countElementObjConstructorIllustrations == 116
+        || countElementObjConstructorIllustrations == 117
+        || countElementObjConstructorIllustrations == 118
+        || countElementObjConstructorIllustrations == 119
+        || countElementObjConstructorIllustrations == 120
+        || countElementObjConstructorIllustrations == 121
+        || countElementObjConstructorIllustrations == 122
+        || countElementObjConstructorIllustrations == 123
+        || countElementObjConstructorIllustrations == 124
+        || countElementObjConstructorIllustrations == 125
+        || countElementObjConstructorIllustrations == 126
+        || countElementObjConstructorIllustrations == 127
+        || countElementObjConstructorIllustrations == 128
+        || countElementObjConstructorIllustrations == 129
+        || countElementObjConstructorIllustrations == 130
+        || countElementObjConstructorIllustrations == 131
+        || countElementObjConstructorIllustrations == 132
+        || countElementObjConstructorIllustrations == 133
+        || countElementObjConstructorIllustrations == 134
+        || countElementObjConstructorIllustrations == 135
+        || countElementObjConstructorIllustrations == 136
+        || countElementObjConstructorIllustrations == 137
+        || countElementObjConstructorIllustrations == 138
+        || countElementObjConstructorIllustrations == 139
+        || countElementObjConstructorIllustrations == 140
+        || countElementObjConstructorIllustrations == 141
+        || countElementObjConstructorIllustrations == 142
+        || countElementObjConstructorIllustrations == 143
+        || countElementObjConstructorIllustrations == 144
+        || countElementObjConstructorIllustrations == 145
+        || countElementObjConstructorIllustrations == 146
+        || countElementObjConstructorIllustrations == 147
+        || countElementObjConstructorIllustrations == 148
+        || countElementObjConstructorIllustrations == 149
+        || countElementObjConstructorIllustrations == 150
+        || countElementObjConstructorIllustrations == 151
+        || countElementObjConstructorIllustrations == 152
+        || countElementObjConstructorIllustrations == 153
+        || countElementObjConstructorIllustrations == 154
+        || countElementObjConstructorIllustrations == 155
+        || countElementObjConstructorIllustrations == 156
+        || countElementObjConstructorIllustrations == 157
+        || countElementObjConstructorIllustrations == 158
+        || countElementObjConstructorIllustrations == 159
+        || countElementObjConstructorIllustrations == 160
+        || countElementObjConstructorIllustrations == 161
+        || countElementObjConstructorIllustrations == 162
+        || countElementObjConstructorIllustrations == 163
+        || countElementObjConstructorIllustrations == 164
+        || countElementObjConstructorIllustrations == 165
+        || countElementObjConstructorIllustrations == 166
+        || countElementObjConstructorIllustrations == 167
+        || countElementObjConstructorIllustrations == 168
+        || countElementObjConstructorIllustrations == 169
+        || countElementObjConstructorIllustrations == 170
+        || countElementObjConstructorIllustrations == 171
+        || countElementObjConstructorIllustrations == 172
+        || countElementObjConstructorIllustrations == 173
+        || countElementObjConstructorIllustrations == 174
+        || countElementObjConstructorIllustrations == 175
+        ) {
+        $(".const-content__block-banner-row-item img")[0].style.position = 'static'
+        $(".const-content__block-banner-row-item img")[1].style.position = 'static'
+        $(".const-content__block-banner-row-item img")[2].style.position = 'static'
+        $(".const-content__block-banner-row-item img")[3].style.position = 'static'
+        $(".const-content__block-banner-row-item img")[4].style.position = 'static'
+        $(".const-content__block-banner-row-item img")[5].style.position = 'static'
+        $(".const-content__block-banner-row-item img")[6].style.position = 'static'
+        $(".const-content__block-banner-row-item img")[7].style.position = 'static'
+        $(".const-content__block-banner-row-item img")[8].style.position = 'static'
+        $(".const-content__block-banner-row-item img")[9].style.position = 'static'
+        $(".const-content__block-banner-row-item img")[10].style.position = 'static'
+        $(".const-content__block-banner-row-item img")[11].style.position = 'static'
+        $(".const-content__block-banner-row-item img")[12].style.position = 'static'
+        $(".const-content__block-banner-row-item img")[13].style.position = 'static'
+        $(".const-content__block-banner-row-item img")[14].style.position = 'static'
+        $(".const-content__block-banner-row-item img")[15].style.position = 'static'
+        $(".const-content__block-banner-row-item img")[16].style.position = 'static'
+        $(".const-content__block-banner-row-item img")[17].style.position = 'static'
+        $(".const-content__block-banner-row-item img")[18].style.position = 'static'
+        $(".const-content__block-banner-row-item img")[19].style.position = 'static'
+        $(".const-content__block-banner-row-item img")[20].style.position = 'static'
+        $(".const-content__block-banner-row-item img")[21].style.position = 'static'
+        $(".const-content__block-banner-row-item img")[22].style.bottom = '-10px'
+        $(".const-content__block-banner-row-item img")[22].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[23].style.bottom = '-10px'
+        $(".const-content__block-banner-row-item img")[23].style.right = '-25px';
+        $(".const-content__block-banner-row-item img")[24].style.bottom = '-10px'
+        $(".const-content__block-banner-row-item img")[24].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[25].style.bottom = '-10px'
+        $(".const-content__block-banner-row-item img")[25].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[26].style.bottom = '-10px'
+        $(".const-content__block-banner-row-item img")[26].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[27].style.bottom = '-10px'
+        $(".const-content__block-banner-row-item img")[27].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[28].style.bottom = '-10px'
+        $(".const-content__block-banner-row-item img")[28].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[29].style.bottom = '-10px'
+        $(".const-content__block-banner-row-item img")[29].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[30].style.bottom = '-10px'
+        $(".const-content__block-banner-row-item img")[30].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[31].style.bottom = '-10px'
+        $(".const-content__block-banner-row-item img")[31].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[32].style.bottom = '-10px'
+        $(".const-content__block-banner-row-item img")[32].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[33].style.bottom = '-10px'
+        $(".const-content__block-banner-row-item img")[33].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[34].style.bottom = '-10px'
+        $(".const-content__block-banner-row-item img")[34].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[35].style.bottom = '-10px'
+        $(".const-content__block-banner-row-item img")[35].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[36].style.bottom = '-10px'
+        $(".const-content__block-banner-row-item img")[36].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[37].style.bottom = '-10px'
+        $(".const-content__block-banner-row-item img")[37].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[38].style.bottom = '-10px'
+        $(".const-content__block-banner-row-item img")[38].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[39].style.bottom = '-10px'
+        $(".const-content__block-banner-row-item img")[39].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[40].style.bottom = '-10px'
+        $(".const-content__block-banner-row-item img")[40].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[41].style.bottom = '-10px'
+        $(".const-content__block-banner-row-item img")[41].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[42].style.bottom = '-10px'
+        $(".const-content__block-banner-row-item img")[42].style.right = '-25px'
+        $(".const-content__block-banner-row-item img")[42].style.bottom = '-10px'
+        $(".const-content__block-banner-row-item img")[42].style.right = '-30px'
+        $(".const-content__block-banner-row-item img")[43].style.bottom = '-20px'
+        $(".const-content__block-banner-row-item img")[43].style.right = '-50px'
+        $(".const-content__block-banner-row-item img")[44].style.bottom = '-20px'
+        $(".const-content__block-banner-row-item img")[44].style.right = '-50px'
+        $(".const-content__block-banner-row-item img")[45].style.bottom = '-20px'
+        $(".const-content__block-banner-row-item img")[45].style.right = '-50px'
+        $(".const-content__block-banner-row-item img")[46].style.bottom = '-20px'
+        $(".const-content__block-banner-row-item img")[46].style.right = '-50px'
+        $(".const-content__block-banner-row-item img")[47].style.bottom = '-20px'
+        $(".const-content__block-banner-row-item img")[47].style.right = '-50px'
+        $(".const-content__block-banner-row-item img")[48].style.bottom = '-20px'
+        $(".const-content__block-banner-row-item img")[48].style.right = '-50px'
+        $(".const-content__block-banner-row-item img")[49].style.bottom = '-20px'
+        $(".const-content__block-banner-row-item img")[49].style.right = '-50px'
+        $(".const-content__block-banner-row-item img")[50].style.bottom = '-20px'
+        $(".const-content__block-banner-row-item img")[50].style.right = '-50px'
     }
 }
 

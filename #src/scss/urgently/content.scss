@@ -46,15 +46,33 @@
         }
         &-banner {
             width: 100%;
-            height: 346px;
+            height: 504px;
             background: #04133C;
             border: 1px solid #002685;
             box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
             border-radius: 20px;
             display: flex;
-            align-items: center;
+            align-items: flex-end;
             justify-content: center;
             margin: 73px 0 0 0;
+            &-wrapper {
+                height: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-auto-columns: 1fr;
+                grid-auto-rows: 1fr;
+                gap: 0;
+                grid-auto-flow: row;
+                margin: auto 0 15px 0;
+                grid-template-areas:
+                    ". urgItem-31 urgItem-32 urgItem-33 urgItem-34 urgItem-35 urgItem-36 urgItem-37 urgItem-38 . ."
+                    ". urgItem-22 urgItem-23 urgItem-24 urgItem-25 urgItem-26 urgItem-27 urgItem-28 urgItem-29 urgItem-30 ."
+                    "urgItem-12 urgItem-13 urgItem-14 urgItem-15 urgItem-16 urgItem-17 urgItem-18 urgItem-19 urgItem-20 urgItem-21 ."
+                    "urgItem-1 urgItem-2 urgItem-3 urgItem-4 urgItem-5 urgItem-6 urgItem-7 urgItem-8 urgItem-9 urgItem-10 urgItem-11";
+                justify-content: center;
+                grid-template-columns: repeat(auto-fit, 100px);
+            }
             &-text {
                 width: 763px;
                 font-family: Circe;
@@ -380,6 +398,7 @@
                     bottom: -105px;
                 }
                 &-title {
+                    margin: 0 0 10px 0;
                     font-family: Circe;
                     font-style: normal;
                     font-weight: normal;
@@ -421,6 +440,7 @@
                         justify-content: center;
                         width: 28px;
                         height: 21px;
+                        background: transparent;
                     }
                     &-plus {
                         display: flex;
@@ -428,6 +448,7 @@
                         justify-content: center;
                         width: 28px;
                         height: 21px;
+                        background: transparent;
                     }
                 }
                 &-price {
@@ -677,4 +698,7 @@
             }
         }
     }
+}
+.urg-checked {
+    
 }

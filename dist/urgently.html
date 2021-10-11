@@ -1430,7 +1430,9 @@
                 </div>
             </div>
             <div class="urg-content__block-banner">
-                <p class="urg-content__block-banner-text">Иллюстрация фона-имитация интерьера пространства цветочного магазина</p>
+                <div class="urg-content__block-banner-wrapper" id="urgBannerList">
+                    <!-- <div class="urg-content__block-banner-item"></div> -->
+                </div>
             </div>
             <div class="urg-content__block-info">
                 <div class="urg-content__block-info-color">
@@ -1847,12 +1849,12 @@
             <div class="urg-content__block-add">
                 Выберите цветы   
             </div>
-            <ul class="urg-content__block-list">
-                <li class="urg-content__block-list-item">
+            <div class="urg-content__block-list">
+                <li class="urg-content__block-list-item" id="urgBlockControls_1">
                     <img src="./img/flower-2.png" id="urgListItem_1_img">
                     <p class="urg-content__block-list-item-text" id="urgListItem_1_text">Лилия белая</p>
                     <ul class="urg-content__block-list-item-color display-n" id="urgListItem_1_color">
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_1_1_colors">
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_1_1_colors" value="item-1">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="15" cy="15" r="14.5" stroke="url(#paint0_linear)"/>
 <defs>
@@ -1866,8 +1868,8 @@
 </defs>
 </svg>
 
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_1_2_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_1_2_colors" value="item-1">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="15" cy="15" r="14.5" stroke="url(#paint0_linear)"/>
 <defs>
@@ -1881,8 +1883,8 @@
 </defs>
 </svg>
 
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_1_3_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_1_3_colors" value="item-1">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="15" cy="15" r="14.5" stroke="url(#paint0_linear)"/>
 <defs>
@@ -1896,8 +1898,8 @@
 </defs>
 </svg>
 
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_1_4_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_1_4_colors" value="item-1">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="15" cy="15" r="14.5" stroke="url(#paint0_linear)"/>
 <defs>
@@ -1911,8 +1913,8 @@
 </defs>
 </svg>
 
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_1_5_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_1_5_colors" value="item-1">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="15" cy="15" r="14.5" stroke="url(#paint0_linear)"/>
 <defs>
@@ -1926,8 +1928,8 @@
 </defs>
 </svg>
 
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_1_6_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_1_6_colors" value="item-1">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="15" cy="15" r="14.5" stroke="url(#paint0_linear)"/>
 <defs>
@@ -1941,37 +1943,37 @@
 </defs>
 </svg>
 
-                        </li>
+                        </button>
                     </ul>
                     <div class="urg-content__block-list-item-block display-n" id="urgListItem_1_block">
                         <div class="urg-content__block-list-item-title">Лилия белая</div>
                         <div class="urg-content__block-list-item-count">
-                            <div class="urg-content__block-list-item-count-minus"><svg width="11" height="2" viewBox="0 0 11 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <button class="urg-content__block-list-item-count-minus" id="urgButtonBlockMinus_1"><svg width="11" height="2" viewBox="0 0 11 2" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1 1H9.34615" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-</div>
-                            <div class="urg-content__block-list-item-count-sum">1</div>
-                            <div class="urg-content__block-list-item-count-plus"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+</button>
+                            <div class="urg-content__block-list-item-count-sum" id="urgButtonBlockCount_1">1</div>
+                            <button class="urg-content__block-list-item-count-plus" id="urgButtonBlockPlus_1"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.69238 3.41699V11.5837" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M3.51855 7.5H11.8647" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-</div>
+</button>
                         </div>
                         <div class="urg-content__block-list-item-price">2990₽ </div>
                     </div>
-                    <div class="urg-content__block-list-item-close display-n" id="urgListItem_1_close">
+                    <button class="urg-content__block-list-item-close display-n" id="urgListItem_1_close" value="urgListItem_1">
                         <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M15.9561 15.957L28.4635 28.4644" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M15.8193 28.6016L28.6016 15.8193" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 
-                    </div>
+                    </button>
                 </li>
-                <li class="urg-content__block-list-item">
+                <li class="urg-content__block-list-item" id="urgBlockControls_2">
                     <img src="./img/flower-2.png" id="urgListItem_2_img">
                     <p class="urg-content__block-list-item-text" id="urgListItem_2_text">Лилия белая</p>
                     <ul class="urg-content__block-list-item-color display-n" id="urgListItem_2_color">
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_2_1_colors">
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_2_1_colors" value="item-2">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="15" cy="15" r="14.5" stroke="url(#paint0_linear)"/>
 <defs>
@@ -1985,8 +1987,8 @@
 </defs>
 </svg>
 
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_2_2_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_2_2_colors" value="item-2">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="15" cy="15" r="14.5" stroke="url(#paint0_linear)"/>
 <defs>
@@ -2000,8 +2002,8 @@
 </defs>
 </svg>
 
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_2_3_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_2_3_colors" value="item-1">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="15" cy="15" r="14.5" stroke="url(#paint0_linear)"/>
 <defs>
@@ -2015,8 +2017,8 @@
 </defs>
 </svg>
 
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_2_4_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_2_4_colors" value="item-2">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="15" cy="15" r="14.5" stroke="url(#paint0_linear)"/>
 <defs>
@@ -2030,8 +2032,8 @@
 </defs>
 </svg>
 
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_2_5_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_2_5_colors" value="item-2">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="15" cy="15" r="14.5" stroke="url(#paint0_linear)"/>
 <defs>
@@ -2045,8 +2047,8 @@
 </defs>
 </svg>
 
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_2_6_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_2_6_colors" value="item-2">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="15" cy="15" r="14.5" stroke="url(#paint0_linear)"/>
 <defs>
@@ -2060,7 +2062,7 @@
 </defs>
 </svg>
 
-                        </li>
+                        </button>
                     </ul>
                     <div class="urg-content__block-list-item-block display-n" id="urgListItem_2_block">
                         <div class="urg-content__block-list-item-title">Лилия белая</div>
@@ -2078,7 +2080,7 @@
                         </div>
                         <div class="urg-content__block-list-item-price">2990₽ </div>
                     </div>
-                    <div class="urg-content__block-list-item-close display-n" id="urgListItem_2_close">
+                    <div class="urg-content__block-list-item-close display-n" id="urgListItem_2_close" value="urgListItem_2">
                         <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M15.9561 15.957L28.4635 28.4644" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M15.8193 28.6016L28.6016 15.8193" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2086,7 +2088,7 @@
 
                     </div>
                 </li>
-                <li class="urg-content__block-list-item">
+                <li class="urg-content__block-list-item" id="urgBlockControls_3">
                     <img src="./img/flower-2.png" id="urgListItem_3_img">
                     <p class="urg-content__block-list-item-text" id="urgListItem_3_text">Лилия белая</p>
                     <ul class="urg-content__block-list-item-color display-n" id="urgListItem_3_color">
@@ -2205,7 +2207,7 @@
 
                     </div>
                 </li>
-                <li class="urg-content__block-list-item">
+                <li class="urg-content__block-list-item" id="urgBlockControls_4">
                     <img src="./img/flower-2.png" id="urgListItem_4_img">
                     <p class="urg-content__block-list-item-text" id="urgListItem_4_text">Лилия белая</p>
                     <ul class="urg-content__block-list-item-color display-n" id="urgListItem_4_color">
@@ -2324,7 +2326,7 @@
 
                     </div>
                 </li>
-                <li class="urg-content__block-list-item">
+                <li class="urg-content__block-list-item" id="urgBlockControls_5">
                     <img src="./img/flower-2.png" id="urgListItem_5_img">
                     <p class="urg-content__block-list-item-text" id="urgListItem_5_text">Лилия белая</p>
                     <ul class="urg-content__block-list-item-color display-n" id="urgListItem_5_color">
@@ -2443,7 +2445,7 @@
 
                     </div>
                 </li>
-                <li class="urg-content__block-list-item">
+                <li class="urg-content__block-list-item" id="urgBlockControls_6">
                     <img src="./img/flower-2.png" id="urgListItem_6_img">
                     <p class="urg-content__block-list-item-text" id="urgListItem_6_text">Лилия белая</p>
                     <ul class="urg-content__block-list-item-color display-n" id="urgListItem_6_color">
@@ -2562,7 +2564,7 @@
 
                     </div>
                 </li>
-                <li class="urg-content__block-list-item">
+                <li class="urg-content__block-list-item" id="urgBlockControls_7">
                     <img src="./img/flower-2.png" id="urgListItem_7_img">
                     <p class="urg-content__block-list-item-text" id="urgListItem_7_text">Лилия белая</p>
                     <ul class="urg-content__block-list-item-color display-n" id="urgListItem_7_color">
@@ -2681,7 +2683,7 @@
 
                     </div>
                 </li>
-                <li class="urg-content__block-list-item">
+                <li class="urg-content__block-list-item" id="urgBlockControls_8">
                     <img src="./img/flower-2.png" id="urgListItem_8_img">
                     <p class="urg-content__block-list-item-text" id="urgListItem_8_text">Лилия белая</p>
                     <ul class="urg-content__block-list-item-color display-n" id="urgListItem_8_color">
@@ -2800,7 +2802,7 @@
 
                     </div>
                 </li>
-                <li class="urg-content__block-list-item">
+                <li class="urg-content__block-list-item" id="urgBlockControls_9">
                     <img src="./img/flower-2.png" id="urgListItem_9_img">
                     <p class="urg-content__block-list-item-text" id="urgListItem_9_text">Лилия белая</p>
                     <ul class="urg-content__block-list-item-color display-n" id="urgListItem_9_color">
@@ -2919,7 +2921,7 @@
 
                     </div>
                 </li>
-                <li class="urg-content__block-list-item">
+                <li class="urg-content__block-list-item" id="urgBlockControls_10">
                     <img src="./img/flower-2.png" id="urgListItem_10_img">
                     <p class="urg-content__block-list-item-text" id="urgListItem_10_text">Лилия белая</p>
                     <ul class="urg-content__block-list-item-color display-n" id="urgListItem_10_color">
@@ -3038,7 +3040,7 @@
 
                     </div>
                 </li>
-                <li class="urg-content__block-list-item">
+                <li class="urg-content__block-list-item" id="urgBlockControls_11">
                     <img src="./img/flower-2.png" id="urgListItem_11_img">
                     <p class="urg-content__block-list-item-text" id="urgListItem_11_text">Лилия белая</p>
                     <ul class="urg-content__block-list-item-color display-n" id="urgListItem_11_color">
@@ -3157,7 +3159,7 @@
 
                     </div>
                 </li>
-                <li class="urg-content__block-list-item">
+                <li class="urg-content__block-list-item" id="urgBlockControls_12">
                     <img src="./img/flower-2.png" id="urgListItem_12_img">
                     <p class="urg-content__block-list-item-text" id="urgListItem_12_text">Лилия белая</p>
                     <ul class="urg-content__block-list-item-color display-n" id="urgListItem_12_color">
@@ -3277,7 +3279,7 @@
                     </div>
                 </li>
 
-            </ul>
+            </div>
         </div>
     </div>
 </div>
