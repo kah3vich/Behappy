@@ -69,15 +69,39 @@
                     </ul>
                     <p class="urg-content__block-info-color-text">Выберите до 2-х оттенков ленты</p>
                 </div>
-                <div class="urg-content__block-info-balls">
-                    <div class="urg-content__block-info-balls-bg">@@include('iconsprite/urgently/money.svg')</div>
-                    <p class="urg-content__block-info-balls-text">+160 баллов</p>
-                </div>
-                <div class="urg-content__block-info-price">
-                    <div class="urg-content__block-info-price-text">Итого:</div>
-                    <div class="urg-content__block-info-price-sum">12 622₽</div>
+                <div class="urg-content__block-info-description">
+                    <div class="urg-content__block-info-description-type">
+                        <div class="urg-content__block-info-description-type-text">Тип:</div>
+                        <div class="urg-content__block-info-description-type-item">Розы</div>
+                    </div>
+                    <div class="urg-content__block-info-description-count">
+                        <div class="urg-content__block-info-description-count-text">Кол-во:</div>
+                        <div class="urg-content__block-info-description-count-item">167шт.</div>
+                    </div>
+                    <div class="urg-content__block-info-description-ribbon">
+                        <div class="urg-content__block-info-description-ribbon-text">Лента:</div>
+                        <div class="urg-content__block-info-description-ribbon-green">@@include('iconsprite/urgently/circle-rgb.svg')</div>
+                        <div class="urg-content__block-info-description-ribbon-blue">@@include('iconsprite/urgently/circle-rgb.svg')</div>
+                    </div>
+                    <div class="urg-content__block-info-description-sum">
+                        <div class="urg-content__block-info-description-sum-minus">@@include('iconsprite/urgently/minus.svg')</div>
+                        <div class="urg-content__block-info-description-sum-count">1</div>
+                        <div class="urg-content__block-info-description-sum-plus">@@include('iconsprite/urgently/plus.svg')</div>
+                    </div>
+                    <div class="urg-content__block-info-description-price">
+                        <div class="urg-content__block-info-description-price-text">Итого:</div>
+                        <div class="urg-content__block-info-description-price-item">12 622₽</div>
+                    </div>
+                    <div class="urg-content__block-info-description-balls">
+                        <div class="urg-content__block-info-description-balls-bg">@@include('iconsprite/urgently/money.svg')</div>
+                        <div class="urg-content__block-info-description-balls-text">+160 баллов</div>
+                    </div>
                 </div>
                 <div class="urg-content__block-info-btn">
+                    <div class="urg-content__block-info-btn-balls">
+                        <div class="urg-content__block-info-btn-balls-bg">@@include('iconsprite/urgently/money.svg')</div>
+                        <div class="urg-content__block-info-btn-balls-text">+160 баллов</div>
+                    </div>
                     <button class="urg-content__block-info-btn-pay" type="button" data-bs-toggle="modal" data-bs-target="#modelUpsell"><a href="#">Купить сейчас</a></button>
                     <!-- Button trigger modal -->
                     
@@ -259,7 +283,7 @@
                         <div class="urg-content__block-list-item-title">Лилия белая</div>
                         <div class="urg-content__block-list-item-count">
                             <button class="urg-content__block-list-item-count-minus" id="urgButtonBlockMinus_1">@@include('iconsprite/urgently/minus.svg')</button>
-                            <div class="urg-content__block-list-item-count-sum" id="urgButtonBlockCount_1">1</div>
+                            <div class="urg-content__block-list-item-count-sum" id="urgButtonBlockCount_1">105</div>
                             <button class="urg-content__block-list-item-count-plus" id="urgButtonBlockPlus_1">@@include('iconsprite/urgently/plus.svg')</button>
                         </div>
                         <div class="urg-content__block-list-item-price">2990₽ </div>
@@ -294,9 +318,9 @@
                     <div class="urg-content__block-list-item-block display-n" id="urgListItem_2_block">
                         <div class="urg-content__block-list-item-title">Лилия белая</div>
                         <div class="urg-content__block-list-item-count">
-                            <div class="urg-content__block-list-item-count-minus" id="urgButtonBlockMinus_2">@@include('iconsprite/urgently/minus.svg')</div>
+                            <button class="urg-content__block-list-item-count-minus" id="urgButtonBlockMinus_2">@@include('iconsprite/urgently/minus.svg')</button>
                             <div class="urg-content__block-list-item-count-sum" id="urgButtonBlockCount_2">1</div>
-                            <div class="urg-content__block-list-item-count-plus" id="urgButtonBlockPlus_2">@@include('iconsprite/urgently/plus.svg')</div>
+                            <button class="urg-content__block-list-item-count-plus" id="urgButtonBlockPlus_2">@@include('iconsprite/urgently/plus.svg')</button>
                         </div>
                         <div class="urg-content__block-list-item-price">2990₽ </div>
                     </div>
@@ -308,35 +332,35 @@
                     <img src="./img/flower-2.png" id="urgListItem_3_img">
                     <p class="urg-content__block-list-item-text" id="urgListItem_3_text">Лилия белая</p>
                     <ul class="urg-content__block-list-item-color display-n" id="urgListItem_3_color">
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_3_1_colors">
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_3_1_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_3_2_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_3_2_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_3_3_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_3_3_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_3_4_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_3_4_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_3_5_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_3_5_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_3_6_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_3_6_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
+                        </button>
                     </ul>
                     <div class="urg-content__block-list-item-block display-n" id="urgListItem_3_block">
                         <div class="urg-content__block-list-item-title">Лилия белая</div>
                         <div class="urg-content__block-list-item-count">
-                            <div class="urg-content__block-list-item-count-minus">@@include('iconsprite/urgently/minus.svg')</div>
-                            <div class="urg-content__block-list-item-count-sum">1</div>
-                            <div class="urg-content__block-list-item-count-plus">@@include('iconsprite/urgently/plus.svg')</div>
+                            <button class="urg-content__block-list-item-count-minus" id="urgButtonBlockMinus_3">@@include('iconsprite/urgently/minus.svg')</button>
+                            <div class="urg-content__block-list-item-count-sum" id="urgButtonBlockCount_3">1</div>
+                            <button class="urg-content__block-list-item-count-plus" id="urgButtonBlockPlus_3">@@include('iconsprite/urgently/plus.svg')</button>
                         </div>
                         <div class="urg-content__block-list-item-price">2990₽ </div>
                     </div>
-                    <div class="urg-content__block-list-item-close display-n" id="urgListItem_3_close">
+                    <div class="urg-content__block-list-item-close display-n" id="urgListItem_3_close" value="urgListItem_3">
                         @@include('iconsprite/urgently/close.svg')
                     </div>
                 </li>
@@ -344,35 +368,35 @@
                     <img src="./img/flower-2.png" id="urgListItem_4_img">
                     <p class="urg-content__block-list-item-text" id="urgListItem_4_text">Лилия белая</p>
                     <ul class="urg-content__block-list-item-color display-n" id="urgListItem_4_color">
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_4_1_colors">
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_4_1_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_4_2_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_4_2_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_4_3_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_4_3_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_4_4_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_4_4_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_4_5_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_4_5_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_4_6_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_4_6_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
+                        </button>
                     </ul>
                     <div class="urg-content__block-list-item-block display-n" id="urgListItem_4_block">
                         <div class="urg-content__block-list-item-title">Лилия белая</div>
                         <div class="urg-content__block-list-item-count">
-                            <div class="urg-content__block-list-item-count-minus">@@include('iconsprite/urgently/minus.svg')</div>
-                            <div class="urg-content__block-list-item-count-sum">1</div>
-                            <div class="urg-content__block-list-item-count-plus">@@include('iconsprite/urgently/plus.svg')</div>
+                            <button class="urg-content__block-list-item-count-minus" id="urgButtonBlockMinus_4">@@include('iconsprite/urgently/minus.svg')</button>
+                            <div class="urg-content__block-list-item-count-sum" id="urgButtonBlockCount_4">1</div>
+                            <button class="urg-content__block-list-item-count-plus" id="urgButtonBlockPlus_4">@@include('iconsprite/urgently/plus.svg')</button>
                         </div>
                         <div class="urg-content__block-list-item-price">2990₽ </div>
                     </div>
-                    <div class="urg-content__block-list-item-close display-n" id="urgListItem_4_close">
+                    <div class="urg-content__block-list-item-close display-n" id="urgListItem_4_close" value="urgListItem_4">
                         @@include('iconsprite/urgently/close.svg')
                     </div>
                 </li>
@@ -380,35 +404,35 @@
                     <img src="./img/flower-2.png" id="urgListItem_5_img">
                     <p class="urg-content__block-list-item-text" id="urgListItem_5_text">Лилия белая</p>
                     <ul class="urg-content__block-list-item-color display-n" id="urgListItem_5_color">
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_5_1_colors">
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_5_1_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_5_2_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_5_2_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_5_3_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_5_3_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_5_4_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_5_4_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_5_5_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_5_5_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_5_6_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_5_6_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
+                        </button>
                     </ul>
                     <div class="urg-content__block-list-item-block display-n" id="urgListItem_5_block">
                         <div class="urg-content__block-list-item-title">Лилия белая</div>
                         <div class="urg-content__block-list-item-count">
-                            <div class="urg-content__block-list-item-count-minus">@@include('iconsprite/urgently/minus.svg')</div>
-                            <div class="urg-content__block-list-item-count-sum">1</div>
-                            <div class="urg-content__block-list-item-count-plus">@@include('iconsprite/urgently/plus.svg')</div>
+                            <button class="urg-content__block-list-item-count-minus" id="urgButtonBlockMinus_5">@@include('iconsprite/urgently/minus.svg')</button>
+                            <div class="urg-content__block-list-item-count-sum" id="urgButtonBlockCount_5">1</div>
+                            <button class="urg-content__block-list-item-count-plus" id="urgButtonBlockPlus_5">@@include('iconsprite/urgently/plus.svg')</button>
                         </div>
                         <div class="urg-content__block-list-item-price">2990₽ </div>
                     </div>
-                    <div class="urg-content__block-list-item-close display-n" id="urgListItem_5_close">
+                    <div class="urg-content__block-list-item-close display-n" id="urgListItem_5_close" value="urgListItem_5">
                         @@include('iconsprite/urgently/close.svg')
                     </div>
                 </li>
@@ -416,35 +440,35 @@
                     <img src="./img/flower-2.png" id="urgListItem_6_img">
                     <p class="urg-content__block-list-item-text" id="urgListItem_6_text">Лилия белая</p>
                     <ul class="urg-content__block-list-item-color display-n" id="urgListItem_6_color">
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_6_1_colors">
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_6_1_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_6_2_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_6_2_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_6_3_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_6_3_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_6_4_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_6_4_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_6_5_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_6_5_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_6_6_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_6_6_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
+                        </button>
                     </ul>
                     <div class="urg-content__block-list-item-block display-n" id="urgListItem_6_block">
                         <div class="urg-content__block-list-item-title">Лилия белая</div>
                         <div class="urg-content__block-list-item-count">
-                            <div class="urg-content__block-list-item-count-minus">@@include('iconsprite/urgently/minus.svg')</div>
-                            <div class="urg-content__block-list-item-count-sum">1</div>
-                            <div class="urg-content__block-list-item-count-plus">@@include('iconsprite/urgently/plus.svg')</div>
+                            <button class="urg-content__block-list-item-count-minus" id="urgButtonBlockMinus_6">@@include('iconsprite/urgently/minus.svg')</button>
+                            <div class="urg-content__block-list-item-count-sum" id="urgButtonBlockCount_6">1</div>
+                            <button class="urg-content__block-list-item-count-plus" id="urgButtonBlockPlus_6">@@include('iconsprite/urgently/plus.svg')</button>
                         </div>
                         <div class="urg-content__block-list-item-price">2990₽ </div>
                     </div>
-                    <div class="urg-content__block-list-item-close display-n" id="urgListItem_6_close">
+                    <div class="urg-content__block-list-item-close display-n" id="urgListItem_6_close" value="urgListItem_6">
                         @@include('iconsprite/urgently/close.svg')
                     </div>
                 </li>
@@ -452,35 +476,35 @@
                     <img src="./img/flower-2.png" id="urgListItem_7_img">
                     <p class="urg-content__block-list-item-text" id="urgListItem_7_text">Лилия белая</p>
                     <ul class="urg-content__block-list-item-color display-n" id="urgListItem_7_color">
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_7_1_colors">
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_7_1_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_7_2_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_7_2_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_7_3_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_7_3_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_7_4_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_7_4_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_7_5_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_7_5_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_7_6_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_7_6_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
+                        </button>
                     </ul>
                     <div class="urg-content__block-list-item-block display-n" id="urgListItem_7_block">
                         <div class="urg-content__block-list-item-title">Лилия белая</div>
                         <div class="urg-content__block-list-item-count">
-                            <div class="urg-content__block-list-item-count-minus">@@include('iconsprite/urgently/minus.svg')</div>
-                            <div class="urg-content__block-list-item-count-sum">1</div>
-                            <div class="urg-content__block-list-item-count-plus">@@include('iconsprite/urgently/plus.svg')</div>
+                            <button class="urg-content__block-list-item-count-minus" id="urgButtonBlockMinus_7">@@include('iconsprite/urgently/minus.svg')</button>
+                            <div class="urg-content__block-list-item-count-sum" id="urgButtonBlockCount_7">1</div>
+                            <button class="urg-content__block-list-item-count-plus" id="urgButtonBlockPlus_7">@@include('iconsprite/urgently/plus.svg')</button>
                         </div>
                         <div class="urg-content__block-list-item-price">2990₽ </div>
                     </div>
-                    <div class="urg-content__block-list-item-close display-n" id="urgListItem_7_close">
+                    <div class="urg-content__block-list-item-close display-n" id="urgListItem_7_close" value="urgListItem_7">
                         @@include('iconsprite/urgently/close.svg')
                     </div>
                 </li>
@@ -488,35 +512,35 @@
                     <img src="./img/flower-2.png" id="urgListItem_8_img">
                     <p class="urg-content__block-list-item-text" id="urgListItem_8_text">Лилия белая</p>
                     <ul class="urg-content__block-list-item-color display-n" id="urgListItem_8_color">
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_8_1_colors">
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_8_1_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_8_2_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_8_2_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_8_3_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_8_3_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_8_4_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_8_4_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_8_5_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_8_5_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_8_6_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_8_6_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
+                        </button>
                     </ul>
                     <div class="urg-content__block-list-item-block display-n" id="urgListItem_8_block">
                         <div class="urg-content__block-list-item-title">Лилия белая</div>
                         <div class="urg-content__block-list-item-count">
-                            <div class="urg-content__block-list-item-count-minus">@@include('iconsprite/urgently/minus.svg')</div>
-                            <div class="urg-content__block-list-item-count-sum">1</div>
-                            <div class="urg-content__block-list-item-count-plus">@@include('iconsprite/urgently/plus.svg')</div>
+                            <button class="urg-content__block-list-item-count-minus" id="urgButtonBlockMinus_8">@@include('iconsprite/urgently/minus.svg')</button>
+                            <div class="urg-content__block-list-item-count-sum" id="urgButtonBlockCount_8">1</div>
+                            <button class="urg-content__block-list-item-count-plus" id="urgButtonBlockPlus_8">@@include('iconsprite/urgently/plus.svg')</button>
                         </div>
                         <div class="urg-content__block-list-item-price">2990₽ </div>
                     </div>
-                    <div class="urg-content__block-list-item-close display-n" id="urgListItem_8_close">
+                    <div class="urg-content__block-list-item-close display-n" id="urgListItem_8_close" value="urgListItem_8">
                         @@include('iconsprite/urgently/close.svg')
                     </div>
                 </li>
@@ -524,35 +548,35 @@
                     <img src="./img/flower-2.png" id="urgListItem_9_img">
                     <p class="urg-content__block-list-item-text" id="urgListItem_9_text">Лилия белая</p>
                     <ul class="urg-content__block-list-item-color display-n" id="urgListItem_9_color">
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_9_1_colors">
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_9_1_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_9_2_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_9_2_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_9_3_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_9_3_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_9_4_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_9_4_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_9_5_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_9_5_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_9_6_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_9_6_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
+                        </button>
                     </ul>
                     <div class="urg-content__block-list-item-block display-n" id="urgListItem_9_block">
                         <div class="urg-content__block-list-item-title">Лилия белая</div>
                         <div class="urg-content__block-list-item-count">
-                            <div class="urg-content__block-list-item-count-minus">@@include('iconsprite/urgently/minus.svg')</div>
-                            <div class="urg-content__block-list-item-count-sum">1</div>
-                            <div class="urg-content__block-list-item-count-plus">@@include('iconsprite/urgently/plus.svg')</div>
+                            <button class="urg-content__block-list-item-count-minus" id="urgButtonBlockMinus_9">@@include('iconsprite/urgently/minus.svg')</button>
+                            <div class="urg-content__block-list-item-count-sum" id="urgButtonBlockCount_9">1</div>
+                            <button class="urg-content__block-list-item-count-plus" id="urgButtonBlockPlus_9">@@include('iconsprite/urgently/plus.svg')</button>
                         </div>
                         <div class="urg-content__block-list-item-price">2990₽ </div>
                     </div>
-                    <div class="urg-content__block-list-item-close display-n" id="urgListItem_9_close">
+                    <div class="urg-content__block-list-item-close display-n" id="urgListItem_9_close" value="urgListItem_9">
                         @@include('iconsprite/urgently/close.svg')
                     </div>
                 </li>
@@ -560,35 +584,35 @@
                     <img src="./img/flower-2.png" id="urgListItem_10_img">
                     <p class="urg-content__block-list-item-text" id="urgListItem_10_text">Лилия белая</p>
                     <ul class="urg-content__block-list-item-color display-n" id="urgListItem_10_color">
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_10_1_colors">
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_10_1_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_10_2_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_10_2_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_10_3_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_10_3_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_10_4_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_10_4_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_10_5_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_10_5_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_10_6_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_10_6_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
+                        </button>
                     </ul>
                     <div class="urg-content__block-list-item-block display-n" id="urgListItem_10_block">
                         <div class="urg-content__block-list-item-title">Лилия белая</div>
                         <div class="urg-content__block-list-item-count">
-                            <div class="urg-content__block-list-item-count-minus">@@include('iconsprite/urgently/minus.svg')</div>
-                            <div class="urg-content__block-list-item-count-sum">1</div>
-                            <div class="urg-content__block-list-item-count-plus">@@include('iconsprite/urgently/plus.svg')</div>
+                            <button class="urg-content__block-list-item-count-minus" id="urgButtonBlockMinus_10">@@include('iconsprite/urgently/minus.svg')</button>
+                            <div class="urg-content__block-list-item-count-sum" id="urgButtonBlockCount_10">1</div>
+                            <button class="urg-content__block-list-item-count-plus" id="urgButtonBlockPlus_10">@@include('iconsprite/urgently/plus.svg')</button>
                         </div>
                         <div class="urg-content__block-list-item-price">2990₽ </div>
                     </div>
-                    <div class="urg-content__block-list-item-close display-n" id="urgListItem_10_close">
+                    <div class="urg-content__block-list-item-close display-n" id="urgListItem_10_close" value="urgListItem_10">
                         @@include('iconsprite/urgently/close.svg')
                     </div>
                 </li>
@@ -596,35 +620,35 @@
                     <img src="./img/flower-2.png" id="urgListItem_11_img">
                     <p class="urg-content__block-list-item-text" id="urgListItem_11_text">Лилия белая</p>
                     <ul class="urg-content__block-list-item-color display-n" id="urgListItem_11_color">
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_11_1_colors">
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_11_1_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_11_2_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_11_2_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_11_3_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_11_3_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_11_4_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_11_4_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_11_5_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_11_5_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_11_6_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_11_6_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
+                        </button>
                     </ul>
                     <div class="urg-content__block-list-item-block display-n" id="urgListItem_11_block">
                         <div class="urg-content__block-list-item-title">Лилия белая</div>
                         <div class="urg-content__block-list-item-count">
-                            <div class="urg-content__block-list-item-count-minus">@@include('iconsprite/urgently/minus.svg')</div>
-                            <div class="urg-content__block-list-item-count-sum">1</div>
-                            <div class="urg-content__block-list-item-count-plus">@@include('iconsprite/urgently/plus.svg')</div>
+                            <button class="urg-content__block-list-item-count-minus" id="urgButtonBlockMinus_11">@@include('iconsprite/urgently/minus.svg')</button>
+                            <div class="urg-content__block-list-item-count-sum" id="urgButtonBlockCount_11">1</div>
+                            <button class="urg-content__block-list-item-count-plus" id="urgButtonBlockPlus_11">@@include('iconsprite/urgently/plus.svg')</button>
                         </div>
                         <div class="urg-content__block-list-item-price">2990₽ </div>
                     </div>
-                    <div class="urg-content__block-list-item-close display-n" id="urgListItem_11_close">
+                    <div class="urg-content__block-list-item-close display-n" id="urgListItem_11_close" value="urgListItem_11">
                         @@include('iconsprite/urgently/close.svg')
                     </div>
                 </li>
@@ -632,35 +656,35 @@
                     <img src="./img/flower-2.png" id="urgListItem_12_img">
                     <p class="urg-content__block-list-item-text" id="urgListItem_12_text">Лилия белая</p>
                     <ul class="urg-content__block-list-item-color display-n" id="urgListItem_12_color">
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_12_1_colors">
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_12_1_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_12_2_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_12_2_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_12_3_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_12_3_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_12_4_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_12_4_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_12_5_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_12_5_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
-                        <li class="urg-content__block-list-item-colors" id="urgListItem_12_6_colors">
+                        </button>
+                        <button class="urg-content__block-list-item-colors" id="urgListItem_12_6_colors" value="item-2">
                             @@include('iconsprite/urgently/circle-rgb.svg')
-                        </li>
+                        </button>
                     </ul>
                     <div class="urg-content__block-list-item-block display-n" id="urgListItem_12_block">
                         <div class="urg-content__block-list-item-title">Лилия белая</div>
                         <div class="urg-content__block-list-item-count">
-                            <div class="urg-content__block-list-item-count-minus">@@include('iconsprite/urgently/minus.svg')</div>
-                            <div class="urg-content__block-list-item-count-sum">1</div>
-                            <div class="urg-content__block-list-item-count-plus">@@include('iconsprite/urgently/plus.svg')</div>
+                            <button class="urg-content__block-list-item-count-minus" id="urgButtonBlockMinus_12">@@include('iconsprite/urgently/minus.svg')</button>
+                            <div class="urg-content__block-list-item-count-sum" id="urgButtonBlockCount_12">1</div>
+                            <button class="urg-content__block-list-item-count-plus" id="urgButtonBlockPlus_12">@@include('iconsprite/urgently/plus.svg')</button>
                         </div>
                         <div class="urg-content__block-list-item-price">2990₽ </div>
                     </div>
-                    <div class="urg-content__block-list-item-close display-n" id="urgListItem_12_close">
+                    <div class="urg-content__block-list-item-close display-n" id="urgListItem_12_close" value="urgListItem_12">
                         @@include('iconsprite/urgently/close.svg')
                     </div>
                 </li>
