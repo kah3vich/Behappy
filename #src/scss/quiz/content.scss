@@ -56,6 +56,7 @@
                     display: flex;
                     align-items: flex-end;
                     justify-content: center;
+                    position: relative;
                     & p {
                         font-family: FuturaBookC;
                         font-style: normal;
@@ -71,7 +72,7 @@
                         flex-direction: column;
                         align-items: center;
                         justify-content: flex-end;
-                        border: 1px solid #16B8C3;
+                        border: 1px solid #002685;
                         filter: drop-shadow(3px 3px 6px rgba(222, 51, 254, 0.2)) drop-shadow(-3px -3px 6px rgba(22, 184, 195, 0.2));
                         border-radius: 20px;
                         background: transparent;
@@ -6614,3 +6615,29 @@ input[type=radio]:checked ~ .ord-quiz__block-data-time-check {
     cursor: not-allowed;
     opacity: 0.5;
 }
+
+
+
+
+
+
+//! Дополнительные параметры для input quiz 
+
+
+#quizWhomItem_1,
+#quizWhomItem_2,
+#quizWhomItem_3,
+#quizWhomItem_4,
+#quizWhomItem_5,
+#quizWhomItem_6,
+#quizWhomItem_7 {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+//! --------------------------------------------------------------------------------------
