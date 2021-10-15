@@ -1083,6 +1083,7 @@ $('#quizWhomItem_1').on('click', function() {
     $("#quizWhomItems_5").css('border', '1px solid #002685')
     $("#quizWhomItems_6").css('border', '1px solid #002685')
     $("#quizWhomItems_7").css('border', '1px solid #002685')
+    $("#quizWhomItems_8").css('border', '1px solid #002685')
 })
 $('#quizWhomItem_2').on('click', function() {
     $("#quizWhomItems_2").css('border', '1px solid #16B8C3')
@@ -1092,6 +1093,7 @@ $('#quizWhomItem_2').on('click', function() {
     $("#quizWhomItems_5").css('border', '1px solid #002685')
     $("#quizWhomItems_6").css('border', '1px solid #002685')
     $("#quizWhomItems_7").css('border', '1px solid #002685')
+    $("#quizWhomItems_8").css('border', '1px solid #002685')
 })
 $('#quizWhomItem_3').on('click', function() {
     $("#quizWhomItems_3").css('border', '1px solid #16B8C3')
@@ -1101,6 +1103,7 @@ $('#quizWhomItem_3').on('click', function() {
     $("#quizWhomItems_5").css('border', '1px solid #002685')
     $("#quizWhomItems_6").css('border', '1px solid #002685')
     $("#quizWhomItems_7").css('border', '1px solid #002685')
+    $("#quizWhomItems_8").css('border', '1px solid #002685')
 })
 $('#quizWhomItem_4').on('click', function() {
     $("#quizWhomItems_4").css('border', '1px solid #16B8C3')
@@ -1110,6 +1113,7 @@ $('#quizWhomItem_4').on('click', function() {
     $("#quizWhomItems_5").css('border', '1px solid #002685')
     $("#quizWhomItems_6").css('border', '1px solid #002685')
     $("#quizWhomItems_7").css('border', '1px solid #002685')
+    $("#quizWhomItems_8").css('border', '1px solid #002685')
 })
 $('#quizWhomItem_5').on('click', function() {
     $("#quizWhomItems_5").css('border', '1px solid #16B8C3')
@@ -1119,6 +1123,7 @@ $('#quizWhomItem_5').on('click', function() {
     $("#quizWhomItems_1").css('border', '1px solid #002685')
     $("#quizWhomItems_6").css('border', '1px solid #002685')
     $("#quizWhomItems_7").css('border', '1px solid #002685')
+    $("#quizWhomItems_8").css('border', '1px solid #002685')
 })
 $('#quizWhomItem_6').on('click', function() {
     $("#quizWhomItems_6").css('border', '1px solid #16B8C3')
@@ -1128,6 +1133,7 @@ $('#quizWhomItem_6').on('click', function() {
     $("#quizWhomItems_5").css('border', '1px solid #002685')
     $("#quizWhomItems_1").css('border', '1px solid #002685')
     $("#quizWhomItems_7").css('border', '1px solid #002685')
+    $("#quizWhomItems_8").css('border', '1px solid #002685')
 })
 $('#quizWhomItem_7').on('click', function() {
     $("#quizWhomItems_7").css('border', '1px solid #16B8C3')
@@ -1137,4 +1143,64 @@ $('#quizWhomItem_7').on('click', function() {
     $("#quizWhomItems_5").css('border', '1px solid #002685')
     $("#quizWhomItems_6").css('border', '1px solid #002685')
     $("#quizWhomItems_1").css('border', '1px solid #002685')
+    $("#quizWhomItems_8").css('border', '1px solid #002685')
+})
+$('#quizWhomItem_8').on('click', function() {
+    $("#quizWhomItems_8").css('border', '1px solid #16B8C3')
+    $("#quizWhomItems_2").css('border', '1px solid #002685')
+    $("#quizWhomItems_3").css('border', '1px solid #002685')
+    $("#quizWhomItems_4").css('border', '1px solid #002685')
+    $("#quizWhomItems_5").css('border', '1px solid #002685')
+    $("#quizWhomItems_6").css('border', '1px solid #002685')
+    $("#quizWhomItems_7").css('border', '1px solid #002685')
+    $("#quizWhomItems_1").css('border', '1px solid #002685')
+})
+
+
+$('#quizTypeItem_1').on('click', function() {
+    $("#quizTypeItems_1").css('border', '1px solid #16B8C3')
+    $("#quizTypeItems_2").css('border', '1px solid #002685')
+    $("#quizTypeItems_3").css('border', '1px solid #002685')
+    $("#quizTypeItems_4").css('border', '1px solid #002685')
+})
+$('#quizTypeItem_2').on('click', function() {
+    $("#quizTypeItems_2").css('border', '1px solid #16B8C3')
+    $("#quizTypeItems_1").css('border', '1px solid #002685')
+    $("#quizTypeItems_3").css('border', '1px solid #002685')
+    $("#quizTypeItems_4").css('border', '1px solid #002685')
+})
+$('#quizTypeItem_3').on('click', function() {
+    $("#quizTypeItems_3").css('border', '1px solid #16B8C3')
+    $("#quizTypeItems_2").css('border', '1px solid #002685')
+    $("#quizTypeItems_1").css('border', '1px solid #002685')
+    $("#quizTypeItems_4").css('border', '1px solid #002685')
+})
+$('#quizTypeItem_4').on('click', function() {
+    $("#quizTypeItems_4").css('border', '1px solid #16B8C3')
+    $("#quizTypeItems_2").css('border', '1px solid #002685')
+    $("#quizTypeItems_3").css('border', '1px solid #002685')
+    $("#quizTypeItems_1").css('border', '1px solid #002685')
+})
+
+$('#quizShadeItem_1').on('click', function() {
+    $("#quizShadeItems_1").css('border', '1px solid #16B8C3')
+    $("#quizShadeItems_2").css('border', '1px solid #002685')
+})
+$('#quizShadeItem_2').on('click', function() {
+    $("#quizShadeItems_2").css('border', '1px solid #16B8C3')
+    $("#quizShadeItems_1").css('border', '1px solid #002685')
+})
+
+
+$('#quizColorItem_1').on('click', function() {
+    $("#quizColorItems_1").css('border', '1px solid #16B8C3')
+    $("#quizColorItems_2").css('border', '1px solid #002685')
+    $('#quizColorsItem_2').addClass('opacity-5')
+    $('#quizColorsItem_1').removeClass('opacity-5')
+})
+$('#quizColorItem_2').on('click', function() {
+    $("#quizColorItems_2").css('border', '1px solid #16B8C3')
+    $("#quizColorItems_1").css('border', '1px solid #002685')
+    $('#quizColorsItem_1').addClass('opacity-5')
+    $('#quizColorsItem_2').removeClass('opacity-5')
 })

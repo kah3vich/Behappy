@@ -23572,6 +23572,7 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .quiz-content__block-whom-wrapper-item {
+  cursor: pointer;
   width: 160px;
   height: 175px;
   background: #04133C;
@@ -23590,6 +23591,10 @@ input[type=range]::-webkit-slider-runnable-track {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+}
+
+.quiz-content__block-whom-wrapper-item input {
+  cursor: pointer;
 }
 
 .quiz-content__block-whom-wrapper-item p {
@@ -23803,6 +23808,12 @@ input[type=range]::-webkit-slider-runnable-track {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.quiz-content__block-type-wrapper-item input {
+  cursor: pointer;
 }
 
 .quiz-content__block-type-wrapper-item p {
@@ -23977,6 +23988,7 @@ input[type=range]::-webkit-slider-runnable-track {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 .quiz-content__block-shade-wrapper-item h3 {
@@ -24144,6 +24156,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .quiz-content__block-color-wrapper-item {
   width: 100%;
+  position: relative;
   height: 175px;
   background: #04133C;
   border: 1px solid #002685;
@@ -24160,6 +24173,10 @@ input[type=range]::-webkit-slider-runnable-track {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.quiz-content__block-color-wrapper-item input {
+  cursor: pointer;
 }
 
 .quiz-content__block-color-wrapper-item p {
@@ -33219,13 +33236,30 @@ input[type=radio]:checked ~ .ord-quiz__block-data-time-text {
 #quizWhomItem_4,
 #quizWhomItem_5,
 #quizWhomItem_6,
-#quizWhomItem_7 {
+#quizWhomItem_7,
+#quizWhomItem_8,
+#quizTypeItem_1,
+#quizTypeItem_2,
+#quizTypeItem_3,
+#quizTypeItem_4,
+#quizShadeItem_1,
+#quizShadeItem_2,
+#quizColorItem_1,
+#quizColorItem_2 {
   opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+#quizWhomItems_8 input[type=text] {
+  z-index: 5;
+}
+
+#quizColorItems_2 {
+  border: 1px solid #16B8C3;
 }
 
 .err-content {

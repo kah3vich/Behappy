@@ -1460,10 +1460,11 @@
                             <p>Маме</p>
                             <input type="radio" name="quizWhomItem" id="quizWhomItem_7">
                         </label>
-                        <li class="quiz-content__block-whom-wrapper-item">
+                        <label class="quiz-content__block-whom-wrapper-item" for="quizWhomItem_8" id="quizWhomItems_8">
                             <p>Указать свой вариант</p>
                             <input type="text">
-                        </li>
+                            <input type="radio" name="quizWhomItem" id="quizWhomItem_8">
+                        </label>
                     </ul>
                     <div class="quiz-content__block-whom-points">
                         <ul class="quiz-content__block-whom-point">
@@ -1518,10 +1519,22 @@
                     </div>
                     <div class="quiz-content__block-type-title">Тип сборки</div>
                     <ul class="quiz-content__block-type-wrapper">
-                        <li class="quiz-content__block-type-wrapper-item"><p>Каскад</p></li>
-                        <li class="quiz-content__block-type-wrapper-item"><p>Веер</p></li>
-                        <li class="quiz-content__block-type-wrapper-item"><p>Круглый</p></li>
-                        <li class="quiz-content__block-type-wrapper-item"><p>Ассиметричный</p></li>
+                        <label class="quiz-content__block-type-wrapper-item" for="quizTypeItem_1" id="quizTypeItems_1">
+                            <input type="radio" id="quizTypeItem_1" name="quizTypeItem">
+                            <p>Каскад</p>
+                        </label>
+                        <label class="quiz-content__block-type-wrapper-item" for="quizTypeItem_2" id="quizTypeItems_2">
+                            <input type="radio" id="quizTypeItem_2" name="quizTypeItem">
+                            <p>Веер</p>
+                        </label>
+                        <label class="quiz-content__block-type-wrapper-item" for="quizTypeItem_3" id="quizTypeItems_3">
+                            <input type="radio" id="quizTypeItem_3" name="quizTypeItem">
+                            <p>Круглый</p>
+                        </label>
+                        <label class="quiz-content__block-type-wrapper-item" for="quizTypeItem_4" id="quizTypeItems_4">
+                            <input type="radio" id="quizTypeItem_4" name="quizTypeItem">
+                            <p>Ассиметричный</p>
+                        </label>
                     </ul>
                     <div class="quiz-content__block-type-points">
                         <ul class="quiz-content__block-type-point">
@@ -1576,18 +1589,20 @@
                     </div>
                     <div class="quiz-content__block-shade-title">Выберите оттенки цветов в букете</div>
                     <ul class="quiz-content__block-shade-wrapper">
-                        <li class="quiz-content__block-shade-wrapper-item">
+                        <label class="quiz-content__block-shade-wrapper-item" for="quizShadeItem_1" id="quizShadeItems_1">
                             <h3>Насыщенные тона</h3>
                             <p>В связи с загруженным автомобильным трафиком 
                                 в предпраздничные и праздничные дни, 
                                 чсчсчсчс</p>
-                        </li>
-                        <li class="quiz-content__block-shade-wrapper-item">
+                            <input type="radio" name="quizShadeItem" id="quizShadeItem_1">
+                        </label>
+                        <label class="quiz-content__block-shade-wrapper-item" for="quizShadeItem_2" id="quizShadeItems_2">
                             <h3>Нежная пастель</h3>
                             <p>В связи с загруженным автомобильным трафиком 
                                 в предпраздничные и праздничные дни, 
                                 чсчсчсчс</p>
-                        </li>
+                            <input type="radio" name="quizShadeItem" id="quizShadeItem_2">
+                        </label>
                     </ul>
                     <div class="quiz-content__block-shade-points">
                         <ul class="quiz-content__block-shade-point">
@@ -1642,12 +1657,18 @@
                     </div>
                     <div class="quiz-content__block-color-title">Букет в упаковке или под ленту в стиле прованс?</div>
                     <ul class="quiz-content__block-color-wrapper">
-                        <li class="quiz-content__block-color-wrapper-item"><p>В упаковке</p></li>
-                        <li class="quiz-content__block-color-wrapper-item"><p>Под ленту</p></li>
+                        <label class="quiz-content__block-color-wrapper-item" for="quizColorItem_1" id="quizColorItems_1">
+                            <p>В упаковке</p>
+                            <input type="radio" name="quizColorItem" id="quizColorItem_1">
+                        </label>
+                        <label class="quiz-content__block-color-wrapper-item" for="quizColorItem_2" id="quizColorItems_2">
+                            <p>Под ленту</p>
+                            <input type="radio" name="quizColorItem" id="quizColorItem_2" checked>
+                        </label>
                     </ul>
                     <ul class="quiz-content__block-color-wrappers">
-                        <li class="quiz-content__block-color-wrapper-items quiz-content__block-color-wrapper-items-check">
-                            <ul class="quiz-content__block-color-wrapper-list">
+                        <li class="quiz-content__block-color-wrapper-items">
+                            <ul class="quiz-content__block-color-wrapper-list opacity-5" id="quizColorsItem_1">
                                 <li class="quiz-content__block-color-wrapper-list-item"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="15" cy="15" r="14.5" stroke="url(#paint0_linear)"/>
 <defs>
@@ -1808,7 +1829,7 @@
                             <div class="quiz-content__block-color-wrapper-text">Выберите до 2-х оттенков упаковки</div>
                         </li>
                         <li class="quiz-content__block-color-wrapper-items">
-                            <ul class="quiz-content__block-color-wrapper-list">
+                            <ul class="quiz-content__block-color-wrapper-list" id="quizColorsItem_2">
                                 <li class="quiz-content__block-color-wrapper-list-item"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="15" cy="15" r="14.5" stroke="url(#paint0_linear)"/>
 <defs>
