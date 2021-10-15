@@ -14,7 +14,7 @@
 - ## Contact 📱 : [click me](https://kah3vich.github.io/Behappy/dist/contact.html)
 - ## Description 📱 : [click me](https://kah3vich.github.io/Behappy/dist/description.html)
 - ## Toy 📱 : [click me](https://kah3vich.github.io/Behappy/dist/toy.html)
-- ## Urgently: [click me](https://kah3vich.github.io/Behappy/dist/urgently.html)
+- ## Urgently 📱 : [click me](https://kah3vich.github.io/Behappy/dist/urgently.html)
 - ## Constructor: [click me](https://kah3vich.github.io/Behappy/dist/constructor.html)
 # <h2 style="color: red;">Profile</h2>
 - ## Editor Profile 📱 : [click me](https://kah3vich.github.io/Behappy/dist/editor.html)

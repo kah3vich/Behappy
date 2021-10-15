@@ -6608,4 +6608,38 @@ var constSwiperListBlock = new Swiper(".constSwiperListBlock", {
     },
     mousewheel: true,
     keyboard: true,
+    breakpoints: {
+        1350: {
+            slidesPerView: 9,
+            spaceBetween: 15,
+        },
+        1300: {
+            slidesPerView: 8,
+            spaceBetween: 15,
+        },
+        1100: {
+            slidesPerView: 7,
+            spaceBetween: 15,
+        },
+        1000: {
+            slidesPerView: 6,
+            spaceBetween: 15,
+        },
+        850: {
+            slidesPerView: 5,
+            spaceBetween: 15,
+        },
+        710: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+        },
+        660: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+        0: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+    }
 });

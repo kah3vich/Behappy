@@ -7,8 +7,31 @@
         <p>Состав</p>
         @@include('iconsprite/constructor/arrow-down.svg')
         @@include('iconsprite/constructor/arrow-down.svg')
+        <div class="const-content__swipe const-content__swipe-media" disabled="disabled">Оформление</div>
     </button>
     <div class="const-content__swipers display-n">
+        <div class="const-content__swipers-media-close">Оформление</div>
+        <div class="const-content__swipers-media-text">Если вы не выбрали дополнительное оформление ,букет будет собран под атласную ленту в подходящей гамме</div>
+        <ul class="const-content__swipers-media-lists">
+            <li class="const-content__swipers-media-lists-item">
+                @@include('iconsprite/constructor/basket-media.svg')
+                <p>На оазисе</p>
+            </li>
+            <li class="const-content__swipers-media-lists-item">
+                @@include('iconsprite/constructor/basket-media.svg')
+                <p>Упаковка</p>
+            </li>
+            <li class="const-content__swipers-media-lists-item">
+                @@include('iconsprite/constructor/basket-media.svg')
+                <p>На оазисе</p>
+            </li>
+            <li class="const-content__swipers-media-lists-item">
+                @@include('iconsprite/constructor/basket-media.svg')
+                <p>Упаковка</p>
+            </li>
+        </ul>
+        <div class="const-content__swipers-media-add">Вы выбрали</div>
+        <div class="const-content__swipers-hrm"></div>
         <ul class="const-content__swipers-list">
             <div class="swiper constSwiperListBlock">
                 <div class="swiper-wrapper" id="listConstructorElementPay">
@@ -36,6 +59,33 @@
                     <div class="const-content__swipers-bay-count-text">Кол-во:</div>
                     <div class="const-content__swipers-bay-price-counts">167шт.</div>
                 </div>
+            </div>
+            <div class="const-content__swipers-media">
+                <div class="const-content__swipers-media-car">
+                    <div class="const-content__swipers-media-car-bg">@@include('iconsprite/constructor/car.svg')</div>
+                    <p>Бесплатная доставка по городу</p>
+                </div>
+                <div class="const-content__swipers-media-list">
+                    <div class="const-content__swipers-media-list-bg">@@include('iconsprite/constructor/list.svg')</div>
+                    <p>В случае доставки товара не надлежащего качества сообщите нам и мы его заменим</p>
+                </div>
+                <div class="const-content__swipers-media-title">
+                    Детали цены
+                </div>
+                <div class="const-content__swipers-media-count">
+                    <div class="const-content__swipers-media-count-title">Сумма без учета баллов</div>
+                    <div class="const-content__swipers-media-count-line"></div>
+                    <div class="const-content__swipers-media-count-price">12 300₽</div>
+                </div>
+                <div class="const-content__swipers-media-sum">
+                    <div class="const-content__swipers-media-sum-title">Кол-во:</div>
+                    <div class="const-content__swipers-media-sum-item">345шт. </div>
+                </div>
+                <div class="const-content__swipers-media-price">
+                    <div class="const-content__swipers-media-price-title">Итого:</div>
+                    <div class="const-content__swipers-media-price-item">12 622₽</div>
+                </div>
+                
             </div>
             <button class="const-content__swipers-price-pay"><a href="#">Купить сейчас</a></button>
             <button class="const-content__swipers-price-add"><a href="#">Добавить в корзину</a></button>
