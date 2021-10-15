@@ -6643,3 +6643,9 @@ var constSwiperListBlock = new Swiper(".constSwiperListBlock", {
         },
     }
 });
+
+
+$('.const-content__swipers-media-block').on('click', function() {
+    $('.const-content__swipers').addClass('display-n')
+    $('.const-content__swipe').removeClass('display-n')
+});
