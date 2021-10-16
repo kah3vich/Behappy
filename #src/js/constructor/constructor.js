@@ -58,6 +58,14 @@ $('#constListItem-1').on('click', function() {
     $('#constBlockSlider-10').addClass('display-n');
     $('#constBlockSlider-11').addClass('display-n');
     $('#constBlockSlider-12').addClass('display-n');
+    if ( window.innerWidth <= 1110) {
+        $('.const-media-content__block-slider-1').removeClass('display-n');
+        $('.const-content__block-back').addClass('display-n')
+        $('.const-content__block-title').addClass('display-n')
+        $('.const-content__block-text').addClass('display-n')
+        $('.const-content__block-banner').addClass('display-n')
+        $('.const-content__block-list').addClass('display-n')
+    }
 });
 $('#constBlockSliderClose-1').on('click', function() {
     $('#constListItem-1').toggleClass('const-content__block-list-item-active');
@@ -6648,4 +6656,50 @@ var constSwiperListBlock = new Swiper(".constSwiperListBlock", {
 $('.const-content__swipers-media-block').on('click', function() {
     $('.const-content__swipers').addClass('display-n')
     $('.const-content__swipe').removeClass('display-n')
+});
+
+
+
+
+var constMediaContentSlider_1 = new Swiper(".constMediaContentSlider_1", {
+    pagination: {
+        el: ".const-media-content__block-slider-1 .swiper-controls .swiper-pagination",
+    },
+    keyboard: true,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+});
+
+
+var constMediaContentSliders_2 = new Swiper(".constMediaContentSliders_2", {
+    pagination: {
+        el: ".const-media-content__block-sliders-2 .swiper-controls .swiper-pagination",
+    },
+    keyboard: true,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+});
+var constMediaContentSliders_3 = new Swiper(".constMediaContentSliders_3", {
+    pagination: {
+        el: ".const-media-content__block-sliders-3 .swiper-controls .swiper-pagination",
+    },
+    keyboard: true,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+});
+var constMediaContentSliders_4 = new Swiper(".constMediaContentSliders_4", {
+    pagination: {
+        el: ".const-media-content__block-sliders-4 .swiper-controls .swiper-pagination",
+    },
+    keyboard: true,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
 });
