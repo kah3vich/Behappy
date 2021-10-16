@@ -65,6 +65,7 @@ $('#constListItem-1').on('click', function() {
         $('.const-content__block-text').addClass('display-n')
         $('.const-content__block-banner').addClass('display-n')
         $('.const-content__block-list').addClass('display-n')
+        $('.const-content').css('padding', '0px')
     }
 });
 $('#constBlockSliderClose-1').on('click', function() {
@@ -269,6 +270,15 @@ $('#constListItem-2').on('click', function() {
     $('#constBlockSlider-10').addClass('display-n');
     $('#constBlockSlider-11').addClass('display-n');
     $('#constBlockSlider-12').addClass('display-n');
+    if ( window.innerWidth <= 1110) {
+        $('.const-media-content__block-slider-2').removeClass('display-n');
+        $('.const-content__block-back').addClass('display-n')
+        $('.const-content__block-title').addClass('display-n')
+        $('.const-content__block-text').addClass('display-n')
+        $('.const-content__block-banner').addClass('display-n')
+        $('.const-content__block-list').addClass('display-n')
+        $('.const-content').css('padding', '0px')
+    }
 });
 $('#constBlockSliderClose-2').on('click', function() {
     $('#constListItem-2').toggleClass('const-content__block-list-item-active');
@@ -471,6 +481,15 @@ $('#constListItem-3').on('click', function() {
     $('#constBlockSlider-10').addClass('display-n');
     $('#constBlockSlider-11').addClass('display-n');
     $('#constBlockSlider-12').addClass('display-n');
+    if ( window.innerWidth <= 1110) {
+        $('.const-media-content__block-slider-3').removeClass('display-n');
+        $('.const-content__block-back').addClass('display-n')
+        $('.const-content__block-title').addClass('display-n')
+        $('.const-content__block-text').addClass('display-n')
+        $('.const-content__block-banner').addClass('display-n')
+        $('.const-content__block-list').addClass('display-n')
+        $('.const-content').css('padding', '0px')
+    }
 });
 $('#constBlockSliderClose-3').on('click', function() {
     $('#constListItem-3').toggleClass('const-content__block-list-item-active');
@@ -2865,6 +2884,81 @@ $('#constructorBtnItem-1-1').on('click', function() {
     checkCountElementObjConstructor()
 })
 
+let countConstructorMediaBtnItem_1_1 = 0
+$('#constructorMediaBtnItem-1-1').on('click', function() {
+    if ( window.innerWidth <= 1110) {
+        $('.const-media-content__block-slider-1').addClass('display-n');
+        $('.const-content__block-back').removeClass('display-n')
+        $('.const-content__block-title').removeClass('display-n')
+        $('.const-content__block-text').removeClass('display-n')
+        $('.const-content__block-banner').removeClass('display-n')
+        $('.const-content__block-list').removeClass('display-n')
+        $('#constListItem-1').removeClass('const-content__block-list-item-active')
+        $('.const-content').css('padding', '100px 0 0 0')
+    }
+    let id = 1
+    countConstructorMediaBtnItem_1_1++
+    let constBannerRow_Item_1 = $(this).val()
+    let obj = {
+        name: `${constBannerRow_Item_1}`,
+        id: id,
+        count: countConstructorMediaBtnItem_1_1
+    }
+    elementObjConstructor.obj = obj
+    let newElement = document.createElement("li");
+    newElement.classList.add("const-content__block-banner-row-item")
+    newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_1_1}`;
+    newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+    document.getElementById("listConstructorBlock").appendChild(newElement);
+
+
+    let newElementBlock = document.createElement("div");
+    newElementBlock.classList.add("swiper-slide")
+    newElementBlock.id = `constBannerItemClose_${id}_${countConstructorMediaBtnItem_1_1}`;
+    newElementBlock.innerHTML = `
+    <div class="const-content__swipers-list-item" id="constBannerItemClose_${id}_${countConstructorMediaBtnItem_1_1}">
+        <button class="const-content__swipers-list-close" id="constBannerItemClose_${id}_${countConstructorMediaBtnItem_1_1}" value="constBannerItem_${id}_${countConstructorMediaBtnItem_1_1}" onclick="CloseElementBlockConstructor()">
+            <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.3281 22.3296L40.2735 40.275" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.1313 40.4727L40.4712 22.1328" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="const-content__swipers-list-block">
+            <div class="const-content__swipers-list-text">Лилия белая</div>
+            <div class="const-content__swipers-list-count">
+                <div class="const-content__swipers-list-count-minus">
+                    <svg width="11" height="2" viewBox="0 0 11 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1H9.34615" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="const-content__swipers-list-count-sum">1</div>
+                <div class="const-content__swipers-list-count-plus">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.69238 3.41699V11.5837" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.51855 7.5H11.8647" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="const-content__swipers-list-price">2990₽</div>
+        </div>
+    </div>
+    `
+    document.getElementById("listConstructorElementPay").appendChild(newElementBlock);
+    $(`.const-content__swipers-list-close`).attr('onclick', `CloseElementBlockConstructor(this)`)
+    checkCountElementObjConstructor()
+})
+
+$('.const-media-content__block-slider-1-back').on('click', function() {
+    $('.const-media-content__block-slider-1').addClass('display-n');
+    $('.const-content__block-back').removeClass('display-n')
+    $('.const-content__block-title').removeClass('display-n')
+    $('.const-content__block-text').removeClass('display-n')
+    $('.const-content__block-banner').removeClass('display-n')
+    $('.const-content__block-list').removeClass('display-n')
+    $('#constListItem-1').removeClass('const-content__block-list-item-active')
+    $('.const-content').css('padding', '100px 0 0 0')
+})
+
 //! ------------------------------------------------------------------------------------------------------------------
 
 //! Кнопка цветов 1.2
@@ -2893,6 +2987,60 @@ $('#constructorBtnItem-1-2').on('click', function() {
     newElementBlock.innerHTML = `
     <div class="const-content__swipers-list-item" id="constBannerItemClose_${id}_${countConstructorBtnItem_1_2}">
         <button class="const-content__swipers-list-close" id="constBannerItemClose_${id}_${countConstructorBtnItem_1_2}" value="constBannerItem_${id}_${countConstructorBtnItem_1_2}" onclick="CloseElementBlockConstructor()">
+            <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.3281 22.3296L40.2735 40.275" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.1313 40.4727L40.4712 22.1328" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="const-content__swipers-list-block">
+            <div class="const-content__swipers-list-text">Лилия белая</div>
+            <div class="const-content__swipers-list-count">
+                <div class="const-content__swipers-list-count-minus">
+                    <svg width="11" height="2" viewBox="0 0 11 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1H9.34615" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="const-content__swipers-list-count-sum">1</div>
+                <div class="const-content__swipers-list-count-plus">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.69238 3.41699V11.5837" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.51855 7.5H11.8647" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="const-content__swipers-list-price">2990₽</div>
+        </div>
+    </div>
+    `
+    document.getElementById("listConstructorElementPay").appendChild(newElementBlock);
+    $(`.const-content__swipers-list-close`).attr('onclick', `CloseElementBlockConstructor(this)`)
+    checkCountElementObjConstructor()
+})
+
+let countConstructorMediaBtnItem_1_2 = 0
+$('#constructorMediaBtnItem-1-2').on('click', function() {
+    let id = 2
+    countConstructorMediaBtnItem_1_2++
+    let constBannerRow_Item_1 = $(this).val()
+    let obj = {
+        name: `${constBannerRow_Item_1}`,
+        id: id,
+        count: countConstructorMediaBtnItem_1_2
+    }
+    elementObjConstructor.obj = obj
+    let newElement = document.createElement("li");
+    newElement.classList.add("const-content__block-banner-row-item")
+    newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_1_2}`;
+    newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+    document.getElementById("listConstructorBlock").appendChild(newElement);
+
+
+    let newElementBlock = document.createElement("div");
+    newElementBlock.classList.add("swiper-slide")
+    newElementBlock.id = `constBannerItemClose_${id}_${countConstructorMediaBtnItem_1_2}`;
+    newElementBlock.innerHTML = `
+    <div class="const-content__swipers-list-item" id="constBannerItemClose_${id}_${countConstructorMediaBtnItem_1_2}">
+        <button class="const-content__swipers-list-close" id="constBannerItemClose_${id}_${countConstructorMediaBtnItem_1_2}" value="constBannerItem_${id}_${countConstructorMediaBtnItem_1_2}" onclick="CloseElementBlockConstructor()">
             <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.3281 22.3296L40.2735 40.275" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M22.1313 40.4727L40.4712 22.1328" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2982,6 +3130,60 @@ $('#constructorBtnItem-1-3').on('click', function() {
     checkCountElementObjConstructor()
 })
 
+let countConstructorMediaBtnItem_1_3 = 0
+$('#constructorMediaBtnItem-1-3').on('click', function() {
+    let id = 3
+    countConstructorMediaBtnItem_1_3++
+    let constBannerRow_Item_1 = $(this).val()
+    let obj = {
+        name: `${constBannerRow_Item_1}`,
+        id: id,
+        count: countConstructorMediaBtnItem_1_3
+    }
+    elementObjConstructor.obj = obj
+    let newElement = document.createElement("li");
+    newElement.classList.add("const-content__block-banner-row-item")
+    newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_1_3}`;
+    newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+    document.getElementById("listConstructorBlock").appendChild(newElement);
+
+
+    let newElementBlock = document.createElement("div");
+    newElementBlock.classList.add("swiper-slide")
+    newElementBlock.id = `constBannerItemClose_${id}_${countConstructorMediaBtnItem_1_3}`;
+    newElementBlock.innerHTML = `
+    <div class="const-content__swipers-list-item" id="constBannerItemClose_${id}_${countConstructorMediaBtnItem_1_3}">
+        <button class="const-content__swipers-list-close" id="constBannerItemClose_${id}_${countConstructorMediaBtnItem_1_3}" value="constBannerItem_${id}_${countConstructorMediaBtnItem_1_3}" onclick="CloseElementBlockConstructor()">
+            <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.3281 22.3296L40.2735 40.275" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.1313 40.4727L40.4712 22.1328" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="const-content__swipers-list-block">
+            <div class="const-content__swipers-list-text">Лилия белая</div>
+            <div class="const-content__swipers-list-count">
+                <div class="const-content__swipers-list-count-minus">
+                    <svg width="11" height="2" viewBox="0 0 11 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1H9.34615" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="const-content__swipers-list-count-sum">1</div>
+                <div class="const-content__swipers-list-count-plus">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.69238 3.41699V11.5837" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.51855 7.5H11.8647" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="const-content__swipers-list-price">2990₽</div>
+        </div>
+    </div>
+    `
+    document.getElementById("listConstructorElementPay").appendChild(newElementBlock);
+    $(`.const-content__swipers-list-close`).attr('onclick', `CloseElementBlockConstructor(this)`)
+    checkCountElementObjConstructor()
+})
+
 //! ------------------------------------------------------------------------------------------------------------------
 
 
@@ -3041,6 +3243,81 @@ $('#constructorBtnItem-2-1').on('click', function() {
     checkCountElementObjConstructor()
 })
 
+let countConstructorMediaBtnItem_2_1 = 0
+$('#constructorMediaBtnItem-2-1').on('click', function() {
+    if ( window.innerWidth <= 1110) {
+        $('.const-media-content__block-slider-2').addClass('display-n');
+        $('.const-content__block-back').removeClass('display-n')
+        $('.const-content__block-title').removeClass('display-n')
+        $('.const-content__block-text').removeClass('display-n')
+        $('.const-content__block-banner').removeClass('display-n')
+        $('.const-content__block-list').removeClass('display-n')
+        $('#constListItem-2').removeClass('const-content__block-list-item-active')
+        $('.const-content').css('padding', '100px 0 0 0')
+    }
+    let id = 1
+    countConstructorMediaBtnItem_2_1++
+    let constBannerRow_Item_1 = $(this).val()
+    let obj = {
+        name: `${constBannerRow_Item_1}`,
+        id: id,
+        count: countConstructorMediaBtnItem_2_1
+    }
+    elementObjConstructor.obj = obj
+    let newElement = document.createElement("li");
+    newElement.classList.add("const-content__block-banner-row-item")
+    newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_2_1}`;
+    newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+    document.getElementById("listConstructorBlock").appendChild(newElement);
+
+
+    let newElementBlock = document.createElement("div");
+    newElementBlock.classList.add("swiper-slide")
+    newElementBlock.id = `constBannerItemClose_${id}_${countConstructorMediaBtnItem_2_1}`;
+    newElementBlock.innerHTML = `
+    <div class="const-content__swipers-list-item" id="constBannerItemClose_${id}_${countConstructorMediaBtnItem_2_1}">
+        <button class="const-content__swipers-list-close" id="constBannerItemClose_${id}_${countConstructorMediaBtnItem_2_1}" value="constBannerItem_${id}_${countConstructorMediaBtnItem_2_1}" onclick="CloseElementBlockConstructor()">
+            <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.3281 22.3296L40.2735 40.275" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.1313 40.4727L40.4712 22.1328" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="const-content__swipers-list-block">
+            <div class="const-content__swipers-list-text">Лилия белая</div>
+            <div class="const-content__swipers-list-count">
+                <div class="const-content__swipers-list-count-minus">
+                    <svg width="11" height="2" viewBox="0 0 11 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1H9.34615" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="const-content__swipers-list-count-sum">1</div>
+                <div class="const-content__swipers-list-count-plus">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.69238 3.41699V11.5837" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.51855 7.5H11.8647" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="const-content__swipers-list-price">2990₽</div>
+        </div>
+    </div>
+    `
+    document.getElementById("listConstructorElementPay").appendChild(newElementBlock);
+    $(`.const-content__swipers-list-close`).attr('onclick', `CloseElementBlockConstructor(this)`)
+    checkCountElementObjConstructor()
+})
+
+$('.const-media-content__block-slider-2-back').on('click', function() {
+    $('.const-media-content__block-slider-2').addClass('display-n');
+    $('.const-content__block-back').removeClass('display-n')
+    $('.const-content__block-title').removeClass('display-n')
+    $('.const-content__block-text').removeClass('display-n')
+    $('.const-content__block-banner').removeClass('display-n')
+    $('.const-content__block-list').removeClass('display-n')
+    $('#constListItem-2').removeClass('const-content__block-list-item-active')
+    $('.const-content').css('padding', '100px 0 0 0')
+})
+
 //! ------------------------------------------------------------------------------------------------------------------
 
 
@@ -3070,6 +3347,70 @@ $('#constructorBtnItem-2-2').on('click', function() {
     newElementBlock.innerHTML = `
     <div class="const-content__swipers-list-item" id="constBannerItemClose_${id}_${countConstructorBtnItem_2_2}">
         <button class="const-content__swipers-list-close" id="constBannerItemClose_${id}_${countConstructorBtnItem_2_2}" value="constBannerItem_${id}_${countConstructorBtnItem_2_2}" onclick="CloseElementBlockConstructor()">
+            <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.3281 22.3296L40.2735 40.275" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.1313 40.4727L40.4712 22.1328" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="const-content__swipers-list-block">
+            <div class="const-content__swipers-list-text">Лилия белая</div>
+            <div class="const-content__swipers-list-count">
+                <div class="const-content__swipers-list-count-minus">
+                    <svg width="11" height="2" viewBox="0 0 11 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1H9.34615" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="const-content__swipers-list-count-sum">1</div>
+                <div class="const-content__swipers-list-count-plus">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.69238 3.41699V11.5837" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.51855 7.5H11.8647" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="const-content__swipers-list-price">2990₽</div>
+        </div>
+    </div>
+    `
+    document.getElementById("listConstructorElementPay").appendChild(newElementBlock);
+    $(`.const-content__swipers-list-close`).attr('onclick', `CloseElementBlockConstructor(this)`)
+    checkCountElementObjConstructor()
+})
+
+let countConstructorMediaBtnItem_2_2 = 0
+$('#constructorMediaBtnItem-2-2').on('click', function() {
+    if ( window.innerWidth <= 1110) {
+        $('.const-media-content__block-slider-2').addClass('display-n');
+        $('.const-content__block-back').removeClass('display-n')
+        $('.const-content__block-title').removeClass('display-n')
+        $('.const-content__block-text').removeClass('display-n')
+        $('.const-content__block-banner').removeClass('display-n')
+        $('.const-content__block-list').removeClass('display-n')
+        $('#constListItem-2').removeClass('const-content__block-list-item-active')
+        $('.const-content').css('padding', '100px 0 0 0')
+    }
+    let id = 1
+    countConstructorMediaBtnItem_2_2++
+    let constBannerRow_Item_1 = $(this).val()
+    let obj = {
+        name: `${constBannerRow_Item_1}`,
+        id: id,
+        count: countConstructorMediaBtnItem_2_2
+    }
+    elementObjConstructor.obj = obj
+    let newElement = document.createElement("li");
+    newElement.classList.add("const-content__block-banner-row-item")
+    newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_2_2}`;
+    newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+    document.getElementById("listConstructorBlock").appendChild(newElement);
+
+
+    let newElementBlock = document.createElement("div");
+    newElementBlock.classList.add("swiper-slide")
+    newElementBlock.id = `constBannerItemClose_${id}_${countConstructorMediaBtnItem_2_2}`;
+    newElementBlock.innerHTML = `
+    <div class="const-content__swipers-list-item" id="constBannerItemClose_${id}_${countConstructorMediaBtnItem_2_2}">
+        <button class="const-content__swipers-list-close" id="constBannerItemClose_${id}_${countConstructorMediaBtnItem_2_2}" value="constBannerItem_${id}_${countConstructorMediaBtnItem_2_2}" onclick="CloseElementBlockConstructor()">
             <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.3281 22.3296L40.2735 40.275" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M22.1313 40.4727L40.4712 22.1328" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -3159,6 +3500,70 @@ $('#constructorBtnItem-2-3').on('click', function() {
     checkCountElementObjConstructor()
 })
 
+let countConstructorMediaBtnItem_2_3 = 0
+$('#constructorMediaBtnItem-2-3').on('click', function() {
+    if ( window.innerWidth <= 1110) {
+        $('.const-media-content__block-slider-2').addClass('display-n');
+        $('.const-content__block-back').removeClass('display-n')
+        $('.const-content__block-title').removeClass('display-n')
+        $('.const-content__block-text').removeClass('display-n')
+        $('.const-content__block-banner').removeClass('display-n')
+        $('.const-content__block-list').removeClass('display-n')
+        $('#constListItem-2').removeClass('const-content__block-list-item-active')
+        $('.const-content').css('padding', '100px 0 0 0')
+    }
+    let id = 1
+    countConstructorMediaBtnItem_2_3++
+    let constBannerRow_Item_1 = $(this).val()
+    let obj = {
+        name: `${constBannerRow_Item_1}`,
+        id: id,
+        count: countConstructorMediaBtnItem_2_3
+    }
+    elementObjConstructor.obj = obj
+    let newElement = document.createElement("li");
+    newElement.classList.add("const-content__block-banner-row-item")
+    newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_2_3}`;
+    newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+    document.getElementById("listConstructorBlock").appendChild(newElement);
+
+
+    let newElementBlock = document.createElement("div");
+    newElementBlock.classList.add("swiper-slide")
+    newElementBlock.id = `constBannerItemClose_${id}_${countConstructorMediaBtnItem_2_3}`;
+    newElementBlock.innerHTML = `
+    <div class="const-content__swipers-list-item" id="constBannerItemClose_${id}_${countConstructorMediaBtnItem_2_3}">
+        <button class="const-content__swipers-list-close" id="constBannerItemClose_${id}_${countConstructorMediaBtnItem_2_3}" value="constBannerItem_${id}_${countConstructorMediaBtnItem_2_3}" onclick="CloseElementBlockConstructor()">
+            <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.3281 22.3296L40.2735 40.275" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.1313 40.4727L40.4712 22.1328" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="const-content__swipers-list-block">
+            <div class="const-content__swipers-list-text">Лилия белая</div>
+            <div class="const-content__swipers-list-count">
+                <div class="const-content__swipers-list-count-minus">
+                    <svg width="11" height="2" viewBox="0 0 11 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1H9.34615" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="const-content__swipers-list-count-sum">1</div>
+                <div class="const-content__swipers-list-count-plus">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.69238 3.41699V11.5837" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.51855 7.5H11.8647" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="const-content__swipers-list-price">2990₽</div>
+        </div>
+    </div>
+    `
+    document.getElementById("listConstructorElementPay").appendChild(newElementBlock);
+    $(`.const-content__swipers-list-close`).attr('onclick', `CloseElementBlockConstructor(this)`)
+    checkCountElementObjConstructor()
+})
+
 //! ------------------------------------------------------------------------------------------------------------------
 
 
@@ -3216,6 +3621,81 @@ $('#constructorBtnItem-3-1').on('click', function() {
     document.getElementById("listConstructorElementPay").appendChild(newElementBlock);
     $(`.const-content__swipers-list-close`).attr('onclick', `CloseElementBlockConstructor(this)`)
     checkCountElementObjConstructor()
+})
+
+let countConstructorMediaBtnItem_3_1 = 0
+$('#constructorMediaBtnItem-3-1').on('click', function() {
+    if ( window.innerWidth <= 1110) {
+        $('.const-media-content__block-slider-3').addClass('display-n');
+        $('.const-content__block-back').removeClass('display-n')
+        $('.const-content__block-title').removeClass('display-n')
+        $('.const-content__block-text').removeClass('display-n')
+        $('.const-content__block-banner').removeClass('display-n')
+        $('.const-content__block-list').removeClass('display-n')
+        $('#constListItem-3').removeClass('const-content__block-list-item-active')
+        $('.const-content').css('padding', '100px 0 0 0')
+    }
+    let id = 1
+    countConstructorMediaBtnItem_3_1++
+    let constBannerRow_Item_1 = $(this).val()
+    let obj = {
+        name: `${constBannerRow_Item_1}`,
+        id: id,
+        count: countConstructorMediaBtnItem_3_1
+    }
+    elementObjConstructor.obj = obj
+    let newElement = document.createElement("li");
+    newElement.classList.add("const-content__block-banner-row-item")
+    newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_3_1}`;
+    newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+    document.getElementById("listConstructorBlock").appendChild(newElement);
+
+
+    let newElementBlock = document.createElement("div");
+    newElementBlock.classList.add("swiper-slide")
+    newElementBlock.id = `constBannerItemClose_${id}_${countConstructorMediaBtnItem_3_1}`;
+    newElementBlock.innerHTML = `
+    <div class="const-content__swipers-list-item" id="constBannerItemClose_${id}_${countConstructorMediaBtnItem_3_1}">
+        <button class="const-content__swipers-list-close" id="constBannerItemClose_${id}_${countConstructorMediaBtnItem_3_1}" value="constBannerItem_${id}_${countConstructorMediaBtnItem_3_1}" onclick="CloseElementBlockConstructor()">
+            <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.3281 22.3296L40.2735 40.275" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.1313 40.4727L40.4712 22.1328" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="const-content__swipers-list-block">
+            <div class="const-content__swipers-list-text">Лилия белая</div>
+            <div class="const-content__swipers-list-count">
+                <div class="const-content__swipers-list-count-minus">
+                    <svg width="11" height="2" viewBox="0 0 11 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1H9.34615" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="const-content__swipers-list-count-sum">1</div>
+                <div class="const-content__swipers-list-count-plus">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.69238 3.41699V11.5837" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.51855 7.5H11.8647" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="const-content__swipers-list-price">2990₽</div>
+        </div>
+    </div>
+    `
+    document.getElementById("listConstructorElementPay").appendChild(newElementBlock);
+    $(`.const-content__swipers-list-close`).attr('onclick', `CloseElementBlockConstructor(this)`)
+    checkCountElementObjConstructor()
+})
+
+$('.const-media-content__block-slider-3-back').on('click', function() {
+    $('.const-media-content__block-slider-3').addClass('display-n');
+    $('.const-content__block-back').removeClass('display-n')
+    $('.const-content__block-title').removeClass('display-n')
+    $('.const-content__block-text').removeClass('display-n')
+    $('.const-content__block-banner').removeClass('display-n')
+    $('.const-content__block-list').removeClass('display-n')
+    $('#constListItem-3').removeClass('const-content__block-list-item-active')
+    $('.const-content').css('padding', '100px 0 0 0')
 })
 
 //! ------------------------------------------------------------------------------------------------------------------
@@ -3277,6 +3757,70 @@ $('#constructorBtnItem-3-2').on('click', function() {
     checkCountElementObjConstructor()
 })
 
+let countConstructorMediaBtnItem_3_2 = 0
+$('#constructorMediaBtnItem-3-2').on('click', function() {
+    if ( window.innerWidth <= 1110) {
+        $('.const-media-content__block-slider-3').addClass('display-n');
+        $('.const-content__block-back').removeClass('display-n')
+        $('.const-content__block-title').removeClass('display-n')
+        $('.const-content__block-text').removeClass('display-n')
+        $('.const-content__block-banner').removeClass('display-n')
+        $('.const-content__block-list').removeClass('display-n')
+        $('#constListItem-3').removeClass('const-content__block-list-item-active')
+        $('.const-content').css('padding', '100px 0 0 0')
+    }
+    let id = 1
+    countConstructorMediaBtnItem_3_2++
+    let constBannerRow_Item_1 = $(this).val()
+    let obj = {
+        name: `${constBannerRow_Item_1}`,
+        id: id,
+        count: countConstructorMediaBtnItem_3_2
+    }
+    elementObjConstructor.obj = obj
+    let newElement = document.createElement("li");
+    newElement.classList.add("const-content__block-banner-row-item")
+    newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_3_2}`;
+    newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+    document.getElementById("listConstructorBlock").appendChild(newElement);
+
+
+    let newElementBlock = document.createElement("div");
+    newElementBlock.classList.add("swiper-slide")
+    newElementBlock.id = `constBannerItemClose_${id}_${countConstructorMediaBtnItem_3_2}`;
+    newElementBlock.innerHTML = `
+    <div class="const-content__swipers-list-item" id="constBannerItemClose_${id}_${countConstructorMediaBtnItem_3_2}">
+        <button class="const-content__swipers-list-close" id="constBannerItemClose_${id}_${countConstructorMediaBtnItem_3_2}" value="constBannerItem_${id}_${countConstructorMediaBtnItem_3_2}" onclick="CloseElementBlockConstructor()">
+            <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.3281 22.3296L40.2735 40.275" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.1313 40.4727L40.4712 22.1328" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="const-content__swipers-list-block">
+            <div class="const-content__swipers-list-text">Лилия белая</div>
+            <div class="const-content__swipers-list-count">
+                <div class="const-content__swipers-list-count-minus">
+                    <svg width="11" height="2" viewBox="0 0 11 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1H9.34615" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="const-content__swipers-list-count-sum">1</div>
+                <div class="const-content__swipers-list-count-plus">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.69238 3.41699V11.5837" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.51855 7.5H11.8647" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="const-content__swipers-list-price">2990₽</div>
+        </div>
+    </div>
+    `
+    document.getElementById("listConstructorElementPay").appendChild(newElementBlock);
+    $(`.const-content__swipers-list-close`).attr('onclick', `CloseElementBlockConstructor(this)`)
+    checkCountElementObjConstructor()
+})
+
 //! ------------------------------------------------------------------------------------------------------------------
 
 
@@ -3306,6 +3850,70 @@ $('#constructorBtnItem-3-3').on('click', function() {
     newElementBlock.innerHTML = `
     <div class="const-content__swipers-list-item" id="constBannerItemClose_${id}_${countConstructorBtnItem_3_3}">
         <button class="const-content__swipers-list-close" id="constBannerItemClose_${id}_${countConstructorBtnItem_3_3}" value="constBannerItem_${id}_${countConstructorBtnItem_3_3}" onclick="CloseElementBlockConstructor()">
+            <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.3281 22.3296L40.2735 40.275" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.1313 40.4727L40.4712 22.1328" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="const-content__swipers-list-block">
+            <div class="const-content__swipers-list-text">Лилия белая</div>
+            <div class="const-content__swipers-list-count">
+                <div class="const-content__swipers-list-count-minus">
+                    <svg width="11" height="2" viewBox="0 0 11 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1H9.34615" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="const-content__swipers-list-count-sum">1</div>
+                <div class="const-content__swipers-list-count-plus">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.69238 3.41699V11.5837" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.51855 7.5H11.8647" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="const-content__swipers-list-price">2990₽</div>
+        </div>
+    </div>
+    `
+    document.getElementById("listConstructorElementPay").appendChild(newElementBlock);
+    $(`.const-content__swipers-list-close`).attr('onclick', `CloseElementBlockConstructor(this)`)
+    checkCountElementObjConstructor()
+})
+
+let countConstructorMediaBtnItem_3_3 = 0
+$('#constructorMediaBtnItem-3-3').on('click', function() {
+    if ( window.innerWidth <= 1110) {
+        $('.const-media-content__block-slider-3').addClass('display-n');
+        $('.const-content__block-back').removeClass('display-n')
+        $('.const-content__block-title').removeClass('display-n')
+        $('.const-content__block-text').removeClass('display-n')
+        $('.const-content__block-banner').removeClass('display-n')
+        $('.const-content__block-list').removeClass('display-n')
+        $('#constListItem-3').removeClass('const-content__block-list-item-active')
+        $('.const-content').css('padding', '100px 0 0 0')
+    }
+    let id = 1
+    countConstructorMediaBtnItem_3_3++
+    let constBannerRow_Item_1 = $(this).val()
+    let obj = {
+        name: `${constBannerRow_Item_1}`,
+        id: id,
+        count: countConstructorMediaBtnItem_3_3
+    }
+    elementObjConstructor.obj = obj
+    let newElement = document.createElement("li");
+    newElement.classList.add("const-content__block-banner-row-item")
+    newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_3_3}`;
+    newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+    document.getElementById("listConstructorBlock").appendChild(newElement);
+
+
+    let newElementBlock = document.createElement("div");
+    newElementBlock.classList.add("swiper-slide")
+    newElementBlock.id = `constBannerItemClose_${id}_${countConstructorMediaBtnItem_3_3}`;
+    newElementBlock.innerHTML = `
+    <div class="const-content__swipers-list-item" id="constBannerItemClose_${id}_${countConstructorMediaBtnItem_3_3}">
+        <button class="const-content__swipers-list-close" id="constBannerItemClose_${id}_${countConstructorMediaBtnItem_3_3}" value="constBannerItem_${id}_${countConstructorMediaBtnItem_3_3}" onclick="CloseElementBlockConstructor()">
             <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.3281 22.3296L40.2735 40.275" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M22.1313 40.4727L40.4712 22.1328" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -4987,6 +5595,66 @@ $('#constructorBtnObject-1-1').on('click', function() {
     checkCountElementObjConstructor()
 })
 
+let countConstructorMediaBtnObject_1_1 = 0
+$('#constructorMediaBtnObject-1-1').on('click', function() {
+    if (window.innerWidth <= 1100) {
+        $('.const-content__swipers').removeClass('display-n')
+        $('.const-content__swiper').removeClass('display-n')
+        $('.const-content__block-list').removeClass('display-n')
+        $('.const-content__block-banner').removeClass('display-n')
+        $('.const-content__block-title').removeClass('display-n')
+        $('.const-content__block-back').removeClass('display-n')
+        $('.const-content__block-text').removeClass('display-n')
+
+        $('.const-media-content__block-sliders-1').addClass('display-n')
+        $('.const-content').css('padding', '100px 0 0 0')
+    }
+    let id = 1
+    countConstructorMediaBtnObject_1_1++
+    let constBannerRow_Item_1 = $(this).val()
+    let obj = {
+        name: `${constBannerRow_Item_1}`,
+        id: id,
+        count: countConstructorMediaBtnObject_1_1
+    }
+    elementObjConstructor.obj = obj
+
+    let newElementBlock = document.createElement("div");
+    newElementBlock.classList.add("swiper-slide")
+    newElementBlock.id = `constBannerObjectClose_${id}_${countConstructorMediaBtnObject_1_1}`;
+    newElementBlock.innerHTML = `
+    <div class="const-content__swipers-list-item" id="constBannerItemClose_${id}_${countConstructorMediaBtnObject_1_1}">
+        <button class="const-content__swipers-list-close" id="constBannerObjectClose_${id}_${countConstructorMediaBtnObject_1_1}" value="constBannerObject_${id}_${countConstructorMediaBtnObject_1_1}" onclick="CloseElementBlockConstructor()">
+            <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.3281 22.3296L40.2735 40.275" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.1313 40.4727L40.4712 22.1328" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="const-content__swipers-list-block">
+            <div class="const-content__swipers-list-text">${constBannerRow_Item_1}</div>
+            <div class="const-content__swipers-list-count">
+                <div class="const-content__swipers-list-count-minus">
+                    <svg width="11" height="2" viewBox="0 0 11 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1H9.34615" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="const-content__swipers-list-count-sum">1</div>
+                <div class="const-content__swipers-list-count-plus">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.69238 3.41699V11.5837" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.51855 7.5H11.8647" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="const-content__swipers-list-price">2990₽</div>
+        </div>
+    </div>
+    `
+    document.getElementById("listConstructorElementPay").appendChild(newElementBlock);
+    $(`.const-content__swipers-list-close`).attr('onclick', `CloseElementBlockConstructor(this)`)
+    checkCountElementObjConstructor()
+})
+
 //! ------------------------------------------------------------------------------------------------------------------
 
 
@@ -6614,7 +7282,6 @@ var constSwiperListBlock = new Swiper(".constSwiperListBlock", {
         nextEl: ".const-content__swipers-list .swiper-controls .swiper-button-next",
         prevEl: ".const-content__swipers-list .swiper-controls .swiper-button-prev",
     },
-    mousewheel: true,
     keyboard: true,
     breakpoints: {
         1350: {
@@ -6671,6 +7338,26 @@ var constMediaContentSlider_1 = new Swiper(".constMediaContentSlider_1", {
         crossFade: true
     },
 });
+var constMediaContentSlider_2 = new Swiper(".constMediaContentSlider_2", {
+    pagination: {
+        el: ".const-media-content__block-slider-2 .swiper-controls .swiper-pagination",
+    },
+    keyboard: true,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+});
+var constMediaContentSlider_3 = new Swiper(".constMediaContentSlider_3", {
+    pagination: {
+        el: ".const-media-content__block-slider-3 .swiper-controls .swiper-pagination",
+    },
+    keyboard: true,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+});
 
 
 var constMediaContentSliders_2 = new Swiper(".constMediaContentSliders_2", {
@@ -6702,4 +7389,73 @@ var constMediaContentSliders_4 = new Swiper(".constMediaContentSliders_4", {
     fadeEffect: {
         crossFade: true
     },
+});
+
+
+
+
+$('#constMediaBlockSliders_1').on('click', function() {
+    $('.const-content__swipers').addClass('display-n')
+    $('.const-content__swiper').addClass('display-n')
+    $('.const-content__block-list').addClass('display-n')
+    $('.const-content__block-banner').addClass('display-n')
+    $('.const-content__block-title').addClass('display-n')
+    $('.const-content__block-back').addClass('display-n')
+    $('.const-content__block-text').addClass('display-n')
+
+    $('.const-media-content__block-sliders-1').removeClass('display-n')
+    $('.const-content').css('padding', '0px')
+})
+$('.const-media-content__block-sliders-1-back').on('click', function() {
+    $('.const-content__swipers').removeClass('display-n')
+    $('.const-content__swiper').removeClass('display-n')
+    $('.const-content__block-list').removeClass('display-n')
+    $('.const-content__block-banner').removeClass('display-n')
+    $('.const-content__block-title').removeClass('display-n')
+    $('.const-content__block-back').removeClass('display-n')
+    $('.const-content__block-text').removeClass('display-n')
+
+    $('.const-media-content__block-sliders-1').addClass('display-n')
+    $('.const-content').css('padding', '100px 0 0 0')
+})
+
+
+
+
+
+
+$('.const-media-content__block-sliders-1-banner-img-container').on('click', function() {
+    $('.const-media-content__block-sliders-1-container').removeClass('display-n')
+    $('.const-media-content__block-sliders-1-box').addClass('display-n')
+    $('.const-media-content__block-sliders-1-heart').addClass('display-n')
+    $('.const-media-content__block-sliders-1-cylinder').addClass('display-n')
+    $('.const-media-content__block-sliders-1-basket').addClass('display-n')
+});
+$('.const-media-content__block-sliders-1-banner-img-box').on('click', function() {
+    $('.const-media-content__block-sliders-1-box').removeClass('display-n')
+    $('.const-media-content__block-sliders-1-container').addClass('display-n')
+    $('.const-media-content__block-sliders-1-heart').addClass('display-n')
+    $('.const-media-content__block-sliders-1-cylinder').addClass('display-n')
+    $('.const-media-content__block-sliders-1-basket').addClass('display-n')
+});
+$('.const-media-content__block-sliders-1-banner-img-heart').on('click', function() {
+    $('.const-media-content__block-sliders-1-heart').removeClass('display-n')
+    $('.const-media-content__block-sliders-1-container').addClass('display-n')
+    $('.const-media-content__block-sliders-1-box').addClass('display-n')
+    $('.const-media-content__block-sliders-1-cylinder').addClass('display-n')
+    $('.const-media-content__block-sliders-1-basket').addClass('display-n')
+});
+$('.const-media-content__block-sliders-1-banner-img-cylinder').on('click', function() {
+    $('.const-media-content__block-sliders-1-cylinder').removeClass('display-n')
+    $('.const-media-content__block-sliders-1-container').addClass('display-n')
+    $('.const-media-content__block-sliders-1-box').addClass('display-n')
+    $('.const-media-content__block-sliders-1-heart').addClass('display-n')
+    $('.const-media-content__block-sliders-1-basket').addClass('display-n')
+});
+$('.const-media-content__block-sliders-1-banner-img-basket').on('click', function() {
+    $('.const-media-content__block-sliders-1-basket').removeClass('display-n')
+    $('.const-media-content__block-sliders-1-container').addClass('display-n')
+    $('.const-media-content__block-sliders-1-box').addClass('display-n')
+    $('.const-media-content__block-sliders-1-heart').addClass('display-n')
+    $('.const-media-content__block-sliders-1-cylinder').addClass('display-n')
 });
