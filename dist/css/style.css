@@ -7457,6 +7457,13 @@
 .footer__block-text-logo-img {
   width: 50px;
   height: 75px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(253, 0, 61, 0.55));
+          filter: drop-shadow(0px 4px 4px rgba(253, 0, 61, 0.55));
+}
+
+.footer__block-text-logo-img img {
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(253, 0, 61, 0.55));
+          filter: drop-shadow(0px 4px 4px rgba(253, 0, 61, 0.55));
 }
 
 .footer__block-text-logo-title {
@@ -7471,6 +7478,7 @@
   text-transform: uppercase;
   color: #FFFFFF;
   margin-top: 26px;
+  text-shadow: 0px 3px 13px #00B2FF;
 }
 
 .footer__block-media-logo {
@@ -44620,6 +44628,24 @@ input[type=range]::-webkit-slider-runnable-track {
           justify-content: center;
 }
 
+#modelUpsell .modal-content .modal-dialog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#modelUpsell .modal-dialog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .model-upsell {
   width: 1110px;
   height: 659px;
@@ -69816,6 +69842,26 @@ html .ui-button.ui-state-disabled:active,
     width: 100%;
   }
 
+  .modelUpsell .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .model-upsell__block-slider {
+    width: 570px;
+    height: 340px;
+    margin: 54px 0 0 0;
+    position: relative;
+  }
+
+  .model-upsell {
+    width: 730px;
+  }
+
   .const-content__block-sliders-4-content-info-description-text p {
     width: 200px;
   }
@@ -72241,6 +72287,39 @@ html .ui-button.ui-state-disabled:active,
     height: 41px;
     background: #c4c4c4;
     border-radius: 50%;
+  }
+}
+
+@media (max-width: 770px) {
+  .model-upsell {
+    width: 370px;
+    height: 705px;
+  }
+
+  .model-upsell__block-text {
+    margin: 17px 0 0 0;
+    width: 350px;
+  }
+
+  #modelUpsell .modal-content {
+    width: 270px;
+  }
+
+  .model-upsell__block-slider {
+    width: 280px;
+    height: 340px;
+    margin: 54px 0 0 0;
+    position: relative;
+  }
+
+  .model-upsell__block-slider .swiper-button-next {
+    content: url(../svg/model-upsell/arrow-next.svg);
+    right: -35px;
+  }
+
+  .model-upsell__block-slider .swiper-button-prev {
+    content: url(../svg/model-upsell/arrow-prev.svg);
+    left: -35px;
   }
 }
 

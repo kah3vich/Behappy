@@ -2950,6 +2950,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    & .modal-dialog {
+        display: flex;
+        justify-content: center;
+    }
+}
+#modelUpsell  {
+    & .modal-dialog {
+        display: flex;
+        justify-content: center;
+    }
 }
 .model-upsell {
     width: 1110px;

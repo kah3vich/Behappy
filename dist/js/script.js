@@ -3662,6 +3662,21 @@ var swiper = new Swiper(".modelUpsell", {
         nextEl: ".model-upsell__block-slider .swiper-controls .swiper-button-next",
         prevEl: ".model-upsell__block-slider .swiper-controls .swiper-button-prev",
     },
+    breakpoints: {
+        1150: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 60
+        },
+        770: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 30
+        },
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 0
+        }
+    }
+
 });
 
 $('.model-upsell__close').on('click', function() {
