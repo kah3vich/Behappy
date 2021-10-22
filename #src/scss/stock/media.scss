@@ -8,6 +8,13 @@
     .header-profile__stock-info {
         margin: 44px 0 0 30px;
     }
+    .stock-wrapper {
+        & .header-profile__menu {
+            width: 100%;
+            height: 630px;
+            position: relative;
+        }
+    }
 }
 @media (max-width: 700px) {
     .header-profile__stock {
@@ -32,5 +39,10 @@
     .header-profile__stock-calendar-title {
         width: 100%;
         text-align: center;
+    }
+    .stock-wrapper .header-profile__menu {
+        width: 100%;
+        height: 810px;
+        position: relative;
     }
 }

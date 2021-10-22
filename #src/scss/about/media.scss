@@ -12,6 +12,11 @@
         width: 100%;
     }
 }
+@media (max-width: 1250px) {
+    .about-content  {
+        padding: 90px 0 0 0;
+    }
+}
 @media (max-width: 1150px) {
     .about-content__block {
         display: flex;

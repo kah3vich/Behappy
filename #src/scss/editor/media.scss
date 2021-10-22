@@ -3,4 +3,11 @@
         width: 96%;
         position: static;
     }
+    .editor-wrapper {
+        & .header-profile__menu {
+            width: 100%;
+            height: 880px;
+            position: relative;
+        }
+    }
 }

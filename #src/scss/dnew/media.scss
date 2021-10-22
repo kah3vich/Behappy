@@ -39,6 +39,11 @@
         width: 100%;
     }
 }
+@media (max-width: 1250px) {
+    .dnew-content {
+        padding: 90px 0 0 0;
+    }
+}
 @media (max-width: 800px) {
     .dnew-content__block-tables-item {
         width: 100%;

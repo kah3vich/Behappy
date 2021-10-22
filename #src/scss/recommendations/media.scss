@@ -12,6 +12,13 @@
         width: 100%;
         text-align: center;
     }
+    .rec-wrapper {
+        .header-profile__menu {
+            width: 100%;
+            height: 670px;
+            position: relative;
+        }
+    }
 }
 @media (max-width: 900px) {
     .header-profile__rec-list {
@@ -22,6 +29,14 @@
     }
     .header-profile__rec-item:last-child {
         display: none;
+    }
+    .rec-wrapper {
+        .header-profile__menu {
+            margin: -50px 0 0 0;
+            width: 100%;
+            height: 1000px;
+            position: relative;
+        }
     }
 }
 @media (max-width: 560px) {

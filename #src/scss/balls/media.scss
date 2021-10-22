@@ -8,4 +8,11 @@
     .header-profile__balls-logo {
         display: none;
     }
+    .balls-wrapper {
+        & .header-profile__menu {
+            width: 100%;
+            height: 550px;
+            position: relative;
+        }
+    }
 }

@@ -133,6 +133,15 @@ input[type="range" i] {
     pointer-events: none;
     opacity: 0.5;
 }
+.btn-close {
+    &:hover {
+        opacity: 1;
+    }
+}
+.modal {
+    background: rgba(0,21,75,.4);
+    backdrop-filter: blur(80px);
+}
 
 
 //! Календарь 

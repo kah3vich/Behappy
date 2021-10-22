@@ -6,6 +6,13 @@
         align-items: center;
         padding: 0px 108px 0 98px;
     }
+    .status-wrapper {
+        & .header-profile__menu {
+            width: 100%;
+            height: 360px;
+            position: relative;
+        }
+    }
 }
 @media (max-width: 950px) {
     .header-profile__status {
@@ -23,6 +30,13 @@
     #profileStatusModel .modal-dialog {
         display: flex;
         justify-content: center;
+    }
+    .status-wrapper {
+        & .header-profile__menu {
+            width: 100%;
+            height: 450px;
+            position: relative;
+        }
     }
 }
 @media (max-width: 550px) {

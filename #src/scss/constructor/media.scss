@@ -201,6 +201,11 @@
         gap: 70px 0;
     }
 }
+@media (max-width: 1250px) {
+    .const-content {
+        padding: 90px 0 0 0;
+    }
+}
 @media (max-width: 1200px) {
     .const-content__swipers-price-description {
         margin: 0 40px 0 0;

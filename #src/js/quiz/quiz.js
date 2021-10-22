@@ -1084,6 +1084,8 @@ $('#quizWhomItem_1').on('click', function() {
     $("#quizWhomItems_6").css('border', '1px solid #002685')
     $("#quizWhomItems_7").css('border', '1px solid #002685')
     $("#quizWhomItems_8").css('border', '1px solid #002685')
+    $('.quiz-content__block-whom').addClass('display-n');
+    $('.quiz-content__block-type').removeClass('display-n');
 })
 $('#quizWhomItem_2').on('click', function() {
     $("#quizWhomItems_2").css('border', '1px solid #16B8C3')
@@ -1094,6 +1096,8 @@ $('#quizWhomItem_2').on('click', function() {
     $("#quizWhomItems_6").css('border', '1px solid #002685')
     $("#quizWhomItems_7").css('border', '1px solid #002685')
     $("#quizWhomItems_8").css('border', '1px solid #002685')
+    $('.quiz-content__block-whom').addClass('display-n');
+    $('.quiz-content__block-type').removeClass('display-n');
 })
 $('#quizWhomItem_3').on('click', function() {
     $("#quizWhomItems_3").css('border', '1px solid #16B8C3')
@@ -1104,6 +1108,8 @@ $('#quizWhomItem_3').on('click', function() {
     $("#quizWhomItems_6").css('border', '1px solid #002685')
     $("#quizWhomItems_7").css('border', '1px solid #002685')
     $("#quizWhomItems_8").css('border', '1px solid #002685')
+    $('.quiz-content__block-whom').addClass('display-n');
+    $('.quiz-content__block-type').removeClass('display-n');
 })
 $('#quizWhomItem_4').on('click', function() {
     $("#quizWhomItems_4").css('border', '1px solid #16B8C3')
@@ -1114,6 +1120,8 @@ $('#quizWhomItem_4').on('click', function() {
     $("#quizWhomItems_6").css('border', '1px solid #002685')
     $("#quizWhomItems_7").css('border', '1px solid #002685')
     $("#quizWhomItems_8").css('border', '1px solid #002685')
+    $('.quiz-content__block-whom').addClass('display-n');
+    $('.quiz-content__block-type').removeClass('display-n');
 })
 $('#quizWhomItem_5').on('click', function() {
     $("#quizWhomItems_5").css('border', '1px solid #16B8C3')
@@ -1124,6 +1132,8 @@ $('#quizWhomItem_5').on('click', function() {
     $("#quizWhomItems_6").css('border', '1px solid #002685')
     $("#quizWhomItems_7").css('border', '1px solid #002685')
     $("#quizWhomItems_8").css('border', '1px solid #002685')
+    $('.quiz-content__block-whom').addClass('display-n');
+    $('.quiz-content__block-type').removeClass('display-n');
 })
 $('#quizWhomItem_6').on('click', function() {
     $("#quizWhomItems_6").css('border', '1px solid #16B8C3')
@@ -1134,6 +1144,8 @@ $('#quizWhomItem_6').on('click', function() {
     $("#quizWhomItems_1").css('border', '1px solid #002685')
     $("#quizWhomItems_7").css('border', '1px solid #002685')
     $("#quizWhomItems_8").css('border', '1px solid #002685')
+    $('.quiz-content__block-whom').addClass('display-n');
+    $('.quiz-content__block-type').removeClass('display-n');
 })
 $('#quizWhomItem_7').on('click', function() {
     $("#quizWhomItems_7").css('border', '1px solid #16B8C3')
@@ -1144,6 +1156,8 @@ $('#quizWhomItem_7').on('click', function() {
     $("#quizWhomItems_6").css('border', '1px solid #002685')
     $("#quizWhomItems_1").css('border', '1px solid #002685')
     $("#quizWhomItems_8").css('border', '1px solid #002685')
+    $('.quiz-content__block-whom').addClass('display-n');
+    $('.quiz-content__block-type').removeClass('display-n');
 })
 $('#quizWhomItem_8').on('click', function() {
     $("#quizWhomItems_8").css('border', '1px solid #16B8C3')
@@ -1155,6 +1169,10 @@ $('#quizWhomItem_8').on('click', function() {
     $("#quizWhomItems_7").css('border', '1px solid #002685')
     $("#quizWhomItems_1").css('border', '1px solid #002685')
 })
+$("#quizWhomItems_8 input[type='text']").on('change', function() {
+    $('.quiz-content__block-whom').addClass('display-n');
+    $('.quiz-content__block-type').removeClass('display-n');
+});
 
 
 $('#quizTypeItem_1').on('click', function() {
@@ -1162,33 +1180,45 @@ $('#quizTypeItem_1').on('click', function() {
     $("#quizTypeItems_2").css('border', '1px solid #002685')
     $("#quizTypeItems_3").css('border', '1px solid #002685')
     $("#quizTypeItems_4").css('border', '1px solid #002685')
+    $('.quiz-content__block-type').addClass('display-n');
+    $('.quiz-content__block-shade').removeClass('display-n');
 })
 $('#quizTypeItem_2').on('click', function() {
     $("#quizTypeItems_2").css('border', '1px solid #16B8C3')
     $("#quizTypeItems_1").css('border', '1px solid #002685')
     $("#quizTypeItems_3").css('border', '1px solid #002685')
     $("#quizTypeItems_4").css('border', '1px solid #002685')
+    $('.quiz-content__block-type').addClass('display-n');
+    $('.quiz-content__block-shade').removeClass('display-n');
 })
 $('#quizTypeItem_3').on('click', function() {
     $("#quizTypeItems_3").css('border', '1px solid #16B8C3')
     $("#quizTypeItems_2").css('border', '1px solid #002685')
     $("#quizTypeItems_1").css('border', '1px solid #002685')
     $("#quizTypeItems_4").css('border', '1px solid #002685')
+    $('.quiz-content__block-type').addClass('display-n');
+    $('.quiz-content__block-shade').removeClass('display-n');
 })
 $('#quizTypeItem_4').on('click', function() {
     $("#quizTypeItems_4").css('border', '1px solid #16B8C3')
     $("#quizTypeItems_2").css('border', '1px solid #002685')
     $("#quizTypeItems_3").css('border', '1px solid #002685')
     $("#quizTypeItems_1").css('border', '1px solid #002685')
+    $('.quiz-content__block-type').addClass('display-n');
+    $('.quiz-content__block-shade').removeClass('display-n');
 })
 
 $('#quizShadeItem_1').on('click', function() {
     $("#quizShadeItems_1").css('border', '1px solid #16B8C3')
     $("#quizShadeItems_2").css('border', '1px solid #002685')
+    $('.quiz-content__block-shade').addClass('display-n');
+    $('.quiz-content__block-color').removeClass('display-n');
 })
 $('#quizShadeItem_2').on('click', function() {
     $("#quizShadeItems_2").css('border', '1px solid #16B8C3')
     $("#quizShadeItems_1").css('border', '1px solid #002685')
+    $('.quiz-content__block-shade').addClass('display-n');
+    $('.quiz-content__block-color').removeClass('display-n');
 })
 
 
@@ -1203,4 +1233,34 @@ $('#quizColorItem_2').on('click', function() {
     $("#quizColorItems_1").css('border', '1px solid #002685')
     $('#quizColorsItem_1').addClass('opacity-5')
     $('#quizColorsItem_2').removeClass('opacity-5')
+})
+
+
+$('.ord-quiz__block-data-address-city').on('click', function() {
+    $('.ord-quiz__block-data-address-city-select').toggleClass('display-n')
+    $(this).toggleClass('ord-quiz__block-data-address-city-active')
+})
+$('#ordQuizSelectItem-1').on('click', function() {
+    let ordQuizSelectItem = $(this).val()
+    $('.ord-quiz__block-data-address-city p').html(ordQuizSelectItem)
+})
+$('#ordQuizSelectItem-2').on('click', function() {
+    let ordQuizSelectItem = $(this).val()
+    $('.ord-quiz__block-data-address-city p').html(ordQuizSelectItem)
+})
+$('#ordQuizSelectItem-3').on('click', function() {
+    let ordQuizSelectItem = $(this).val()
+    $('.ord-quiz__block-data-address-city p').html(ordQuizSelectItem)
+})
+$('#ordQuizSelectItem-4').on('click', function() {
+    let ordQuizSelectItem = $(this).val()
+    $('.ord-quiz__block-data-address-city p').html(ordQuizSelectItem)
+})
+$('#ordQuizSelectItem-5').on('click', function() {
+    let ordQuizSelectItem = $(this).val()
+    $('.ord-quiz__block-data-address-city p').html(ordQuizSelectItem)
+})
+$('#ordQuizSelectItem-6').on('click', function() {
+    let ordQuizSelectItem = $(this).val()
+    $('.ord-quiz__block-data-address-city p').html(ordQuizSelectItem)
 })

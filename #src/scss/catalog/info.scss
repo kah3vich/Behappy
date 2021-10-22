@@ -1,5 +1,5 @@
 .cat-info {
-    padding: 90px 0;
+    padding: 0 0;
     width: 100%;
     height: 100%;
     &__block {
@@ -22,12 +22,12 @@
                 & .swiper-button-prev {
                     top: -180px;
                     left: -67px;
-                    color: #FFFFFF;
+                    color: #DE33FE;
                 }
                 & .swiper-button-next {
                     top: -180px;
                     right: -67px;
-                    color: #FFFFFF;
+                    color: #DE33FE;
                 }
                 & .swiper-pagination-bullet {
                     background: rgba(133, 79, 200, 0.8);

@@ -1,5 +1,4 @@
 .march-content {
-    padding: 57px 0 50px 0;
     &__block {
         display: flex;
         flex-direction: column;
@@ -9,7 +8,7 @@
         &-back {
             cursor: pointer;
             position: absolute;
-            top: -63px;
+            top: -55px;
         }
         &-text {
             display: flex;

@@ -197,6 +197,9 @@
     }
 }
 @media (max-width: 1250px) {
+    .new-content {
+        padding: 90px 0 0 0;
+    }
     .new-content__block-table {
         width: 100%;
         grid-template-columns: 1fr 1fr 1fr;

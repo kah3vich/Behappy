@@ -296,3 +296,36 @@ $('.ord-pay__block-data-address-model-close').on('click', function() {
     let orderAdrressDateModel = $('#datepickerOrder').val()
     $('.ord-pay__block-data-address-date input').val(orderAdrressDateModel)
 });
+
+$('.ord-pay__block-data-address-city').on('click', function() {
+    $('.ord-pay__block-data-address-city-select').toggleClass('display-n')
+    $(this).toggleClass('ord-pay__block-data-address-city-active')
+});
+$('#ordSelectCityItem-1').on('click', function() {
+    let ordSelectCityItem = $(this).val()
+    $('.ord-pay__block-data-address-city p').html(ordSelectCityItem)
+});
+$('#ordSelectCityItem-2').on('click', function() {
+    let ordSelectCityItem = $(this).val()
+    $('.ord-pay__block-data-address-city p').html(ordSelectCityItem)
+});
+$('#ordSelectCityItem-3').on('click', function() {
+    let ordSelectCityItem = $(this).val()
+    $('.ord-pay__block-data-address-city p').html(ordSelectCityItem)
+});
+$('#ordSelectCityItem-4').on('click', function() {
+    let ordSelectCityItem = $(this).val()
+    $('.ord-pay__block-data-address-city p').html(ordSelectCityItem)
+});
+$('#ordSelectCityItem-5').on('click', function() {
+    let ordSelectCityItem = $(this).val()
+    $('.ord-pay__block-data-address-city p').html(ordSelectCityItem)
+});
+$('#ordSelectCityItem-6').on('click', function() {
+    let ordSelectCityItem = $(this).val()
+    $('.ord-pay__block-data-address-city p').html(ordSelectCityItem)
+});
+$('#ordSelectCityItem-7').on('click', function() {
+    let ordSelectCityItem = $(this).val()
+    $('.ord-pay__block-data-address-city p').html(ordSelectCityItem)
+});

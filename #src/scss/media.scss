@@ -1259,6 +1259,26 @@
         display: none;
     }
 }
+@media (max-width: 1330px) {
+    .header-profile__client-img {
+        width: 50px;
+        height: 50px;
+    }
+    .header-profile__menu-list-order,
+    .header-profile__menu-list-chosen,
+    .header-profile__menu-list-balls,
+    .header-profile__menu-list-notification,
+    .header-profile__menu-list-event,
+    .header-profile__menu-list-stock,
+    .header-profile__menu-list-rec,
+    .header-profile__menu-list-donat,
+    .header-profile__menu-list-histor,
+    .header-profile__menu-list-offers,
+    .header-profile__menu-list-policy,
+    .header-profile__menu-list-profil {
+        height: 40px;
+    }
+}
 @media (max-width: 900px) {
     .header-profile{
         padding: 0 30px;

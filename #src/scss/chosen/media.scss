@@ -5,6 +5,13 @@
         margin: 30px 0 0 0;
         align-items: center;
     }
+    .chosen-wrapper {
+        & .header-profile__menu {
+            width: 100%;
+            height: 430px;
+            position: relative;
+        }
+    }
 }
 @media (max-width: 950px) {
     .header-profile__chosen-list {
@@ -19,5 +26,12 @@
     }
     .header-profile__chosen {
         height: 840px;
+    }
+    .chosen-wrapper {
+        & .header-profile__menu {
+            width: 100%;
+            height: 930px;
+            position: relative;
+        }
     }
 }
