@@ -38793,7 +38793,7 @@ input[type=radio]:checked ~ .ord-quiz__block-data-time-text {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 638px;
-  margin: 52px 0 0 0;
+  margin: 20px ​0 0;
 }
 
 .about-content__block-wrapper-item {
@@ -54994,11 +54994,12 @@ input[type=range]::-webkit-slider-runnable-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60px;
-  height: 25px;
+  width: 33px;
+  height: 14px;
 }
 
 .const-media-content__block-slider-1-back svg {
+  width: 13px;
   margin: 10px 0 0 0;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -55415,11 +55416,12 @@ input[type=range]::-webkit-slider-runnable-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60px;
-  height: 25px;
+  width: 33px;
+  height: 14px;
 }
 
 .const-media-content__block-slider-2-back svg {
+  width: 13px;
   margin: 10px 0 0 0;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -55836,11 +55838,12 @@ input[type=range]::-webkit-slider-runnable-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60px;
-  height: 25px;
+  width: 33px;
+  height: 14px;
 }
 
 .const-media-content__block-slider-3-back svg {
+  width: 13px;
   margin: 10px 0 0 0;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -56257,11 +56260,12 @@ input[type=range]::-webkit-slider-runnable-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60px;
-  height: 25px;
+  width: 33px;
+  height: 14px;
 }
 
 .const-media-content__block-slider-4-back svg {
+  width: 13px;
   margin: 10px 0 0 0;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -56678,11 +56682,12 @@ input[type=range]::-webkit-slider-runnable-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60px;
-  height: 25px;
+  width: 33px;
+  height: 14px;
 }
 
 .const-media-content__block-slider-5-back svg {
+  width: 13px;
   margin: 10px 0 0 0;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -57099,11 +57104,12 @@ input[type=range]::-webkit-slider-runnable-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60px;
-  height: 25px;
+  width: 33px;
+  height: 14px;
 }
 
 .const-media-content__block-slider-6-back svg {
+  width: 13px;
   margin: 10px 0 0 0;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -57520,11 +57526,12 @@ input[type=range]::-webkit-slider-runnable-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60px;
-  height: 25px;
+  width: 33px;
+  height: 14px;
 }
 
 .const-media-content__block-slider-7-back svg {
+  width: 13px;
   margin: 10px 0 0 0;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -57941,11 +57948,12 @@ input[type=range]::-webkit-slider-runnable-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60px;
-  height: 25px;
+  width: 33px;
+  height: 14px;
 }
 
 .const-media-content__block-slider-8-back svg {
+  width: 13px;
   margin: 10px 0 0 0;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -58362,11 +58370,12 @@ input[type=range]::-webkit-slider-runnable-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60px;
-  height: 25px;
+  width: 33px;
+  height: 14px;
 }
 
 .const-media-content__block-slider-9-back svg {
+  width: 13px;
   margin: 10px 0 0 0;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -58783,11 +58792,12 @@ input[type=range]::-webkit-slider-runnable-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60px;
-  height: 25px;
+  width: 33px;
+  height: 14px;
 }
 
 .const-media-content__block-slider-10-back svg {
+  width: 13px;
   margin: 10px 0 0 0;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -59204,11 +59214,12 @@ input[type=range]::-webkit-slider-runnable-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60px;
-  height: 25px;
+  width: 33px;
+  height: 14px;
 }
 
 .const-media-content__block-slider-11-back svg {
+  width: 13px;
   margin: 10px 0 0 0;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -59625,11 +59636,12 @@ input[type=range]::-webkit-slider-runnable-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60px;
-  height: 25px;
+  width: 33px;
+  height: 14px;
 }
 
 .const-media-content__block-slider-12-back svg {
+  width: 13px;
   margin: 10px 0 0 0;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -60044,11 +60056,12 @@ input[type=range]::-webkit-slider-runnable-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60px;
-  height: 25px;
+  width: 33px;
+  height: 14px;
 }
 
 .const-media-content__block-sliders-1-back svg {
+  width: 13px;
   margin: 10px 0 0 0;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -60606,11 +60619,12 @@ input[type=range]::-webkit-slider-runnable-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60px;
-  height: 25px;
+  width: 33px;
+  height: 14px;
 }
 
 .const-media-content__block-sliders-2-back svg {
+  width: 13px;
   margin: 10px 0 0 0;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -61025,11 +61039,12 @@ input[type=range]::-webkit-slider-runnable-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60px;
-  height: 25px;
+  width: 33px;
+  height: 14px;
 }
 
 .const-media-content__block-sliders-3-back svg {
+  width: 13px;
   margin: 10px 0 0 0;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -61444,11 +61459,12 @@ input[type=range]::-webkit-slider-runnable-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60px;
-  height: 25px;
+  width: 33px;
+  height: 14px;
 }
 
 .const-media-content__block-sliders-4-back svg {
+  width: 13px;
   margin: 10px 0 0 0;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -76186,12 +76202,12 @@ html .ui-button.ui-state-disabled:active,
   }
 
   .contact-content__block-text {
-    width: 275px;
+    width: 340px;
     font-size: 14px;
   }
 
   .contact-content__block-add {
-    width: 275px;
+    width: 335px;
     font-size: 14px;
   }
 
