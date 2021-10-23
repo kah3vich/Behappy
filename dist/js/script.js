@@ -21197,6 +21197,35 @@ $('.header-profile__event-table-calendar-model-item-4').on('click', function() {
     $('.header-profile__event-table-calendar-model-type').css('color', 'white')
 })
 
+
+
+$(function() {
+    $('#event-events').css('display', 'none')
+    $('#event-events').after('<div class="event-select-item"><div class="event-select-placeholder">Тип события</div><div id="event-select-wrapper" class="event-select-wrapper display-n"></div></div>')
+    let count = $('#event-events').children('option').length
+    for( let i = 0; i < count; i++) {
+        let arrows = $('#event-events').children('option').eq(i).val()
+        let newElementBlock = document.createElement("button");
+        newElementBlock.classList.add("event-select-element")
+        newElementBlock.id = `event-select-element-${i}`;
+        newElementBlock.innerHTML = `${arrows}`
+        document.getElementById("event-select-wrapper").appendChild(newElementBlock);
+        $(`#event-select-element-${i}`).attr('value', `${arrows}`)
+    }
+    $('#event-select-element-0').css('display', 'none')
+    $('.event-select-item').on('click', function() {
+        $('.event-select-wrapper').toggleClass('display-n')
+    })
+    $(".event-select-element").on('click', function() {
+        let idElement = this.id
+        let valueElement = $(`#${idElement}`).val()
+        $('.event-select-placeholder').html(valueElement)
+        $('#event-events option:nth-child(1)').val(valueElement)
+        $('#event-events option:nth-child(1)').html(valueElement)
+    })
+})
+
+
 var modelOrdersSliders = new Swiper(".modelOrdersSliders", {
     slidesPerView: 1, 
     spaceBetween: 10,
