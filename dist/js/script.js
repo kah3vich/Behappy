@@ -18671,9 +18671,6 @@ function checkCountElementObjConstructor() {
         $('.const-content__block-banner-row-item img').css('width', '48px')
     }
 
-    
-
-
     if (countElementObjConstructorIllustrations == 51) {
         $('.const-content__block-banner-row-item img').css('width', '48px')
         $('.const-content__block-banner-row').css("grid-template-rows", "1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr")
@@ -21222,6 +21219,7 @@ $(function() {
         $('.event-select-placeholder').html(valueElement)
         $('#event-events option:nth-child(1)').val(valueElement)
         $('#event-events option:nth-child(1)').html(valueElement)
+        $('.event-select-placeholder').css('color', '#fff')
     })
 })
 

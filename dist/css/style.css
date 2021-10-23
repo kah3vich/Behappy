@@ -3795,6 +3795,7 @@
 }
 
 .model-header {
+  margin: 0 0 -85px 0;
   position: relative;
   width: 540px;
   height: 861px;
@@ -64014,7 +64015,7 @@ input[type=range]::-webkit-slider-runnable-track {
   width: 210px;
   height: 20px;
   background: transparent;
-  color: #bcbcbc;
+  color: #fff;
   border: none;
   margin: 0 0 5px 0;
   text-align: left;

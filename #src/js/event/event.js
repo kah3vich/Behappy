@@ -118,5 +118,6 @@ $(function() {
         $('.event-select-placeholder').html(valueElement)
         $('#event-events option:nth-child(1)').val(valueElement)
         $('#event-events option:nth-child(1)').html(valueElement)
+        $('.event-select-placeholder').css('color', '#fff')
     })
 })
