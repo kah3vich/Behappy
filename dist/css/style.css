@@ -74133,6 +74133,10 @@ html .ui-button.ui-state-disabled:active,
     width: 390px;
   }
 
+  .ord-pay__block-data-content {
+    margin: 15px 0 0 0;
+  }
+
   .urg-content__block-banner {
     width: 400px;
     margin: 73px auto 0 auto;
@@ -75979,6 +75983,10 @@ html .ui-button.ui-state-disabled:active,
     position: absolute;
     top: 9px;
     left: 9px;
+  }
+
+  .ord-pay__block-data-delivery .ord-pay__block-data-label {
+    margin: 15px 0 0 0;
   }
 
   .new-content__block-text {
