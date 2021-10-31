@@ -263,7 +263,12 @@
         bottom: -25px;
         left: -50%;
     }
-
+    .quiz-content__block-range-count {
+        margin: 90px 0 0 0;
+    }
+    .quiz-content__block-range-wrapper {
+        margin: 70px 0 0 0;
+    }
 }
 @media (max-width: 920px) {
     .quiz-content__block-whom-wrapper {
@@ -613,6 +618,7 @@
         z-index: -1;
         display: block;
     }
+
 }
 @media (max-width: 750px) {
     .quiz-content__block-range-title {
@@ -637,6 +643,9 @@
         -webkit-appearance: none;
         background: 0 0;
         position: relative;
+    }
+    .quiz-content__block-range-wrapper {
+        margin: 80px 0 0 0;
     }
     .quiz-content__block-range-wrapper-line {
         width: 58%;

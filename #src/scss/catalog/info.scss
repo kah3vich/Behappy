@@ -10,6 +10,9 @@
         &-slider {
             width: 100%;
             height: 445px;
+            & .swiper-slide {
+                cursor: pointer;
+            }
             & .swiper-control {
                 position: relative;
                 height: 95px;
@@ -64,6 +67,7 @@
                 border-radius: 20px;
                 width: 100%;
                 height: 340px;
+                cursor: pointer;
                 &:nth-child(2) {
                     margin: 0 30px;
                 }

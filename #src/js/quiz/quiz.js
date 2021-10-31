@@ -231,51 +231,51 @@ renderInputOrderQuiz()
 
 //! Выпадающий список - выбора города
 
-$('select#quizCity').each(function(){
-    var $this = $(this), numberOfOptions = $(this).children('option').length;
+// $('select#quizCity').each(function(){
+//     var $this = $(this), numberOfOptions = $(this).children('option').length;
 
-    $this.addClass('ord-select-hidden'); 
-    $this.wrap('<div class="ord-select"></div>');
-    $this.after('<div class="ord-select-styled"></div>');
+//     $this.addClass('ord-select-hidden'); 
+//     $this.wrap('<div class="ord-select"></div>');
+//     $this.after('<div class="ord-select-styled"></div>');
 
-    var $styledSelect = $this.next('div.ord-select-styled');
-    $styledSelect.text($this.children('option').eq(0).text());
+//     var $styledSelect = $this.next('div.ord-select-styled');
+//     $styledSelect.text($this.children('option').eq(0).text());
 
-    var $list = $('<ul />', {
-        'class': 'ord-select-options'
-    }).insertAfter($styledSelect);
+//     var $list = $('<ul />', {
+//         'class': 'ord-select-options'
+//     }).insertAfter($styledSelect);
 
-    for (var i = 0; i < numberOfOptions; i++) {
-        $('<li />', {
-            text: $this.children('option').eq(i).text(),
-            rel: $this.children('option').eq(i).val()
-        }).appendTo($list);
-    }
+//     for (var i = 0; i < numberOfOptions; i++) {
+//         $('<li />', {
+//             text: $this.children('option').eq(i).text(),
+//             rel: $this.children('option').eq(i).val()
+//         }).appendTo($list);
+//     }
 
-    var $listItems = $list.children('li');
+//     var $listItems = $list.children('li');
 
-    $styledSelect.click(function(e) {
-        e.stopPropagation();
-        $('div.ord-select-styled.ord-active').not(this).each(function(){
-            $(this).removeClass('ord-active').next('ul.ord-select-options').hide();
-        });
-        $(this).toggleClass('ord-active').next('ul.ord-select-options').toggle();
-    });
+//     $styledSelect.click(function(e) {
+//         e.stopPropagation();
+//         $('div.ord-select-styled.ord-active').not(this).each(function(){
+//             $(this).removeClass('ord-active').next('ul.ord-select-options').hide();
+//         });
+//         $(this).toggleClass('ord-active').next('ul.ord-select-options').toggle();
+//     });
 
-    $listItems.click(function(e) {
-        e.stopPropagation();
-        $styledSelect.text($(this).text()).removeClass('ord-active');
-        $this.val($(this).attr('rel'));
-        $list.hide();
-        //console.log($this.val());
-    });
+//     $listItems.click(function(e) {
+//         e.stopPropagation();
+//         $styledSelect.text($(this).text()).removeClass('ord-active');
+//         $this.val($(this).attr('rel'));
+//         $list.hide();
+//         //console.log($this.val());
+//     });
 
-    $(document).click(function() {
-        $styledSelect.removeClass('ord-active');
-        $list.hide();
-    });
+//     $(document).click(function() {
+//         $styledSelect.removeClass('ord-active');
+//         $list.hide();
+//     });
 
-});
+// });
 
 //! --------------------------------------------------------------------------------------------
 
@@ -1236,31 +1236,35 @@ $('#quizColorItem_2').on('click', function() {
 })
 
 
-$('.ord-quiz__block-data-address-city').on('click', function() {
-    $('.ord-quiz__block-data-address-city-select').toggleClass('display-n')
-    $(this).toggleClass('ord-quiz__block-data-address-city-active')
-})
-$('#ordQuizSelectItem-1').on('click', function() {
-    let ordQuizSelectItem = $(this).val()
-    $('.ord-quiz__block-data-address-city p').html(ordQuizSelectItem)
-})
-$('#ordQuizSelectItem-2').on('click', function() {
-    let ordQuizSelectItem = $(this).val()
-    $('.ord-quiz__block-data-address-city p').html(ordQuizSelectItem)
-})
-$('#ordQuizSelectItem-3').on('click', function() {
-    let ordQuizSelectItem = $(this).val()
-    $('.ord-quiz__block-data-address-city p').html(ordQuizSelectItem)
-})
-$('#ordQuizSelectItem-4').on('click', function() {
-    let ordQuizSelectItem = $(this).val()
-    $('.ord-quiz__block-data-address-city p').html(ordQuizSelectItem)
-})
-$('#ordQuizSelectItem-5').on('click', function() {
-    let ordQuizSelectItem = $(this).val()
-    $('.ord-quiz__block-data-address-city p').html(ordQuizSelectItem)
-})
-$('#ordQuizSelectItem-6').on('click', function() {
-    let ordQuizSelectItem = $(this).val()
-    $('.ord-quiz__block-data-address-city p').html(ordQuizSelectItem)
+
+// quiz city
+
+
+
+$(function() {
+    $('#quizCity').css('display', 'none')
+    $('#quizCity').after('<div class="quiz__city-select-item"><div class="quiz__city-select-placeholder">Выберите город</div><div id="quizCityElement" class="quiz__city-select-wrapper display-n"></div></div>')
+    let count = $('#quizCity').children('option').length
+    for( let i = 0; i < count; i++) {
+        let arrows = $('#quizCity').children('option').eq(i).val()
+        let newElementBlock = document.createElement("button");
+        newElementBlock.classList.add("quiz__city-select-element")
+        newElementBlock.id = `quiz__city-select-element-${i}`;
+        newElementBlock.innerHTML = `${arrows}`
+        document.getElementById("quizCityElement").appendChild(newElementBlock);
+        $(`#quiz__city-select-element-${i}`).attr('value', `${arrows}`)
+    }
+    $('#quiz__city-select-element-0').css('display', 'none')
+    $('.quiz__city-select-item').on('click', function() {
+        $(this).toggleClass('quiz__city-select-item-active')
+        $('.quiz__city-select-wrapper').toggleClass('display-n')
+    })
+    $(".quiz__city-select-element").on('click', function() {
+        let idElement = this.id
+        let valueElement = $(`#${idElement}`).val()
+        $('.quiz__city-select-placeholder').css('opacity', '1')
+        $('.quiz__city-select-placeholder').html(valueElement)
+        $('#quizCity option:nth-child(1)').val(valueElement)
+        $('#quizCity option:nth-child(1)').html(valueElement)
+    })
 })

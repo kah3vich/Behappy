@@ -122,6 +122,9 @@
         &-slider-1 {
             width: 100%;
             margin-top: 38px;
+            & .swiper-slide { 
+                cursor: pointer;
+            }
             .swiper-control-1 {
                 position: relative;
                 width: 100%;
@@ -158,6 +161,9 @@
         &-slider-2 {
             width: 100%;
             margin-top: 38px;
+            & .swiper-slide { 
+                cursor: pointer;
+            }
             .swiper-control-2 {
                 position: relative;
                 width: 100%;

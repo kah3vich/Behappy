@@ -12,7 +12,7 @@
             &-back {
                 cursor: pointer;
                 position: absolute;
-                top: -63px;
+                top: -35px;
                 left: 0;
             }
             &-title {
@@ -185,7 +185,7 @@
             &-back {
                 cursor: pointer;
                 position: absolute;
-                top: -43px;
+                top: -35px;
                 left: 0;
             }
             &-title {
@@ -312,7 +312,7 @@
             &-back {
                 cursor: pointer;
                 position: absolute;
-                top: -43px;
+                top: -35px;
                 left: 0;
             }
             &-title {
@@ -448,7 +448,7 @@
             &-back {
                 cursor: pointer;
                 position: absolute;
-                top: -43px;
+                top: -35px;
                 left: 0;
             }
             &-title {
@@ -739,7 +739,7 @@
             &-back {
                 cursor: pointer;
                 position: absolute;
-                top: -43px;
+                top: -35px;
                 left: 0;
             }
             &-title {
@@ -929,7 +929,7 @@
             &-back {
                 cursor: pointer;
                 position: absolute;
-                top: -43px;
+                top: -35px;
                 left: 0;
             }
             &-title {
@@ -3576,7 +3576,7 @@
         &-back {
             cursor: pointer;
             position: absolute;
-            top: -39px;
+            top: -25px;
         }
     }
     &__catalog {
@@ -4469,14 +4469,14 @@
                             transform: rotate(180deg);
                         }
                     }
-                    &::before {
-                        transition: all 0.5s ease;
-                        content: url(../../svg/order/arrow-down.svg);
-                        position: absolute;
-                        top: 10px;
-                        right: 20px;
-                        height: 27px;
-                    }
+                    // &::before {
+                    //     transition: all 0.5s ease;
+                    //     content: url(../../svg/order/arrow-down.svg);
+                    //     position: absolute;
+                    //     top: 10px;
+                    //     right: 20px;
+                    //     height: 27px;
+                    // }
                     & p {
                         font-family: Circe;
                         font-style: normal;
@@ -6734,3 +6734,101 @@ input[type=radio]:checked ~ .ord-quiz__block-data-time-check {
 
 
 //! --------------------------------------------------------------------------------------
+
+
+
+
+/* quiz city */
+
+.quiz__city-select-item {
+    width: 230px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    cursor: pointer;
+    font-family: Circe;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-shadow: 0px 0px 4px #000000;
+    transition: all 0.5s ease;
+}
+.quiz__city-select-item::after {
+    transition: all 0.5s ease;
+    content: url(../svg/arrow-down.svg);
+    position: absolute;
+    top: 6px;
+    right: 12px;
+    height: 17px;
+    transition: all 0.5 ease;
+}
+.quiz__city-select-item-active::after {
+    transition: all 0.5s ease;
+    transform: rotate(180deg);
+    transition: all 0.5s ease;
+}
+.quiz__city-select-wrapper {
+    position: absolute;
+    bottom: -228px;
+    left: -22px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: auto;
+    overflow-x: hidden;
+    padding: 20px 0 20px 20px;
+    width: 180px;
+    height: 223px;
+    background: #04133c;
+    border: 1px solid #002685;
+    -webkit-box-shadow: 3px 3px 6px rgb(222 51 254 / 20%), -3px -3px 6px rgb(22 184 195 / 20%);
+    box-shadow: 3px 3px 6px rgb(222 51 254 / 20%), -3px -3px 6px rgb(22 184 195 / 20%);
+    border-radius: 3px;
+    z-index: 10;
+}
+.quiz__city-select-wrapper::-webkit-scrollbar {
+    width: 27px;
+}
+.quiz__city-select-wrapper::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 10px 10px #854FC8;
+            box-shadow: inset 0 0 10px 10px #854FC8;
+    border: solid 12px transparent;
+    margin: 0 10px 0 0;
+}
+.quiz__city-select-wrapper::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 10px 10px #fff;
+            box-shadow: inset 0 0 10px 10px #fff;
+    border: solid 10px transparent;
+}
+.quiz__city-select-element {
+    width: 210px;
+    height: 20px;
+    background: transparent;
+    color: #000;
+    border: none;
+    margin: 0 0 5px 0;
+    text-align: left;
+    cursor: pointer;
+    font-family: Circe;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+}
+.quiz__city-select-placeholder {
+    opacity: 0.5;
+}

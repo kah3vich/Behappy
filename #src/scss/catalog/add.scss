@@ -25,6 +25,9 @@
         &-slider {
             width: 100%;
             margin-top: 42px;
+            & .swiper-slide {
+                cursor: pointer;
+            }
             & .swiper-control {
                 position: relative;
                 height: 95px;

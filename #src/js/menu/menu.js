@@ -728,3 +728,125 @@ $('#mediaModelClientEntry').on('click', function() {
 });
 
 //! --------------------------------------------------------------------------------------------
+
+
+
+$(function() {
+    $('#headerCity').css('display', 'none')
+    $('#headerCity').after('<div class="header__city-select-item"><div class="header__city-select-placeholder">Выберите город</div><div id="headerCityElement" class="header__city-select-wrapper display-n"></div></div>')
+    let count = $('#headerCity').children('option').length
+    for( let i = 0; i < count; i++) {
+        let arrows = $('#headerCity').children('option').eq(i).val()
+        let newElementBlock = document.createElement("button");
+        newElementBlock.classList.add("header__city-select-element")
+        newElementBlock.id = `header__city-select-element-${i}`;
+        newElementBlock.innerHTML = `${arrows}`
+        document.getElementById("headerCityElement").appendChild(newElementBlock);
+        $(`#header__city-select-element-${i}`).attr('value', `${arrows}`)
+    }
+    $('#header__city-select-element-0').css('display', 'none')
+    $('.header__city-select-item').on('click', function() {
+        $(this).toggleClass('header__city-select-item-active')
+        $('.header__city-select-wrapper').toggleClass('display-n')
+    })
+    $(".header__city-select-element").on('click', function() {
+        let idElement = this.id
+        let valueElement = $(`#${idElement}`).val()
+        $('.header__city-select-placeholder').html(valueElement)
+        $('#headerCity option:nth-child(1)').val(valueElement)
+        $('#headerCity option:nth-child(1)').html(valueElement)
+    })
+})
+
+
+$(function() {
+    $('#headerCatalog').css('display', 'none')
+    $('#headerCatalog').after('<div class="header__catalog-select-item"><div class="header__catalog-select-placeholder">Подборки</div><div id="headerCatalogElement" class="header__catalog-select-wrapper display-n"></div></div>')
+    let count = $('#headerCatalog').children('option').length
+    for( let i = 0; i < count; i++) {
+        let arrows = $('#headerCatalog').children('option').eq(i).val()
+        let newElementBlock = document.createElement("button");
+        newElementBlock.classList.add("header__catalog-select-element")
+        newElementBlock.id = `header__catalog-select-element-${i}`;
+        newElementBlock.innerHTML = `${arrows}`
+        document.getElementById("headerCatalogElement").appendChild(newElementBlock);
+        $(`#header__catalog-select-element-${i}`).attr('value', `${arrows}`)
+    }
+    $('#header__catalog-select-element-0').css('display', 'none')
+    $('.header__catalog-select-item').on('click', function() {
+        $(this).toggleClass('header__catalog-select-item-active')
+        $('.header__catalog-select-wrapper').toggleClass('display-n')
+    })
+    $(".header__catalog-select-element").on('click', function() {
+        let idElement = this.id
+        let valueElement = $(`#${idElement}`).val()
+        $('.header__catalog-select-placeholder').html(valueElement)
+        $('#headerCatalog option:nth-child(1)').val(valueElement)
+        $('#headerCatalog option:nth-child(1)').html(valueElement)
+    })
+})
+
+
+
+// header menu media
+
+
+
+$(function() {
+    $('#mediaHeaderCity').css('display', 'none')
+    $('#mediaHeaderCity').after('<div class="media__city-select-item"><div class="media__city-select-placeholder">Выберите город</div><div id="mediaHeaderCityElement" class="media__city-select-wrapper display-n"></div></div>')
+    let count = $('#mediaHeaderCity').children('option').length
+    for( let i = 0; i < count; i++) {
+        let arrows = $('#mediaHeaderCity').children('option').eq(i).val()
+        let newElementBlock = document.createElement("button");
+        newElementBlock.classList.add("media__city-select-element")
+        newElementBlock.id = `media__city-select-element-${i}`;
+        newElementBlock.innerHTML = `${arrows}`
+        document.getElementById("mediaHeaderCityElement").appendChild(newElementBlock);
+        $(`#media__city-select-element-${i}`).attr('value', `${arrows}`)
+    }
+    $('#media__city-select-element-0').css('display', 'none')
+    $('.media__city-select-item').on('click', function() {
+        $(this).toggleClass('media__city-select-item-active')
+        $('.media__city-select-wrapper').toggleClass('display-n')
+    })
+    $(".media__city-select-element").on('click', function() {
+        let idElement = this.id
+        let valueElement = $(`#${idElement}`).val()
+        $('.media__city-select-placeholder').html(valueElement)
+        $('#mediaHeaderCity option:nth-child(1)').val(valueElement)
+        $('#mediaHeaderCity option:nth-child(1)').html(valueElement)
+    })
+})
+
+
+// header menu media catalog
+
+
+
+$(function() {
+    $('#mediaHeaderCatalog').css('display', 'none')
+    $('#mediaHeaderCatalog').after('<div class="media__catalog-select-item"><div class="media__catalog-select-placeholder">Выберите город</div><div id="mediaHeaderCatalogElement" class="media__catalog-select-wrapper display-n"></div></div>')
+    let count = $('#mediaHeaderCatalog').children('option').length
+    for( let i = 0; i < count; i++) {
+        let arrows = $('#mediaHeaderCatalog').children('option').eq(i).val()
+        let newElementBlock = document.createElement("button");
+        newElementBlock.classList.add("media__catalog-select-element")
+        newElementBlock.id = `media__catalog-select-element-${i}`;
+        newElementBlock.innerHTML = `${arrows}`
+        document.getElementById("mediaHeaderCatalogElement").appendChild(newElementBlock);
+        $(`#media__catalog-select-element-${i}`).attr('value', `${arrows}`)
+    }
+    $('#media__catalog-select-element-0').css('display', 'none')
+    $('.media__catalog-select-item').on('click', function() {
+        $(this).toggleClass('media__catalog-select-item-active')
+        $('.media__catalog-select-wrapper').toggleClass('display-n')
+    })
+    $(".media__catalog-select-element").on('click', function() {
+        let idElement = this.id
+        let valueElement = $(`#${idElement}`).val()
+        $('.media__catalog-select-placeholder').html(valueElement)
+        $('#mediaHeaderCatalog option:nth-child(1)').val(valueElement)
+        $('#mediaHeaderCatalog option:nth-child(1)').html(valueElement)
+    })
+})

@@ -255,3 +255,36 @@ renderInputSubModel()
 
 
 //! -------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+// sub city
+
+
+
+$(function() {
+    $('#subCity').css('display', 'none')
+    $('#subCity').after('<div class="sub__city-select-item"><div class="sub__city-select-placeholder">Выберите город</div><div id="subCityElement" class="sub__city-select-wrapper display-n"></div></div>')
+    let count = $('#subCity').children('option').length
+    for( let i = 0; i < count; i++) {
+        let arrows = $('#subCity').children('option').eq(i).val()
+        let newElementBlock = document.createElement("button");
+        newElementBlock.classList.add("sub__city-select-element")
+        newElementBlock.id = `sub__city-select-element-${i}`;
+        newElementBlock.innerHTML = `${arrows}`
+        document.getElementById("subCityElement").appendChild(newElementBlock);
+        $(`#sub__city-select-element-${i}`).attr('value', `${arrows}`)
+    }
+    $('#sub__city-select-element-0').css('display', 'none')
+    $('.sub__city-select-item').on('click', function() {
+        $('.sub__city-select-wrapper').toggleClass('display-n')
+    })
+    $(".sub__city-select-element").on('click', function() {
+        let idElement = this.id
+        let valueElement = $(`#${idElement}`).val()
+        $('.sub__city-select-placeholder').css('opacity', '1')
+        $('.sub__city-select-placeholder').html(valueElement)
+        $('#subCity option:nth-child(1)').val(valueElement)
+        $('#subCity option:nth-child(1)').html(valueElement)
+    })
+})

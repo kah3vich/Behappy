@@ -329,3 +329,35 @@ $('#ordSelectCityItem-7').on('click', function() {
     let ordSelectCityItem = $(this).val()
     $('.ord-pay__block-data-address-city p').html(ordSelectCityItem)
 });
+
+
+// order city
+
+
+
+$(function() {
+    $('#orderCity').css('display', 'none')
+    $('#orderCity').after('<div class="order__city-select-item"><div class="order__city-select-placeholder">Выберите город</div><div id="orderCityElement" class="order__city-select-wrapper display-n"></div></div>')
+    let count = $('#orderCity').children('option').length
+    for( let i = 0; i < count; i++) {
+        let arrows = $('#orderCity').children('option').eq(i).val()
+        let newElementBlock = document.createElement("button");
+        newElementBlock.classList.add("order__city-select-element")
+        newElementBlock.id = `order__city-select-element-${i}`;
+        newElementBlock.innerHTML = `${arrows}`
+        document.getElementById("orderCityElement").appendChild(newElementBlock);
+        $(`#order__city-select-element-${i}`).attr('value', `${arrows}`)
+    }
+    $('#order__city-select-element-0').css('display', 'none')
+    $('.order__city-select-item').on('click', function() {
+        $('.order__city-select-wrapper').toggleClass('display-n')
+    })
+    $(".order__city-select-element").on('click', function() {
+        let idElement = this.id
+        let valueElement = $(`#${idElement}`).val()
+        $('.order__city-select-placeholder').css('opacity', '1')
+        $('.order__city-select-placeholder').html(valueElement)
+        $('#orderCity option:nth-child(1)').val(valueElement)
+        $('#orderCity option:nth-child(1)').html(valueElement)
+    })
+})
