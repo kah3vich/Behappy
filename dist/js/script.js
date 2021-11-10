@@ -1812,6 +1812,20 @@ $('.march-content__block-close').on('click', function() {
 //! -------------------------------------------------------------------------------
 
 
+
+function modelShareCopy() {
+    var copyText = document.getElementById("modelShareCopy");
+    copyText.select();
+    document.execCommand("copy");
+}
+
+$('#modelShareClose').on('click', function() {
+    $('.model-share').addClass('display-n')
+});
+$('.march-content__block-collections-add-share').on('click', function() {
+    $('.model-share').removeClass('display-n')
+});
+
 //! Передача значение в тег из input-range 
 
 $('#quiz-range').on('input',function () {
@@ -3082,6 +3096,38 @@ $(function() {
         $('#quizCity option:nth-child(1)').html(valueElement)
     })
 })
+
+
+
+
+
+
+
+
+$('.ord-quiz__catalog-item-1').on('click', function() {
+    $('.ord-quiz').addClass('display-n')
+    $('.quiz-content__block-whom').removeClass('display-n')
+});
+$('.ord-quiz__catalog-item-2').on('click', function() {
+    $('.ord-quiz').addClass('display-n')
+    $('.quiz-content__block-type').removeClass('display-n')
+});
+$('.ord-quiz__catalog-item-3').on('click', function() {
+    $('.ord-quiz').addClass('display-n')
+    $('.quiz-content__block-shade').removeClass('display-n')
+});
+$('.ord-quiz__catalog-item-4').on('click', function() {
+    $('.ord-quiz').addClass('display-n')
+    $('.quiz-content__block-color').removeClass('display-n')
+});
+$('.ord-quiz__catalog-item-5').on('click', function() {
+    $('.ord-quiz').addClass('display-n')
+    $('.quiz-content__block-range').removeClass('display-n')
+});
+$('.ord-quiz__catalog-item-6').on('click', function() {
+    $('.ord-quiz').addClass('display-n')
+    $('.quiz-content__block-add').removeClass('display-n')
+});
 
 //! Переворот карточек 
 
@@ -21576,6 +21622,10 @@ $('.header-profile__menu-list-close').on('click', function() {
 
 // renderCalendar();
 
+let d = new Date();
+let yts = d.setHours(0,0,0,0) -  24*3600*1000;
+console.log(yts / 24 / 3600 / 1000)
+
 
 $.datepicker.regional['ru'] = {
 	closeText: 'Закрыть',
@@ -21592,7 +21642,7 @@ $.datepicker.regional['ru'] = {
 	firstDay: 1,
 	isRTL: false,
 	showMonthAfterYear: false,
-	yearSuffix: ''
+	yearSuffix: '',
 };
 $.datepicker.setDefaults($.datepicker.regional['ru']);
 
@@ -21608,7 +21658,14 @@ $.datepicker.setDefaults($.datepicker.regional['ru']);
     $("#datepickerToy-2").datepicker();
     $("#datepickerToy-3").datepicker();
 
-    $("#datepickerBallons-1").datepicker();
+    $("#datepickerBallons-1").datepicker({
+		beforeShowDay: function(d){      
+			if(d.getTime() == yts){
+				return [true, 'wow', ''];
+			}
+			return [true];
+		}
+	});
     $("#datepickerBallons-2").datepicker();
     $("#datepickerBallons-3").datepicker();
 

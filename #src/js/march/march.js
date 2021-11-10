@@ -57,3 +57,18 @@ $('.march-content__block-close').on('click', function() {
 
 
 //! -------------------------------------------------------------------------------
+
+
+
+function modelShareCopy() {
+    var copyText = document.getElementById("modelShareCopy");
+    copyText.select();
+    document.execCommand("copy");
+}
+
+$('#modelShareClose').on('click', function() {
+    $('.model-share').addClass('display-n')
+});
+$('.march-content__block-collections-add-share').on('click', function() {
+    $('.model-share').removeClass('display-n')
+});

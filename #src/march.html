@@ -87,9 +87,55 @@
                     <div class="march-content__block-collections-add">
                         <div class="march-content__block-collections-add-shop">@@include('iconsprite/march/shop.svg')</div>
                         <div class="march-content__block-collections-add-share">@@include('iconsprite/march/share.svg')</div>
-                        <div class="march-content__block-collections-add-calendar">@@include('iconsprite/march/calendar.svg')</div>
+                        <button type="button" class="march-content__block-collections-add-calendar i-header__block-model-btn" data-bs-toggle="modal" data-bs-target="#indexModelCalendar">@@include('iconsprite/march/calendar.svg')</button>
+                        <div class="modal fade" id="indexModelCalendar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content i-header__calendar">
+                                    <button type="button" class="i-header__calendar-btn" data-bs-dismiss="modal" aria-label="Close">
+                                        @@include('iconsprite/close-model.svg')
+                                    </button>
+                                    <h2 class="i-header__calendar-title">Календарь скидок</h2>
+                                    <!-- <input type="text" id="datepicker" placeholder="Выберите дату"> -->
+                                    <div id="datepickerIndex"></div>
+                                    
+                                    <!-- <div class="calendar">
+                                        <div class="weekdays">
+                                            <div>пн</div>
+                                            <div>вт</div>
+                                            <div>ср</div>
+                                            <div>чт</div>
+                                            <div>пт</div>
+                                            <div>сб</div>
+                                            <div>вс</div>
+                                        </div>
+                                        <div class="month">
+                                            <i class="fas fa-angle-left prev"></i>
+                                            <div class="date">
+                                            <h1></h1>
+                                            <p></p>
+                                            </div>
+                                            <i class="fas fa-angle-right next"></i>
+                                        </div>
+                                        <div class="days"></div>
+                                        <div class="calendar-add"><p>Скидка каждые 7 / 14 / 21 день</p></div>
+                                    </div> -->
+                                    <div class="i-header__calendar-add">Получите  выгоду</div>
+                                    <p class="i-header__calendar-text">
+                                        При оплате заявки заблаговременно <br>
+                                        Вам доступна скидка, укажите <br>
+                                        желаемую дату. <br>
+                                        <br>
+                                        От 7 дней - 5% <br>
+                                        От 14 дней – 10% <br>
+                                        От 21 дня - 15%</p>
+                                </div>
+                            </div>
+                        </div>
                         <div class="march-content__block-collections-add-sum">24% 5340₽</div>
                     </div>
+                    <!-- <button type="button" class="i-header__block-model-btn" data-bs-toggle="modal" data-bs-target="#indexModelCalendar">
+                        Календарь скидок
+                    </button> -->
                 </li>
                 <li class="march-content__block-collections-item">
                     <div class="march-content__block-collections-img">
@@ -754,6 +800,7 @@
 </div>
 
 @@include('components/_modelNotice.html')
+@@include('components/_modelShare.html')
 
 @@include('components/_footer.html')
 @@include('components/_script.html')

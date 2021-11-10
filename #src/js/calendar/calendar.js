@@ -117,6 +117,10 @@
 
 // renderCalendar();
 
+let d = new Date();
+let yts = d.setHours(0,0,0,0) -  24*3600*1000;
+console.log(yts / 24 / 3600 / 1000)
+
 
 $.datepicker.regional['ru'] = {
 	closeText: 'Закрыть',
@@ -133,7 +137,7 @@ $.datepicker.regional['ru'] = {
 	firstDay: 1,
 	isRTL: false,
 	showMonthAfterYear: false,
-	yearSuffix: ''
+	yearSuffix: '',
 };
 $.datepicker.setDefaults($.datepicker.regional['ru']);
 
@@ -149,7 +153,14 @@ $.datepicker.setDefaults($.datepicker.regional['ru']);
     $("#datepickerToy-2").datepicker();
     $("#datepickerToy-3").datepicker();
 
-    $("#datepickerBallons-1").datepicker();
+    $("#datepickerBallons-1").datepicker({
+		beforeShowDay: function(d){      
+			if(d.getTime() == yts){
+				return [true, 'wow', ''];
+			}
+			return [true];
+		}
+	});
     $("#datepickerBallons-2").datepicker();
     $("#datepickerBallons-3").datepicker();
 

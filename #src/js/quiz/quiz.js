@@ -1268,3 +1268,35 @@ $(function() {
         $('#quizCity option:nth-child(1)').html(valueElement)
     })
 })
+
+
+
+
+
+
+
+
+$('.ord-quiz__catalog-item-1').on('click', function() {
+    $('.ord-quiz').addClass('display-n')
+    $('.quiz-content__block-whom').removeClass('display-n')
+});
+$('.ord-quiz__catalog-item-2').on('click', function() {
+    $('.ord-quiz').addClass('display-n')
+    $('.quiz-content__block-type').removeClass('display-n')
+});
+$('.ord-quiz__catalog-item-3').on('click', function() {
+    $('.ord-quiz').addClass('display-n')
+    $('.quiz-content__block-shade').removeClass('display-n')
+});
+$('.ord-quiz__catalog-item-4').on('click', function() {
+    $('.ord-quiz').addClass('display-n')
+    $('.quiz-content__block-color').removeClass('display-n')
+});
+$('.ord-quiz__catalog-item-5').on('click', function() {
+    $('.ord-quiz').addClass('display-n')
+    $('.quiz-content__block-range').removeClass('display-n')
+});
+$('.ord-quiz__catalog-item-6').on('click', function() {
+    $('.ord-quiz').addClass('display-n')
+    $('.quiz-content__block-add').removeClass('display-n')
+});

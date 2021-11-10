@@ -772,7 +772,9 @@
         position: absolute;
         right: 110px;
     }
-    
+    .model-share__block {
+        width: 95%;
+    }
 }
 @media (max-width: 750px) {
     .footer__block-text-logo-item,
@@ -852,11 +854,26 @@
         margin: 0;
     }
 }
+@media (max-width: 650px) {
+    .model-share__block-contact {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        gap: 20px 0;
+    }
+    .model-share__block-link-block {
+        width: 100%;
+        padding: 0 16px 0 16px;
+    }
+}
 @media (max-width: 600px) {
     .menu__block-contact-social {
         width: 340px;
     }
     .baskets {
+        width: 100%;
+    }
+    .model-share__block-link-block-input {
         width: 100%;
     }
 }
