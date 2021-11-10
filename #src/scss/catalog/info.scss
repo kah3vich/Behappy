@@ -239,7 +239,7 @@
                 gap: 30px 30px;
                 margin: 41px 0 0 0;
                 width: 526px;
-                height: 580px;
+                height: 100%;
                 &-item {
                     width: 156px;
                     height: 170px;
@@ -261,6 +261,111 @@
                     line-height: 19px;
                     text-align: center;
                     color: #FFFFFF;
+                }
+            }
+            &-lists {
+                width: 525px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                width: 526px;
+                margin: 33px 0 0 0;
+                position: relative;
+                display: none;
+                & .swiper-wrapper {
+                    margin: 7px 0 7px 0;
+                    padding: 0 5px !important;
+                }
+                & .swiper-pagination {
+                    bottom: -25px;
+                }
+                & .swiper-pagination-bullet {
+                    background: rgba(133, 79, 200, 0.8);
+                    opacity: 1;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                }
+                & .swiper-pagination-bullet-active {
+                    background: rgba(127, 132, 137, 0.25);
+                    opacity: 1;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                }
+                & .swiper-slide {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            &-slider {
+                margin: 47px 0 0 0;
+                width: 525px;
+                height: 330px;
+                background: #04133C;
+                border: 1px solid #002685;
+                box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+                border-radius: 20px;
+                position: relative;
+                &-close {
+                    width: 54px;
+                    height: 54px;
+                    background: #001F75;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: -20px;
+                    right: -20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                }
+                & .swiper-button-next {
+                    content: url(../svg/model-catalog/arrow-next.svg);
+                    width: 9px;
+                    height: 17px;
+                    position: absolute;
+                    top: auto;
+                    right: 20px;
+                    left: auto;
+                    bottom: 15px;
+                }
+                & .swiper-button-prev {
+                    content: url(../svg/model-catalog/arrow-prev.svg);
+                    width: 9px;
+                    height: 17px;
+                    position: absolute;
+                    top: auto;
+                    left: 20px;
+                    bottom: 15px;
+                }
+                & .modelCatalogAddBlockSlider {
+                    margin: 40px 0 0 0;
+                }
+                & .swiper-slide {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                & .swiper-pagination-bullet {
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background: rgba(133, 79, 200, 0.8);
+                    opacity: 1;
+                }
+                & .swiper-pagination-bullet-active {
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    opacity: 1;
+                    background: rgba(127, 132, 137, 0.25);
                 }
             }
             &-btn {

@@ -1751,6 +1751,119 @@ var modelSliderBannersCatalog = new Swiper(".modelSliderBannersCatalog", {
     }
 });
 
+
+
+
+
+var modelCatalogAddBlockSlider = new Swiper(".modelCatalogAddBlockSlider", {
+    slidesPerView: 3, 
+    spaceBetween: 0,
+    navigation: {
+        nextEl: ".model-catalog__card-block-slider .swiper-controls .swiper-button-next",
+        prevEl: ".model-catalog__card-block-slider .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: ".model-catalog__card-block-slider .swiper-controls .swiper-pagination",
+    },
+    keyboard: true,
+    breakpoints: {
+        580: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 0
+        },
+        0: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 0
+        }
+    }
+});
+
+
+
+$('.model-catalog__card-block-slider-close').on('click', function() {
+    $('.model-catalog__card-block-slider').addClass('display-n')
+});
+
+
+var modelCatalogAddsSlider = new Swiper(".modelCatalogAddsSlider", {
+    navigation: {
+        nextEl: ".model-catalog__card-block-lists .swiper-controls .swiper-button-next",
+        prevEl: ".model-catalog__card-block-lists .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: ".model-catalog__card-block-lists .swiper-controls .swiper-pagination",
+    },
+    keyboard: true,
+    slidesPerView: 3, 
+    spaceBetween: 10,
+    breakpoints: {
+        580: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 0
+        },
+        0: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 0
+        }
+    }
+});
+
+
+$('#modelCatalogAddElementMedia-1').on('click', function() {
+    $('.model-catalog__card-block-slider').removeClass('display-n')
+});
+$('#modelCatalogAddElementMedia-2').on('click', function() {
+    $('.model-catalog__card-block-slider').removeClass('display-n')
+});
+$('#modelCatalogAddElementMedia-3').on('click', function() {
+    $('.model-catalog__card-block-slider').removeClass('display-n')
+});
+$('#modelCatalogAddElementMedia-4').on('click', function() {
+    $('.model-catalog__card-block-slider').removeClass('display-n')
+});
+$('#modelCatalogAddElementMedia-5').on('click', function() {
+    $('.model-catalog__card-block-slider').removeClass('display-n')
+});
+$('#modelCatalogAddElementMedia-6').on('click', function() {
+    $('.model-catalog__card-block-slider').removeClass('display-n')
+});
+$('#modelCatalogAddElementMedia-7').on('click', function() {
+    $('.model-catalog__card-block-slider').removeClass('display-n')
+});
+$('#modelCatalogAddElementMedia-8').on('click', function() {
+    $('.model-catalog__card-block-slider').removeClass('display-n')
+});
+$('#modelCatalogAddElementMedia-9').on('click', function() {
+    $('.model-catalog__card-block-slider').removeClass('display-n')
+});
+$('#modelCatalogAddElement-1').on('click', function() {
+    $('.model-catalog__card-block-slider').removeClass('display-n')
+});
+$('#modelCatalogAddElement-2').on('click', function() {
+    $('.model-catalog__card-block-slider').removeClass('display-n')
+});
+$('#modelCatalogAddElement-3').on('click', function() {
+    $('.model-catalog__card-block-slider').removeClass('display-n')
+});
+$('#modelCatalogAddElement-4').on('click', function() {
+    $('.model-catalog__card-block-slider').removeClass('display-n')
+});
+$('#modelCatalogAddElement-5').on('click', function() {
+    $('.model-catalog__card-block-slider').removeClass('display-n')
+});
+$('#modelCatalogAddElement-6').on('click', function() {
+    $('.model-catalog__card-block-slider').removeClass('display-n')
+});
+$('#modelCatalogAddElement-7').on('click', function() {
+    $('.model-catalog__card-block-slider').removeClass('display-n')
+});
+$('#modelCatalogAddElement-8').on('click', function() {
+    $('.model-catalog__card-block-slider').removeClass('display-n')
+});
+$('#modelCatalogAddElement-9').on('click', function() {
+    $('.model-catalog__card-block-slider').removeClass('display-n')
+});
+
 //! Открытие фильтра 
 
 $('.march-content__block-text-filter-block').on('click', function() {
@@ -3128,6 +3241,11 @@ $('.ord-quiz__catalog-item-6').on('click', function() {
     $('.ord-quiz').addClass('display-n')
     $('.quiz-content__block-add').removeClass('display-n')
 });
+
+
+$('#quizModelOrderDate').on('click', function() {
+    $('.model-calendar').removeClass('display-n')
+})
 
 //! Переворот карточек 
 
@@ -21622,9 +21740,8 @@ $('.header-profile__menu-list-close').on('click', function() {
 
 // renderCalendar();
 
-let d = new Date();
-let yts = d.setHours(0,0,0,0) -  24*3600*1000;
-console.log(yts / 24 / 3600 / 1000)
+
+// console.log(yts / 24 / 3600 / 1000)
 
 
 $.datepicker.regional['ru'] = {
@@ -21658,10 +21775,29 @@ $.datepicker.setDefaults($.datepicker.regional['ru']);
     $("#datepickerToy-2").datepicker();
     $("#datepickerToy-3").datepicker();
 
+	let d = new Date("2021-11-10");
+	let calendarCardEventDay_1 = d.setHours(0,0,0,0)
+	let calendarCardEventDay_2 = d.setHours(0,0,0,0) + (24*3600*1000)
+	let calendarCardEventDay_3 = d.setHours(0,0,0,0) + (24*3600*1000) * 2
+	let calendarCardEventDay_4 = d.setHours(0,0,0,0) + (24*3600*1000) * 3
+	let calendarCardEventDay_5 = d.setHours(0,0,0,0) + (24*3600*1000) * 4
+	let calendarCardEventDay_6 = d.setHours(0,0,0,0) + (24*3600*1000) * 5
+	// let yts = d.setHours(0,0,0,0) + (24*3600*1000);
+
     $("#datepickerBallons-1").datepicker({
 		beforeShowDay: function(d){      
-			if(d.getTime() == yts){
-				return [true, 'wow', ''];
+			if(d.getTime() == calendarCardEventDay_1){
+				return [true, 'calendarCardEventDay-1', ''];
+			} else if(d.getTime() == calendarCardEventDay_2){
+				return [true, 'calendarCardEventDay-2', ''];
+			} else if(d.getTime() == calendarCardEventDay_3){
+				return [true, 'calendarCardEventDay-3', ''];
+			} else if(d.getTime() == calendarCardEventDay_4){
+				return [true, 'calendarCardEventDay-4', ''];
+			} else if(d.getTime() == calendarCardEventDay_5){
+				return [true, 'calendarCardEventDay-5', ''];
+			} else if(d.getTime() == calendarCardEventDay_6){
+				return [true, 'calendarCardEventDay-6', ''];
 			}
 			return [true];
 		}
@@ -21670,7 +21806,11 @@ $.datepicker.setDefaults($.datepicker.regional['ru']);
     $("#datepickerBallons-3").datepicker();
 
     $("#datepickerOrder").datepicker();
-    $("#datepickerOrderQuiz").datepicker();
+    $("#datepickerOrderQuiz").datepicker().on('change', function(){
+        $('.model-calendar').addClass('display-n')
+		let quizOrderDataCalendarInput = $('#datepickerOrderQuiz').val()
+		$('.ord-quiz__block-data-address-date input').val(quizOrderDataCalendarInput)
+    });
 
 	$("#datepickerStock").datepicker();
 
@@ -21682,7 +21822,9 @@ $.datepicker.setDefaults($.datepicker.regional['ru']);
 
 
 
-
+$('#modelCalendarCloseButton').on('click', function() {
+	$('.model-calendar').addClass('display-n')
+})
 
 
 //! ------------------------------------------------------------------------------------

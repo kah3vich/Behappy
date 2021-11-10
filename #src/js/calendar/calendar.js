@@ -117,9 +117,8 @@
 
 // renderCalendar();
 
-let d = new Date();
-let yts = d.setHours(0,0,0,0) -  24*3600*1000;
-console.log(yts / 24 / 3600 / 1000)
+
+// console.log(yts / 24 / 3600 / 1000)
 
 
 $.datepicker.regional['ru'] = {
@@ -153,10 +152,29 @@ $.datepicker.setDefaults($.datepicker.regional['ru']);
     $("#datepickerToy-2").datepicker();
     $("#datepickerToy-3").datepicker();
 
+	let d = new Date("2021-11-10");
+	let calendarCardEventDay_1 = d.setHours(0,0,0,0)
+	let calendarCardEventDay_2 = d.setHours(0,0,0,0) + (24*3600*1000)
+	let calendarCardEventDay_3 = d.setHours(0,0,0,0) + (24*3600*1000) * 2
+	let calendarCardEventDay_4 = d.setHours(0,0,0,0) + (24*3600*1000) * 3
+	let calendarCardEventDay_5 = d.setHours(0,0,0,0) + (24*3600*1000) * 4
+	let calendarCardEventDay_6 = d.setHours(0,0,0,0) + (24*3600*1000) * 5
+	// let yts = d.setHours(0,0,0,0) + (24*3600*1000);
+
     $("#datepickerBallons-1").datepicker({
 		beforeShowDay: function(d){      
-			if(d.getTime() == yts){
-				return [true, 'wow', ''];
+			if(d.getTime() == calendarCardEventDay_1){
+				return [true, 'calendarCardEventDay-1', ''];
+			} else if(d.getTime() == calendarCardEventDay_2){
+				return [true, 'calendarCardEventDay-2', ''];
+			} else if(d.getTime() == calendarCardEventDay_3){
+				return [true, 'calendarCardEventDay-3', ''];
+			} else if(d.getTime() == calendarCardEventDay_4){
+				return [true, 'calendarCardEventDay-4', ''];
+			} else if(d.getTime() == calendarCardEventDay_5){
+				return [true, 'calendarCardEventDay-5', ''];
+			} else if(d.getTime() == calendarCardEventDay_6){
+				return [true, 'calendarCardEventDay-6', ''];
 			}
 			return [true];
 		}
@@ -165,7 +183,11 @@ $.datepicker.setDefaults($.datepicker.regional['ru']);
     $("#datepickerBallons-3").datepicker();
 
     $("#datepickerOrder").datepicker();
-    $("#datepickerOrderQuiz").datepicker();
+    $("#datepickerOrderQuiz").datepicker().on('change', function(){
+        $('.model-calendar').addClass('display-n')
+		let quizOrderDataCalendarInput = $('#datepickerOrderQuiz').val()
+		$('.ord-quiz__block-data-address-date input').val(quizOrderDataCalendarInput)
+    });
 
 	$("#datepickerStock").datepicker();
 
@@ -177,7 +199,9 @@ $.datepicker.setDefaults($.datepicker.regional['ru']);
 
 
 
-
+$('#modelCalendarCloseButton').on('click', function() {
+	$('.model-calendar').addClass('display-n')
+})
 
 
 //! ------------------------------------------------------------------------------------

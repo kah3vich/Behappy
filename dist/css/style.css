@@ -9470,7 +9470,7 @@
   gap: 30px 30px;
   margin: 41px 0 0 0;
   width: 526px;
-  height: 580px;
+  height: 100%;
 }
 
 .model-catalog__card-block-list-item {
@@ -9502,6 +9502,142 @@
   line-height: 19px;
   text-align: center;
   color: #FFFFFF;
+}
+
+.model-catalog__card-block-lists {
+  width: 525px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 526px;
+  margin: 33px 0 0 0;
+  position: relative;
+  display: none;
+}
+
+.model-catalog__card-block-lists .swiper-wrapper {
+  margin: 7px 0 7px 0;
+  padding: 0 5px !important;
+}
+
+.model-catalog__card-block-lists .swiper-pagination {
+  bottom: -25px;
+}
+
+.model-catalog__card-block-lists .swiper-pagination-bullet {
+  background: rgba(133, 79, 200, 0.8);
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.model-catalog__card-block-lists .swiper-pagination-bullet-active {
+  background: rgba(127, 132, 137, 0.25);
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.model-catalog__card-block-lists .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.model-catalog__card-block-slider {
+  margin: 47px 0 0 0;
+  width: 525px;
+  height: 330px;
+  background: #04133C;
+  border: 1px solid #002685;
+  -webkit-box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+          box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+  border-radius: 20px;
+  position: relative;
+}
+
+.model-catalog__card-block-slider-close {
+  width: 54px;
+  height: 54px;
+  background: #001F75;
+  border-radius: 50%;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.model-catalog__card-block-slider .swiper-button-next {
+  content: url(../svg/model-catalog/arrow-next.svg);
+  width: 9px;
+  height: 17px;
+  position: absolute;
+  top: auto;
+  right: 20px;
+  left: auto;
+  bottom: 15px;
+}
+
+.model-catalog__card-block-slider .swiper-button-prev {
+  content: url(../svg/model-catalog/arrow-prev.svg);
+  width: 9px;
+  height: 17px;
+  position: absolute;
+  top: auto;
+  left: 20px;
+  bottom: 15px;
+}
+
+.model-catalog__card-block-slider .modelCatalogAddBlockSlider {
+  margin: 40px 0 0 0;
+}
+
+.model-catalog__card-block-slider .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.model-catalog__card-block-slider .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(133, 79, 200, 0.8);
+  opacity: 1;
+}
+
+.model-catalog__card-block-slider .swiper-pagination-bullet-active {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  opacity: 1;
+  background: rgba(127, 132, 137, 0.25);
 }
 
 .model-catalog__card-block-btn {
@@ -34145,6 +34281,30 @@ input[type=radio]:checked ~ .ord-quiz__block-data-time-text {
 
 .quiz__city-select-placeholder {
   opacity: 0.5;
+}
+
+.model-calendar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 21, 75, 0.4);
+  -webkit-backdrop-filter: blur(80px);
+  backdrop-filter: blur(80px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+  z-index: 1000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .err-content {
@@ -68067,8 +68227,8 @@ html .ui-button.ui-state-disabled:active,
 }
 
 .ui-datepicker-current-day {
-  width: 24px;
-  height: 24px;
+  width: 17px;
+  height: 17px;
   background: #0033BF;
   border: 1px solid #FFFFFF;
   border-radius: 50%;
@@ -68147,6 +68307,127 @@ html .ui-button.ui-state-disabled:active,
   font-weight: normal;
   font-size: 18px;
   line-height: 28px;
+  color: #FFFFFF;
+}
+
+.calendarCardEventDay-1 > a {
+  position: relative;
+}
+
+.calendarCardEventDay-1 > a::after {
+  content: "5233";
+  position: absolute;
+  text-align: center;
+  width: 23px;
+  top: 24px;
+  left: -2px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 7px;
+  line-height: 180%;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+}
+
+.calendarCardEventDay-2 > a {
+  position: relative;
+}
+
+.calendarCardEventDay-2 > a::after {
+  content: "6666";
+  position: absolute;
+  text-align: center;
+  width: 23px;
+  top: 24px;
+  left: -2px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 7px;
+  line-height: 180%;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+}
+
+.calendarCardEventDay-3 > a {
+  position: relative;
+}
+
+.calendarCardEventDay-3 > a::after {
+  content: "1337";
+  position: absolute;
+  text-align: center;
+  width: 23px;
+  top: 24px;
+  left: -2px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 7px;
+  line-height: 180%;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+}
+
+.calendarCardEventDay-4 > a {
+  position: relative;
+}
+
+.calendarCardEventDay-4 > a::after {
+  content: "5555";
+  position: absolute;
+  text-align: center;
+  width: 23px;
+  top: 24px;
+  left: -2px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 7px;
+  line-height: 180%;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+}
+
+.calendarCardEventDay-5 > a {
+  position: relative;
+}
+
+.calendarCardEventDay-5 > a::after {
+  content: "иди";
+  position: absolute;
+  text-align: center;
+  width: 23px;
+  top: 24px;
+  left: -2px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 7px;
+  line-height: 180%;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.calendarCardEventDay-6 > a {
+  position: relative;
+}
+
+.calendarCardEventDay-6 > a::after {
+  content: "спать";
+  position: absolute;
+  text-align: center;
+  width: 23px;
+  top: 24px;
+  left: -2px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 7px;
+  line-height: 180%;
+  letter-spacing: 0.5px;
   color: #FFFFFF;
 }
 
@@ -74452,8 +74733,29 @@ html .ui-button.ui-state-disabled:active,
     height: 185px;
   }
 
+  .model-catalog__card-block-slider-close {
+    width: 54px;
+    height: 54px;
+    background: #001f75;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    right: -6px;
+  }
+
   .model-catalog__card-block-list {
     display: none;
+  }
+
+  .model-catalog__card-block-lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .model-catalog__card-block-slider {
+    margin: 47px 0 0 -15px;
+    width: 95%;
   }
 
   .model-catalog__card-block-btn {
@@ -75203,6 +75505,16 @@ html .ui-button.ui-state-disabled:active,
 }
 
 @media (max-width: 620px) {
+  .model-catalog__card-block-list-item {
+    width: 94%;
+    height: 150px;
+  }
+
+  .model-catalog__card-block-lists {
+    width: 100%;
+    margin: 30px 0 0 -30px;
+  }
+
   .header-profile__policy-text {
     font-size: 13px;
   }
@@ -77680,10 +77992,6 @@ html .ui-button.ui-state-disabled:active,
 
   .model-catalog__card-info {
     margin: 0 0 0 18px;
-  }
-
-  .model-catalog__card-block-banners .swiper-slide {
-    margin: 0 0 0 -10px;
   }
 
   .model-catalog__card-block-btn-media {

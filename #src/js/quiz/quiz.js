@@ -1300,3 +1300,8 @@ $('.ord-quiz__catalog-item-6').on('click', function() {
     $('.ord-quiz').addClass('display-n')
     $('.quiz-content__block-add').removeClass('display-n')
 });
+
+
+$('#quizModelOrderDate').on('click', function() {
+    $('.model-calendar').removeClass('display-n')
+})

@@ -278,8 +278,8 @@ input[type="range" i] {
     left: 2px;
 }
 .ui-datepicker-current-day {
-    width: 24px;
-    height: 24px;
+    width: 17px;
+    height: 17px;
     background: #0033BF;
     border: 1px solid #FFFFFF;
     border-radius: 50%;
@@ -355,16 +355,115 @@ input[type="range" i] {
 //! -------------------------------------------------------------------------------------
 
 
-// .wow > a {
-//     color: red !important;
-//     position: relative;
-//     &::after {
-//         content: "5233";
-//         position: absolute;
-//         top: 10px;
-//         left: 10px;
-//     }
-// }
+.calendarCardEventDay-1 > a {
+    position: relative;
+    &::after {
+        content: "5233";
+        position: absolute;
+        text-align: center;
+        width: 23px;
+        top: 24px;
+        left: -2px;
+        font-family: Circe;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 7px;
+        line-height: 180%;
+        letter-spacing: 0.5px;
+        color: #FFFFFF;
+    }
+}
+.calendarCardEventDay-2 > a {
+    position: relative;
+    &::after {
+        content: "6666";
+        position: absolute;
+        text-align: center;
+        width: 23px;
+        top: 24px;
+        left: -2px;
+        font-family: Circe;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 7px;
+        line-height: 180%;
+        letter-spacing: 0.5px;
+        color: #FFFFFF;
+    }
+}
+.calendarCardEventDay-3 > a {
+    position: relative;
+    &::after {
+        content: "1337";
+        position: absolute;
+        text-align: center;
+        width: 23px;
+        top: 24px;
+        left: -2px;
+        font-family: Circe;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 7px;
+        line-height: 180%;
+        letter-spacing: 0.5px;
+        color: #FFFFFF;
+    }
+}
+.calendarCardEventDay-4 > a {
+    position: relative;
+    &::after {
+        content: "5555";
+        position: absolute;
+        text-align: center;
+        width: 23px;
+        top: 24px;
+        left: -2px;
+        font-family: Circe;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 7px;
+        line-height: 180%;
+        letter-spacing: 0.5px;
+        color: #FFFFFF;
+    }
+}
+.calendarCardEventDay-5 > a {
+    position: relative;
+    &::after {
+        content: "иди";
+        position: absolute;
+        text-align: center;
+        width: 23px;
+        top: 24px;
+        left: -2px;
+        font-family: Circe;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 7px;
+        line-height: 180%;
+        letter-spacing: 0.5px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+}
+.calendarCardEventDay-6 > a {
+    position: relative;
+    &::after {
+        content: "спать";
+        position: absolute;
+        text-align: center;
+        width: 23px;
+        top: 24px;
+        left: -2px;
+        font-family: Circe;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 7px;
+        line-height: 180%;
+        letter-spacing: 0.5px;
+        color: #FFFFFF;
+    }
+}
 
 
 

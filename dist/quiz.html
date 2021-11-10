@@ -6980,30 +6980,8 @@
                                     <div class="ord-quiz__block-data-address-date">
                                         <label for="date-client">
                                             <!-- <input type="text" id="datepickerOrderQuiz" placeholder="дд.мм.гггг"> -->
-                                            <input type="text" placeholder="дд.мм.гггг" data-bs-toggle="modal" data-bs-target="#quizModelOrderDate">
-                                            <div class="modal fade" id="quizModelOrderDate" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                                <div class="modal-dialog">
-                                                    <div class="modal-content ord-quiz__block-data-address-date-model">
-                                                        <button type="button" class="btn-close ord-quiz__block-data-address-date-model-close" data-bs-dismiss="modal" aria-label="Close">
-                                                            <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M22.3281 22.3296L40.2735 40.275" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M22.1313 40.4727L40.4712 22.1328" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-                                                        </button>
-                                                        <div class="ord-quiz__block-data-address-date-model-title">Выберите дату</div>
-                                                        <div id="datepickerOrderQuiz" class="ord-quiz__block-data-address-date-model-calendar"></div>
-                                                        <div class="ord-quiz__block-data-address-date-model-add">Получите  выгоду</div>
-                                                        <div class="ord-quiz__block-data-address-date-model-text">
-                                                            При оплате заявки заблаговременно Вам доступна скидка, наша платформа рассчитает её самостоятельно для всех товаров , выберите желаемую дату исполнения.
-                                                            <br><b></b>
-                                                            От 7 дней - 5% <br>
-                                                            От 14 дней – 10% <br>
-                                                            От 21 дня - 15%
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <input type="text" placeholder="дд.мм.гггг" id="quizModelOrderDate">
+                                            
                                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M18.5391 1.64062H17.5547V0H15.9141V1.64062H5.08594V0H3.44531V1.64062H2.46094C1.10398 1.64062 0 2.7446 0 4.10156V18.5391C0 19.896 1.10398 21 2.46094 21H18.5391C19.896 21 21 19.896 21 18.5391V4.10156C21 2.7446 19.896 1.64062 18.5391 1.64062ZM19.3594 18.5391C19.3594 18.9914 18.9914 19.3594 18.5391 19.3594H2.46094C2.00862 19.3594 1.64062 18.9914 1.64062 18.5391V7.71094H19.3594V18.5391ZM19.3594 6.07031H1.64062V4.10156C1.64062 3.64924 2.00862 3.28125 2.46094 3.28125H3.44531V4.92188H5.08594V3.28125H15.9141V4.92188H17.5547V3.28125H18.5391C18.9914 3.28125 19.3594 3.64924 19.3594 4.10156V6.07031Z" fill="#16B8C3"/>
 <path d="M4.75781 9.43359H3.11719V11.0742H4.75781V9.43359Z" fill="#16B8C3"/>
@@ -7459,6 +7437,27 @@
         </div>
     </div>
 
+<div class="model-calendar display-n">
+    <div class="modal-content ord-quiz__block-data-address-date-model">
+        <button type="button" id="modelCalendarCloseButton" class="btn-close ord-quiz__block-data-address-date-model-close">
+            <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.3281 22.3296L40.2735 40.275" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.1313 40.4727L40.4712 22.1328" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+        </button>
+        <div class="ord-quiz__block-data-address-date-model-title">Выберите дату</div>
+        <div id="datepickerOrderQuiz" class="ord-quiz__block-data-address-date-model-calendar"></div>
+        <div class="ord-quiz__block-data-address-date-model-add">Получите  выгоду</div>
+        <div class="ord-quiz__block-data-address-date-model-text">
+            При оплате заявки заблаговременно Вам доступна скидка, наша платформа рассчитает её самостоятельно для всех товаров , выберите желаемую дату исполнения.
+            <br><b></b>
+            От 7 дней - 5% <br>
+            От 14 дней – 10% <br>
+            От 21 дня - 15%
+        </div>
+    </div>
+</div>
 <div class="model-notice display-n">
     <div class="model-notice__block">
         <button class="model-notice__block-close"><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">

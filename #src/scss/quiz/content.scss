@@ -6832,3 +6832,30 @@ input[type=radio]:checked ~ .ord-quiz__block-data-time-check {
 .quiz__city-select-placeholder {
     opacity: 0.5;
 }
+
+
+
+
+.model-calendar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,21,75,.4);
+    -webkit-backdrop-filter: blur(80px);
+    backdrop-filter: blur(80px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+    z-index: 1000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
