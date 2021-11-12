@@ -5812,7 +5812,7 @@
                 align-items: flex-start;
                 justify-content: flex-start;
                 &-img {
-                    width: 258px;
+                    width: 290px;
                     height: 276px;
                     position: relative;
                     display: flex;
@@ -5871,7 +5871,7 @@
                     &-container {
                         position: absolute;
                         top: -10px;
-                        left: 92px;
+                        left: 110px;
                         & p {
                             font-family: Circe;
                             font-style: normal;
@@ -5935,9 +5935,10 @@
                     flex-direction: column;
                     align-items: flex-start;
                     justify-content: flex-start;
-                    margin: 50px 0 0 auto;
+                    margin: 30px 0 0 auto;
                     width: 810px;
                     &-title {
+                        margin: 0 0 0 30px;
                         display: flex;
                         align-items: center;
                         justify-content: flex-start;
@@ -5958,7 +5959,21 @@
                         align-items: center;
                         justify-content: space-between;
                         width: 423px;
-                        margin: 0 0 0 auto;
+                        margin: 0 20px 0 auto;
+                        position: relative;
+                        &::after {
+                            content: "Выберите размер";
+                            position: absolute;
+                            top: -35px;
+                            left: 0;
+                            font-family: Circe;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 10px;
+                            line-height: 122%;
+                            letter-spacing: 0.5px;
+                            color: #B6B3B3;
+                        }
                         &-item {
                             width: 53px;
                             height: 53px;
@@ -5995,6 +6010,7 @@
                         width: 810px;
                         margin: 51px 0 0 0;
                         &-title {
+                            margin: 0 0 0 30px;
                             display: flex;
                             align-items: flex-start;
                             justify-content: flex-start;
@@ -6043,6 +6059,62 @@
                                     font-weight: bold;
                                     font-size: 10px;
                                     line-height: 122%;
+                                    letter-spacing: 0.5px;
+                                    color: #EEEEEE;
+                                }
+                            }
+                            &-cars {
+                                display: flex;
+                                align-items: center;
+                                position: absolute;
+                                top: 110px;
+                                left: 0;
+                                &-item {
+                                    width: 30px;
+                                    height: 30px;
+                                    background: linear-gradient(180deg, #D583FC 0%, #B01660 100%);
+                                    box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.25);
+                                    border-radius: 15px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                                &-text {
+                                    margin: 0 0 0 14px;
+                                    width: 196px;
+                                    font-family: Circe;
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 13px;
+                                    line-height: 122%;
+                                    letter-spacing: 0.5px;
+                                    color: #EEEEEE;
+                                }
+                            }
+                            &-lists {
+                                display: flex;
+                                align-items: center;
+                                position: absolute;
+                                top: 110px;
+                                left: 310px;
+                                &-item {
+                                    width: 30px;
+                                    height: 30px;
+                                    background: linear-gradient(180deg, #07C4C4 0%, #004D3A 100%);
+                                    box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.25);
+                                    border-radius: 15px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                                &-text {
+                                    margin: 0 0 0 14px;
+                                    width: 275px;
+                                    font-family: Circe;
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 13px;
+                                    line-height: 128%;
                                     letter-spacing: 0.5px;
                                     color: #EEEEEE;
                                 }
@@ -6097,7 +6169,7 @@
                             align-items: center;
                             justify-content: center;
                             position: relative;
-                            margin: -10px 0 0 auto;
+                            margin: -10px 15px 0 auto;
                             & a {
                                 font-family: Circe;
                                 font-style: normal;
