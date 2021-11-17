@@ -38,6 +38,8 @@
 
 @@include('./profile/profile.js')
 
+@@include('./mono/mono.js')
+
 @@include('./calendar/calendar.js')
 
 

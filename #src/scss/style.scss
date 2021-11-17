@@ -53,6 +53,7 @@
 @import "donat/style.scss";
 @import "notification/style.scss";
 @import "orders/style.scss";
+@import "mono/style.scss";
 
 @import "media.scss";
 
@@ -600,4 +601,8 @@ input[type="range" i] {
             }
         }
     }
+}
+
+#modelHeader-1 .model-header {
+    margin: 53px 0 -85px 0;
 }

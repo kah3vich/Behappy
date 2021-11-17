@@ -1307,6 +1307,51 @@
     }
 }
 
+@media (max-height: 810px) {
+    .basket__block-info-btn {
+        margin: 30px 0 0 0;
+    }
+    .basket__block-info-detail {
+        margin: 30px 0 0 0;
+    }
+
+}
+@media (max-height: 780px) {
+    .basket__block-list {
+        width: 410px;
+        height: 219px;
+        margin: 30px 0 0 0;
+        overflow: auto;
+    }
+    .basket__block-add {
+        margin: 20px 0 0 0;
+    }
+}
+@media (max-height: 740px) {
+    .basket__block-info-add {
+        margin: 15px 0 0 0;
+    }
+    .basket__block-info-text {
+        margin: 17px 0 0 0;
+    }
+    .basket__block-info-price {
+        margin: 20px 0 0 0;
+    }
+}
+@media (max-height: 715px) {
+    .basket__block-info-btn {
+        margin: 20px 0 0 0;
+    }
+    .basket__block-add-list {
+        margin: 13px 0 0 0;
+    }
+}
+@media (max-width: 700px) {
+    .basket__block-list {
+        margin: 0
+    }
+}
+
 
 //! ---------------------------------------------------------------------------
 
