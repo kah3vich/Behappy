@@ -10622,23 +10622,37 @@
 .model-catalog__card-info-bonus-bg-heart {
   width: 30px;
   height: 30px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#D583FC), to(#168BB0));
-  background: -o-linear-gradient(top, #D583FC 0%, #168BB0 100%);
-  background: linear-gradient(180deg, #D583FC 0%, #168BB0 100%);
-  -webkit-box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.25);
+  background: #30333A;
+  border: 1px solid #854FC8;
   border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .model-catalog__card-info-bonus-bg-money {
   width: 30px;
   height: 30px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#46F84D), to(#3AE641));
-  background: -o-linear-gradient(top, #46F84D 0%, #3AE641 100%);
-  background: linear-gradient(180deg, #46F84D 0%, #3AE641 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#FFEA03));
+  background: -o-linear-gradient(top, #FFFFFF 0%, #FFEA03 100%);
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFEA03 100%);
   -webkit-box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
+}
+
+.model-catalog__card-info-bonus-bg-money svg {
+  fill: #7D7D7D;
+}
+
+.model-catalog__card-info-bonus-bg-money svg path {
+  fill: #7D7D7D;
 }
 
 .model-catalog__card-info-bonus-bg-car {
@@ -29557,7 +29571,7 @@ input[type=range]::-webkit-slider-runnable-track {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin: 10px 0 0 0;
+  margin: 60px 0 0 0;
 }
 
 .ord-quiz__block-info-balls {
@@ -30238,6 +30252,111 @@ input[type=range]::-webkit-slider-runnable-track {
   line-height: 122%;
   letter-spacing: 0.5px;
   color: #FFFFFF;
+}
+
+.ord-quiz__block-info-price-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 315px;
+}
+
+.ord-quiz__block-info-price-add-car {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.ord-quiz__block-info-price-add-car-logo {
+  width: 30px;
+  height: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#D583FC), to(#B01660));
+  background: -o-linear-gradient(top, #D583FC 0%, #B01660 100%);
+  background: linear-gradient(180deg, #D583FC 0%, #B01660 100%);
+  -webkit-box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ord-quiz__block-info-price-add-car-text {
+  margin: 0 0 0 14px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 122%;
+  letter-spacing: 0.5px;
+  color: #EEEEEE;
+}
+
+.ord-quiz__block-info-price-add-list {
+  margin: 21px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.ord-quiz__block-info-price-add-list-logo {
+  width: 30px;
+  height: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#07C4C4), to(#004D3A));
+  background: -o-linear-gradient(top, #07C4C4 0%, #004D3A 100%);
+  background: linear-gradient(180deg, #07C4C4 0%, #004D3A 100%);
+  -webkit-box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ord-quiz__block-info-price-add-list-text {
+  margin: 0 0 0 14px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 128%;
+  letter-spacing: 0.5px;
+  color: #EEEEEE;
+  width: 80%;
 }
 
 .ord-quiz__block-data {
@@ -49296,6 +49415,7 @@ input[type=range]::-webkit-slider-runnable-track {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  position: relative;
 }
 
 .const-content__block-slider-1-info-text-description-title {
@@ -49329,7 +49449,7 @@ input[type=range]::-webkit-slider-runnable-track {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin: 32px 0 0 0;
+  margin: 22px 0 0 0;
 }
 
 .const-content__block-slider-1-info-text-description-balls-bg {
@@ -49353,6 +49473,101 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .const-content__block-slider-1-info-text-description-balls p {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 122%;
+  letter-spacing: 0.5px;
+  color: #EEEEEE;
+  margin: 0 0 0 10px;
+}
+
+.const-content__block-slider-1-info-text-description-car {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 15px 0 0 0;
+  position: absolute;
+  top: 110px;
+  left: 0;
+}
+
+.const-content__block-slider-1-info-text-description-car-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#D583FC), to(#B01660));
+  background: -o-linear-gradient(top, #D583FC 0%, #B01660 100%);
+  background: linear-gradient(180deg, #D583FC 0%, #B01660 100%);
+  -webkit-box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.const-content__block-slider-1-info-text-description-car p {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 122%;
+  letter-spacing: 0.5px;
+  color: #EEEEEE;
+  margin: 0 0 0 10px;
+}
+
+.const-content__block-slider-1-info-text-description-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 15px 0 0 0;
+  position: absolute;
+  top: 150px;
+  left: 0;
+}
+
+.const-content__block-slider-1-info-text-description-list-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#07C4C4), to(#004D3A));
+  background: -o-linear-gradient(top, #07C4C4 0%, #004D3A 100%);
+  background: linear-gradient(180deg, #07C4C4 0%, #004D3A 100%);
+  -webkit-box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.const-content__block-slider-1-info-text-description-list p {
+  width: 235px;
   font-family: Circe;
   font-style: normal;
   font-weight: bold;
@@ -55064,7 +55279,7 @@ input[type=range]::-webkit-slider-runnable-track {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin: 50px 0 0 0;
+  margin: 30px ​0 0 0;
 }
 
 .const-content__block-sliders-2-content-info-title {
@@ -55219,6 +55434,97 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .const-content__block-sliders-2-content-info-description-text-balls-text {
+  margin: 0 0 0 10px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 122%;
+  letter-spacing: 0.5px;
+  color: #EEEEEE;
+}
+
+.const-content__block-sliders-2-content-info-description-text-car {
+  position: absolute;
+  top: 103px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.const-content__block-sliders-2-content-info-description-text-car-item {
+  width: 30px;
+  height: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#D583FC), to(#B01660));
+  background: -o-linear-gradient(top, #D583FC 0%, #B01660 100%);
+  background: linear-gradient(180deg, #D583FC 0%, #B01660 100%);
+  -webkit-box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.const-content__block-sliders-2-content-info-description-text-car-text {
+  margin: 0 0 0 10px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 122%;
+  letter-spacing: 0.5px;
+  color: #EEEEEE;
+}
+
+.const-content__block-sliders-2-content-info-description-text-list {
+  position: absolute;
+  top: 155px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.const-content__block-sliders-2-content-info-description-text-list-item {
+  width: 30px;
+  height: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#07C4C4), to(#004D3A));
+  background: -o-linear-gradient(top, #07C4C4 0%, #004D3A 100%);
+  background: linear-gradient(180deg, #07C4C4 0%, #004D3A 100%);
+  -webkit-box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.const-content__block-sliders-2-content-info-description-text-list-text {
+  width: 80%;
   margin: 0 0 0 10px;
   font-family: Circe;
   font-style: normal;
@@ -69511,6 +69817,16 @@ html .ui-button.ui-state-disabled:active,
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .const-content__block-sliders-2-content-info-description-text-car {
+    position: absolute;
+    top: 130px;
+  }
+
+  .const-content__block-sliders-2-content-info-description-text-list {
+    position: absolute;
+    top: 175px;
+  }
+
   .const-content__block-sliders-1-content-info-description {
     width: 510px;
     margin: 51px 30px 0 auto;
@@ -70024,6 +70340,11 @@ html .ui-button.ui-state-disabled:active,
 
   .urg-content__block-banner {
     width: 1050px;
+  }
+
+  .const-content__block-slider-1-info-text-description-car,
+  .const-content__block-slider-1-info-text-description-list {
+    display: none;
   }
 
   .const-content__block-sliders-4-content-info-description {

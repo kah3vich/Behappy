@@ -3674,7 +3674,7 @@
             flex-direction: column;
             align-items: flex-start;
             justify-content: flex-start;
-            margin: 10px 0 0 0;
+            margin: 60px 0 0 0;
             &-balls {
                 display: flex;
                 align-items: flex-start;
@@ -4116,6 +4116,65 @@
                         line-height: 122%;
                         letter-spacing: 0.5px;
                         color: #FFFFFF;
+                    }
+                }
+                &-add {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    width: 315px;
+                    &-car {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        &-logo {
+                            width: 30px;
+                            height: 30px;
+                            background: linear-gradient(180deg, #D583FC 0%, #B01660 100%);
+                            box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.25);
+                            border-radius: 15px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        &-text {
+                            margin: 0 0 0 14px;
+                            font-family: Circe;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 13px;
+                            line-height: 122%;
+                            letter-spacing: 0.5px;
+                            color: #EEEEEE;
+                        }
+                    }
+                    &-list {
+                        margin: 21px 0 0 0;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        &-logo {
+                            width: 30px;
+                            height: 30px;
+                            background: linear-gradient(180deg, #07C4C4 0%, #004D3A 100%);
+                            box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.25);
+                            border-radius: 15px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        &-text {
+                            margin: 0 0 0 14px;
+                            font-family: Circe;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 13px;
+                            line-height: 128%;
+                            letter-spacing: 0.5px;
+                            color: #EEEEEE;
+                            width: 80%;
+                        }
                     }
                 }
             }

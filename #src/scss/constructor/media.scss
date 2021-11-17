@@ -2,11 +2,23 @@
     .urg-content__block-banner {
         width: 1050px;
     }
+    .const-content__block-slider-1-info-text-description-car,
+    .const-content__block-slider-1-info-text-description-list {
+        display: none;
+    }
 }
 @media (max-width: 1430px) {
     .const-content__block-sliders-1-content-info-description {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+    .const-content__block-sliders-2-content-info-description-text-car {
+        position: absolute;
+        top: 130px;
+    }
+    .const-content__block-sliders-2-content-info-description-text-list {
+        position: absolute;
+        top: 175px;
     }
     .const-content__block-sliders-1-content-info-description {
         width: 510px;
