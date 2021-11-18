@@ -58,7 +58,7 @@ var swiper = new Swiper(".sliderCatalogAdd", {
 });
 
 var collections_1 = new Swiper(".sliderCatalogCollections-1", {
-    loop: true,
+    // loop: true,
     navigation: {
         nextEl: ".cat-collections__block-slider-1 .swiper-button-next",
         prevEl: ".cat-collections__block-slider-1 .swiper-button-prev",
