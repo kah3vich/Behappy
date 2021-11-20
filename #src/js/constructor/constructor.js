@@ -2916,7 +2916,7 @@ let elementObjConstructor = {}
 
 let countConstructorBtnItem_1_1 = 0
 $('#constructorBtnItem-1-1').on('click', function() {
-    let constButtonBlockCountSum_1 = $('.constContent__block-slider-1-info-btn-count-sum').html()
+    let constButtonBlockCountSum_1 = $('.const-content__block-slider-1-info-btn-count-sum').html()
     console.log(constButtonBlockCountSum_1)
     let id = 1
     let constBannerRow_Item_1 = $(this).val()
@@ -2931,7 +2931,7 @@ $('#constructorBtnItem-1-1').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_1_1}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -3004,7 +3004,7 @@ $('#constructorMediaBtnItem-1-1').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_1_1}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -3063,7 +3063,7 @@ $('#constructorBtnItem-1-2').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_1_2}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -3136,7 +3136,7 @@ $('#constructorMediaBtnItem-1-2').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_1_2}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -3196,7 +3196,7 @@ $('#constructorBtnItem-1-3').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_1_3}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -3269,7 +3269,7 @@ $('#constructorMediaBtnItem-1-3').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_1_3}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -3341,7 +3341,7 @@ $('#constructorBtnItem-2-1').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_2_1}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -3414,7 +3414,7 @@ $('#constructorMediaBtnItem-2-1').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_2_1}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -3473,7 +3473,7 @@ $('#constructorBtnItem-2-2').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_2_2}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -3546,7 +3546,7 @@ $('#constructorMediaBtnItem-2-2').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_2_2}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -3606,7 +3606,7 @@ $('#constructorBtnItem-2-3').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_2_3}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -3679,7 +3679,7 @@ $('#constructorMediaBtnItem-2-3').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_2_3}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -3751,7 +3751,7 @@ $('#constructorBtnItem-3-1').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_3_1}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -3824,7 +3824,7 @@ $('#constructorMediaBtnItem-3-1').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_3_1}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -3883,7 +3883,7 @@ $('#constructorBtnItem-3-2').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_3_2}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -3956,7 +3956,7 @@ $('#constructorMediaBtnItem-3-2').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_3_2}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -4016,7 +4016,7 @@ $('#constructorBtnItem-3-3').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_3_3}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -4089,7 +4089,7 @@ $('#constructorMediaBtnItem-3-3').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_3_3}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -4161,7 +4161,7 @@ $('#constructorBtnItem-4-1').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_4_1}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -4234,7 +4234,7 @@ $('#constructorMediaBtnItem-4-1').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_4_1}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -4293,7 +4293,7 @@ $('#constructorBtnItem-4-2').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_4_2}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -4366,7 +4366,7 @@ $('#constructorMediaBtnItem-4-2').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_4_2}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -4426,7 +4426,7 @@ $('#constructorBtnItem-4-3').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_4_3}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -4499,7 +4499,7 @@ $('#constructorMediaBtnItem-4-3').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_4_3}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -4571,7 +4571,7 @@ $('#constructorBtnItem-5-1').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_5_1}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -4644,7 +4644,7 @@ $('#constructorMediaBtnItem-5-1').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_5_1}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -4703,7 +4703,7 @@ $('#constructorBtnItem-5-2').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_5_2}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -4776,7 +4776,7 @@ $('#constructorMediaBtnItem-5-2').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_5_2}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -4836,7 +4836,7 @@ $('#constructorBtnItem-5-3').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_5_3}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -4909,7 +4909,7 @@ $('#constructorMediaBtnItem-5-3').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_5_3}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -4981,7 +4981,7 @@ $('#constructorBtnItem-6-1').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_6_1}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -5054,7 +5054,7 @@ $('#constructorMediaBtnItem-6-1').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_6_1}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -5113,7 +5113,7 @@ $('#constructorBtnItem-6-2').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_6_2}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -5186,7 +5186,7 @@ $('#constructorMediaBtnItem-6-2').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_6_2}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -5246,7 +5246,7 @@ $('#constructorBtnItem-6-3').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_6_3}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -5319,7 +5319,7 @@ $('#constructorMediaBtnItem-6-3').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_6_3}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -5391,7 +5391,7 @@ $('#constructorBtnItem-7-1').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_7_1}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -5464,7 +5464,7 @@ $('#constructorMediaBtnItem-7-1').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_7_1}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -5523,7 +5523,7 @@ $('#constructorBtnItem-7-2').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_7_2}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -5596,7 +5596,7 @@ $('#constructorMediaBtnItem-7-2').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_7_2}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -5656,7 +5656,7 @@ $('#constructorBtnItem-7-3').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_7_3}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -5729,7 +5729,7 @@ $('#constructorMediaBtnItem-7-3').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_7_3}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -5801,7 +5801,7 @@ $('#constructorBtnItem-8-1').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_8_1}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -5874,7 +5874,7 @@ $('#constructorMediaBtnItem-8-1').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_8_1}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -5933,7 +5933,7 @@ $('#constructorBtnItem-8-2').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_8_2}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -6006,7 +6006,7 @@ $('#constructorMediaBtnItem-8-2').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_8_2}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -6066,7 +6066,7 @@ $('#constructorBtnItem-8-3').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_8_3}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -6139,7 +6139,7 @@ $('#constructorMediaBtnItem-8-3').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_8_3}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -6211,7 +6211,7 @@ $('#constructorBtnItem-9-1').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_9_1}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -6284,7 +6284,7 @@ $('#constructorMediaBtnItem-9-1').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_9_1}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -6343,7 +6343,7 @@ $('#constructorBtnItem-9-2').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_9_2}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -6416,7 +6416,7 @@ $('#constructorMediaBtnItem-9-2').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_9_2}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -6476,7 +6476,7 @@ $('#constructorBtnItem-9-3').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_9_3}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -6549,7 +6549,7 @@ $('#constructorMediaBtnItem-9-3').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_9_3}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -6621,7 +6621,7 @@ $('#constructorBtnItem-10-1').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_10_1}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -6694,7 +6694,7 @@ $('#constructorMediaBtnItem-10-1').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_10_1}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -6753,7 +6753,7 @@ $('#constructorBtnItem-10-2').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_10_2}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -6826,7 +6826,7 @@ $('#constructorMediaBtnItem-10-2').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_10_2}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -6886,7 +6886,7 @@ $('#constructorBtnItem-10-3').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_10_3}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -6959,7 +6959,7 @@ $('#constructorMediaBtnItem-10-3').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_10_3}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -7031,7 +7031,7 @@ $('#constructorBtnItem-11-1').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_11_1}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -7104,7 +7104,7 @@ $('#constructorMediaBtnItem-11-1').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_11_1}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -7163,7 +7163,7 @@ $('#constructorBtnItem-11-2').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_11_2}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -7236,7 +7236,7 @@ $('#constructorMediaBtnItem-11-2').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_11_2}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -7296,7 +7296,7 @@ $('#constructorBtnItem-11-3').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_11_3}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -7369,7 +7369,7 @@ $('#constructorMediaBtnItem-11-3').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_11_3}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -7441,7 +7441,7 @@ $('#constructorBtnItem-12-1').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_12_1}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -7514,7 +7514,7 @@ $('#constructorMediaBtnItem-12-1').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_12_1}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -7573,7 +7573,7 @@ $('#constructorBtnItem-12-2').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_12_2}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -7646,7 +7646,7 @@ $('#constructorMediaBtnItem-12-2').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_12_2}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
@@ -7706,7 +7706,7 @@ $('#constructorBtnItem-12-3').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorBtnItem_12_3}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
         $(".const-content__block-banner-row-item").attr('value', `${constBannerRow_Item_1}`)
 
@@ -7779,7 +7779,7 @@ $('#constructorMediaBtnItem-12-3').on('click', function() {
         let newElement = document.createElement("li");
         newElement.classList.add("const-content__block-banner-row-item")
         newElement.id = `constBannerItem_${id}_${countConstructorMediaBtnItem_12_3}`;
-        newElement.innerHTML = `<img src="/storage/img/constructor/${constBannerRow_Item_1}.png" alt="img">`
+        newElement.innerHTML = `<img src="./img/constructor/${constBannerRow_Item_1}.png" alt="img">`
         document.getElementById("listConstructorBlock").appendChild(newElement);
 
         let newElementBlock = document.createElement("div");
