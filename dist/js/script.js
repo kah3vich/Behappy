@@ -1279,7 +1279,7 @@ $('#ordSelectCityItem-7').on('click', function() {
 
 $(function() {
     $('#orderCity').css('display', 'none')
-    $('#orderCity').after('<input class="order__city-select-item" placeholder="Выберите город"><div id="orderCityElement" class="order__city-select-wrapper display-n"></div></input>')
+    $('#orderCity').after('<input class="order__city-select-item" placeholder="Выберите город" value=""><div id="orderCityElement" class="order__city-select-wrapper display-n"></div></input>')
     let count = $('#orderCity').children('option').length
     for( let i = 0; i < count; i++) {
         let arrows = $('#orderCity').children('option').eq(i).val()
@@ -1301,6 +1301,8 @@ $(function() {
         $('.order__city-select-placeholder').html(valueElement)
         $('#orderCity option:nth-child(1)').val(valueElement)
         $('#orderCity option:nth-child(1)').html(valueElement)
+        $('.order__city-select-item').val(valueElement)
+        $('.order__city-select-wrapper').toggleClass('display-n')
     })
 })
 
