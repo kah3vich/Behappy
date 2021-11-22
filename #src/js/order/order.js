@@ -334,7 +334,6 @@ $('#ordSelectCityItem-7').on('click', function() {
 // order city
 
 
-
 $(function() {
     $('#orderCity').css('display', 'none')
     $('#orderCity').after('<input class="order__city-select-item" placeholder="Выберите город" value=""><div id="orderCityElement" class="order__city-select-wrapper display-n"></div></input>')
