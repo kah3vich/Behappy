@@ -337,7 +337,7 @@ $('#ordSelectCityItem-7').on('click', function() {
 
 $(function() {
     $('#orderCity').css('display', 'none')
-    $('#orderCity').after('<div class="order__city-select-item"><div class="order__city-select-placeholder">Выберите город</div><div id="orderCityElement" class="order__city-select-wrapper display-n"></div></div>')
+    $('#orderCity').after('<input class="order__city-select-item" placeholder="Выберите город"><div id="orderCityElement" class="order__city-select-wrapper display-n"></div></input>')
     let count = $('#orderCity').children('option').length
     for( let i = 0; i < count; i++) {
         let arrows = $('#orderCity').children('option').eq(i).val()
