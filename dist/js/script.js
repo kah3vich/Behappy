@@ -750,7 +750,7 @@ $(function() {
     $('#header__city-select-element-0').css('display', 'none')
     $('.header__city-select-item').on('click', function() {
         $(this).toggleClass('header__city-select-item-active')
-        $('.header__city-select-wrapper').toggleClass('display-n')
+        $('.header__city-select-wrapper').removeClass('display-n')
     })
     $(".header__city-select-element").on('click', function() {
         let idElement = this.id
