@@ -612,3 +612,9 @@ input[type="range" i] {
 
 
 
+.header__city-select-item {
+    text-align: unset;
+}
+.header__city-select-item::placeholder {
+    color: #fff;
+}

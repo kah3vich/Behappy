@@ -736,7 +736,7 @@ $('#mediaModelClientEntry').on('click', function() {
 
 $(function() {
     $('#headerCity').css('display', 'none')
-    $('#headerCity').after('<div class="header__city-select-item"><div class="header__city-select-placeholder">Выберите город</div><div id="headerCityElement" class="header__city-select-wrapper display-n"></div></div>')
+    $('#headerCity').after('<input class="header__city-select-item" placeholder="Выберите город" value=""><div id="headerCityElement" class="header__city-select-wrapper display-n"></div></input>')
     let count = $('#headerCity').children('option').length
     for( let i = 0; i < count; i++) {
         let arrows = $('#headerCity').children('option').eq(i).val()
@@ -758,6 +758,8 @@ $(function() {
         $('.header__city-select-placeholder').html(valueElement)
         $('#headerCity option:nth-child(1)').val(valueElement)
         $('#headerCity option:nth-child(1)').html(valueElement)
+        $('.header__city-select-item').val(valueElement)
+        $('.header__city-select-wrapper').toggleClass('display-n')
     })
 })
 
